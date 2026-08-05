@@ -30,3 +30,17 @@ Techniques used
 - Probability calibration analysis 
 - Feature importance interpretation 
 - Model comparison (Logistic Regression vs Random Forest)
+
+###
+
+To set it up:
+
+python -m venv .venv 
+
+source .venv/bin/activate # Linux/Mac 
+
+# or 
+
+.venv\Scripts\activate # Windows 
+
+pip install -r requirements.txt
