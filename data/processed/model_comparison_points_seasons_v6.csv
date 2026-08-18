@@ -1,0 +1,65 @@
+Model,FeatureSet,TestSeason,Accuracy,LogLoss
+LogisticRegression,Baseline,22-23,0.5605263157894737,0.9795270947043606
+LogisticRegression,Baseline + HomePointsLast5,22-23,0.5631578947368421,0.9819065568044224
+LogisticRegression,Baseline + AwayPointsLast5,22-23,0.55,0.9767859899699108
+LogisticRegression,Baseline + HomePointsLast5 + AwayPointsLast5,22-23,0.5578947368421052,0.9836205628101823
+RandomForest,Baseline,22-23,0.5421052631578948,1.007086236378774
+RandomForest,Baseline + HomePointsLast5,22-23,0.5342105263157895,1.0172301387445684
+RandomForest,Baseline + AwayPointsLast5,22-23,0.5263157894736842,1.015171367093371
+RandomForest,Baseline + HomePointsLast5 + AwayPointsLast5,22-23,0.55,1.0098167838745484
+HistGradientBoosting,Baseline,22-23,0.47368421052631576,1.285020325998256
+HistGradientBoosting,Baseline + HomePointsLast5,22-23,0.4710526315789474,1.2874375083841076
+HistGradientBoosting,Baseline + AwayPointsLast5,22-23,0.45789473684210524,1.3100931236744997
+HistGradientBoosting,Baseline + HomePointsLast5 + AwayPointsLast5,22-23,0.48157894736842105,1.3058956518059268
+GradientBoosting,Baseline,22-23,0.47368421052631576,1.1163672513134713
+GradientBoosting,Baseline + HomePointsLast5,22-23,0.47368421052631576,1.1233136836984154
+GradientBoosting,Baseline + AwayPointsLast5,22-23,0.48157894736842105,1.1084492064685016
+GradientBoosting,Baseline + HomePointsLast5 + AwayPointsLast5,22-23,0.46842105263157896,1.1085760843179957
+LogisticRegression,Baseline,23-24,0.5789473684210527,0.9309121852171429
+LogisticRegression,Baseline + HomePointsLast5,23-24,0.5789473684210527,0.9309186488916581
+LogisticRegression,Baseline + AwayPointsLast5,23-24,0.5789473684210527,0.9288081336385755
+LogisticRegression,Baseline + HomePointsLast5 + AwayPointsLast5,23-24,0.5789473684210527,0.9320722862626167
+RandomForest,Baseline,23-24,0.5684210526315789,0.969020726483957
+RandomForest,Baseline + HomePointsLast5,23-24,0.5657894736842105,0.9718218374137148
+RandomForest,Baseline + AwayPointsLast5,23-24,0.5657894736842105,0.972204352460906
+RandomForest,Baseline + HomePointsLast5 + AwayPointsLast5,23-24,0.5736842105263158,0.964772005722659
+HistGradientBoosting,Baseline,23-24,0.4868421052631579,1.2044732997950023
+HistGradientBoosting,Baseline + HomePointsLast5,23-24,0.48947368421052634,1.1956185315617114
+HistGradientBoosting,Baseline + AwayPointsLast5,23-24,0.5026315789473684,1.182890574001634
+HistGradientBoosting,Baseline + HomePointsLast5 + AwayPointsLast5,23-24,0.49736842105263157,1.1758819206911326
+GradientBoosting,Baseline,23-24,0.5368421052631579,0.9902016655120492
+GradientBoosting,Baseline + HomePointsLast5,23-24,0.5447368421052632,0.9871460581145742
+GradientBoosting,Baseline + AwayPointsLast5,23-24,0.5394736842105263,0.9779864382118187
+GradientBoosting,Baseline + HomePointsLast5 + AwayPointsLast5,23-24,0.55,0.9775811490716793
+LogisticRegression,Baseline,24-25,0.5342105263157895,0.9915628026208816
+LogisticRegression,Baseline + HomePointsLast5,24-25,0.5342105263157895,0.9916980056751799
+LogisticRegression,Baseline + AwayPointsLast5,24-25,0.5394736842105263,0.988960532321627
+LogisticRegression,Baseline + HomePointsLast5 + AwayPointsLast5,24-25,0.5421052631578948,0.9885734993153062
+RandomForest,Baseline,24-25,0.5368421052631579,0.991792523120851
+RandomForest,Baseline + HomePointsLast5,24-25,0.5289473684210526,0.9906119280519408
+RandomForest,Baseline + AwayPointsLast5,24-25,0.5421052631578948,0.9910661632339001
+RandomForest,Baseline + HomePointsLast5 + AwayPointsLast5,24-25,0.531578947368421,0.9881310644643903
+HistGradientBoosting,Baseline,24-25,0.4789473684210526,1.130055911609986
+HistGradientBoosting,Baseline + HomePointsLast5,24-25,0.4921052631578947,1.142212877979394
+HistGradientBoosting,Baseline + AwayPointsLast5,24-25,0.49736842105263157,1.1350961625514906
+HistGradientBoosting,Baseline + HomePointsLast5 + AwayPointsLast5,24-25,0.49473684210526314,1.1276805343989054
+GradientBoosting,Baseline,24-25,0.5263157894736842,1.02174204288806
+GradientBoosting,Baseline + HomePointsLast5,24-25,0.5289473684210526,1.0198130812150425
+GradientBoosting,Baseline + AwayPointsLast5,24-25,0.5289473684210526,1.0217626347674245
+GradientBoosting,Baseline + HomePointsLast5 + AwayPointsLast5,24-25,0.5289473684210526,1.0198395802134863
+LogisticRegression,Baseline,25-26,0.5026315789473684,1.0318841800024625
+LogisticRegression,Baseline + HomePointsLast5,25-26,0.5026315789473684,1.0298064962181537
+LogisticRegression,Baseline + AwayPointsLast5,25-26,0.48947368421052634,1.0300748151449415
+LogisticRegression,Baseline + HomePointsLast5 + AwayPointsLast5,25-26,0.48947368421052634,1.027910924500443
+RandomForest,Baseline,25-26,0.4868421052631579,1.051529346796712
+RandomForest,Baseline + HomePointsLast5,25-26,0.48947368421052634,1.0521844940901064
+RandomForest,Baseline + AwayPointsLast5,25-26,0.4842105263157895,1.047005108275859
+RandomForest,Baseline + HomePointsLast5 + AwayPointsLast5,25-26,0.49473684210526314,1.0421123450370657
+HistGradientBoosting,Baseline,25-26,0.4421052631578947,1.200004983601603
+HistGradientBoosting,Baseline + HomePointsLast5,25-26,0.4368421052631579,1.1935554034804048
+HistGradientBoosting,Baseline + AwayPointsLast5,25-26,0.4263157894736842,1.1763094618810301
+HistGradientBoosting,Baseline + HomePointsLast5 + AwayPointsLast5,25-26,0.42894736842105263,1.186495041126661
+GradientBoosting,Baseline,25-26,0.48157894736842105,1.0671631047078871
+GradientBoosting,Baseline + HomePointsLast5,25-26,0.48157894736842105,1.0698239140107644
+GradientBoosting,Baseline + AwayPointsLast5,25-26,0.48157894736842105,1.0580193225862393
+GradientBoosting,Baseline + HomePointsLast5 + AwayPointsLast5,25-26,0.4868421052631579,1.059203112062757
