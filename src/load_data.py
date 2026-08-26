@@ -18,6 +18,10 @@ for f in csv_files:
     if "understat" in os.path.basename(f).lower():
         continue
 
+    # Future fixtures have no results yet - not part of match history
+    if "future_fixtures" in os.path.basename(f).lower():
+        continue
+
     df = pd.read_csv(f)
 
     filename = (
@@ -83,6 +87,10 @@ team_name_map = {
     "Newcastle Utd": "Newcastle United",
     "Newcastle United": "Newcastle United",
 
+    # Hull
+    "Hull": "Hull City",
+    "Hull City": "Hull City",
+
     # West Ham
     "West Ham": "West Ham United",
     "West Ham United": "West Ham United",
@@ -140,7 +148,8 @@ seasons = {
     "22-23": "2022-2023",
     "23-24": "2023-2024",
     "24-25": "2024-2025",
-    "25-26": "2025-2026"
+    "25-26": "2025-2026",
+    "26-27": "2026-2027"
 }
 
 
