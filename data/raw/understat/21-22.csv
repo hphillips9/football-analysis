@@ -1,0 +1,381 @@
+HomeTeam,AwayTeam,HomeXG,AwayXG
+Brentford,Arsenal,1.88818,1.02385
+Burnley,Brighton,1.79548,1.6853
+Chelsea,Crystal Palace,1.18709,0.321701
+Everton,Southampton,2.38863,0.580601
+Leicester,Wolverhampton Wanderers,0.668082,1.32714
+Manchester United,Leeds,1.64248,0.568342
+Norwich,Liverpool,1.3333,1.78728
+Watford,Aston Villa,1.35036,1.13718
+Newcastle United,West Ham,1.67926,3.00939
+Tottenham,Manchester City,1.06014,2.10585
+Aston Villa,Newcastle United,1.18426,0.63163
+Brighton,Watford,1.77896,0.407224
+Crystal Palace,Brentford,0.606313,0.712439
+Leeds,Everton,0.966093,1.85713
+Liverpool,Burnley,2.63945,0.690464
+Manchester City,Norwich,2.43928,0.0250088
+Arsenal,Chelsea,0.630099,3.64132
+Southampton,Manchester United,0.587526,2.26173
+Wolverhampton Wanderers,Tottenham,1.51127,1.72636
+West Ham,Leicester,2.28613,0.62676
+Aston Villa,Brentford,0.431464,1.13312
+Brighton,Everton,0.701622,1.54868
+Liverpool,Chelsea,2.08462,0.573638
+Manchester City,Arsenal,4.47273,0.116805
+Newcastle United,Southampton,1.19077,3.46036
+Norwich,Leicester,1.44084,1.27371
+West Ham,Crystal Palace,1.44748,1.67658
+Burnley,Leeds,1.71102,1.52078
+Tottenham,Watford,0.920963,0.596016
+Wolverhampton Wanderers,Manchester United,1.79575,0.944083
+Arsenal,Norwich,2.68515,0.577292
+Brentford,Brighton,0.729786,0.287902
+Chelsea,Aston Villa,1.22153,1.17349
+Crystal Palace,Tottenham,2.89372,0.0775646
+Leicester,Manchester City,0.8001,2.75058
+Manchester United,Newcastle United,2.77326,0.622042
+Southampton,West Ham,0.692135,0.725407
+Watford,Wolverhampton Wanderers,0.185407,2.55922
+Leeds,Liverpool,0.652514,4.4016
+Everton,Burnley,1.80386,1.82061
+Newcastle United,Leeds,1.17668,1.42995
+Aston Villa,Everton,0.777716,0.755035
+Burnley,Arsenal,0.775574,1.09928
+Liverpool,Crystal Palace,2.76793,0.644168
+Manchester City,Southampton,1.22451,0.490923
+Norwich,Watford,0.782665,2.42487
+Wolverhampton Wanderers,Brentford,1.02316,2.32741
+Brighton,Leicester,1.47438,1.25373
+Tottenham,Chelsea,0.70567,2.5869
+West Ham,Manchester United,1.6671,1.8954
+Brentford,Liverpool,2.94058,2.25736
+Chelsea,Manchester City,0.194202,1.69244
+Everton,Norwich,2.26681,0.800903
+Leeds,West Ham,1.1967,1.98962
+Leicester,Burnley,2.16233,0.428866
+Manchester United,Aston Villa,1.9251,1.57249
+Watford,Newcastle United,0.904061,2.52338
+Arsenal,Tottenham,1.44499,0.980166
+Southampton,Wolverhampton Wanderers,0.909342,0.909833
+Crystal Palace,Brighton,1.36836,0.649566
+Brighton,Arsenal,1.11551,0.36431
+Burnley,Norwich,0.584725,0.673617
+Chelsea,Southampton,3.79243,1.52634
+Leeds,Watford,1.57388,0.192794
+Manchester United,Everton,1.0496,1.32211
+Wolverhampton Wanderers,Newcastle United,1.15849,0.865217
+Crystal Palace,Leicester,1.1703,1.04322
+Liverpool,Manchester City,0.949368,1.04319
+Tottenham,Aston Villa,1.78187,1.07395
+West Ham,Brentford,1.37258,1.30098
+Aston Villa,Wolverhampton Wanderers,1.21276,2.19633
+Brentford,Chelsea,1.62169,0.248256
+Leicester,Manchester United,2.96611,1.02494
+Manchester City,Burnley,2.15712,1.07719
+Norwich,Brighton,1.16088,1.17572
+Southampton,Leeds,1.83082,0.446173
+Watford,Liverpool,0.302302,3.65553
+Everton,West Ham,0.854165,2.03034
+Newcastle United,Tottenham,0.645658,1.55008
+Arsenal,Crystal Palace,1.7436,0.492239
+Arsenal,Aston Villa,3.4984,1.41088
+Brighton,Manchester City,1.1695,3.57376
+Chelsea,Norwich,3.10509,0.267429
+Crystal Palace,Newcastle United,2.25588,0.721813
+Everton,Watford,1.84089,3.10344
+Leeds,Wolverhampton Wanderers,1.71313,0.858644
+Southampton,Burnley,1.42567,0.673195
+Brentford,Leicester,1.16789,1.00254
+Manchester United,Liverpool,1.35584,4.04765
+West Ham,Tottenham,1.73468,0.672198
+Burnley,Brentford,2.72901,0.834312
+Leicester,Arsenal,1.98801,1.10288
+Liverpool,Brighton,1.39778,1.51032
+Manchester City,Crystal Palace,0.65739,1.05029
+Newcastle United,Chelsea,0.157616,2.16608
+Tottenham,Manchester United,1.15787,1.38612
+Watford,Southampton,0.852556,1.90757
+Aston Villa,West Ham,0.687551,2.66391
+Norwich,Leeds,0.661887,1.16855
+Wolverhampton Wanderers,Everton,1.69344,1.69767
+Southampton,Aston Villa,0.89818,0.536077
+Brentford,Norwich,2.79229,1.15797
+Brighton,Newcastle United,1.43123,0.227321
+Chelsea,Burnley,3.00585,0.674072
+Crystal Palace,Wolverhampton Wanderers,2.65161,0.25416
+Manchester United,Manchester City,0.759561,2.04202
+Arsenal,Watford,1.49208,0.491659
+Everton,Tottenham,0.597906,0.801798
+Leeds,Leicester,1.96551,0.795292
+West Ham,Liverpool,1.25298,1.45641
+Aston Villa,Brighton,1.06946,0.582787
+Burnley,Crystal Palace,1.04224,1.74839
+Leicester,Chelsea,0.499504,2.57178
+Liverpool,Arsenal,3.97374,0.268025
+Newcastle United,Brentford,2.18388,1.23275
+Norwich,Southampton,0.43778,1.13118
+Watford,Manchester United,2.73393,1.66794
+Wolverhampton Wanderers,West Ham,1.31903,0.436331
+Manchester City,Everton,2.61302,0.266894
+Tottenham,Leeds,2.31744,1.46689
+Arsenal,Newcastle United,2.84493,0.185383
+Brighton,Leeds,1.90498,0.864829
+Crystal Palace,Aston Villa,0.962129,0.454305
+Liverpool,Southampton,3.07278,0.966132
+Norwich,Wolverhampton Wanderers,1.4047,0.297157
+Brentford,Everton,1.19813,0.968075
+Chelsea,Manchester United,2.34525,0.563367
+Leicester,Watford,2.16027,2.38383
+Manchester City,West Ham,2.72187,0.171763
+Leeds,Crystal Palace,1.9818,0.707328
+Newcastle United,Norwich,1.15636,1.51084
+Aston Villa,Manchester City,0.772083,1.01897
+Everton,Liverpool,0.512263,2.86067
+Southampton,Leicester,1.91169,1.4401
+Watford,Chelsea,0.990877,0.908574
+West Ham,Brighton,1.14679,1.2607
+Wolverhampton Wanderers,Burnley,0.711691,0.195537
+Manchester United,Arsenal,1.85597,1.16638
+Tottenham,Brentford,2.07248,0.225492
+Newcastle United,Burnley,1.70609,0.604599
+Southampton,Brighton,1.34236,1.4872
+Watford,Manchester City,0.675105,4.03223
+West Ham,Chelsea,2.0174,1.37049
+Wolverhampton Wanderers,Liverpool,0.095167,2.42332
+Aston Villa,Leicester,1.84818,0.982614
+Leeds,Brentford,1.41896,1.19959
+Manchester United,Crystal Palace,0.870376,0.520593
+Tottenham,Norwich,2.00668,1.06562
+Everton,Arsenal,1.06108,1.05723
+Brentford,Watford,1.82799,0.561554
+Arsenal,Southampton,2.08429,0.502215
+Chelsea,Leeds,2.74844,1.72934
+Liverpool,Aston Villa,2.71181,0.140573
+Manchester City,Wolverhampton Wanderers,2.99915,0.0762839
+Norwich,Manchester United,0.986107,2.09817
+Burnley,West Ham,0.54801,0.998813
+Crystal Palace,Everton,2.09864,1.27556
+Leicester,Newcastle United,2.05771,0.511934
+Manchester City,Leeds,3.31349,0.227498
+Norwich,Aston Villa,0.502647,1.96261
+Arsenal,West Ham,2.81482,0.338855
+Brighton,Wolverhampton Wanderers,1.20118,1.11736
+Crystal Palace,Southampton,1.49244,0.625183
+Chelsea,Everton,3.20239,0.627528
+Liverpool,Newcastle United,2.93912,0.2064
+Leeds,Arsenal,1.31408,3.69008
+Newcastle United,Manchester City,0.174208,3.64686
+Tottenham,Liverpool,2.79777,1.54944
+Wolverhampton Wanderers,Chelsea,0.321371,0.793952
+Aston Villa,Chelsea,0.474029,2.8285
+Brighton,Brentford,0.943363,1.10342
+Manchester City,Leicester,3.82869,2.43425
+Norwich,Arsenal,0.154212,2.87539
+Tottenham,Crystal Palace,2.82148,0.178324
+West Ham,Southampton,1.53745,1.35643
+Newcastle United,Manchester United,1.26586,1.75587
+Crystal Palace,Norwich,2.38978,0.594134
+Leicester,Liverpool,0.615892,2.72682
+Southampton,Tottenham,0.353043,2.80917
+Watford,West Ham,1.0143,2.84084
+Brentford,Manchester City,0.238829,1.01763
+Chelsea,Brighton,0.763458,0.78663
+Manchester United,Burnley,1.80776,0.871738
+Arsenal,Manchester City,0.836949,1.94623
+Crystal Palace,West Ham,2.69204,2.23146
+Watford,Tottenham,0.303514,1.93752
+Brentford,Aston Villa,0.501329,1.13821
+Chelsea,Liverpool,1.389,1.78897
+Everton,Brighton,1.82698,1.48397
+Leeds,Burnley,2.04186,0.960493
+Manchester United,Wolverhampton Wanderers,0.768752,0.840925
+Southampton,Brentford,1.59306,0.621466
+West Ham,Norwich,2.89217,0.343347
+Brighton,Crystal Palace,2.18053,0.509681
+Aston Villa,Manchester United,1.82784,1.35378
+Manchester City,Chelsea,0.901703,0.613757
+Newcastle United,Watford,1.03855,1.49623
+Norwich,Everton,1.00153,0.541027
+Wolverhampton Wanderers,Southampton,2.29917,0.91728
+Liverpool,Brentford,3.49099,0.376656
+West Ham,Leeds,2.3549,2.26884
+Brighton,Chelsea,0.747557,0.572994
+Brentford,Manchester United,2.081,2.05969
+Leicester,Tottenham,1.95031,4.24711
+Watford,Norwich,1.30606,0.925212
+Brentford,Wolverhampton Wanderers,0.742573,0.218211
+Everton,Aston Villa,1.2384,0.860245
+Leeds,Newcastle United,1.12992,1.15904
+Manchester United,West Ham,1.75857,0.238027
+Southampton,Manchester City,1.00222,1.62907
+Arsenal,Burnley,1.35507,0.388963
+Chelsea,Tottenham,1.04212,0.328818
+Crystal Palace,Liverpool,1.62615,1.49697
+Leicester,Brighton,1.70979,1.19738
+Burnley,Watford,0.765905,0.933965
+Burnley,Manchester United,0.772721,1.83387
+Newcastle United,Everton,2.68732,0.823607
+West Ham,Watford,0.905143,0.335474
+Aston Villa,Leeds,1.5013,2.52914
+Manchester City,Brentford,1.98246,0.461305
+Norwich,Crystal Palace,0.296411,1.22883
+Tottenham,Southampton,1.74286,1.73293
+Liverpool,Leicester,2.72997,0.544954
+Wolverhampton Wanderers,Arsenal,0.641359,1.45247
+Brentford,Crystal Palace,1.97576,0.49802
+Everton,Leeds,2.58561,0.242668
+Manchester United,Southampton,2.99207,0.677386
+Norwich,Manchester City,0.356755,4.44653
+Watford,Brighton,0.532979,1.80456
+Burnley,Liverpool,1.16081,1.95722
+Leicester,West Ham,1.40693,0.745068
+Newcastle United,Aston Villa,0.527571,0.455206
+Tottenham,Wolverhampton Wanderers,0.838197,1.87026
+Manchester United,Brighton,2.74936,1.26179
+Arsenal,Brentford,1.52247,0.640726
+Aston Villa,Watford,1.0267,1.82051
+Brighton,Burnley,0.44587,0.821228
+Crystal Palace,Chelsea,0.624023,1.12339
+Liverpool,Norwich,3.15449,0.66975
+Manchester City,Tottenham,2.31773,2.00235
+Southampton,Everton,2.72851,0.19991
+West Ham,Newcastle United,0.847948,0.932574
+Leeds,Manchester United,1.74476,2.60999
+Wolverhampton Wanderers,Leicester,0.472777,1.55048
+Burnley,Tottenham,1.55576,0.691655
+Liverpool,Leeds,5.3303,0.141547
+Watford,Crystal Palace,1.71917,0.818403
+Arsenal,Wolverhampton Wanderers,2.50961,1.10934
+Southampton,Norwich,3.08863,0.424877
+Brentford,Newcastle United,0.494232,2.25373
+Brighton,Aston Villa,0.627107,1.3027
+Crystal Palace,Burnley,1.03765,0.255988
+Everton,Manchester City,0.770819,1.93422
+Leeds,Tottenham,1.89569,2.47025
+Manchester United,Watford,2.41457,0.437185
+West Ham,Wolverhampton Wanderers,1.62241,0.892018
+Burnley,Leicester,1.04214,1.79558
+Aston Villa,Southampton,2.85379,1.32947
+Burnley,Chelsea,0.849232,2.2868
+Leicester,Leeds,0.359129,2.14389
+Liverpool,West Ham,2.18865,1.33829
+Newcastle United,Brighton,1.58028,1.64995
+Norwich,Brentford,0.77334,2.22064
+Wolverhampton Wanderers,Crystal Palace,0.710865,2.53759
+Manchester City,Manchester United,2.74434,0.361782
+Watford,Arsenal,1.29603,1.00457
+Tottenham,Everton,3.24279,0.208263
+Leeds,Aston Villa,0.194028,1.2729
+Norwich,Chelsea,0.965723,2.1308
+Southampton,Newcastle United,1.79835,0.812233
+Wolverhampton Wanderers,Watford,1.55037,0.498696
+Brentford,Burnley,1.82002,0.825311
+Brighton,Liverpool,0.629316,2.48312
+Manchester United,Tottenham,1.0181,1.62374
+Arsenal,Leicester,2.93665,0.54911
+Chelsea,Newcastle United,1.07072,0.246037
+Everton,Wolverhampton Wanderers,0.397268,0.712135
+Leeds,Norwich,3.11755,1.40148
+Southampton,Watford,1.25696,1.29385
+West Ham,Aston Villa,1.58468,1.05391
+Crystal Palace,Manchester City,0.474002,2.04021
+Arsenal,Liverpool,0.534265,1.27681
+Brighton,Tottenham,1.04171,2.05196
+Everton,Newcastle United,0.708809,0.75803
+Wolverhampton Wanderers,Leeds,1.24075,2.82103
+Aston Villa,Arsenal,0.309375,1.14522
+Leicester,Brentford,1.27865,1.72466
+Tottenham,West Ham,2.54795,0.644964
+Brighton,Norwich,2.38297,0.494112
+Burnley,Manchester City,0.0591223,1.62008
+Chelsea,Brentford,1.29014,2.43422
+Leeds,Southampton,1.50715,2.06387
+Liverpool,Watford,2.23651,0.753307
+Manchester United,Leicester,0.902127,1.07638
+Wolverhampton Wanderers,Aston Villa,1.62151,1.91256
+Tottenham,Newcastle United,3.6081,0.538152
+West Ham,Everton,1.49657,0.657846
+Crystal Palace,Arsenal,1.39707,1.05199
+Burnley,Everton,2.24439,2.31574
+Newcastle United,Wolverhampton Wanderers,1.43878,0.306867
+Arsenal,Brighton,2.35153,0.596106
+Aston Villa,Tottenham,1.48712,0.983601
+Everton,Manchester United,0.357295,0.762357
+Southampton,Chelsea,0.564726,4.39683
+Watford,Leeds,1.07422,0.895612
+Brentford,West Ham,1.85534,0.244824
+Leicester,Crystal Palace,0.879235,1.52767
+Manchester City,Liverpool,1.34647,1.29983
+Norwich,Burnley,1.6723,1.44652
+Manchester United,Norwich,1.66737,1.79754
+Southampton,Arsenal,1.04007,1.35002
+Tottenham,Brighton,0.58624,0.711155
+Watford,Brentford,1.50381,2.12457
+Newcastle United,Leicester,2.54294,0.541084
+West Ham,Burnley,2.79175,1.88137
+Liverpool,Manchester United,2.25967,0.110227
+Chelsea,Arsenal,0.593801,1.87331
+Everton,Leicester,1.68819,0.786333
+Manchester City,Brighton,1.52844,0.117354
+Newcastle United,Crystal Palace,0.767855,0.432788
+Burnley,Southampton,2.14743,1.31837
+Arsenal,Manchester United,2.54173,2.04244
+Brentford,Tottenham,1.3153,0.517755
+Leicester,Aston Villa,0.235635,0.593202
+Manchester City,Watford,3.68,0.42632
+Norwich,Newcastle United,0.657661,1.87558
+Brighton,Southampton,1.87343,0.926764
+Burnley,Wolverhampton Wanderers,1.27298,0.592902
+Chelsea,West Ham,2.34959,0.388975
+Liverpool,Everton,1.70397,0.424961
+Crystal Palace,Leeds,1.61656,0.374044
+Manchester United,Chelsea,0.618456,2.46868
+Aston Villa,Norwich,2.31192,0.352212
+Leeds,Manchester City,1.03608,3.01431
+Newcastle United,Liverpool,0.115353,2.73435
+Southampton,Crystal Palace,0.650256,0.756217
+Watford,Burnley,0.785742,1.37022
+Wolverhampton Wanderers,Brighton,0.525912,2.90679
+Everton,Chelsea,1.11712,1.21141
+Tottenham,Leicester,1.65338,0.274133
+West Ham,Arsenal,0.451976,0.964564
+Manchester United,Brentford,1.84111,0.681425
+Brentford,Southampton,3.68223,0.988574
+Brighton,Manchester United,2.82636,0.930715
+Burnley,Aston Villa,1.31028,1.81256
+Chelsea,Wolverhampton Wanderers,1.82098,1.6842
+Crystal Palace,Watford,2.49142,0.255373
+Liverpool,Tottenham,1.0481,0.982635
+Arsenal,Leeds,2.7227,0.696785
+Leicester,Everton,1.47479,1.55635
+Manchester City,Newcastle United,4.05613,0.995099
+Norwich,West Ham,0.77895,3.25894
+Aston Villa,Liverpool,1.44726,1.75417
+Leeds,Chelsea,0.499789,1.46853
+Leicester,Norwich,2.57058,1.21966
+Watford,Everton,0.232236,0.812193
+Wolverhampton Wanderers,Manchester City,0.411857,3.39304
+Tottenham,Arsenal,3.42522,0.387446
+Aston Villa,Crystal Palace,0.799443,1.39009
+Everton,Brentford,2.69589,1.81626
+Leeds,Brighton,2.22282,2.25898
+Tottenham,Burnley,2.39449,0.629888
+Watford,Leicester,2.58968,2.27297
+West Ham,Manchester City,1.0088,2.14723
+Wolverhampton Wanderers,Norwich,0.999066,1.53212
+Newcastle United,Arsenal,1.68299,0.492454
+Southampton,Liverpool,0.121506,1.19178
+Aston Villa,Burnley,0.996403,1.63117
+Chelsea,Leicester,1.61996,0.0417972
+Everton,Crystal Palace,0.813157,1.6023
+Arsenal,Everton,4.35597,1.08601
+Brentford,Leeds,0.844985,1.47786
+Brighton,West Ham,1.67774,0.268845
+Burnley,Newcastle United,1.49164,1.74291
+Chelsea,Watford,2.59231,0.575755
+Crystal Palace,Manchester United,0.354618,0.782005
+Leicester,Southampton,3.42058,1.05141
+Liverpool,Wolverhampton Wanderers,3.19385,1.11708
+Manchester City,Aston Villa,3.3209,0.247841
+Norwich,Tottenham,0.310789,3.815
