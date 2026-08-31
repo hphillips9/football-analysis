@@ -5,6 +5,8 @@ from collections import defaultdict
 from sklearn.linear_model import LogisticRegression
 from sklearn.calibration import CalibratedClassifierCV
 
+from team_names import load_alias_map, normalize_team_names
+
 
 # ============================================================
 # CONFIGURATION
@@ -329,6 +331,15 @@ def predict_next_matches(
 
     future = pd.read_csv(fixtures_path)
 
+    alias_map = load_alias_map()
+
+    future["HomeTeam"] = normalize_team_names(
+        future["HomeTeam"], alias_map, source_name=fixtures_path
+    )
+    future["AwayTeam"] = normalize_team_names(
+        future["AwayTeam"], alias_map, source_name=fixtures_path
+    )
+
     future_features = build_future_features(future, elos, team_history)
 
     predictions = calibrated_model.predict(future_features[FEATURES])
@@ -357,10 +368,52 @@ def predict_next_matches(
 
     return results
 
+def add_bets(predictions, bets_path="data/raw/Bets.csv"):
 
-if __name__ == "__main__":
+    bets = pd.read_csv(bets_path)
 
-    results = predict_next_matches()
+    predictions = predictions.rename(columns={"Prediction": "PredictedResult"})
+    predictions = predictions.assign(Div="E0")
+
+    key = ["Div", "Date", "Time", "HomeTeam", "AwayTeam"]
+
+    alias_map = load_alias_map()
+
+    bets_key = bets[key].copy()
+    bets_key["HomeTeam"] = bets_key["HomeTeam"].replace(alias_map)
+    bets_key["AwayTeam"] = bets_key["AwayTeam"].replace(alias_map)
+
+    existing = set(map(tuple, bets_key.to_numpy()))
+
+    is_new = [
+        tuple(row) not in existing
+        for row in predictions[key].to_numpy()
+    ]
+
+    new_bets = predictions[is_new]
+
+    if new_bets.empty:
+        print("No new bets to add.")
+        return
+
+    with open(bets_path, encoding="utf-8") as f:
+        needs_newline = not f.read().endswith("\n")
+
+    # Append only, so existing rows keep their exact formatting
+    with open(bets_path, "a", encoding="utf-8", newline="") as f:
+
+        if needs_newline:
+            f.write("\n")
+
+        new_bets.reindex(columns=bets.columns).to_csv(
+            f, header=False, index=False
+        )
+
+    print(f"Added {len(new_bets)} new bet(s) to {bets_path}:")
+    print(new_bets[key + ["PredictedResult"]].to_string(index=False))
+
+
+def print_predictions(results):
 
     print()
     print("=" * 110)
@@ -384,3 +437,11 @@ if __name__ == "__main__":
             ]
         ].to_string(index=False)
     )
+
+
+if __name__ == "__main__":
+
+    results = predict_next_matches()
+    add_bets(results[["Date", 'Time', 'HomeTeam', 'AwayTeam', 'Prediction']])
+    print_predictions(results)
+
