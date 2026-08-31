@@ -313,19 +313,59 @@ def build_future_features(future, elos, team_history):
     return pd.DataFrame(future_features)
 
 
+PROB_COLUMNS = {"H": "HomeProb", "D": "DrawProb", "A": "AwayProb"}
+
+
+def build_history(matches):
+    """
+    Build the chronological features on a copy of ``matches`` and return
+    ``(matches, elos, team_history)`` - the end-of-history Elo ratings and
+    per-team match history needed to score upcoming fixtures.
+    """
+
+    matches = matches.sort_values("MatchDateTime").reset_index(drop=True).copy()
+
+    elos = build_elo_feature(matches)
+    build_goals_per_game_feature(matches)
+    team_history = build_xgd_last5_feature(matches)
+
+    return matches, elos, team_history
+
+
+def predict_fixtures(fixtures, model, elos, team_history):
+    """
+    Score ``fixtures`` (needs Date, Time, HomeTeam, AwayTeam - already
+    normalised) with a trained model. Returns a results frame with the
+    features, the predicted result and H/D/A probabilities (as percentages).
+    """
+
+    features = build_future_features(fixtures, elos, team_history)
+
+    results = fixtures[["Date", "Time", "HomeTeam", "AwayTeam"]].copy()
+    results[FEATURES] = features[FEATURES].round(2)
+    results["Prediction"] = model.predict(features[FEATURES])
+
+    probabilities = model.predict_proba(features[FEATURES])
+
+    for i, class_name in enumerate(model.classes_):
+        results[PROB_COLUMNS[class_name]] = probabilities[:, i] * 100
+
+    results[list(PROB_COLUMNS.values())] = results[
+        list(PROB_COLUMNS.values())
+    ].round(1)
+
+    return results
+
+
 def predict_next_matches(
     matches_path="data/processed/all_matches.csv",
     fixtures_path="data/raw/Future_Fixtures.csv"
 ):
 
     matches = pd.read_csv(matches_path)
-
     matches["MatchDateTime"] = pd.to_datetime(matches["MatchDateTime"])
-    matches = matches.sort_values("MatchDateTime").reset_index(drop=True)
 
-    elos = build_elo_feature(matches)
-    build_goals_per_game_feature(matches)
-    team_history = build_xgd_last5_feature(matches)
+    matches, elos, team_history = build_history(matches)
 
     calibrated_model = train_model(matches)
 
@@ -340,33 +380,7 @@ def predict_next_matches(
         future["AwayTeam"], alias_map, source_name=fixtures_path
     )
 
-    future_features = build_future_features(future, elos, team_history)
-
-    predictions = calibrated_model.predict(future_features[FEATURES])
-    probabilities = calibrated_model.predict_proba(future_features[FEATURES])
-
-    results = future[["Date", "Time", "HomeTeam", "AwayTeam"]].copy()
-    results[FEATURES] = future_features[FEATURES].round(2)
-    results["Prediction"] = predictions
-
-    classes = calibrated_model.classes_
-
-    for i, class_name in enumerate(classes):
-
-        if class_name == "H":
-            results["HomeProb"] = probabilities[:, i] * 100
-
-        elif class_name == "D":
-            results["DrawProb"] = probabilities[:, i] * 100
-
-        elif class_name == "A":
-            results["AwayProb"] = probabilities[:, i] * 100
-
-    results[["HomeProb", "DrawProb", "AwayProb"]] = results[
-        ["HomeProb", "DrawProb", "AwayProb"]
-    ].round(1)
-
-    return results
+    return predict_fixtures(future, calibrated_model, elos, team_history)
 
 def add_bets(predictions, bets_path="data/raw/Bets.csv"):
 
@@ -374,6 +388,11 @@ def add_bets(predictions, bets_path="data/raw/Bets.csv"):
 
     predictions = predictions.rename(columns={"Prediction": "PredictedResult"})
     predictions = predictions.assign(Div="E0")
+
+    # Carry the probabilities through if the caller supplied them
+    for column in PROB_COLUMNS.values():
+        if column not in predictions.columns:
+            predictions[column] = pd.NA
 
     key = ["Div", "Date", "Time", "HomeTeam", "AwayTeam"]
 
@@ -442,6 +461,11 @@ def print_predictions(results):
 if __name__ == "__main__":
 
     results = predict_next_matches()
-    add_bets(results[["Date", 'Time', 'HomeTeam', 'AwayTeam', 'Prediction']])
+    add_bets(
+        results[
+            ["Date", "Time", "HomeTeam", "AwayTeam", "Prediction"]
+            + list(PROB_COLUMNS.values())
+        ]
+    )
     print_predictions(results)
 

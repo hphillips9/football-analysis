@@ -9,7 +9,9 @@ Steps, in order:
     2. Settle any pending bets in data/raw/Bets.csv
     3. Parse data/raw/Next_Matchweek.txt into Future_Fixtures.csv
     4. Rebuild data/processed/all_matches.csv (results + Understat xG)
-    5. Predict the next gameweek and append the new bets to Bets.csv
+    5. Predict the next gameweek, append the new bets (with H/D/A
+       probabilities) to Bets.csv, and backfill probabilities on any
+       rows still missing them
 
 Before running, paste the upcoming fixture list into
 data/raw/Next_Matchweek.txt.
@@ -24,7 +26,13 @@ ROOT = Path(__file__).resolve().parents[1]
 from fetch_results import fetch_new_results, complete_bets
 from future_games_parser import build_future_fixtures
 from load_data import build_dataset
-from predict_next_matches import predict_next_matches, add_bets, print_predictions
+from predict_next_matches import (
+    predict_next_matches,
+    add_bets,
+    print_predictions,
+    PROB_COLUMNS,
+)
+from backfill_bet_probs import backfill
 
 
 def step(number, title):
@@ -53,7 +61,16 @@ def run_week(refresh_current=True, verbose=False):
 
     step(5, "Predict next gameweek")
     results = predict_next_matches()
-    add_bets(results[["Date", "Time", "HomeTeam", "AwayTeam", "Prediction"]])
+    add_bets(
+        results[
+            ["Date", "Time", "HomeTeam", "AwayTeam", "Prediction"]
+            + list(PROB_COLUMNS.values())
+        ]
+    )
+
+    # Safety net for any bet rows added by hand without probabilities
+    backfill()
+
     print_predictions(results)
 
 
