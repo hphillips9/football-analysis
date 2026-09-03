@@ -15,6 +15,8 @@ from team_names import load_alias_map, normalize_team_names
 HOME_ADVANTAGE = 130
 UPDATE_SIZE = 35
 
+BETS_PATH = "data/raw/Bets.csv"
+
 FEATURES = [
     "EloDiff",
     "XGDDiffLast5",
@@ -332,16 +334,68 @@ def build_history(matches):
     return matches, elos, team_history
 
 
+def infer_gameweek(fixtures, matches, bets_path=BETS_PATH):
+    """
+    Best guess at the gameweek for a batch of upcoming fixtures.
+
+    Dates alone don't pin a gameweek down (midweek + weekend rounds,
+    postponements), so the signal used is: one more than the highest
+    gameweek already seen this season - across both played matches and
+    fixtures already sitting in Bets.csv. If this exact batch is already
+    recorded, its stored gameweek is reused. An explicit "GW<n>" line at
+    the top of Next_Matchweek.txt overrides all of this (handled in
+    future_games_parser).
+    """
+
+    ordered = matches.sort_values("MatchDateTime")
+    latest_season = ordered["Season"].iloc[-1]
+    latest_played = ordered["MatchDateTime"].max()
+
+    counter = ordered.loc[ordered["Season"] == latest_season, "Gameweek"].max()
+    counter = int(counter) if pd.notna(counter) else 0
+
+    try:
+        bets = pd.read_csv(bets_path)
+        bets_when = pd.to_datetime(
+            bets["Date"] + " " + bets["Time"], dayfirst=True
+        )
+
+        # This exact batch already recorded -> reuse its gameweek
+        recorded = fixtures.merge(
+            bets[["Date", "HomeTeam", "AwayTeam", "Gameweek"]],
+            on=["Date", "HomeTeam", "AwayTeam"],
+            how="left",
+        )["Gameweek"]
+
+        if recorded.notna().all():
+            return recorded.astype(int).to_numpy()
+
+        # Otherwise pending bets (after the last played match) advance the count
+        pending = bets.loc[bets_when > latest_played, "Gameweek"].dropna()
+        if len(pending):
+            counter = max(counter, int(pending.max()))
+
+    except (FileNotFoundError, KeyError):
+        pass
+
+    return pd.Series(counter + 1, index=fixtures.index)
+
+
 def predict_fixtures(fixtures, model, elos, team_history):
     """
     Score ``fixtures`` (needs Date, Time, HomeTeam, AwayTeam - already
-    normalised) with a trained model. Returns a results frame with the
-    features, the predicted result and H/D/A probabilities (as percentages).
+    normalised; Gameweek optional) with a trained model. Returns a results
+    frame with the features, the predicted result and H/D/A probabilities
+    (as percentages).
     """
 
     features = build_future_features(fixtures, elos, team_history)
 
-    results = fixtures[["Date", "Time", "HomeTeam", "AwayTeam"]].copy()
+    base_columns = ["Date", "Time", "HomeTeam", "AwayTeam"]
+    if "Gameweek" in fixtures.columns:
+        base_columns = ["Gameweek"] + base_columns
+
+    results = fixtures[base_columns].copy()
     results[FEATURES] = features[FEATURES].round(2)
     results["Prediction"] = model.predict(features[FEATURES])
 
@@ -380,17 +434,20 @@ def predict_next_matches(
         future["AwayTeam"], alias_map, source_name=fixtures_path
     )
 
+    if "Gameweek" not in future.columns or future["Gameweek"].isna().any():
+        future["Gameweek"] = infer_gameweek(future, matches)
+
     return predict_fixtures(future, calibrated_model, elos, team_history)
 
-def add_bets(predictions, bets_path="data/raw/Bets.csv"):
+def add_bets(predictions, bets_path=BETS_PATH):
 
     bets = pd.read_csv(bets_path)
 
     predictions = predictions.rename(columns={"Prediction": "PredictedResult"})
     predictions = predictions.assign(Div="E0")
 
-    # Carry the probabilities through if the caller supplied them
-    for column in PROB_COLUMNS.values():
+    # Carry the gameweek and probabilities through if the caller supplied them
+    for column in ["Gameweek", *PROB_COLUMNS.values()]:
         if column not in predictions.columns:
             predictions[column] = pd.NA
 
@@ -439,21 +496,15 @@ def print_predictions(results):
     print("NEXT GAMEWEEK PREDICTIONS")
     print("=" * 110)
 
+    columns = ["Date", "Time", "HomeTeam", "AwayTeam"]
+    if "Gameweek" in results.columns:
+        columns = ["Gameweek"] + columns
+
     print(
         results[
-            [
-                "Date",
-                "Time",
-                "HomeTeam",
-                "AwayTeam",
-            ]
+            columns
             + FEATURES
-            + [
-                "Prediction",
-                "HomeProb",
-                "DrawProb",
-                "AwayProb"
-            ]
+            + ["Prediction", "HomeProb", "DrawProb", "AwayProb"]
         ].to_string(index=False)
     )
 
@@ -463,7 +514,7 @@ if __name__ == "__main__":
     results = predict_next_matches()
     add_bets(
         results[
-            ["Date", "Time", "HomeTeam", "AwayTeam", "Prediction"]
+            ["Gameweek", "Date", "Time", "HomeTeam", "AwayTeam", "Prediction"]
             + list(PROB_COLUMNS.values())
         ]
     )

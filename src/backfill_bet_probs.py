@@ -1,8 +1,9 @@
 """
-Fill in the model's H/D/A probabilities for every row in Bets.csv.
+Fill in the gameweek and the model's H/D/A probabilities for every row
+in Bets.csv.
 
-New bets get their probabilities from predict_next_matches going forward;
-this script backfills the ones placed before that column existed.
+New bets get both from predict_next_matches going forward; this script
+backfills the rows placed before those columns existed.
 
 Each bet is scored point-in-time: the model is retrained and the Elo /
 form features are rebuilt using only matches that kicked off *before*
@@ -34,8 +35,9 @@ MATCHES_PATH = ROOT / "data" / "processed" / "all_matches.csv"
 
 PROB_COLS = list(PROB_COLUMNS.values())
 
-# Div,Date,Time,HomeTeam,AwayTeam,PredictedResult,<probs>,ActualResult,Bet,Profit
+# Gameweek,Div,Date,Time,HomeTeam,AwayTeam,PredictedResult,<probs>,ActualResult,Bet,Profit
 COLUMN_ORDER = [
+    "Gameweek",
     "Div", "Date", "Time", "HomeTeam", "AwayTeam", "PredictedResult",
     *PROB_COLS,
     "ActualResult", "Bet", "Profit",
@@ -59,6 +61,37 @@ def assign_rounds(kickoffs, gap_days):
     return new_round.cumsum().reindex(kickoffs.index)
 
 
+def attach_gameweeks(bets, matches, alias_map, gap_days):
+    """
+    Gameweek for every bet: taken straight from all_matches where the game
+    has been played, and for fixtures not yet in the results, numbered as
+    rounds following the last played gameweek.
+    """
+
+    keyed = bets[["Date", "HomeTeam", "AwayTeam"]].copy()
+    keyed["HomeTeam"] = keyed["HomeTeam"].replace(alias_map)
+    keyed["AwayTeam"] = keyed["AwayTeam"].replace(alias_map)
+
+    played = matches[["Date", "HomeTeam", "AwayTeam", "Gameweek"]].drop_duplicates(
+        subset=["Date", "HomeTeam", "AwayTeam"]
+    )
+
+    gameweek = keyed.merge(
+        played, on=["Date", "HomeTeam", "AwayTeam"], how="left"
+    )["Gameweek"]
+    gameweek.index = bets.index
+
+    missing = bets.index[gameweek.isna()]
+
+    if len(missing):
+        base = int(gameweek.max()) if gameweek.notna().any() else 0
+        rounds = assign_rounds(bets.loc[missing, "_kickoff"], gap_days)
+        rank = {r: i for i, r in enumerate(sorted(rounds.dropna().unique()))}
+        gameweek.loc[missing] = rounds.map(rank) + base + 1
+
+    return gameweek.round().astype("Int64")
+
+
 def backfill(
     bets_path=BETS_PATH,
     matches_path=MATCHES_PATH,
@@ -68,7 +101,7 @@ def backfill(
 
     bets = pd.read_csv(bets_path)
 
-    for column in PROB_COLS:
+    for column in ["Gameweek", *PROB_COLS]:
         if column not in bets.columns:
             bets[column] = pd.NA
 
@@ -77,18 +110,28 @@ def backfill(
     )
 
     if force:
-        todo = bets.index
+        prob_todo = bets.index
+        gw_todo = bets.index
     else:
-        todo = bets.index[bets[PROB_COLS].isna().any(axis=1)]
+        prob_todo = bets.index[bets[PROB_COLS].isna().any(axis=1)]
+        gw_todo = bets.index[bets["Gameweek"].isna()]
 
-    if len(todo) == 0:
-        print("Every bet already has probabilities - nothing to backfill.")
+    if len(prob_todo) == 0 and len(gw_todo) == 0:
+        print("Every bet already has a gameweek and probabilities - nothing to do.")
         return _write(bets, bets_path)
 
     matches = load_matches(matches_path)
     alias_map = load_alias_map()
 
+    if len(gw_todo):
+        bets["Gameweek"] = attach_gameweeks(bets, matches, alias_map, gap_days)
+        print(f"Filled gameweek on {len(gw_todo)} bet(s).")
+
+    if len(prob_todo) == 0:
+        return _write(bets, bets_path)
+
     bets["_round"] = assign_rounds(bets["_kickoff"], gap_days)
+    todo = prob_todo
 
     filled = 0
 

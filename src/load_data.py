@@ -72,7 +72,7 @@ def discover_seasons(raw_dir=RAW_DIR):
 def load_result_files(raw_dir=RAW_DIR):
     """
     Concatenate every EPL*.csv result file into one chronologically
-    sorted frame with a Season column and a MatchDateTime column.
+    sorted frame with Season, Gameweek and MatchDateTime columns.
     """
 
     frames = []
@@ -107,12 +107,62 @@ def load_result_files(raw_dir=RAW_DIR):
         )
     )
 
-    return (
+    matches = (
         matches
         .sort_values("MatchDateTime")
         .reset_index(drop=True)
         .copy()
     )
+
+    return add_gameweek(matches)
+
+
+# ============================================================
+# GAMEWEEK
+# ============================================================
+
+def add_gameweek(matches):
+    """
+    Label every match with its gameweek (1-38).
+
+    For each team, its gameweek is the running count of matches it has
+    played that season. The two sides of a fixture normally agree; where a
+    postponement makes them differ, take the larger so a rescheduled game
+    carries the number of when it was actually played.
+    """
+
+    matches = matches.sort_values("MatchDateTime").reset_index(drop=True).copy()
+
+    # One row per team appearance, in chronological order, so a running
+    # count per team spans both home and away games
+    appearances = pd.concat([
+        pd.DataFrame({
+            "match": matches.index,
+            "Season": matches["Season"],
+            "Team": matches["HomeTeam"],
+            "side": "home",
+        }),
+        pd.DataFrame({
+            "match": matches.index,
+            "Season": matches["Season"],
+            "Team": matches["AwayTeam"],
+            "side": "away",
+        }),
+    ]).sort_values("match")
+
+    appearances["n"] = (
+        appearances.groupby(["Season", "Team"]).cumcount() + 1
+    )
+
+    home_n = appearances[appearances["side"] == "home"].set_index("match")["n"]
+    away_n = appearances[appearances["side"] == "away"].set_index("match")["n"]
+
+    matches["Gameweek"] = (
+        pd.concat([home_n, away_n], axis=1).max(axis=1).astype(int)
+    )
+
+    lead = ["Season", "Gameweek"]
+    return matches[lead + [c for c in matches.columns if c not in lead]]
 
 
 # ============================================================

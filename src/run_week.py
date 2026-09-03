@@ -54,7 +54,13 @@ def run_week(refresh_current=True, verbose=False):
     complete_bets()
 
     step(3, "Parse next matchweek")
-    build_future_fixtures()
+    try:
+        build_future_fixtures()
+    except (FileNotFoundError, ValueError) as exc:
+        print(
+            f"Skipping - {exc}\n"
+            f"Keeping the existing Future_Fixtures.csv."
+        )
 
     step(4, "Rebuild match dataset")
     build_dataset(refresh_current=refresh_current, verbose=verbose)
@@ -63,7 +69,7 @@ def run_week(refresh_current=True, verbose=False):
     results = predict_next_matches()
     add_bets(
         results[
-            ["Date", "Time", "HomeTeam", "AwayTeam", "Prediction"]
+            ["Gameweek", "Date", "Time", "HomeTeam", "AwayTeam", "Prediction"]
             + list(PROB_COLUMNS.values())
         ]
     )
