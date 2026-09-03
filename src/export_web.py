@@ -161,12 +161,15 @@ def build_stats(bets):
     if settled.empty:
         return {
             "asOf": None,
-            "totalBets": 0,
+            "totalBets": int(len(bets)),
             "settledBets": 0,
             "pendingBets": int(bets["ActualResult"].isna().sum()),
             "calibration": [],
             "byGameweek": [],
+            "byPick": [],
             "bankroll": [],
+            "bestBets": [],
+            "worstBets": [],
         }
 
     stake = settled["Bet"].fillna(1)
@@ -211,6 +214,39 @@ def build_stats(bets):
             "profit": round(float(group["Profit"].sum()), 2),
         })
 
+    # How the model's picks split, and how each does
+    outcome_labels = {"H": "Home", "D": "Draw", "A": "Away"}
+    by_pick = []
+    for outcome, label in outcome_labels.items():
+        picks = settled[settled["PredictedResult"] == outcome]
+        by_pick.append({
+            "pick": outcome,
+            "label": label,
+            "bets": int(len(picks)),
+            "hits": int(picks["Won"].sum()),
+            "hitRate": (
+                round(float(picks["Won"].mean()) * 100, 1)
+                if len(picks) else None
+            ),
+            "profit": round(float(picks["Profit"].sum()), 2),
+        })
+
+    # Biggest wins, and the most confident misses
+    best_bets = [
+        _bet_summary(row)
+        for _, row in settled[settled["Won"]]
+        .sort_values("Profit", ascending=False)
+        .head(3)
+        .iterrows()
+    ]
+    worst_bets = [
+        _bet_summary(row)
+        for _, row in settled[~settled["Won"]]
+        .sort_values("PickProb", ascending=False)
+        .head(3)
+        .iterrows()
+    ]
+
     return {
         "asOf": settled["Kickoff"].max().date().isoformat(),
         "totalBets": int(len(bets)),
@@ -226,13 +262,28 @@ def build_stats(bets):
         "roi": round(profit / staked * 100, 1) if staked else 0.0,
         "calibration": calibration,
         "byGameweek": by_gameweek,
+        "byPick": by_pick,
         "bankroll": bankroll,
+        "bestBets": best_bets,
+        "worstBets": worst_bets,
     }
 
 
 # ============================================================
 # HELPERS
 # ============================================================
+
+def _bet_summary(row):
+    return {
+        "gameweek": int(row["Gameweek"]),
+        "date": row["Date"],
+        "match": f'{row["HomeTeam"]} v {row["AwayTeam"]}',
+        "pick": row["PredictedResult"],
+        "result": row["ActualResult"],
+        "pickProb": round(float(row["PickProb"]), 1),
+        "profit": round(float(row["Profit"]), 2),
+    }
+
 
 def _num(value):
     return None if pd.isna(value) else round(float(value), 2)
