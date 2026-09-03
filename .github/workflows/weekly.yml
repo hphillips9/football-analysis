@@ -18,6 +18,7 @@ on:
         type: boolean
         default: false
   push:
+    branches: [main]
     paths:
       - "data/raw/Next_Matchweek.txt"
   schedule:
