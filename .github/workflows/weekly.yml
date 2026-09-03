@@ -1,16 +1,24 @@
 name: Weekly update
 
-# Runs the full pipeline (fetch results, settle bets, rebuild the
-# dataset, predict the next gameweek) and commits the refreshed data
-# files back to the repo.
+# Fetches results, settles bets and rebuilds the dataset, then commits
+# the refreshed data files back to the repo.
 #
-#   - "Run workflow" button        -> on demand
-#   - push Next_Matchweek.txt      -> new fixtures pasted, predict them
-#   - Tuesday / Friday 08:00 UTC   -> pick up results after each round
+#   - Tuesday / Friday 08:00 UTC   -> results only, after each round
+#   - "Run workflow" button        -> results only, unless "predict" is ticked
+#   - push Next_Matchweek.txt      -> also predicts that gameweek and records bets
+#
+# Scheduled runs never predict: they would only re-chew a stale fixture
+# list. Predictions happen when you deliberately push new fixtures.
 
 on:
   workflow_dispatch:
+    inputs:
+      predict:
+        description: "Also predict the next gameweek from Next_Matchweek.txt"
+        type: boolean
+        default: false
   push:
+    branches: [main]
     paths:
       - "data/raw/Next_Matchweek.txt"
   schedule:
@@ -38,8 +46,13 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run weekly pipeline
-        run: python src/run_week.py
+      - name: Run pipeline
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.predict }}" = "true" ]; then
+            python src/run_week.py
+          else
+            python src/run_week.py --no-predict
+          fi
 
       - name: Commit refreshed data
         run: |

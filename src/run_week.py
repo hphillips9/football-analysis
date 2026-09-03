@@ -1,20 +1,25 @@
 """
-Run the full weekly update in one command.
+Run the weekly update in one command.
 
-    python src/run_week.py
+    python src/run_week.py                 # results + predictions
+    python src/run_week.py --no-predict    # results only
 
-Steps, in order:
+Always:
 
     1. Fetch last week's results into data/raw/EPL26-27.csv
     2. Settle any pending bets in data/raw/Bets.csv
-    3. Parse data/raw/Next_Matchweek.txt into Future_Fixtures.csv
-    4. Rebuild data/processed/all_matches.csv (results + Understat xG)
-    5. Predict the next gameweek, append the new bets (with H/D/A
-       probabilities) to Bets.csv, and backfill probabilities on any
-       rows still missing them
+    3. Rebuild data/processed/all_matches.csv (results + Understat xG)
+    4. Backfill gameweek / probabilities on any Bets.csv rows missing them
 
-Before running, paste the upcoming fixture list into
-data/raw/Next_Matchweek.txt.
+With predictions (the default, skipped by --no-predict):
+
+    5. Parse data/raw/Next_Matchweek.txt into Future_Fixtures.csv
+    6. Predict that gameweek and append the new bets (with gameweek and
+       H/D/A probabilities) to Bets.csv
+
+Paste the upcoming fixture list into data/raw/Next_Matchweek.txt before
+a prediction run. Scheduled automation runs --no-predict so it never
+re-predicts a stale fixture list.
 """
 
 import os
@@ -42,7 +47,7 @@ def step(number, title):
     print("#" * 70)
 
 
-def run_week(refresh_current=True, verbose=False):
+def run_week(refresh_current=True, verbose=False, predict=True):
 
     # The result/bet scripts use paths relative to the repo root
     os.chdir(ROOT)
@@ -53,19 +58,24 @@ def run_week(refresh_current=True, verbose=False):
     step(2, "Settle pending bets")
     complete_bets()
 
-    step(3, "Parse next matchweek")
+    step(3, "Rebuild match dataset")
+    build_dataset(refresh_current=refresh_current, verbose=verbose)
+
+    step(4, "Backfill gameweek / probabilities")
+    backfill()
+
+    if not predict:
+        print("\n--no-predict: skipping the next-gameweek prediction.")
+        return
+
+    step(5, "Parse next matchweek")
     try:
         build_future_fixtures()
     except (FileNotFoundError, ValueError) as exc:
-        print(
-            f"Skipping - {exc}\n"
-            f"Keeping the existing Future_Fixtures.csv."
-        )
+        print(f"Skipping predictions - {exc}")
+        return
 
-    step(4, "Rebuild match dataset")
-    build_dataset(refresh_current=refresh_current, verbose=verbose)
-
-    step(5, "Predict next gameweek")
+    step(6, "Predict next gameweek")
     results = predict_next_matches()
     add_bets(
         results[
@@ -73,10 +83,6 @@ def run_week(refresh_current=True, verbose=False):
             + list(PROB_COLUMNS.values())
         ]
     )
-
-    # Safety net for any bet rows added by hand without probabilities
-    backfill()
-
     print_predictions(results)
 
 
@@ -93,9 +99,18 @@ def main():
         action="store_true",
         help="Use cached Understat data instead of re-scraping the current season."
     )
+    parser.add_argument(
+        "--no-predict",
+        action="store_true",
+        help="Only fetch results and settle bets - do not predict the next gameweek."
+    )
     args = parser.parse_args()
 
-    run_week(refresh_current=not args.no_refresh, verbose=args.verbose)
+    run_week(
+        refresh_current=not args.no_refresh,
+        verbose=args.verbose,
+        predict=not args.no_predict,
+    )
 
 
 if __name__ == "__main__":
