@@ -1,0 +1,121 @@
+{
+  "generated": "2026-09-03T20:20:08+00:00",
+  "teams": [
+    {
+      "team": "Arsenal",
+      "elo": 1807
+    },
+    {
+      "team": "Manchester City",
+      "elo": 1772
+    },
+    {
+      "team": "Manchester United",
+      "elo": 1672
+    },
+    {
+      "team": "Bournemouth",
+      "elo": 1632
+    },
+    {
+      "team": "Liverpool",
+      "elo": 1617
+    },
+    {
+      "team": "Aston Villa",
+      "elo": 1606
+    },
+    {
+      "team": "Brentford",
+      "elo": 1589
+    },
+    {
+      "team": "Chelsea",
+      "elo": 1586
+    },
+    {
+      "team": "Brighton and Hove Albion",
+      "elo": 1576
+    },
+    {
+      "team": "Newcastle United",
+      "elo": 1562
+    },
+    {
+      "team": "Leeds United",
+      "elo": 1556
+    },
+    {
+      "team": "Sunderland",
+      "elo": 1552
+    },
+    {
+      "team": "Everton",
+      "elo": 1551
+    },
+    {
+      "team": "Hull City",
+      "elo": 1543
+    },
+    {
+      "team": "Nottingham Forest",
+      "elo": 1537
+    },
+    {
+      "team": "Fulham",
+      "elo": 1516
+    },
+    {
+      "team": "West Ham United",
+      "elo": 1503
+    },
+    {
+      "team": "Crystal Palace",
+      "elo": 1495
+    },
+    {
+      "team": "Coventry",
+      "elo": 1474
+    },
+    {
+      "team": "Tottenham Hotspur",
+      "elo": 1437
+    },
+    {
+      "team": "Wolverhampton Wanderers",
+      "elo": 1390
+    },
+    {
+      "team": "Ipswich",
+      "elo": 1360
+    },
+    {
+      "team": "Luton",
+      "elo": 1358
+    },
+    {
+      "team": "Leicester City",
+      "elo": 1343
+    },
+    {
+      "team": "Burnley",
+      "elo": 1331
+    },
+    {
+      "team": "Norwich City",
+      "elo": 1308
+    },
+    {
+      "team": "Sheffield United",
+      "elo": 1298
+    },
+    {
+      "team": "Watford",
+      "elo": 1288
+    },
+    {
+      "team": "Southampton",
+      "elo": 1241
+    }
+  ]
+}

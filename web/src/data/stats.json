@@ -1,0 +1,293 @@
+{
+  "generated": "2026-09-03T20:20:08+00:00",
+  "asOf": "2026-08-31",
+  "totalBets": 30,
+  "settledBets": 20,
+  "pendingBets": 10,
+  "wins": 11,
+  "losses": 9,
+  "hitRate": 55.0,
+  "baselineHitRate": 50.0,
+  "edge": 5.0,
+  "profit": 0.97,
+  "staked": 20.0,
+  "roi": 4.8,
+  "calibration": [
+    {
+      "label": "0-40%",
+      "bets": 3,
+      "avgProb": 37.6,
+      "hitRate": 66.7
+    },
+    {
+      "label": "40-45%",
+      "bets": 3,
+      "avgProb": 41.8,
+      "hitRate": 33.3
+    },
+    {
+      "label": "45-50%",
+      "bets": 4,
+      "avgProb": 47.6,
+      "hitRate": 50.0
+    },
+    {
+      "label": "50-55%",
+      "bets": 4,
+      "avgProb": 52.5,
+      "hitRate": 50.0
+    },
+    {
+      "label": "55-60%",
+      "bets": 4,
+      "avgProb": 56.5,
+      "hitRate": 50.0
+    },
+    {
+      "label": "60-100%",
+      "bets": 2,
+      "avgProb": 70.7,
+      "hitRate": 100.0
+    }
+  ],
+  "byGameweek": [
+    {
+      "gameweek": 1,
+      "bets": 10,
+      "hits": 5,
+      "profit": -0.66
+    },
+    {
+      "gameweek": 2,
+      "bets": 10,
+      "hits": 6,
+      "profit": 1.63
+    }
+  ],
+  "byPick": [
+    {
+      "pick": "H",
+      "label": "Home",
+      "bets": 15,
+      "hits": 8,
+      "hitRate": 53.3,
+      "profit": -0.03
+    },
+    {
+      "pick": "D",
+      "label": "Draw",
+      "bets": 0,
+      "hits": 0,
+      "hitRate": null,
+      "profit": 0.0
+    },
+    {
+      "pick": "A",
+      "label": "Away",
+      "bets": 5,
+      "hits": 3,
+      "hitRate": 60.0,
+      "profit": 1.0
+    }
+  ],
+  "bankroll": [
+    {
+      "kickoff": "2026-08-21T20:00:00",
+      "gameweek": 1,
+      "match": "Arsenal v Coventry",
+      "profit": 0.17,
+      "cumulative": 0.17
+    },
+    {
+      "kickoff": "2026-08-22T12:30:00",
+      "gameweek": 1,
+      "match": "Hull City v Manchester United",
+      "profit": -1.0,
+      "cumulative": -0.83
+    },
+    {
+      "kickoff": "2026-08-22T15:00:00",
+      "gameweek": 1,
+      "match": "Everton v Crystal Palace",
+      "profit": 1.15,
+      "cumulative": 0.32
+    },
+    {
+      "kickoff": "2026-08-22T15:00:00",
+      "gameweek": 1,
+      "match": "Ipswich v Sunderland",
+      "profit": -1.0,
+      "cumulative": -0.68
+    },
+    {
+      "kickoff": "2026-08-22T15:00:00",
+      "gameweek": 1,
+      "match": "Nottingham Forest v Leeds United",
+      "profit": -1.0,
+      "cumulative": -1.68
+    },
+    {
+      "kickoff": "2026-08-22T17:30:00",
+      "gameweek": 1,
+      "match": "Brentford v Tottenham Hotspur",
+      "profit": 1.38,
+      "cumulative": -0.3
+    },
+    {
+      "kickoff": "2026-08-23T14:00:00",
+      "gameweek": 1,
+      "match": "Brighton and Hove Albion v Aston Villa",
+      "profit": 1.2,
+      "cumulative": 0.9
+    },
+    {
+      "kickoff": "2026-08-23T14:00:00",
+      "gameweek": 1,
+      "match": "Manchester City v Bournemouth",
+      "profit": 0.44,
+      "cumulative": 1.34
+    },
+    {
+      "kickoff": "2026-08-23T16:30:00",
+      "gameweek": 1,
+      "match": "Newcastle United v Liverpool",
+      "profit": -1.0,
+      "cumulative": 0.34
+    },
+    {
+      "kickoff": "2026-08-24T20:00:00",
+      "gameweek": 1,
+      "match": "Fulham v Chelsea",
+      "profit": -1.0,
+      "cumulative": -0.66
+    },
+    {
+      "kickoff": "2026-08-28T20:00:00",
+      "gameweek": 2,
+      "match": "Crystal Palace v Manchester City",
+      "profit": 0.6,
+      "cumulative": -0.06
+    },
+    {
+      "kickoff": "2026-08-29T12:30:00",
+      "gameweek": 2,
+      "match": "Liverpool v Nottingham Forest",
+      "profit": -1.0,
+      "cumulative": -1.06
+    },
+    {
+      "kickoff": "2026-08-29T15:00:00",
+      "gameweek": 2,
+      "match": "Bournemouth v Everton",
+      "profit": -1.0,
+      "cumulative": -2.06
+    },
+    {
+      "kickoff": "2026-08-29T15:00:00",
+      "gameweek": 2,
+      "match": "Coventry v Hull City",
+      "profit": -1.0,
+      "cumulative": -3.06
+    },
+    {
+      "kickoff": "2026-08-29T17:30:00",
+      "gameweek": 2,
+      "match": "Tottenham Hotspur v Newcastle United",
+      "profit": 1.9,
+      "cumulative": -1.16
+    },
+    {
+      "kickoff": "2026-08-30T14:00:00",
+      "gameweek": 2,
+      "match": "Chelsea v Brighton and Hove Albion",
+      "profit": 0.85,
+      "cumulative": -0.31
+    },
+    {
+      "kickoff": "2026-08-30T14:00:00",
+      "gameweek": 2,
+      "match": "Leeds United v Brentford",
+      "profit": -1.0,
+      "cumulative": -1.31
+    },
+    {
+      "kickoff": "2026-08-30T14:00:00",
+      "gameweek": 2,
+      "match": "Sunderland v Fulham",
+      "profit": 1.38,
+      "cumulative": 0.07
+    },
+    {
+      "kickoff": "2026-08-30T16:30:00",
+      "gameweek": 2,
+      "match": "Manchester United v Ipswich",
+      "profit": 0.4,
+      "cumulative": 0.47
+    },
+    {
+      "kickoff": "2026-08-31T20:00:00",
+      "gameweek": 2,
+      "match": "Aston Villa v Arsenal",
+      "profit": 0.5,
+      "cumulative": 0.97
+    }
+  ],
+  "bestBets": [
+    {
+      "gameweek": 2,
+      "date": "29/08/2026",
+      "match": "Tottenham Hotspur v Newcastle United",
+      "pick": "A",
+      "result": "A",
+      "pickProb": 38.9,
+      "profit": 1.9
+    },
+    {
+      "gameweek": 2,
+      "date": "30/08/2026",
+      "match": "Sunderland v Fulham",
+      "pick": "H",
+      "result": "H",
+      "pickProb": 50.5,
+      "profit": 1.38
+    },
+    {
+      "gameweek": 1,
+      "date": "22/08/2026",
+      "match": "Brentford v Tottenham Hotspur",
+      "pick": "H",
+      "result": "H",
+      "pickProb": 46.6,
+      "profit": 1.38
+    }
+  ],
+  "worstBets": [
+    {
+      "gameweek": 2,
+      "date": "29/08/2026",
+      "match": "Bournemouth v Everton",
+      "pick": "H",
+      "result": "D",
+      "pickProb": 56.2,
+      "profit": -1.0
+    },
+    {
+      "gameweek": 2,
+      "date": "29/08/2026",
+      "match": "Liverpool v Nottingham Forest",
+      "pick": "H",
+      "result": "D",
+      "pickProb": 56.2,
+      "profit": -1.0
+    },
+    {
+      "gameweek": 1,
+      "date": "22/08/2026",
+      "match": "Ipswich v Sunderland",
+      "pick": "A",
+      "result": "H",
+      "pickProb": 53.9,
+      "profit": -1.0
+    }
+  ]
+}
