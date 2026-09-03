@@ -10,12 +10,9 @@ Always:
     2. Settle any pending bets in data/raw/Bets.csv
     3. Rebuild data/processed/all_matches.csv (results + Understat xG)
     4. Backfill gameweek / probabilities on any Bets.csv rows missing them
-
-With predictions (the default, skipped by --no-predict):
-
-    5. Parse data/raw/Next_Matchweek.txt into Future_Fixtures.csv
-    6. Predict that gameweek and append the new bets (with gameweek and
-       H/D/A probabilities) to Bets.csv
+    5. Predict the next gameweek from Next_Matchweek.txt and append the
+       new bets to Bets.csv (skipped by --no-predict)
+    6. Export web/src/data/*.json for the website
 
 Paste the upcoming fixture list into data/raw/Next_Matchweek.txt before
 a prediction run. Scheduled automation runs --no-predict so it never
@@ -38,6 +35,7 @@ from predict_next_matches import (
     PROB_COLUMNS,
 )
 from backfill_bet_probs import backfill
+from export_web import export_web
 
 
 def step(number, title):
@@ -64,18 +62,25 @@ def run_week(refresh_current=True, verbose=False, predict=True):
     step(4, "Backfill gameweek / probabilities")
     backfill()
 
-    if not predict:
+    if predict:
+        _predict_next_gameweek()
+    else:
         print("\n--no-predict: skipping the next-gameweek prediction.")
-        return
 
-    step(5, "Parse next matchweek")
+    step(6, "Export website data")
+    export_web()
+
+
+def _predict_next_gameweek():
+
+    step(5, "Predict next gameweek")
+
     try:
         build_future_fixtures()
     except (FileNotFoundError, ValueError) as exc:
         print(f"Skipping predictions - {exc}")
         return
 
-    step(6, "Predict next gameweek")
     results = predict_next_matches()
     add_bets(
         results[
