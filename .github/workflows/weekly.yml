@@ -1,0 +1,56 @@
+name: Weekly update
+
+# Runs the full pipeline (fetch results, settle bets, rebuild the
+# dataset, predict the next gameweek) and commits the refreshed data
+# files back to the repo.
+#
+#   - "Run workflow" button        -> on demand
+#   - push Next_Matchweek.txt      -> new fixtures pasted, predict them
+#   - Tuesday / Friday 08:00 UTC   -> pick up results after each round
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "data/raw/Next_Matchweek.txt"
+  schedule:
+    - cron: "0 8 * * 2,5"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run weekly pipeline
+        run: python src/run_week.py
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "Weekly data update [skip ci]"
+            git push
+          fi
+
+      # Later: a second job here builds web/ and deploys it to Pages.
