@@ -1,0 +1,52 @@
+{
+  "generated": "2026-09-07T19:41:27+00:00",
+  "seasons": [
+    {
+      "season": "2022/23",
+      "matches": 380,
+      "trainedOn": "2021/22",
+      "trainSeasons": 1,
+      "accuracy": 55.8,
+      "logLoss": 0.969,
+      "baselineAccuracy": 48.4,
+      "edge": 7.4
+    },
+    {
+      "season": "2023/24",
+      "matches": 380,
+      "trainedOn": "2021/22-2022/23",
+      "trainSeasons": 2,
+      "accuracy": 57.9,
+      "logLoss": 0.939,
+      "baselineAccuracy": 46.1,
+      "edge": 11.8
+    },
+    {
+      "season": "2024/25",
+      "matches": 380,
+      "trainedOn": "2021/22-2023/24",
+      "trainSeasons": 3,
+      "accuracy": 53.7,
+      "logLoss": 0.983,
+      "baselineAccuracy": 40.8,
+      "edge": 12.9
+    },
+    {
+      "season": "2025/26",
+      "matches": 380,
+      "trainedOn": "2021/22-2024/25",
+      "trainSeasons": 4,
+      "accuracy": 49.7,
+      "logLoss": 1.031,
+      "baselineAccuracy": 42.6,
+      "edge": 7.1
+    }
+  ],
+  "overall": {
+    "matches": 1520,
+    "accuracy": 54.3,
+    "logLoss": 0.98,
+    "baselineAccuracy": 44.5,
+    "edge": 9.8
+  }
+}
