@@ -59,12 +59,13 @@ Inputs.table(
 Plot.plot({
   width,
   height: 240,
-  x: { label: "gameweek", tickFormat: "d", padding: 0.55 },
+  x: { label: "gameweek", tickFormat: "d", interval: 1, domain: [0.5, Math.max(10, ...stats.byGameweek.map((g) => g.gameweek)) + 0.5] },
   y: { label: "profit (u)", grid: true },
   marks: [
     Plot.ruleY([0]),
-    Plot.barY(stats.byGameweek.filter((g) => g.profit != null), {
-      x: "gameweek",
+    Plot.rectY(stats.byGameweek.filter((g) => g.profit != null), {
+      x1: (d) => d.gameweek - 0.35,
+      x2: (d) => d.gameweek + 0.35,
       y: "profit",
       fill: (d) => (d.profit >= 0 ? "#16a34a" : "#dc2626"),
       fillOpacity: (d) => (d.gameweek === gw ? 1 : 0.45),

@@ -22,6 +22,7 @@ Bars are each gameweek's result; the line is the running total.
 
 ```js
 const gwDone = stats.byGameweek.filter((g) => g.profit != null);
+const gwMax = Math.max(10, ...stats.byGameweek.map((g) => g.gameweek)) + 0.5;
 ```
 
 ```js
@@ -29,15 +30,16 @@ Plot.plot({
   width,
   height: 320,
   marginRight: 40,
-  x: { label: "gameweek", tickFormat: "d", padding: 0.55 },
+  x: { label: "gameweek", tickFormat: "d", interval: 1, domain: [0.5, gwMax] },
   y: { label: "units", grid: true },
   marks: [
     Plot.ruleY([0]),
-    Plot.barY(gwDone, {
-      x: "gameweek",
+    Plot.rectY(gwDone, {
+      x1: (d) => d.gameweek - 0.35,
+      x2: (d) => d.gameweek + 0.35,
       y: "profit",
       fill: (d) => (d.profit >= 0 ? "#16a34a" : "#dc2626"),
-      fillOpacity: 0.55,
+      fillOpacity: 0.5,
       tip: true,
       title: (d) => `GW${d.gameweek}\n${d.hits}/${d.settled} correct\n${signed(d.profit)}u  (running ${signed(d.cumulativeProfit)}u)`,
     }),
