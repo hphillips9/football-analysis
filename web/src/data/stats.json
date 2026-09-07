@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03T20:20:08+00:00",
+  "generated": "2026-09-07T19:53:05+00:00",
   "asOf": "2026-08-31",
   "totalBets": 30,
   "settledBets": 20,
@@ -54,14 +54,32 @@
     {
       "gameweek": 1,
       "bets": 10,
+      "settled": 10,
       "hits": 5,
-      "profit": -0.66
+      "hitRate": 50.0,
+      "profit": -0.66,
+      "cumulativeProfit": -0.66,
+      "status": "complete"
     },
     {
       "gameweek": 2,
       "bets": 10,
+      "settled": 10,
       "hits": 6,
-      "profit": 1.63
+      "hitRate": 60.0,
+      "profit": 1.63,
+      "cumulativeProfit": 0.97,
+      "status": "complete"
+    },
+    {
+      "gameweek": 3,
+      "bets": 10,
+      "settled": 0,
+      "hits": 0,
+      "hitRate": null,
+      "profit": null,
+      "cumulativeProfit": null,
+      "status": "pending"
     }
   ],
   "byPick": [
