@@ -10,7 +10,9 @@ export default {
   ],
 
   root: "src",
-  cleanUrls: true,
+  // Framework emits relative URLs, so the site works unchanged from the
+  // /football-analysis/ subpath on GitHub Pages.
+  preserveExtension: false,
   head: '<meta name="color-scheme" content="light dark">',
   footer: "A hobby model. Predictions are not betting advice.",
 };
