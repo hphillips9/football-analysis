@@ -1,112 +1,114 @@
 # Track Record
 
-Every prediction is a 1-unit flat-stake bet at the best available price.
+Every prediction is treated as a **1-unit flat-stake bet** at the best price on
+offer (Sky Bet, or the market average when that's missing). Profit is in units.
 
 ```js
+import { resultName, signed } from "./components/charts.js";
 const stats = await FileAttachment("data/stats.json").json();
-const betsFile = await FileAttachment("data/bets.json").json();
-const bets = betsFile.bets;
+const bets = (await FileAttachment("data/bets.json").json()).bets;
 ```
 
 <div class="grid grid-cols-4">
   <div class="card"><h2>Settled bets</h2><span class="big">${stats.settledBets}</span>${stats.pendingBets} pending</div>
-  <div class="card"><h2>Record</h2><span class="big">${stats.wins}–${stats.losses}</span>${stats.hitRate}% hit rate</div>
-  <div class="card"><h2>Profit</h2><span class="big">${stats.profit >= 0 ? "+" : ""}${stats.profit} u</span></div>
-  <div class="card"><h2>ROI</h2><span class="big">${stats.roi >= 0 ? "+" : ""}${stats.roi}%</span></div>
+  <div class="card"><h2>Record</h2><span class="big">${stats.wins}–${stats.losses}</span>${stats.hitRate}% correct</div>
+  <div class="card"><h2>Profit</h2><span class="big">${signed(stats.profit)} u</span>on ${stats.staked} staked</div>
+  <div class="card"><h2>ROI</h2><span class="big">${signed(stats.roi, 1)}%</span></div>
 </div>
 
-## Cumulative P/L
+## Profit and loss
+
+Bars are each gameweek's result; the line is the running total.
 
 ```js
-Plot.plot({
-  width,
-  height: 340,
-  x: { type: "utc", label: null },
-  y: { label: "units", grid: true },
-  marks: [
-    Plot.ruleY([0]),
-    Plot.areaY(stats.bankroll, {
-      x: (d) => new Date(d.kickoff),
-      y: "cumulative",
-      curve: "step-after",
-      fillOpacity: 0.12,
-    }),
-    Plot.lineY(stats.bankroll, {
-      x: (d) => new Date(d.kickoff),
-      y: "cumulative",
-      curve: "step-after",
-      strokeWidth: 2,
-    }),
-    Plot.dot(stats.bankroll, {
-      x: (d) => new Date(d.kickoff),
-      y: "cumulative",
-      fill: "currentColor",
-      r: 2.5,
-      tip: true,
-      title: (d) =>
-        `${d.match}\nGW${d.gameweek}  ${d.profit >= 0 ? "+" : ""}${d.profit}u  →  ${d.cumulative}u`,
-    }),
-  ],
-});
+const gwDone = stats.byGameweek.filter((g) => g.profit != null);
 ```
 
-## Profit by gameweek
-
 ```js
 Plot.plot({
   width,
-  height: 220,
-  x: { label: "gameweek", tickFormat: "d" },
+  height: 320,
+  marginRight: 40,
+  x: { label: "gameweek", tickFormat: "d", padding: 0.55 },
   y: { label: "units", grid: true },
   marks: [
     Plot.ruleY([0]),
-    Plot.barY(stats.byGameweek, {
+    Plot.barY(gwDone, {
       x: "gameweek",
       y: "profit",
       fill: (d) => (d.profit >= 0 ? "#16a34a" : "#dc2626"),
+      fillOpacity: 0.55,
       tip: true,
-      title: (d) => `GW${d.gameweek}: ${d.hits}/${d.bets} correct, ${d.profit >= 0 ? "+" : ""}${d.profit}u`,
+      title: (d) => `GW${d.gameweek}\n${d.hits}/${d.settled} correct\n${signed(d.profit)}u  (running ${signed(d.cumulativeProfit)}u)`,
+    }),
+    Plot.lineY(gwDone, { x: "gameweek", y: "cumulativeProfit", strokeWidth: 2, curve: "monotone-x" }),
+    Plot.dot(gwDone, { x: "gameweek", y: "cumulativeProfit", fill: "currentColor", r: 3 }),
+    Plot.text(gwDone, { x: "gameweek", y: "cumulativeProfit", text: (d) => signed(d.cumulativeProfit, 1), dy: -12, fontSize: 10 }),
+  ],
+})
+```
+
+## Bet by bet
+
+```js
+Plot.plot({
+  width,
+  height: 300,
+  x: { label: "bet number", tickFormat: "d" },
+  y: { label: "cumulative units", grid: true },
+  marks: [
+    Plot.ruleY([0]),
+    Plot.lineY(stats.bankroll, { x: (d, i) => i + 1, y: "cumulative", curve: "step-after", strokeWidth: 2 }),
+    Plot.dot(stats.bankroll, {
+      x: (d, i) => i + 1,
+      y: "cumulative",
+      fill: (d) => (d.profit >= 0 ? "#16a34a" : "#dc2626"),
+      r: 3,
+      tip: true,
+      title: (d) => `${d.match} · GW${d.gameweek}\n${signed(d.profit)}u  →  ${signed(d.cumulative)}u`,
     }),
   ],
-});
+})
 ```
 
 <div class="grid grid-cols-2">
   <div class="card">
-    <h2>Best bets</h2>
-    ${htl.html`<ul>${stats.bestBets.map((b) => htl.html`<li>${b.match} — picked ${b.pick}, ${b.pickProb}% → <b>+${b.profit}u</b></li>`)}</ul>`}
+    <h2>Biggest wins</h2>
+    ${htl.html`<ul>${stats.bestBets.map((b) => htl.html`<li><b>${b.match}</b> — ${resultName[b.pick]} at ${b.pickProb}% → <b>${signed(b.profit)}u</b></li>`)}</ul>`}
   </div>
   <div class="card">
     <h2>Most confident misses</h2>
-    ${htl.html`<ul>${stats.worstBets.map((b) => htl.html`<li>${b.match} — picked ${b.pick} at ${b.pickProb}%, finished ${b.result}</li>`)}</ul>`}
+    ${htl.html`<ul>${stats.worstBets.map((b) => htl.html`<li><b>${b.match}</b> — ${resultName[b.pick]} at ${b.pickProb}%, finished ${resultName[b.result]}</li>`)}</ul>`}
   </div>
 </div>
 
 ## Every bet
 
 ```js
-const gwPick = view(
-  Inputs.select(
-    ["all", ...new Set(bets.map((b) => b.gameweek))],
-    { label: "Gameweek", value: "all" }
-  )
-);
+const gwFilter = view(Inputs.select(["all season", ...Array.from(new Set(bets.map((b) => b.gameweek))).sort((a, b) => a - b)], { label: "Gameweek", value: "all season" }));
 ```
 
 ```js
-const shown = gwPick === "all" ? bets : bets.filter((b) => b.gameweek === gwPick);
+const shown = gwFilter === "all season" ? bets : bets.filter((b) => b.gameweek === gwFilter);
 ```
 
 ```js
-Inputs.table(shown, {
-  columns: ["gameweek", "date", "home", "away", "prediction", "homeProb", "drawProb", "awayProb", "result", "profit"],
-  header: {
-    gameweek: "GW", home: "Home", away: "Away", prediction: "Pick",
-    homeProb: "H%", drawProb: "D%", awayProb: "A%", result: "FT", profit: "P/L",
-  },
-  format: {
-    profit: (x) => (x == null ? "—" : (x >= 0 ? "+" : "") + x.toFixed(2)),
-  },
-  align: { profit: "right", homeProb: "right", drawProb: "right", awayProb: "right" },
-});
+Inputs.table(
+  shown.map((b) => ({
+    GW: b.gameweek,
+    Date: b.date,
+    Match: `${b.home} v ${b.away}`,
+    Pick: resultName[b.prediction],
+    "H %": b.homeProb, "D %": b.drawProb, "A %": b.awayProb,
+    FT: b.settled ? resultName[b.result] : "—",
+    "P/L": b.settled ? signed(b.profit) : "",
+  })),
+  {
+    sort: "Date",
+    align: { "H %": "right", "D %": "right", "A %": "right", "P/L": "right" },
+    rows: 20,
+  }
+)
 ```
+
+<div class="small note">Updated ${new Date(stats.generated).toLocaleString()}.</div>

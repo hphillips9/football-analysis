@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03T20:49:07+00:00",
+  "generated": "2026-09-07T19:53:05+00:00",
   "teams": [
     {
       "team": "Arsenal",
@@ -66,10 +66,6 @@
       "elo": 1516
     },
     {
-      "team": "West Ham United",
-      "elo": 1503
-    },
-    {
       "team": "Crystal Palace",
       "elo": 1495
     },
@@ -82,40 +78,8 @@
       "elo": 1437
     },
     {
-      "team": "Wolverhampton Wanderers",
-      "elo": 1390
-    },
-    {
       "team": "Ipswich",
       "elo": 1360
-    },
-    {
-      "team": "Luton",
-      "elo": 1358
-    },
-    {
-      "team": "Leicester City",
-      "elo": 1343
-    },
-    {
-      "team": "Burnley",
-      "elo": 1331
-    },
-    {
-      "team": "Norwich City",
-      "elo": 1308
-    },
-    {
-      "team": "Sheffield United",
-      "elo": 1298
-    },
-    {
-      "team": "Watford",
-      "elo": 1288
-    },
-    {
-      "team": "Southampton",
-      "elo": 1241
     }
   ]
 }

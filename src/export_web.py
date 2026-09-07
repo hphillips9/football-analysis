@@ -63,10 +63,19 @@ def load_bets():
 
 
 def current_elos(matches):
+    """Elo ratings, restricted to the teams in the current season."""
 
     ratings = build_elo_feature(matches.copy())
 
-    return {team: round(rating) for team, rating in ratings.items()}
+    latest_season = matches.sort_values("MatchDateTime")["Season"].iloc[-1]
+    current = matches[matches["Season"] == latest_season]
+    teams = set(current["HomeTeam"]) | set(current["AwayTeam"])
+
+    return {
+        team: round(rating)
+        for team, rating in ratings.items()
+        if team in teams
+    }
 
 
 # ============================================================
@@ -204,14 +213,38 @@ def build_stats(bets):
             "hitRate": round(float(group["Won"].mean()) * 100, 1),
         })
 
-    # Per gameweek
+    # Per gameweek - every gameweek on record, settled or not, with a
+    # running cumulative profit through the settled ones
     by_gameweek = []
-    for gameweek, group in settled.groupby("Gameweek"):
+    running_gw = 0.0
+    for gameweek in sorted(bets["Gameweek"].dropna().unique()):
+        group = bets[bets["Gameweek"] == gameweek]
+        done = group[group["Profit"].notna()]
+
+        gw_profit = round(float(done["Profit"].sum()), 2) if len(done) else None
+        if gw_profit is not None:
+            running_gw += gw_profit
+
+        if len(done) == 0:
+            status = "pending"
+        elif len(done) == len(group):
+            status = "complete"
+        else:
+            status = "partial"
+
         by_gameweek.append({
             "gameweek": int(gameweek),
             "bets": int(len(group)),
-            "hits": int(group["Won"].sum()),
-            "profit": round(float(group["Profit"].sum()), 2),
+            "settled": int(len(done)),
+            "hits": int(done["Won"].sum()) if len(done) else 0,
+            "hitRate": (
+                round(float(done["Won"].mean()) * 100, 1) if len(done) else None
+            ),
+            "profit": gw_profit,
+            "cumulativeProfit": (
+                round(running_gw, 2) if gw_profit is not None else None
+            ),
+            "status": status,
         })
 
     # How the model's picks split, and how each does

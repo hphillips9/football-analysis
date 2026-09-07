@@ -1,15 +1,16 @@
 export default {
-  title: "Brian The Football Brain",
+  title: "Premier League Football Predictor",
 
-  // Left-hand nav. Home doubles as "this gameweek".
   pages: [
     { name: "This Gameweek", path: "/" },
+    { name: "Gameweeks", path: "/gameweeks" },
     { name: "Track Record", path: "/track-record" },
-    { name: "The Model", path: "/model" },
+    { name: "Ratings", path: "/ratings" },
+    { name: "About", path: "/about" },
   ],
 
   root: "src",
   cleanUrls: true,
   head: '<meta name="color-scheme" content="light dark">',
-  footer: "Brian The Football Brain — a hobby model. Not betting advice.",
+  footer: "A hobby model. Predictions are not betting advice.",
 };
