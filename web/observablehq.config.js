@@ -4,6 +4,7 @@ export default {
   pages: [
     { name: "This Gameweek", path: "/" },
     { name: "Gameweeks", path: "/gameweeks" },
+    { name: "League Table", path: "/table" },
     { name: "Track Record", path: "/track-record" },
     { name: "Ratings", path: "/ratings" },
     { name: "About", path: "/about" },

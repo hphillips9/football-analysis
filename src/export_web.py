@@ -8,6 +8,8 @@ Reads data/processed/all_matches.csv, data/raw/Bets.csv and produces:
     web/src/data/predictions.json  - the upcoming gameweek's picks
     web/src/data/bets.json         - every bet, with result and profit
     web/src/data/stats.json        - headline numbers, calibration, by-gameweek
+    web/src/data/elo.json          - current Elo ratings
+    web/src/data/table.json        - current standings + projected final table
 
 Runs as part of run_week.py so CI keeps the site's data current.
 """
@@ -19,7 +21,13 @@ from datetime import datetime, timezone
 import pandas as pd
 
 from team_names import load_alias_map
-from predict_next_matches import build_elo_feature, HOME_ADVANTAGE
+from predict_next_matches import (
+    build_elo_feature,
+    build_history,
+    train_model,
+    predict_fixtures,
+    HOME_ADVANTAGE,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -303,6 +311,209 @@ def build_stats(bets):
 
 
 # ============================================================
+# LEAGUE TABLE
+# ============================================================
+
+def _blank_row(team):
+    return {
+        "team": team, "played": 0, "won": 0, "drawn": 0, "lost": 0,
+        "gf": 0, "ga": 0, "points": 0,
+    }
+
+
+def _award(rows, home, away, outcome, home_goals=None, away_goals=None):
+
+    rows[home]["played"] += 1
+    rows[away]["played"] += 1
+
+    if home_goals is not None:
+        rows[home]["gf"] += home_goals
+        rows[home]["ga"] += away_goals
+        rows[away]["gf"] += away_goals
+        rows[away]["ga"] += home_goals
+
+    if outcome == "H":
+        rows[home]["won"] += 1
+        rows[away]["lost"] += 1
+        rows[home]["points"] += 3
+    elif outcome == "A":
+        rows[away]["won"] += 1
+        rows[home]["lost"] += 1
+        rows[away]["points"] += 3
+    else:
+        rows[home]["drawn"] += 1
+        rows[away]["drawn"] += 1
+        rows[home]["points"] += 1
+        rows[away]["points"] += 1
+
+
+def _rank(rows):
+
+    ordered = sorted(
+        rows,
+        key=lambda r: (
+            -r["points"],
+            -(r["gf"] - r["ga"]),
+            -r["gf"],
+            r["team"],
+        ),
+    )
+
+    for position, row in enumerate(ordered, start=1):
+        row["position"] = position
+        row["gd"] = row["gf"] - row["ga"]
+
+    return ordered
+
+
+def _current_season(matches):
+    ordered = matches.sort_values("MatchDateTime")
+    season = ordered["Season"].iloc[-1]
+    played = ordered[ordered["Season"] == season]
+    teams = sorted(set(played["HomeTeam"]) | set(played["AwayTeam"]))
+    return season, played, teams
+
+
+def current_standings(matches):
+    """The league table so far, from played matches this season."""
+
+    _, played, teams = _current_season(matches)
+    rows = {team: _blank_row(team) for team in teams}
+
+    for _, match in played.iterrows():
+        _award(
+            rows, match["HomeTeam"], match["AwayTeam"], match["FTR"],
+            int(match["FTHG"]), int(match["FTAG"]),
+        )
+
+    return _rank(rows.values())
+
+
+def predicted_standings(matches, bets):
+    """
+    The table if the model's recorded pick for every match played so far
+    this season had been the actual result. No goal difference - picks are
+    results, not scores - so ties break on the real table's order.
+    """
+
+    _, played, teams = _current_season(matches)
+    played_pairs = set(zip(played["HomeTeam"], played["AwayTeam"]))
+
+    season_bets = bets[
+        bets.apply(
+            lambda row: (row["HomeTeam"], row["AwayTeam"]) in played_pairs,
+            axis=1,
+        )
+        & bets["PredictedResult"].notna()
+    ]
+
+    real_order = {
+        row["team"]: row["position"] for row in current_standings(matches)
+    }
+
+    rows = {team: _blank_row(team) for team in teams}
+    for _, bet in season_bets.iterrows():
+        _award(
+            rows, bet["HomeTeam"], bet["AwayTeam"], bet["PredictedResult"]
+        )
+
+    ordered = sorted(
+        rows.values(),
+        key=lambda r: (-r["points"], real_order[r["team"]]),
+    )
+    for position, row in enumerate(ordered, start=1):
+        row["position"] = position
+        row.pop("gf", None)
+        row.pop("ga", None)
+
+    return ordered
+
+
+def projected_table(matches):
+    """
+    Projected final table: current standings plus, for every fixture not
+    yet played this season, each team's *expected* points from the model's
+    probabilities (3 x P(win) + 1 x P(draw)). Expected wins/draws/losses
+    are rounded for display. Goal difference is carried from games already
+    played - the model predicts results, not scores.
+    """
+
+    matches, elos, team_history = build_history(matches)
+    model = train_model(matches)
+
+    _, played, teams = _current_season(matches)
+    played_pairs = set(zip(played["HomeTeam"], played["AwayTeam"]))
+
+    remaining = pd.DataFrame([
+        {"Date": "", "Time": "", "HomeTeam": home, "AwayTeam": away}
+        for home in teams
+        for away in teams
+        if home != away and (home, away) not in played_pairs
+    ])
+
+    scored = predict_fixtures(remaining, model, elos, team_history)
+
+    rows = {row["team"]: dict(row) for row in current_standings(matches)}
+    for row in rows.values():
+        row.pop("position", None)
+        row.pop("gd", None)
+        row["points"] = float(row["points"])
+        for key in ("won", "drawn", "lost"):
+            row[key] = float(row[key])
+
+    for _, fixture in scored.iterrows():
+        home, away = fixture["HomeTeam"], fixture["AwayTeam"]
+        p_home = fixture["HomeProb"] / 100
+        p_draw = fixture["DrawProb"] / 100
+        p_away = fixture["AwayProb"] / 100
+
+        rows[home]["played"] += 1
+        rows[away]["played"] += 1
+        rows[home]["points"] += 3 * p_home + p_draw
+        rows[away]["points"] += 3 * p_away + p_draw
+        rows[home]["won"] += p_home
+        rows[away]["won"] += p_away
+        rows[home]["drawn"] += p_draw
+        rows[away]["drawn"] += p_draw
+        rows[home]["lost"] += p_away
+        rows[away]["lost"] += p_home
+
+    ranked = _rank(rows.values())  # on exact expected points
+
+    for row in ranked:
+        row["points"] = round(row["points"])
+        for key in ("won", "drawn", "lost"):
+            row[key] = round(row[key])
+
+    return ranked, len(remaining)
+
+
+def build_table(matches, bets):
+
+    current = current_standings(matches)
+    predicted = predicted_standings(matches, bets)
+    projected, remaining = projected_table(matches)
+
+    current_position = {row["team"]: row["position"] for row in current}
+    for table in (predicted, projected):
+        for row in table:
+            was = current_position[row["team"]]
+            row["currentPosition"] = was
+            row["movement"] = was - row["position"]
+
+    season, played, _ = _current_season(matches)
+
+    return {
+        "season": season,
+        "playedFixtures": int(len(played)),
+        "remainingFixtures": int(remaining),
+        "current": current,
+        "predicted": predicted,
+        "projected": projected,
+    }
+
+
+# ============================================================
 # HELPERS
 # ============================================================
 
@@ -376,6 +587,11 @@ def export_web():
     _write("elo.json", {
         "generated": generated,
         "teams": elo_table,
+    })
+
+    _write("table.json", {
+        "generated": generated,
+        **build_table(matches, bets),
     })
 
 

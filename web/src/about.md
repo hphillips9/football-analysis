@@ -38,6 +38,10 @@ and every pick is recorded as a 1-unit flat-stake bet at the best available
 price (Sky Bet, or the market average if that's missing). Results and profit are
 filled in automatically once the games are played.
 
+**The projected table** on the [League Table](/table) page scores every fixture
+not yet played by expected points — 3 × P(win) + 1 × P(draw) — and adds them to
+the current standings.
+
 ## How it scored on past seasons
 
 Each season was predicted by a model trained **only on the seasons before it**.
