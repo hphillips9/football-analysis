@@ -1,3 +1,8 @@
+import io
+import time
+import urllib.error
+import urllib.request
+
 import pandas as pd
 
 from team_names import load_alias_map
@@ -11,10 +16,37 @@ STAKE = 1
 ODDS_COLUMN = {"H": "SKBH", "D": "SKBD", "A": "SKBA"}
 FALLBACK_ODDS_COLUMN = {"H": "AvgH", "D": "AvgD", "A": "AvgA"}
 
+REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; football-analysis)"}
+RETRY_DELAYS = (5, 20, 60)  # seconds between the 4 attempts
+
+
+def _download_csv(url):
+    """Fetch a CSV, retrying transient failures. Raises ConnectionError
+    if it still can't after every attempt."""
+
+    last_error = None
+
+    for delay in (0, *RETRY_DELAYS):
+
+        if delay:
+            print(f"  retrying in {delay}s ...")
+            time.sleep(delay)
+
+        try:
+            request = urllib.request.Request(url, headers=REQUEST_HEADERS)
+            with urllib.request.urlopen(request, timeout=30) as response:
+                return pd.read_csv(io.BytesIO(response.read()))
+
+        except (urllib.error.URLError, TimeoutError, ValueError) as error:
+            last_error = error
+            print(f"  {url} -> {error}")
+
+    raise ConnectionError(f"could not fetch {url}: {last_error}")
+
 
 def fetch_new_results(season_url=SEASON_URL, local_path=LOCAL_PATH):
 
-    remote = pd.read_csv(season_url)
+    remote = _download_csv(season_url)
     local = pd.read_csv(local_path)
 
     existing_keys = set(
@@ -133,5 +165,8 @@ def complete_bets(bets_path=BETS_PATH, local_path=LOCAL_PATH):
 
 
 if __name__ == "__main__":
-    fetch_new_results()
+    try:
+        fetch_new_results()
+    except ConnectionError as exc:
+        print(f"Skipping fetch - {exc}")
     complete_bets()

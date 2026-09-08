@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-07T19:53:05+00:00",
+  "generated": "2026-09-08T06:49:08+00:00",
   "bets": [
     {
       "gameweek": 1,
@@ -332,10 +332,10 @@
       "homeProb": 19.8,
       "drawProb": 24.3,
       "awayProb": 55.8,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "A",
+      "profit": 0.44,
+      "won": true,
+      "settled": true
     },
     {
       "gameweek": 3,
@@ -348,10 +348,10 @@
       "homeProb": 38.5,
       "drawProb": 24.6,
       "awayProb": 37.0,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "D",
+      "profit": -1.0,
+      "won": false,
+      "settled": true
     },
     {
       "gameweek": 3,
@@ -364,10 +364,10 @@
       "homeProb": 43.7,
       "drawProb": 26.3,
       "awayProb": 30.0,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "D",
+      "profit": -1.0,
+      "won": false,
+      "settled": true
     },
     {
       "gameweek": 3,
@@ -380,10 +380,10 @@
       "homeProb": 53.4,
       "drawProb": 22.1,
       "awayProb": 24.5,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "D",
+      "profit": -1.0,
+      "won": false,
+      "settled": true
     },
     {
       "gameweek": 3,
@@ -396,10 +396,10 @@
       "homeProb": 52.7,
       "drawProb": 22.4,
       "awayProb": 24.9,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "A",
+      "profit": -1.0,
+      "won": false,
+      "settled": true
     },
     {
       "gameweek": 3,
@@ -412,10 +412,10 @@
       "homeProb": 69.9,
       "drawProb": 20.9,
       "awayProb": 9.2,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "H",
+      "profit": 0.14,
+      "won": true,
+      "settled": true
     },
     {
       "gameweek": 3,
@@ -428,10 +428,10 @@
       "homeProb": 55.1,
       "drawProb": 23.7,
       "awayProb": 21.3,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "D",
+      "profit": -1.0,
+      "won": false,
+      "settled": true
     },
     {
       "gameweek": 3,
@@ -444,10 +444,10 @@
       "homeProb": 39.7,
       "drawProb": 24.4,
       "awayProb": 35.9,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "D",
+      "profit": -1.0,
+      "won": false,
+      "settled": true
     },
     {
       "gameweek": 3,
@@ -460,10 +460,10 @@
       "homeProb": 22.8,
       "drawProb": 27.9,
       "awayProb": 49.3,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "D",
+      "profit": -1.0,
+      "won": false,
+      "settled": true
     },
     {
       "gameweek": 3,
@@ -476,6 +476,166 @@
       "homeProb": 67.1,
       "drawProb": 21.0,
       "awayProb": 11.9,
+      "result": "H",
+      "profit": 0.7,
+      "won": true,
+      "settled": true
+    },
+    {
+      "gameweek": 4,
+      "date": "12/09/2026",
+      "time": "15:00",
+      "kickoff": "2026-09-12T15:00:00",
+      "home": "Aston Villa",
+      "away": "Nottingham Forest",
+      "prediction": "H",
+      "homeProb": 50.7,
+      "drawProb": 25.1,
+      "awayProb": 24.2,
+      "result": null,
+      "profit": null,
+      "won": null,
+      "settled": false
+    },
+    {
+      "gameweek": 4,
+      "date": "12/09/2026",
+      "time": "15:00",
+      "kickoff": "2026-09-12T15:00:00",
+      "home": "Bournemouth",
+      "away": "Brentford",
+      "prediction": "H",
+      "homeProb": 47.6,
+      "drawProb": 25.5,
+      "awayProb": 26.9,
+      "result": null,
+      "profit": null,
+      "won": null,
+      "settled": false
+    },
+    {
+      "gameweek": 4,
+      "date": "12/09/2026",
+      "time": "15:00",
+      "kickoff": "2026-09-12T15:00:00",
+      "home": "Chelsea",
+      "away": "Hull City",
+      "prediction": "H",
+      "homeProb": 50.4,
+      "drawProb": 23.9,
+      "awayProb": 25.7,
+      "result": null,
+      "profit": null,
+      "won": null,
+      "settled": false
+    },
+    {
+      "gameweek": 4,
+      "date": "12/09/2026",
+      "time": "15:00",
+      "kickoff": "2026-09-12T15:00:00",
+      "home": "Crystal Palace",
+      "away": "Ipswich",
+      "prediction": "H",
+      "homeProb": 57.6,
+      "drawProb": 24.6,
+      "awayProb": 17.8,
+      "result": null,
+      "profit": null,
+      "won": null,
+      "settled": false
+    },
+    {
+      "gameweek": 4,
+      "date": "12/09/2026",
+      "time": "15:00",
+      "kickoff": "2026-09-12T15:00:00",
+      "home": "Liverpool",
+      "away": "Fulham",
+      "prediction": "H",
+      "homeProb": 57.0,
+      "drawProb": 23.8,
+      "awayProb": 19.1,
+      "result": null,
+      "profit": null,
+      "won": null,
+      "settled": false
+    },
+    {
+      "gameweek": 4,
+      "date": "12/09/2026",
+      "time": "17:30",
+      "kickoff": "2026-09-12T17:30:00",
+      "home": "Tottenham Hotspur",
+      "away": "Everton",
+      "prediction": "A",
+      "homeProb": 37.4,
+      "drawProb": 23.9,
+      "awayProb": 38.7,
+      "result": null,
+      "profit": null,
+      "won": null,
+      "settled": false
+    },
+    {
+      "gameweek": 4,
+      "date": "12/09/2026",
+      "time": "20:00",
+      "kickoff": "2026-09-12T20:00:00",
+      "home": "Sunderland",
+      "away": "Arsenal",
+      "prediction": "A",
+      "homeProb": 16.7,
+      "drawProb": 26.1,
+      "awayProb": 57.2,
+      "result": null,
+      "profit": null,
+      "won": null,
+      "settled": false
+    },
+    {
+      "gameweek": 4,
+      "date": "13/09/2026",
+      "time": "14:00",
+      "kickoff": "2026-09-13T14:00:00",
+      "home": "Coventry",
+      "away": "Brighton and Hove Albion",
+      "prediction": "A",
+      "homeProb": 31.4,
+      "drawProb": 26.3,
+      "awayProb": 42.3,
+      "result": null,
+      "profit": null,
+      "won": null,
+      "settled": false
+    },
+    {
+      "gameweek": 4,
+      "date": "13/09/2026",
+      "time": "16:30",
+      "kickoff": "2026-09-13T16:30:00",
+      "home": "Manchester United",
+      "away": "Manchester City",
+      "prediction": "H",
+      "homeProb": 40.7,
+      "drawProb": 22.8,
+      "awayProb": 36.5,
+      "result": null,
+      "profit": null,
+      "won": null,
+      "settled": false
+    },
+    {
+      "gameweek": 4,
+      "date": "14/09/2026",
+      "time": "20:00",
+      "kickoff": "2026-09-14T20:00:00",
+      "home": "Leeds United",
+      "away": "Newcastle United",
+      "prediction": "H",
+      "homeProb": 45.2,
+      "drawProb": 24.8,
+      "awayProb": 30.0,
       "result": null,
       "profit": null,
       "won": null,

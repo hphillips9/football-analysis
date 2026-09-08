@@ -51,7 +51,10 @@ def run_week(refresh_current=True, verbose=False, predict=True):
     os.chdir(ROOT)
 
     step(1, "Fetch new results")
-    fetch_new_results()
+    try:
+        fetch_new_results()
+    except ConnectionError as exc:
+        print(f"Skipping - {exc}\nCarrying on with the results already on file.")
 
     step(2, "Settle pending bets")
     complete_bets()
