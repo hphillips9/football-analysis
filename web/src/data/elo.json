@@ -1,85 +1,85 @@
 {
-  "generated": "2026-09-11T12:40:04+00:00",
+  "generated": "2026-09-19T12:59:32+00:00",
   "teams": [
     {
       "team": "Arsenal",
-      "elo": 1811
+      "elo": 1823
     },
     {
       "team": "Manchester City",
-      "elo": 1775
+      "elo": 1794
     },
     {
       "team": "Manchester United",
-      "elo": 1672
+      "elo": 1653
     },
     {
       "team": "Bournemouth",
-      "elo": 1635
+      "elo": 1627
     },
     {
       "team": "Liverpool",
-      "elo": 1628
-    },
-    {
-      "team": "Aston Villa",
-      "elo": 1610
-    },
-    {
-      "team": "Chelsea",
-      "elo": 1582
+      "elo": 1617
     },
     {
       "team": "Brentford",
-      "elo": 1581
+      "elo": 1590
     },
     {
       "team": "Brighton and Hove Albion",
-      "elo": 1569
+      "elo": 1588
+    },
+    {
+      "team": "Aston Villa",
+      "elo": 1582
     },
     {
       "team": "Leeds United",
-      "elo": 1564
+      "elo": 1575
     },
     {
-      "team": "Sunderland",
-      "elo": 1560
-    },
-    {
-      "team": "Newcastle United",
-      "elo": 1559
-    },
-    {
-      "team": "Everton",
-      "elo": 1551
-    },
-    {
-      "team": "Hull City",
-      "elo": 1540
+      "team": "Chelsea",
+      "elo": 1574
     },
     {
       "team": "Nottingham Forest",
-      "elo": 1526
+      "elo": 1553
     },
     {
-      "team": "Crystal Palace",
-      "elo": 1520
+      "team": "Everton",
+      "elo": 1552
+    },
+    {
+      "team": "Newcastle United",
+      "elo": 1548
+    },
+    {
+      "team": "Sunderland",
+      "elo": 1548
+    },
+    {
+      "team": "Hull City",
+      "elo": 1548
     },
     {
       "team": "Fulham",
-      "elo": 1492
+      "elo": 1503
+    },
+    {
+      "team": "Crystal Palace",
+      "elo": 1490
     },
     {
       "team": "Coventry",
-      "elo": 1472
+      "elo": 1453
     },
     {
       "team": "Tottenham Hotspur",
-      "elo": 1447
+      "elo": 1445
     },
     {
       "team": "Ipswich",
-      "elo": 1348
+      "elo": 1378
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-11T12:40:04+00:00",
+  "generated": "2026-09-19T12:59:32+00:00",
   "gameweek": 4,
   "fixtures": [
     {
@@ -12,11 +12,11 @@
       "homeProb": 50.7,
       "drawProb": 25.1,
       "awayProb": 24.2,
-      "homeElo": 1610,
-      "awayElo": 1526,
-      "eloGap": 214,
-      "result": null,
-      "settled": false
+      "homeElo": 1582,
+      "awayElo": 1553,
+      "eloGap": 159,
+      "result": "A",
+      "settled": true
     },
     {
       "date": "12/09/2026",
@@ -28,11 +28,11 @@
       "homeProb": 47.6,
       "drawProb": 25.5,
       "awayProb": 26.9,
-      "homeElo": 1635,
-      "awayElo": 1581,
-      "eloGap": 184,
-      "result": null,
-      "settled": false
+      "homeElo": 1627,
+      "awayElo": 1590,
+      "eloGap": 167,
+      "result": "D",
+      "settled": true
     },
     {
       "date": "12/09/2026",
@@ -44,11 +44,11 @@
       "homeProb": 50.4,
       "drawProb": 23.9,
       "awayProb": 25.7,
-      "homeElo": 1582,
-      "awayElo": 1540,
-      "eloGap": 172,
-      "result": null,
-      "settled": false
+      "homeElo": 1574,
+      "awayElo": 1548,
+      "eloGap": 156,
+      "result": "D",
+      "settled": true
     },
     {
       "date": "12/09/2026",
@@ -60,11 +60,11 @@
       "homeProb": 57.6,
       "drawProb": 24.6,
       "awayProb": 17.8,
-      "homeElo": 1520,
-      "awayElo": 1348,
-      "eloGap": 302,
-      "result": null,
-      "settled": false
+      "homeElo": 1490,
+      "awayElo": 1378,
+      "eloGap": 242,
+      "result": "A",
+      "settled": true
     },
     {
       "date": "12/09/2026",
@@ -76,11 +76,11 @@
       "homeProb": 57.0,
       "drawProb": 23.8,
       "awayProb": 19.1,
-      "homeElo": 1628,
-      "awayElo": 1492,
-      "eloGap": 266,
-      "result": null,
-      "settled": false
+      "homeElo": 1617,
+      "awayElo": 1503,
+      "eloGap": 244,
+      "result": "D",
+      "settled": true
     },
     {
       "date": "12/09/2026",
@@ -92,11 +92,11 @@
       "homeProb": 37.4,
       "drawProb": 23.9,
       "awayProb": 38.7,
-      "homeElo": 1447,
-      "awayElo": 1551,
-      "eloGap": 26,
-      "result": null,
-      "settled": false
+      "homeElo": 1445,
+      "awayElo": 1552,
+      "eloGap": 23,
+      "result": "D",
+      "settled": true
     },
     {
       "date": "12/09/2026",
@@ -108,11 +108,11 @@
       "homeProb": 16.7,
       "drawProb": 26.1,
       "awayProb": 57.2,
-      "homeElo": 1560,
-      "awayElo": 1811,
-      "eloGap": -121,
-      "result": null,
-      "settled": false
+      "homeElo": 1548,
+      "awayElo": 1823,
+      "eloGap": -145,
+      "result": "A",
+      "settled": true
     },
     {
       "date": "13/09/2026",
@@ -124,11 +124,11 @@
       "homeProb": 31.4,
       "drawProb": 26.3,
       "awayProb": 42.3,
-      "homeElo": 1472,
-      "awayElo": 1569,
-      "eloGap": 33,
-      "result": null,
-      "settled": false
+      "homeElo": 1453,
+      "awayElo": 1588,
+      "eloGap": -5,
+      "result": "A",
+      "settled": true
     },
     {
       "date": "13/09/2026",
@@ -140,11 +140,11 @@
       "homeProb": 40.7,
       "drawProb": 22.8,
       "awayProb": 36.5,
-      "homeElo": 1672,
-      "awayElo": 1775,
-      "eloGap": 27,
-      "result": null,
-      "settled": false
+      "homeElo": 1653,
+      "awayElo": 1794,
+      "eloGap": -11,
+      "result": "A",
+      "settled": true
     },
     {
       "date": "14/09/2026",
@@ -156,11 +156,11 @@
       "homeProb": 45.2,
       "drawProb": 24.8,
       "awayProb": 30.0,
-      "homeElo": 1564,
-      "awayElo": 1559,
-      "eloGap": 135,
-      "result": null,
-      "settled": false
+      "homeElo": 1575,
+      "awayElo": 1548,
+      "eloGap": 157,
+      "result": "H",
+      "settled": true
     }
   ]
 }

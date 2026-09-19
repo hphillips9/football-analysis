@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-11T12:40:04+00:00",
+  "generated": "2026-09-19T12:59:32+00:00",
   "bets": [
     {
       "gameweek": 1,
@@ -492,10 +492,10 @@
       "homeProb": 50.7,
       "drawProb": 25.1,
       "awayProb": 24.2,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "A",
+      "profit": -1.0,
+      "won": false,
+      "settled": true
     },
     {
       "gameweek": 4,
@@ -508,10 +508,10 @@
       "homeProb": 47.6,
       "drawProb": 25.5,
       "awayProb": 26.9,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "D",
+      "profit": -1.0,
+      "won": false,
+      "settled": true
     },
     {
       "gameweek": 4,
@@ -524,10 +524,10 @@
       "homeProb": 50.4,
       "drawProb": 23.9,
       "awayProb": 25.7,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "D",
+      "profit": -1.0,
+      "won": false,
+      "settled": true
     },
     {
       "gameweek": 4,
@@ -540,10 +540,10 @@
       "homeProb": 57.6,
       "drawProb": 24.6,
       "awayProb": 17.8,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "A",
+      "profit": -1.0,
+      "won": false,
+      "settled": true
     },
     {
       "gameweek": 4,
@@ -556,10 +556,10 @@
       "homeProb": 57.0,
       "drawProb": 23.8,
       "awayProb": 19.1,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "D",
+      "profit": -1.0,
+      "won": false,
+      "settled": true
     },
     {
       "gameweek": 4,
@@ -572,10 +572,10 @@
       "homeProb": 37.4,
       "drawProb": 23.9,
       "awayProb": 38.7,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "D",
+      "profit": -1.0,
+      "won": false,
+      "settled": true
     },
     {
       "gameweek": 4,
@@ -588,10 +588,10 @@
       "homeProb": 16.7,
       "drawProb": 26.1,
       "awayProb": 57.2,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "A",
+      "profit": 0.44,
+      "won": true,
+      "settled": true
     },
     {
       "gameweek": 4,
@@ -604,10 +604,10 @@
       "homeProb": 31.4,
       "drawProb": 26.3,
       "awayProb": 42.3,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "A",
+      "profit": 0.85,
+      "won": true,
+      "settled": true
     },
     {
       "gameweek": 4,
@@ -620,10 +620,10 @@
       "homeProb": 40.7,
       "drawProb": 22.8,
       "awayProb": 36.5,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "A",
+      "profit": -1.0,
+      "won": false,
+      "settled": true
     },
     {
       "gameweek": 4,
@@ -636,10 +636,10 @@
       "homeProb": 45.2,
       "drawProb": 24.8,
       "awayProb": 30.0,
-      "result": null,
-      "profit": null,
-      "won": null,
-      "settled": false
+      "result": "H",
+      "profit": 1.38,
+      "won": true,
+      "settled": true
     }
   ]
 }

@@ -40,7 +40,10 @@ filled in automatically once the games are played.
 
 **The projected table** on the [League Table](/table) page scores every fixture
 not yet played by expected points — 3 × P(win) + 1 × P(draw) — and adds them to
-the current standings.
+the current standings. Its projected goal difference comes from a separate
+Dixon-Coles goal model (team attack/defence ratings fit on match results,
+predicting expected goals rather than win/draw/loss) — a display-only addition
+for this one table, no part of the H/D/A prediction model above.
 
 ## How it scored on past seasons
 
