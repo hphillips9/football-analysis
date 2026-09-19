@@ -109,7 +109,7 @@ def load_result_files(raw_dir=RAW_DIR):
 
     matches = (
         matches
-        .sort_values("MatchDateTime")
+        .sort_values(["MatchDateTime", "HomeTeam", "AwayTeam"])
         .reset_index(drop=True)
         .copy()
     )
@@ -131,7 +131,12 @@ def add_gameweek(matches):
     carries the number of when it was actually played.
     """
 
-    matches = matches.sort_values("MatchDateTime").reset_index(drop=True).copy()
+    matches = (
+        matches
+        .sort_values(["MatchDateTime", "HomeTeam", "AwayTeam"])
+        .reset_index(drop=True)
+        .copy()
+    )
 
     # One row per team appearance, in chronological order, so a running
     # count per team spans both home and away games
