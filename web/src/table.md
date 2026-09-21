@@ -54,8 +54,9 @@ overrated climb here, teams it wrote off fall.
 ## Projected final table
 
 Every fixture not yet played, scored by **expected points** — 3 × P(win) +
-1 × P(draw) — added to the current standings. Goal difference is carried from
-games already played.
+1 × P(draw) — added to the current standings. Goal difference also projects
+forward, using a separate Dixon-Coles goal model's expected scorelines rather
+than freezing at today's value.
 
 ```js
 Inputs.table(

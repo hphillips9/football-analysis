@@ -28,6 +28,7 @@ from predict_next_matches import (
     predict_fixtures,
     HOME_ADVANTAGE,
 )
+from dixon_coles import fit_dixon_coles, expected_goals
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -50,7 +51,9 @@ def load_matches():
     matches = pd.read_csv(MATCHES_PATH)
     matches["MatchDateTime"] = pd.to_datetime(matches["MatchDateTime"])
 
-    return matches.sort_values("MatchDateTime").reset_index(drop=True)
+    return matches.sort_values(
+        ["MatchDateTime", "HomeTeam", "AwayTeam"]
+    ).reset_index(drop=True)
 
 
 def load_bets():
@@ -433,13 +436,16 @@ def projected_table(matches):
     """
     Projected final table: current standings plus, for every fixture not
     yet played this season, each team's *expected* points from the model's
-    probabilities (3 x P(win) + 1 x P(draw)). Expected wins/draws/losses
-    are rounded for display. Goal difference is carried from games already
-    played - the model predicts results, not scores.
+    probabilities (3 x P(win) + 1 x P(draw)) and *expected* goals from a
+    Dixon-Coles goal model, so goal difference projects forward too instead
+    of freezing at its current value. Nothing here feeds back into the
+    prediction model itself - it's a display-only addition for this table.
+    Expected wins/draws/losses/goals are rounded for display.
     """
 
     matches, elos, team_history = build_history(matches)
     model = train_model(matches)
+    dc_model, dc_known_teams = fit_dixon_coles(matches)
 
     _, played, teams = _current_season(matches)
     played_pairs = set(zip(played["HomeTeam"], played["AwayTeam"]))
@@ -458,6 +464,8 @@ def projected_table(matches):
         row.pop("position", None)
         row.pop("gd", None)
         row["points"] = float(row["points"])
+        row["gf"] = float(row["gf"])
+        row["ga"] = float(row["ga"])
         for key in ("won", "drawn", "lost"):
             row[key] = float(row[key])
 
@@ -478,10 +486,20 @@ def projected_table(matches):
         rows[home]["lost"] += p_away
         rows[away]["lost"] += p_home
 
-    ranked = _rank(rows.values())  # on exact expected points
+        home_goals, away_goals = expected_goals(dc_model, dc_known_teams, home, away)
+        if home_goals is not None:
+            rows[home]["gf"] += home_goals
+            rows[home]["ga"] += away_goals
+            rows[away]["gf"] += away_goals
+            rows[away]["ga"] += home_goals
+
+    ranked = _rank(rows.values())  # on exact expected points/goals
 
     for row in ranked:
         row["points"] = round(row["points"])
+        row["gf"] = round(row["gf"], 1)
+        row["ga"] = round(row["ga"], 1)
+        row["gd"] = round(row["gd"], 1)
         for key in ("won", "drawn", "lost"):
             row[key] = round(row[key])
 

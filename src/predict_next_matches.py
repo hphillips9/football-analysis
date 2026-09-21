@@ -325,7 +325,12 @@ def build_history(matches):
     per-team match history needed to score upcoming fixtures.
     """
 
-    matches = matches.sort_values("MatchDateTime").reset_index(drop=True).copy()
+    matches = (
+        matches
+        .sort_values(["MatchDateTime", "HomeTeam", "AwayTeam"])
+        .reset_index(drop=True)
+        .copy()
+    )
 
     elos = build_elo_feature(matches)
     build_goals_per_game_feature(matches)
