@@ -445,7 +445,14 @@ def projected_table(matches):
 
     matches, elos, team_history = build_history(matches)
     model = train_model(matches)
-    dc_model, dc_known_teams = fit_dixon_coles(matches)
+
+    # Display-only extra: if the goal model can't be fitted, goal difference
+    # just stays at its current value rather than failing the whole export.
+    try:
+        dc_model, dc_known_teams = fit_dixon_coles(matches)
+    except Exception as exc:
+        print(f"Skipping projected goal difference - Dixon-Coles fit failed: {exc}")
+        dc_model, dc_known_teams = None, set()
 
     _, played, teams = _current_season(matches)
     played_pairs = set(zip(played["HomeTeam"], played["AwayTeam"]))
@@ -486,7 +493,10 @@ def projected_table(matches):
         rows[home]["lost"] += p_away
         rows[away]["lost"] += p_home
 
-        home_goals, away_goals = expected_goals(dc_model, dc_known_teams, home, away)
+        home_goals, away_goals = (
+            expected_goals(dc_model, dc_known_teams, home, away)
+            if dc_model is not None else (None, None)
+        )
         if home_goals is not None:
             rows[home]["gf"] += home_goals
             rows[home]["ga"] += away_goals

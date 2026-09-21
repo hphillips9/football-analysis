@@ -9,17 +9,45 @@ these are used for:
     a place in the deployed model
   - export_web.py's projected league table, which uses Dixon-Coles'
     expected goals to project goal difference forward for fixtures that
-    haven't been played yet (see project_goal_difference below)
+    haven't been played yet (see fit_dixon_coles / expected_goals below)
 """
 
 import warnings
 
+import numpy as np
 import pandas as pd
 from penaltyblog.models import DixonColesGoalModel, dixon_coles_weights
 
 # Assigning the 11 feature columns one at a time onto an already-wide
 # frame (all_matches.csv) triggers this; harmless (see load_data.py).
 warnings.simplefilter("ignore", pd.errors.PerformanceWarning)
+
+
+def _fit_model(history, xi, base_date):
+    """
+    Fit a DixonColesGoalModel on `history`.
+
+    penaltyblog's Cython loss needs writable buffers. It converts goals with
+    np.asarray(..., dtype=<C long>): on Windows (32-bit long) that copies, but
+    on Linux (64-bit long) an int64 pandas column passes straight through as a
+    zero-copy read-only view under pandas 3 copy-on-write and the fit fails
+    with "buffer source array is read-only". Explicit copies work everywhere.
+    """
+
+    weights = dixon_coles_weights(
+        history["MatchDateTime"], xi=xi, base_date=base_date
+    )
+
+    model = DixonColesGoalModel(
+        np.array(history["FTHG"]),
+        np.array(history["FTAG"]),
+        history["HomeTeam"],
+        history["AwayTeam"],
+        weights=np.array(weights, dtype=np.double),
+    )
+    model.fit()
+
+    return model
 
 
 MIN_DC_HISTORY = 100  # matches; fewer than this and a fit is too unstable to trust
@@ -114,16 +142,7 @@ def build_dixon_coles_feature(matches, xi=0.0018):
         if len(history) >= MIN_DC_HISTORY:
 
             try:
-                weights = dixon_coles_weights(
-                    history["MatchDateTime"], xi=xi, base_date=cutoff
-                )
-
-                model = DixonColesGoalModel(
-                    history["FTHG"], history["FTAG"],
-                    history["HomeTeam"], history["AwayTeam"],
-                    weights=weights,
-                )
-                model.fit()
+                model = _fit_model(history, xi, cutoff)
 
                 params = model.get_params()
                 known_teams = set(history["HomeTeam"]) | set(history["AwayTeam"])
@@ -163,16 +182,7 @@ def build_dixon_coles_feature(matches, xi=0.0018):
 def fit_dixon_coles(matches, xi=0.0018):
     """Fit a single Dixon-Coles model on every match in `matches`."""
 
-    weights = dixon_coles_weights(
-        matches["MatchDateTime"], xi=xi, base_date=matches["MatchDateTime"].max()
-    )
-
-    model = DixonColesGoalModel(
-        matches["FTHG"], matches["FTAG"],
-        matches["HomeTeam"], matches["AwayTeam"],
-        weights=weights,
-    )
-    model.fit()
+    model = _fit_model(matches, xi, matches["MatchDateTime"].max())
 
     return model, set(matches["HomeTeam"]) | set(matches["AwayTeam"])
 
