@@ -1,17 +1,17 @@
 {
-  "generated": "2026-09-19T13:24:46+00:00",
-  "asOf": "2026-09-14",
-  "totalBets": 50,
-  "settledBets": 40,
+  "generated": "2026-09-21T20:34:08+00:00",
+  "asOf": "2026-09-20",
+  "totalBets": 60,
+  "settledBets": 50,
   "pendingBets": 10,
-  "wins": 17,
-  "losses": 23,
-  "hitRate": 42.5,
-  "baselineHitRate": 32.5,
-  "edge": 10.0,
-  "profit": -9.08,
-  "staked": 40.0,
-  "roi": -22.7,
+  "wins": 22,
+  "losses": 28,
+  "hitRate": 44.0,
+  "baselineHitRate": 36.0,
+  "edge": 8.0,
+  "profit": -8.27,
+  "staked": 50.0,
+  "roi": -16.5,
   "calibration": [
     {
       "label": "0-40%",
@@ -21,15 +21,15 @@
     },
     {
       "label": "40-45%",
-      "bets": 6,
-      "avgProb": 42.0,
-      "hitRate": 33.3
+      "bets": 9,
+      "avgProb": 41.9,
+      "hitRate": 44.4
     },
     {
       "label": "45-50%",
-      "bets": 7,
-      "avgProb": 47.5,
-      "hitRate": 42.9
+      "bets": 9,
+      "avgProb": 47.6,
+      "hitRate": 44.4
     },
     {
       "label": "50-55%",
@@ -39,15 +39,15 @@
     },
     {
       "label": "55-60%",
-      "bets": 9,
-      "avgProb": 56.5,
-      "hitRate": 44.4
+      "bets": 12,
+      "avgProb": 56.8,
+      "hitRate": 41.7
     },
     {
       "label": "60-100%",
-      "bets": 4,
-      "avgProb": 69.6,
-      "hitRate": 100.0
+      "bets": 6,
+      "avgProb": 67.3,
+      "hitRate": 83.3
     }
   ],
   "byGameweek": [
@@ -94,6 +94,16 @@
     {
       "gameweek": 5,
       "bets": 10,
+      "settled": 10,
+      "hits": 5,
+      "hitRate": 50.0,
+      "profit": 0.81,
+      "cumulativeProfit": -8.27,
+      "status": "complete"
+    },
+    {
+      "gameweek": 6,
+      "bets": 10,
       "settled": 0,
       "hits": 0,
       "hitRate": null,
@@ -106,10 +116,10 @@
     {
       "pick": "H",
       "label": "Home",
-      "bets": 30,
-      "hits": 11,
-      "hitRate": 36.7,
-      "profit": -9.81
+      "bets": 37,
+      "hits": 15,
+      "hitRate": 40.5,
+      "profit": -9.6
     },
     {
       "pick": "D",
@@ -122,10 +132,10 @@
     {
       "pick": "A",
       "label": "Away",
-      "bets": 10,
-      "hits": 6,
-      "hitRate": 60.0,
-      "profit": 0.73
+      "bets": 13,
+      "hits": 7,
+      "hitRate": 53.8,
+      "profit": 1.33
     }
   ],
   "bankroll": [
@@ -408,9 +418,88 @@
       "match": "Leeds United v Newcastle United",
       "profit": 1.38,
       "cumulative": -9.08
+    },
+    {
+      "kickoff": "2026-09-18T20:00:00",
+      "gameweek": 5,
+      "match": "Brentford v Chelsea",
+      "profit": 1.6,
+      "cumulative": -7.48
+    },
+    {
+      "kickoff": "2026-09-19T12:30:00",
+      "gameweek": 5,
+      "match": "Tottenham Hotspur v Aston Villa",
+      "profit": 2.6,
+      "cumulative": -4.88
+    },
+    {
+      "kickoff": "2026-09-19T15:00:00",
+      "gameweek": 5,
+      "match": "Everton v Ipswich",
+      "profit": 0.75,
+      "cumulative": -4.13
+    },
+    {
+      "kickoff": "2026-09-19T15:00:00",
+      "gameweek": 5,
+      "match": "Newcastle United v Hull City",
+      "profit": 0.57,
+      "cumulative": -3.56
+    },
+    {
+      "kickoff": "2026-09-19T15:00:00",
+      "gameweek": 5,
+      "match": "Brighton and Hove Albion v Arsenal",
+      "profit": -1.0,
+      "cumulative": -4.56
+    },
+    {
+      "kickoff": "2026-09-19T17:30:00",
+      "gameweek": 5,
+      "match": "Nottingham Forest v Coventry",
+      "profit": -1.0,
+      "cumulative": -5.56
+    },
+    {
+      "kickoff": "2026-09-20T14:00:00",
+      "gameweek": 5,
+      "match": "Bournemouth v Liverpool",
+      "profit": -1.0,
+      "cumulative": -6.56
+    },
+    {
+      "kickoff": "2026-09-20T14:00:00",
+      "gameweek": 5,
+      "match": "Leeds United v Crystal Palace",
+      "profit": -1.0,
+      "cumulative": -7.56
+    },
+    {
+      "kickoff": "2026-09-20T14:00:00",
+      "gameweek": 5,
+      "match": "Manchester City v Sunderland",
+      "profit": 0.29,
+      "cumulative": -7.27
+    },
+    {
+      "kickoff": "2026-09-20T16:30:00",
+      "gameweek": 5,
+      "match": "Fulham v Manchester United",
+      "profit": -1.0,
+      "cumulative": -8.27
     }
   ],
   "bestBets": [
+    {
+      "gameweek": 5,
+      "date": "19/09/2026",
+      "match": "Tottenham Hotspur v Aston Villa",
+      "pick": "A",
+      "result": "A",
+      "pickProb": 41.3,
+      "profit": 2.6
+    },
     {
       "gameweek": 2,
       "date": "29/08/2026",
@@ -421,25 +510,34 @@
       "profit": 1.9
     },
     {
-      "gameweek": 2,
-      "date": "30/08/2026",
-      "match": "Sunderland v Fulham",
+      "gameweek": 5,
+      "date": "18/09/2026",
+      "match": "Brentford v Chelsea",
       "pick": "H",
       "result": "H",
-      "pickProb": 50.5,
-      "profit": 1.38
-    },
-    {
-      "gameweek": 1,
-      "date": "22/08/2026",
-      "match": "Brentford v Tottenham Hotspur",
-      "pick": "H",
-      "result": "H",
-      "pickProb": 46.6,
-      "profit": 1.38
+      "pickProb": 47.5,
+      "profit": 1.6
     }
   ],
   "worstBets": [
+    {
+      "gameweek": 5,
+      "date": "19/09/2026",
+      "match": "Nottingham Forest v Coventry",
+      "pick": "H",
+      "result": "A",
+      "pickProb": 60.9,
+      "profit": -1.0
+    },
+    {
+      "gameweek": 5,
+      "date": "20/09/2026",
+      "match": "Leeds United v Crystal Palace",
+      "pick": "H",
+      "result": "D",
+      "pickProb": 57.9,
+      "profit": -1.0
+    },
     {
       "gameweek": 4,
       "date": "12/09/2026",
@@ -447,24 +545,6 @@
       "pick": "H",
       "result": "A",
       "pickProb": 57.6,
-      "profit": -1.0
-    },
-    {
-      "gameweek": 4,
-      "date": "12/09/2026",
-      "match": "Liverpool v Fulham",
-      "pick": "H",
-      "result": "D",
-      "pickProb": 57.0,
-      "profit": -1.0
-    },
-    {
-      "gameweek": 2,
-      "date": "29/08/2026",
-      "match": "Bournemouth v Everton",
-      "pick": "H",
-      "result": "D",
-      "pickProb": 56.2,
       "profit": -1.0
     }
   ]
