@@ -280,9 +280,33 @@ def train_model(matches):
 # PREDICT FUTURE FIXTURES
 # ============================================================
 
+def _season_label_for(date_text, default):
+    """Season label ("26-27") a dd/mm/yyyy fixture date falls in, else default."""
+
+    day = pd.to_datetime(date_text, dayfirst=True, errors="coerce")
+
+    if pd.isna(day):
+        return default
+
+    start = day.year if day.month >= 7 else day.year - 1
+
+    return f"{start % 100:02d}-{(start + 1) % 100:02d}"
+
+
+def _season_goals_per_game(team_history, team, season):
+
+    played = [m for m in team_history[team] if m["Season"] == season]
+
+    return calculate_season_stats(played, team)["goals_pg"]
+
+
 def build_future_features(future, elos, team_history):
 
     future_features = []
+
+    latest_season = max(
+        rows[-1]["Season"] for rows in team_history.values() if rows
+    )
 
     for _, match in future.iterrows():
 
@@ -302,9 +326,14 @@ def build_future_features(future, elos, team_history):
 
         xgd_diff = home_xgd - away_xgd
 
-        # Resets at the beginning of each season, so not
-        # meaningful this early - matches notebook behaviour
-        goals_per_game_diff = 0
+        # Season-to-date, exactly as in training; 0 for a team with no games
+        # yet this season (so it is 0 for everyone in a season's first round)
+        season = _season_label_for(match.get("Date", ""), latest_season)
+
+        goals_per_game_diff = (
+            _season_goals_per_game(team_history, home_team, season)
+            - _season_goals_per_game(team_history, away_team, season)
+        )
 
         future_features.append({
             "EloDiff": elo_diff,
