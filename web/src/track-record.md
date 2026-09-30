@@ -91,14 +91,16 @@ const gwFilter = view(Inputs.select(["all season", ...Array.from(new Set(bets.ma
 ```
 
 ```js
-const shown = gwFilter === "all season" ? bets : bets.filter((b) => b.gameweek === gwFilter);
+const shown = (gwFilter === "all season" ? bets : bets.filter((b) => b.gameweek === gwFilter))
+  .slice()
+  .sort((a, b) => a.gameweek - b.gameweek || a.kickoff.localeCompare(b.kickoff));
 ```
 
 ```js
 Inputs.table(
   shown.map((b) => ({
     GW: b.gameweek,
-    Date: b.date,
+    Date: new Date(b.kickoff),
     Match: `${b.home} v ${b.away}`,
     Pick: resultName[b.prediction],
     "H %": b.homeProb, "D %": b.drawProb, "A %": b.awayProb,
@@ -106,7 +108,7 @@ Inputs.table(
     "P/L": b.settled ? signed(b.profit) : "",
   })),
   {
-    sort: "Date",
+    format: { Date: (d) => d.toLocaleDateString(undefined, { day: "numeric", month: "short" }) },
     align: { "H %": "right", "D %": "right", "A %": "right", "P/L": "right" },
     rows: 20,
   }
