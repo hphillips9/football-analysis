@@ -40,7 +40,7 @@ probabilityBars(gwFixtures, { width })
 ```js
 Inputs.table(
   gwBets.map((b) => ({
-    "Kick-off": new Date(b.kickoff).toLocaleString(undefined, { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }),
+    "Kick-off": new Date(b.kickoff),
     Match: `${b.home} v ${b.away}`,
     Pick: resultName[b.prediction],
     "Model %": Math.max(b.homeProb, b.drawProb, b.awayProb),
@@ -49,7 +49,12 @@ Inputs.table(
     Outcome: b.settled ? (b.won ? "✅ won" : "❌ lost") : "",
     "P/L": b.settled ? signed(b.profit) : "",
   })),
-  { sort: "Kick-off", align: { "Model %": "right", "P/L": "right" }, layout: "auto" }
+  {
+    sort: "Kick-off",
+    format: { "Kick-off": (d) => d.toLocaleString(undefined, { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) },
+    align: { "Model %": "right", "P/L": "right" },
+    layout: "auto",
+  }
 )
 ```
 

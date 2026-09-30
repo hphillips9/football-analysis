@@ -5,7 +5,9 @@ Score the model season by season, training only on earlier seasons.
 
 For each completed season after the first, a fresh model is trained on
 every season before it and used to predict that season's matches. Writes
-web/src/data/backtest.json (accuracy, log loss, always-home baseline).
+web/src/data/backtest.json (accuracy, log loss, always-home baseline) and
+the profit a 1-unit flat bet on every pick would have made, gameweek by
+gameweek.
 
 Features (Elo gap, last-5 xG difference, season goals-per-game
 difference) are built chronologically over the whole dataset, so each
@@ -38,17 +40,63 @@ OUT_PATH = ROOT / "web" / "src" / "data" / "backtest.json"
 
 MIN_SEASON_MATCHES = 200  # skip a season still in progress
 
+STAKE = 1
+# Sky Bet prices only exist from 2026/27, so past seasons settle at the
+# market average - the same fallback fetch_results uses for live bets
+ODDS_COLUMN = {"H": "SKBH", "D": "SKBD", "A": "SKBA"}
+FALLBACK_ODDS_COLUMN = {"H": "AvgH", "D": "AvgD", "A": "AvgA"}
+
 
 def season_label(code):
     start, end = code.split("-")
     return f"20{start}/{end}"
 
 
+def bet_profit(match, pick):
+    """1-unit flat stake on ``pick``, settled like fetch_results.settle_profit."""
+
+    if pick != match["FTR"]:
+        return float(-STAKE)
+
+    odds = match.get(ODDS_COLUMN[pick])
+    if pd.isna(odds):
+        odds = match[FALLBACK_ODDS_COLUMN[pick]]
+
+    return round(STAKE * (odds - 1), 2)
+
+
+def profit_by_gameweek(test, pred):
+    """Per-gameweek bets, hits and profit, with a running total."""
+
+    bets = test.assign(Pick=pred)
+    bets["Profit"] = [bet_profit(m, m["Pick"]) for _, m in bets.iterrows()]
+    bets["Hit"] = bets["Pick"] == bets["FTR"]
+
+    out = []
+    running = 0.0
+    for gameweek, group in bets.groupby("Gameweek"):
+        profit = group["Profit"].sum()
+        running += profit
+        out.append({
+            "gameweek": int(gameweek),
+            "bets": int(len(group)),
+            "hits": int(group["Hit"].sum()),
+            "profit": round(profit, 2),
+            "cumulativeProfit": round(running, 2),
+        })
+
+    return bets["Profit"].sum(), out
+
+
 def run_backtest():
 
     matches = pd.read_csv(MATCHES_PATH)
     matches["MatchDateTime"] = pd.to_datetime(matches["MatchDateTime"])
-    matches = matches.sort_values("MatchDateTime").reset_index(drop=True)
+    # Tie-break same kick-offs so row order (and so the calibration CV
+    # folds) doesn't shift when new matches are added
+    matches = matches.sort_values(
+        ["MatchDateTime", "HomeTeam", "AwayTeam"]
+    ).reset_index(drop=True)
 
     build_elo_feature(matches)
     build_goals_per_game_feature(matches)
@@ -61,6 +109,7 @@ def run_backtest():
     pooled_pred = []
     pooled_proba = []
     pooled_labels = None
+    pooled_profit = 0.0
 
     for index, season in enumerate(seasons):
 
@@ -84,6 +133,8 @@ def run_backtest():
         accuracy = accuracy_score(actual, pred)
         loss = log_loss(actual, proba, labels=labels)
         baseline = (actual == "H").mean()
+        profit, by_gameweek = profit_by_gameweek(test, pred)
+        pooled_profit += profit
 
         rows.append({
             "season": season_label(season),
@@ -98,6 +149,9 @@ def run_backtest():
             "logLoss": round(loss, 3),
             "baselineAccuracy": round(baseline * 100, 1),
             "edge": round((accuracy - baseline) * 100, 1),
+            "profit": round(profit, 2),
+            "roi": round(profit / (len(test) * STAKE) * 100, 1),
+            "byGameweek": by_gameweek,
         })
 
         pooled_true.extend(actual.tolist())
@@ -120,6 +174,10 @@ def run_backtest():
         overall["edge"] = round(
             overall["accuracy"] - overall["baselineAccuracy"], 1
         )
+        overall["profit"] = round(pooled_profit, 2)
+        overall["roi"] = round(
+            pooled_profit / (len(pooled_true) * STAKE) * 100, 1
+        )
 
     payload = {
         "generated": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
@@ -137,12 +195,14 @@ def run_backtest():
         print(
             f"  {row['season']}: {row['accuracy']}% "
             f"(baseline {row['baselineAccuracy']}%, "
-            f"log loss {row['logLoss']})"
+            f"log loss {row['logLoss']}, "
+            f"profit {row['profit']:+.2f}u / ROI {row['roi']:+.1f}%)"
         )
     if overall:
         print(
             f"  overall: {overall['accuracy']}% over "
-            f"{overall['matches']} matches"
+            f"{overall['matches']} matches, "
+            f"profit {overall['profit']:+.2f}u / ROI {overall['roi']:+.1f}%"
         )
 
 

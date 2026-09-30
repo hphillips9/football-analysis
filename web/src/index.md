@@ -50,7 +50,7 @@ probabilityBars(predictions.fixtures, { width })
 ```js
 Inputs.table(
   predictions.fixtures.map((f) => ({
-    "Kick-off": new Date(f.kickoff).toLocaleString(undefined, { weekday: "short", hour: "2-digit", minute: "2-digit" }),
+    "Kick-off": new Date(f.kickoff),
     Match: `${f.home} v ${f.away}`,
     Pick: resultName[f.prediction],
     "H %": f.homeProb,
@@ -61,6 +61,7 @@ Inputs.table(
   })),
   {
     sort: "Kick-off",
+    format: { "Kick-off": (d) => d.toLocaleString(undefined, { weekday: "short", hour: "2-digit", minute: "2-digit" }) },
     align: { "H %": "right", "D %": "right", "A %": "right", "Elo gap": "right" },
   }
 )

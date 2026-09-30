@@ -77,11 +77,65 @@ Red tick is that season's always-home baseline.
 
 ```js
 Inputs.table(backtest.seasons, {
-  columns: ["season", "matches", "trainedOn", "accuracy", "baselineAccuracy", "edge", "logLoss"],
-  header: { trainedOn: "Trained on", accuracy: "Acc %", baselineAccuracy: "Base %", edge: "Edge", logLoss: "Log loss" },
-  align: { accuracy: "right", baselineAccuracy: "right", edge: "right", logLoss: "right" },
+  columns: ["season", "matches", "trainedOn", "accuracy", "baselineAccuracy", "edge", "logLoss", "profit", "roi"],
+  header: { trainedOn: "Trained on", accuracy: "Acc %", baselineAccuracy: "Base %", edge: "Edge", logLoss: "Log loss", profit: "Profit (u)", roi: "ROI %" },
+  format: { profit: (d) => signed(d), roi: (d) => signed(d, 1) },
+  align: { accuracy: "right", baselineAccuracy: "right", edge: "right", logLoss: "right", profit: "right", roi: "right" },
 })
 ```
+
+## Would it have made money?
+
+The same backtest, but staking **1 unit on every pick** of each season, settled
+at the market-average pre-match price (Sky Bet odds aren't available for past
+seasons). Bars are each gameweek's result; the line is the running total. All
+four charts share one scale so the seasons compare directly.
+
+<div class="grid grid-cols-2">
+  <div class="card"><h2>Profit, all four seasons</h2><span class="big">${signed(backtest.overall.profit)} u</span>on ${backtest.overall.matches} units staked</div>
+  <div class="card"><h2>ROI</h2><span class="big">${signed(backtest.overall.roi, 1)}%</span>${backtest.seasons.filter((s) => s.profit > 0).length} of ${backtest.seasons.length} seasons in profit</div>
+</div>
+
+```js
+const seasonExtent = d3.extent(
+  backtest.seasons.flatMap((s) => s.byGameweek.flatMap((g) => [g.profit, g.cumulativeProfit])).concat(0)
+);
+
+function seasonPnl(season, width) {
+  const gws = season.byGameweek;
+  return Plot.plot({
+    width,
+    height: 240,
+    marginRight: 30,
+    x: { label: "gameweek", tickFormat: "d", ticks: [1, 10, 20, 30, 38], domain: [0.5, 38.5] },
+    y: { label: "units", grid: true, domain: seasonExtent, nice: true },
+    marks: [
+      Plot.ruleY([0]),
+      Plot.rectY(gws, {
+        x1: (d) => d.gameweek - 0.35,
+        x2: (d) => d.gameweek + 0.35,
+        y: "profit",
+        fill: (d) => (d.profit >= 0 ? "#16a34a" : "#dc2626"),
+        fillOpacity: 0.5,
+        tip: true,
+        title: (d) => `GW${d.gameweek}\n${d.hits}/${d.bets} correct\n${signed(d.profit)}u  (running ${signed(d.cumulativeProfit)}u)`,
+      }),
+      Plot.lineY(gws, { x: "gameweek", y: "cumulativeProfit", strokeWidth: 2, curve: "monotone-x" }),
+      Plot.text(gws.slice(-1), { x: "gameweek", y: "cumulativeProfit", text: (d) => signed(d.cumulativeProfit, 1), dx: 4, textAnchor: "start", fontSize: 11, fontWeight: "bold" }),
+    ],
+  });
+}
+```
+
+<div class="grid grid-cols-2">${backtest.seasons.map((s) => html`<div class="card">
+  <h2>${s.season}</h2>
+  <h3>${signed(s.profit)} u · ROI ${signed(s.roi, 1)}% · ${s.accuracy}% correct</h3>
+  ${resize((width) => seasonPnl(s, width))}
+</div>`)}</div>
+
+These are simulated bets, not a real record: a single bookmaker's price can be
+a little worse than the market average, which would shave the returns. The
+[Track Record](/track-record) page has the live bets.
 
 ## Is it well calibrated?
 
