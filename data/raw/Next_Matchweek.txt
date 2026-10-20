@@ -1,60 +1,61 @@
-Sat 17 Oct
-Everton
-Everton
-12:30
-Chelsea
-Chelsea
-TNT Sports Logo
-Brentford
-Brentford
-15:00
-Liverpool
-Liverpool
-Fulham
-Fulham
-15:00
-Hull City
-Hull City
-Manchester City
-Manchester City
-15:00
+Fri 23 Oct
 Ipswich Town
 Ipswich Town
-Newcastle United
-Newcastle United
-17:30
-Aston Villa
-Aston Villa
-Sky Sports Logo
-Sun 18 Oct
-Bournemouth
-Bournemouth
-14:00
-Sunderland
-Sunderland
-Sky Sports Logo
-Brighton and Hove Albion
-Brighton and Hove Albion
-14:00
-Crystal Palace
-Crystal Palace
-Sky Sports Logo
-Leeds United
-Leeds United
-14:00
-Manchester United
-Manchester United
-Sky Sports Logo
-Nottingham Forest
-Nottingham Forest
-16:30
-Arsenal
-Arsenal
-Sky Sports Logo
-Mon 19 Oct
-Tottenham Hotspur
-Tottenham Hotspur
 20:00
+Nottingham Forest
+Nottingham Forest
+Sky Sports Logo
+Sat 24 Oct
+Aston Villa
+Aston Villa
+12:30
+Manchester City
+Manchester City
+TNT Sports Logo
+Arsenal
+Arsenal
+15:00
+Everton
+Everton
 Coventry City
 Coventry City
+15:00
+Fulham
+Fulham
+Chelsea
+Chelsea
+17:30
+Tottenham Hotspur
+Tottenham Hotspur
+Sky Sports Logo
+Sun 25 Oct
+Crystal Palace
+Crystal Palace
+14:00
+Newcastle United
+Newcastle United
+Sky Sports Logo
+Hull City
+Hull City
+14:00
+Brentford
+Brentford
+Sky Sports Logo
+Liverpool
+Liverpool
+14:00
+Brighton and Hove Albion
+Brighton and Hove Albion
+Sky Sports Logo
+Manchester United
+Manchester United
+14:00
+Bournemouth
+Bournemouth
+Sky Sports Logo
+Sunderland
+Sunderland
+16:30
+Leeds United
+Leeds United
 Sky Sports Logo
