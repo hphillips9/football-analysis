@@ -1,9 +1,9 @@
 {
-  "generated": "2026-10-20T06:50:38+00:00",
+  "generated": "2026-10-20T07:05:52+00:00",
   "asOf": "2026-10-12",
-  "totalBets": 80,
+  "totalBets": 70,
   "settledBets": 60,
-  "pendingBets": 20,
+  "pendingBets": 10,
   "wins": 27,
   "losses": 33,
   "hitRate": 45.0,
@@ -113,16 +113,6 @@
     },
     {
       "gameweek": 7,
-      "bets": 10,
-      "settled": 0,
-      "hits": 0,
-      "hitRate": null,
-      "profit": null,
-      "cumulativeProfit": null,
-      "status": "pending"
-    },
-    {
-      "gameweek": 8,
       "bets": 10,
       "settled": 0,
       "hits": 0,
@@ -267,22 +257,22 @@
     {
       "kickoff": "2026-08-30T14:00:00",
       "gameweek": 2,
+      "match": "Sunderland v Fulham",
+      "profit": 1.38,
+      "cumulative": 0.22
+    },
+    {
+      "kickoff": "2026-08-30T14:00:00",
+      "gameweek": 2,
       "match": "Chelsea v Brighton and Hove Albion",
       "profit": 0.85,
-      "cumulative": -0.31
+      "cumulative": 1.07
     },
     {
       "kickoff": "2026-08-30T14:00:00",
       "gameweek": 2,
       "match": "Leeds United v Brentford",
       "profit": -1.0,
-      "cumulative": -1.31
-    },
-    {
-      "kickoff": "2026-08-30T14:00:00",
-      "gameweek": 2,
-      "match": "Sunderland v Fulham",
-      "profit": 1.38,
       "cumulative": 0.07
     },
     {
@@ -372,35 +362,35 @@
     {
       "kickoff": "2026-09-12T15:00:00",
       "gameweek": 4,
-      "match": "Aston Villa v Nottingham Forest",
+      "match": "Crystal Palace v Ipswich",
       "profit": -1.0,
       "cumulative": -5.75
     },
     {
       "kickoff": "2026-09-12T15:00:00",
       "gameweek": 4,
-      "match": "Bournemouth v Brentford",
+      "match": "Chelsea v Hull City",
       "profit": -1.0,
       "cumulative": -6.75
     },
     {
       "kickoff": "2026-09-12T15:00:00",
       "gameweek": 4,
-      "match": "Chelsea v Hull City",
+      "match": "Liverpool v Fulham",
       "profit": -1.0,
       "cumulative": -7.75
     },
     {
       "kickoff": "2026-09-12T15:00:00",
       "gameweek": 4,
-      "match": "Crystal Palace v Ipswich",
+      "match": "Aston Villa v Nottingham Forest",
       "profit": -1.0,
       "cumulative": -8.75
     },
     {
       "kickoff": "2026-09-12T15:00:00",
       "gameweek": 4,
-      "match": "Liverpool v Fulham",
+      "match": "Bournemouth v Brentford",
       "profit": -1.0,
       "cumulative": -9.75
     },
@@ -456,22 +446,22 @@
     {
       "kickoff": "2026-09-19T15:00:00",
       "gameweek": 5,
+      "match": "Brighton and Hove Albion v Arsenal",
+      "profit": -1.0,
+      "cumulative": -5.88
+    },
+    {
+      "kickoff": "2026-09-19T15:00:00",
+      "gameweek": 5,
       "match": "Everton v Ipswich",
       "profit": 0.75,
-      "cumulative": -4.13
+      "cumulative": -5.13
     },
     {
       "kickoff": "2026-09-19T15:00:00",
       "gameweek": 5,
       "match": "Newcastle United v Hull City",
       "profit": 0.57,
-      "cumulative": -3.56
-    },
-    {
-      "kickoff": "2026-09-19T15:00:00",
-      "gameweek": 5,
-      "match": "Brighton and Hove Albion v Arsenal",
-      "profit": -1.0,
       "cumulative": -4.56
     },
     {
@@ -519,29 +509,29 @@
     {
       "kickoff": "2026-10-10T15:00:00",
       "gameweek": 6,
-      "match": "Aston Villa v Brentford",
-      "profit": -1.0,
-      "cumulative": -8.91
-    },
-    {
-      "kickoff": "2026-10-10T15:00:00",
-      "gameweek": 6,
-      "match": "Chelsea v Bournemouth",
-      "profit": 0.67,
-      "cumulative": -8.24
+      "match": "Sunderland v Brighton and Hove Albion",
+      "profit": 1.3,
+      "cumulative": -6.61
     },
     {
       "kickoff": "2026-10-10T15:00:00",
       "gameweek": 6,
       "match": "Ipswich v Fulham",
       "profit": -1.0,
-      "cumulative": -9.24
+      "cumulative": -7.61
     },
     {
       "kickoff": "2026-10-10T15:00:00",
       "gameweek": 6,
-      "match": "Sunderland v Brighton and Hove Albion",
-      "profit": 1.3,
+      "match": "Aston Villa v Brentford",
+      "profit": -1.0,
+      "cumulative": -8.61
+    },
+    {
+      "kickoff": "2026-10-10T15:00:00",
+      "gameweek": 6,
+      "match": "Chelsea v Bournemouth",
+      "profit": 0.67,
       "cumulative": -7.94
     },
     {
