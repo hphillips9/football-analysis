@@ -10,13 +10,16 @@ Always:
     2. Settle any pending bets in data/raw/Bets.csv
     3. Rebuild data/processed/all_matches.csv (results + Understat xG)
     4. Backfill gameweek / probabilities on any Bets.csv rows missing them
-    5. Predict the next gameweek from Next_Matchweek.txt and append the
-       new bets to Bets.csv (skipped by --no-predict)
+    5. Pull the next round's fixtures from football-data.org, predict
+       them and append the new bets to Bets.csv (skipped by --no-predict)
     6. Export web/src/data/*.json for the website
 
-Paste the upcoming fixture list into data/raw/Next_Matchweek.txt before
-a prediction run. Scheduled automation runs --no-predict so it never
-re-predicts a stale fixture list.
+Step 5 only predicts fixtures that aren't already in Bets.csv, and waits
+until the previous round's results are all on file, so it is safe to
+run as often as you like.
+
+Without a FOOTBALL_DATA_API_KEY (environment or .env) it falls back to
+the fixture list pasted into data/raw/Next_Matchweek.txt.
 """
 
 import os
@@ -26,6 +29,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 from fetch_results import fetch_new_results, complete_bets
+from fetch_fixtures import api_key, fetch_next_fixtures
 from future_games_parser import build_future_fixtures
 from load_data import build_dataset
 from predict_next_matches import (
@@ -79,8 +83,13 @@ def _predict_next_gameweek():
     step(5, "Predict next gameweek")
 
     try:
-        build_future_fixtures()
-    except (FileNotFoundError, ValueError) as exc:
+        if api_key():
+            if fetch_next_fixtures() is None:
+                return
+        else:
+            print("No football-data.org API key - using Next_Matchweek.txt.")
+            build_future_fixtures()
+    except (ConnectionError, FileNotFoundError, ValueError) as exc:
         print(f"Skipping predictions - {exc}")
         return
 

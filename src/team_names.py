@@ -6,7 +6,8 @@ ALIAS_COLUMNS = [
     "canonical_name",
     "football_data_name",
     "understat_name",
-    "bbc_name"
+    "bbc_name",
+    "football_data_org_name"
 ]
 
 
