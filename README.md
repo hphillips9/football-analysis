@@ -24,7 +24,8 @@ Each match is described by three chronological, leak-free features:
 | `GoalsPerGameDiff` | season-to-date goals per game, home − away |
 
 Every team has an **Elo rating** (starts at 1500, K-factor 35, carries across
-seasons). A **calibrated logistic regression** (`CalibratedClassifierCV`, sigmoid)
+seasons; a promoted team restarts at 1350 - see
+`notebooks/19_championship_promoted_teams.ipynb`). A **calibrated logistic regression** (`CalibratedClassifierCV`, sigmoid)
 maps the three features to H / D / A probabilities and is retrained on all
 available history on every run.
 

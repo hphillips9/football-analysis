@@ -19,7 +19,8 @@ seasons plus the current one, about 1,900 matches.
 **The rating.** Each team has an **Elo rating**, starting at 1500. After a match
 the winner takes points from the loser — up to 35, scaled by how surprising the
 result was — and a draw nudges the higher-rated team down. Ratings carry across
-seasons. Home advantage is a flat **+130** added to the home team's rating.
+seasons, except that a newly promoted team restarts at **1350**: promoted sides
+are usually among the weakest in the league, not average. Home advantage is a flat **+130** added to the home team's rating.
 
 **The features.** Three numbers go into the model for each match:
 

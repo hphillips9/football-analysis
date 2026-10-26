@@ -1,28 +1,26 @@
 name: Weekly update
 
-# Fetches results, settles bets, rebuilds the dataset and the site's JSON
-# feed, commits it all back, then rebuilds and publishes the website.
+# Fetches results, settles bets, pulls the next round's fixtures from
+# football-data.org, predicts them and records the bets, rebuilds the
+# site's JSON feed, commits it all back, then publishes the website.
 #
-#   - Tuesday / Friday 08:00 UTC   -> results only, after each round
-#   - "Run workflow" button        -> results only, unless "predict" is ticked
-#   - push Next_Matchweek.txt      -> also predicts that gameweek and records bets
+#   - Daily 08:00 UTC          -> full run
+#   - "Run workflow" button    -> full run, unless "predict" is unticked
 #
-# Scheduled runs never predict: they would only re-chew a stale fixture
-# list. Predictions happen when you deliberately push new fixtures.
+# Running daily is safe: a fixture is only predicted once (anything
+# already in Bets.csv is skipped), and nothing is predicted until the
+# previous round's results are all on file. Needs the repo secret
+# FOOTBALL_DATA_API_KEY.
 
 on:
   workflow_dispatch:
     inputs:
       predict:
-        description: "Also predict the next gameweek from Next_Matchweek.txt"
+        description: "Predict the next round from football-data.org"
         type: boolean
-        default: false
-  push:
-    branches: [main]
-    paths:
-      - "data/raw/Next_Matchweek.txt"
+        default: true
   schedule:
-    - cron: "0 8 * * 2,5"
+    - cron: "0 8 * * *"
 
 permissions:
   contents: write
@@ -49,11 +47,13 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run pipeline
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
         run: |
-          if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.predict }}" = "true" ]; then
-            python src/run_week.py
-          else
+          if [ "${{ inputs.predict }}" = "false" ]; then
             python src/run_week.py --no-predict
+          else
+            python src/run_week.py
           fi
 
       - name: Commit refreshed data
