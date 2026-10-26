@@ -1,0 +1,553 @@
+Div,Date,Time,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+E1,11/09/2020,19:45,Watford,Middlesbrough,1,0,H
+E1,12/09/2020,12:30,Birmingham,Brentford,1,0,H
+E1,12/09/2020,12:30,Wycombe,Rotherham,0,1,A
+E1,12/09/2020,15:00,Barnsley,Luton,0,1,A
+E1,12/09/2020,15:00,Bournemouth,Blackburn,3,2,H
+E1,12/09/2020,15:00,Bristol City,Coventry,2,1,H
+E1,12/09/2020,15:00,Cardiff,Sheffield Weds,0,2,A
+E1,12/09/2020,15:00,Derby,Reading,0,2,A
+E1,12/09/2020,15:00,Huddersfield,Norwich,0,1,A
+E1,12/09/2020,15:00,Millwall,Stoke,0,0,D
+E1,12/09/2020,15:00,Preston,Swansea,0,1,A
+E1,12/09/2020,15:00,QPR,Nott'm Forest,2,0,H
+E1,18/09/2020,19:45,Coventry,QPR,3,2,H
+E1,19/09/2020,12:30,Nott'm Forest,Cardiff,0,2,A
+E1,19/09/2020,15:00,Blackburn,Wycombe,5,0,H
+E1,19/09/2020,15:00,Brentford,Huddersfield,3,0,H
+E1,19/09/2020,15:00,Luton,Derby,2,1,H
+E1,19/09/2020,15:00,Middlesbrough,Bournemouth,1,1,D
+E1,19/09/2020,15:00,Norwich,Preston,2,2,D
+E1,19/09/2020,15:00,Reading,Barnsley,2,0,H
+E1,19/09/2020,15:00,Rotherham,Millwall,0,1,A
+E1,19/09/2020,15:00,Sheffield Weds,Watford,0,0,D
+E1,19/09/2020,15:00,Swansea,Birmingham,0,0,D
+E1,20/09/2020,14:00,Stoke,Bristol City,0,2,A
+E1,25/09/2020,19:45,Huddersfield,Nott'm Forest,1,0,H
+E1,26/09/2020,12:30,Watford,Luton,1,0,H
+E1,26/09/2020,12:30,Wycombe,Swansea,0,2,A
+E1,26/09/2020,15:00,Barnsley,Coventry,0,0,D
+E1,26/09/2020,15:00,Birmingham,Rotherham,1,1,D
+E1,26/09/2020,15:00,Cardiff,Reading,1,2,A
+E1,26/09/2020,15:00,Derby,Blackburn,0,4,A
+E1,26/09/2020,15:00,Millwall,Brentford,1,1,D
+E1,26/09/2020,15:00,Preston,Stoke,0,1,A
+E1,26/09/2020,15:00,QPR,Middlesbrough,1,1,D
+E1,27/09/2020,13:00,Bristol City,Sheffield Weds,2,0,H
+E1,27/09/2020,16:00,Bournemouth,Norwich,1,0,H
+E1,02/10/2020,19:45,Coventry,Bournemouth,1,3,A
+E1,03/10/2020,12:30,Norwich,Derby,0,1,A
+E1,03/10/2020,15:00,Blackburn,Cardiff,0,0,D
+E1,03/10/2020,15:00,Luton,Wycombe,2,0,H
+E1,03/10/2020,15:00,Middlesbrough,Barnsley,2,1,H
+E1,03/10/2020,15:00,Nott'm Forest,Bristol City,1,2,A
+E1,03/10/2020,15:00,Reading,Watford,1,0,H
+E1,03/10/2020,15:00,Rotherham,Huddersfield,1,1,D
+E1,03/10/2020,15:00,Sheffield Weds,QPR,1,1,D
+E1,03/10/2020,15:00,Swansea,Millwall,2,1,H
+E1,04/10/2020,14:00,Brentford,Preston,2,4,A
+E1,04/10/2020,15:00,Stoke,Birmingham,1,1,D
+E1,16/10/2020,19:45,Derby,Watford,0,1,A
+E1,17/10/2020,15:00,Barnsley,Bristol City,2,2,D
+E1,17/10/2020,15:00,Birmingham,Sheffield Weds,0,1,A
+E1,17/10/2020,15:00,Blackburn,Nott'm Forest,0,1,A
+E1,17/10/2020,15:00,Bournemouth,QPR,0,0,D
+E1,17/10/2020,15:00,Brentford,Coventry,2,0,H
+E1,17/10/2020,15:00,Luton,Stoke,0,2,A
+E1,17/10/2020,15:00,Middlesbrough,Reading,0,0,D
+E1,17/10/2020,15:00,Rotherham,Norwich,1,2,A
+E1,17/10/2020,15:00,Swansea,Huddersfield,1,2,A
+E1,17/10/2020,15:00,Wycombe,Millwall,1,2,A
+E1,18/10/2020,12:00,Preston,Cardiff,0,1,A
+E1,20/10/2020,19:45,Bristol City,Middlesbrough,0,1,A
+E1,20/10/2020,19:45,Coventry,Swansea,1,1,D
+E1,20/10/2020,19:45,Huddersfield,Derby,1,0,H
+E1,20/10/2020,19:45,Millwall,Luton,2,0,H
+E1,20/10/2020,19:45,Norwich,Birmingham,1,0,H
+E1,20/10/2020,19:45,Nott'm Forest,Rotherham,1,1,D
+E1,20/10/2020,20:00,Reading,Wycombe,1,0,H
+E1,21/10/2020,19:45,Cardiff,Bournemouth,1,1,D
+E1,21/10/2020,19:45,QPR,Preston,0,2,A
+E1,21/10/2020,19:45,Sheffield Weds,Brentford,1,2,A
+E1,21/10/2020,19:45,Stoke,Barnsley,2,2,D
+E1,21/10/2020,19:45,Watford,Blackburn,3,1,H
+E1,23/10/2020,19:45,Nott'm Forest,Derby,1,1,D
+E1,24/10/2020,12:30,Watford,Bournemouth,1,1,D
+E1,24/10/2020,15:00,Bristol City,Swansea,1,1,D
+E1,24/10/2020,15:00,Cardiff,Middlesbrough,1,1,D
+E1,24/10/2020,15:00,Coventry,Blackburn,0,4,A
+E1,24/10/2020,15:00,Huddersfield,Preston,1,2,A
+E1,24/10/2020,15:00,Millwall,Barnsley,1,1,D
+E1,24/10/2020,15:00,Norwich,Wycombe,2,1,H
+E1,24/10/2020,15:00,QPR,Birmingham,0,0,D
+E1,24/10/2020,15:00,Reading,Rotherham,3,0,H
+E1,24/10/2020,15:00,Sheffield Weds,Luton,0,1,A
+E1,24/10/2020,15:00,Stoke,Brentford,3,2,H
+E1,27/10/2020,19:00,Barnsley,QPR,3,0,H
+E1,27/10/2020,19:45,Blackburn,Reading,2,4,A
+E1,27/10/2020,19:45,Brentford,Norwich,1,1,D
+E1,27/10/2020,19:45,Middlesbrough,Coventry,2,0,H
+E1,27/10/2020,19:45,Swansea,Stoke,2,0,H
+E1,27/10/2020,19:45,Wycombe,Watford,1,1,D
+E1,28/10/2020,19:00,Preston,Millwall,0,2,A
+E1,28/10/2020,19:45,Birmingham,Huddersfield,2,1,H
+E1,28/10/2020,19:45,Bournemouth,Bristol City,1,0,H
+E1,28/10/2020,19:45,Derby,Cardiff,1,1,D
+E1,28/10/2020,19:45,Luton,Nott'm Forest,1,1,D
+E1,28/10/2020,19:45,Rotherham,Sheffield Weds,3,0,H
+E1,30/10/2020,19:45,Coventry,Reading,3,2,H
+E1,31/10/2020,12:30,Bristol City,Norwich,1,3,A
+E1,31/10/2020,15:00,Barnsley,Watford,1,0,H
+E1,31/10/2020,15:00,Bournemouth,Derby,1,1,D
+E1,31/10/2020,15:00,Luton,Brentford,0,3,A
+E1,31/10/2020,15:00,Middlesbrough,Nott'm Forest,1,0,H
+E1,31/10/2020,15:00,Millwall,Huddersfield,0,3,A
+E1,31/10/2020,15:00,Preston,Birmingham,1,2,A
+E1,31/10/2020,15:00,QPR,Cardiff,3,2,H
+E1,31/10/2020,15:00,Stoke,Rotherham,1,0,H
+E1,31/10/2020,15:00,Swansea,Blackburn,2,0,H
+E1,31/10/2020,15:00,Wycombe,Sheffield Weds,1,0,H
+E1,03/11/2020,19:00,Brentford,Swansea,1,1,D
+E1,03/11/2020,19:00,Huddersfield,Bristol City,1,2,A
+E1,03/11/2020,19:00,Norwich,Millwall,0,0,D
+E1,03/11/2020,19:00,Sheffield Weds,Bournemouth,1,0,H
+E1,03/11/2020,19:45,Blackburn,Middlesbrough,0,0,D
+E1,03/11/2020,19:45,Cardiff,Barnsley,3,0,H
+E1,04/11/2020,19:00,Reading,Preston,0,3,A
+E1,04/11/2020,19:00,Watford,Stoke,3,2,H
+E1,04/11/2020,19:45,Birmingham,Wycombe,1,2,A
+E1,04/11/2020,19:45,Derby,QPR,0,1,A
+E1,04/11/2020,19:45,Nott'm Forest,Coventry,2,1,H
+E1,04/11/2020,19:45,Rotherham,Luton,0,1,A
+E1,06/11/2020,18:00,Cardiff,Bristol City,0,1,A
+E1,07/11/2020,12:30,Reading,Stoke,0,3,A
+E1,07/11/2020,15:00,Birmingham,Bournemouth,1,3,A
+E1,07/11/2020,15:00,Blackburn,QPR,3,1,H
+E1,07/11/2020,15:00,Brentford,Middlesbrough,0,0,D
+E1,07/11/2020,15:00,Derby,Barnsley,0,2,A
+E1,07/11/2020,15:00,Huddersfield,Luton,1,1,D
+E1,07/11/2020,15:00,Norwich,Swansea,1,0,H
+E1,07/11/2020,15:00,Nott'm Forest,Wycombe,2,0,H
+E1,07/11/2020,15:00,Rotherham,Preston,2,1,H
+E1,07/11/2020,15:00,Sheffield Weds,Millwall,0,0,D
+E1,07/11/2020,15:00,Watford,Coventry,3,2,H
+E1,20/11/2020,19:45,Coventry,Birmingham,0,0,D
+E1,21/11/2020,12:30,Bournemouth,Reading,4,2,H
+E1,21/11/2020,15:00,Barnsley,Nott'm Forest,2,0,H
+E1,21/11/2020,15:00,Bristol City,Derby,1,0,H
+E1,21/11/2020,15:00,Luton,Blackburn,1,1,D
+E1,21/11/2020,15:00,Middlesbrough,Norwich,0,1,A
+E1,21/11/2020,15:00,Millwall,Cardiff,1,1,D
+E1,21/11/2020,15:00,Preston,Sheffield Weds,1,0,H
+E1,21/11/2020,15:00,QPR,Watford,1,1,D
+E1,21/11/2020,15:00,Stoke,Huddersfield,4,3,H
+E1,21/11/2020,15:00,Swansea,Rotherham,1,0,H
+E1,21/11/2020,15:00,Wycombe,Brentford,0,0,D
+E1,24/11/2020,19:00,Luton,Birmingham,1,1,D
+E1,24/11/2020,19:00,QPR,Rotherham,3,2,H
+E1,24/11/2020,19:00,Stoke,Norwich,2,3,A
+E1,24/11/2020,19:00,Wycombe,Huddersfield,0,0,D
+E1,24/11/2020,19:45,Barnsley,Brentford,0,1,A
+E1,24/11/2020,19:45,Preston,Blackburn,0,3,A
+E1,24/11/2020,20:00,Bournemouth,Nott'm Forest,2,0,H
+E1,25/11/2020,19:00,Middlesbrough,Derby,3,0,H
+E1,25/11/2020,19:00,Millwall,Reading,1,1,D
+E1,25/11/2020,19:45,Bristol City,Watford,0,0,D
+E1,25/11/2020,19:45,Coventry,Cardiff,1,0,H
+E1,25/11/2020,19:45,Swansea,Sheffield Weds,1,1,D
+E1,27/11/2020,19:45,Brentford,QPR,2,1,H
+E1,28/11/2020,12:30,Reading,Bristol City,3,1,H
+E1,28/11/2020,15:00,Birmingham,Millwall,0,0,D
+E1,28/11/2020,15:00,Blackburn,Barnsley,2,1,H
+E1,28/11/2020,15:00,Cardiff,Luton,4,0,H
+E1,28/11/2020,15:00,Derby,Wycombe,1,1,D
+E1,28/11/2020,15:00,Huddersfield,Middlesbrough,3,2,H
+E1,28/11/2020,15:00,Norwich,Coventry,1,1,D
+E1,28/11/2020,15:00,Rotherham,Bournemouth,2,2,D
+E1,28/11/2020,15:00,Sheffield Weds,Stoke,0,0,D
+E1,28/11/2020,15:00,Watford,Preston,4,1,H
+E1,29/11/2020,12:00,Nott'm Forest,Swansea,0,1,A
+E1,01/12/2020,19:00,Cardiff,Huddersfield,3,0,H
+E1,01/12/2020,19:45,Birmingham,Barnsley,1,2,A
+E1,01/12/2020,19:45,Bournemouth,Preston,2,3,A
+E1,01/12/2020,19:45,Derby,Coventry,1,1,D
+E1,01/12/2020,19:45,QPR,Bristol City,1,2,A
+E1,01/12/2020,20:00,Rotherham,Brentford,0,2,A
+E1,02/12/2020,19:00,Middlesbrough,Swansea,2,1,H
+E1,02/12/2020,19:45,Blackburn,Millwall,2,1,H
+E1,02/12/2020,19:45,Luton,Norwich,3,1,H
+E1,02/12/2020,19:45,Nott'm Forest,Watford,0,0,D
+E1,02/12/2020,19:45,Sheffield Weds,Reading,1,1,D
+E1,02/12/2020,19:45,Wycombe,Stoke,0,1,A
+E1,04/12/2020,17:30,Barnsley,Bournemouth,0,4,A
+E1,05/12/2020,12:30,Reading,Nott'm Forest,2,0,H
+E1,05/12/2020,15:00,Brentford,Blackburn,2,2,D
+E1,05/12/2020,15:00,Bristol City,Birmingham,0,1,A
+E1,05/12/2020,15:00,Coventry,Rotherham,3,1,H
+E1,05/12/2020,15:00,Huddersfield,QPR,2,0,H
+E1,05/12/2020,15:00,Millwall,Derby,0,1,A
+E1,05/12/2020,15:00,Norwich,Sheffield Weds,2,1,H
+E1,05/12/2020,15:00,Preston,Wycombe,2,2,D
+E1,05/12/2020,15:00,Stoke,Middlesbrough,1,0,H
+E1,05/12/2020,15:00,Swansea,Luton,2,0,H
+E1,05/12/2020,15:00,Watford,Cardiff,0,1,A
+E1,08/12/2020,19:45,Coventry,Luton,0,0,D
+E1,08/12/2020,19:45,Huddersfield,Sheffield Weds,2,0,H
+E1,08/12/2020,19:45,Millwall,QPR,1,1,D
+E1,08/12/2020,19:45,Stoke,Cardiff,1,2,A
+E1,08/12/2020,19:45,Swansea,Bournemouth,0,0,D
+E1,08/12/2020,19:45,Watford,Rotherham,2,0,H
+E1,09/12/2020,19:00,Preston,Middlesbrough,3,0,H
+E1,09/12/2020,19:45,Barnsley,Wycombe,2,1,H
+E1,09/12/2020,19:45,Brentford,Derby,0,0,D
+E1,09/12/2020,19:45,Bristol City,Blackburn,1,0,H
+E1,09/12/2020,19:45,Norwich,Nott'm Forest,2,1,H
+E1,09/12/2020,19:45,Reading,Birmingham,1,2,A
+E1,12/12/2020,12:30,Cardiff,Swansea,0,2,A
+E1,12/12/2020,15:00,Birmingham,Watford,0,1,A
+E1,12/12/2020,15:00,Blackburn,Norwich,1,2,A
+E1,12/12/2020,15:00,Bournemouth,Huddersfield,5,0,H
+E1,12/12/2020,15:00,Derby,Stoke,0,0,D
+E1,12/12/2020,15:00,Luton,Preston,3,0,H
+E1,12/12/2020,15:00,Middlesbrough,Millwall,3,0,H
+E1,12/12/2020,15:00,Nott'm Forest,Brentford,1,3,A
+E1,12/12/2020,15:00,QPR,Reading,0,1,A
+E1,12/12/2020,15:00,Rotherham,Bristol City,2,0,H
+E1,12/12/2020,15:00,Sheffield Weds,Barnsley,1,2,A
+E1,12/12/2020,15:00,Wycombe,Coventry,1,2,A
+E1,15/12/2020,17:30,QPR,Stoke,0,0,D
+E1,15/12/2020,19:45,Barnsley,Preston,2,1,H
+E1,15/12/2020,19:45,Bournemouth,Wycombe,1,0,H
+E1,15/12/2020,19:45,Bristol City,Millwall,0,2,A
+E1,15/12/2020,19:45,Nott'm Forest,Sheffield Weds,2,0,H
+E1,15/12/2020,20:00,Watford,Brentford,1,1,D
+E1,16/12/2020,17:30,Derby,Swansea,2,0,H
+E1,16/12/2020,19:00,Cardiff,Birmingham,3,2,H
+E1,16/12/2020,19:00,Middlesbrough,Luton,1,0,H
+E1,16/12/2020,19:45,Blackburn,Rotherham,2,1,H
+E1,16/12/2020,20:00,Coventry,Huddersfield,0,0,D
+E1,16/12/2020,20:00,Reading,Norwich,1,2,A
+E1,18/12/2020,20:00,Preston,Bristol City,1,0,H
+E1,19/12/2020,12:30,Norwich,Cardiff,2,0,H
+E1,19/12/2020,15:00,Birmingham,Middlesbrough,1,4,A
+E1,19/12/2020,15:00,Brentford,Reading,3,1,H
+E1,19/12/2020,15:00,Huddersfield,Watford,2,0,H
+E1,19/12/2020,15:00,Luton,Bournemouth,0,0,D
+E1,19/12/2020,15:00,Millwall,Nott'm Forest,1,1,D
+E1,19/12/2020,15:00,Sheffield Weds,Coventry,1,0,H
+E1,19/12/2020,15:00,Stoke,Blackburn,1,0,H
+E1,19/12/2020,15:00,Swansea,Barnsley,2,0,H
+E1,19/12/2020,15:00,Wycombe,QPR,1,1,D
+E1,26/12/2020,15:00,Barnsley,Huddersfield,2,1,H
+E1,26/12/2020,15:00,Blackburn,Sheffield Weds,1,1,D
+E1,26/12/2020,15:00,Bristol City,Wycombe,2,1,H
+E1,26/12/2020,15:00,Cardiff,Brentford,2,3,A
+E1,26/12/2020,15:00,Coventry,Stoke,0,0,D
+E1,26/12/2020,15:00,Derby,Preston,0,1,A
+E1,26/12/2020,15:00,Nott'm Forest,Birmingham,0,0,D
+E1,26/12/2020,15:00,QPR,Swansea,0,2,A
+E1,26/12/2020,15:00,Reading,Luton,2,1,H
+E1,26/12/2020,19:45,Watford,Norwich,1,0,H
+E1,29/12/2020,17:30,Birmingham,Derby,0,4,A
+E1,29/12/2020,19:00,Sheffield Weds,Middlesbrough,2,1,H
+E1,29/12/2020,19:45,Huddersfield,Blackburn,2,1,H
+E1,29/12/2020,19:45,Luton,Bristol City,2,1,H
+E1,29/12/2020,19:45,Norwich,QPR,1,1,D
+E1,29/12/2020,19:45,Preston,Coventry,2,0,H
+E1,29/12/2020,19:45,Rotherham,Barnsley,1,2,A
+E1,29/12/2020,19:45,Wycombe,Cardiff,2,1,H
+E1,29/12/2020,20:00,Stoke,Nott'm Forest,1,1,D
+E1,30/12/2020,17:30,Brentford,Bournemouth,2,1,H
+E1,30/12/2020,20:00,Swansea,Reading,0,0,D
+E1,01/01/2021,17:30,Sheffield Weds,Derby,1,0,H
+E1,02/01/2021,15:00,Birmingham,Blackburn,0,2,A
+E1,02/01/2021,15:00,Huddersfield,Reading,1,2,A
+E1,02/01/2021,15:00,Millwall,Coventry,1,2,A
+E1,02/01/2021,15:00,Norwich,Barnsley,1,0,H
+E1,02/01/2021,15:00,Preston,Nott'm Forest,0,1,A
+E1,02/01/2021,15:00,Swansea,Watford,2,1,H
+E1,02/01/2021,15:00,Wycombe,Middlesbrough,1,3,A
+E1,02/01/2021,19:45,Stoke,Bournemouth,0,1,A
+E1,12/01/2021,19:00,Luton,QPR,0,2,A
+E1,12/01/2021,19:45,Bournemouth,Millwall,1,1,D
+E1,16/01/2021,12:30,Middlesbrough,Birmingham,0,1,A
+E1,16/01/2021,15:00,Blackburn,Stoke,1,1,D
+E1,16/01/2021,15:00,Bournemouth,Luton,0,1,A
+E1,16/01/2021,15:00,Bristol City,Preston,2,0,H
+E1,16/01/2021,15:00,Cardiff,Norwich,1,2,A
+E1,16/01/2021,15:00,Derby,Rotherham,0,1,A
+E1,16/01/2021,15:00,Nott'm Forest,Millwall,3,1,H
+E1,16/01/2021,15:00,Watford,Huddersfield,2,0,H
+E1,16/01/2021,19:45,Barnsley,Swansea,0,2,A
+E1,19/01/2021,18:00,Derby,Bournemouth,1,0,H
+E1,19/01/2021,18:00,Reading,Coventry,3,0,H
+E1,19/01/2021,19:45,Rotherham,Stoke,3,3,D
+E1,19/01/2021,19:45,Watford,Barnsley,1,0,H
+E1,20/01/2021,18:00,Norwich,Bristol City,2,0,H
+E1,20/01/2021,19:00,Brentford,Luton,1,0,H
+E1,20/01/2021,19:00,Cardiff,QPR,0,1,A
+E1,20/01/2021,19:00,Huddersfield,Millwall,0,1,A
+E1,20/01/2021,19:00,Nott'm Forest,Middlesbrough,1,2,A
+E1,20/01/2021,19:45,Birmingham,Preston,0,1,A
+E1,22/01/2021,19:45,Stoke,Watford,1,2,A
+E1,23/01/2021,15:00,QPR,Derby,0,1,A
+E1,24/01/2021,12:30,Preston,Reading,0,0,D
+E1,24/01/2021,15:00,Middlesbrough,Blackburn,0,1,A
+E1,26/01/2021,19:00,Bristol City,Huddersfield,2,1,H
+E1,26/01/2021,19:00,Millwall,Watford,0,0,D
+E1,27/01/2021,19:00,Barnsley,Cardiff,2,2,D
+E1,27/01/2021,19:00,Coventry,Sheffield Weds,2,0,H
+E1,27/01/2021,19:00,Middlesbrough,Rotherham,0,3,A
+E1,27/01/2021,19:00,Swansea,Brentford,1,1,D
+E1,29/01/2021,20:00,Reading,Bournemouth,3,1,H
+E1,30/01/2021,12:30,Norwich,Middlesbrough,0,0,D
+E1,30/01/2021,15:00,Birmingham,Coventry,1,1,D
+E1,30/01/2021,15:00,Blackburn,Luton,1,0,H
+E1,30/01/2021,15:00,Brentford,Wycombe,7,2,H
+E1,30/01/2021,15:00,Cardiff,Millwall,1,1,D
+E1,30/01/2021,15:00,Derby,Bristol City,1,0,H
+E1,30/01/2021,15:00,Huddersfield,Stoke,1,1,D
+E1,30/01/2021,15:00,Nott'm Forest,Barnsley,0,0,D
+E1,30/01/2021,15:00,Rotherham,Swansea,1,3,A
+E1,30/01/2021,15:00,Sheffield Weds,Preston,1,0,H
+E1,01/02/2021,19:45,Watford,QPR,1,2,A
+E1,02/02/2021,18:00,Millwall,Norwich,0,0,D
+E1,02/02/2021,19:00,Bournemouth,Sheffield Weds,1,2,A
+E1,02/02/2021,19:00,Coventry,Nott'm Forest,1,2,A
+E1,02/02/2021,19:00,Wycombe,Birmingham,0,0,D
+E1,03/02/2021,19:00,Rotherham,Derby,3,0,H
+E1,03/02/2021,19:45,Brentford,Bristol City,3,2,H
+E1,05/02/2021,20:15,Swansea,Norwich,2,0,H
+E1,06/02/2021,12:30,Coventry,Watford,0,0,D
+E1,06/02/2021,15:00,Bournemouth,Birmingham,3,2,H
+E1,06/02/2021,15:00,Bristol City,Cardiff,0,2,A
+E1,06/02/2021,15:00,Luton,Huddersfield,1,1,D
+E1,06/02/2021,15:00,Middlesbrough,Brentford,1,4,A
+E1,06/02/2021,15:00,Millwall,Sheffield Weds,4,1,H
+E1,06/02/2021,15:00,Preston,Rotherham,1,2,A
+E1,06/02/2021,15:00,QPR,Blackburn,1,0,H
+E1,06/02/2021,15:00,Stoke,Reading,0,0,D
+E1,06/02/2021,15:00,Wycombe,Nott'm Forest,0,3,A
+E1,09/02/2021,19:00,Rotherham,Cardiff,1,2,A
+E1,09/02/2021,19:00,Sheffield Weds,Wycombe,2,0,H
+E1,10/02/2021,19:00,Reading,Brentford,1,3,A
+E1,12/02/2021,19:45,Blackburn,Preston,1,2,A
+E1,13/02/2021,12:30,Nott'm Forest,Bournemouth,0,0,D
+E1,13/02/2021,15:00,Birmingham,Luton,0,1,A
+E1,13/02/2021,15:00,Cardiff,Coventry,3,1,H
+E1,13/02/2021,15:00,Derby,Middlesbrough,2,1,H
+E1,13/02/2021,15:00,Huddersfield,Wycombe,2,3,A
+E1,13/02/2021,15:00,Norwich,Stoke,4,1,H
+E1,13/02/2021,15:00,Reading,Millwall,1,2,A
+E1,13/02/2021,15:00,Watford,Bristol City,6,0,H
+E1,14/02/2021,13:00,Brentford,Barnsley,0,2,A
+E1,16/02/2021,19:00,Preston,Watford,0,1,A
+E1,16/02/2021,19:00,Stoke,Sheffield Weds,1,0,H
+E1,16/02/2021,19:45,Bristol City,Reading,0,2,A
+E1,16/02/2021,19:45,Middlesbrough,Huddersfield,2,1,H
+E1,16/02/2021,19:45,Wycombe,Derby,1,2,A
+E1,16/02/2021,20:15,Luton,Cardiff,0,2,A
+E1,17/02/2021,19:00,Coventry,Norwich,0,2,A
+E1,17/02/2021,19:00,Millwall,Birmingham,2,0,H
+E1,17/02/2021,19:00,QPR,Brentford,2,1,H
+E1,17/02/2021,19:00,Swansea,Nott'm Forest,1,0,H
+E1,17/02/2021,19:45,Barnsley,Blackburn,2,1,H
+E1,17/02/2021,20:15,Bournemouth,Rotherham,1,0,H
+E1,19/02/2021,19:45,Watford,Derby,2,1,H
+E1,20/02/2021,12:30,Coventry,Brentford,2,0,H
+E1,20/02/2021,15:00,Bristol City,Barnsley,0,1,A
+E1,20/02/2021,15:00,Cardiff,Preston,4,0,H
+E1,20/02/2021,15:00,Huddersfield,Swansea,4,1,H
+E1,20/02/2021,15:00,Millwall,Wycombe,0,0,D
+E1,20/02/2021,15:00,Norwich,Rotherham,1,0,H
+E1,20/02/2021,15:00,Nott'm Forest,Blackburn,1,0,H
+E1,20/02/2021,15:00,QPR,Bournemouth,2,1,H
+E1,20/02/2021,15:00,Reading,Middlesbrough,0,2,A
+E1,20/02/2021,15:00,Sheffield Weds,Birmingham,0,1,A
+E1,20/02/2021,15:00,Stoke,Luton,3,0,H
+E1,23/02/2021,19:00,Birmingham,Norwich,1,3,A
+E1,23/02/2021,19:00,Derby,Huddersfield,2,0,H
+E1,23/02/2021,19:00,Middlesbrough,Bristol City,1,3,A
+E1,23/02/2021,19:45,Luton,Millwall,1,1,D
+E1,23/02/2021,19:45,Rotherham,Nott'm Forest,0,1,A
+E1,23/02/2021,19:45,Wycombe,Reading,1,0,H
+E1,24/02/2021,19:00,Barnsley,Stoke,2,0,H
+E1,24/02/2021,19:00,Brentford,Sheffield Weds,3,0,H
+E1,24/02/2021,19:00,Swansea,Coventry,1,0,H
+E1,24/02/2021,19:45,Blackburn,Watford,2,3,A
+E1,24/02/2021,19:45,Bournemouth,Cardiff,1,2,A
+E1,24/02/2021,19:45,Preston,QPR,0,0,D
+E1,26/02/2021,19:45,Derby,Nott'm Forest,1,1,D
+E1,27/02/2021,12:30,Bournemouth,Watford,1,0,H
+E1,27/02/2021,15:00,Barnsley,Millwall,2,1,H
+E1,27/02/2021,15:00,Birmingham,QPR,2,1,H
+E1,27/02/2021,15:00,Blackburn,Coventry,1,1,D
+E1,27/02/2021,15:00,Brentford,Stoke,2,1,H
+E1,27/02/2021,15:00,Luton,Sheffield Weds,3,2,H
+E1,27/02/2021,15:00,Middlesbrough,Cardiff,1,1,D
+E1,27/02/2021,15:00,Preston,Huddersfield,3,0,H
+E1,27/02/2021,15:00,Rotherham,Reading,0,1,A
+E1,27/02/2021,15:00,Swansea,Bristol City,1,3,A
+E1,28/02/2021,12:00,Wycombe,Norwich,0,2,A
+E1,02/03/2021,19:00,Cardiff,Derby,4,0,H
+E1,02/03/2021,19:00,Coventry,Middlesbrough,1,2,A
+E1,02/03/2021,19:00,Huddersfield,Birmingham,1,1,D
+E1,02/03/2021,19:00,Millwall,Preston,2,1,H
+E1,02/03/2021,19:45,Nott'm Forest,Luton,0,1,A
+E1,02/03/2021,20:00,Reading,Blackburn,1,0,H
+E1,03/03/2021,17:30,Norwich,Brentford,1,0,H
+E1,03/03/2021,19:00,QPR,Barnsley,1,3,A
+E1,03/03/2021,19:00,Watford,Wycombe,2,0,H
+E1,03/03/2021,19:45,Bristol City,Bournemouth,1,2,A
+E1,03/03/2021,19:45,Sheffield Weds,Rotherham,1,2,A
+E1,03/03/2021,20:15,Stoke,Swansea,1,2,A
+E1,05/03/2021,19:45,Huddersfield,Cardiff,0,0,D
+E1,06/03/2021,12:30,Watford,Nott'm Forest,1,0,H
+E1,06/03/2021,15:00,Barnsley,Birmingham,1,0,H
+E1,06/03/2021,15:00,Bristol City,QPR,0,2,A
+E1,06/03/2021,15:00,Coventry,Derby,1,0,H
+E1,06/03/2021,15:00,Millwall,Blackburn,0,2,A
+E1,06/03/2021,15:00,Norwich,Luton,3,0,H
+E1,06/03/2021,15:00,Preston,Bournemouth,1,1,D
+E1,06/03/2021,15:00,Reading,Sheffield Weds,3,0,H
+E1,06/03/2021,15:00,Stoke,Wycombe,2,0,H
+E1,06/03/2021,15:00,Swansea,Middlesbrough,2,1,H
+E1,09/03/2021,18:00,Blackburn,Swansea,1,1,D
+E1,09/03/2021,19:00,QPR,Wycombe,1,0,H
+E1,10/03/2021,19:00,Barnsley,Derby,0,0,D
+E1,12/03/2021,19:45,Blackburn,Brentford,0,1,A
+E1,13/03/2021,12:15,Luton,Swansea,0,1,A
+E1,13/03/2021,15:00,Birmingham,Bristol City,0,3,A
+E1,13/03/2021,15:00,Bournemouth,Barnsley,2,3,A
+E1,13/03/2021,15:00,Cardiff,Watford,1,2,A
+E1,13/03/2021,15:00,Derby,Millwall,0,1,A
+E1,13/03/2021,15:00,Middlesbrough,Stoke,3,0,H
+E1,13/03/2021,15:00,Nott'm Forest,Reading,1,1,D
+E1,13/03/2021,15:00,QPR,Huddersfield,0,1,A
+E1,13/03/2021,15:00,Wycombe,Preston,1,0,H
+E1,14/03/2021,12:15,Sheffield Weds,Norwich,1,2,A
+E1,16/03/2021,19:00,Cardiff,Stoke,0,0,D
+E1,16/03/2021,19:00,Derby,Brentford,2,2,D
+E1,16/03/2021,19:00,Luton,Coventry,2,0,H
+E1,16/03/2021,19:00,Middlesbrough,Preston,2,0,H
+E1,16/03/2021,19:00,Rotherham,Watford,1,4,A
+E1,16/03/2021,19:45,Bournemouth,Swansea,3,0,H
+E1,17/03/2021,19:00,Nott'm Forest,Norwich,0,2,A
+E1,17/03/2021,19:00,QPR,Millwall,3,2,H
+E1,17/03/2021,19:00,Wycombe,Barnsley,1,3,A
+E1,17/03/2021,19:45,Birmingham,Reading,2,1,H
+E1,17/03/2021,19:45,Blackburn,Bristol City,0,0,D
+E1,17/03/2021,19:45,Sheffield Weds,Huddersfield,1,1,D
+E1,20/03/2021,12:30,Brentford,Nott'm Forest,1,1,D
+E1,20/03/2021,15:00,Barnsley,Sheffield Weds,1,2,A
+E1,20/03/2021,15:00,Bristol City,Rotherham,0,2,A
+E1,20/03/2021,15:00,Coventry,Wycombe,0,0,D
+E1,20/03/2021,15:00,Millwall,Middlesbrough,1,0,H
+E1,20/03/2021,15:00,Norwich,Blackburn,1,1,D
+E1,20/03/2021,15:00,Preston,Luton,0,1,A
+E1,20/03/2021,15:00,Reading,QPR,1,1,D
+E1,20/03/2021,15:00,Stoke,Derby,1,0,H
+E1,20/03/2021,15:00,Watford,Birmingham,3,0,H
+E1,20/03/2021,17:30,Swansea,Cardiff,0,1,A
+E1,02/04/2021,15:00,Bournemouth,Middlesbrough,3,1,H
+E1,02/04/2021,15:00,Bristol City,Stoke,0,2,A
+E1,02/04/2021,15:00,Cardiff,Nott'm Forest,0,1,A
+E1,02/04/2021,15:00,Derby,Luton,2,0,H
+E1,02/04/2021,15:00,Millwall,Rotherham,1,0,H
+E1,02/04/2021,15:00,Preston,Norwich,1,1,D
+E1,02/04/2021,15:00,QPR,Coventry,3,0,H
+E1,02/04/2021,15:00,Watford,Sheffield Weds,1,0,H
+E1,02/04/2021,15:00,Wycombe,Blackburn,1,0,H
+E1,02/04/2021,17:30,Barnsley,Reading,1,1,D
+E1,02/04/2021,20:00,Birmingham,Swansea,1,0,H
+E1,03/04/2021,12:30,Huddersfield,Brentford,1,1,D
+E1,05/04/2021,12:30,Middlesbrough,Watford,1,1,D
+E1,05/04/2021,15:00,Blackburn,Bournemouth,0,2,A
+E1,05/04/2021,15:00,Coventry,Bristol City,3,1,H
+E1,05/04/2021,15:00,Luton,Barnsley,1,2,A
+E1,05/04/2021,15:00,Nott'm Forest,QPR,3,1,H
+E1,05/04/2021,15:00,Reading,Derby,3,1,H
+E1,05/04/2021,15:00,Rotherham,Wycombe,0,3,A
+E1,05/04/2021,15:00,Stoke,Millwall,1,2,A
+E1,05/04/2021,15:00,Swansea,Preston,0,1,A
+E1,05/04/2021,17:30,Sheffield Weds,Cardiff,5,0,H
+E1,06/04/2021,19:00,Brentford,Birmingham,0,0,D
+E1,06/04/2021,19:45,Norwich,Huddersfield,7,0,H
+E1,09/04/2021,19:45,Watford,Reading,2,0,H
+E1,10/04/2021,12:30,Millwall,Swansea,0,3,A
+E1,10/04/2021,15:00,Barnsley,Middlesbrough,2,0,H
+E1,10/04/2021,15:00,Birmingham,Stoke,2,0,H
+E1,10/04/2021,15:00,Bournemouth,Coventry,4,1,H
+E1,10/04/2021,15:00,Bristol City,Nott'm Forest,0,0,D
+E1,10/04/2021,15:00,Cardiff,Blackburn,2,2,D
+E1,10/04/2021,15:00,Derby,Norwich,0,1,A
+E1,10/04/2021,15:00,Huddersfield,Rotherham,0,0,D
+E1,10/04/2021,15:00,Preston,Brentford,0,5,A
+E1,10/04/2021,15:00,QPR,Sheffield Weds,4,1,H
+E1,10/04/2021,15:00,Wycombe,Luton,1,3,A
+E1,13/04/2021,17:30,Huddersfield,Bournemouth,1,2,A
+E1,13/04/2021,18:00,Sheffield Weds,Swansea,0,2,A
+E1,13/04/2021,19:00,Rotherham,QPR,3,1,H
+E1,15/04/2021,19:00,Rotherham,Coventry,0,1,A
+E1,16/04/2021,18:00,Blackburn,Derby,2,1,H
+E1,16/04/2021,18:00,Reading,Cardiff,1,1,D
+E1,17/04/2021,12:30,Brentford,Millwall,0,0,D
+E1,17/04/2021,12:30,Luton,Watford,1,0,H
+E1,17/04/2021,12:30,Middlesbrough,QPR,1,2,A
+E1,17/04/2021,12:30,Nott'm Forest,Huddersfield,0,2,A
+E1,17/04/2021,12:30,Sheffield Weds,Bristol City,1,1,D
+E1,17/04/2021,12:30,Stoke,Preston,0,0,D
+E1,17/04/2021,12:30,Swansea,Wycombe,2,2,D
+E1,17/04/2021,20:00,Norwich,Bournemouth,1,3,A
+E1,18/04/2021,12:00,Rotherham,Birmingham,0,1,A
+E1,18/04/2021,15:00,Coventry,Barnsley,2,0,H
+E1,20/04/2021,18:00,Brentford,Cardiff,1,1,D
+E1,20/04/2021,18:00,Norwich,Watford,0,1,A
+E1,20/04/2021,19:00,Preston,Derby,3,0,H
+E1,20/04/2021,19:00,Sheffield Weds,Blackburn,1,0,H
+E1,20/04/2021,19:00,Swansea,QPR,0,1,A
+E1,21/04/2021,18:00,Millwall,Bournemouth,1,4,A
+E1,21/04/2021,18:00,Rotherham,Middlesbrough,1,2,A
+E1,21/04/2021,19:00,Stoke,Coventry,2,3,A
+E1,21/04/2021,19:00,Wycombe,Bristol City,2,1,H
+E1,21/04/2021,19:45,Birmingham,Nott'm Forest,1,1,D
+E1,21/04/2021,19:45,Huddersfield,Barnsley,0,1,A
+E1,21/04/2021,19:45,Luton,Reading,0,0,D
+E1,24/04/2021,12:30,Bournemouth,Brentford,0,1,A
+E1,24/04/2021,15:00,Barnsley,Rotherham,1,0,H
+E1,24/04/2021,15:00,Blackburn,Huddersfield,5,2,H
+E1,24/04/2021,15:00,Cardiff,Wycombe,2,1,H
+E1,24/04/2021,15:00,Coventry,Preston,0,1,A
+E1,24/04/2021,15:00,Derby,Birmingham,1,2,A
+E1,24/04/2021,15:00,Middlesbrough,Sheffield Weds,3,1,H
+E1,24/04/2021,15:00,Nott'm Forest,Stoke,1,1,D
+E1,24/04/2021,15:00,QPR,Norwich,1,3,A
+E1,24/04/2021,15:00,Watford,Millwall,1,0,H
+E1,25/04/2021,12:00,Reading,Swansea,2,2,D
+E1,25/04/2021,13:00,Bristol City,Luton,2,3,A
+E1,27/04/2021,19:00,Brentford,Rotherham,1,0,H
+E1,01/05/2021,12:30,Sheffield Weds,Nott'm Forest,0,0,D
+E1,01/05/2021,15:00,Birmingham,Cardiff,0,4,A
+E1,01/05/2021,15:00,Brentford,Watford,2,0,H
+E1,01/05/2021,15:00,Huddersfield,Coventry,1,1,D
+E1,01/05/2021,15:00,Luton,Middlesbrough,1,1,D
+E1,01/05/2021,15:00,Millwall,Bristol City,4,1,H
+E1,01/05/2021,15:00,Norwich,Reading,4,1,H
+E1,01/05/2021,15:00,Preston,Barnsley,2,0,H
+E1,01/05/2021,15:00,Rotherham,Blackburn,1,1,D
+E1,01/05/2021,15:00,Stoke,QPR,0,2,A
+E1,01/05/2021,15:00,Swansea,Derby,2,1,H
+E1,01/05/2021,15:00,Wycombe,Bournemouth,1,0,H
+E1,04/05/2021,19:15,Luton,Rotherham,0,0,D
+E1,08/05/2021,12:30,Barnsley,Norwich,2,2,D
+E1,08/05/2021,12:30,Blackburn,Birmingham,5,2,H
+E1,08/05/2021,12:30,Bournemouth,Stoke,0,2,A
+E1,08/05/2021,12:30,Bristol City,Brentford,1,3,A
+E1,08/05/2021,12:30,Cardiff,Rotherham,1,1,D
+E1,08/05/2021,12:30,Coventry,Millwall,6,1,H
+E1,08/05/2021,12:30,Derby,Sheffield Weds,3,3,D
+E1,08/05/2021,12:30,Middlesbrough,Wycombe,0,3,A
+E1,08/05/2021,12:30,Nott'm Forest,Preston,1,2,A
+E1,08/05/2021,12:30,QPR,Luton,3,1,H
+E1,08/05/2021,12:30,Reading,Huddersfield,2,2,D
+E1,08/05/2021,12:30,Watford,Swansea,2,0,H

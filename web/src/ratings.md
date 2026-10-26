@@ -2,7 +2,7 @@
 
 Every team carries an **Elo rating**. It starts at 1500, moves after every match
 by up to 35 points depending on the result and how expected it was, and carries
-across seasons. The gap between two teams' ratings (plus a **+130 home
+across seasons — except for promoted teams, which restart at 1350. The gap between two teams' ratings (plus a **+130 home
 advantage**) is the model's single biggest input.
 
 ```js

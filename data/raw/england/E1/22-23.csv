@@ -1,0 +1,553 @@
+Div,Date,Time,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+E1,29/07/2022,20:00,Huddersfield,Burnley,0,1,A
+E1,30/07/2022,15:00,Blackburn,QPR,1,0,H
+E1,30/07/2022,15:00,Blackpool,Reading,1,0,H
+E1,30/07/2022,15:00,Cardiff,Norwich,1,0,H
+E1,30/07/2022,15:00,Hull,Bristol City,2,1,H
+E1,30/07/2022,15:00,Luton,Birmingham,0,0,D
+E1,30/07/2022,15:00,Millwall,Stoke,2,0,H
+E1,30/07/2022,15:00,Rotherham,Swansea,1,1,D
+E1,30/07/2022,15:00,Wigan,Preston,0,0,D
+E1,30/07/2022,17:30,Middlesbrough,West Brom,1,1,D
+E1,31/07/2022,12:00,Sunderland,Coventry,1,1,D
+E1,01/08/2022,20:00,Watford,Sheffield United,1,0,H
+E1,05/08/2022,19:45,Birmingham,Huddersfield,2,1,H
+E1,06/08/2022,12:30,Norwich,Wigan,1,1,D
+E1,06/08/2022,15:00,Bristol City,Sunderland,2,3,A
+E1,06/08/2022,15:00,Burnley,Luton,1,1,D
+E1,06/08/2022,15:00,Preston,Hull,0,0,D
+E1,06/08/2022,15:00,QPR,Middlesbrough,3,2,H
+E1,06/08/2022,15:00,Reading,Cardiff,2,1,H
+E1,06/08/2022,15:00,Sheffield United,Millwall,2,0,H
+E1,06/08/2022,15:00,Stoke,Blackpool,2,0,H
+E1,06/08/2022,15:00,Swansea,Blackburn,0,3,A
+E1,08/08/2022,20:00,West Brom,Watford,1,1,D
+E1,12/08/2022,20:00,Watford,Burnley,1,0,H
+E1,13/08/2022,12:30,Cardiff,Birmingham,1,0,H
+E1,13/08/2022,15:00,Blackpool,Swansea,0,1,A
+E1,13/08/2022,15:00,Huddersfield,Stoke,3,1,H
+E1,13/08/2022,15:00,Hull,Norwich,2,1,H
+E1,13/08/2022,15:00,Luton,Preston,0,1,A
+E1,13/08/2022,15:00,Millwall,Coventry,3,2,H
+E1,13/08/2022,15:00,Rotherham,Reading,4,0,H
+E1,13/08/2022,15:00,Sunderland,QPR,2,2,D
+E1,13/08/2022,15:00,Wigan,Bristol City,1,1,D
+E1,14/08/2022,14:00,Middlesbrough,Sheffield United,2,2,D
+E1,14/08/2022,15:00,Blackburn,West Brom,2,1,H
+E1,16/08/2022,19:45,Birmingham,Watford,1,1,D
+E1,16/08/2022,19:45,Bristol City,Luton,2,0,H
+E1,16/08/2022,19:45,Burnley,Hull,1,1,D
+E1,16/08/2022,19:45,Norwich,Huddersfield,2,1,H
+E1,16/08/2022,19:45,Preston,Rotherham,0,0,D
+E1,16/08/2022,19:45,Swansea,Millwall,2,2,D
+E1,16/08/2022,20:00,QPR,Blackpool,0,1,A
+E1,17/08/2022,19:45,Stoke,Middlesbrough,2,2,D
+E1,17/08/2022,20:00,Reading,Blackburn,3,0,H
+E1,17/08/2022,20:00,Sheffield United,Sunderland,2,1,H
+E1,17/08/2022,20:00,West Brom,Cardiff,0,0,D
+E1,19/08/2022,20:00,Norwich,Millwall,2,0,H
+E1,20/08/2022,15:00,Birmingham,Wigan,0,1,A
+E1,20/08/2022,15:00,Burnley,Blackpool,3,3,D
+E1,20/08/2022,15:00,Preston,Watford,0,0,D
+E1,20/08/2022,15:00,QPR,Rotherham,1,1,D
+E1,20/08/2022,15:00,Reading,Middlesbrough,1,0,H
+E1,20/08/2022,15:00,Sheffield United,Blackburn,3,0,H
+E1,20/08/2022,15:00,Stoke,Sunderland,0,1,A
+E1,20/08/2022,15:00,Swansea,Luton,0,2,A
+E1,20/08/2022,15:00,West Brom,Hull,5,2,H
+E1,21/08/2022,12:00,Bristol City,Cardiff,2,0,H
+E1,26/08/2022,20:00,Luton,Sheffield United,1,1,D
+E1,27/08/2022,12:30,Sunderland,Norwich,0,1,A
+E1,27/08/2022,15:00,Blackburn,Stoke,0,1,A
+E1,27/08/2022,15:00,Blackpool,Bristol City,3,3,D
+E1,27/08/2022,15:00,Cardiff,Preston,0,0,D
+E1,27/08/2022,15:00,Huddersfield,West Brom,2,2,D
+E1,27/08/2022,15:00,Hull,Coventry,3,2,H
+E1,27/08/2022,15:00,Middlesbrough,Swansea,2,1,H
+E1,27/08/2022,15:00,Millwall,Reading,0,1,A
+E1,27/08/2022,15:00,Rotherham,Birmingham,2,0,H
+E1,27/08/2022,15:00,Watford,QPR,2,3,A
+E1,27/08/2022,15:00,Wigan,Burnley,1,5,A
+E1,30/08/2022,19:45,Birmingham,Norwich,1,2,A
+E1,30/08/2022,19:45,Burnley,Millwall,2,0,H
+E1,30/08/2022,19:45,Cardiff,Luton,1,2,A
+E1,30/08/2022,19:45,QPR,Hull,3,1,H
+E1,30/08/2022,19:45,Sheffield United,Reading,4,0,H
+E1,30/08/2022,19:45,Wigan,West Brom,1,1,D
+E1,30/08/2022,20:00,Watford,Middlesbrough,2,1,H
+E1,31/08/2022,19:45,Bristol City,Huddersfield,2,0,H
+E1,31/08/2022,19:45,Coventry,Preston,0,1,A
+E1,31/08/2022,19:45,Stoke,Swansea,1,1,D
+E1,31/08/2022,19:45,Sunderland,Rotherham,3,0,H
+E1,31/08/2022,20:00,Blackpool,Blackburn,0,1,A
+E1,02/09/2022,20:00,West Brom,Burnley,1,1,D
+E1,03/09/2022,15:00,Blackburn,Bristol City,2,3,A
+E1,03/09/2022,15:00,Luton,Wigan,1,2,A
+E1,03/09/2022,15:00,Millwall,Cardiff,2,0,H
+E1,03/09/2022,15:00,Norwich,Coventry,3,0,H
+E1,03/09/2022,15:00,Preston,Birmingham,0,1,A
+E1,03/09/2022,15:00,Rotherham,Watford,1,1,D
+E1,03/09/2022,15:00,Swansea,QPR,1,0,H
+E1,04/09/2022,12:00,Reading,Stoke,2,1,H
+E1,04/09/2022,15:00,Huddersfield,Blackpool,0,1,A
+E1,04/09/2022,15:00,Hull,Sheffield United,0,2,A
+E1,05/09/2022,20:00,Middlesbrough,Sunderland,1,0,H
+E1,13/09/2022,19:45,Blackburn,Watford,2,0,H
+E1,13/09/2022,19:45,Huddersfield,Wigan,1,2,A
+E1,13/09/2022,19:45,Hull,Stoke,0,3,A
+E1,13/09/2022,19:45,Middlesbrough,Cardiff,2,3,A
+E1,13/09/2022,19:45,Swansea,Sheffield United,0,1,A
+E1,13/09/2022,20:00,Preston,Burnley,1,1,D
+E1,14/09/2022,19:45,Luton,Coventry,2,2,D
+E1,14/09/2022,19:45,Millwall,QPR,0,2,A
+E1,14/09/2022,19:45,Norwich,Bristol City,3,2,H
+E1,14/09/2022,19:45,Rotherham,Blackpool,3,0,H
+E1,14/09/2022,20:00,Reading,Sunderland,0,3,A
+E1,14/09/2022,20:00,West Brom,Birmingham,2,3,A
+E1,17/09/2022,12:30,Swansea,Hull,3,0,H
+E1,17/09/2022,15:00,Birmingham,Coventry,0,0,D
+E1,17/09/2022,15:00,Burnley,Bristol City,2,1,H
+E1,17/09/2022,15:00,Huddersfield,Cardiff,1,0,H
+E1,17/09/2022,15:00,Luton,Blackburn,2,0,H
+E1,17/09/2022,15:00,Millwall,Blackpool,2,1,H
+E1,17/09/2022,15:00,Norwich,West Brom,1,1,D
+E1,17/09/2022,15:00,Preston,Sheffield United,0,2,A
+E1,17/09/2022,15:00,QPR,Stoke,0,0,D
+E1,17/09/2022,15:00,Watford,Sunderland,2,2,D
+E1,17/09/2022,15:00,Wigan,Reading,0,1,A
+E1,17/09/2022,19:45,Middlesbrough,Rotherham,0,0,D
+E1,30/09/2022,20:00,Hull,Luton,0,2,A
+E1,01/10/2022,15:00,Blackburn,Millwall,2,1,H
+E1,01/10/2022,15:00,Blackpool,Norwich,0,1,A
+E1,01/10/2022,15:00,Bristol City,QPR,1,2,A
+E1,01/10/2022,15:00,Cardiff,Burnley,1,1,D
+E1,01/10/2022,15:00,Coventry,Middlesbrough,1,0,H
+E1,01/10/2022,15:00,Reading,Huddersfield,3,1,H
+E1,01/10/2022,15:00,Rotherham,Wigan,0,2,A
+E1,01/10/2022,15:00,Sheffield United,Birmingham,1,1,D
+E1,01/10/2022,15:00,Sunderland,Preston,0,0,D
+E1,01/10/2022,15:00,West Brom,Swansea,2,3,A
+E1,02/10/2022,12:00,Stoke,Watford,0,4,A
+E1,04/10/2022,19:45,Bristol City,Coventry,0,0,D
+E1,04/10/2022,19:45,Luton,Huddersfield,3,3,D
+E1,04/10/2022,19:45,Sheffield United,QPR,0,1,A
+E1,04/10/2022,19:45,Sunderland,Blackpool,0,0,D
+E1,04/10/2022,20:00,Cardiff,Blackburn,1,0,H
+E1,04/10/2022,20:00,Reading,Norwich,1,1,D
+E1,05/10/2022,19:45,Burnley,Stoke,1,1,D
+E1,05/10/2022,19:45,Hull,Wigan,2,1,H
+E1,05/10/2022,19:45,Middlesbrough,Birmingham,1,0,H
+E1,05/10/2022,19:45,Rotherham,Millwall,1,1,D
+E1,05/10/2022,19:45,Watford,Swansea,1,2,A
+E1,05/10/2022,20:00,Preston,West Brom,1,0,H
+E1,07/10/2022,20:00,QPR,Reading,2,1,H
+E1,08/10/2022,15:00,Birmingham,Bristol City,3,0,H
+E1,08/10/2022,15:00,Blackburn,Rotherham,3,0,H
+E1,08/10/2022,15:00,Blackpool,Watford,3,1,H
+E1,08/10/2022,15:00,Coventry,Burnley,0,1,A
+E1,08/10/2022,15:00,Millwall,Middlesbrough,2,0,H
+E1,08/10/2022,15:00,Norwich,Preston,2,3,A
+E1,08/10/2022,15:00,Stoke,Sheffield United,3,1,H
+E1,08/10/2022,15:00,Swansea,Sunderland,2,1,H
+E1,08/10/2022,15:00,West Brom,Luton,0,0,D
+E1,08/10/2022,15:00,Wigan,Cardiff,1,3,A
+E1,09/10/2022,12:00,Huddersfield,Hull,2,0,H
+E1,11/10/2022,19:45,Wigan,Blackburn,1,0,H
+E1,12/10/2022,19:45,Bristol City,Preston,2,1,H
+E1,15/10/2022,12:30,Luton,QPR,3,1,H
+E1,15/10/2022,12:30,Rotherham,Huddersfield,2,1,H
+E1,15/10/2022,15:00,Bristol City,Millwall,1,2,A
+E1,15/10/2022,15:00,Burnley,Swansea,4,0,H
+E1,15/10/2022,15:00,Cardiff,Coventry,0,1,A
+E1,15/10/2022,15:00,Middlesbrough,Blackburn,1,2,A
+E1,15/10/2022,15:00,Preston,Stoke,0,2,A
+E1,15/10/2022,15:00,Reading,West Brom,0,2,A
+E1,15/10/2022,15:00,Sheffield United,Blackpool,3,3,D
+E1,15/10/2022,15:00,Sunderland,Wigan,2,1,H
+E1,15/10/2022,19:45,Watford,Norwich,2,1,H
+E1,16/10/2022,15:00,Hull,Birmingham,0,2,A
+E1,18/10/2022,19:45,Huddersfield,Preston,0,1,A
+E1,18/10/2022,19:45,Norwich,Luton,0,1,A
+E1,18/10/2022,19:45,Swansea,Reading,3,2,H
+E1,18/10/2022,20:00,Blackburn,Sunderland,2,0,H
+E1,18/10/2022,20:00,Stoke,Rotherham,0,1,A
+E1,18/10/2022,20:00,West Brom,Bristol City,0,2,A
+E1,19/10/2022,19:45,Birmingham,Burnley,1,1,D
+E1,19/10/2022,19:45,Blackpool,Hull,1,3,A
+E1,19/10/2022,19:45,Coventry,Sheffield United,1,0,H
+E1,19/10/2022,19:45,QPR,Cardiff,3,0,H
+E1,19/10/2022,19:45,Wigan,Middlesbrough,1,4,A
+E1,19/10/2022,20:00,Millwall,Watford,3,0,H
+E1,22/10/2022,12:30,Blackpool,Preston,4,2,H
+E1,22/10/2022,15:00,Blackburn,Birmingham,2,1,H
+E1,22/10/2022,15:00,Middlesbrough,Huddersfield,0,0,D
+E1,22/10/2022,15:00,Millwall,West Brom,2,1,H
+E1,22/10/2022,15:00,QPR,Wigan,2,1,H
+E1,22/10/2022,15:00,Reading,Bristol City,2,0,H
+E1,22/10/2022,15:00,Rotherham,Hull,2,4,A
+E1,22/10/2022,15:00,Sheffield United,Norwich,2,2,D
+E1,22/10/2022,15:00,Stoke,Coventry,0,2,A
+E1,22/10/2022,15:00,Sunderland,Burnley,2,4,A
+E1,23/10/2022,12:00,Swansea,Cardiff,2,0,H
+E1,23/10/2022,12:00,Watford,Luton,4,0,H
+E1,25/10/2022,19:45,Coventry,Rotherham,2,2,D
+E1,25/10/2022,20:00,Burnley,Norwich,1,0,H
+E1,28/10/2022,20:00,Birmingham,QPR,2,0,H
+E1,29/10/2022,12:00,Bristol City,Swansea,1,1,D
+E1,29/10/2022,12:30,West Brom,Sheffield United,0,2,A
+E1,29/10/2022,15:00,Burnley,Reading,2,1,H
+E1,29/10/2022,15:00,Cardiff,Rotherham,1,0,H
+E1,29/10/2022,15:00,Coventry,Blackpool,1,2,A
+E1,29/10/2022,15:00,Huddersfield,Millwall,1,0,H
+E1,29/10/2022,15:00,Hull,Blackburn,0,1,A
+E1,29/10/2022,15:00,Luton,Sunderland,1,1,D
+E1,29/10/2022,15:00,Norwich,Stoke,3,1,H
+E1,29/10/2022,15:00,Preston,Middlesbrough,2,1,H
+E1,29/10/2022,15:00,Wigan,Watford,0,1,A
+E1,01/11/2022,19:45,Coventry,Blackburn,1,0,H
+E1,01/11/2022,19:45,Hull,Middlesbrough,1,3,A
+E1,01/11/2022,19:45,Luton,Reading,0,0,D
+E1,01/11/2022,19:45,Preston,Swansea,1,0,H
+E1,01/11/2022,20:00,Bristol City,Sheffield United,0,1,A
+E1,01/11/2022,20:00,West Brom,Blackpool,1,0,H
+E1,02/11/2022,19:45,Birmingham,Millwall,0,0,D
+E1,02/11/2022,19:45,Burnley,Rotherham,3,2,H
+E1,02/11/2022,19:45,Cardiff,Watford,1,2,A
+E1,02/11/2022,19:45,Huddersfield,Sunderland,0,2,A
+E1,02/11/2022,19:45,Norwich,QPR,0,0,D
+E1,02/11/2022,19:45,Wigan,Stoke,0,1,A
+E1,04/11/2022,20:00,Reading,Preston,1,2,A
+E1,05/11/2022,12:30,Sheffield United,Burnley,5,2,H
+E1,05/11/2022,15:00,Blackburn,Huddersfield,1,0,H
+E1,05/11/2022,15:00,Blackpool,Luton,0,1,A
+E1,05/11/2022,15:00,Middlesbrough,Bristol City,1,1,D
+E1,05/11/2022,15:00,Millwall,Hull,0,0,D
+E1,05/11/2022,15:00,QPR,West Brom,0,1,A
+E1,05/11/2022,15:00,Rotherham,Norwich,1,2,A
+E1,05/11/2022,15:00,Stoke,Birmingham,1,2,A
+E1,05/11/2022,15:00,Sunderland,Cardiff,0,1,A
+E1,05/11/2022,15:00,Swansea,Wigan,2,2,D
+E1,05/11/2022,15:00,Watford,Coventry,0,1,A
+E1,08/11/2022,19:45,Birmingham,Swansea,2,2,D
+E1,08/11/2022,19:45,Blackpool,Middlesbrough,0,3,A
+E1,08/11/2022,19:45,Cardiff,Hull,2,3,A
+E1,08/11/2022,19:45,Coventry,Wigan,2,0,H
+E1,08/11/2022,19:45,QPR,Huddersfield,1,2,A
+E1,08/11/2022,19:45,Sheffield United,Rotherham,0,1,A
+E1,08/11/2022,19:45,Stoke,Luton,2,0,H
+E1,08/11/2022,20:00,Watford,Reading,2,0,H
+E1,11/11/2022,20:00,Birmingham,Sunderland,1,2,A
+E1,12/11/2022,15:00,Bristol City,Watford,0,0,D
+E1,12/11/2022,15:00,Cardiff,Sheffield United,0,1,A
+E1,12/11/2022,15:00,Coventry,QPR,2,0,H
+E1,12/11/2022,15:00,Huddersfield,Swansea,0,0,D
+E1,12/11/2022,15:00,Hull,Reading,1,2,A
+E1,12/11/2022,15:00,Luton,Rotherham,1,1,D
+E1,12/11/2022,15:00,Norwich,Middlesbrough,1,2,A
+E1,12/11/2022,15:00,Preston,Millwall,2,4,A
+E1,12/11/2022,15:00,West Brom,Stoke,2,0,H
+E1,12/11/2022,15:00,Wigan,Blackpool,2,1,H
+E1,13/11/2022,12:30,Burnley,Blackburn,3,0,H
+E1,03/12/2022,12:30,Sunderland,Millwall,3,0,H
+E1,10/12/2022,12:00,Blackburn,Preston,1,4,A
+E1,10/12/2022,12:30,Rotherham,Bristol City,1,3,A
+E1,10/12/2022,14:00,Reading,Coventry,1,0,H
+E1,10/12/2022,15:00,Blackpool,Birmingham,0,0,D
+E1,10/12/2022,15:00,Middlesbrough,Luton,2,1,H
+E1,10/12/2022,15:00,Millwall,Wigan,1,1,D
+E1,10/12/2022,15:00,Sheffield United,Huddersfield,1,0,H
+E1,10/12/2022,15:00,Stoke,Cardiff,2,2,D
+E1,10/12/2022,15:00,Swansea,Norwich,0,1,A
+E1,11/12/2022,13:00,QPR,Burnley,0,3,A
+E1,11/12/2022,15:00,Watford,Hull,0,0,D
+E1,12/12/2022,20:00,Sunderland,West Brom,1,2,A
+E1,16/12/2022,20:00,Birmingham,Reading,3,2,H
+E1,17/12/2022,15:00,Bristol City,Stoke,1,2,A
+E1,17/12/2022,15:00,Burnley,Middlesbrough,3,1,H
+E1,17/12/2022,15:00,Cardiff,Blackpool,1,1,D
+E1,17/12/2022,15:00,Coventry,Swansea,3,3,D
+E1,17/12/2022,15:00,Huddersfield,Watford,0,2,A
+E1,17/12/2022,15:00,Hull,Sunderland,1,1,D
+E1,17/12/2022,15:00,Preston,QPR,0,1,A
+E1,17/12/2022,15:00,West Brom,Rotherham,3,0,H
+E1,17/12/2022,17:30,Norwich,Blackburn,0,2,A
+E1,19/12/2022,20:00,Wigan,Sheffield United,1,2,A
+E1,21/12/2022,19:45,Coventry,West Brom,1,0,H
+E1,26/12/2022,12:00,Watford,Millwall,0,2,A
+E1,26/12/2022,12:30,Sunderland,Blackburn,2,1,H
+E1,26/12/2022,15:00,Bristol City,West Brom,0,2,A
+E1,26/12/2022,15:00,Hull,Blackpool,1,1,D
+E1,26/12/2022,15:00,Middlesbrough,Wigan,4,1,H
+E1,26/12/2022,15:00,Preston,Huddersfield,1,2,A
+E1,26/12/2022,15:00,Rotherham,Stoke,2,2,D
+E1,26/12/2022,15:00,Sheffield United,Coventry,3,1,H
+E1,26/12/2022,17:15,Cardiff,QPR,0,0,D
+E1,26/12/2022,19:45,Luton,Norwich,2,1,H
+E1,27/12/2022,17:15,Reading,Swansea,2,1,H
+E1,27/12/2022,20:00,Burnley,Birmingham,3,0,H
+E1,29/12/2022,18:00,QPR,Luton,0,3,A
+E1,29/12/2022,19:45,Blackburn,Middlesbrough,1,2,A
+E1,29/12/2022,19:45,Coventry,Cardiff,0,0,D
+E1,29/12/2022,19:45,Huddersfield,Rotherham,2,0,H
+E1,29/12/2022,19:45,Millwall,Bristol City,0,0,D
+E1,29/12/2022,19:45,Wigan,Sunderland,1,4,A
+E1,29/12/2022,20:00,West Brom,Preston,2,0,H
+E1,29/12/2022,20:15,Blackpool,Sheffield United,1,2,A
+E1,30/12/2022,19:45,Birmingham,Hull,0,1,A
+E1,30/12/2022,19:45,Norwich,Reading,1,1,D
+E1,30/12/2022,19:45,Stoke,Burnley,0,1,A
+E1,30/12/2022,19:45,Swansea,Watford,4,0,H
+E1,01/01/2023,12:00,Blackburn,Cardiff,1,0,H
+E1,01/01/2023,15:00,Blackpool,Sunderland,1,1,D
+E1,01/01/2023,15:00,Coventry,Bristol City,1,1,D
+E1,01/01/2023,15:00,Huddersfield,Luton,1,2,A
+E1,01/01/2023,15:00,Millwall,Rotherham,3,0,H
+E1,02/01/2023,15:00,Birmingham,Middlesbrough,1,3,A
+E1,02/01/2023,15:00,Norwich,Watford,0,1,A
+E1,02/01/2023,15:00,Stoke,Preston,0,1,A
+E1,02/01/2023,15:00,Swansea,Burnley,1,2,A
+E1,02/01/2023,15:00,West Brom,Reading,1,0,H
+E1,02/01/2023,15:00,Wigan,Hull,1,4,A
+E1,02/01/2023,20:00,QPR,Sheffield United,1,1,D
+E1,14/01/2023,12:30,Rotherham,Blackburn,4,0,H
+E1,14/01/2023,15:00,Bristol City,Birmingham,4,2,H
+E1,14/01/2023,15:00,Burnley,Coventry,1,0,H
+E1,14/01/2023,15:00,Cardiff,Wigan,1,1,D
+E1,14/01/2023,15:00,Hull,Huddersfield,1,1,D
+E1,14/01/2023,15:00,Luton,West Brom,2,3,A
+E1,14/01/2023,15:00,Middlesbrough,Millwall,1,0,H
+E1,14/01/2023,15:00,Preston,Norwich,0,4,A
+E1,14/01/2023,15:00,Reading,QPR,2,2,D
+E1,14/01/2023,15:00,Sheffield United,Stoke,3,1,H
+E1,14/01/2023,15:00,Sunderland,Swansea,1,3,A
+E1,14/01/2023,15:00,Watford,Blackpool,2,0,H
+E1,20/01/2023,19:45,Sheffield United,Hull,1,0,H
+E1,20/01/2023,20:00,Burnley,West Brom,2,1,H
+E1,21/01/2023,12:30,Coventry,Norwich,2,4,A
+E1,21/01/2023,15:00,Birmingham,Preston,1,2,A
+E1,21/01/2023,15:00,Bristol City,Blackburn,1,1,D
+E1,21/01/2023,15:00,Cardiff,Millwall,0,1,A
+E1,21/01/2023,15:00,QPR,Swansea,1,1,D
+E1,21/01/2023,15:00,Stoke,Reading,4,0,H
+E1,21/01/2023,15:00,Watford,Rotherham,1,1,D
+E1,21/01/2023,15:00,Wigan,Luton,0,2,A
+E1,22/01/2023,12:00,Sunderland,Middlesbrough,2,0,H
+E1,28/01/2023,15:00,Coventry,Huddersfield,2,0,H
+E1,28/01/2023,15:00,Hull,QPR,3,0,H
+E1,28/01/2023,15:00,Middlesbrough,Watford,2,0,H
+E1,31/01/2023,19:45,Luton,Cardiff,1,0,H
+E1,03/02/2023,20:00,West Brom,Coventry,1,0,H
+E1,04/02/2023,12:30,Norwich,Burnley,0,3,A
+E1,04/02/2023,12:30,Rotherham,Sheffield United,0,0,D
+E1,04/02/2023,15:00,Huddersfield,QPR,1,1,D
+E1,04/02/2023,15:00,Hull,Cardiff,1,0,H
+E1,04/02/2023,15:00,Luton,Stoke,1,0,H
+E1,04/02/2023,15:00,Middlesbrough,Blackpool,3,0,H
+E1,04/02/2023,15:00,Millwall,Sunderland,1,1,D
+E1,04/02/2023,15:00,Preston,Bristol City,1,2,A
+E1,04/02/2023,15:00,Reading,Watford,2,2,D
+E1,04/02/2023,15:00,Swansea,Birmingham,3,4,A
+E1,06/02/2023,20:00,Blackburn,Wigan,0,0,D
+E1,07/02/2023,19:45,Blackpool,Huddersfield,2,2,D
+E1,10/02/2023,20:00,Birmingham,West Brom,2,0,H
+E1,11/02/2023,15:00,Blackpool,Rotherham,0,0,D
+E1,11/02/2023,15:00,Bristol City,Norwich,1,0,H
+E1,11/02/2023,15:00,Burnley,Preston,3,0,H
+E1,11/02/2023,15:00,Cardiff,Middlesbrough,1,3,A
+E1,11/02/2023,15:00,Coventry,Luton,1,1,D
+E1,11/02/2023,15:00,QPR,Millwall,1,2,A
+E1,11/02/2023,15:00,Sheffield United,Swansea,3,0,H
+E1,11/02/2023,15:00,Stoke,Hull,0,0,D
+E1,11/02/2023,15:00,Sunderland,Reading,1,0,H
+E1,11/02/2023,15:00,Watford,Blackburn,1,1,D
+E1,11/02/2023,15:00,Wigan,Huddersfield,1,0,H
+E1,14/02/2023,19:45,Birmingham,Cardiff,0,2,A
+E1,14/02/2023,19:45,Coventry,Millwall,1,0,H
+E1,14/02/2023,19:45,Norwich,Hull,3,1,H
+E1,14/02/2023,19:45,QPR,Sunderland,0,3,A
+E1,14/02/2023,20:00,Burnley,Watford,1,1,D
+E1,14/02/2023,20:00,Reading,Rotherham,2,1,H
+E1,15/02/2023,19:45,Bristol City,Wigan,1,1,D
+E1,15/02/2023,19:45,Preston,Luton,1,1,D
+E1,15/02/2023,19:45,Stoke,Huddersfield,3,0,H
+E1,15/02/2023,19:45,Swansea,Blackpool,2,1,H
+E1,15/02/2023,20:00,Sheffield United,Middlesbrough,1,3,A
+E1,15/02/2023,20:00,West Brom,Blackburn,1,1,D
+E1,17/02/2023,20:00,Cardiff,Reading,1,0,H
+E1,18/02/2023,12:30,Millwall,Sheffield United,3,2,H
+E1,18/02/2023,15:00,Blackburn,Swansea,1,0,H
+E1,18/02/2023,15:00,Blackpool,Stoke,1,0,H
+E1,18/02/2023,15:00,Huddersfield,Birmingham,2,1,H
+E1,18/02/2023,15:00,Hull,Preston,0,0,D
+E1,18/02/2023,15:00,Luton,Burnley,0,1,A
+E1,18/02/2023,15:00,Middlesbrough,QPR,3,1,H
+E1,18/02/2023,15:00,Rotherham,Coventry,0,2,A
+E1,18/02/2023,15:00,Sunderland,Bristol City,1,1,D
+E1,18/02/2023,15:00,Wigan,Norwich,0,0,D
+E1,20/02/2023,20:00,Watford,West Brom,3,2,H
+E1,21/02/2023,19:45,Blackburn,Blackpool,1,0,H
+E1,21/02/2023,19:45,Millwall,Burnley,1,1,D
+E1,21/02/2023,19:45,Norwich,Birmingham,3,1,H
+E1,21/02/2023,19:45,Rotherham,Sunderland,2,1,H
+E1,21/02/2023,19:45,Swansea,Stoke,1,3,A
+E1,25/02/2023,12:30,Coventry,Sunderland,2,1,H
+E1,25/02/2023,15:00,Birmingham,Luton,0,1,A
+E1,25/02/2023,15:00,Bristol City,Hull,1,0,H
+E1,25/02/2023,15:00,Burnley,Huddersfield,4,0,H
+E1,25/02/2023,15:00,Norwich,Cardiff,2,0,H
+E1,25/02/2023,15:00,Preston,Wigan,2,1,H
+E1,25/02/2023,15:00,QPR,Blackburn,1,3,A
+E1,25/02/2023,15:00,Reading,Blackpool,3,1,H
+E1,25/02/2023,15:00,Sheffield United,Watford,1,0,H
+E1,25/02/2023,15:00,Stoke,Millwall,0,1,A
+E1,25/02/2023,15:00,West Brom,Middlesbrough,2,0,H
+E1,27/02/2023,20:00,Swansea,Rotherham,1,1,D
+E1,28/02/2023,19:45,Preston,Coventry,0,0,D
+E1,28/02/2023,20:00,Luton,Millwall,2,2,D
+E1,03/03/2023,20:00,Hull,West Brom,2,0,H
+E1,04/03/2023,12:30,Blackburn,Sheffield United,1,0,H
+E1,04/03/2023,12:30,Cardiff,Bristol City,2,0,H
+E1,04/03/2023,15:00,Blackpool,Burnley,0,0,D
+E1,04/03/2023,15:00,Huddersfield,Coventry,0,4,A
+E1,04/03/2023,15:00,Luton,Swansea,1,0,H
+E1,04/03/2023,15:00,Middlesbrough,Reading,5,0,H
+E1,04/03/2023,15:00,Millwall,Norwich,2,3,A
+E1,04/03/2023,15:00,Rotherham,QPR,3,1,H
+E1,04/03/2023,15:00,Sunderland,Stoke,1,5,A
+E1,04/03/2023,15:00,Watford,Preston,0,0,D
+E1,04/03/2023,15:00,Wigan,Birmingham,1,1,D
+E1,07/03/2023,19:45,Huddersfield,Bristol City,0,0,D
+E1,07/03/2023,20:00,Reading,Sheffield United,0,1,A
+E1,07/03/2023,20:00,West Brom,Wigan,1,0,H
+E1,10/03/2023,20:00,Stoke,Blackburn,3,2,H
+E1,11/03/2023,12:30,Bristol City,Blackpool,2,0,H
+E1,11/03/2023,15:00,Birmingham,Rotherham,2,0,H
+E1,11/03/2023,15:00,Burnley,Wigan,3,0,H
+E1,11/03/2023,15:00,Coventry,Hull,1,1,D
+E1,11/03/2023,15:00,Preston,Cardiff,2,0,H
+E1,11/03/2023,15:00,QPR,Watford,1,0,H
+E1,11/03/2023,15:00,Reading,Millwall,0,1,A
+E1,11/03/2023,15:00,Sheffield United,Luton,0,1,A
+E1,11/03/2023,15:00,Swansea,Middlesbrough,1,3,A
+E1,11/03/2023,15:00,West Brom,Huddersfield,1,0,H
+E1,12/03/2023,12:00,Norwich,Sunderland,0,1,A
+E1,14/03/2023,19:45,Blackpool,QPR,6,1,H
+E1,14/03/2023,19:45,Millwall,Swansea,2,1,H
+E1,14/03/2023,19:45,Rotherham,Preston,1,2,A
+E1,14/03/2023,19:45,Watford,Birmingham,3,0,H
+E1,14/03/2023,19:45,Wigan,Coventry,1,1,D
+E1,14/03/2023,20:00,Middlesbrough,Stoke,1,1,D
+E1,15/03/2023,19:45,Blackburn,Reading,2,1,H
+E1,15/03/2023,19:45,Cardiff,West Brom,1,1,D
+E1,15/03/2023,19:45,Huddersfield,Norwich,1,1,D
+E1,15/03/2023,19:45,Hull,Burnley,1,3,A
+E1,15/03/2023,19:45,Luton,Bristol City,1,0,H
+E1,15/03/2023,20:00,Sunderland,Sheffield United,1,2,A
+E1,18/03/2023,15:00,Blackpool,Coventry,1,4,A
+E1,18/03/2023,15:00,Middlesbrough,Preston,4,0,H
+E1,18/03/2023,15:00,Millwall,Huddersfield,0,1,A
+E1,18/03/2023,15:00,QPR,Birmingham,0,1,A
+E1,18/03/2023,15:00,Reading,Hull,1,1,D
+E1,18/03/2023,15:00,Stoke,Norwich,0,0,D
+E1,18/03/2023,15:00,Sunderland,Luton,1,1,D
+E1,18/03/2023,15:00,Watford,Wigan,1,1,D
+E1,19/03/2023,12:30,Swansea,Bristol City,2,0,H
+E1,31/03/2023,20:00,Burnley,Sunderland,0,0,D
+E1,01/04/2023,12:30,Luton,Watford,2,0,H
+E1,01/04/2023,12:30,Preston,Blackpool,3,1,H
+E1,01/04/2023,15:00,Birmingham,Blackburn,1,0,H
+E1,01/04/2023,15:00,Bristol City,Reading,1,1,D
+E1,01/04/2023,15:00,Cardiff,Swansea,2,3,A
+E1,01/04/2023,15:00,Coventry,Stoke,0,4,A
+E1,01/04/2023,15:00,Huddersfield,Middlesbrough,4,2,H
+E1,01/04/2023,15:00,Hull,Rotherham,0,0,D
+E1,01/04/2023,15:00,Norwich,Sheffield United,0,1,A
+E1,01/04/2023,15:00,West Brom,Millwall,0,0,D
+E1,01/04/2023,15:00,Wigan,QPR,1,0,H
+E1,07/04/2023,12:30,Millwall,Luton,0,0,D
+E1,07/04/2023,13:00,Rotherham,West Brom,3,1,H
+E1,07/04/2023,15:00,Blackburn,Norwich,0,2,A
+E1,07/04/2023,15:00,Blackpool,Cardiff,1,3,A
+E1,07/04/2023,15:00,QPR,Preston,0,2,A
+E1,07/04/2023,15:00,Reading,Birmingham,1,1,D
+E1,07/04/2023,15:00,Sheffield United,Wigan,1,0,H
+E1,07/04/2023,15:00,Stoke,Bristol City,1,2,A
+E1,07/04/2023,15:00,Swansea,Coventry,0,0,D
+E1,07/04/2023,15:00,Watford,Huddersfield,2,3,A
+E1,07/04/2023,17:30,Sunderland,Hull,4,4,D
+E1,07/04/2023,20:00,Middlesbrough,Burnley,1,2,A
+E1,10/04/2023,12:30,Huddersfield,Blackburn,2,2,D
+E1,10/04/2023,15:00,Birmingham,Stoke,0,0,D
+E1,10/04/2023,15:00,Cardiff,Sunderland,0,1,A
+E1,10/04/2023,15:00,Coventry,Watford,2,2,D
+E1,10/04/2023,15:00,Hull,Millwall,1,0,H
+E1,10/04/2023,15:00,Luton,Blackpool,3,1,H
+E1,10/04/2023,15:00,Norwich,Rotherham,0,0,D
+E1,10/04/2023,15:00,Preston,Reading,2,1,H
+E1,10/04/2023,15:00,West Brom,QPR,2,2,D
+E1,10/04/2023,15:00,Wigan,Swansea,0,2,A
+E1,10/04/2023,17:30,Bristol City,Middlesbrough,2,2,D
+E1,10/04/2023,20:00,Burnley,Sheffield United,2,0,H
+E1,14/04/2023,20:00,Middlesbrough,Norwich,5,1,H
+E1,15/04/2023,12:30,Sheffield United,Cardiff,4,1,H
+E1,15/04/2023,15:00,Blackpool,Wigan,1,0,H
+E1,15/04/2023,15:00,Millwall,Preston,2,0,H
+E1,15/04/2023,15:00,QPR,Coventry,0,3,A
+E1,15/04/2023,15:00,Reading,Burnley,0,0,D
+E1,15/04/2023,15:00,Rotherham,Luton,0,2,A
+E1,15/04/2023,15:00,Stoke,West Brom,1,2,A
+E1,15/04/2023,15:00,Sunderland,Birmingham,2,1,H
+E1,15/04/2023,15:00,Swansea,Huddersfield,1,0,H
+E1,15/04/2023,15:00,Watford,Bristol City,2,0,H
+E1,15/04/2023,19:45,Blackburn,Hull,0,0,D
+E1,18/04/2023,19:45,Blackpool,West Brom,0,2,A
+E1,18/04/2023,19:45,Rotherham,Burnley,2,2,D
+E1,18/04/2023,19:45,Sheffield United,Bristol City,1,0,H
+E1,18/04/2023,19:45,Stoke,Wigan,0,1,A
+E1,18/04/2023,19:45,Sunderland,Huddersfield,1,1,D
+E1,18/04/2023,20:00,Millwall,Birmingham,0,1,A
+E1,19/04/2023,19:45,Blackburn,Coventry,1,1,D
+E1,19/04/2023,19:45,QPR,Norwich,1,1,D
+E1,19/04/2023,19:45,Swansea,Preston,4,2,H
+E1,19/04/2023,19:45,Watford,Cardiff,1,3,A
+E1,19/04/2023,20:00,Middlesbrough,Hull,3,1,H
+E1,19/04/2023,20:00,Reading,Luton,1,1,D
+E1,22/04/2023,15:00,Birmingham,Blackpool,0,1,A
+E1,22/04/2023,15:00,Bristol City,Rotherham,2,1,H
+E1,22/04/2023,15:00,Burnley,QPR,1,2,A
+E1,22/04/2023,15:00,Cardiff,Stoke,1,1,D
+E1,22/04/2023,15:00,Coventry,Reading,2,1,H
+E1,22/04/2023,15:00,Hull,Watford,1,0,H
+E1,22/04/2023,15:00,Norwich,Swansea,0,3,A
+E1,22/04/2023,15:00,Wigan,Millwall,2,1,H
+E1,22/04/2023,17:30,Preston,Blackburn,1,1,D
+E1,23/04/2023,12:00,West Brom,Sunderland,1,2,A
+E1,24/04/2023,20:00,Luton,Middlesbrough,2,1,H
+E1,25/04/2023,20:00,Blackburn,Burnley,0,1,A
+E1,26/04/2023,20:00,Sheffield United,West Brom,2,0,H
+E1,27/04/2023,20:00,Rotherham,Cardiff,1,2,A
+E1,28/04/2023,20:00,Blackpool,Millwall,2,3,A
+E1,29/04/2023,15:00,Bristol City,Burnley,1,2,A
+E1,29/04/2023,15:00,Coventry,Birmingham,2,0,H
+E1,29/04/2023,15:00,Hull,Swansea,1,1,D
+E1,29/04/2023,15:00,Reading,Wigan,1,1,D
+E1,29/04/2023,15:00,Sheffield United,Preston,4,1,H
+E1,29/04/2023,15:00,Stoke,QPR,0,1,A
+E1,29/04/2023,15:00,Sunderland,Watford,2,2,D
+E1,29/04/2023,17:30,West Brom,Norwich,2,1,H
+E1,30/04/2023,12:00,Cardiff,Huddersfield,1,2,A
+E1,01/05/2023,13:00,Rotherham,Middlesbrough,1,0,H
+E1,01/05/2023,17:30,Blackburn,Luton,1,1,D
+E1,04/05/2023,19:45,Huddersfield,Sheffield United,1,0,H
+E1,08/05/2023,15:00,Birmingham,Sheffield United,1,2,A
+E1,08/05/2023,15:00,Burnley,Cardiff,3,0,H
+E1,08/05/2023,15:00,Huddersfield,Reading,2,0,H
+E1,08/05/2023,15:00,Luton,Hull,0,0,D
+E1,08/05/2023,15:00,Middlesbrough,Coventry,1,1,D
+E1,08/05/2023,15:00,Millwall,Blackburn,3,4,A
+E1,08/05/2023,15:00,Norwich,Blackpool,0,1,A
+E1,08/05/2023,15:00,Preston,Sunderland,0,3,A
+E1,08/05/2023,15:00,QPR,Bristol City,0,2,A
+E1,08/05/2023,15:00,Swansea,West Brom,3,2,H
+E1,08/05/2023,15:00,Watford,Stoke,2,0,H
+E1,08/05/2023,15:00,Wigan,Rotherham,0,0,D
