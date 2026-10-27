@@ -1,85 +1,85 @@
 {
-  "generated": "2026-10-23T13:09:27+00:00",
+  "generated": "2026-10-27T10:39:59+00:00",
   "teams": [
     {
-      "team": "Manchester City",
-      "elo": 1815
+      "team": "Arsenal",
+      "elo": 1817
     },
     {
-      "team": "Arsenal",
-      "elo": 1814
+      "team": "Manchester City",
+      "elo": 1794
     },
     {
       "team": "Liverpool",
-      "elo": 1648
-    },
-    {
-      "team": "Manchester United",
-      "elo": 1642
-    },
-    {
-      "team": "Brighton and Hove Albion",
-      "elo": 1638
+      "elo": 1658
     },
     {
       "team": "Aston Villa",
-      "elo": 1615
+      "elo": 1636
     },
     {
-      "team": "Chelsea",
-      "elo": 1599
+      "team": "Brighton and Hove Albion",
+      "elo": 1628
     },
     {
       "team": "Bournemouth",
-      "elo": 1598
+      "elo": 1624
+    },
+    {
+      "team": "Manchester United",
+      "elo": 1616
     },
     {
       "team": "Brentford",
-      "elo": 1584
+      "elo": 1587
+    },
+    {
+      "team": "Chelsea",
+      "elo": 1570
     },
     {
       "team": "Leeds United",
-      "elo": 1559
-    },
-    {
-      "team": "Everton",
-      "elo": 1540
+      "elo": 1563
     },
     {
       "team": "Newcastle United",
+      "elo": 1546
+    },
+    {
+      "team": "Everton",
+      "elo": 1536
+    },
+    {
+      "team": "Fulham",
       "elo": 1523
     },
     {
       "team": "Hull City",
-      "elo": 1518
-    },
-    {
-      "team": "Sunderland",
       "elo": 1515
     },
     {
-      "team": "Crystal Palace",
-      "elo": 1505
+      "team": "Sunderland",
+      "elo": 1511
     },
     {
       "team": "Nottingham Forest",
-      "elo": 1503
-    },
-    {
-      "team": "Fulham",
-      "elo": 1500
-    },
-    {
-      "team": "Coventry",
-      "elo": 1481
+      "elo": 1504
     },
     {
       "team": "Tottenham Hotspur",
-      "elo": 1455
+      "elo": 1484
+    },
+    {
+      "team": "Crystal Palace",
+      "elo": 1482
+    },
+    {
+      "team": "Coventry",
+      "elo": 1459
     },
     {
       "team": "Ipswich",
-      "elo": 1389
+      "elo": 1388
     }
   ]
 }
