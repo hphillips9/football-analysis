@@ -70,7 +70,7 @@ One command, [`src/run_week.py`](src/run_week.py), runs the whole cycle:
 | 2 | Settle any pending bets in `data/raw/Bets.csv` (result + profit) |
 | 3 | Rebuild `data/processed/all_matches.csv` (results + Understat xG, cached per season) |
 | 4 | Backfill gameweek / probabilities on any `Bets.csv` rows missing them |
-| 5 | Parse `data/raw/Next_Matchweek.txt`, predict that gameweek, append the bets |
+| 5 | Pull the next round's fixtures from football-data.org, predict them, append the bets |
 | 6 | Export `web/src/data/*.json` for the website |
 
 ```bash
@@ -78,9 +78,13 @@ python src/run_week.py               # full run, including predictions
 python src/run_week.py --no-predict   # results + settlement only
 ```
 
-**To predict a gameweek**, paste the fixture list into
-`data/raw/Next_Matchweek.txt` (an optional first line `GW7` sets the number
-explicitly, otherwise it's inferred) and run the pipeline.
+Step 5 predicts **one round at a time**: it waits until every fixture
+already in `Bets.csv` has been played and the results are on file, then
+predicts the next round (plus any rearranged games that fall inside it).
+It needs a `FOOTBALL_DATA_API_KEY` (environment variable, or a git-ignored
+`.env` at the repo root). Without one it falls back to the fixture list
+pasted into `data/raw/Next_Matchweek.txt` (an optional first line `GW7`
+sets the number explicitly, otherwise it's inferred).
 
 Bets are recorded as **1-unit flat stakes** at the best available price
 (Sky Bet, or the market average when missing).
@@ -93,9 +97,13 @@ Bets are recorded as **1-unit flat stakes** at the best available price
 
 [`.github/workflows/weekly.yml`](.github/workflows/weekly.yml):
 
-- **Tue & Fri 08:00 UTC** and the **Run workflow** button → `--no-predict`
-  (results only; a scheduled run has no fresh fixtures to predict)
-- **push to `data/raw/Next_Matchweek.txt`** on `main` → full run with predictions
+- **Daily 08:00 UTC** → full run: results, settlement, and the next
+  round's predictions once the current round is finished
+- **Run workflow** button → full run, or results only with "predict" unticked
+
+Running daily is safe — fixtures already bet on are never re-predicted, and
+nothing new is predicted while a bet round is still being played. Needs the
+repo secret `FOOTBALL_DATA_API_KEY`.
 
 It commits the refreshed data back to the repo, then builds and deploys the site.
 [`deploy-site.yml`](.github/workflows/deploy-site.yml) redeploys on any change to
@@ -130,7 +138,8 @@ src/
   run_week.py             orchestrator for the weekly cycle
   fetch_results.py        pull new results, settle bets
   load_data.py            build all_matches.csv (results + Understat xG)
-  future_games_parser.py  Next_Matchweek.txt → Future_Fixtures.csv
+  fetch_fixtures.py       football-data.org → Future_Fixtures.csv
+  future_games_parser.py  Next_Matchweek.txt → Future_Fixtures.csv (fallback)
   predict_next_matches.py  Elo, features, model, prediction
   backfill_bet_probs.py   fill gameweek / probabilities on older bets
   export_web.py           write the site's JSON feed

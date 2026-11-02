@@ -30,6 +30,8 @@ BETS_PATH = "data/raw/Bets.csv"
 
 UK_TIMEZONE = "Europe/London"
 UPCOMING_STATUSES = {"SCHEDULED", "TIMED"}
+# Not finished yet, but kicked off or about to (POSTPONED etc. excluded)
+UNPLAYED_STATUSES = UPCOMING_STATUSES | {"IN_PLAY", "PAUSED"}
 
 # A matchday with at least this many unplayed games is a proper round;
 # fewer means stragglers (rearranged games from an earlier round)
@@ -147,9 +149,10 @@ def fetch_next_fixtures(output_path=OUTPUT_PATH, bets_path=BETS_PATH, results_pa
     """
     Write the next round's unpredicted fixtures to ``output_path``.
     Returns them, or None when there's nothing to predict yet - either
-    every upcoming round is already in Bets.csv, or the last round's
-    results haven't all reached the results file (predicting then would
-    use stale Elo / form).
+    a round we've already bet on is still being played, every upcoming
+    round is already in Bets.csv, or the last round's results haven't
+    all reached the results file (predicting then would use stale Elo /
+    form).
     """
 
     key = api_key()
@@ -172,6 +175,20 @@ def fetch_next_fixtures(output_path=OUTPUT_PATH, bets_path=BETS_PATH, results_pa
             f"football-data.org lists {finished} finished match(es) but "
             f"{results_path} only has {on_file} - waiting for the results "
             f"before predicting."
+        )
+        return None
+
+    # Only one round in play at a time: wait until every fixture we've
+    # bet on is finished. A rearranged game gets a new date, so its old
+    # bet no longer matches and it can't block forever.
+    unplayed = fixtures[fixtures["Status"].isin(UNPLAYED_STATUSES)]
+    in_progress = unplayed[_already_bet(unplayed, bets_path)]
+
+    if not in_progress.empty:
+        rounds = ", ".join(f"GW{gw}" for gw in sorted(in_progress["Gameweek"].unique()))
+        print(
+            f"{len(in_progress)} bet fixture(s) from {rounds} still to be "
+            f"played - waiting before predicting the next round."
         )
         return None
 
