@@ -13,8 +13,9 @@ const backtest = await FileAttachment("data/backtest.json").json();
 
 **The data.** Match results and bookmaker odds come from
 [football-data.co.uk](https://www.football-data.co.uk/); expected-goals (xG)
-figures for every match come from [Understat](https://understat.com/). Five past
-seasons plus the current one, about 1,900 matches.
+figures for every match come from [FotMob](https://www.fotmob.com/), which uses
+Opta's model (the xG shown on BBC and Sky), with [Understat](https://understat.com/)
+as a backup. Five past seasons plus the current one, about 1,900 matches.
 
 **The rating.** Each team has an **Elo rating**, starting at 1500. After a match
 the winner takes points from the loser — up to 35, scaled by how surprising the

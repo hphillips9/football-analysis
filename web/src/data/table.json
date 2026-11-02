@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02T11:01:52+00:00",
+  "generated": "2026-11-02T21:29:23+00:00",
   "season": "26-27",
   "playedFixtures": 80,
   "remainingFixtures": 300,
@@ -280,26 +280,15 @@
       "movement": -2
     },
     {
-      "team": "Brighton and Hove Albion",
-      "played": 8,
-      "won": 6,
-      "drawn": 0,
-      "lost": 2,
-      "points": 18,
-      "position": 4,
-      "currentPosition": 3,
-      "movement": -1
-    },
-    {
       "team": "Brentford",
       "played": 8,
-      "won": 6,
+      "won": 7,
       "drawn": 0,
-      "lost": 2,
-      "points": 18,
-      "position": 5,
+      "lost": 1,
+      "points": 21,
+      "position": 4,
       "currentPosition": 6,
-      "movement": 1
+      "movement": 2
     },
     {
       "team": "Newcastle United",
@@ -308,9 +297,53 @@
       "drawn": 0,
       "lost": 2,
       "points": 18,
-      "position": 6,
+      "position": 5,
       "currentPosition": 8,
-      "movement": 2
+      "movement": 3
+    },
+    {
+      "team": "Brighton and Hove Albion",
+      "played": 8,
+      "won": 5,
+      "drawn": 0,
+      "lost": 3,
+      "points": 15,
+      "position": 6,
+      "currentPosition": 3,
+      "movement": -3
+    },
+    {
+      "team": "Fulham",
+      "played": 8,
+      "won": 5,
+      "drawn": 0,
+      "lost": 3,
+      "points": 15,
+      "position": 7,
+      "currentPosition": 15,
+      "movement": 8
+    },
+    {
+      "team": "Nottingham Forest",
+      "played": 8,
+      "won": 5,
+      "drawn": 0,
+      "lost": 3,
+      "points": 15,
+      "position": 8,
+      "currentPosition": 18,
+      "movement": 10
+    },
+    {
+      "team": "Liverpool",
+      "played": 8,
+      "won": 4,
+      "drawn": 0,
+      "lost": 4,
+      "points": 12,
+      "position": 9,
+      "currentPosition": 4,
+      "movement": -5
     },
     {
       "team": "Chelsea",
@@ -319,20 +352,9 @@
       "drawn": 0,
       "lost": 4,
       "points": 12,
-      "position": 7,
+      "position": 10,
       "currentPosition": 5,
-      "movement": -2
-    },
-    {
-      "team": "Leeds United",
-      "played": 8,
-      "won": 4,
-      "drawn": 0,
-      "lost": 4,
-      "points": 12,
-      "position": 8,
-      "currentPosition": 7,
-      "movement": -1
+      "movement": -5
     },
     {
       "team": "Everton",
@@ -341,9 +363,9 @@
       "drawn": 0,
       "lost": 4,
       "points": 12,
-      "position": 9,
+      "position": 11,
       "currentPosition": 11,
-      "movement": 2
+      "movement": 0
     },
     {
       "team": "Bournemouth",
@@ -352,53 +374,20 @@
       "drawn": 0,
       "lost": 4,
       "points": 12,
-      "position": 10,
-      "currentPosition": 13,
-      "movement": 3
-    },
-    {
-      "team": "Fulham",
-      "played": 8,
-      "won": 4,
-      "drawn": 0,
-      "lost": 4,
-      "points": 12,
-      "position": 11,
-      "currentPosition": 15,
-      "movement": 4
-    },
-    {
-      "team": "Nottingham Forest",
-      "played": 8,
-      "won": 4,
-      "drawn": 0,
-      "lost": 4,
-      "points": 12,
       "position": 12,
-      "currentPosition": 18,
-      "movement": 6
+      "currentPosition": 13,
+      "movement": 1
     },
     {
-      "team": "Liverpool",
+      "team": "Leeds United",
       "played": 8,
       "won": 3,
       "drawn": 0,
       "lost": 5,
       "points": 9,
       "position": 13,
-      "currentPosition": 4,
-      "movement": -9
-    },
-    {
-      "team": "Crystal Palace",
-      "played": 8,
-      "won": 3,
-      "drawn": 0,
-      "lost": 5,
-      "points": 9,
-      "position": 14,
-      "currentPosition": 17,
-      "movement": 3
+      "currentPosition": 7,
+      "movement": -6
     },
     {
       "team": "Aston Villa",
@@ -407,9 +396,9 @@
       "drawn": 0,
       "lost": 6,
       "points": 6,
-      "position": 15,
+      "position": 14,
       "currentPosition": 9,
-      "movement": -6
+      "movement": -5
     },
     {
       "team": "Hull City",
@@ -418,20 +407,20 @@
       "drawn": 0,
       "lost": 6,
       "points": 6,
-      "position": 16,
+      "position": 15,
       "currentPosition": 10,
-      "movement": -6
+      "movement": -5
     },
     {
-      "team": "Coventry",
+      "team": "Crystal Palace",
       "played": 8,
       "won": 2,
       "drawn": 0,
       "lost": 6,
       "points": 6,
-      "position": 17,
-      "currentPosition": 19,
-      "movement": 2
+      "position": 16,
+      "currentPosition": 17,
+      "movement": 1
     },
     {
       "team": "Sunderland",
@@ -440,9 +429,9 @@
       "drawn": 0,
       "lost": 6,
       "points": 6,
-      "position": 18,
+      "position": 17,
       "currentPosition": 20,
-      "movement": 2
+      "movement": 3
     },
     {
       "team": "Tottenham Hotspur",
@@ -451,9 +440,20 @@
       "drawn": 0,
       "lost": 7,
       "points": 3,
-      "position": 19,
+      "position": 18,
       "currentPosition": 14,
-      "movement": -5
+      "movement": -4
+    },
+    {
+      "team": "Coventry",
+      "played": 8,
+      "won": 1,
+      "drawn": 0,
+      "lost": 7,
+      "points": 3,
+      "position": 19,
+      "currentPosition": 19,
+      "movement": 0
     },
     {
       "team": "Ipswich",
@@ -469,20 +469,6 @@
   ],
   "projected": [
     {
-      "team": "Manchester City",
-      "played": 38,
-      "won": 25,
-      "drawn": 7,
-      "lost": 6,
-      "gf": 80.0,
-      "ga": 38.9,
-      "points": 83,
-      "position": 1,
-      "gd": 41.1,
-      "currentPosition": 1,
-      "movement": 0
-    },
-    {
       "team": "Arsenal",
       "played": 38,
       "won": 25,
@@ -490,11 +476,25 @@
       "lost": 6,
       "gf": 67.6,
       "ga": 29.5,
-      "points": 82,
-      "position": 2,
+      "points": 83,
+      "position": 1,
       "gd": 38.1,
       "currentPosition": 2,
-      "movement": 0
+      "movement": 1
+    },
+    {
+      "team": "Manchester City",
+      "played": 38,
+      "won": 25,
+      "drawn": 7,
+      "lost": 6,
+      "gf": 80.0,
+      "ga": 38.9,
+      "points": 82,
+      "position": 2,
+      "gd": 41.1,
+      "currentPosition": 1,
+      "movement": -1
     },
     {
       "team": "Brighton and Hove Albion",
@@ -504,7 +504,7 @@
       "lost": 10,
       "gf": 72.2,
       "ga": 46.1,
-      "points": 68,
+      "points": 67,
       "position": 3,
       "gd": 26.1,
       "currentPosition": 3,
@@ -515,7 +515,7 @@
       "played": 38,
       "won": 18,
       "drawn": 10,
-      "lost": 10,
+      "lost": 9,
       "gf": 64.2,
       "ga": 43.6,
       "points": 65,
@@ -532,7 +532,7 @@
       "lost": 11,
       "gf": 55.3,
       "ga": 54.5,
-      "points": 62,
+      "points": 61,
       "position": 5,
       "gd": 0.8,
       "currentPosition": 13,
@@ -546,7 +546,7 @@
       "lost": 13,
       "gf": 54.0,
       "ga": 51.5,
-      "points": 57,
+      "points": 58,
       "position": 6,
       "gd": 2.5,
       "currentPosition": 9,
@@ -569,7 +569,7 @@
     {
       "team": "Brentford",
       "played": 38,
-      "won": 13,
+      "won": 14,
       "drawn": 12,
       "lost": 12,
       "gf": 59.1,
@@ -585,7 +585,7 @@
       "played": 38,
       "won": 13,
       "drawn": 12,
-      "lost": 12,
+      "lost": 13,
       "gf": 46.1,
       "ga": 47.1,
       "points": 52,
@@ -609,20 +609,6 @@
       "movement": 6
     },
     {
-      "team": "Everton",
-      "played": 38,
-      "won": 12,
-      "drawn": 11,
-      "lost": 14,
-      "gf": 40.5,
-      "ga": 47.9,
-      "points": 48,
-      "position": 11,
-      "gd": -7.3,
-      "currentPosition": 11,
-      "movement": 0
-    },
-    {
       "team": "Newcastle United",
       "played": 38,
       "won": 13,
@@ -631,24 +617,52 @@
       "gf": 58.6,
       "ga": 58.7,
       "points": 48,
-      "position": 12,
+      "position": 11,
       "gd": -0.1,
       "currentPosition": 8,
-      "movement": -4
+      "movement": -3
+    },
+    {
+      "team": "Everton",
+      "played": 38,
+      "won": 12,
+      "drawn": 11,
+      "lost": 15,
+      "gf": 40.5,
+      "ga": 47.9,
+      "points": 47,
+      "position": 12,
+      "gd": -7.3,
+      "currentPosition": 11,
+      "movement": -1
+    },
+    {
+      "team": "Hull City",
+      "played": 38,
+      "won": 11,
+      "drawn": 11,
+      "lost": 15,
+      "gf": 41.8,
+      "ga": 40.0,
+      "points": 45,
+      "position": 13,
+      "gd": 1.8,
+      "currentPosition": 10,
+      "movement": -3
     },
     {
       "team": "Nottingham Forest",
       "played": 38,
-      "won": 12,
+      "won": 11,
       "drawn": 10,
       "lost": 16,
       "gf": 41.8,
       "ga": 51.5,
       "points": 45,
-      "position": 13,
+      "position": 14,
       "gd": -9.7,
       "currentPosition": 18,
-      "movement": 5
+      "movement": 4
     },
     {
       "team": "Fulham",
@@ -659,24 +673,10 @@
       "gf": 43.8,
       "ga": 52.8,
       "points": 45,
-      "position": 14,
+      "position": 15,
       "gd": -9.1,
       "currentPosition": 15,
-      "movement": 1
-    },
-    {
-      "team": "Hull City",
-      "played": 38,
-      "won": 11,
-      "drawn": 11,
-      "lost": 16,
-      "gf": 41.8,
-      "ga": 40.0,
-      "points": 44,
-      "position": 15,
-      "gd": 1.8,
-      "currentPosition": 10,
-      "movement": -5
+      "movement": 0
     },
     {
       "team": "Tottenham Hotspur",
@@ -742,7 +742,7 @@
       "lost": 21,
       "gf": 45.5,
       "ga": 80.3,
-      "points": 34,
+      "points": 35,
       "position": 20,
       "gd": -34.8,
       "currentPosition": 12,

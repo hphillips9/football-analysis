@@ -68,7 +68,7 @@ One command, [`src/run_week.py`](src/run_week.py), runs the whole cycle:
 | --- | --- |
 | 1 | Fetch new results from football-data.co.uk into `data/raw/EPL26-27.csv` |
 | 2 | Settle any pending bets in `data/raw/Bets.csv` (result + profit) |
-| 3 | Rebuild `data/processed/all_matches.csv` (results + Understat xG, cached per season) |
+| 3 | Rebuild `data/processed/all_matches.csv` (results + FotMob/Opta xG with Understat as backup, cached per season) |
 | 4 | Backfill gameweek / probabilities on any `Bets.csv` rows missing them |
 | 5 | Pull the next round's fixtures from football-data.org, predict them, append the bets |
 | 6 | Export `web/src/data/*.json` for the website |
@@ -137,7 +137,7 @@ npm run build    # static build → web/dist/
 src/
   run_week.py             orchestrator for the weekly cycle
   fetch_results.py        pull new results, settle bets
-  load_data.py            build all_matches.csv (results + Understat xG)
+  load_data.py            build all_matches.csv (results + FotMob xG, Understat backup)
   fetch_fixtures.py       football-data.org → Future_Fixtures.csv
   future_games_parser.py  Next_Matchweek.txt → Future_Fixtures.csv (fallback)
   predict_next_matches.py  Elo, features, model, prediction
@@ -146,7 +146,7 @@ src/
   backtest.py             season-by-season evaluation
   team_names.py           name normalisation across data sources
 data/
-  raw/                    source CSVs, Bets.csv, understat/ cache
+  raw/                    source CSVs, Bets.csv, fotmob/ + understat/ caches
   processed/              all_matches.csv, feature snapshots
   reference/team_names.csv  canonical ↔ source name map
 web/                      Observable Framework site
@@ -166,4 +166,6 @@ pip install -r requirements.txt
 
 Data sources: match results and odds from
 [football-data.co.uk](https://www.football-data.co.uk/), expected goals from
-[Understat](https://understat.com/) (via `penaltyblog`).
+[FotMob](https://www.fotmob.com/) (Opta's xG, as shown on BBC and Sky), with
+[Understat](https://understat.com/) (via `penaltyblog`) filling any match FotMob
+is missing.
