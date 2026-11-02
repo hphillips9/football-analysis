@@ -1,0 +1,307 @@
+MatchId,UtcTime,HomeTeam,AwayTeam,Score,HomeXG,AwayXG
+4534540,2024-08-23T18:30:00Z,Borussia Mönchengladbach,Bayer Leverkusen,2 - 3,1.58,2.7
+4534545,2024-08-24T13:30:00Z,Augsburg,Werder Bremen,2 - 2,1.03,1.45
+4534544,2024-08-24T13:30:00Z,Freiburg,VfB Stuttgart,3 - 1,2.13,0.35
+4534543,2024-08-24T13:30:00Z,Hoffenheim,Holstein Kiel,3 - 2,3.48,1.88
+4534547,2024-08-24T13:30:00Z,Mainz 05,Union Berlin,1 - 1,1.17,0.63
+4534542,2024-08-24T13:30:00Z,RB Leipzig,Bochum,1 - 0,1.34,0.97
+4534541,2024-08-24T16:30:00Z,Borussia Dortmund,Eintracht Frankfurt,2 - 0,1.73,1.37
+4534546,2024-08-25T13:30:00Z,Wolfsburg,Bayern München,2 - 3,1.86,2.42
+4534548,2024-08-25T15:30:00Z,St. Pauli,FC Heidenheim,0 - 2,1.21,1.12
+4534555,2024-08-30T18:30:00Z,Union Berlin,St. Pauli,1 - 0,1.07,0.53
+4534556,2024-08-31T13:30:00Z,Bochum,Borussia Mönchengladbach,0 - 2,0.68,2.94
+4534552,2024-08-31T13:30:00Z,Eintracht Frankfurt,Hoffenheim,3 - 1,2.39,0.99
+4534557,2024-08-31T13:30:00Z,Holstein Kiel,Wolfsburg,0 - 2,1.1,1.29
+4534550,2024-08-31T13:30:00Z,VfB Stuttgart,Mainz 05,3 - 3,3.85,2.26
+4534554,2024-08-31T13:30:00Z,Werder Bremen,Borussia Dortmund,0 - 0,0.35,0.63
+4534549,2024-08-31T16:30:00Z,Bayer Leverkusen,RB Leipzig,2 - 3,2.23,1.14
+4534553,2024-09-01T13:30:00Z,FC Heidenheim,Augsburg,4 - 0,3.08,0.74
+4534551,2024-09-01T15:30:00Z,Bayern München,Freiburg,2 - 0,1.59,1.09
+4534559,2024-09-13T18:30:00Z,Borussia Dortmund,FC Heidenheim,4 - 2,2.69,1.8
+4534565,2024-09-14T13:30:00Z,Borussia Mönchengladbach,VfB Stuttgart,1 - 3,1.65,2.2
+4534561,2024-09-14T13:30:00Z,Freiburg,Bochum,2 - 1,3.88,0.92
+4534560,2024-09-14T13:30:00Z,Hoffenheim,Bayer Leverkusen,1 - 4,0.92,3.56
+4534558,2024-09-14T13:30:00Z,RB Leipzig,Union Berlin,0 - 0,1.29,0.61
+4534563,2024-09-14T13:30:00Z,Wolfsburg,Eintracht Frankfurt,1 - 2,1.58,2.53
+4534566,2024-09-14T16:30:00Z,Holstein Kiel,Bayern München,1 - 6,0.32,3.26
+4534562,2024-09-15T13:30:00Z,Augsburg,St. Pauli,3 - 1,2.74,0.51
+4534564,2024-09-15T15:30:00Z,Mainz 05,Werder Bremen,1 - 2,1.13,2.06
+4534572,2024-09-20T18:30:00Z,Augsburg,Mainz 05,2 - 3,2.46,1.11
+4534574,2024-09-21T13:30:00Z,Bochum,Holstein Kiel,2 - 2,0.77,1.87
+4534570,2024-09-21T13:30:00Z,FC Heidenheim,Freiburg,0 - 3,0.68,1.39
+4534573,2024-09-21T13:30:00Z,Union Berlin,Hoffenheim,2 - 1,1.21,0.39
+4534571,2024-09-21T13:30:00Z,Werder Bremen,Bayern München,0 - 5,0.0,3.02
+4534569,2024-09-21T16:30:00Z,Eintracht Frankfurt,Borussia Mönchengladbach,2 - 0,2.74,1.74
+4534567,2024-09-22T13:30:00Z,Bayer Leverkusen,Wolfsburg,4 - 3,1.94,0.71
+4534568,2024-09-22T15:30:00Z,VfB Stuttgart,Borussia Dortmund,5 - 1,3.39,0.66
+4534575,2024-09-22T17:30:00Z,St. Pauli,RB Leipzig,0 - 0,1.38,0.66
+4534578,2024-09-27T18:30:00Z,Borussia Dortmund,Bochum,4 - 2,3.25,1.27
+4534583,2024-09-28T13:30:00Z,Borussia Mönchengladbach,Union Berlin,1 - 0,0.86,0.66
+4534580,2024-09-28T13:30:00Z,Freiburg,St. Pauli,0 - 3,1.16,1.11
+4534582,2024-09-28T13:30:00Z,Mainz 05,FC Heidenheim,0 - 2,0.57,1.19
+4534577,2024-09-28T13:30:00Z,RB Leipzig,Augsburg,4 - 0,3.05,1.08
+4534581,2024-09-28T13:30:00Z,Wolfsburg,VfB Stuttgart,2 - 2,1.1,1.85
+4534576,2024-09-28T16:30:00Z,Bayern München,Bayer Leverkusen,1 - 1,1.38,0.06
+4534584,2024-09-29T13:30:00Z,Holstein Kiel,Eintracht Frankfurt,2 - 4,1.07,2.22
+4534579,2024-09-29T15:30:00Z,Hoffenheim,Werder Bremen,3 - 4,1.22,3.05
+4534590,2024-10-04T18:30:00Z,Augsburg,Borussia Mönchengladbach,2 - 1,1.29,0.5
+4534585,2024-10-05T13:30:00Z,Bayer Leverkusen,Holstein Kiel,2 - 2,2.08,1.65
+4534592,2024-10-05T13:30:00Z,Bochum,Wolfsburg,1 - 3,1.75,2.47
+4534591,2024-10-05T13:30:00Z,Union Berlin,Borussia Dortmund,2 - 1,1.48,0.74
+4534589,2024-10-05T13:30:00Z,Werder Bremen,Freiburg,0 - 1,1.01,1.04
+4534593,2024-10-05T16:30:00Z,St. Pauli,Mainz 05,0 - 3,1.09,1.1
+4534588,2024-10-06T13:30:00Z,FC Heidenheim,RB Leipzig,0 - 1,1.05,1.49
+4534587,2024-10-06T15:30:00Z,Eintracht Frankfurt,Bayern München,3 - 3,1.21,2.18
+4534586,2024-10-06T17:30:00Z,VfB Stuttgart,Hoffenheim,1 - 1,2.05,0.89
+4534596,2024-10-18T18:30:00Z,Borussia Dortmund,St. Pauli,2 - 1,2.95,0.63
+4534594,2024-10-19T13:30:00Z,Bayer Leverkusen,Eintracht Frankfurt,2 - 1,3.89,1.94
+4534601,2024-10-19T13:30:00Z,Borussia Mönchengladbach,FC Heidenheim,3 - 2,3.61,2.09
+4534598,2024-10-19T13:30:00Z,Freiburg,Augsburg,3 - 1,0.81,0.56
+4534597,2024-10-19T13:30:00Z,Hoffenheim,Bochum,3 - 1,2.45,2.66
+4534600,2024-10-19T13:30:00Z,Mainz 05,RB Leipzig,0 - 2,0.6,1.93
+4534595,2024-10-19T16:30:00Z,Bayern München,VfB Stuttgart,4 - 0,3.38,0.51
+4534602,2024-10-20T13:30:00Z,Holstein Kiel,Union Berlin,0 - 2,1.37,1.13
+4534599,2024-10-20T15:30:00Z,Wolfsburg,Werder Bremen,2 - 4,1.81,2.04
+4534608,2024-10-25T18:30:00Z,Mainz 05,Borussia Mönchengladbach,1 - 1,1.68,0.6
+4534607,2024-10-26T13:30:00Z,Augsburg,Borussia Dortmund,2 - 1,0.55,0.99
+4534604,2024-10-26T13:30:00Z,RB Leipzig,Freiburg,3 - 1,1.84,1.73
+4534611,2024-10-26T13:30:00Z,St. Pauli,Wolfsburg,0 - 0,0.79,1.09
+4534603,2024-10-26T13:30:00Z,VfB Stuttgart,Holstein Kiel,2 - 1,1.63,0.51
+4534606,2024-10-26T16:30:00Z,Werder Bremen,Bayer Leverkusen,2 - 2,1.6,1.33
+4534610,2024-10-27T14:30:00Z,Bochum,Bayern München,0 - 5,0.56,2.2
+4534609,2024-10-27T16:30:00Z,Union Berlin,Eintracht Frankfurt,1 - 1,1.45,1.81
+4534605,2024-10-27T18:30:00Z,FC Heidenheim,Hoffenheim,0 - 0,1.57,0.7
+4534612,2024-11-01T19:30:00Z,Bayer Leverkusen,VfB Stuttgart,0 - 0,2.36,0.28
+4534613,2024-11-02T14:30:00Z,Bayern München,Union Berlin,3 - 0,2.51,0.49
+4534615,2024-11-02T14:30:00Z,Eintracht Frankfurt,Bochum,7 - 2,3.53,1.79
+4534616,2024-11-02T14:30:00Z,Hoffenheim,St. Pauli,0 - 2,0.75,0.94
+4534620,2024-11-02T14:30:00Z,Holstein Kiel,FC Heidenheim,1 - 0,1.09,1.23
+4534618,2024-11-02T14:30:00Z,Wolfsburg,Augsburg,1 - 1,1.24,0.43
+4534614,2024-11-02T17:30:00Z,Borussia Dortmund,RB Leipzig,2 - 1,2.21,0.48
+4534617,2024-11-03T14:30:00Z,Freiburg,Mainz 05,0 - 0,0.77,0.53
+4534619,2024-11-03T16:30:00Z,Borussia Mönchengladbach,Werder Bremen,4 - 1,2.48,1.41
+4534627,2024-11-08T19:30:00Z,Union Berlin,Freiburg,0 - 0,0.75,1.69
+4534628,2024-11-09T14:30:00Z,Bochum,Bayer Leverkusen,1 - 1,0.7,1.24
+4534626,2024-11-09T14:30:00Z,Mainz 05,Borussia Dortmund,3 - 1,2.02,0.86
+4534629,2024-11-09T14:30:00Z,St. Pauli,Bayern München,0 - 1,0.08,0.8
+4534624,2024-11-09T14:30:00Z,Werder Bremen,Holstein Kiel,2 - 1,1.72,0.6
+4534622,2024-11-09T17:30:00Z,RB Leipzig,Borussia Mönchengladbach,0 - 0,0.98,0.92
+4534625,2024-11-10T14:30:00Z,Augsburg,Hoffenheim,0 - 0,0.94,0.46
+4534621,2024-11-10T16:30:00Z,VfB Stuttgart,Eintracht Frankfurt,2 - 3,2.57,1.33
+4534623,2024-11-10T18:30:00Z,FC Heidenheim,Wolfsburg,1 - 3,2.42,1.5
+4534632,2024-11-22T19:30:00Z,Bayern München,Augsburg,3 - 0,3.75,0.1
+4534630,2024-11-23T14:30:00Z,Bayer Leverkusen,FC Heidenheim,5 - 2,2.23,1.06
+4534633,2024-11-23T14:30:00Z,Borussia Dortmund,Freiburg,4 - 0,1.34,0.82
+4534635,2024-11-23T14:30:00Z,Hoffenheim,RB Leipzig,4 - 3,2.01,1.6
+4534631,2024-11-23T14:30:00Z,VfB Stuttgart,Bochum,2 - 0,1.67,0.69
+4534636,2024-11-23T14:30:00Z,Wolfsburg,Union Berlin,1 - 0,0.58,0.51
+4534634,2024-11-23T17:30:00Z,Eintracht Frankfurt,Werder Bremen,1 - 0,1.14,0.36
+4534638,2024-11-24T14:30:00Z,Holstein Kiel,Mainz 05,0 - 3,0.43,2.32
+4534637,2024-11-24T16:30:00Z,Borussia Mönchengladbach,St. Pauli,2 - 0,2.34,1.18
+4534647,2024-11-29T19:30:00Z,St. Pauli,Holstein Kiel,3 - 1,1.33,1.18
+4534644,2024-11-30T14:30:00Z,Augsburg,Bochum,1 - 0,1.88,0.26
+4534643,2024-11-30T14:30:00Z,Freiburg,Borussia Mönchengladbach,3 - 1,1.64,1.56
+4534639,2024-11-30T14:30:00Z,RB Leipzig,Wolfsburg,1 - 5,1.07,2.33
+4534646,2024-11-30T14:30:00Z,Union Berlin,Bayer Leverkusen,1 - 2,0.71,0.94
+4534642,2024-11-30T14:30:00Z,Werder Bremen,VfB Stuttgart,2 - 2,1.59,1.75
+4534640,2024-11-30T17:30:00Z,Borussia Dortmund,Bayern München,1 - 1,0.6,1.55
+4534645,2024-12-01T14:30:00Z,Mainz 05,Hoffenheim,2 - 0,2.38,0.44
+4534641,2024-12-01T16:30:00Z,FC Heidenheim,Eintracht Frankfurt,0 - 4,0.7,2.65
+4534649,2024-12-06T19:30:00Z,VfB Stuttgart,Union Berlin,3 - 2,2.11,1.39
+4534648,2024-12-07T14:30:00Z,Bayer Leverkusen,St. Pauli,2 - 1,0.88,1.83
+4534650,2024-12-07T14:30:00Z,Bayern München,FC Heidenheim,4 - 2,2.42,1.29
+4534655,2024-12-07T14:30:00Z,Bochum,Werder Bremen,0 - 1,1.21,0.82
+4534651,2024-12-07T14:30:00Z,Eintracht Frankfurt,Augsburg,2 - 2,1.73,0.67
+4534656,2024-12-07T14:30:00Z,Holstein Kiel,RB Leipzig,0 - 2,1.16,1.59
+4534654,2024-12-07T17:30:00Z,Borussia Mönchengladbach,Borussia Dortmund,1 - 1,1.13,1.53
+4534653,2024-12-08T14:30:00Z,Wolfsburg,Mainz 05,4 - 3,1.24,2.61
+4534652,2024-12-08T16:30:00Z,Hoffenheim,Freiburg,1 - 1,1.41,1.03
+4534660,2024-12-13T19:30:00Z,Freiburg,Wolfsburg,3 - 2,2.18,1.81
+4534661,2024-12-14T14:30:00Z,Augsburg,Bayer Leverkusen,0 - 2,0.56,0.79
+4534663,2024-12-14T14:30:00Z,Borussia Mönchengladbach,Holstein Kiel,4 - 1,2.39,0.57
+4534662,2024-12-14T14:30:00Z,Mainz 05,Bayern München,2 - 1,1.06,1.39
+4534664,2024-12-14T14:30:00Z,Union Berlin,Bochum,0 - 2,2.5,0.97
+4534665,2024-12-14T17:30:00Z,St. Pauli,Werder Bremen,0 - 2,0.63,1.02
+4534659,2024-12-15T14:30:00Z,FC Heidenheim,VfB Stuttgart,1 - 3,0.81,2.38
+4534658,2024-12-15T16:30:00Z,Borussia Dortmund,Hoffenheim,1 - 1,0.5,1.01
+4534657,2024-12-15T18:30:00Z,RB Leipzig,Eintracht Frankfurt,2 - 1,1.99,0.92
+4534668,2024-12-20T19:30:00Z,Bayern München,RB Leipzig,5 - 1,3.29,0.34
+4534669,2024-12-21T14:30:00Z,Eintracht Frankfurt,Mainz 05,1 - 3,2.58,0.6
+4534670,2024-12-21T14:30:00Z,Hoffenheim,Borussia Mönchengladbach,1 - 2,3.44,0.76
+4534674,2024-12-21T14:30:00Z,Holstein Kiel,Augsburg,5 - 1,1.67,1.55
+4534667,2024-12-21T14:30:00Z,VfB Stuttgart,St. Pauli,0 - 1,2.09,2.16
+4534671,2024-12-21T14:30:00Z,Werder Bremen,Union Berlin,4 - 1,2.39,1.34
+4534666,2024-12-21T17:30:00Z,Bayer Leverkusen,Freiburg,5 - 1,2.86,0.67
+4534673,2024-12-22T14:30:00Z,Bochum,FC Heidenheim,2 - 0,1.64,0.59
+4534672,2024-12-22T16:30:00Z,Wolfsburg,Borussia Dortmund,1 - 3,1.5,2.84
+4534676,2025-01-10T19:45:00Z,Borussia Dortmund,Bayer Leverkusen,2 - 3,1.35,1.5
+4534678,2025-01-11T14:30:00Z,FC Heidenheim,Union Berlin,2 - 0,1.4,1.16
+4534679,2025-01-11T14:30:00Z,Freiburg,Holstein Kiel,3 - 2,0.69,1.82
+4534677,2025-01-11T14:30:00Z,Hoffenheim,Wolfsburg,0 - 1,0.98,0.75
+4534681,2025-01-11T14:30:00Z,Mainz 05,Bochum,2 - 0,1.91,0.6
+4534683,2025-01-11T14:30:00Z,St. Pauli,Eintracht Frankfurt,0 - 1,2.25,1.53
+4534682,2025-01-11T17:30:00Z,Borussia Mönchengladbach,Bayern München,0 - 1,0.35,4.28
+4534675,2025-01-12T14:30:00Z,RB Leipzig,Werder Bremen,4 - 2,2.15,1.5
+4534680,2025-01-12T16:30:00Z,Augsburg,VfB Stuttgart,0 - 1,0.3,2.43
+4534692,2025-01-14T17:30:00Z,Holstein Kiel,Borussia Dortmund,4 - 2,1.56,1.05
+4534684,2025-01-14T19:30:00Z,Bayer Leverkusen,Mainz 05,1 - 0,1.85,0.72
+4534687,2025-01-14T19:30:00Z,Eintracht Frankfurt,Freiburg,4 - 1,2.47,0.52
+4534689,2025-01-14T19:30:00Z,Wolfsburg,Borussia Mönchengladbach,5 - 1,3.89,1.11
+4534691,2025-01-15T17:30:00Z,Bochum,St. Pauli,1 - 0,1.45,0.68
+4534686,2025-01-15T19:30:00Z,Bayern München,Hoffenheim,5 - 0,3.42,0.24
+4534690,2025-01-15T19:30:00Z,Union Berlin,Augsburg,0 - 2,0.75,1.26
+4534685,2025-01-15T19:30:00Z,VfB Stuttgart,RB Leipzig,2 - 1,2.57,0.93
+4534688,2025-01-15T19:30:00Z,Werder Bremen,FC Heidenheim,3 - 3,1.54,1.48
+4534696,2025-01-17T19:30:00Z,Eintracht Frankfurt,Borussia Dortmund,2 - 0,1.7,0.82
+4534695,2025-01-18T14:30:00Z,Bayern München,Wolfsburg,3 - 2,3.07,0.54
+4534700,2025-01-18T14:30:00Z,Bochum,RB Leipzig,3 - 3,3.09,2.21
+4534697,2025-01-18T14:30:00Z,FC Heidenheim,St. Pauli,0 - 2,0.66,1.95
+4534701,2025-01-18T14:30:00Z,Holstein Kiel,Hoffenheim,1 - 3,1.04,0.77
+4534694,2025-01-18T14:30:00Z,VfB Stuttgart,Freiburg,4 - 0,2.03,0.26
+4534693,2025-01-18T17:30:00Z,Bayer Leverkusen,Borussia Mönchengladbach,3 - 1,2.07,0.63
+4534699,2025-01-19T14:30:00Z,Union Berlin,Mainz 05,2 - 1,2.14,1.68
+4534698,2025-01-19T16:30:00Z,Werder Bremen,Augsburg,0 - 2,1.34,1.22
+4534707,2025-01-24T19:30:00Z,Wolfsburg,Holstein Kiel,2 - 2,1.98,0.22
+4534706,2025-01-25T14:30:00Z,Augsburg,FC Heidenheim,2 - 1,1.09,1.17
+4534703,2025-01-25T14:30:00Z,Borussia Dortmund,Werder Bremen,2 - 2,0.95,1.27
+4534705,2025-01-25T14:30:00Z,Freiburg,Bayern München,1 - 2,0.36,0.96
+4534708,2025-01-25T14:30:00Z,Mainz 05,VfB Stuttgart,2 - 0,1.93,1.11
+4534702,2025-01-25T14:30:00Z,RB Leipzig,Bayer Leverkusen,2 - 2,0.73,2.55
+4534709,2025-01-25T17:30:00Z,Borussia Mönchengladbach,Bochum,3 - 0,2.26,0.55
+4534704,2025-01-26T14:30:00Z,Hoffenheim,Eintracht Frankfurt,2 - 2,2.42,2.39
+4534710,2025-01-26T16:30:00Z,St. Pauli,Union Berlin,3 - 0,1.24,1.08
+4534716,2025-01-31T19:30:00Z,Werder Bremen,Mainz 05,1 - 0,2.67,1.25
+4534713,2025-02-01T14:30:00Z,Bayern München,Holstein Kiel,4 - 3,3.44,1.85
+4534718,2025-02-01T14:30:00Z,Bochum,Freiburg,0 - 1,0.98,1.72
+4534715,2025-02-01T14:30:00Z,FC Heidenheim,Borussia Dortmund,1 - 2,0.58,2.37
+4534719,2025-02-01T14:30:00Z,St. Pauli,Augsburg,1 - 1,1.25,0.32
+4534712,2025-02-01T14:30:00Z,VfB Stuttgart,Borussia Mönchengladbach,1 - 2,1.22,2.08
+4534717,2025-02-01T17:30:00Z,Union Berlin,RB Leipzig,0 - 0,1.27,0.27
+4534714,2025-02-02T14:30:00Z,Eintracht Frankfurt,Wolfsburg,1 - 1,1.17,1.3
+4534711,2025-02-02T16:30:00Z,Bayer Leverkusen,Hoffenheim,3 - 1,1.4,2.26
+4534720,2025-02-07T19:30:00Z,Bayern München,Werder Bremen,3 - 0,4.05,0.13
+4534722,2025-02-08T14:30:00Z,Borussia Dortmund,VfB Stuttgart,1 - 2,1.36,0.34
+4534724,2025-02-08T14:30:00Z,Freiburg,FC Heidenheim,1 - 0,0.98,0.52
+4534723,2025-02-08T14:30:00Z,Hoffenheim,Union Berlin,0 - 4,1.06,2.86
+4534726,2025-02-08T14:30:00Z,Mainz 05,Augsburg,0 - 0,1.31,0.34
+4534725,2025-02-08T14:30:00Z,Wolfsburg,Bayer Leverkusen,0 - 0,0.68,1.51
+4534727,2025-02-08T17:30:00Z,Borussia Mönchengladbach,Eintracht Frankfurt,1 - 1,0.38,2.15
+4534728,2025-02-09T14:30:00Z,Holstein Kiel,Bochum,2 - 2,1.91,2.36
+4534721,2025-02-09T16:30:00Z,RB Leipzig,St. Pauli,2 - 0,1.54,0.57
+4534734,2025-02-14T19:30:00Z,Augsburg,RB Leipzig,0 - 0,0.99,1.24
+4534736,2025-02-15T14:30:00Z,Bochum,Borussia Dortmund,2 - 0,2.84,2.58
+4534737,2025-02-15T14:30:00Z,St. Pauli,Freiburg,0 - 1,0.17,1.26
+4534735,2025-02-15T14:30:00Z,Union Berlin,Borussia Mönchengladbach,1 - 2,2.0,2.11
+4534730,2025-02-15T14:30:00Z,VfB Stuttgart,Wolfsburg,1 - 2,0.83,1.61
+4534729,2025-02-15T17:30:00Z,Bayer Leverkusen,Bayern München,0 - 0,2.16,0.05
+4534733,2025-02-16T14:30:00Z,Werder Bremen,Hoffenheim,1 - 3,1.12,1.39
+4534731,2025-02-16T16:30:00Z,Eintracht Frankfurt,Holstein Kiel,3 - 1,2.53,1.41
+4534732,2025-02-16T18:30:00Z,FC Heidenheim,Mainz 05,0 - 2,0.63,2.03
+4534742,2025-02-21T19:30:00Z,Freiburg,Werder Bremen,5 - 0,1.84,1.25
+4534745,2025-02-22T14:30:00Z,Borussia Mönchengladbach,Augsburg,0 - 3,1.03,1.49
+4534746,2025-02-22T14:30:00Z,Holstein Kiel,Bayer Leverkusen,0 - 2,0.3,1.85
+4534744,2025-02-22T14:30:00Z,Mainz 05,St. Pauli,2 - 0,1.22,0.84
+4534743,2025-02-22T14:30:00Z,Wolfsburg,Bochum,1 - 1,1.73,0.84
+4534740,2025-02-22T17:30:00Z,Borussia Dortmund,Union Berlin,6 - 0,4.77,0.27
+4534739,2025-02-23T14:30:00Z,RB Leipzig,FC Heidenheim,2 - 2,1.92,0.85
+4534738,2025-02-23T16:30:00Z,Bayern München,Eintracht Frankfurt,4 - 0,3.89,0.53
+4534741,2025-02-23T18:30:00Z,Hoffenheim,VfB Stuttgart,1 - 1,1.05,2.16
+4534747,2025-02-28T19:30:00Z,VfB Stuttgart,Bayern München,1 - 3,0.89,2.19
+4534754,2025-03-01T14:30:00Z,Bochum,Hoffenheim,0 - 1,0.9,0.59
+4534750,2025-03-01T14:30:00Z,FC Heidenheim,Borussia Mönchengladbach,0 - 3,1.65,1.81
+4534748,2025-03-01T14:30:00Z,RB Leipzig,Mainz 05,1 - 2,1.39,1.49
+4534755,2025-03-01T14:30:00Z,St. Pauli,Borussia Dortmund,0 - 2,0.41,1.66
+4534751,2025-03-01T14:30:00Z,Werder Bremen,Wolfsburg,1 - 2,1.9,0.92
+4534749,2025-03-01T17:30:00Z,Eintracht Frankfurt,Bayer Leverkusen,1 - 4,1.08,2.4
+4534753,2025-03-02T14:30:00Z,Union Berlin,Holstein Kiel,0 - 1,1.23,1.02
+4534752,2025-03-02T16:30:00Z,Augsburg,Freiburg,0 - 0,1.48,0.78
+4534763,2025-03-07T19:30:00Z,Borussia Mönchengladbach,Mainz 05,1 - 3,1.37,1.51
+4534756,2025-03-08T14:30:00Z,Bayer Leverkusen,Werder Bremen,0 - 2,1.62,1.15
+4534757,2025-03-08T14:30:00Z,Bayern München,Bochum,2 - 3,2.37,1.09
+4534758,2025-03-08T14:30:00Z,Borussia Dortmund,Augsburg,0 - 1,1.23,0.2
+4534764,2025-03-08T14:30:00Z,Holstein Kiel,VfB Stuttgart,2 - 2,1.4,0.75
+4534762,2025-03-08T14:30:00Z,Wolfsburg,St. Pauli,1 - 1,1.96,1.64
+4534761,2025-03-08T17:30:00Z,Freiburg,RB Leipzig,0 - 0,0.51,1.54
+4534759,2025-03-09T14:30:00Z,Eintracht Frankfurt,Union Berlin,1 - 2,1.95,0.89
+4534760,2025-03-09T16:30:00Z,Hoffenheim,FC Heidenheim,1 - 1,1.31,1.25
+4534773,2025-03-14T19:30:00Z,St. Pauli,Hoffenheim,1 - 0,2.01,0.17
+4534769,2025-03-15T14:30:00Z,Augsburg,Wolfsburg,1 - 0,0.73,0.77
+4534770,2025-03-15T14:30:00Z,Mainz 05,Freiburg,2 - 2,1.24,3.14
+4534771,2025-03-15T14:30:00Z,Union Berlin,Bayern München,1 - 1,0.69,1.66
+4534768,2025-03-15T14:30:00Z,Werder Bremen,Borussia Mönchengladbach,2 - 4,2.69,2.39
+4534766,2025-03-15T17:30:00Z,RB Leipzig,Borussia Dortmund,2 - 0,1.87,3.06
+4534772,2025-03-16T14:30:00Z,Bochum,Eintracht Frankfurt,1 - 3,1.41,2.54
+4534767,2025-03-16T16:30:00Z,FC Heidenheim,Holstein Kiel,3 - 1,1.51,1.52
+4534765,2025-03-16T18:30:00Z,VfB Stuttgart,Bayer Leverkusen,3 - 4,2.34,1.74
+4534774,2025-03-28T19:30:00Z,Bayer Leverkusen,Bochum,3 - 1,1.97,0.48
+4534775,2025-03-29T14:30:00Z,Bayern München,St. Pauli,3 - 2,3.57,0.98
+4534781,2025-03-29T14:30:00Z,Borussia Mönchengladbach,RB Leipzig,1 - 0,1.82,1.27
+4534778,2025-03-29T14:30:00Z,Hoffenheim,Augsburg,1 - 1,1.51,0.6
+4534782,2025-03-29T14:30:00Z,Holstein Kiel,Werder Bremen,0 - 3,0.49,1.77
+4534780,2025-03-29T14:30:00Z,Wolfsburg,FC Heidenheim,0 - 1,1.31,1.36
+4534777,2025-03-29T17:30:00Z,Eintracht Frankfurt,VfB Stuttgart,1 - 0,3.98,1.09
+4534779,2025-03-30T13:30:00Z,Freiburg,Union Berlin,1 - 2,1.4,1.03
+4534776,2025-03-30T15:30:00Z,Borussia Dortmund,Mainz 05,3 - 1,2.85,0.81
+4534787,2025-04-04T18:30:00Z,Augsburg,Bayern München,1 - 3,0.39,1.86
+4534790,2025-04-05T13:30:00Z,Bochum,VfB Stuttgart,0 - 4,0.8,2.85
+4534784,2025-04-05T13:30:00Z,FC Heidenheim,Bayer Leverkusen,0 - 1,0.96,0.35
+4534786,2025-04-05T13:30:00Z,Freiburg,Borussia Dortmund,1 - 4,1.4,3.35
+4534788,2025-04-05T13:30:00Z,Mainz 05,Holstein Kiel,1 - 1,1.86,0.94
+4534783,2025-04-05T13:30:00Z,RB Leipzig,Hoffenheim,3 - 1,1.64,0.87
+4534785,2025-04-05T16:30:00Z,Werder Bremen,Eintracht Frankfurt,2 - 0,1.05,0.55
+4534791,2025-04-06T13:30:00Z,St. Pauli,Borussia Mönchengladbach,1 - 1,1.94,0.57
+4534789,2025-04-06T15:30:00Z,Union Berlin,Wolfsburg,1 - 0,1.19,1.86
+4534797,2025-04-11T18:30:00Z,Wolfsburg,RB Leipzig,2 - 3,1.62,1.34
+4534792,2025-04-12T13:30:00Z,Bayer Leverkusen,Union Berlin,0 - 0,0.82,0.53
+4534799,2025-04-12T13:30:00Z,Bochum,Augsburg,1 - 2,2.81,1.08
+4534798,2025-04-12T13:30:00Z,Borussia Mönchengladbach,Freiburg,1 - 2,0.71,1.72
+4534796,2025-04-12T13:30:00Z,Hoffenheim,Mainz 05,2 - 0,1.69,1.18
+4534800,2025-04-12T13:30:00Z,Holstein Kiel,St. Pauli,1 - 2,0.5,1.22
+4534794,2025-04-12T16:30:00Z,Bayern München,Borussia Dortmund,2 - 2,2.34,1.65
+4534793,2025-04-13T13:30:00Z,VfB Stuttgart,Werder Bremen,1 - 2,1.67,1.48
+4534795,2025-04-13T15:30:00Z,Eintracht Frankfurt,FC Heidenheim,3 - 0,3.7,1.73
+4534803,2025-04-19T13:30:00Z,FC Heidenheim,Bayern München,0 - 4,0.58,3.22
+4534805,2025-04-19T13:30:00Z,Freiburg,Hoffenheim,3 - 2,1.29,1.68
+4534807,2025-04-19T13:30:00Z,Mainz 05,Wolfsburg,2 - 2,2.75,1.83
+4534801,2025-04-19T13:30:00Z,RB Leipzig,Holstein Kiel,1 - 1,1.94,0.8
+4534804,2025-04-19T13:30:00Z,Werder Bremen,Bochum,1 - 0,1.81,0.69
+4534808,2025-04-19T16:30:00Z,Union Berlin,VfB Stuttgart,4 - 4,1.33,0.94
+4534806,2025-04-20T13:30:00Z,Augsburg,Eintracht Frankfurt,0 - 0,0.84,1.13
+4534802,2025-04-20T15:30:00Z,Borussia Dortmund,Borussia Mönchengladbach,3 - 2,1.44,1.38
+4534809,2025-04-20T17:30:00Z,St. Pauli,Bayer Leverkusen,1 - 1,1.09,0.77
+4534811,2025-04-25T18:30:00Z,VfB Stuttgart,FC Heidenheim,0 - 1,1.87,0.27
+4534810,2025-04-26T13:30:00Z,Bayer Leverkusen,Augsburg,2 - 0,0.86,0.68
+4534812,2025-04-26T13:30:00Z,Bayern München,Mainz 05,3 - 0,1.1,0.67
+4534814,2025-04-26T13:30:00Z,Hoffenheim,Borussia Dortmund,2 - 3,1.15,2.66
+4534818,2025-04-26T13:30:00Z,Holstein Kiel,Borussia Mönchengladbach,4 - 3,3.49,1.69
+4534816,2025-04-26T13:30:00Z,Wolfsburg,Freiburg,0 - 1,0.32,1.63
+4534813,2025-04-26T16:30:00Z,Eintracht Frankfurt,RB Leipzig,4 - 0,2.13,0.36
+4534817,2025-04-27T13:30:00Z,Bochum,Union Berlin,1 - 1,1.51,0.29
+4534815,2025-04-27T15:30:00Z,Werder Bremen,St. Pauli,0 - 0,1.26,0.62
+4534821,2025-05-02T18:30:00Z,FC Heidenheim,Bochum,0 - 0,0.67,1.23
+4534825,2025-05-03T13:30:00Z,Borussia Mönchengladbach,Hoffenheim,4 - 4,1.42,1.85
+4534819,2025-05-03T13:30:00Z,RB Leipzig,Bayern München,3 - 3,1.18,1.62
+4534827,2025-05-03T13:30:00Z,St. Pauli,VfB Stuttgart,0 - 1,0.22,2.96
+4534826,2025-05-03T13:30:00Z,Union Berlin,Werder Bremen,2 - 2,1.48,1.56
+4534820,2025-05-03T16:30:00Z,Borussia Dortmund,Wolfsburg,4 - 0,2.43,0.7
+4534823,2025-05-04T13:30:00Z,Augsburg,Holstein Kiel,1 - 3,3.22,1.76
+4534822,2025-05-04T15:30:00Z,Freiburg,Bayer Leverkusen,2 - 2,0.91,0.29
+4534824,2025-05-04T17:30:00Z,Mainz 05,Eintracht Frankfurt,1 - 1,1.45,1.39
+4534833,2025-05-09T18:30:00Z,Wolfsburg,Hoffenheim,2 - 2,0.98,1.37
+4534835,2025-05-10T13:30:00Z,Bochum,Mainz 05,1 - 4,0.9,1.5
+4534836,2025-05-10T13:30:00Z,Holstein Kiel,Freiburg,1 - 2,0.98,1.58
+4534834,2025-05-10T13:30:00Z,Union Berlin,FC Heidenheim,0 - 3,0.45,1.12
+4534832,2025-05-10T13:30:00Z,Werder Bremen,RB Leipzig,0 - 0,2.06,1.72
+4534830,2025-05-10T16:30:00Z,Bayern München,Borussia Mönchengladbach,2 - 0,2.58,1.7
+4534828,2025-05-11T13:30:00Z,Bayer Leverkusen,Borussia Dortmund,2 - 4,2.2,1.16
+4534831,2025-05-11T15:30:00Z,Eintracht Frankfurt,St. Pauli,2 - 2,1.66,0.83
+4534829,2025-05-11T17:30:00Z,VfB Stuttgart,Augsburg,4 - 0,4.14,0.49
+4534842,2025-05-17T13:30:00Z,Augsburg,Union Berlin,1 - 2,1.7,0.82
+4534838,2025-05-17T13:30:00Z,Borussia Dortmund,Holstein Kiel,3 - 0,2.43,0.81
+4534844,2025-05-17T13:30:00Z,Borussia Mönchengladbach,Wolfsburg,0 - 1,1.0,1.66
+4534840,2025-05-17T13:30:00Z,FC Heidenheim,Werder Bremen,1 - 4,1.59,2.21
+4534841,2025-05-17T13:30:00Z,Freiburg,Eintracht Frankfurt,1 - 3,0.72,2.04
+4534839,2025-05-17T13:30:00Z,Hoffenheim,Bayern München,0 - 4,0.4,1.43
+4534843,2025-05-17T13:30:00Z,Mainz 05,Bayer Leverkusen,2 - 2,3.08,1.24
+4534837,2025-05-17T13:30:00Z,RB Leipzig,VfB Stuttgart,2 - 3,1.1,2.6
+4534845,2025-05-17T13:30:00Z,St. Pauli,Bochum,0 - 2,0.79,1.32

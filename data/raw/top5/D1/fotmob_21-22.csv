@@ -1,0 +1,307 @@
+MatchId,UtcTime,HomeTeam,AwayTeam,Score,HomeXG,AwayXG
+3624340,2021-08-13T18:30:00Z,Borussia Mönchengladbach,Bayern München,1 - 1,2.3,2.57
+3624342,2021-08-14T13:30:00Z,Arminia Bielefeld,Freiburg,0 - 0,0.42,1.57
+3624343,2021-08-14T13:30:00Z,Augsburg,Hoffenheim,0 - 4,0.62,3.83
+3624346,2021-08-14T13:30:00Z,Union Berlin,Bayer Leverkusen,1 - 1,0.48,0.83
+3624345,2021-08-14T13:30:00Z,VfB Stuttgart,Greuther Fürth,5 - 1,3.1,1.16
+3624347,2021-08-14T13:30:00Z,Wolfsburg,Bochum,1 - 0,2.61,0.39
+3624348,2021-08-14T16:30:00Z,Borussia Dortmund,Eintracht Frankfurt,5 - 2,2.72,1.41
+3624344,2021-08-15T13:30:00Z,Mainz 05,RB Leipzig,1 - 0,1.24,1.12
+3624341,2021-08-15T15:30:00Z,1. FC Köln,Hertha BSC,3 - 1,1.61,1.78
+3624356,2021-08-20T18:30:00Z,RB Leipzig,VfB Stuttgart,4 - 0,3.81,1.08
+3624350,2021-08-21T13:30:00Z,Bochum,Mainz 05,2 - 0,0.82,0.92
+3624355,2021-08-21T13:30:00Z,Eintracht Frankfurt,Augsburg,0 - 0,1.61,0.28
+3624353,2021-08-21T13:30:00Z,Freiburg,Borussia Dortmund,2 - 1,1.29,1.65
+3624349,2021-08-21T13:30:00Z,Greuther Fürth,Arminia Bielefeld,1 - 1,2.57,0.78
+3624351,2021-08-21T13:35:00Z,Hertha BSC,Wolfsburg,1 - 2,1.16,0.99
+3624354,2021-08-21T16:30:00Z,Bayer Leverkusen,Borussia Mönchengladbach,4 - 0,1.95,1.69
+3624352,2021-08-22T13:30:00Z,Hoffenheim,Union Berlin,2 - 2,1.03,1.75
+3624357,2021-08-22T15:30:00Z,Bayern München,1. FC Köln,3 - 2,2.65,1.1
+3624365,2021-08-27T18:30:00Z,Borussia Dortmund,Hoffenheim,3 - 2,3.38,2.28
+3624359,2021-08-28T13:30:00Z,Arminia Bielefeld,Eintracht Frankfurt,1 - 1,0.57,1.46
+3624360,2021-08-28T13:30:00Z,Augsburg,Bayer Leverkusen,1 - 4,1.81,1.96
+3624358,2021-08-28T13:30:00Z,1. FC Köln,Bochum,2 - 1,3.18,0.6
+3624361,2021-08-28T13:30:00Z,Mainz 05,Greuther Fürth,3 - 0,2.78,0.17
+3624362,2021-08-28T13:30:00Z,VfB Stuttgart,Freiburg,2 - 3,1.84,1.32
+3624366,2021-08-28T16:30:00Z,Bayern München,Hertha BSC,5 - 0,2.86,0.42
+3624363,2021-08-29T13:30:00Z,Union Berlin,Borussia Mönchengladbach,2 - 1,1.92,1.79
+3624364,2021-08-29T15:30:00Z,Wolfsburg,RB Leipzig,1 - 0,0.83,1.15
+3624373,2021-09-11T13:30:00Z,Bayer Leverkusen,Borussia Dortmund,3 - 4,0.72,1.85
+3624370,2021-09-11T13:30:00Z,Freiburg,1. FC Köln,1 - 1,0.78,1.11
+3624367,2021-09-11T13:30:00Z,Greuther Fürth,Wolfsburg,0 - 2,0.33,1.44
+3624369,2021-09-11T13:30:00Z,Hoffenheim,Mainz 05,0 - 2,0.68,0.93
+3624372,2021-09-11T13:30:00Z,Union Berlin,Augsburg,0 - 0,1.03,1.0
+3624375,2021-09-11T16:30:00Z,RB Leipzig,Bayern München,1 - 4,0.48,3.94
+3624374,2021-09-12T13:30:00Z,Eintracht Frankfurt,VfB Stuttgart,1 - 1,1.09,0.92
+3624368,2021-09-12T15:30:00Z,Bochum,Hertha BSC,1 - 3,1.19,0.32
+3624371,2021-09-12T17:30:00Z,Borussia Mönchengladbach,Arminia Bielefeld,3 - 1,1.69,1.82
+3624378,2021-09-17T18:30:00Z,Hertha BSC,Greuther Fürth,2 - 1,0.65,1.42
+3624377,2021-09-18T13:30:00Z,Arminia Bielefeld,Hoffenheim,0 - 0,1.25,1.14
+3624379,2021-09-18T13:30:00Z,Augsburg,Borussia Mönchengladbach,1 - 0,0.33,0.62
+3624384,2021-09-18T13:30:00Z,Bayern München,Bochum,7 - 0,5.65,0.45
+3624380,2021-09-18T13:30:00Z,Mainz 05,Freiburg,0 - 0,0.95,0.39
+3624376,2021-09-18T16:30:00Z,1. FC Köln,RB Leipzig,1 - 1,1.72,2.78
+3624381,2021-09-19T13:30:00Z,VfB Stuttgart,Bayer Leverkusen,1 - 3,1.57,1.42
+3624383,2021-09-19T15:30:00Z,Borussia Dortmund,Union Berlin,4 - 2,0.93,1.65
+3624382,2021-09-19T17:30:00Z,Wolfsburg,Eintracht Frankfurt,1 - 1,1.22,0.29
+3624385,2021-09-24T18:30:00Z,Greuther Fürth,Bayern München,1 - 3,0.75,0.84
+3624391,2021-09-25T13:30:00Z,Bayer Leverkusen,Mainz 05,1 - 0,1.55,0.94
+3624392,2021-09-25T13:30:00Z,Eintracht Frankfurt,1. FC Köln,1 - 1,0.96,0.91
+3624387,2021-09-25T13:30:00Z,Hoffenheim,Wolfsburg,3 - 1,1.5,0.57
+3624393,2021-09-25T13:30:00Z,RB Leipzig,Hertha BSC,6 - 0,3.79,0.22
+3624390,2021-09-25T13:30:00Z,Union Berlin,Arminia Bielefeld,1 - 0,1.24,0.48
+3624389,2021-09-25T16:30:00Z,Borussia Mönchengladbach,Borussia Dortmund,1 - 0,1.59,0.41
+3624386,2021-09-26T13:30:00Z,Bochum,VfB Stuttgart,0 - 0,0.79,0.29
+3624388,2021-09-26T15:30:00Z,Freiburg,Augsburg,3 - 0,3.1,0.24
+3624394,2021-10-01T18:30:00Z,1. FC Köln,Greuther Fürth,3 - 1,2.95,1.33
+3624400,2021-10-02T13:30:00Z,Borussia Dortmund,Augsburg,2 - 1,3.03,0.79
+3624396,2021-10-02T13:30:00Z,Hertha BSC,Freiburg,1 - 2,1.05,0.72
+3624398,2021-10-02T13:30:00Z,VfB Stuttgart,Hoffenheim,3 - 1,0.76,1.05
+3624399,2021-10-02T13:30:00Z,Wolfsburg,Borussia Mönchengladbach,1 - 3,1.36,3.3
+3624401,2021-10-02T16:30:00Z,RB Leipzig,Bochum,3 - 0,3.22,1.52
+3624397,2021-10-03T13:30:00Z,Mainz 05,Union Berlin,1 - 2,1.11,1.42
+3624402,2021-10-03T15:30:00Z,Bayern München,Eintracht Frankfurt,1 - 2,2.16,0.82
+3624395,2021-10-03T17:30:00Z,Arminia Bielefeld,Bayer Leverkusen,0 - 4,0.44,3.09
+3624405,2021-10-15T18:30:00Z,Hoffenheim,1. FC Köln,5 - 0,3.67,0.67
+3624411,2021-10-16T13:30:00Z,Borussia Dortmund,Mainz 05,3 - 1,2.3,0.82
+3624410,2021-10-16T13:30:00Z,Eintracht Frankfurt,Hertha BSC,1 - 2,1.61,1.75
+3624406,2021-10-16T13:30:00Z,Freiburg,RB Leipzig,1 - 1,1.41,1.78
+3624403,2021-10-16T13:30:00Z,Greuther Fürth,Bochum,0 - 1,0.84,1.58
+3624408,2021-10-16T13:30:00Z,Union Berlin,Wolfsburg,2 - 0,0.85,1.5
+3624407,2021-10-16T16:30:00Z,Borussia Mönchengladbach,VfB Stuttgart,1 - 1,2.63,0.29
+3624409,2021-10-17T13:30:00Z,Bayer Leverkusen,Bayern München,1 - 5,0.67,3.26
+3624404,2021-10-17T15:30:00Z,Augsburg,Arminia Bielefeld,1 - 1,0.62,0.3
+3624416,2021-10-22T18:30:00Z,Mainz 05,Augsburg,4 - 1,3.66,0.92
+3624414,2021-10-23T13:30:00Z,Arminia Bielefeld,Borussia Dortmund,1 - 3,1.44,2.42
+3624420,2021-10-23T13:30:00Z,Bayern München,Hoffenheim,4 - 0,2.81,0.75
+3624419,2021-10-23T13:30:00Z,RB Leipzig,Greuther Fürth,4 - 1,2.34,1.43
+3624418,2021-10-23T13:30:00Z,Wolfsburg,Freiburg,0 - 2,1.34,1.52
+3624415,2021-10-23T16:30:00Z,Hertha BSC,Borussia Mönchengladbach,1 - 0,1.02,0.46
+3624413,2021-10-24T13:30:00Z,1. FC Köln,Bayer Leverkusen,2 - 2,1.78,0.96
+3624417,2021-10-24T15:30:00Z,VfB Stuttgart,Union Berlin,1 - 1,0.47,0.96
+3624412,2021-10-24T17:30:00Z,Bochum,Eintracht Frankfurt,2 - 0,2.09,1.62
+3624423,2021-10-29T18:30:00Z,Hoffenheim,Hertha BSC,2 - 0,0.89,0.32
+3624421,2021-10-30T13:30:00Z,Arminia Bielefeld,Mainz 05,1 - 2,0.64,2.48
+3624427,2021-10-30T13:30:00Z,Bayer Leverkusen,Wolfsburg,0 - 2,1.53,1.81
+3624429,2021-10-30T13:30:00Z,Borussia Dortmund,1. FC Köln,2 - 0,1.36,1.29
+3624424,2021-10-30T13:30:00Z,Freiburg,Greuther Fürth,3 - 1,1.51,0.81
+3624426,2021-10-30T13:30:00Z,Union Berlin,Bayern München,2 - 5,0.91,3.24
+3624428,2021-10-30T16:30:00Z,Eintracht Frankfurt,RB Leipzig,1 - 1,0.57,3.04
+3624422,2021-10-31T14:30:00Z,Augsburg,VfB Stuttgart,4 - 1,2.08,0.89
+3624425,2021-10-31T16:30:00Z,Borussia Mönchengladbach,Bochum,2 - 1,1.91,0.84
+3624434,2021-11-05T19:30:00Z,Mainz 05,Borussia Mönchengladbach,1 - 1,1.13,1.57
+3624438,2021-11-06T14:30:00Z,Bayern München,Freiburg,2 - 1,3.01,0.98
+3624431,2021-11-06T14:30:00Z,Bochum,Hoffenheim,2 - 0,2.96,0.56
+3624435,2021-11-06T14:30:00Z,VfB Stuttgart,Arminia Bielefeld,0 - 1,0.94,1.77
+3624436,2021-11-06T14:30:00Z,Wolfsburg,Augsburg,1 - 0,0.49,0.72
+3624437,2021-11-06T17:30:00Z,RB Leipzig,Borussia Dortmund,2 - 1,2.6,0.89
+3624433,2021-11-07T14:30:00Z,Hertha BSC,Bayer Leverkusen,1 - 1,0.78,1.0
+3624432,2021-11-07T16:30:00Z,1. FC Köln,Union Berlin,2 - 2,1.77,1.02
+3624430,2021-11-07T18:30:00Z,Greuther Fürth,Eintracht Frankfurt,1 - 2,2.47,1.25
+3624440,2021-11-19T19:30:00Z,Augsburg,Bayern München,2 - 1,0.43,1.25
+3624439,2021-11-20T14:30:00Z,Arminia Bielefeld,Wolfsburg,2 - 2,1.27,1.93
+3624446,2021-11-20T14:30:00Z,Bayer Leverkusen,Bochum,1 - 0,1.68,0.85
+3624447,2021-11-20T14:30:00Z,Borussia Dortmund,VfB Stuttgart,2 - 1,2.19,1.61
+3624444,2021-11-20T14:30:00Z,Borussia Mönchengladbach,Greuther Fürth,4 - 0,3.15,0.24
+3624442,2021-11-20T14:30:00Z,Hoffenheim,RB Leipzig,2 - 0,3.15,0.25
+3624445,2021-11-20T17:30:00Z,Union Berlin,Hertha BSC,2 - 0,1.54,0.44
+3624443,2021-11-21T14:30:00Z,Freiburg,Eintracht Frankfurt,0 - 2,1.43,1.25
+3624441,2021-11-21T16:30:00Z,Mainz 05,1. FC Köln,1 - 1,0.85,2.23
+3624452,2021-11-26T19:30:00Z,VfB Stuttgart,Mainz 05,2 - 1,0.26,0.77
+3624449,2021-11-27T14:30:00Z,Bochum,Freiburg,2 - 1,1.14,2.3
+3624450,2021-11-27T14:30:00Z,1. FC Köln,Borussia Mönchengladbach,4 - 1,1.44,1.04
+3624448,2021-11-27T14:30:00Z,Greuther Fürth,Hoffenheim,3 - 6,1.08,4.07
+3624451,2021-11-27T14:30:00Z,Hertha BSC,Augsburg,1 - 1,1.65,1.19
+3624454,2021-11-27T14:30:00Z,Wolfsburg,Borussia Dortmund,1 - 3,2.03,2.28
+3624456,2021-11-27T17:30:00Z,Bayern München,Arminia Bielefeld,1 - 0,2.23,0.29
+3624453,2021-11-28T14:30:00Z,Eintracht Frankfurt,Union Berlin,2 - 1,1.34,1.11
+3624455,2021-11-28T16:30:00Z,RB Leipzig,Bayer Leverkusen,1 - 3,1.54,1.44
+3624463,2021-12-03T19:30:00Z,Union Berlin,RB Leipzig,2 - 1,2.56,1.44
+3624457,2021-12-04T14:30:00Z,Arminia Bielefeld,1. FC Köln,1 - 1,1.07,1.05
+3624458,2021-12-04T14:30:00Z,Augsburg,Bochum,2 - 3,2.86,2.11
+3624464,2021-12-04T14:30:00Z,Bayer Leverkusen,Greuther Fürth,7 - 1,2.89,0.25
+3624460,2021-12-04T14:30:00Z,Hoffenheim,Eintracht Frankfurt,3 - 2,0.85,1.52
+3624459,2021-12-04T14:30:00Z,Mainz 05,Wolfsburg,3 - 0,1.06,0.71
+3624465,2021-12-04T17:30:00Z,Borussia Dortmund,Bayern München,2 - 3,1.19,3.13
+3624461,2021-12-05T14:30:00Z,VfB Stuttgart,Hertha BSC,2 - 2,1.42,1.28
+3624462,2021-12-05T16:30:00Z,Borussia Mönchengladbach,Freiburg,0 - 6,0.92,1.96
+3624468,2021-12-10T19:30:00Z,1. FC Köln,Augsburg,0 - 2,0.99,0.82
+3624474,2021-12-11T14:30:00Z,Bayern München,Mainz 05,2 - 1,1.61,0.82
+3624467,2021-12-11T14:30:00Z,Bochum,Borussia Dortmund,1 - 1,0.94,2.34
+3624470,2021-12-11T14:30:00Z,Freiburg,Hoffenheim,1 - 2,1.62,0.96
+3624469,2021-12-11T14:30:00Z,Hertha BSC,Arminia Bielefeld,2 - 0,2.04,0.49
+3624473,2021-12-11T14:30:00Z,RB Leipzig,Borussia Mönchengladbach,4 - 1,4.7,1.24
+3624472,2021-12-11T17:30:00Z,Wolfsburg,VfB Stuttgart,0 - 2,1.49,1.22
+3624466,2021-12-12T14:30:00Z,Greuther Fürth,Union Berlin,1 - 0,0.76,1.49
+3624471,2021-12-12T16:30:00Z,Eintracht Frankfurt,Bayer Leverkusen,5 - 2,1.68,1.7
+3624478,2021-12-14T17:30:00Z,VfB Stuttgart,Bayern München,0 - 5,1.16,3.53
+3624475,2021-12-14T19:30:00Z,Arminia Bielefeld,Bochum,2 - 0,0.68,0.89
+3624477,2021-12-14T19:30:00Z,Mainz 05,Hertha BSC,4 - 0,2.92,0.41
+3624482,2021-12-14T19:30:00Z,Wolfsburg,1. FC Köln,2 - 3,2.46,3.15
+3624479,2021-12-15T17:30:00Z,Borussia Mönchengladbach,Eintracht Frankfurt,2 - 3,2.07,2.29
+3624476,2021-12-15T19:30:00Z,Augsburg,RB Leipzig,1 - 1,1.23,2.26
+3624481,2021-12-15T19:30:00Z,Bayer Leverkusen,Hoffenheim,2 - 2,2.3,2.0
+3624483,2021-12-15T19:30:00Z,Borussia Dortmund,Greuther Fürth,3 - 0,1.81,0.37
+3624480,2021-12-15T19:30:00Z,Union Berlin,Freiburg,0 - 0,1.89,1.16
+3624492,2021-12-17T19:30:00Z,Bayern München,Wolfsburg,4 - 0,3.64,1.13
+3624485,2021-12-18T14:30:00Z,Bochum,Union Berlin,0 - 1,1.1,0.81
+3624490,2021-12-18T14:30:00Z,Eintracht Frankfurt,Mainz 05,1 - 0,1.78,0.56
+3624484,2021-12-18T14:30:00Z,Greuther Fürth,Augsburg,0 - 0,0.07,1.17
+3624488,2021-12-18T14:30:00Z,Hoffenheim,Borussia Mönchengladbach,1 - 1,2.14,1.6
+3624491,2021-12-18T14:30:00Z,RB Leipzig,Arminia Bielefeld,0 - 2,1.64,0.78
+3624487,2021-12-18T17:30:00Z,Hertha BSC,Borussia Dortmund,3 - 2,1.2,1.31
+3624489,2021-12-19T14:30:00Z,Freiburg,Bayer Leverkusen,2 - 1,2.17,0.96
+3624486,2021-12-19T16:30:00Z,1. FC Köln,VfB Stuttgart,1 - 0,1.96,0.42
+3624501,2022-01-07T19:30:00Z,Bayern München,Borussia Mönchengladbach,1 - 2,1.9,0.98
+3624498,2022-01-08T14:30:00Z,Bayer Leverkusen,Union Berlin,2 - 2,1.74,2.74
+3624497,2022-01-08T14:30:00Z,Freiburg,Arminia Bielefeld,2 - 2,1.86,0.99
+3624493,2022-01-08T14:30:00Z,Greuther Fürth,VfB Stuttgart,0 - 0,0.92,1.93
+3624496,2022-01-08T14:30:00Z,Hoffenheim,Augsburg,3 - 1,2.19,0.85
+3624500,2022-01-08T14:30:00Z,RB Leipzig,Mainz 05,4 - 1,3.48,0.3
+3624499,2022-01-08T17:30:00Z,Eintracht Frankfurt,Borussia Dortmund,2 - 3,1.46,2.01
+3624495,2022-01-09T14:30:00Z,Hertha BSC,1. FC Köln,1 - 3,1.16,1.23
+3624494,2022-01-09T16:30:00Z,Bochum,Wolfsburg,1 - 0,0.89,0.42
+3624510,2022-01-14T19:30:00Z,Borussia Dortmund,Freiburg,5 - 1,2.42,0.89
+3624502,2022-01-15T14:30:00Z,1. FC Köln,Bayern München,0 - 4,1.05,3.3
+3624505,2022-01-15T14:30:00Z,Mainz 05,Bochum,1 - 0,1.71,1.46
+3624508,2022-01-15T14:30:00Z,Union Berlin,Hoffenheim,2 - 1,1.38,0.84
+3624506,2022-01-15T14:30:00Z,VfB Stuttgart,RB Leipzig,0 - 2,1.01,1.48
+3624509,2022-01-15T14:30:00Z,Wolfsburg,Hertha BSC,0 - 0,1.68,0.28
+3624507,2022-01-15T17:30:00Z,Borussia Mönchengladbach,Bayer Leverkusen,1 - 2,1.26,5.61
+3624504,2022-01-16T14:30:00Z,Augsburg,Eintracht Frankfurt,1 - 1,0.99,2.61
+3624503,2022-01-16T16:30:00Z,Arminia Bielefeld,Greuther Fürth,2 - 2,0.54,0.66
+3624524,2022-01-21T19:30:00Z,Eintracht Frankfurt,Arminia Bielefeld,0 - 2,1.91,1.25
+3624522,2022-01-22T14:30:00Z,Bayer Leverkusen,Augsburg,5 - 1,2.79,1.46
+3624520,2022-01-22T14:30:00Z,Borussia Mönchengladbach,Union Berlin,1 - 2,1.48,1.13
+3624519,2022-01-22T14:30:00Z,Freiburg,VfB Stuttgart,2 - 0,1.62,0.6
+3624511,2022-01-22T14:30:00Z,Greuther Fürth,Mainz 05,2 - 1,1.62,1.78
+3624517,2022-01-22T14:30:00Z,Hoffenheim,Borussia Dortmund,2 - 3,1.72,1.57
+3624513,2022-01-22T17:30:00Z,Bochum,1. FC Köln,2 - 2,1.8,1.11
+3624526,2022-01-23T14:30:00Z,RB Leipzig,Wolfsburg,2 - 0,1.47,0.82
+3624515,2022-01-23T16:30:00Z,Hertha BSC,Bayern München,1 - 4,0.93,5.51
+3624532,2022-02-04T19:30:00Z,Hertha BSC,Bochum,1 - 1,0.43,1.11
+3624530,2022-02-05T14:30:00Z,Arminia Bielefeld,Borussia Mönchengladbach,1 - 1,0.52,2.04
+3624534,2022-02-05T14:30:00Z,Augsburg,Union Berlin,2 - 0,1.82,1.72
+3624528,2022-02-05T14:30:00Z,1. FC Köln,Freiburg,1 - 0,1.05,0.76
+3624535,2022-02-05T14:30:00Z,Mainz 05,Hoffenheim,2 - 0,2.2,1.63
+3624537,2022-02-05T14:30:00Z,VfB Stuttgart,Eintracht Frankfurt,2 - 3,1.58,1.13
+3624543,2022-02-05T17:30:00Z,Bayern München,RB Leipzig,3 - 2,3.1,2.24
+3624541,2022-02-06T14:30:00Z,Borussia Dortmund,Bayer Leverkusen,2 - 5,2.58,2.42
+3624539,2022-02-06T16:30:00Z,Wolfsburg,Greuther Fürth,4 - 1,2.43,1.13
+3624559,2022-02-11T19:30:00Z,RB Leipzig,1. FC Köln,3 - 1,0.92,0.86
+3624546,2022-02-12T14:30:00Z,Bochum,Bayern München,4 - 2,1.43,1.93
+3624552,2022-02-12T14:30:00Z,Borussia Mönchengladbach,Augsburg,3 - 2,2.42,1.63
+3624558,2022-02-12T14:30:00Z,Eintracht Frankfurt,Wolfsburg,0 - 2,1.04,1.55
+3624550,2022-02-12T14:30:00Z,Freiburg,Mainz 05,1 - 1,1.77,2.26
+3624545,2022-02-12T14:30:00Z,Greuther Fürth,Hertha BSC,2 - 1,2.4,2.08
+3624556,2022-02-12T17:30:00Z,Bayer Leverkusen,VfB Stuttgart,4 - 2,1.96,1.06
+3624554,2022-02-13T14:30:00Z,Union Berlin,Borussia Dortmund,0 - 3,1.2,2.24
+3624548,2022-02-13T16:30:00Z,Hoffenheim,Arminia Bielefeld,2 - 0,2.96,0.93
+3624568,2022-02-18T19:30:00Z,Mainz 05,Bayer Leverkusen,3 - 2,0.95,1.01
+3624563,2022-02-19T14:30:00Z,Arminia Bielefeld,Union Berlin,1 - 0,0.8,0.89
+3624566,2022-02-19T14:30:00Z,Augsburg,Freiburg,1 - 2,1.07,2.05
+3624570,2022-02-19T14:30:00Z,VfB Stuttgart,Bochum,1 - 1,1.19,2.04
+3624572,2022-02-19T14:30:00Z,Wolfsburg,Hoffenheim,1 - 2,1.5,1.51
+3624561,2022-02-19T17:30:00Z,1. FC Köln,Eintracht Frankfurt,1 - 0,1.09,0.61
+3624576,2022-02-20T14:30:00Z,Bayern München,Greuther Fürth,4 - 1,1.82,0.8
+3624574,2022-02-20T16:30:00Z,Borussia Dortmund,Borussia Mönchengladbach,6 - 0,3.85,0.87
+3624565,2022-02-20T18:30:00Z,Hertha BSC,RB Leipzig,1 - 6,1.05,3.41
+3624583,2022-02-25T19:30:00Z,Hoffenheim,VfB Stuttgart,2 - 1,2.6,1.75
+3624590,2022-02-26T14:30:00Z,Bayer Leverkusen,Arminia Bielefeld,3 - 0,2.21,0.41
+3624586,2022-02-26T14:30:00Z,Borussia Mönchengladbach,Wolfsburg,2 - 2,2.38,1.36
+3624585,2022-02-26T14:30:00Z,Freiburg,Hertha BSC,3 - 0,2.63,1.32
+3624577,2022-02-26T14:30:00Z,Greuther Fürth,1. FC Köln,1 - 1,0.75,0.61
+3624588,2022-02-26T14:30:00Z,Union Berlin,Mainz 05,3 - 1,0.98,1.03
+3624592,2022-02-26T17:30:00Z,Eintracht Frankfurt,Bayern München,0 - 1,0.87,2.41
+3624579,2022-02-27T14:30:00Z,Bochum,RB Leipzig,0 - 1,0.88,0.71
+3624581,2022-02-27T16:30:00Z,Augsburg,Borussia Dortmund,1 - 1,0.85,0.62
+3624597,2022-03-04T19:30:00Z,Arminia Bielefeld,Augsburg,0 - 1,0.16,0.5
+3624608,2022-03-05T14:30:00Z,Bayern München,Bayer Leverkusen,1 - 1,1.62,2.15
+3624594,2022-03-05T14:30:00Z,Bochum,Greuther Fürth,2 - 1,1.56,0.72
+3624599,2022-03-05T14:30:00Z,Hertha BSC,Eintracht Frankfurt,1 - 4,0.43,1.19
+3624606,2022-03-05T14:30:00Z,RB Leipzig,Freiburg,1 - 1,0.58,0.4
+3624605,2022-03-05T14:30:00Z,Wolfsburg,Union Berlin,1 - 0,0.47,1.26
+3624603,2022-03-05T17:30:00Z,VfB Stuttgart,Borussia Mönchengladbach,3 - 2,2.4,0.9
+3624595,2022-03-06T16:30:00Z,1. FC Köln,Hoffenheim,0 - 1,1.59,2.68
+3624615,2022-03-12T14:30:00Z,Freiburg,Wolfsburg,3 - 2,1.28,1.33
+3624614,2022-03-12T14:30:00Z,Hoffenheim,Bayern München,1 - 1,1.67,2.94
+3624619,2022-03-12T14:30:00Z,Union Berlin,VfB Stuttgart,1 - 1,1.53,1.03
+3624617,2022-03-12T17:30:00Z,Borussia Mönchengladbach,Hertha BSC,2 - 0,1.81,0.56
+3624621,2022-03-13T14:30:00Z,Bayer Leverkusen,1. FC Köln,0 - 1,2.46,0.54
+3624624,2022-03-13T16:30:00Z,Borussia Dortmund,Arminia Bielefeld,1 - 0,2.04,0.69
+3624623,2022-03-13T16:30:00Z,Eintracht Frankfurt,Bochum,2 - 1,1.87,1.09
+3624610,2022-03-13T18:30:00Z,Greuther Fürth,RB Leipzig,1 - 6,0.35,1.67
+3624601,2022-03-16T17:30:00Z,Mainz 05,Borussia Dortmund,0 - 1,0.92,0.82
+3624628,2022-03-18T19:30:00Z,Bochum,Borussia Mönchengladbach,0 - 2,1.5,0.87
+3624626,2022-03-19T14:30:00Z,Greuther Fürth,Freiburg,0 - 0,0.95,1.19
+3624631,2022-03-19T14:30:00Z,Hertha BSC,Hoffenheim,3 - 0,1.27,0.78
+3624633,2022-03-19T14:30:00Z,Mainz 05,Arminia Bielefeld,4 - 0,4.35,0.22
+3624635,2022-03-19T14:30:00Z,VfB Stuttgart,Augsburg,3 - 2,2.23,0.97
+3624640,2022-03-19T17:30:00Z,Bayern München,Union Berlin,4 - 0,2.65,1.0
+3624638,2022-03-20T14:30:00Z,RB Leipzig,Eintracht Frankfurt,0 - 0,1.24,0.24
+3624637,2022-03-20T16:30:00Z,Wolfsburg,Bayer Leverkusen,0 - 2,1.1,1.04
+3624630,2022-03-20T18:30:00Z,1. FC Köln,Borussia Dortmund,1 - 1,1.17,1.23
+3624650,2022-04-01T18:30:00Z,Union Berlin,1. FC Köln,1 - 0,1.25,0.34
+3624642,2022-04-02T13:30:00Z,Arminia Bielefeld,VfB Stuttgart,1 - 1,1.02,2.28
+3624652,2022-04-02T13:30:00Z,Bayer Leverkusen,Hertha BSC,2 - 1,1.56,0.8
+3624654,2022-04-02T13:30:00Z,Eintracht Frankfurt,Greuther Fürth,0 - 0,1.22,0.61
+3624647,2022-04-02T13:30:00Z,Freiburg,Bayern München,1 - 4,0.6,2.18
+3624645,2022-04-02T13:30:00Z,Hoffenheim,Bochum,1 - 2,2.02,2.16
+3624655,2022-04-02T16:30:00Z,Borussia Dortmund,RB Leipzig,1 - 4,0.74,1.05
+3624644,2022-04-03T13:30:00Z,Augsburg,Wolfsburg,3 - 0,1.63,1.07
+3624649,2022-04-03T15:30:00Z,Borussia Mönchengladbach,Mainz 05,1 - 1,1.48,2.01
+3624612,2022-04-06T16:30:00Z,Augsburg,Mainz 05,2 - 1,1.76,1.77
+3624660,2022-04-08T18:30:00Z,VfB Stuttgart,Borussia Dortmund,0 - 2,1.74,1.92
+3624664,2022-04-09T13:30:00Z,Bayern München,Augsburg,1 - 0,1.53,0.22
+3624658,2022-04-09T13:30:00Z,1. FC Köln,Mainz 05,3 - 2,1.84,0.93
+3624656,2022-04-09T13:30:00Z,Greuther Fürth,Borussia Mönchengladbach,0 - 2,0.54,2.72
+3624662,2022-04-09T13:30:00Z,Wolfsburg,Arminia Bielefeld,4 - 0,1.97,0.38
+3624659,2022-04-09T16:30:00Z,Hertha BSC,Union Berlin,1 - 4,0.72,1.89
+3624657,2022-04-10T13:30:00Z,Bochum,Bayer Leverkusen,0 - 0,0.73,1.39
+3624661,2022-04-10T15:30:00Z,Eintracht Frankfurt,Freiburg,1 - 2,0.92,1.04
+3624663,2022-04-10T17:30:00Z,RB Leipzig,Hoffenheim,3 - 0,1.51,0.19
+3624666,2022-04-16T13:30:00Z,Augsburg,Hertha BSC,0 - 1,1.0,1.08
+3624673,2022-04-16T13:30:00Z,Borussia Dortmund,Wolfsburg,6 - 1,2.96,1.55
+3624669,2022-04-16T13:30:00Z,Freiburg,Bochum,3 - 0,2.22,0.41
+3624667,2022-04-16T13:30:00Z,Mainz 05,VfB Stuttgart,0 - 0,0.59,0.71
+3624670,2022-04-16T16:30:00Z,Borussia Mönchengladbach,1. FC Köln,1 - 3,1.24,2.06
+3624665,2022-04-17T13:30:00Z,Arminia Bielefeld,Bayern München,0 - 3,0.38,2.69
+3624668,2022-04-17T15:30:00Z,Hoffenheim,Greuther Fürth,0 - 0,0.99,0.29
+3624671,2022-04-17T15:30:00Z,Union Berlin,Eintracht Frankfurt,2 - 0,1.08,0.52
+3624672,2022-04-17T17:30:00Z,Bayer Leverkusen,RB Leipzig,0 - 1,0.76,0.46
+3624680,2022-04-22T18:30:00Z,Wolfsburg,Mainz 05,5 - 0,3.68,0.73
+3624679,2022-04-23T13:30:00Z,Eintracht Frankfurt,Hoffenheim,2 - 2,1.35,0.67
+3624676,2022-04-23T13:30:00Z,1. FC Köln,Arminia Bielefeld,3 - 1,1.95,0.88
+3624678,2022-04-23T13:30:00Z,Freiburg,Borussia Mönchengladbach,3 - 3,2.3,1.63
+3624674,2022-04-23T13:30:00Z,Greuther Fürth,Bayer Leverkusen,1 - 4,0.88,2.49
+3624681,2022-04-23T13:30:00Z,RB Leipzig,Union Berlin,1 - 2,0.55,1.36
+3624682,2022-04-23T16:30:00Z,Bayern München,Borussia Dortmund,3 - 1,1.78,1.32
+3624675,2022-04-24T13:30:00Z,Bochum,Augsburg,0 - 2,1.16,2.0
+3624677,2022-04-24T15:30:00Z,Hertha BSC,VfB Stuttgart,2 - 0,1.42,0.6
+3624689,2022-04-29T18:30:00Z,Union Berlin,Greuther Fürth,1 - 1,1.41,0.28
+3624683,2022-04-30T13:30:00Z,Arminia Bielefeld,Hertha BSC,1 - 1,0.52,1.45
+3624684,2022-04-30T13:30:00Z,Augsburg,1. FC Köln,1 - 4,1.71,2.52
+3624691,2022-04-30T13:30:00Z,Borussia Dortmund,Bochum,3 - 4,4.45,1.62
+3624685,2022-04-30T13:30:00Z,Mainz 05,Bayern München,3 - 1,3.36,1.44
+3624687,2022-04-30T13:30:00Z,VfB Stuttgart,Wolfsburg,1 - 1,0.77,1.44
+3624686,2022-04-30T16:30:00Z,Hoffenheim,Freiburg,3 - 4,2.0,2.41
+3624690,2022-05-02T18:30:00Z,Bayer Leverkusen,Eintracht Frankfurt,2 - 0,1.81,0.3
+3624688,2022-05-02T18:30:00Z,Borussia Mönchengladbach,RB Leipzig,3 - 1,1.5,1.07
+3624693,2022-05-06T18:30:00Z,Bochum,Arminia Bielefeld,2 - 1,2.1,0.78
+3624694,2022-05-07T13:30:00Z,1. FC Köln,Wolfsburg,0 - 1,1.24,1.12
+3624697,2022-05-07T13:30:00Z,Freiburg,Union Berlin,1 - 4,1.82,1.99
+3624692,2022-05-07T13:30:00Z,Greuther Fürth,Borussia Dortmund,1 - 3,1.31,1.5
+3624696,2022-05-07T13:30:00Z,Hoffenheim,Bayer Leverkusen,2 - 4,2.5,4.04
+3624695,2022-05-07T16:30:00Z,Hertha BSC,Mainz 05,1 - 2,1.15,0.71
+3624698,2022-05-08T13:30:00Z,Eintracht Frankfurt,Borussia Mönchengladbach,1 - 1,0.83,1.4
+3624700,2022-05-08T15:30:00Z,Bayern München,VfB Stuttgart,2 - 2,2.58,1.51
+3624699,2022-05-08T17:30:00Z,RB Leipzig,Augsburg,4 - 0,3.35,0.3
+3624701,2022-05-14T13:30:00Z,Arminia Bielefeld,RB Leipzig,1 - 1,1.58,3.09
+3624702,2022-05-14T13:30:00Z,Augsburg,Greuther Fürth,2 - 1,1.12,0.47
+3624707,2022-05-14T13:30:00Z,Bayer Leverkusen,Freiburg,2 - 1,2.15,1.07
+3624709,2022-05-14T13:30:00Z,Borussia Dortmund,Hertha BSC,2 - 1,1.42,0.96
+3624705,2022-05-14T13:30:00Z,Borussia Mönchengladbach,Hoffenheim,5 - 1,3.25,1.65
+3624703,2022-05-14T13:30:00Z,Mainz 05,Eintracht Frankfurt,2 - 2,1.33,1.64
+3624706,2022-05-14T13:30:00Z,Union Berlin,Bochum,3 - 2,2.71,0.22
+3624704,2022-05-14T13:30:00Z,VfB Stuttgart,1. FC Köln,2 - 1,4.04,1.19
+3624708,2022-05-14T13:35:00Z,Wolfsburg,Bayern München,2 - 2,1.46,2.14
