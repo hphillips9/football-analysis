@@ -15,7 +15,7 @@ Gameweek,Div,Date,Time,HomeTeam,AwayTeam,PredictedResult,HomeProb,DrawProb,AwayP
 2,E0,29/08/2026,15:00,Coventry,Hull City,H,36.8,26.8,36.4,A,1.0,-1.0
 2,E0,29/08/2026,17:30,Tottenham Hotspur,Newcastle United,A,36.5,24.7,38.9,A,1.0,1.9
 2,E0,30/08/2026,14:00,Chelsea,Brighton and Hove Albion,H,37.1,27.0,35.9,H,1.0,0.85
-2,E0,30/08/2026,14:00,Leeds United,Brentford,H,43.4,24.4,32.2,D,1.0,-1.0
+2,E0,30/08/2026,14:00,Leeds United,Brentford,A,36.7,21.3,42.0,D,1.0,-1.0
 2,E0,30/08/2026,14:00,Sunderland,Fulham,H,50.5,22.9,26.6,H,1.0,1.38
 2,E0,30/08/2026,16:30,Manchester United,Ipswich,H,70.2,20.9,9.0,H,1.0,0.4
 2,E0,31/08/2026,20:00,Aston Villa,Arsenal,A,18.9,27.6,53.5,A,1.0,0.5
@@ -55,7 +55,7 @@ Gameweek,Div,Date,Time,HomeTeam,AwayTeam,PredictedResult,HomeProb,DrawProb,AwayP
 6,E0,10/10/2026,15:00,Ipswich,Fulham,A,31.9,26.3,41.8,H,1.0,-1.0
 6,E0,10/10/2026,15:00,Sunderland,Brighton and Hove Albion,A,33.4,20.4,46.2,A,1.0,1.3
 6,E0,10/10/2026,17:30,Manchester United,Tottenham Hotspur,H,67.3,23.1,9.6,D,1.0,-1.0
-6,E0,11/10/2026,14:00,Crystal Palace,Nottingham Forest,H,35.8,28.6,35.6,H,1.0,1.63
+6,E0,11/10/2026,14:00,Crystal Palace,Nottingham Forest,A,35.2,29.4,35.4,H,1.0,-1.0
 6,E0,11/10/2026,14:00,Hull City,Everton,H,39.8,26.0,34.2,D,1.0,-1.0
 6,E0,11/10/2026,16:30,Liverpool,Manchester City,A,26.7,22.0,51.2,A,1.0,1.4
 6,E0,12/10/2026,20:00,Coventry,Newcastle United,A,36.1,20.3,43.5,H,1.0,-1.0
@@ -72,11 +72,11 @@ Gameweek,Div,Date,Time,HomeTeam,AwayTeam,PredictedResult,HomeProb,DrawProb,AwayP
 8,E0,23/10/2026,20:00,Ipswich,Nottingham Forest,A,27.4,30.3,42.3,D,1.0,-1.0
 8,E0,24/10/2026,12:30,Aston Villa,Manchester City,A,22.5,20.2,57.3,H,1.0,-1.0
 8,E0,24/10/2026,15:00,Arsenal,Everton,H,65.1,24.1,10.7,H,1.0,0.44
-8,E0,24/10/2026,15:00,Coventry,Fulham,H,36.8,26.9,36.3,A,1.0,-1.0
+8,E0,24/10/2026,15:00,Coventry,Fulham,A,35.7,27.6,36.7,A,1.0,1.2
 8,E0,24/10/2026,17:30,Chelsea,Tottenham Hotspur,H,52.8,30.8,16.4,A,1.0,-1.0
 8,E0,25/10/2026,14:00,Crystal Palace,Newcastle United,H,40.8,25.3,33.9,A,1.0,-1.0
 8,E0,25/10/2026,14:00,Hull City,Brentford,A,35.8,23.4,40.8,D,1.0,-1.0
-8,E0,25/10/2026,14:00,Liverpool,Brighton and Hove Albion,A,39.3,20.8,39.9,H,1.0,-1.0
+8,E0,25/10/2026,14:00,Liverpool,Brighton and Hove Albion,H,42.2,19.4,38.4,H,1.0,1.05
 8,E0,25/10/2026,14:00,Manchester United,Bournemouth,H,39.4,29.3,31.3,A,1.0,-1.0
 8,E0,25/10/2026,16:30,Sunderland,Leeds United,A,35.0,25.6,39.4,D,1.0,-1.0
 9,E0,31/10/2026,12:30,Chelsea,Manchester United,H,41.9,27.3,30.8,H,1.0,0.8

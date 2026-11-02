@@ -1,0 +1,91 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+5795363,2026-08-21,Arsenal,Coventry City,1.88,0.2
+5795364,2026-08-22,Hull City,Manchester United,1.01,1.83
+5795365,2026-08-22,Everton,Crystal Palace,1.12,1.96
+5795366,2026-08-22,Ipswich Town,Sunderland,1.8,0.66
+5795367,2026-08-22,Nottingham Forest,Leeds United,0.66,0.47
+5795368,2026-08-22,Brentford,Tottenham Hotspur,3.87,0.57
+5795369,2026-08-23,Brighton & Hove Albion,Aston Villa,3.77,0.29
+5795370,2026-08-23,Manchester City,AFC Bournemouth,2.25,0.65
+5795371,2026-08-23,Newcastle United,Liverpool,1.58,2.98
+5795372,2026-08-24,Fulham,Chelsea,1.33,2.24
+5795429,2026-08-28,Crystal Palace,Manchester City,0.66,2.21
+5795431,2026-08-29,Liverpool,Nottingham Forest,1.75,2.3
+5795425,2026-08-29,AFC Bournemouth,Everton,2.16,1.84
+5795428,2026-08-29,Coventry City,Hull City,1.29,0.72
+5795434,2026-08-29,Tottenham Hotspur,Newcastle United,1.12,0.72
+5795427,2026-08-30,Chelsea,Brighton & Hove Albion,2.93,1.41
+5795430,2026-08-30,Leeds United,Brentford,1.46,1.67
+5795433,2026-08-30,Sunderland,Fulham,2.02,0.95
+5795432,2026-08-30,Manchester United,Ipswich Town,4.77,2.06
+5795426,2026-08-31,Aston Villa,Arsenal,0.33,1.04
+5795441,2026-09-04,Ipswich Town,Liverpool,0.75,0.69
+5795443,2026-09-05,Newcastle United,AFC Bournemouth,0.71,1.37
+5795436,2026-09-05,Brentford,Sunderland,1.21,1.71
+5795437,2026-09-05,Brighton & Hove Albion,Leeds United,2.19,2.49
+5795439,2026-09-05,Fulham,Crystal Palace,3.14,1.97
+5795442,2026-09-05,Manchester City,Coventry City,2.12,1.37
+5795444,2026-09-05,Nottingham Forest,Tottenham Hotspur,0.92,1.06
+5795440,2026-09-05,Hull City,Aston Villa,0.57,1.93
+5795438,2026-09-06,Everton,Manchester United,1.01,0.69
+5795435,2026-09-06,Arsenal,Chelsea,2.05,0.39
+5795445,2026-09-12,AFC Bournemouth,Brentford,1.75,0.5
+5795446,2026-09-12,Aston Villa,Nottingham Forest,0.82,2.28
+5795447,2026-09-12,Chelsea,Hull City,0.91,1.38
+5795449,2026-09-12,Crystal Palace,Ipswich Town,0.62,1.68
+5795451,2026-09-12,Liverpool,Fulham,1.28,0.7
+5795454,2026-09-12,Tottenham Hotspur,Everton,0.69,1.11
+5795453,2026-09-12,Sunderland,Arsenal,1.8,1.88
+5795448,2026-09-13,Coventry City,Brighton & Hove Albion,1.33,2.81
+5795452,2026-09-13,Manchester United,Manchester City,1.0,1.1
+5795450,2026-09-14,Leeds United,Newcastle United,1.99,0.88
+5795456,2026-09-18,Brentford,Chelsea,2.65,0.83
+5795464,2026-09-19,Tottenham Hotspur,Aston Villa,1.56,1.26
+5795457,2026-09-19,Brighton & Hove Albion,Arsenal,1.31,1.63
+5795458,2026-09-19,Everton,Ipswich Town,2.24,1.44
+5795462,2026-09-19,Newcastle United,Hull City,1.44,1.59
+5795463,2026-09-19,Nottingham Forest,Coventry City,1.1,0.67
+5795455,2026-09-20,AFC Bournemouth,Liverpool,0.79,1.65
+5795460,2026-09-20,Leeds United,Crystal Palace,1.31,1.06
+5795461,2026-09-20,Manchester City,Sunderland,2.82,3.57
+5795459,2026-09-20,Fulham,Manchester United,1.62,1.6
+5795465,2026-10-10,Arsenal,Leeds United,2.33,0.62
+5795466,2026-10-10,Aston Villa,Brentford,2.28,1.06
+5795467,2026-10-10,Chelsea,AFC Bournemouth,1.1,1.38
+5795471,2026-10-10,Ipswich Town,Fulham,1.15,1.81
+5795474,2026-10-10,Sunderland,Brighton & Hove Albion,0.72,1.41
+5795473,2026-10-10,Manchester United,Tottenham Hotspur,0.8,1.62
+5795469,2026-10-11,Crystal Palace,Nottingham Forest,2.41,3.34
+5795470,2026-10-11,Hull City,Everton,1.33,1.68
+5795472,2026-10-11,Liverpool,Manchester City,0.94,1.28
+5795468,2026-10-12,Coventry City,Newcastle United,1.47,1.84
+5795478,2026-10-17,Everton,Chelsea,0.43,1.47
+5795476,2026-10-17,Brentford,Liverpool,0.88,1.64
+5795479,2026-10-17,Fulham,Hull City,1.38,0.16
+5795481,2026-10-17,Manchester City,Ipswich Town,3.35,1.86
+5795482,2026-10-17,Newcastle United,Aston Villa,0.99,1.57
+5795475,2026-10-18,AFC Bournemouth,Sunderland,4.23,0.07
+5795477,2026-10-18,Brighton & Hove Albion,Crystal Palace,2.0,0.77
+5795480,2026-10-18,Leeds United,Manchester United,1.41,0.92
+5795483,2026-10-18,Nottingham Forest,Arsenal,0.9,1.14
+5795484,2026-10-19,Tottenham Hotspur,Coventry City,0.86,0.77
+5795491,2026-10-23,Ipswich Town,Nottingham Forest,0.46,2.29
+5795486,2026-10-24,Aston Villa,Manchester City,0.61,1.56
+5795485,2026-10-24,Arsenal,Everton,1.96,0.63
+5795488,2026-10-24,Coventry City,Fulham,0.51,0.55
+5795487,2026-10-24,Chelsea,Tottenham Hotspur,0.47,0.74
+5795489,2026-10-25,Crystal Palace,Newcastle United,1.59,0.95
+5795490,2026-10-25,Hull City,Brentford,1.57,1.74
+5795492,2026-10-25,Liverpool,Brighton & Hove Albion,1.2,1.32
+5795493,2026-10-25,Manchester United,AFC Bournemouth,1.17,2.15
+5795494,2026-10-25,Sunderland,Leeds United,0.83,0.76
+5795498,2026-10-31,Chelsea,Manchester United,3.01,1.24
+5795495,2026-10-31,AFC Bournemouth,Leeds United,1.29,0.71
+5795497,2026-10-31,Brentford,Nottingham Forest,0.46,0.86
+5795499,2026-10-31,Coventry City,Sunderland,0.69,1.82
+5795500,2026-10-31,Hull City,Ipswich Town,0.78,1.06
+5795502,2026-10-31,Manchester City,Brighton & Hove Albion,1.64,1.0
+5795504,2026-10-31,Tottenham Hotspur,Crystal Palace,3.47,0.14
+5795496,2026-10-31,Aston Villa,Fulham,1.83,2.24
+5795501,2026-11-01,Liverpool,Arsenal,1.05,0.98
+5795503,2026-11-02,Newcastle United,Everton,1.47,2.15

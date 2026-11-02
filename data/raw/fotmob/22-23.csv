@@ -1,0 +1,381 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+3900932,2022-08-05,Crystal Palace,Arsenal,1.21,1.0
+3900933,2022-08-06,Fulham,Liverpool,1.25,1.23
+3900934,2022-08-06,AFC Bournemouth,Aston Villa,0.59,0.66
+3900935,2022-08-06,Leeds United,Wolverhampton Wanderers,1.05,1.76
+3900937,2022-08-06,Newcastle United,Nottingham Forest,1.74,0.28
+3900938,2022-08-06,Tottenham Hotspur,Southampton,1.57,0.48
+3900939,2022-08-06,Everton,Chelsea,0.67,1.64
+3900936,2022-08-07,Leicester City,Brentford,0.62,0.76
+3900940,2022-08-07,Manchester United,Brighton & Hove Albion,1.38,1.5
+3900941,2022-08-07,West Ham United,Manchester City,0.49,2.23
+3900943,2022-08-13,Aston Villa,Everton,2.31,1.58
+3900942,2022-08-13,Arsenal,Leicester City,2.96,0.46
+3900945,2022-08-13,Brighton & Hove Albion,Newcastle United,1.5,0.22
+3900948,2022-08-13,Manchester City,AFC Bournemouth,1.75,0.13
+3900950,2022-08-13,Southampton,Leeds United,1.22,1.93
+3900951,2022-08-13,Wolverhampton Wanderers,Fulham,0.89,1.49
+3900944,2022-08-13,Brentford,Manchester United,1.61,0.92
+3900949,2022-08-14,Nottingham Forest,West Ham United,1.36,2.26
+3900946,2022-08-14,Chelsea,Tottenham Hotspur,1.58,1.01
+3900947,2022-08-15,Liverpool,Crystal Palace,2.07,1.04
+3900960,2022-08-20,Tottenham Hotspur,Wolverhampton Wanderers,1.67,0.71
+3900953,2022-08-20,Crystal Palace,Aston Villa,2.69,0.9
+3900954,2022-08-20,Everton,Nottingham Forest,1.51,0.99
+3900955,2022-08-20,Fulham,Brentford,2.54,1.8
+3900957,2022-08-20,Leicester City,Southampton,0.29,0.92
+3900952,2022-08-20,AFC Bournemouth,Arsenal,0.28,1.32
+3900956,2022-08-21,Leeds United,Chelsea,2.22,0.88
+3900961,2022-08-21,West Ham United,Brighton & Hove Albion,0.89,1.71
+3900959,2022-08-21,Newcastle United,Manchester City,1.81,2.11
+3900958,2022-08-22,Manchester United,Liverpool,1.79,1.35
+3900970,2022-08-27,Southampton,Manchester United,1.45,1.4
+3900964,2022-08-27,Brentford,Everton,2.15,1.07
+3900965,2022-08-27,Brighton & Hove Albion,Leeds United,2.02,1.84
+3900966,2022-08-27,Chelsea,Leicester City,1.75,2.52
+3900967,2022-08-27,Liverpool,AFC Bournemouth,3.32,0.33
+3900968,2022-08-27,Manchester City,Crystal Palace,2.42,0.12
+3900962,2022-08-27,Arsenal,Fulham,2.73,0.83
+3900963,2022-08-28,Aston Villa,West Ham United,0.49,0.56
+3900971,2022-08-28,Wolverhampton Wanderers,Newcastle United,0.71,1.77
+3900969,2022-08-28,Nottingham Forest,Tottenham Hotspur,0.95,2.4
+3900978,2022-08-30,Crystal Palace,Brentford,0.98,1.43
+3900974,2022-08-30,Fulham,Brighton & Hove Albion,0.68,1.42
+3900979,2022-08-30,Southampton,Chelsea,1.1,1.1
+3900975,2022-08-30,Leeds United,Everton,1.01,1.0
+3900973,2022-08-31,AFC Bournemouth,Wolverhampton Wanderers,0.42,1.51
+3900972,2022-08-31,Arsenal,Aston Villa,2.56,0.45
+3900981,2022-08-31,Manchester City,Nottingham Forest,3.32,0.66
+3900977,2022-08-31,West Ham United,Tottenham Hotspur,1.24,0.63
+3900980,2022-08-31,Liverpool,Newcastle United,1.5,0.72
+3900976,2022-09-01,Leicester City,Manchester United,0.73,1.55
+3900986,2022-09-03,Everton,Liverpool,1.72,2.19
+3900983,2022-09-03,Brentford,Leeds United,2.43,1.92
+3900985,2022-09-03,Chelsea,West Ham United,0.87,1.1
+3900988,2022-09-03,Newcastle United,Crystal Palace,2.83,1.01
+3900989,2022-09-03,Nottingham Forest,AFC Bournemouth,1.9,0.78
+3900990,2022-09-03,Tottenham Hotspur,Fulham,2.98,0.73
+3900991,2022-09-03,Wolverhampton Wanderers,Southampton,0.8,1.2
+3900982,2022-09-03,Aston Villa,Manchester City,0.34,2.1
+3900984,2022-09-04,Brighton & Hove Albion,Leicester City,2.76,1.45
+3900987,2022-09-04,Manchester United,Arsenal,1.55,1.32
+3901002,2022-09-16,Aston Villa,Southampton,1.5,0.34
+3901009,2022-09-16,Nottingham Forest,Fulham,1.41,0.94
+3901011,2022-09-17,Wolverhampton Wanderers,Manchester City,0.41,1.06
+3901008,2022-09-17,Newcastle United,AFC Bournemouth,1.92,0.75
+3901010,2022-09-17,Tottenham Hotspur,Leicester City,2.19,1.77
+3901003,2022-09-18,Brentford,Arsenal,0.53,1.52
+3901006,2022-09-18,Everton,West Ham United,0.36,1.04
+3901012,2022-10-01,Arsenal,Tottenham Hotspur,2.38,1.57
+3901013,2022-10-01,AFC Bournemouth,Brentford,0.38,0.87
+3901014,2022-10-01,Crystal Palace,Chelsea,0.44,1.14
+3901015,2022-10-01,Fulham,Newcastle United,0.47,3.55
+3901018,2022-10-01,Liverpool,Brighton & Hove Albion,1.47,1.37
+3901020,2022-10-01,Southampton,Everton,1.75,1.96
+3901021,2022-10-01,West Ham United,Wolverhampton Wanderers,0.92,0.74
+3901019,2022-10-02,Manchester City,Manchester United,3.3,1.67
+3901016,2022-10-02,Leeds United,Aston Villa,0.37,2.25
+3901017,2022-10-03,Leicester City,Nottingham Forest,1.32,1.16
+3901023,2022-10-08,AFC Bournemouth,Leicester City,1.14,1.08
+3901025,2022-10-08,Chelsea,Wolverhampton Wanderers,1.9,1.11
+3901028,2022-10-08,Manchester City,Southampton,2.47,0.16
+3901029,2022-10-08,Newcastle United,Brentford,1.53,1.19
+3901024,2022-10-08,Brighton & Hove Albion,Tottenham Hotspur,0.72,0.79
+3901026,2022-10-09,Crystal Palace,Leeds United,1.08,0.96
+3901031,2022-10-09,West Ham United,Fulham,3.04,0.7
+3901022,2022-10-09,Arsenal,Liverpool,3.09,1.13
+3901027,2022-10-09,Everton,Manchester United,0.65,1.45
+3901030,2022-10-10,Nottingham Forest,Aston Villa,0.31,0.69
+3901033,2022-10-14,Brentford,Brighton & Hove Albion,1.47,1.95
+3901036,2022-10-15,Leicester City,Crystal Palace,1.03,0.39
+3901034,2022-10-15,Fulham,AFC Bournemouth,2.13,1.05
+3901041,2022-10-15,Wolverhampton Wanderers,Nottingham Forest,1.32,1.49
+3901040,2022-10-15,Tottenham Hotspur,Everton,2.27,0.43
+3901032,2022-10-16,Aston Villa,Chelsea,1.79,0.87
+3901035,2022-10-16,Leeds United,Arsenal,1.86,0.55
+3901038,2022-10-16,Manchester United,Newcastle United,0.82,0.91
+3901039,2022-10-16,Southampton,West Ham United,0.45,1.68
+3901037,2022-10-16,Liverpool,Manchester City,2.04,0.81
+3901045,2022-10-18,Brighton & Hove Albion,Nottingham Forest,1.66,0.13
+3901048,2022-10-18,Crystal Palace,Wolverhampton Wanderers,1.2,0.84
+3901043,2022-10-19,AFC Bournemouth,Southampton,1.04,1.03
+3901044,2022-10-19,Brentford,Chelsea,1.25,0.86
+3901050,2022-10-19,Liverpool,West Ham United,1.73,1.84
+3901049,2022-10-19,Newcastle United,Everton,1.46,0.17
+3901051,2022-10-19,Manchester United,Tottenham Hotspur,1.52,0.5
+3901046,2022-10-20,Fulham,Aston Villa,2.17,1.16
+3901047,2022-10-20,Leicester City,Leeds United,0.79,1.33
+3901057,2022-10-22,Nottingham Forest,Liverpool,1.85,1.66
+3901054,2022-10-22,Everton,Crystal Palace,1.45,0.95
+3901056,2022-10-22,Manchester City,Brighton & Hove Albion,1.63,0.48
+3901053,2022-10-22,Chelsea,Manchester United,1.06,0.84
+3901052,2022-10-23,Aston Villa,Brentford,2.9,0.95
+3901055,2022-10-23,Leeds United,Fulham,1.71,1.85
+3901058,2022-10-23,Southampton,Arsenal,0.67,0.99
+3901061,2022-10-23,Wolverhampton Wanderers,Leicester City,2.12,0.89
+3901059,2022-10-23,Tottenham Hotspur,Newcastle United,1.65,1.21
+3901060,2022-10-24,West Ham United,AFC Bournemouth,1.9,0.39
+3901068,2022-10-29,Leicester City,Manchester City,0.71,1.03
+3901063,2022-10-29,AFC Bournemouth,Tottenham Hotspur,0.54,2.09
+3901064,2022-10-29,Brentford,Wolverhampton Wanderers,1.41,0.61
+3901065,2022-10-29,Brighton & Hove Albion,Chelsea,2.27,1.43
+3901066,2022-10-29,Crystal Palace,Southampton,0.89,1.32
+3901071,2022-10-29,Newcastle United,Aston Villa,3.44,0.37
+3901067,2022-10-29,Fulham,Everton,1.93,0.94
+3901069,2022-10-29,Liverpool,Leeds United,1.74,1.77
+3901062,2022-10-30,Arsenal,Nottingham Forest,2.3,0.43
+3901070,2022-10-30,Manchester United,West Ham United,1.24,1.08
+3901075,2022-11-05,Leeds United,AFC Bournemouth,2.16,1.47
+3901076,2022-11-05,Manchester City,Fulham,2.08,0.95
+3901077,2022-11-05,Nottingham Forest,Brentford,1.48,1.46
+3901081,2022-11-05,Wolverhampton Wanderers,Brighton & Hove Albion,1.23,1.57
+3901074,2022-11-05,Everton,Leicester City,1.24,2.36
+3901073,2022-11-06,Chelsea,Arsenal,0.29,2.25
+3901072,2022-11-06,Aston Villa,Manchester United,0.66,0.52
+3901078,2022-11-06,Southampton,Newcastle United,1.74,0.86
+3901080,2022-11-06,West Ham United,Crystal Palace,0.26,1.02
+3901079,2022-11-06,Tottenham Hotspur,Liverpool,1.21,1.18
+3901086,2022-11-12,Manchester City,Brentford,1.61,1.29
+3901082,2022-11-12,AFC Bournemouth,Everton,2.45,0.83
+3901085,2022-11-12,Liverpool,Southampton,1.95,1.05
+3901088,2022-11-12,Nottingham Forest,Crystal Palace,1.14,1.23
+3901089,2022-11-12,Tottenham Hotspur,Leeds United,1.8,1.1
+3901090,2022-11-12,West Ham United,Leicester City,1.4,1.78
+3901087,2022-11-12,Newcastle United,Chelsea,1.03,0.3
+3901091,2022-11-12,Wolverhampton Wanderers,Arsenal,0.68,2.11
+3901083,2022-11-13,Brighton & Hove Albion,Aston Villa,0.66,1.49
+3901084,2022-11-13,Fulham,Manchester United,1.37,2.59
+3901094,2022-12-26,Brentford,Tottenham Hotspur,2.15,1.07
+3901096,2022-12-26,Crystal Palace,Fulham,0.4,2.65
+3901097,2022-12-26,Everton,Wolverhampton Wanderers,1.74,0.78
+3901099,2022-12-26,Leicester City,Newcastle United,0.52,1.9
+3901101,2022-12-26,Southampton,Brighton & Hove Albion,1.91,0.64
+3901093,2022-12-26,Aston Villa,Liverpool,1.44,2.71
+3901092,2022-12-26,Arsenal,West Ham United,2.2,1.04
+3901095,2022-12-27,Chelsea,AFC Bournemouth,1.84,0.54
+3901100,2022-12-27,Manchester United,Nottingham Forest,2.5,0.71
+3901098,2022-12-28,Leeds United,Manchester City,0.58,4.41
+3901110,2022-12-30,West Ham United,Brentford,1.29,1.71
+3901105,2022-12-30,Liverpool,Leicester City,2.25,0.99
+3901111,2022-12-31,Wolverhampton Wanderers,Manchester United,0.67,1.97
+3901102,2022-12-31,AFC Bournemouth,Crystal Palace,0.56,1.59
+3901104,2022-12-31,Fulham,Southampton,1.52,0.86
+3901106,2022-12-31,Manchester City,Everton,1.79,0.09
+3901107,2022-12-31,Newcastle United,Leeds United,2.18,0.38
+3901103,2022-12-31,Brighton & Hove Albion,Arsenal,1.17,2.93
+3901109,2023-01-01,Tottenham Hotspur,Aston Villa,0.66,1.04
+3901108,2023-01-01,Nottingham Forest,Chelsea,1.43,0.94
+3901114,2023-01-02,Brentford,Liverpool,1.65,0.9
+3901112,2023-01-03,Arsenal,Newcastle United,1.12,1.06
+3901117,2023-01-03,Everton,Brighton & Hove Albion,1.29,2.17
+3901119,2023-01-03,Leicester City,Fulham,1.7,1.68
+3901120,2023-01-03,Manchester United,AFC Bournemouth,2.26,0.58
+3901121,2023-01-04,Southampton,Nottingham Forest,0.49,1.4
+3901118,2023-01-04,Leeds United,West Ham United,1.62,1.43
+3901113,2023-01-04,Aston Villa,Wolverhampton Wanderers,1.79,1.01
+3901116,2023-01-04,Crystal Palace,Tottenham Hotspur,0.83,1.39
+3901115,2023-01-05,Chelsea,Manchester City,0.41,2.0
+3900995,2023-01-12,Fulham,Chelsea,0.98,2.17
+3901122,2023-01-13,Aston Villa,Leeds United,1.24,2.36
+3901127,2023-01-14,Manchester United,Manchester City,1.72,0.65
+3901124,2023-01-14,Brighton & Hove Albion,Liverpool,1.94,1.05
+3901126,2023-01-14,Everton,Southampton,1.37,1.19
+3901129,2023-01-14,Nottingham Forest,Leicester City,2.36,1.02
+3901131,2023-01-14,Wolverhampton Wanderers,West Ham United,0.88,1.08
+3901123,2023-01-14,Brentford,AFC Bournemouth,1.4,0.6
+3901125,2023-01-15,Chelsea,Crystal Palace,1.52,0.67
+3901128,2023-01-15,Newcastle United,Fulham,2.36,1.11
+3901130,2023-01-15,Tottenham Hotspur,Arsenal,1.6,1.85
+3900994,2023-01-18,Crystal Palace,Manchester United,0.53,2.08
+3900999,2023-01-19,Manchester City,Tottenham Hotspur,2.37,0.81
+3901138,2023-01-21,Liverpool,Chelsea,1.4,1.65
+3901133,2023-01-21,AFC Bournemouth,Nottingham Forest,1.42,1.93
+3901137,2023-01-21,Leicester City,Brighton & Hove Albion,0.99,2.14
+3901140,2023-01-21,Southampton,Aston Villa,0.58,1.37
+3901141,2023-01-21,West Ham United,Everton,2.27,0.55
+3901134,2023-01-21,Crystal Palace,Newcastle United,0.3,1.25
+3901136,2023-01-22,Leeds United,Brentford,0.49,0.4
+3901139,2023-01-22,Manchester City,Wolverhampton Wanderers,2.78,0.79
+3901132,2023-01-22,Arsenal,Manchester United,3.25,0.36
+3901135,2023-01-23,Fulham,Tottenham Hotspur,0.99,0.91
+3901145,2023-02-03,Chelsea,Fulham,1.33,0.65
+3901146,2023-02-04,Everton,Arsenal,1.67,0.91
+3901142,2023-02-04,Aston Villa,Leicester City,1.71,2.57
+3901143,2023-02-04,Brentford,Southampton,1.99,0.68
+3901144,2023-02-04,Brighton & Hove Albion,AFC Bournemouth,2.5,1.18
+3901147,2023-02-04,Manchester United,Crystal Palace,2.04,1.36
+3901151,2023-02-04,Wolverhampton Wanderers,Liverpool,2.03,1.96
+3901148,2023-02-04,Newcastle United,West Ham United,1.01,1.01
+3901149,2023-02-05,Nottingham Forest,Leeds United,0.39,0.89
+3901150,2023-02-05,Tottenham Hotspur,Manchester City,1.46,1.32
+3901007,2023-02-08,Manchester United,Leeds United,2.04,0.63
+3901161,2023-02-11,West Ham United,Chelsea,1.29,1.15
+3901152,2023-02-11,Arsenal,Brentford,1.55,2.01
+3901154,2023-02-11,Crystal Palace,Brighton & Hove Albion,1.08,2.5
+3901155,2023-02-11,Fulham,Nottingham Forest,1.56,0.66
+3901157,2023-02-11,Leicester City,Tottenham Hotspur,1.68,1.36
+3901160,2023-02-11,Southampton,Wolverhampton Wanderers,1.16,0.83
+3901153,2023-02-11,AFC Bournemouth,Newcastle United,1.56,1.32
+3901156,2023-02-12,Leeds United,Manchester United,1.81,1.12
+3901159,2023-02-12,Manchester City,Aston Villa,3.36,0.27
+3901158,2023-02-13,Liverpool,Everton,2.33,0.36
+3901042,2023-02-15,Arsenal,Manchester City,1.64,1.8
+3901162,2023-02-18,Aston Villa,Arsenal,0.51,3.28
+3901163,2023-02-18,Brentford,Crystal Palace,0.89,1.09
+3901164,2023-02-18,Brighton & Hove Albion,Fulham,2.22,0.34
+3901165,2023-02-18,Chelsea,Southampton,1.62,0.6
+3901166,2023-02-18,Everton,Leeds United,1.47,0.54
+3901169,2023-02-18,Nottingham Forest,Manchester City,0.95,2.4
+3901171,2023-02-18,Wolverhampton Wanderers,AFC Bournemouth,1.29,1.07
+3901168,2023-02-18,Newcastle United,Liverpool,2.04,1.87
+3901167,2023-02-19,Manchester United,Leicester City,4.47,1.63
+3901170,2023-02-19,Tottenham Hotspur,West Ham United,1.55,0.48
+3901175,2023-02-24,Fulham,Wolverhampton Wanderers,0.46,0.78
+3901174,2023-02-25,Everton,Aston Villa,1.71,1.94
+3901176,2023-02-25,Leeds United,Southampton,0.91,0.38
+3901177,2023-02-25,Leicester City,Arsenal,0.02,0.66
+3901181,2023-02-25,West Ham United,Nottingham Forest,2.73,0.42
+3901172,2023-02-25,AFC Bournemouth,Manchester City,1.58,3.47
+3901173,2023-02-25,Crystal Palace,Liverpool,0.7,0.9
+3901180,2023-02-26,Tottenham Hotspur,Chelsea,0.8,0.42
+3900992,2023-03-01,Arsenal,Everton,2.45,1.17
+3900998,2023-03-01,Liverpool,Wolverhampton Wanderers,2.61,0.92
+3901188,2023-03-04,Manchester City,Newcastle United,1.34,0.43
+3901182,2023-03-04,Arsenal,AFC Bournemouth,2.17,1.33
+3901183,2023-03-04,Aston Villa,Crystal Palace,1.2,0.17
+3901185,2023-03-04,Brighton & Hove Albion,West Ham United,3.7,0.33
+3901186,2023-03-04,Chelsea,Leeds United,1.46,1.05
+3901191,2023-03-04,Wolverhampton Wanderers,Tottenham Hotspur,0.52,1.2
+3901190,2023-03-04,Southampton,Leicester City,1.38,1.93
+3901189,2023-03-05,Nottingham Forest,Everton,0.84,1.7
+3901187,2023-03-05,Liverpool,Manchester United,2.78,0.82
+3901184,2023-03-06,Brentford,Fulham,2.05,1.53
+3901192,2023-03-11,AFC Bournemouth,Liverpool,0.86,1.75
+3901194,2023-03-11,Everton,Brentford,1.03,2.1
+3901196,2023-03-11,Leeds United,Brighton & Hove Albion,1.66,1.89
+3901197,2023-03-11,Leicester City,Chelsea,2.52,1.57
+3901200,2023-03-11,Tottenham Hotspur,Nottingham Forest,2.0,1.54
+3901193,2023-03-11,Crystal Palace,Manchester City,0.21,2.08
+3901195,2023-03-12,Fulham,Arsenal,0.85,2.38
+3901198,2023-03-12,Manchester United,Southampton,0.86,1.11
+3901201,2023-03-12,West Ham United,Aston Villa,2.22,1.58
+3901199,2023-03-12,Newcastle United,Wolverhampton Wanderers,1.81,1.11
+3901004,2023-03-15,Brighton & Hove Albion,Crystal Palace,0.6,1.2
+3901000,2023-03-15,Southampton,Brentford,0.52,1.88
+3901209,2023-03-17,Nottingham Forest,Newcastle United,0.37,2.48
+3901203,2023-03-18,Aston Villa,AFC Bournemouth,3.66,1.36
+3901204,2023-03-18,Brentford,Leicester City,0.64,1.35
+3901210,2023-03-18,Southampton,Tottenham Hotspur,2.51,2.27
+3901211,2023-03-18,Wolverhampton Wanderers,Leeds United,2.78,1.62
+3901206,2023-03-18,Chelsea,Everton,2.37,1.27
+3901202,2023-03-19,Arsenal,Crystal Palace,1.57,0.78
+3901218,2023-04-01,Manchester City,Liverpool,2.96,0.33
+3901213,2023-04-01,AFC Bournemouth,Fulham,2.65,0.84
+3901212,2023-04-01,Arsenal,Leeds United,3.78,0.72
+3901214,2023-04-01,Brighton & Hove Albion,Brentford,4.47,1.6
+3901216,2023-04-01,Crystal Palace,Leicester City,2.42,0.22
+3901220,2023-04-01,Nottingham Forest,Wolverhampton Wanderers,1.32,0.49
+3901215,2023-04-01,Chelsea,Aston Villa,2.16,0.92
+3901221,2023-04-02,West Ham United,Southampton,1.4,0.3
+3901219,2023-04-02,Newcastle United,Manchester United,3.68,0.43
+3901217,2023-04-03,Everton,Tottenham Hotspur,0.91,1.44
+3900993,2023-04-04,AFC Bournemouth,Brighton & Hove Albion,1.74,2.67
+3900996,2023-04-04,Leeds United,Nottingham Forest,1.86,0.8
+3900997,2023-04-04,Leicester City,Aston Villa,0.47,1.02
+3901005,2023-04-04,Chelsea,Liverpool,2.17,0.35
+3901178,2023-04-05,Manchester United,Brentford,1.2,0.71
+3901001,2023-04-05,West Ham United,Newcastle United,0.98,3.29
+3901228,2023-04-08,Manchester United,Everton,3.46,1.02
+3901222,2023-04-08,Aston Villa,Nottingham Forest,1.3,0.25
+3901223,2023-04-08,Brentford,Newcastle United,2.57,1.31
+3901224,2023-04-08,Fulham,West Ham United,0.68,1.09
+3901226,2023-04-08,Leicester City,AFC Bournemouth,0.58,2.01
+3901230,2023-04-08,Tottenham Hotspur,Brighton & Hove Albion,0.83,1.43
+3901231,2023-04-08,Wolverhampton Wanderers,Chelsea,0.55,1.13
+3901229,2023-04-08,Southampton,Manchester City,0.41,2.91
+3901225,2023-04-09,Leeds United,Crystal Palace,0.93,3.15
+3901227,2023-04-09,Liverpool,Arsenal,3.96,1.41
+3901232,2023-04-15,Aston Villa,Newcastle United,1.93,0.52
+3901233,2023-04-15,Chelsea,Brighton & Hove Albion,0.54,2.94
+3901234,2023-04-15,Everton,Fulham,1.4,1.82
+3901238,2023-04-15,Southampton,Crystal Palace,0.78,0.87
+3901241,2023-04-15,Wolverhampton Wanderers,Brentford,0.76,1.17
+3901239,2023-04-15,Tottenham Hotspur,AFC Bournemouth,2.23,1.31
+3901236,2023-04-15,Manchester City,Leicester City,2.06,2.36
+3901240,2023-04-16,West Ham United,Arsenal,1.81,2.75
+3901237,2023-04-16,Nottingham Forest,Manchester United,0.73,3.48
+3901235,2023-04-17,Leeds United,Liverpool,1.38,2.73
+3901242,2023-04-21,Arsenal,Southampton,2.52,1.33
+3901247,2023-04-22,Fulham,Leeds United,1.68,0.89
+3901244,2023-04-22,Brentford,Aston Villa,2.74,1.74
+3901246,2023-04-22,Crystal Palace,Everton,0.51,0.39
+3901248,2023-04-22,Leicester City,Wolverhampton Wanderers,2.43,0.9
+3901249,2023-04-22,Liverpool,Nottingham Forest,2.84,0.85
+3901243,2023-04-23,AFC Bournemouth,West Ham United,1.52,2.43
+3901251,2023-04-23,Newcastle United,Tottenham Hotspur,3.85,1.03
+3901257,2023-04-25,Wolverhampton Wanderers,Crystal Palace,1.36,0.77
+3901258,2023-04-25,Aston Villa,Fulham,1.02,0.1
+3901253,2023-04-25,Leeds United,Leicester City,1.68,2.19
+3901254,2023-04-26,Nottingham Forest,Brighton & Hove Albion,2.43,2.34
+3901259,2023-04-26,Chelsea,Brentford,1.27,1.15
+3901256,2023-04-26,West Ham United,Liverpool,0.8,2.11
+3901261,2023-04-26,Manchester City,Arsenal,2.53,0.48
+3901252,2023-04-27,Everton,Newcastle United,0.87,2.43
+3901260,2023-04-27,Southampton,AFC Bournemouth,0.5,0.95
+3901255,2023-04-27,Tottenham Hotspur,Manchester United,2.48,2.03
+3901266,2023-04-29,Crystal Palace,West Ham United,2.13,1.86
+3901264,2023-04-29,Brentford,Nottingham Forest,1.62,0.72
+3901265,2023-04-29,Brighton & Hove Albion,Wolverhampton Wanderers,3.34,0.75
+3901263,2023-04-30,AFC Bournemouth,Leeds United,1.96,1.67
+3901267,2023-04-30,Fulham,Manchester City,0.19,2.48
+3901270,2023-04-30,Manchester United,Aston Villa,1.25,0.56
+3901271,2023-04-30,Newcastle United,Southampton,4.38,0.83
+3901269,2023-04-30,Liverpool,Tottenham Hotspur,2.2,2.03
+3901268,2023-05-01,Leicester City,Everton,3.46,3.09
+3901262,2023-05-02,Arsenal,Chelsea,1.75,0.76
+3901207,2023-05-03,Liverpool,Fulham,1.83,0.87
+3901208,2023-05-03,Manchester City,West Ham United,2.3,0.43
+3901205,2023-05-04,Brighton & Hove Albion,Manchester United,2.29,1.42
+3901272,2023-05-06,AFC Bournemouth,Chelsea,1.29,1.35
+3901276,2023-05-06,Manchester City,Leeds United,2.57,0.23
+3901279,2023-05-06,Tottenham Hotspur,Crystal Palace,0.88,0.36
+3901281,2023-05-06,Wolverhampton Wanderers,Aston Villa,0.76,1.48
+3901275,2023-05-06,Liverpool,Brentford,2.24,0.2
+3901277,2023-05-07,Newcastle United,Arsenal,1.32,1.27
+3901280,2023-05-07,West Ham United,Manchester United,1.3,1.18
+3901274,2023-05-08,Fulham,Leicester City,1.64,2.84
+3901273,2023-05-08,Brighton & Hove Albion,Everton,3.26,2.28
+3901278,2023-05-08,Nottingham Forest,Southampton,1.8,3.24
+3901288,2023-05-13,Leeds United,Newcastle United,2.0,2.29
+3901283,2023-05-13,Aston Villa,Tottenham Hotspur,1.18,1.37
+3901285,2023-05-13,Chelsea,Nottingham Forest,1.17,1.3
+3901286,2023-05-13,Crystal Palace,AFC Bournemouth,1.55,0.31
+3901290,2023-05-13,Manchester United,Wolverhampton Wanderers,3.2,0.33
+3901291,2023-05-13,Southampton,Fulham,0.35,1.4
+3901284,2023-05-14,Brentford,West Ham United,3.7,0.23
+3901287,2023-05-14,Everton,Manchester City,1.78,0.76
+3901282,2023-05-14,Arsenal,Brighton & Hove Albion,0.92,1.72
+3901289,2023-05-15,Leicester City,Liverpool,0.41,2.15
+3901179,2023-05-18,Newcastle United,Brighton & Hove Albion,3.56,0.51
+3901299,2023-05-20,Tottenham Hotspur,Brentford,1.76,1.23
+3901292,2023-05-20,AFC Bournemouth,Manchester United,1.01,1.41
+3901294,2023-05-20,Fulham,Crystal Palace,1.67,1.55
+3901295,2023-05-20,Liverpool,Aston Villa,0.75,1.35
+3901301,2023-05-20,Wolverhampton Wanderers,Everton,1.57,1.99
+3901298,2023-05-20,Nottingham Forest,Arsenal,0.55,0.64
+3901300,2023-05-21,West Ham United,Leeds United,2.15,0.89
+3901293,2023-05-21,Brighton & Hove Albion,Southampton,2.53,0.6
+3901296,2023-05-21,Manchester City,Chelsea,1.19,1.25
+3901297,2023-05-22,Newcastle United,Leicester City,2.19,0.09
+3901245,2023-05-24,Brighton & Hove Albion,Manchester City,2.37,1.82
+3901250,2023-05-25,Manchester United,Chelsea,5.21,1.94
+3901302,2023-05-28,Arsenal,Wolverhampton Wanderers,2.81,0.45
+3901303,2023-05-28,Aston Villa,Brighton & Hove Albion,2.85,1.35
+3901304,2023-05-28,Brentford,Manchester City,1.27,1.92
+3901305,2023-05-28,Chelsea,Newcastle United,2.27,1.75
+3901306,2023-05-28,Crystal Palace,Nottingham Forest,1.47,0.48
+3901307,2023-05-28,Everton,AFC Bournemouth,1.04,0.47
+3901308,2023-05-28,Leeds United,Tottenham Hotspur,1.5,2.17
+3901309,2023-05-28,Leicester City,West Ham United,1.42,1.38
+3901310,2023-05-28,Manchester United,Fulham,2.89,1.8
+3901311,2023-05-28,Southampton,Liverpool,1.82,4.05

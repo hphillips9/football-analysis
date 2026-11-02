@@ -8,7 +8,7 @@ Always:
 
     1. Fetch last week's results into data/raw/EPL26-27.csv
     2. Settle any pending bets in data/raw/Bets.csv
-    3. Rebuild data/processed/all_matches.csv (results + Understat xG)
+    3. Rebuild data/processed/all_matches.csv (results + FotMob xG, Understat backup)
     4. Backfill gameweek / probabilities on any Bets.csv rows missing them
     5. Pull the next round's fixtures from football-data.org, predict
        them and append the new bets to Bets.csv (skipped by --no-predict)
@@ -114,7 +114,7 @@ def main():
     parser.add_argument(
         "--no-refresh",
         action="store_true",
-        help="Use cached Understat data instead of re-scraping the current season."
+        help="Use cached FotMob/Understat xG instead of re-scraping the current season."
     )
     parser.add_argument(
         "--no-predict",
