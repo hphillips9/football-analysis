@@ -79,13 +79,13 @@ Gameweek,Div,Date,Time,HomeTeam,AwayTeam,PredictedResult,HomeProb,DrawProb,AwayP
 8,E0,25/10/2026,14:00,Liverpool,Brighton and Hove Albion,A,39.3,20.8,39.9,H,1.0,-1.0
 8,E0,25/10/2026,14:00,Manchester United,Bournemouth,H,39.4,29.3,31.3,A,1.0,-1.0
 8,E0,25/10/2026,16:30,Sunderland,Leeds United,A,35.0,25.6,39.4,D,1.0,-1.0
-9,E0,31/10/2026,12:30,Chelsea,Manchester United,H,41.9,27.3,30.8,,,
-9,E0,31/10/2026,15:00,Bournemouth,Leeds United,H,58.0,22.1,19.9,,,
-9,E0,31/10/2026,15:00,Brentford,Nottingham Forest,H,43.6,31.7,24.7,,,
-9,E0,31/10/2026,15:00,Coventry,Sunderland,H,41.9,24.0,34.1,,,
-9,E0,31/10/2026,15:00,Hull City,Ipswich,H,58.5,21.8,19.7,,,
-9,E0,31/10/2026,15:00,Manchester City,Brighton and Hove Albion,H,58.6,22.9,18.5,,,
-9,E0,31/10/2026,17:30,Tottenham Hotspur,Crystal Palace,H,49.8,22.4,27.8,,,
-9,E0,31/10/2026,20:00,Aston Villa,Fulham,H,51.1,26.3,22.6,,,
-9,E0,01/11/2026,16:30,Liverpool,Arsenal,A,29.1,24.0,46.9,,,
+9,E0,31/10/2026,12:30,Chelsea,Manchester United,H,41.9,27.3,30.8,H,1.0,0.8
+9,E0,31/10/2026,15:00,Bournemouth,Leeds United,H,58.0,22.1,19.9,H,1.0,1.1
+9,E0,31/10/2026,15:00,Brentford,Nottingham Forest,H,43.6,31.7,24.7,H,1.0,1.05
+9,E0,31/10/2026,15:00,Coventry,Sunderland,H,41.9,24.0,34.1,H,1.0,2.1
+9,E0,31/10/2026,15:00,Hull City,Ipswich,H,58.5,21.8,19.7,D,1.0,-1.0
+9,E0,31/10/2026,15:00,Manchester City,Brighton and Hove Albion,H,58.6,22.9,18.5,A,1.0,-1.0
+9,E0,31/10/2026,17:30,Tottenham Hotspur,Crystal Palace,H,49.8,22.4,27.8,H,1.0,0.53
+9,E0,31/10/2026,20:00,Aston Villa,Fulham,H,51.1,26.3,22.6,D,1.0,-1.0
+9,E0,01/11/2026,16:30,Liverpool,Arsenal,A,29.1,24.0,46.9,A,1.0,1.38
 9,E0,02/11/2026,20:00,Newcastle United,Everton,H,41.3,28.3,30.4,,,

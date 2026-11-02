@@ -1,45 +1,45 @@
 {
-  "generated": "2026-11-02T11:01:52+00:00",
+  "generated": "2026-11-02T17:33:06+00:00",
   "teams": [
     {
       "team": "Arsenal",
-      "elo": 1817
+      "elo": 1833
     },
     {
       "team": "Manchester City",
-      "elo": 1794
-    },
-    {
-      "team": "Liverpool",
-      "elo": 1658
-    },
-    {
-      "team": "Aston Villa",
-      "elo": 1636
+      "elo": 1764
     },
     {
       "team": "Brighton and Hove Albion",
-      "elo": 1628
+      "elo": 1657
+    },
+    {
+      "team": "Liverpool",
+      "elo": 1642
     },
     {
       "team": "Bournemouth",
-      "elo": 1624
+      "elo": 1632
+    },
+    {
+      "team": "Aston Villa",
+      "elo": 1625
     },
     {
       "team": "Manchester United",
-      "elo": 1616
+      "elo": 1603
     },
     {
       "team": "Brentford",
-      "elo": 1587
+      "elo": 1595
     },
     {
       "team": "Chelsea",
-      "elo": 1570
+      "elo": 1584
     },
     {
       "team": "Leeds United",
-      "elo": 1563
+      "elo": 1554
     },
     {
       "team": "Newcastle United",
@@ -51,35 +51,35 @@
     },
     {
       "team": "Fulham",
-      "elo": 1523
+      "elo": 1533
     },
     {
       "team": "Hull City",
-      "elo": 1515
-    },
-    {
-      "team": "Sunderland",
-      "elo": 1511
-    },
-    {
-      "team": "Nottingham Forest",
       "elo": 1504
     },
     {
-      "team": "Tottenham Hotspur",
-      "elo": 1484
+      "team": "Sunderland",
+      "elo": 1497
     },
     {
-      "team": "Crystal Palace",
-      "elo": 1482
+      "team": "Tottenham Hotspur",
+      "elo": 1496
+    },
+    {
+      "team": "Nottingham Forest",
+      "elo": 1496
     },
     {
       "team": "Coventry",
-      "elo": 1459
+      "elo": 1472
+    },
+    {
+      "team": "Crystal Palace",
+      "elo": 1471
     },
     {
       "team": "Ipswich",
-      "elo": 1388
+      "elo": 1399
     }
   ]
 }
