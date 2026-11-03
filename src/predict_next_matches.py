@@ -56,7 +56,13 @@ def infer_gameweek(fixtures, matches, bets_path=BETS_PATH):
     recorded, its stored gameweek is reused. An explicit "GW<n>" line at
     the top of Next_Matchweek.txt overrides all of this (handled in
     future_games_parser).
+
+    Each competition counts its own gameweeks, so ``matches`` and the
+    bets are narrowed to the fixtures' Div where both carry one.
     """
+
+    if "Div" in fixtures.columns and "Div" in matches.columns:
+        matches = matches[matches["Div"].isin(set(fixtures["Div"]))]
 
     ordered = matches.sort_values("MatchDateTime")
     latest_season = ordered["Season"].iloc[-1]
@@ -67,6 +73,8 @@ def infer_gameweek(fixtures, matches, bets_path=BETS_PATH):
 
     try:
         bets = pd.read_csv(bets_path)
+        if "Div" in fixtures.columns:
+            bets = bets[bets["Div"].isin(set(fixtures["Div"]))]
         bets_when = pd.to_datetime(
             bets["Date"] + " " + bets["Time"], dayfirst=True
         )
@@ -92,10 +100,11 @@ def infer_gameweek(fixtures, matches, bets_path=BETS_PATH):
     return pd.Series(counter + 1, index=fixtures.index)
 
 
-def predict_next_matches(
-    matches_path="data/processed/all_matches.csv",
-    fixtures_path="data/raw/Future_Fixtures.csv"
-):
+def load_model(matches_path="data/processed/all_matches.csv"):
+    """
+    Build the features over the whole match history and train on it.
+    Returns ``(matches, model, elos, team_history)`` for predict_round.
+    """
 
     matches = pd.read_csv(matches_path)
     matches["MatchDateTime"] = pd.to_datetime(matches["MatchDateTime"])
@@ -104,21 +113,48 @@ def predict_next_matches(
 
     calibrated_model = train_model(matches)
 
-    future = pd.read_csv(fixtures_path)
+    return matches, calibrated_model, elos, team_history
+
+
+def predict_round(future, trained, source_name="Future_Fixtures.csv"):
+    """
+    Score upcoming fixtures with load_model's output. Names are
+    normalised and a missing Gameweek inferred; the Div is carried
+    through when the fixtures have one.
+    """
+
+    matches, calibrated_model, elos, team_history = trained
+
+    future = future.copy()
 
     alias_map = load_alias_map()
 
     future["HomeTeam"] = normalize_team_names(
-        future["HomeTeam"], alias_map, source_name=fixtures_path
+        future["HomeTeam"], alias_map, source_name=source_name
     )
     future["AwayTeam"] = normalize_team_names(
-        future["AwayTeam"], alias_map, source_name=fixtures_path
+        future["AwayTeam"], alias_map, source_name=source_name
     )
 
     if "Gameweek" not in future.columns or future["Gameweek"].isna().any():
         future["Gameweek"] = infer_gameweek(future, matches)
 
-    return predict_fixtures(future, calibrated_model, elos, team_history)
+    results = predict_fixtures(future, calibrated_model, elos, team_history)
+
+    if "Div" in future.columns:
+        results.insert(0, "Div", future["Div"].to_numpy())
+
+    return results
+
+
+def predict_next_matches(
+    matches_path="data/processed/all_matches.csv",
+    fixtures_path="data/raw/Future_Fixtures.csv"
+):
+
+    return predict_round(
+        pd.read_csv(fixtures_path), load_model(matches_path), source_name=fixtures_path
+    )
 
 def add_bets(predictions, bets_path=BETS_PATH):
 
@@ -157,7 +193,7 @@ def add_bets(predictions, bets_path=BETS_PATH):
 
     if new_bets.empty:
         print("No new bets to add.")
-        return
+        return 0
 
     with open(bets_path, encoding="utf-8") as f:
         needs_newline = not f.read().endswith("\n")
@@ -177,6 +213,8 @@ def add_bets(predictions, bets_path=BETS_PATH):
         new_bets[["Div", "Date", "Time", "HomeTeam", "AwayTeam", "PredictedResult"]]
         .to_string(index=False)
     )
+
+    return len(new_bets)
 
 
 def print_predictions(results):
@@ -204,7 +242,8 @@ if __name__ == "__main__":
     results = predict_next_matches()
     add_bets(
         results[
-            ["Gameweek", "Date", "Time", "HomeTeam", "AwayTeam", "Prediction"]
+            [c for c in ["Div"] if c in results.columns]
+            + ["Gameweek", "Date", "Time", "HomeTeam", "AwayTeam", "Prediction"]
             + list(PROB_COLUMNS.values())
         ]
     )

@@ -205,11 +205,32 @@ def next_round(fixtures, bets_path=BETS_PATH):
     return select_next_round(upcoming)
 
 
-def fetch_next_fixtures(output_path=OUTPUT_PATH, bets_path=BETS_PATH, divs=None):
+def _competition_round(key, div, alias_map, bets_path):
+    """One competition's next round (see next_round), or None."""
+
+    fixtures = _to_frame(_get_matches(key, div), div)
+
+    if fixtures.empty:
+        print(f"{div}: football-data.org returned no matches.")
+        return None
+
+    for side in ["HomeTeam", "AwayTeam"]:
+        fixtures[side] = normalize_team_names(
+            fixtures[side], alias_map, source_name="football-data.org"
+        )
+
+    return next_round(fixtures, bets_path)
+
+
+def fetch_next_fixtures(output_path=OUTPUT_PATH, bets_path=BETS_PATH, divs=None, status=None):
     """
     Write the next round of every enabled competition (see next_round)
     to ``output_path``. Returns the fixtures, or None when no
     competition has anything to predict yet.
+
+    With ``status`` (a run_status.RunStatus), a competition that fails -
+    an outage or an unknown team name - is recorded there and skipped,
+    and the others carry on. Without one, the failure is raised.
     """
 
     key = api_key()
@@ -224,18 +245,14 @@ def fetch_next_fixtures(output_path=OUTPUT_PATH, bets_path=BETS_PATH, divs=None)
         if n:
             time.sleep(REQUEST_GAP)
 
-        fixtures = _to_frame(_get_matches(key, div), div)
-
-        if fixtures.empty:
-            print(f"{div}: football-data.org returned no matches.")
+        try:
+            future = _competition_round(key, div, alias_map, bets_path)
+        except Exception as exc:
+            if status is None:
+                raise
+            status.fail(div, exc)
             continue
 
-        for side in ["HomeTeam", "AwayTeam"]:
-            fixtures[side] = normalize_team_names(
-                fixtures[side], alias_map, source_name="football-data.org"
-            )
-
-        future = next_round(fixtures, bets_path)
         if future is not None:
             rounds.append(future)
 

@@ -72,11 +72,14 @@ def results_path(div, season=None):
     return LOCAL_PATH.format(div=div, season=season or competitions.CURRENT_SEASON)
 
 
-def fetch_all_new_results(divs=None):
+def fetch_all_new_results(divs=None, status=None):
     """
     fetch_new_results for every enabled competition with a
-    football-data.co.uk feed. One failing download doesn't stop the
-    others; raises ConnectionError at the end if any failed.
+    football-data.co.uk feed. A failure skips that competition only:
+    a download that fails leaves its results "stale" (the file on disk
+    is used), anything else - e.g. an unknown team name - is "failed".
+    Outcomes go to ``status`` (a run_status.RunStatus) when given;
+    without one, raises ConnectionError at the end if any failed.
     """
 
     failed = []
@@ -90,7 +93,17 @@ def fetch_all_new_results(divs=None):
         try:
             fetch_new_results(div)
         except ConnectionError as exc:
-            failed.append(f"{div}: {exc}")
+            if status is None:
+                failed.append(f"{div}: {exc}")
+            else:
+                status.fail(div, exc, results="stale")
+        except Exception as exc:
+            if status is None:
+                raise
+            status.fail(div, exc, results="failed")
+        else:
+            if status is not None:
+                status.set(div, results="ok")
 
     if failed:
         raise ConnectionError("; ".join(failed))

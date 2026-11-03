@@ -669,25 +669,10 @@ def report(matches):
 # BUILD
 # ============================================================
 
-def build_dataset(
-    divs=None,
-    raw_dir=RAW_DIR,
-    output_path=OUTPUT_PATH,
-    refresh_current=True,
-    verbose=False
-):
-    """
-    Rebuild ``data/processed/all_matches.csv`` from the raw result
-    files of each competition in ``divs`` (default: the enabled ones)
-    plus xG from FotMob (Opta), football-data.co.uk or Understat, in
-    that order of preference. Returns the resulting DataFrame.
-    """
+def _build_competition(div, alias_map, raw_dir, refresh_current, verbose):
+    """One competition's results with xG merged on (see build_dataset)."""
 
-    divs = divs or competitions.enabled()
-
-    alias_map = load_alias_map()
-
-    matches = load_result_files(divs, raw_dir)
+    matches = load_result_files([div], raw_dir)
 
     # Keep original names so the coverage report can point at gaps
     matches = matches.assign(
@@ -702,32 +687,78 @@ def build_dataset(
         matches["AwayTeam"], alias_map, source_name="football-data.co.uk"
     )
 
-    fotmob, understat = [], []
+    seasons = discover_seasons(div, raw_dir)
+
+    fotmob = fetch_fotmob_xg(
+        div,
+        seasons,
+        raw_dir=raw_dir,
+        refresh_current=refresh_current,
+        verbose=verbose
+    )
+
+    understat = fetch_understat_xg(
+        div,
+        seasons,
+        raw_dir=raw_dir,
+        refresh_current=refresh_current,
+        verbose=verbose
+    )
+
+    return merge_xg(matches, fotmob, understat, alias_map)
+
+
+def build_dataset(
+    divs=None,
+    raw_dir=RAW_DIR,
+    output_path=OUTPUT_PATH,
+    refresh_current=True,
+    verbose=False,
+    status=None
+):
+    """
+    Rebuild ``data/processed/all_matches.csv`` from the raw result
+    files of each competition in ``divs`` (default: the enabled ones)
+    plus xG from FotMob (Opta), football-data.co.uk or Understat, in
+    that order of preference. Returns the resulting DataFrame.
+
+    Each competition is built on its own: one that fails (an unknown
+    team name, a missing results file) is left out and the rest still
+    build. Each one's xG outcome goes to ``status`` (a
+    run_status.RunStatus) when given. Raises RuntimeError if none built.
+    """
+
+    divs = divs or competitions.enabled()
+
+    alias_map = load_alias_map()
+
+    frames = []
 
     for div in divs:
 
-        seasons = discover_seasons(div, raw_dir)
+        try:
+            built = _build_competition(div, alias_map, raw_dir, refresh_current, verbose)
+        except Exception as exc:
+            if status is None:
+                print(f"{div}: FAILED - {type(exc).__name__}: {exc}; left out of the dataset.")
+            else:
+                status.fail(div, exc, xg="failed")
+            continue
 
-        fotmob.append(fetch_fotmob_xg(
-            div,
-            seasons,
-            raw_dir=raw_dir,
-            refresh_current=refresh_current,
-            verbose=verbose
-        ))
+        if status is not None:
+            complete = (built["HomeXG"].notna() & built["AwayXG"].notna()).all()
+            status.set(div, xg="ok" if complete else "partial")
 
-        understat.append(fetch_understat_xg(
-            div,
-            seasons,
-            raw_dir=raw_dir,
-            refresh_current=refresh_current,
-            verbose=verbose
-        ))
+        frames.append(built)
 
-    fotmob = pd.concat(fotmob, ignore_index=True)
-    understat = pd.concat(understat, ignore_index=True)
+    if not frames:
+        raise RuntimeError(f"No competition could be built ({', '.join(divs)}).")
 
-    matches = merge_xg(matches, fotmob, understat, alias_map)
+    matches = (
+        pd.concat(frames, ignore_index=True)
+        .sort_values(["MatchDateTime", "HomeTeam", "AwayTeam"])
+        .reset_index(drop=True)
+    )
 
     if verbose:
         report(matches)

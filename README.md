@@ -74,21 +74,35 @@ One command, [`src/run_week.py`](src/run_week.py), runs the whole cycle:
 | 2 | Settle any pending bets in `data/raw/Bets.csv` (result, the odds used, profit; no odds = unpriced, counted for accuracy only) |
 | 3 | Rebuild `data/processed/all_matches.csv` (results + FotMob/Opta xG, with football-data.co.uk's xG then Understat as backup, cached per season) |
 | 4 | Backfill gameweek / probabilities on any `Bets.csv` rows missing them |
-| 5 | Pull the next round's fixtures from football-data.org, predict them, append the bets |
+| 5 | Pull each competition's next round from football-data.org, predict them, append the bets |
 | 6 | Export `web/src/data/*.json` for the website |
 
 ```bash
 python src/run_week.py               # full run, including predictions
 python src/run_week.py --no-predict   # results + settlement only
+python src/run_week.py --divs E0 SP1  # just these competitions (default: ENABLED)
 ```
 
-Step 5 predicts **one round at a time**: it waits until every fixture
-already in `Bets.csv` has been played and the results are on file, then
-predicts the next round (plus any rearranged games that fall inside it).
+Steps 1, 3 and 5 run **competition by competition**. One that fails (a
+source outage, an unknown team name) is skipped and logged, and the others
+carry on. Every run writes `data/processed/run_status.json`:
+
+```json
+{"E0": {"results": "ok", "xg": "ok", "predicted": 10, "error": null}}
+```
+
+`results` is `ok`, `stale` (download failed; the results on file were used) or
+`failed`. `xg` is `ok`, `partial` (some matches missing xG) or `failed`.
+`predicted` is the number of new bets added.
+
+Step 5 predicts **one round at a time per competition**: it waits until
+every fixture already in `Bets.csv` has been played and the results are on
+file, then predicts the next round (plus any rearranged games that fall
+inside it). A postponement in one league doesn't hold up the others.
 It needs a `FOOTBALL_DATA_API_KEY` (environment variable, or a git-ignored
 `.env` at the repo root). Without one it falls back to the fixture list
-pasted into `data/raw/Next_Matchweek.txt` (an optional first line `GW7`
-sets the number explicitly, otherwise it's inferred).
+pasted into `data/raw/Next_Matchweek.txt`, Premier League only (an optional
+first line `GW7` sets the number explicitly, otherwise it's inferred).
 
 Bets are recorded as **1-unit flat stakes** at the best available price
 (Sky Bet, or the market average when missing).
@@ -140,6 +154,7 @@ npm run build    # static build → web/dist/
 ```
 src/
   run_week.py             orchestrator for the weekly cycle
+  run_status.py           per-competition outcome of a run -> run_status.json
   fetch_results.py        pull new results, settle bets
   load_data.py            build all_matches.csv (results + FotMob xG; football-data, Understat backup)
   fetch_fixtures.py       football-data.org → Future_Fixtures.csv
@@ -162,7 +177,7 @@ src/
 data/
   raw/<Div>/              per competition: results_<yy-yy>.csv, fotmob_ + understat_ xG caches
   raw/                    Bets.csv, fixtures
-  processed/              all_matches.csv, feature snapshots
+  processed/              all_matches.csv, run_status.json, feature snapshots
   reference/team_names.csv  one row per club: canonical name, country, FotMob + football-data.org ids, each source's name
 tests/                    unit tests (python tests/test_<name>.py, or pytest tests/)
 web/                      Observable Framework site
