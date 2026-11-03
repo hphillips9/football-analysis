@@ -66,7 +66,7 @@ COMPETITIONS = {
 }
 
 # Grows phase by phase (docs/multi-league-plan.md)
-ENABLED = ["E0"]
+ENABLED = ["E0", "SP1", "D1", "I1", "F1"]
 
 # The season live results and fixtures are fetched for. Bump it when a
 # new season starts.
