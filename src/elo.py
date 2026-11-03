@@ -15,12 +15,18 @@ import competitions
 HOME_ADVANTAGE = 130
 UPDATE_SIZE = 35
 
-# A promoted team (not in the league the season before) restarts here
-# rather than at the 1500 average or a stale rating from an old stint.
-# Promoted sides average ~0.8 points a game in their first season up;
-# notebooks/19_championship_promoted_teams.ipynb picked this value.
-# None turns the reset off everywhere (the original behaviour).
+# Where a promoted team (not in the league the season before) restarts,
+# rather than at the 1500 average or a stale rating from an old stint:
+# each competition's ``promoted_elo`` in competitions.py, tested per
+# league in notebook 20. None carries the old rating over (the original
+# behaviour). PROMOTED_ELO is the value for a code the registry doesn't
+# know (e.g. E1 in notebook 19).
 PROMOTED_ELO = None
+
+# build_elo_feature's default: take each competition's value from the
+# registry. Pass a number (or None) to use it everywhere instead, or a
+# {Div: value} dict.
+FROM_REGISTRY = "registry"
 
 # Every league's average rating (B_L). The same for all leagues until
 # league-strength offsets arrive (docs/multi-league-plan.md, Phase 4).
@@ -55,6 +61,18 @@ def match_div(match):
     """A match row's Div ("" for an old single-league frame without one)."""
 
     return match.get("Div", "")
+
+
+def promoted_start(div, promoted_elo=FROM_REGISTRY):
+    """The Elo a promoted club in ``div`` restarts at, or None to carry over."""
+
+    if isinstance(promoted_elo, dict):
+        return promoted_elo.get(div)
+
+    if promoted_elo == FROM_REGISTRY:
+        return competitions.COMPETITIONS.get(div, {}).get("promoted_elo", PROMOTED_ELO)
+
+    return promoted_elo
 
 
 def _ratings_by_team(ratings, scope):
@@ -100,7 +118,7 @@ def new_rating(old_rating, actual_score, expected_score):
     )
 
 
-def build_elo_feature(matches, promoted_elo=PROMOTED_ELO, scope=DEFAULT_SCOPE):
+def build_elo_feature(matches, promoted_elo=FROM_REGISTRY, scope=DEFAULT_SCOPE):
     """
     Pre-match Elo for every row of ``matches`` (chronological). Returns
     the end-of-history ratings, one per team.
@@ -108,12 +126,13 @@ def build_elo_feature(matches, promoted_elo=PROMOTED_ELO, scope=DEFAULT_SCOPE):
     Under ``scope="competition"`` each competition (Div) is rated on its
     own; ``"all"`` pools every match.
 
-    A team's first match of a season resets it to ``promoted_elo`` if it
-    didn't play the season before in that competition (every team in the
-    first season on record starts at LEAGUE_BASE_ELO). Done at the first
-    match rather than at the season start so a history cut off
-    mid-season still works. ``promoted_elo=None`` turns this off (the
-    original behaviour).
+    A team's first match of a season resets it to its competition's
+    promoted start (see promoted_start) if it didn't play the season
+    before in that competition (every team in the first season on record
+    starts at LEAGUE_BASE_ELO). Done at the first match rather than at
+    the season start so a history cut off mid-season still works.
+    ``promoted_elo=None`` turns this off everywhere (the original
+    behaviour).
     """
 
     elos = {}  # scope key -> rating
@@ -149,8 +168,10 @@ def build_elo_feature(matches, promoted_elo=PROMOTED_ELO, scope=DEFAULT_SCOPE):
                 and key not in seen[(group, previous[season])]
             )
 
-            if promoted and promoted_elo is not None:
-                elos[key] = promoted_elo
+            start = promoted_start(div, promoted_elo) if promoted else None
+
+            if start is not None:
+                elos[key] = start
 
         if key not in elos:
             elos[key] = LEAGUE_BASE_ELO
@@ -198,13 +219,13 @@ def build_elo_feature(matches, promoted_elo=PROMOTED_ELO, scope=DEFAULT_SCOPE):
     return _ratings_by_team(elos, scope)
 
 
-def fixture_elo(team, season, elos, team_matches, seasons_on_record):
+def fixture_elo(team, season, elos, team_matches, seasons_on_record, div=""):
     """
-    A team's Elo going into a fixture in ``season``, given the matches it
-    has played (in the fixture's scope) and the seasons on record there.
-    Applies the same promoted-team reset as build_elo_feature to a team
-    yet to play this season - e.g. a promoted side before its first game
-    of a new season.
+    A team's Elo going into a fixture in ``season`` of competition
+    ``div``, given the matches it has played (in the fixture's scope) and
+    the seasons on record there. Applies the same promoted-team reset as
+    build_elo_feature to a team yet to play this season - e.g. a promoted
+    side before its first game of a new season.
     """
 
     played_in = {m["Season"] for m in team_matches}
@@ -212,7 +233,9 @@ def fixture_elo(team, season, elos, team_matches, seasons_on_record):
 
     promoted = season not in played_in and earlier and earlier[-1] not in played_in
 
-    if promoted and PROMOTED_ELO is not None:
-        return PROMOTED_ELO
+    start = promoted_start(div) if promoted else None
+
+    if start is not None:
+        return start
 
     return elos.get(team, LEAGUE_BASE_ELO)

@@ -297,8 +297,8 @@ def build_future_features(future, elos, team_history, scope=DEFAULT_SCOPE):
 
         season = _season_label_for(match.get("Date", ""), latest_season)
 
-        home_elo = fixture_elo(home_team, season, elos, home_matches, seasons_on_record)
-        away_elo = fixture_elo(away_team, season, elos, away_matches, seasons_on_record)
+        home_elo = fixture_elo(home_team, season, elos, home_matches, seasons_on_record, div)
+        away_elo = fixture_elo(away_team, season, elos, away_matches, seasons_on_record, div)
 
         elo_diff = home_elo - away_elo
 

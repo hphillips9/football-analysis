@@ -27,9 +27,11 @@ Every team has an **Elo rating** (starts at 1500, K-factor 35, carries across
 seasons). The 130-point home advantage is used only inside the Elo update's
 expected result; the model learns home advantage for itself through its
 intercept. A promoted team keeps the rating it last had, and a team new to
-the data starts at 1500 (`PROMOTED_ELO = None`). Restarting promoted teams at
-1350 was tested in `notebooks/19_championship_promoted_teams.ipynb`, but the
-gain was too small to keep. A **calibrated logistic regression** (`CalibratedClassifierCV`, sigmoid)
+the data starts at 1500 (`promoted_elo = None` for every league in
+`src/competitions.py`). Restarting promoted teams lower was tested for the
+Premier League in `notebooks/19_championship_promoted_teams.ipynb` and for
+each of the top 5 in `notebooks/20_multileague_pipeline.ipynb`; no league's
+gain was clear of noise, so none restarts lower. A **calibrated logistic regression** (`CalibratedClassifierCV`, sigmoid)
 maps the three features to H / D / A probabilities and is retrained on all
 available history on every run.
 
