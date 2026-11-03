@@ -33,7 +33,7 @@ def check_shape(payload):
     """Raise AssertionError unless ``payload`` has backtest.json's shape."""
 
     assert set(payload) == {
-        "generated", "model", "pooled", "competitions", "seasons", "overall",
+        "generated", "model", "pooled", "competitions",
     }
     assert set(payload["model"]) == {"features", "leagueIndicators", "ownModel", "trainFrom"}
 
@@ -47,11 +47,6 @@ def check_shape(payload):
 
     for div, section in payload["competitions"].items():
         assert isinstance(section["name"], str) and section["name"]
-
-    # The deprecated top level is the Premier League's figures
-    e0 = payload["competitions"].get("E0", {"seasons": [], "overall": None})
-    assert payload["seasons"] == e0["seasons"]
-    assert payload["overall"] == e0["overall"]
 
 
 def _league(div, seed):

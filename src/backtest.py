@@ -12,9 +12,7 @@ gameweek.
 Each competition is scored with the model the pipeline predicts it
 with (model.train_models): its own, or the pooled one with a
 League_<Div> column per non-baseline league. The results are reported
-for all competitions together ("pooled") and per competition; the
-top-level ``seasons``/``overall`` are a copy of the Premier League's,
-kept for the site's about page until it moves to ``competitions``.
+for all competitions together ("pooled") and per competition.
 
 Features (Elo gap, last-5 xG difference, season goals-per-game
 difference) are built chronologically over the whole dataset, so each
@@ -226,9 +224,6 @@ def run_backtest(matches_path=MATCHES_PATH, out_path=OUT_PATH):
             "overall": overall,
         }
 
-    # Deprecated: the Premier League's figures, for about.md (Phase 3)
-    legacy = by_competition.get(BASELINE_LEAGUE, {"seasons": [], "overall": None})
-
     payload = {
         "generated": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "model": {
@@ -239,8 +234,6 @@ def run_backtest(matches_path=MATCHES_PATH, out_path=OUT_PATH):
         },
         "pooled": {"seasons": pooled_rows, "overall": pooled_overall},
         "competitions": by_competition,
-        "seasons": legacy["seasons"],
-        "overall": legacy["overall"],
     }
 
     out_path.parent.mkdir(parents=True, exist_ok=True)

@@ -284,6 +284,7 @@ def complete_bets(bets_path=BETS_PATH, divs=None):
         return bets
 
     bets["Bet"] = bets["Bet"].astype("Int64")
+    bets["Backfilled"] = bets["Backfilled"].astype("Int64")
     bets.to_csv(bets_path, index=False)
 
     total = bets.loc[settled, "Profit"].astype(float).sum()

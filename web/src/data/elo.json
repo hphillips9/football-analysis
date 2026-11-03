@@ -1,85 +1,485 @@
 {
-  "generated": "2026-11-03T16:06:11+00:00",
+  "generated": "2026-11-03T17:22:05+00:00",
   "teams": [
     {
+      "div": "E0",
       "team": "Arsenal",
       "elo": 1833
     },
     {
+      "div": "E0",
       "team": "Manchester City",
       "elo": 1764
     },
     {
+      "div": "E0",
       "team": "Brighton and Hove Albion",
       "elo": 1657
     },
     {
+      "div": "E0",
       "team": "Liverpool",
       "elo": 1642
     },
     {
+      "div": "E0",
       "team": "Bournemouth",
       "elo": 1632
     },
     {
+      "div": "E0",
       "team": "Aston Villa",
       "elo": 1625
     },
     {
+      "div": "E0",
       "team": "Manchester United",
       "elo": 1603
     },
     {
+      "div": "E0",
       "team": "Brentford",
       "elo": 1595
     },
     {
+      "div": "E0",
       "team": "Chelsea",
       "elo": 1584
     },
     {
+      "div": "E0",
       "team": "Everton",
       "elo": 1561
     },
     {
+      "div": "E0",
       "team": "Leeds United",
       "elo": 1554
     },
     {
+      "div": "E0",
       "team": "Fulham",
       "elo": 1533
     },
     {
+      "div": "E0",
       "team": "Newcastle United",
       "elo": 1522
     },
     {
+      "div": "E0",
       "team": "Hull City",
       "elo": 1504
     },
     {
+      "div": "E0",
       "team": "Sunderland",
       "elo": 1497
     },
     {
+      "div": "E0",
       "team": "Tottenham Hotspur",
       "elo": 1496
     },
     {
+      "div": "E0",
       "team": "Nottingham Forest",
       "elo": 1496
     },
     {
+      "div": "E0",
       "team": "Coventry",
       "elo": 1472
     },
     {
+      "div": "E0",
       "team": "Crystal Palace",
       "elo": 1471
     },
     {
+      "div": "E0",
       "team": "Ipswich",
       "elo": 1399
+    },
+    {
+      "div": "SP1",
+      "team": "Barcelona",
+      "elo": 1856
+    },
+    {
+      "div": "SP1",
+      "team": "Real Madrid",
+      "elo": 1809
+    },
+    {
+      "div": "SP1",
+      "team": "Atl\u00e9tico Madrid",
+      "elo": 1717
+    },
+    {
+      "div": "SP1",
+      "team": "Real Betis",
+      "elo": 1666
+    },
+    {
+      "div": "SP1",
+      "team": "Villarreal",
+      "elo": 1582
+    },
+    {
+      "div": "SP1",
+      "team": "Real Sociedad",
+      "elo": 1546
+    },
+    {
+      "div": "SP1",
+      "team": "Rayo Vallecano",
+      "elo": 1540
+    },
+    {
+      "div": "SP1",
+      "team": "Celta Vigo",
+      "elo": 1526
+    },
+    {
+      "div": "SP1",
+      "team": "Athletic Club",
+      "elo": 1520
+    },
+    {
+      "div": "SP1",
+      "team": "Sevilla",
+      "elo": 1517
+    },
+    {
+      "div": "SP1",
+      "team": "Deportivo A Coru\u00f1a",
+      "elo": 1506
+    },
+    {
+      "div": "SP1",
+      "team": "Valencia",
+      "elo": 1504
+    },
+    {
+      "div": "SP1",
+      "team": "Getafe",
+      "elo": 1491
+    },
+    {
+      "div": "SP1",
+      "team": "Levante",
+      "elo": 1489
+    },
+    {
+      "div": "SP1",
+      "team": "Deportivo Alav\u00e9s",
+      "elo": 1474
+    },
+    {
+      "div": "SP1",
+      "team": "Elche",
+      "elo": 1474
+    },
+    {
+      "div": "SP1",
+      "team": "Racing Santander",
+      "elo": 1473
+    },
+    {
+      "div": "SP1",
+      "team": "Espanyol",
+      "elo": 1455
+    },
+    {
+      "div": "SP1",
+      "team": "Osasuna",
+      "elo": 1442
+    },
+    {
+      "div": "SP1",
+      "team": "M\u00e1laga",
+      "elo": 1435
+    },
+    {
+      "div": "D1",
+      "team": "Bayern M\u00fcnchen",
+      "elo": 1869
+    },
+    {
+      "div": "D1",
+      "team": "Borussia Dortmund",
+      "elo": 1754
+    },
+    {
+      "div": "D1",
+      "team": "RB Leipzig",
+      "elo": 1654
+    },
+    {
+      "div": "D1",
+      "team": "Bayer Leverkusen",
+      "elo": 1648
+    },
+    {
+      "div": "D1",
+      "team": "VfB Stuttgart",
+      "elo": 1613
+    },
+    {
+      "div": "D1",
+      "team": "Freiburg",
+      "elo": 1604
+    },
+    {
+      "div": "D1",
+      "team": "Hoffenheim",
+      "elo": 1551
+    },
+    {
+      "div": "D1",
+      "team": "Elversberg",
+      "elo": 1538
+    },
+    {
+      "div": "D1",
+      "team": "Eintracht Frankfurt",
+      "elo": 1535
+    },
+    {
+      "div": "D1",
+      "team": "Werder Bremen",
+      "elo": 1523
+    },
+    {
+      "div": "D1",
+      "team": "Mainz 05",
+      "elo": 1521
+    },
+    {
+      "div": "D1",
+      "team": "Augsburg",
+      "elo": 1509
+    },
+    {
+      "div": "D1",
+      "team": "Paderborn",
+      "elo": 1504
+    },
+    {
+      "div": "D1",
+      "team": "Hamburger SV",
+      "elo": 1499
+    },
+    {
+      "div": "D1",
+      "team": "Union Berlin",
+      "elo": 1463
+    },
+    {
+      "div": "D1",
+      "team": "Borussia M\u00f6nchengladbach",
+      "elo": 1440
+    },
+    {
+      "div": "D1",
+      "team": "Schalke 04",
+      "elo": 1439
+    },
+    {
+      "div": "D1",
+      "team": "1. FC K\u00f6ln",
+      "elo": 1422
+    },
+    {
+      "div": "I1",
+      "team": "Inter",
+      "elo": 1829
+    },
+    {
+      "div": "I1",
+      "team": "Roma",
+      "elo": 1762
+    },
+    {
+      "div": "I1",
+      "team": "Como",
+      "elo": 1725
+    },
+    {
+      "div": "I1",
+      "team": "Lazio",
+      "elo": 1697
+    },
+    {
+      "div": "I1",
+      "team": "Milan",
+      "elo": 1679
+    },
+    {
+      "div": "I1",
+      "team": "Juventus",
+      "elo": 1659
+    },
+    {
+      "div": "I1",
+      "team": "Napoli",
+      "elo": 1656
+    },
+    {
+      "div": "I1",
+      "team": "Bologna",
+      "elo": 1595
+    },
+    {
+      "div": "I1",
+      "team": "Atalanta",
+      "elo": 1554
+    },
+    {
+      "div": "I1",
+      "team": "Frosinone",
+      "elo": 1519
+    },
+    {
+      "div": "I1",
+      "team": "Fiorentina",
+      "elo": 1508
+    },
+    {
+      "div": "I1",
+      "team": "Cagliari",
+      "elo": 1507
+    },
+    {
+      "div": "I1",
+      "team": "Torino",
+      "elo": 1504
+    },
+    {
+      "div": "I1",
+      "team": "Genoa",
+      "elo": 1503
+    },
+    {
+      "div": "I1",
+      "team": "Parma",
+      "elo": 1476
+    },
+    {
+      "div": "I1",
+      "team": "Sassuolo",
+      "elo": 1446
+    },
+    {
+      "div": "I1",
+      "team": "Udinese",
+      "elo": 1436
+    },
+    {
+      "div": "I1",
+      "team": "Lecce",
+      "elo": 1420
+    },
+    {
+      "div": "I1",
+      "team": "Venezia",
+      "elo": 1338
+    },
+    {
+      "div": "I1",
+      "team": "Monza",
+      "elo": 1313
+    },
+    {
+      "div": "F1",
+      "team": "Paris Saint-Germain",
+      "elo": 1807
+    },
+    {
+      "div": "F1",
+      "team": "Lille",
+      "elo": 1683
+    },
+    {
+      "div": "F1",
+      "team": "Lens",
+      "elo": 1646
+    },
+    {
+      "div": "F1",
+      "team": "Lyon",
+      "elo": 1644
+    },
+    {
+      "div": "F1",
+      "team": "Monaco",
+      "elo": 1636
+    },
+    {
+      "div": "F1",
+      "team": "Rennes",
+      "elo": 1626
+    },
+    {
+      "div": "F1",
+      "team": "Marseille",
+      "elo": 1610
+    },
+    {
+      "div": "F1",
+      "team": "Paris FC",
+      "elo": 1604
+    },
+    {
+      "div": "F1",
+      "team": "Strasbourg",
+      "elo": 1573
+    },
+    {
+      "div": "F1",
+      "team": "Toulouse",
+      "elo": 1536
+    },
+    {
+      "div": "F1",
+      "team": "Nice",
+      "elo": 1528
+    },
+    {
+      "div": "F1",
+      "team": "Brest",
+      "elo": 1513
+    },
+    {
+      "div": "F1",
+      "team": "Lorient",
+      "elo": 1512
+    },
+    {
+      "div": "F1",
+      "team": "Auxerre",
+      "elo": 1492
+    },
+    {
+      "div": "F1",
+      "team": "Le Mans",
+      "elo": 1468
+    },
+    {
+      "div": "F1",
+      "team": "Angers",
+      "elo": 1413
+    },
+    {
+      "div": "F1",
+      "team": "Le Havre",
+      "elo": 1395
+    },
+    {
+      "div": "F1",
+      "team": "Troyes",
+      "elo": 1342
     }
   ]
 }

@@ -1,36 +1,46 @@
 {
-  "generated": "2026-11-03T16:06:11+00:00",
-  "site": "E0",
+  "generated": "2026-11-03T17:22:05+00:00",
+  "default": "E0",
   "competitions": [
     {
       "div": "E0",
+      "slug": "e0",
       "name": "Premier League",
       "country": "ENG",
-      "kind": "league"
+      "kind": "league",
+      "promotedElo": null
     },
     {
       "div": "SP1",
+      "slug": "sp1",
       "name": "La Liga",
       "country": "ESP",
-      "kind": "league"
+      "kind": "league",
+      "promotedElo": null
     },
     {
       "div": "D1",
+      "slug": "d1",
       "name": "Bundesliga",
       "country": "GER",
-      "kind": "league"
+      "kind": "league",
+      "promotedElo": null
     },
     {
       "div": "I1",
+      "slug": "i1",
       "name": "Serie A",
       "country": "ITA",
-      "kind": "league"
+      "kind": "league",
+      "promotedElo": null
     },
     {
       "div": "F1",
+      "slug": "f1",
       "name": "Ligue 1",
       "country": "FRA",
-      "kind": "league"
+      "kind": "league",
+      "promotedElo": null
     }
   ]
 }
