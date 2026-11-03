@@ -6,7 +6,7 @@ Run the weekly update in one command.
 
 Always:
 
-    1. Fetch last week's results into data/raw/EPL26-27.csv
+    1. Fetch last week's results into data/raw/E0/results_26-27.csv
     2. Settle any pending bets in data/raw/Bets.csv
     3. Rebuild data/processed/all_matches.csv (results + FotMob xG, Understat backup)
     4. Backfill gameweek / probabilities on any Bets.csv rows missing them

@@ -33,8 +33,8 @@ gain was too small to keep. A **calibrated logistic regression** (`CalibratedCla
 maps the three features to H / D / A probabilities and is retrained on all
 available history on every run.
 
-Configuration lives at the top of
-[`src/predict_next_matches.py`](src/predict_next_matches.py).
+Configuration lives at the top of [`src/elo.py`](src/elo.py) (home advantage,
+K-factor, promoted-team start) and [`src/model.py`](src/model.py) (features).
 
 ---
 
@@ -70,7 +70,7 @@ One command, [`src/run_week.py`](src/run_week.py), runs the whole cycle:
 
 | Step | What it does |
 | --- | --- |
-| 1 | Fetch new results from football-data.co.uk into `data/raw/EPL26-27.csv` |
+| 1 | Fetch new results from football-data.co.uk into `data/raw/E0/results_26-27.csv` |
 | 2 | Settle any pending bets in `data/raw/Bets.csv` (result + profit) |
 | 3 | Rebuild `data/processed/all_matches.csv` (results + FotMob/Opta xG with Understat as backup, cached per season) |
 | 4 | Backfill gameweek / probabilities on any `Bets.csv` rows missing them |
@@ -144,13 +144,19 @@ src/
   load_data.py            build all_matches.csv (results + FotMob xG, Understat backup)
   fetch_fixtures.py       football-data.org → Future_Fixtures.csv
   future_games_parser.py  Next_Matchweek.txt → Future_Fixtures.csv (fallback)
-  predict_next_matches.py  Elo, features, model, prediction
+  predict_next_matches.py  predict the next round, record bets (re-exports the three below)
+  elo.py                  Elo ratings: update rule, pre-match Elo, fixture Elo
+  features.py             goals per game, last-5 xG difference, build_history
+  model.py                FEATURES, calibrated logistic regression, predict_fixtures
   backfill_bet_probs.py   fill gameweek / probabilities on older bets
   export_web.py           write the site's JSON feed
   backtest.py             season-by-season evaluation
   team_names.py           name normalisation across data sources
+  competitions.py         registry of competitions (codes, ids) and which are enabled
+  tools/migrate_layout.py one-off move to the per-competition data layout
 data/
-  raw/                    source CSVs, Bets.csv, fotmob/ + understat/ caches
+  raw/<Div>/              per competition: results_<yy-yy>.csv, fotmob_ + understat_ xG caches
+  raw/                    Bets.csv, fixtures
   processed/              all_matches.csv, feature snapshots
   reference/team_names.csv  canonical ↔ source name map
 web/                      Observable Framework site

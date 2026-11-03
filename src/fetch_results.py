@@ -8,7 +8,7 @@ import pandas as pd
 from team_names import load_alias_map
 
 SEASON_URL = "https://www.football-data.co.uk/mmz4281/2627/E0.csv"
-LOCAL_PATH = "data/raw/EPL26-27.csv"
+LOCAL_PATH = "data/raw/E0/results_26-27.csv"
 BETS_PATH = "data/raw/Bets.csv"
 KEY_COLUMNS = ["HomeTeam", "AwayTeam"]
 

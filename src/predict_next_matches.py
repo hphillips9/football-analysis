@@ -1,427 +1,47 @@
-import pandas as pd
-import numpy as np
+"""
+Predict the next round of fixtures and record the bets.
 
-from collections import defaultdict
-from sklearn.linear_model import LogisticRegression
-from sklearn.calibration import CalibratedClassifierCV
+    python src/predict_next_matches.py
+
+The Elo, feature and model code lives in elo.py, features.py and
+model.py. Their public names are re-exported here so existing imports
+(the pipeline scripts and notebooks 16-19) keep working unchanged.
+"""
+
+import pandas as pd
 
 from team_names import load_alias_map, normalize_team_names
 
+from elo import (  # noqa: F401 - re-exported
+    HOME_ADVANTAGE,
+    UPDATE_SIZE,
+    PROMOTED_ELO,
+    expected_result,
+    new_rating,
+    build_elo_feature,
+)
+from features import (  # noqa: F401 - re-exported
+    calculate_season_stats,
+    build_goals_per_game_feature,
+    calculate_team_xgd_last5,
+    build_xgd_last5_feature,
+    build_future_features,
+    build_history,
+)
+from model import (  # noqa: F401 - re-exported
+    FEATURES,
+    PROB_COLUMNS,
+    train_model,
+    predict_fixtures,
+)
 
-# ============================================================
-# CONFIGURATION
-# ============================================================
-
-HOME_ADVANTAGE = 130
-UPDATE_SIZE = 35
-
-# A promoted team (not in the league the season before) restarts here
-# rather than at the 1500 average or a stale rating from an old stint.
-# Promoted sides average ~0.8 points a game in their first season up;
-# notebooks/19_championship_promoted_teams.ipynb picked this value.
-# None turns the reset off everywhere (the original behaviour).
-PROMOTED_ELO = None
 
 BETS_PATH = "data/raw/Bets.csv"
 
-FEATURES = [
-    "EloDiff",
-    "XGDDiffLast5",
-    "GoalsPerGameDiff"
-]
-
 
 # ============================================================
-# ELO
+# PREDICT THE NEXT ROUND
 # ============================================================
-
-def expected_result(r_home, r_away):
-
-    return 1 / (
-        1 +
-        10 ** (
-            -(r_home + HOME_ADVANTAGE - r_away) / 400
-        )
-    )
-
-
-def new_rating(old_rating, actual_score, expected_score):
-
-    return old_rating + UPDATE_SIZE * (
-        actual_score - expected_score
-    )
-
-
-def build_elo_feature(matches, promoted_elo=PROMOTED_ELO):
-    """
-    Pre-match Elo for every row of ``matches`` (chronological). Returns
-    the end-of-history ratings.
-
-    A team's first match of a season resets it to ``promoted_elo`` if it
-    didn't play the season before (every team in the first season on
-    record starts at 1500). Done at the first match rather than at the
-    season start so a history cut off mid-season still works.
-    ``promoted_elo=None`` turns this off (the original behaviour).
-    """
-
-    elos = {}
-
-    seasons = sorted(matches["Season"].unique())
-    previous_season = dict(zip(seasons[1:], seasons[:-1]))
-    seen = defaultdict(set)  # season -> teams that have played in it so far
-
-    def get_elo(team, season):
-
-        if team not in seen[season]:
-
-            seen[season].add(team)
-
-            promoted = (
-                season in previous_season
-                and team not in seen[previous_season[season]]
-            )
-
-            if promoted and promoted_elo is not None:
-                elos[team] = promoted_elo
-
-        if team not in elos:
-            elos[team] = 1500
-
-        return elos[team]
-
-    home_elo_feature = []
-    away_elo_feature = []
-    elo_diff_feature = []
-
-    for _, current_match in matches.iterrows():
-
-        home_team = current_match["HomeTeam"]
-        away_team = current_match["AwayTeam"]
-
-        home_elo = get_elo(home_team, current_match["Season"])
-        away_elo = get_elo(away_team, current_match["Season"])
-
-        home_elo_feature.append(home_elo)
-        away_elo_feature.append(away_elo)
-        elo_diff_feature.append(home_elo - away_elo)
-
-        expected = expected_result(home_elo, away_elo)
-
-        if current_match["FTR"] == "H":
-            new_home_elo = new_rating(home_elo, 1, expected)
-            new_away_elo = new_rating(away_elo, 0, 1 - expected)
-
-        elif current_match["FTR"] == "D":
-            new_home_elo = new_rating(home_elo, 0.5, expected)
-            new_away_elo = new_rating(away_elo, 0.5, 1 - expected)
-
-        else:
-            new_home_elo = new_rating(home_elo, 0, expected)
-            new_away_elo = new_rating(away_elo, 1, 1 - expected)
-
-        elos[home_team] = new_home_elo
-        elos[away_team] = new_away_elo
-
-    matches["HomeElo"] = home_elo_feature
-    matches["AwayElo"] = away_elo_feature
-    matches["EloDiff"] = elo_diff_feature
-
-    return elos
-
-
-# ============================================================
-# GOALS PER GAME
-# ============================================================
-
-def calculate_season_stats(previous_matches, team):
-
-    if len(previous_matches) == 0:
-
-        return {
-            "games": 0,
-            "points": 0,
-            "ppg": 0,
-            "goals_pg": 0,
-            "goals_against_pg": 0,
-            "gd_pg": 0
-        }
-
-    games = len(previous_matches)
-
-    points = 0
-    goals_for = 0
-    goals_against = 0
-
-    for match in previous_matches:
-
-        if match["HomeTeam"] == team:
-
-            goals_for += match["FTHG"]
-            goals_against += match["FTAG"]
-
-            if match["FTR"] == "H":
-                points += 3
-            elif match["FTR"] == "D":
-                points += 1
-
-        else:
-
-            goals_for += match["FTAG"]
-            goals_against += match["FTHG"]
-
-            if match["FTR"] == "A":
-                points += 3
-            elif match["FTR"] == "D":
-                points += 1
-
-    return {
-        "games": games,
-        "points": points,
-        "ppg": points / games,
-        "goals_pg": goals_for / games,
-        "goals_against_pg": goals_against / games,
-        "gd_pg": (goals_for - goals_against) / games
-    }
-
-
-def build_goals_per_game_feature(matches):
-
-    season_history = defaultdict(lambda: defaultdict(list))
-
-    home_goals_pg = []
-    away_goals_pg = []
-
-    for _, current_match in matches.iterrows():
-
-        season = current_match["Season"]
-
-        home_team = current_match["HomeTeam"]
-        away_team = current_match["AwayTeam"]
-
-        home_previous = season_history[season][home_team]
-        away_previous = season_history[season][away_team]
-
-        home_stats = calculate_season_stats(home_previous, home_team)
-        away_stats = calculate_season_stats(away_previous, away_team)
-
-        home_goals_pg.append(home_stats["goals_pg"])
-        away_goals_pg.append(away_stats["goals_pg"])
-
-        # Add AFTER calculating features
-        season_history[season][home_team].append(current_match)
-        season_history[season][away_team].append(current_match)
-
-    matches["HomeGoalsPerGame"] = home_goals_pg
-    matches["AwayGoalsPerGame"] = away_goals_pg
-
-    matches["GoalsPerGameDiff"] = (
-        matches["HomeGoalsPerGame"]
-        -
-        matches["AwayGoalsPerGame"]
-    )
-
-
-# ============================================================
-# XG DIFFERENCE - LAST 5
-# ============================================================
-
-def calculate_team_xgd_last5(last5, team):
-
-    if not last5:
-        return 0
-
-    xgf = []
-    xga = []
-
-    for match in last5:
-
-        if match["HomeTeam"] == team:
-            xgf.append(match["HomeXG"])
-            xga.append(match["AwayXG"])
-
-        else:
-            xgf.append(match["AwayXG"])
-            xga.append(match["HomeXG"])
-
-    # Remove missing xG values
-    valid = [
-        (for_xg, against_xg)
-        for for_xg, against_xg in zip(xgf, xga)
-        if pd.notna(for_xg) and pd.notna(against_xg)
-    ]
-
-    if not valid:
-        return 0
-
-    xgf = [x[0] for x in valid]
-    xga = [x[1] for x in valid]
-
-    return np.mean(xgf) - np.mean(xga)
-
-
-def build_xgd_last5_feature(matches):
-
-    team_history = defaultdict(list)
-
-    xgd_last5_diff = []
-
-    for _, current_match in matches.iterrows():
-
-        home_team = current_match["HomeTeam"]
-        away_team = current_match["AwayTeam"]
-
-        home_last5 = team_history[home_team][-5:]
-        away_last5 = team_history[away_team][-5:]
-
-        home_xgd = calculate_team_xgd_last5(home_last5, home_team)
-        away_xgd = calculate_team_xgd_last5(away_last5, away_team)
-
-        xgd_last5_diff.append(home_xgd - away_xgd)
-
-        # Add AFTER calculating features
-        team_history[home_team].append(current_match)
-        team_history[away_team].append(current_match)
-
-    matches["XGDDiffLast5"] = xgd_last5_diff
-
-    return team_history
-
-
-# ============================================================
-# MODEL
-# ============================================================
-
-def train_model(matches):
-
-    X_train = matches[FEATURES]
-    y_train = matches["FTR"]
-
-    model = LogisticRegression(max_iter=2000, random_state=42)
-
-    calibrated_model = CalibratedClassifierCV(
-        estimator=model,
-        method="sigmoid",
-        cv=5
-    )
-
-    calibrated_model.fit(X_train, y_train)
-
-    return calibrated_model
-
-
-# ============================================================
-# PREDICT FUTURE FIXTURES
-# ============================================================
-
-def _season_label_for(date_text, default):
-    """Season label ("26-27") a dd/mm/yyyy fixture date falls in, else default."""
-
-    day = pd.to_datetime(date_text, dayfirst=True, errors="coerce")
-
-    if pd.isna(day):
-        return default
-
-    start = day.year if day.month >= 7 else day.year - 1
-
-    return f"{start % 100:02d}-{(start + 1) % 100:02d}"
-
-
-def _season_goals_per_game(team_history, team, season):
-
-    played = [m for m in team_history[team] if m["Season"] == season]
-
-    return calculate_season_stats(played, team)["goals_pg"]
-
-
-def _fixture_elo(team, season, elos, team_history, seasons_on_record):
-    """
-    A team's Elo going into a fixture in ``season``. Applies the same
-    promoted-team reset as build_elo_feature to a team yet to play this
-    season - e.g. a promoted side before its first game of a new season.
-    """
-
-    played_in = {m["Season"] for m in team_history[team]}
-    earlier = [s for s in seasons_on_record if s < season]
-
-    promoted = season not in played_in and earlier and earlier[-1] not in played_in
-
-    if promoted and PROMOTED_ELO is not None:
-        return PROMOTED_ELO
-
-    return elos.get(team, 1500)
-
-
-def build_future_features(future, elos, team_history):
-
-    future_features = []
-
-    latest_season = max(
-        rows[-1]["Season"] for rows in team_history.values() if rows
-    )
-
-    seasons_on_record = sorted({
-        m["Season"] for rows in team_history.values() for m in rows
-    })
-
-    for _, match in future.iterrows():
-
-        home_team = match["HomeTeam"]
-        away_team = match["AwayTeam"]
-
-        season = _season_label_for(match.get("Date", ""), latest_season)
-
-        home_elo = _fixture_elo(home_team, season, elos, team_history, seasons_on_record)
-        away_elo = _fixture_elo(away_team, season, elos, team_history, seasons_on_record)
-
-        elo_diff = home_elo - away_elo
-
-        home_last5 = team_history[home_team][-5:]
-        away_last5 = team_history[away_team][-5:]
-
-        home_xgd = calculate_team_xgd_last5(home_last5, home_team)
-        away_xgd = calculate_team_xgd_last5(away_last5, away_team)
-
-        xgd_diff = home_xgd - away_xgd
-
-        # Season-to-date, exactly as in training; 0 for a team with no games
-        # yet this season (so it is 0 for everyone in a season's first round)
-        goals_per_game_diff = (
-            _season_goals_per_game(team_history, home_team, season)
-            - _season_goals_per_game(team_history, away_team, season)
-        )
-
-        future_features.append({
-            "EloDiff": elo_diff,
-            "XGDDiffLast5": xgd_diff,
-            "GoalsPerGameDiff": goals_per_game_diff
-        })
-
-    return pd.DataFrame(future_features)
-
-
-PROB_COLUMNS = {"H": "HomeProb", "D": "DrawProb", "A": "AwayProb"}
-
-
-def build_history(matches):
-    """
-    Build the chronological features on a copy of ``matches`` and return
-    ``(matches, elos, team_history)`` - the end-of-history Elo ratings and
-    per-team match history needed to score upcoming fixtures.
-    """
-
-    matches = (
-        matches
-        .sort_values(["MatchDateTime", "HomeTeam", "AwayTeam"])
-        .reset_index(drop=True)
-        .copy()
-    )
-
-    elos = build_elo_feature(matches)
-    build_goals_per_game_feature(matches)
-    team_history = build_xgd_last5_feature(matches)
-
-    return matches, elos, team_history
-
 
 def infer_gameweek(fixtures, matches, bets_path=BETS_PATH):
     """
@@ -468,36 +88,6 @@ def infer_gameweek(fixtures, matches, bets_path=BETS_PATH):
         pass
 
     return pd.Series(counter + 1, index=fixtures.index)
-
-
-def predict_fixtures(fixtures, model, elos, team_history):
-    """
-    Score ``fixtures`` (needs Date, Time, HomeTeam, AwayTeam - already
-    normalised; Gameweek optional) with a trained model. Returns a results
-    frame with the features, the predicted result and H/D/A probabilities
-    (as percentages).
-    """
-
-    features = build_future_features(fixtures, elos, team_history)
-
-    base_columns = ["Date", "Time", "HomeTeam", "AwayTeam"]
-    if "Gameweek" in fixtures.columns:
-        base_columns = ["Gameweek"] + base_columns
-
-    results = fixtures[base_columns].copy()
-    results[FEATURES] = features[FEATURES].round(2)
-    results["Prediction"] = model.predict(features[FEATURES])
-
-    probabilities = model.predict_proba(features[FEATURES])
-
-    for i, class_name in enumerate(model.classes_):
-        results[PROB_COLUMNS[class_name]] = probabilities[:, i] * 100
-
-    results[list(PROB_COLUMNS.values())] = results[
-        list(PROB_COLUMNS.values())
-    ].round(1)
-
-    return results
 
 
 def predict_next_matches(
