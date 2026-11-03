@@ -6,11 +6,12 @@ Run the weekly update in one command.
 
 Always:
 
-    1. Fetch last week's results into data/raw/E0/results_26-27.csv
+    1. Fetch last week's results into data/raw/<Div>/results_<season>.csv
+       for each enabled competition
     2. Settle any pending bets in data/raw/Bets.csv
     3. Rebuild data/processed/all_matches.csv (results + FotMob xG, Understat backup)
     4. Backfill gameweek / probabilities on any Bets.csv rows missing them
-    5. Pull the next round's fixtures from football-data.org, predict
+    5. Pull each competition's next round from football-data.org, predict
        them and append the new bets to Bets.csv (skipped by --no-predict)
     6. Export web/src/data/*.json for the website
 
@@ -28,7 +29,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-from fetch_results import fetch_new_results, complete_bets
+from fetch_results import fetch_all_new_results, complete_bets
 from fetch_fixtures import api_key, fetch_next_fixtures
 from future_games_parser import build_future_fixtures
 from load_data import build_dataset
@@ -56,7 +57,7 @@ def run_week(refresh_current=True, verbose=False, predict=True):
 
     step(1, "Fetch new results")
     try:
-        fetch_new_results()
+        fetch_all_new_results()
     except ConnectionError as exc:
         print(f"Skipping - {exc}\nCarrying on with the results already on file.")
 

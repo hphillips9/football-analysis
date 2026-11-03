@@ -5,12 +5,13 @@ import urllib.request
 
 import pandas as pd
 
+import competitions
 from team_names import load_alias_map
 
-SEASON_URL = "https://www.football-data.co.uk/mmz4281/2627/E0.csv"
-LOCAL_PATH = "data/raw/E0/results_26-27.csv"
+SEASON_URL = "https://www.football-data.co.uk/mmz4281/{code}/{fd_uk}.csv"
+LOCAL_PATH = "data/raw/{div}/results_{season}.csv"
 BETS_PATH = "data/raw/Bets.csv"
-KEY_COLUMNS = ["HomeTeam", "AwayTeam"]
+KEY_COLUMNS = ["Date", "HomeTeam", "AwayTeam"]
 
 STAKE = 1
 ODDS_COLUMN = {"H": "SKBH", "D": "SKBD", "A": "SKBA"}
@@ -44,9 +45,50 @@ def _download_csv(url):
     raise ConnectionError(f"could not fetch {url}: {last_error}")
 
 
-def fetch_new_results(season_url=SEASON_URL, local_path=LOCAL_PATH):
+def season_url(div, season=None):
+    """football-data.co.uk CSV for one competition's season ("26-27" -> 2627)."""
 
-    remote = _download_csv(season_url)
+    season = season or competitions.CURRENT_SEASON
+    return SEASON_URL.format(
+        code=season.replace("-", ""), fd_uk=competitions.get(div)["fd_uk"]
+    )
+
+
+def results_path(div, season=None):
+    """Local results file for one competition's season (relative to the repo root)."""
+
+    return LOCAL_PATH.format(div=div, season=season or competitions.CURRENT_SEASON)
+
+
+def fetch_all_new_results(divs=None):
+    """
+    fetch_new_results for every enabled competition with a
+    football-data.co.uk feed. One failing download doesn't stop the
+    others; raises ConnectionError at the end if any failed.
+    """
+
+    failed = []
+
+    for div in divs or competitions.enabled():
+
+        if competitions.get(div)["fd_uk"] is None:
+            continue
+
+        print(f"{div}:")
+        try:
+            fetch_new_results(div)
+        except ConnectionError as exc:
+            failed.append(f"{div}: {exc}")
+
+    if failed:
+        raise ConnectionError("; ".join(failed))
+
+
+def fetch_new_results(div="E0", season=None):
+
+    local_path = results_path(div, season)
+
+    remote = _download_csv(season_url(div, season))
     local = pd.read_csv(local_path)
 
     existing_keys = set(
@@ -96,14 +138,34 @@ def settle_profit(predicted, actual, odds):
     return float(-STAKE)
 
 
-def complete_bets(bets_path=BETS_PATH, local_path=LOCAL_PATH):
+def _load_current_results(divs=None):
+    """This season's results for every enabled competition that has a file."""
+
+    frames = []
+
+    for div in divs or competitions.enabled():
+
+        try:
+            frame = pd.read_csv(results_path(div))
+        except FileNotFoundError:
+            continue
+
+        frames.append(frame.assign(Div=div))
+
+    return pd.concat(frames, ignore_index=True)
+
+
+def complete_bets(bets_path=BETS_PATH, divs=None):
 
     bets = pd.read_csv(bets_path)
-    results = pd.read_csv(local_path)
+    results = _load_current_results(divs)
 
     alias_map = load_alias_map()
 
+    # Settled on (Div, HomeTeam, AwayTeam) - fine while each pairing
+    # happens once a season per competition (see F7 for the CL)
     result_keys = zip(
+        results["Div"],
         results["HomeTeam"].replace(alias_map),
         results["AwayTeam"].replace(alias_map)
     )
@@ -120,6 +182,7 @@ def complete_bets(bets_path=BETS_PATH, local_path=LOCAL_PATH):
     for i in pending:
 
         key = (
+            bets.at[i, "Div"],
             alias_map.get(bets.at[i, "HomeTeam"], bets.at[i, "HomeTeam"]),
             alias_map.get(bets.at[i, "AwayTeam"], bets.at[i, "AwayTeam"])
         )
@@ -166,7 +229,7 @@ def complete_bets(bets_path=BETS_PATH, local_path=LOCAL_PATH):
 
 if __name__ == "__main__":
     try:
-        fetch_new_results()
+        fetch_all_new_results()
     except ConnectionError as exc:
         print(f"Skipping fetch - {exc}")
     complete_bets()

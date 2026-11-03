@@ -31,6 +31,7 @@ from features import (  # noqa: F401 - re-exported
 from model import (  # noqa: F401 - re-exported
     FEATURES,
     PROB_COLUMNS,
+    make_model,
     train_model,
     predict_fixtures,
 )

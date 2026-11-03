@@ -1,6 +1,7 @@
 """
-Pull the next Premier League round from the football-data.org API and
-write it to data/raw/Future_Fixtures.csv for predict_next_matches.
+Pull the next round of every enabled competition from the
+football-data.org API and write them to data/raw/Future_Fixtures.csv
+for predict_next_matches.
 
 The API key is read from the FOOTBALL_DATA_API_KEY environment variable
 (a GitHub Actions secret in CI). Locally it can live in a .env file at
@@ -18,10 +19,11 @@ from pathlib import Path
 
 import pandas as pd
 
-from fetch_results import LOCAL_PATH as RESULTS_PATH
+import competitions
+from fetch_results import results_path
 from team_names import load_alias_map, normalize_team_names
 
-API_URL = "https://api.football-data.org/v4/competitions/PL/matches"
+API_URL = "https://api.football-data.org/v4/competitions/{fd_org}/matches"
 API_KEY_VAR = "FOOTBALL_DATA_API_KEY"
 ENV_FILE = Path(__file__).resolve().parents[1] / ".env"
 
@@ -39,6 +41,13 @@ MIN_ROUND_SIZE = 5
 
 RETRY_DELAYS = (5, 20, 60)  # seconds between the 4 attempts
 
+# Free tier allows 10 requests a minute
+REQUEST_GAP = 6.5  # seconds between competitions
+
+FRAME_COLUMNS = [
+    "Gameweek", "Status", "Kickoff", "Div", "Date", "Time", "HomeTeam", "AwayTeam",
+]
+
 
 def api_key():
     """The football-data.org key from the environment or .env, else None."""
@@ -54,10 +63,11 @@ def api_key():
     return key or None
 
 
-def _get_matches(key):
-    """Every match of the current PL season, retrying transient failures.
-    Raises ConnectionError if it still can't after every attempt."""
+def _get_matches(key, div):
+    """Every match of ``div``'s current season, retrying transient
+    failures. Raises ConnectionError if it still can't after every attempt."""
 
+    url = API_URL.format(fd_org=competitions.get(div)["fd_org"])
     last_error = None
 
     for delay in (0, *RETRY_DELAYS):
@@ -67,7 +77,7 @@ def _get_matches(key):
             time.sleep(delay)
 
         try:
-            request = urllib.request.Request(API_URL, headers={"X-Auth-Token": key})
+            request = urllib.request.Request(url, headers={"X-Auth-Token": key})
             with urllib.request.urlopen(request, timeout=30) as response:
                 return json.load(response)["matches"]
 
@@ -82,10 +92,10 @@ def _get_matches(key):
             last_error = error
             print(f"  football-data.org -> {error}")
 
-    raise ConnectionError(f"could not fetch fixtures: {last_error}")
+    raise ConnectionError(f"could not fetch {div} fixtures: {last_error}")
 
 
-def _to_frame(matches):
+def _to_frame(matches, div):
 
     rows = []
 
@@ -97,14 +107,14 @@ def _to_frame(matches):
             "Gameweek": match["matchday"],
             "Status": match["status"],
             "Kickoff": kickoff,
-            "Div": "E0",
+            "Div": div,
             "Date": kickoff.strftime("%d/%m/%Y"),
             "Time": kickoff.strftime("%H:%M"),
             "HomeTeam": match["homeTeam"]["name"],
             "AwayTeam": match["awayTeam"]["name"],
         })
 
-    return pd.DataFrame(rows)
+    return pd.DataFrame(rows, columns=FRAME_COLUMNS)
 
 
 def _already_bet(fixtures, bets_path):
@@ -114,7 +124,7 @@ def _already_bet(fixtures, bets_path):
     except FileNotFoundError:
         return pd.Series(False, index=fixtures.index)
 
-    key = ["Date", "HomeTeam", "AwayTeam"]
+    key = ["Div", "Date", "HomeTeam", "AwayTeam"]
     recorded = set(map(tuple, bets[key].replace(load_alias_map()).to_numpy()))
 
     return pd.Series(
@@ -145,35 +155,28 @@ def select_next_round(upcoming):
     ]
 
 
-def fetch_next_fixtures(output_path=OUTPUT_PATH, bets_path=BETS_PATH, results_path=RESULTS_PATH):
+def next_round(fixtures, bets_path=BETS_PATH):
     """
-    Write the next round's unpredicted fixtures to ``output_path``.
-    Returns them, or None when there's nothing to predict yet - either
-    a round we've already bet on is still being played, every upcoming
-    round is already in Bets.csv, or the last round's results haven't
-    all reached the results file (predicting then would use stale Elo /
-    form).
+    One competition's next round of unpredicted fixtures, or None when
+    there's nothing to predict yet - either a round we've already bet on
+    is still being played, every upcoming round is already in Bets.csv,
+    or the last round's results haven't all reached the results file
+    (predicting then would use stale Elo / form).
+
+    ``fixtures`` is the whole season for one Div, with normalised names.
+    Each competition waits only on its own rounds.
     """
 
-    key = api_key()
-    if key is None:
-        raise RuntimeError(f"{API_KEY_VAR} is not set (environment or .env)")
-
-    fixtures = _to_frame(_get_matches(key))
-
-    alias_map = load_alias_map()
-    for side in ["HomeTeam", "AwayTeam"]:
-        fixtures[side] = normalize_team_names(
-            fixtures[side], alias_map, source_name="football-data.org"
-        )
+    div = fixtures["Div"].iloc[0]
+    path = results_path(div)
 
     finished = (fixtures["Status"] == "FINISHED").sum()
-    on_file = len(pd.read_csv(results_path))
+    on_file = len(pd.read_csv(path))
 
     if on_file < finished:
         print(
-            f"football-data.org lists {finished} finished match(es) but "
-            f"{results_path} only has {on_file} - waiting for the results "
+            f"{div}: football-data.org lists {finished} finished match(es) but "
+            f"{path} only has {on_file} - waiting for the results "
             f"before predicting."
         )
         return None
@@ -187,7 +190,7 @@ def fetch_next_fixtures(output_path=OUTPUT_PATH, bets_path=BETS_PATH, results_pa
     if not in_progress.empty:
         rounds = ", ".join(f"GW{gw}" for gw in sorted(in_progress["Gameweek"].unique()))
         print(
-            f"{len(in_progress)} bet fixture(s) from {rounds} still to be "
+            f"{div}: {len(in_progress)} bet fixture(s) from {rounds} still to be "
             f"played - waiting before predicting the next round."
         )
         return None
@@ -196,11 +199,51 @@ def fetch_next_fixtures(output_path=OUTPUT_PATH, bets_path=BETS_PATH, results_pa
     upcoming = upcoming[~_already_bet(upcoming, bets_path)]
 
     if upcoming.empty:
-        print("Every upcoming fixture already has a bet - nothing to predict.")
+        print(f"{div}: every upcoming fixture already has a bet - nothing to predict.")
+        return None
+
+    return select_next_round(upcoming)
+
+
+def fetch_next_fixtures(output_path=OUTPUT_PATH, bets_path=BETS_PATH, divs=None):
+    """
+    Write the next round of every enabled competition (see next_round)
+    to ``output_path``. Returns the fixtures, or None when no
+    competition has anything to predict yet.
+    """
+
+    key = api_key()
+    if key is None:
+        raise RuntimeError(f"{API_KEY_VAR} is not set (environment or .env)")
+
+    alias_map = load_alias_map()
+    rounds = []
+
+    for n, div in enumerate(divs or competitions.enabled()):
+
+        if n:
+            time.sleep(REQUEST_GAP)
+
+        fixtures = _to_frame(_get_matches(key, div), div)
+
+        if fixtures.empty:
+            print(f"{div}: football-data.org returned no matches.")
+            continue
+
+        for side in ["HomeTeam", "AwayTeam"]:
+            fixtures[side] = normalize_team_names(
+                fixtures[side], alias_map, source_name="football-data.org"
+            )
+
+        future = next_round(fixtures, bets_path)
+        if future is not None:
+            rounds.append(future)
+
+    if not rounds:
         return None
 
     future = (
-        select_next_round(upcoming)
+        pd.concat(rounds)
         .sort_values(["Kickoff", "HomeTeam"])
         [["Gameweek", "Div", "Date", "Time", "HomeTeam", "AwayTeam"]]
     )

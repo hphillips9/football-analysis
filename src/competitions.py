@@ -66,6 +66,10 @@ COMPETITIONS = {
 # Grows phase by phase (docs/multi-league-plan.md)
 ENABLED = ["E0"]
 
+# The season live results and fixtures are fetched for. Bump it when a
+# new season starts.
+CURRENT_SEASON = "26-27"
+
 
 def get(div):
     """The registry entry for ``div``, e.g. get("E0")["fotmob"] -> 47."""

@@ -30,9 +30,10 @@ from predict_next_matches import (
     build_elo_feature,
     build_goals_per_game_feature,
     build_xgd_last5_feature,
-    train_model,
+    make_model,
     FEATURES,
 )
+from evaluate import walk_forward
 
 ROOT = Path(__file__).resolve().parents[1]
 MATCHES_PATH = ROOT / "data" / "processed" / "all_matches.csv"
@@ -103,6 +104,14 @@ def run_backtest():
     build_xgd_last5_feature(matches)
 
     seasons = sorted(matches["Season"].unique())
+    season_sizes = matches["Season"].value_counts()
+    test_seasons = [
+        season for season in seasons[1:]
+        if season_sizes[season] >= MIN_SEASON_MATCHES
+    ]
+
+    all_proba = walk_forward(matches, make_model, FEATURES, test_seasons)
+    labels = list(all_proba.columns)
 
     rows = []
     pooled_true = []
@@ -111,22 +120,12 @@ def run_backtest():
     pooled_labels = None
     pooled_profit = 0.0
 
-    for index, season in enumerate(seasons):
+    for season in test_seasons:
 
-        if index == 0:
-            continue
-
-        prior = seasons[:index]
-        train = matches[matches["Season"].isin(prior)]
+        prior = seasons[:seasons.index(season)]
         test = matches[matches["Season"] == season]
 
-        if len(test) < MIN_SEASON_MATCHES:
-            continue
-
-        model = train_model(train)
-        labels = list(model.classes_)
-
-        proba = model.predict_proba(test[FEATURES])
+        proba = all_proba.loc[test.index].to_numpy()
         pred = [labels[i] for i in proba.argmax(axis=1)]
         actual = test["FTR"].to_numpy()
 

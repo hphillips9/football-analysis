@@ -70,7 +70,7 @@ One command, [`src/run_week.py`](src/run_week.py), runs the whole cycle:
 
 | Step | What it does |
 | --- | --- |
-| 1 | Fetch new results from football-data.co.uk into `data/raw/E0/results_26-27.csv` |
+| 1 | Fetch new results from football-data.co.uk into `data/raw/<Div>/results_<season>.csv` for each enabled competition (`CURRENT_SEASON` in `src/competitions.py`) |
 | 2 | Settle any pending bets in `data/raw/Bets.csv` (result + profit) |
 | 3 | Rebuild `data/processed/all_matches.csv` (results + FotMob/Opta xG with Understat as backup, cached per season) |
 | 4 | Backfill gameweek / probabilities on any `Bets.csv` rows missing them |
@@ -151,6 +151,7 @@ src/
   backfill_bet_probs.py   fill gameweek / probabilities on older bets
   export_web.py           write the site's JSON feed
   backtest.py             season-by-season evaluation
+  evaluate.py             walk-forward, per-match log loss, paired bootstrap (shared with notebooks)
   team_names.py           name normalisation across data sources
   competitions.py         registry of competitions (codes, ids) and which are enabled
   tools/migrate_layout.py one-off move to the per-competition data layout
@@ -159,6 +160,7 @@ data/
   raw/                    Bets.csv, fixtures
   processed/              all_matches.csv, feature snapshots
   reference/team_names.csv  canonical ↔ source name map
+tests/                    unit tests (python tests/test_evaluate.py)
 web/                      Observable Framework site
 notebooks/                the original research (01–15)
 ```

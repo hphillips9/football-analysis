@@ -22,18 +22,24 @@ PROB_COLUMNS = {"H": "HomeProb", "D": "DrawProb", "A": "AwayProb"}
 # MODEL
 # ============================================================
 
+def make_model():
+    """The unfitted model, for evaluate.walk_forward."""
+
+    model = LogisticRegression(max_iter=2000, random_state=42)
+
+    return CalibratedClassifierCV(
+        estimator=model,
+        method="sigmoid",
+        cv=5
+    )
+
+
 def train_model(matches):
 
     X_train = matches[FEATURES]
     y_train = matches["FTR"]
 
-    model = LogisticRegression(max_iter=2000, random_state=42)
-
-    calibrated_model = CalibratedClassifierCV(
-        estimator=model,
-        method="sigmoid",
-        cv=5
-    )
+    calibrated_model = make_model()
 
     calibrated_model.fit(X_train, y_train)
 
