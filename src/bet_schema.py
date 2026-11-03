@@ -4,7 +4,7 @@ The Bets.csv schema, shared by everything that writes the file
 
     Season, Div, Round, Gameweek, MatchId, Date, Time, HomeTeam, AwayTeam,
     PredictedResult, HomeProb, DrawProb, AwayProb,
-    OddsH, OddsD, OddsA, OddsSource, ActualResult, Bet, Profit
+    OddsH, OddsD, OddsA, OddsSource, ActualResult, Bet, Profit, Backfilled
 
 - Round is the competition's own round label: str(Gameweek) for leagues.
 - MatchId is a source match id where one is known (the CL), else empty.
@@ -13,6 +13,9 @@ The Bets.csv schema, shared by everything that writes the file
   or at prediction time where captured.
 - Bet = 0 with an empty Profit means unpriced: no odds were available.
   It still counts for accuracy, but not for profit.
+- Backfilled = 1 marks a prediction made after the match was played
+  (tools/backfill_season.py), scored point-in-time on earlier matches
+  only. Empty for a live bet.
 """
 
 import pandas as pd
@@ -28,7 +31,7 @@ COLUMN_ORDER = [
     "Date", "Time", "HomeTeam", "AwayTeam",
     "PredictedResult", "HomeProb", "DrawProb", "AwayProb",
     *ODDS_COLUMNS, "OddsSource",
-    "ActualResult", "Bet", "Profit",
+    "ActualResult", "Bet", "Profit", "Backfilled",
 ]
 
 # Dedupe key for new bets - safe for two CL legs, whose dates differ

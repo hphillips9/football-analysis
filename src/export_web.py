@@ -5,16 +5,19 @@ Write the tidy JSON files the website reads.
 
 Reads data/processed/all_matches.csv, data/raw/Bets.csv and produces:
 
-    web/src/data/predictions.json  - the upcoming gameweek's picks
+    web/src/data/predictions.json  - each competition's upcoming gameweek
     web/src/data/bets.json         - every bet, with result and profit
-    web/src/data/stats.json        - headline numbers, calibration, by-gameweek
+    web/src/data/stats.json        - headline numbers, calibration, by-gameweek,
+                                     as {overall, byCompetition: {E0: ...}}
     web/src/data/elo.json          - current Elo ratings
-    web/src/data/table.json        - current standings + projected final table
+    web/src/data/table.json        - current standings + projected final table,
+                                     as {byCompetition: {E0: ...}}
     web/src/data/leagues.json      - the competitions the pipeline runs
 
-Every file but leagues.json covers SITE_DIV only, until the site goes
-multi-competition (docs: Phase 3). The model behind the projected table
-is still trained on every competition, as the live predictions are.
+Every competition in competitions.ENABLED is exported, and each
+prediction, bet and rating carries its ``div``. The model behind the
+projected tables is trained on every competition, as the live
+predictions are.
 
 Runs as part of run_week.py so CI keeps the site's data current.
 """
@@ -26,6 +29,7 @@ from datetime import datetime, timezone
 import pandas as pd
 
 import competitions
+from bet_schema import add_missing_columns
 from team_names import load_alias_map
 from predict_next_matches import (
     build_elo_feature,
@@ -47,8 +51,8 @@ PROB_COLS = ["HomeProb", "DrawProb", "AwayProb"]
 # Calibration buckets on the model's probability for its own pick
 CALIB_EDGES = [0, 40, 45, 50, 55, 60, 100]
 
-# The one competition the site shows for now
-SITE_DIV = "E0"
+# The competition the home page selects first
+DEFAULT_DIV = "E0"
 
 
 # ============================================================
@@ -68,7 +72,7 @@ def load_matches():
 def load_bets(div=None):
     """Bets.csv, of competition ``div`` only when given, in kickoff order."""
 
-    bets = pd.read_csv(BETS_PATH)
+    bets = add_missing_columns(pd.read_csv(BETS_PATH))
 
     # Before sorting, so other competitions' rows can't reorder this
     # one's same-kickoff bets
@@ -88,13 +92,15 @@ def load_bets(div=None):
     return bets.sort_values("Kickoff").reset_index(drop=True)
 
 
-def current_elos(matches, div=None):
+def current_elos(matches, div=None, ratings=None):
     """
     Elo ratings, restricted to the teams in the current season (of
-    competition ``div`` only, when given).
+    competition ``div`` only, when given). Pass ``ratings`` to skip
+    rebuilding them from ``matches``.
     """
 
-    ratings = build_elo_feature(matches.copy())
+    if ratings is None:
+        ratings = build_elo_feature(matches.copy())
 
     if div is not None:
         matches = matches[matches["Div"] == div]
@@ -115,8 +121,11 @@ def current_elos(matches, div=None):
 # ============================================================
 
 def build_predictions(bets, elos):
-    """The gameweek to feature: the earliest one with unsettled bets, or
-    failing that the most recent gameweek on record."""
+    """One competition's fixtures for the gameweek to feature: the earliest
+    one with unsettled bets, or failing that the most recent on record."""
+
+    if bets.empty:
+        return []
 
     unsettled = bets[bets["ActualResult"].isna()]
 
@@ -135,6 +144,8 @@ def build_predictions(bets, elos):
         away_elo = elos.get(row["AwayTeam"], 1500)
 
         fixtures.append({
+            "div": row["Div"],
+            "gameweek": gameweek,
             "date": row["Date"],
             "time": row["Time"],
             "kickoff": row["Kickoff"].isoformat(),
@@ -151,10 +162,7 @@ def build_predictions(bets, elos):
             "settled": bool(pd.notna(row["ActualResult"])),
         })
 
-    return {
-        "gameweek": gameweek,
-        "fixtures": fixtures,
-    }
+    return fixtures
 
 
 # ============================================================
@@ -170,6 +178,7 @@ def build_bets(bets):
         settled = bool(pd.notna(row["ActualResult"]))
 
         records.append({
+            "div": row["Div"],
             "gameweek": int(row["Gameweek"]),
             "date": row["Date"],
             "time": row["Time"],
@@ -184,6 +193,7 @@ def build_bets(bets):
             "profit": _num(row["Profit"]) if settled else None,
             "won": bool(row["Won"]) if settled else None,
             "settled": settled,
+            "backfilled": bool(row["Backfilled"] == 1),
         })
 
     return records
@@ -204,6 +214,8 @@ def build_stats(bets):
         return {
             "asOf": None,
             "totalBets": int(len(bets)),
+            "backfilledBets": 0,
+            "backfilledGameweeks": None,
             "settledBets": 0,
             "pendingBets": int(bets["ActualResult"].isna().sum()),
             "calibration": [],
@@ -228,6 +240,7 @@ def build_stats(bets):
     for _, row in priced.sort_values("Kickoff").iterrows():
         running += float(row["Profit"])
         bankroll.append({
+            "div": row["Div"],
             "kickoff": row["Kickoff"].isoformat(),
             "gameweek": int(row["Gameweek"]),
             "match": f'{row["HomeTeam"]} v {row["AwayTeam"]}',
@@ -313,9 +326,17 @@ def build_stats(bets):
         .iterrows()
     ]
 
+    backfilled = bets[bets["Backfilled"] == 1]
+
     return {
         "asOf": settled["Kickoff"].max().date().isoformat(),
         "totalBets": int(len(bets)),
+        # Predictions made after the match, point-in-time (bet_schema)
+        "backfilledBets": int(len(backfilled)),
+        "backfilledGameweeks": (
+            [int(backfilled["Gameweek"].min()), int(backfilled["Gameweek"].max())]
+            if len(backfilled) else None
+        ),
         "settledBets": int(len(settled)),
         "pendingBets": int(bets["ActualResult"].isna().sum()),
         "wins": wins,
@@ -454,7 +475,7 @@ def predicted_standings(matches, bets):
     return ordered
 
 
-def projected_table(matches, history=None):
+def projected_table(matches, history=None, trained=None):
     """
     Projected final table: current standings plus, for every fixture not
     yet played this season, each team's *expected* points from the model's
@@ -466,13 +487,13 @@ def projected_table(matches, history=None):
 
     ``matches`` is one competition; the models are trained on ``history``
     (default: the same matches), e.g. every competition, as for the
-    live predictions.
+    live predictions. Pass ``trained`` (from ``train_history``) to reuse
+    models already fitted on ``history``.
     """
 
-    history = matches if history is None else history
-
-    trained, elos, team_history = build_history(history)
-    models = train_models(trained)
+    if trained is None:
+        trained = train_history(matches if history is None else history)
+    models, elos, team_history = trained
 
     # Display-only extra: if the goal model can't be fitted, goal difference
     # just stays at its current value rather than failing the whole export.
@@ -546,11 +567,18 @@ def projected_table(matches, history=None):
     return ranked, len(remaining)
 
 
-def build_table(matches, bets, history=None):
+def train_history(history):
+    """The models, Elo ratings and team history to score fixtures with."""
+
+    rows, elos, team_history = build_history(history)
+    return train_models(rows), elos, team_history
+
+
+def build_table(matches, bets, history=None, trained=None):
 
     current = current_standings(matches)
     predicted = predicted_standings(matches, bets)
-    projected, remaining = projected_table(matches, history)
+    projected, remaining = projected_table(matches, history, trained)
 
     current_position = {row["team"]: row["position"] for row in current}
     for table in (predicted, projected):
@@ -577,6 +605,7 @@ def build_table(matches, bets, history=None):
 
 def _bet_summary(row):
     return {
+        "div": row["Div"],
         "gameweek": int(row["Gameweek"]),
         "date": row["Date"],
         "match": f'{row["HomeTeam"]} v {row["AwayTeam"]}',
@@ -612,16 +641,19 @@ def _write(name, payload):
 # ============================================================
 
 def build_leagues():
-    """The competitions the pipeline runs, and which one the site shows."""
+    """The competitions the pipeline runs, and which the home page picks.
+    ``slug`` is the competition's path on the site (/e0/, /sp1/, ...)."""
 
     return {
-        "site": SITE_DIV,
+        "default": DEFAULT_DIV,
         "competitions": [
             {
                 "div": div,
+                "slug": div.lower(),
                 "name": competitions.get(div)["name"],
                 "country": competitions.get(div)["country"],
                 "kind": competitions.get(div)["kind"],
+                "promotedElo": competitions.get(div)["promoted_elo"],
             }
             for div in competitions.enabled()
         ],
@@ -632,46 +664,77 @@ def export_web():
 
     history = load_matches()
     if "Div" not in history.columns:
-        history.insert(0, "Div", SITE_DIV)
-    matches = history[history["Div"] == SITE_DIV].reset_index(drop=True)
+        history.insert(0, "Div", DEFAULT_DIV)
 
-    bets = load_bets(SITE_DIV)
+    # Fitted once on every competition, then scored per league
+    ratings = build_elo_feature(history.copy())
+    trained = train_history(history)
 
-    elos = current_elos(history, SITE_DIV)
+    fixtures, bet_records, elo_rows = [], [], []
+    by_competition, tables, all_bets = {}, {}, []
+
+    for div in competitions.enabled():
+
+        name = competitions.get(div)["name"]
+        matches = history[history["Div"] == div].reset_index(drop=True)
+        bets = load_bets(div)
+        all_bets.append(bets)
+
+        elos = current_elos(history, div, ratings)
+
+        fixtures += build_predictions(bets, elos)
+        bet_records += build_bets(bets)
+        by_competition[div] = {"name": name, **build_stats(bets)}
+
+        elo_rows += sorted(
+            (
+                {"div": div, "team": team, "elo": rating}
+                for team, rating in elos.items()
+            ),
+            key=lambda row: row["elo"],
+            reverse=True,
+        )
+
+        if not matches.empty:
+            tables[div] = {
+                "name": name,
+                **build_table(matches, bets, history, trained),
+            }
+
+    every_bet = pd.concat(all_bets, ignore_index=True)
+    overall = build_stats(
+        every_bet.sort_values("Kickoff", kind="stable").reset_index(drop=True)
+    )
+    # Gameweek numbers differ by league, so these only mean anything per
+    # competition
+    overall.pop("byGameweek")
 
     generated = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
     _write("predictions.json", {
         "generated": generated,
-        **build_predictions(bets, elos),
+        "fixtures": fixtures,
     })
 
     _write("bets.json", {
         "generated": generated,
-        "bets": build_bets(bets),
+        "bets": bet_records,
     })
 
     _write("stats.json", {
         "generated": generated,
-        **build_stats(bets),
+        "overall": overall,
+        "byCompetition": by_competition,
     })
 
-    elo_table = sorted(
-        (
-            {"team": team, "elo": rating}
-            for team, rating in elos.items()
-        ),
-        key=lambda row: row["elo"],
-        reverse=True,
-    )
     _write("elo.json", {
         "generated": generated,
-        "teams": elo_table,
+        "teams": elo_rows,
     })
 
     _write("table.json", {
         "generated": generated,
-        **build_table(matches, bets, history),
+        "byCompetition": tables,
     })
 
     _write("leagues.json", {

@@ -44,6 +44,30 @@ export function probabilityBars(fixtures, { width } = {}) {
   });
 }
 
+// The model's probability for its pick against how often it came up, one
+// dot per probability band, sized by the number of bets in it.
+export function calibrationPlot(calibration, { width } = {}) {
+  return Plot.plot({
+    width,
+    height: 320,
+    x: { label: "model probability for its pick (%)", domain: [30, 80] },
+    y: { label: "actual hit rate (%)", domain: [0, 100], grid: true },
+    r: { range: [3, 18] },
+    marks: [
+      Plot.line([[30, 30], [80, 80]], { strokeDasharray: "4,4", strokeOpacity: 0.5 }),
+      Plot.dot(calibration, {
+        x: "avgProb", y: "hitRate", r: "bets", fill: "#2563eb", fillOpacity: 0.7,
+        tip: true, title: (d) => `${d.label}: ${d.hitRate}% over ${d.bets} bets`,
+      }),
+    ],
+  });
+}
+
+// "Gameweeks 1–11" for a backfilledGameweeks [first, last] pair.
+export function gameweekSpan([first, last]) {
+  return first === last ? `gameweek ${first}` : `gameweeks ${first}–${last}`;
+}
+
 // Signed number with a + / − and fixed decimals.
 export function signed(value, digits = 2) {
   if (value == null) return "—";

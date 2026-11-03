@@ -1,15 +1,26 @@
-# Ratings
+---
+title: Ratings
+---
+
+```js
+import { signed } from "../components/charts.js";
+const leagues = await FileAttachment("../data/leagues.json").json();
+const comp = leagues.competitions.find((c) => c.slug === observable.params.comp);
+const eloFile = await FileAttachment("../data/elo.json").json();
+const elo = eloFile.teams
+  .filter((t) => t.div === comp.div)
+  .map((t, i) => ({ ...t, rank: i + 1, vsAverage: t.elo - 1500 }));
+```
+
+# ${comp.name} ratings
 
 Every team carries an **Elo rating**. It starts at 1500, moves after every match
 by up to 35 points depending on the result and how expected it was, and carries
-across seasons — except for promoted teams, which restart at 1350. The gap between two teams' ratings (plus a **+130 home
-advantage**) is the model's single biggest input.
-
-```js
-import { signed } from "./components/charts.js";
-const eloFile = await FileAttachment("data/elo.json").json();
-const elo = eloFile.teams.map((t, i) => ({ ...t, rank: i + 1, vsAverage: t.elo - 1500 }));
-```
+across seasons. ${comp.promotedElo == null
+  ? "A promoted team comes back on the rating it last had (a team new to the data starts at 1500)."
+  : `A promoted team restarts at ${comp.promotedElo}.`}
+The gap between two teams' ratings (plus a **+130 home advantage**) is the model's
+single biggest input.
 
 ```js
 Plot.plot({
@@ -40,7 +51,9 @@ Plot.plot({
 })
 ```
 
-Bars run from a league-average team; blue is above average, red below.
+Bars run from a 1500-rated team; blue is above, red below. Each league's ratings
+are on their own scale for now, so a 1700 in one league isn't directly
+comparable with a 1700 in another.
 
 ```js
 Inputs.table(elo, {
