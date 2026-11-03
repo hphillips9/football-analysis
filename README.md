@@ -41,7 +41,10 @@ K-factor, promoted-team start) and [`src/model.py`](src/model.py) (features).
 ## Results
 
 `src/backtest.py` scores each season with a model trained **only on the seasons
-before it**. Baseline = always predicting a home win.
+before it**. Baseline = always predicting a home win. One pooled model covers
+every competition in the data (with a `League_<Div>` column per league), and
+`backtest.json` reports it pooled and per competition; the table below is the
+Premier League.
 
 | Season | Trained on | Accuracy | Baseline | Edge | Log loss |
 | --- | --- | --- | --- | --- | --- |
@@ -164,8 +167,8 @@ src/
   features.py             goals per game, last-5 xG difference, build_history (per competition)
   model.py                FEATURES + League_<Div> columns, calibrated logistic regression, predict_fixtures
   backfill_bet_probs.py   fill gameweek / probabilities on older bets
-  export_web.py           write the site's JSON feed
-  backtest.py             season-by-season evaluation
+  export_web.py           write the site's JSON feed (Premier League only for now) + leagues.json
+  backtest.py             season-by-season evaluation, pooled and per competition
   evaluate.py             walk-forward, per-match log loss, paired bootstrap (shared with notebooks)
   team_names.py           name normalisation across data sources; lookups by FotMob / football-data.org id
   bet_schema.py           Bets.csv columns and order, shared by everything that writes it

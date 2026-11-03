@@ -1,5 +1,2283 @@
 {
-  "generated": "2026-11-02T22:06:05+00:00",
+  "generated": "2026-11-03T15:13:27+00:00",
+  "model": {
+    "features": [
+      "EloDiff",
+      "XGDDiffLast5",
+      "GoalsPerGameDiff"
+    ],
+    "leagueIndicators": [],
+    "trainFrom": "21-22"
+  },
+  "pooled": {
+    "seasons": [
+      {
+        "season": "2022/23",
+        "matches": 380,
+        "trainedOn": "2021/22",
+        "trainSeasons": 1,
+        "accuracy": 56.3,
+        "logLoss": 0.969,
+        "baselineAccuracy": 48.4,
+        "edge": 7.9,
+        "profit": 27.34,
+        "roi": 7.2,
+        "byGameweek": [
+          {
+            "gameweek": 1,
+            "bets": 10,
+            "hits": 8,
+            "profit": 9.73,
+            "cumulativeProfit": 9.73
+          },
+          {
+            "gameweek": 2,
+            "bets": 10,
+            "hits": 4,
+            "profit": -1.79,
+            "cumulativeProfit": 7.94
+          },
+          {
+            "gameweek": 3,
+            "bets": 10,
+            "hits": 5,
+            "profit": 0.96,
+            "cumulativeProfit": 8.9
+          },
+          {
+            "gameweek": 4,
+            "bets": 10,
+            "hits": 7,
+            "profit": 0.22,
+            "cumulativeProfit": 9.12
+          },
+          {
+            "gameweek": 5,
+            "bets": 10,
+            "hits": 3,
+            "profit": -6.14,
+            "cumulativeProfit": 2.98
+          },
+          {
+            "gameweek": 6,
+            "bets": 10,
+            "hits": 5,
+            "profit": -0.68,
+            "cumulativeProfit": 2.3
+          },
+          {
+            "gameweek": 7,
+            "bets": 9,
+            "hits": 5,
+            "profit": 0.11,
+            "cumulativeProfit": 2.41
+          },
+          {
+            "gameweek": 8,
+            "bets": 9,
+            "hits": 6,
+            "profit": 2.59,
+            "cumulativeProfit": 5.0
+          },
+          {
+            "gameweek": 9,
+            "bets": 9,
+            "hits": 8,
+            "profit": 7.88,
+            "cumulativeProfit": 12.88
+          },
+          {
+            "gameweek": 10,
+            "bets": 10,
+            "hits": 4,
+            "profit": -3.41,
+            "cumulativeProfit": 9.47
+          },
+          {
+            "gameweek": 11,
+            "bets": 11,
+            "hits": 6,
+            "profit": 0.78,
+            "cumulativeProfit": 10.25
+          },
+          {
+            "gameweek": 12,
+            "bets": 10,
+            "hits": 4,
+            "profit": 0.52,
+            "cumulativeProfit": 10.77
+          },
+          {
+            "gameweek": 13,
+            "bets": 9,
+            "hits": 7,
+            "profit": 3.36,
+            "cumulativeProfit": 14.13
+          },
+          {
+            "gameweek": 14,
+            "bets": 9,
+            "hits": 5,
+            "profit": 1.06,
+            "cumulativeProfit": 15.19
+          },
+          {
+            "gameweek": 15,
+            "bets": 11,
+            "hits": 6,
+            "profit": -0.07,
+            "cumulativeProfit": 15.12
+          },
+          {
+            "gameweek": 16,
+            "bets": 10,
+            "hits": 7,
+            "profit": 2.37,
+            "cumulativeProfit": 17.49
+          },
+          {
+            "gameweek": 17,
+            "bets": 10,
+            "hits": 5,
+            "profit": 0.54,
+            "cumulativeProfit": 18.03
+          },
+          {
+            "gameweek": 18,
+            "bets": 11,
+            "hits": 4,
+            "profit": -2.23,
+            "cumulativeProfit": 15.8
+          },
+          {
+            "gameweek": 19,
+            "bets": 9,
+            "hits": 7,
+            "profit": 7.22,
+            "cumulativeProfit": 23.02
+          },
+          {
+            "gameweek": 20,
+            "bets": 11,
+            "hits": 6,
+            "profit": -0.72,
+            "cumulativeProfit": 22.3
+          },
+          {
+            "gameweek": 21,
+            "bets": 9,
+            "hits": 4,
+            "profit": -1.72,
+            "cumulativeProfit": 20.58
+          },
+          {
+            "gameweek": 22,
+            "bets": 10,
+            "hits": 3,
+            "profit": -4.68,
+            "cumulativeProfit": 15.9
+          },
+          {
+            "gameweek": 23,
+            "bets": 10,
+            "hits": 4,
+            "profit": -1.89,
+            "cumulativeProfit": 14.01
+          },
+          {
+            "gameweek": 24,
+            "bets": 9,
+            "hits": 5,
+            "profit": -0.07,
+            "cumulativeProfit": 13.94
+          },
+          {
+            "gameweek": 25,
+            "bets": 10,
+            "hits": 8,
+            "profit": 4.59,
+            "cumulativeProfit": 18.53
+          },
+          {
+            "gameweek": 26,
+            "bets": 10,
+            "hits": 4,
+            "profit": -3.3,
+            "cumulativeProfit": 15.23
+          },
+          {
+            "gameweek": 27,
+            "bets": 11,
+            "hits": 9,
+            "profit": 4.78,
+            "cumulativeProfit": 20.01
+          },
+          {
+            "gameweek": 28,
+            "bets": 9,
+            "hits": 3,
+            "profit": -3.95,
+            "cumulativeProfit": 16.06
+          },
+          {
+            "gameweek": 29,
+            "bets": 11,
+            "hits": 7,
+            "profit": 2.33,
+            "cumulativeProfit": 18.39
+          },
+          {
+            "gameweek": 30,
+            "bets": 9,
+            "hits": 5,
+            "profit": 0.03,
+            "cumulativeProfit": 18.42
+          },
+          {
+            "gameweek": 31,
+            "bets": 10,
+            "hits": 6,
+            "profit": 3.72,
+            "cumulativeProfit": 22.14
+          },
+          {
+            "gameweek": 32,
+            "bets": 9,
+            "hits": 4,
+            "profit": -1.71,
+            "cumulativeProfit": 20.43
+          },
+          {
+            "gameweek": 33,
+            "bets": 11,
+            "hits": 6,
+            "profit": 0.56,
+            "cumulativeProfit": 20.99
+          },
+          {
+            "gameweek": 34,
+            "bets": 11,
+            "hits": 10,
+            "profit": 6.17,
+            "cumulativeProfit": 27.16
+          },
+          {
+            "gameweek": 35,
+            "bets": 10,
+            "hits": 5,
+            "profit": -0.73,
+            "cumulativeProfit": 26.43
+          },
+          {
+            "gameweek": 36,
+            "bets": 12,
+            "hits": 9,
+            "profit": 4.35,
+            "cumulativeProfit": 30.78
+          },
+          {
+            "gameweek": 37,
+            "bets": 11,
+            "hits": 4,
+            "profit": -4.18,
+            "cumulativeProfit": 26.6
+          },
+          {
+            "gameweek": 38,
+            "bets": 10,
+            "hits": 6,
+            "profit": 0.74,
+            "cumulativeProfit": 27.34
+          }
+        ]
+      },
+      {
+        "season": "2023/24",
+        "matches": 380,
+        "trainedOn": "2021/22-2022/23",
+        "trainSeasons": 2,
+        "accuracy": 57.6,
+        "logLoss": 0.938,
+        "baselineAccuracy": 46.1,
+        "edge": 11.6,
+        "profit": -0.5,
+        "roi": -0.1,
+        "byGameweek": [
+          {
+            "gameweek": 1,
+            "bets": 10,
+            "hits": 5,
+            "profit": -3.07,
+            "cumulativeProfit": -3.07
+          },
+          {
+            "gameweek": 2,
+            "bets": 9,
+            "hits": 8,
+            "profit": 7.36,
+            "cumulativeProfit": 4.29
+          },
+          {
+            "gameweek": 3,
+            "bets": 10,
+            "hits": 5,
+            "profit": -2.11,
+            "cumulativeProfit": 2.18
+          },
+          {
+            "gameweek": 4,
+            "bets": 10,
+            "hits": 7,
+            "profit": 2.7,
+            "cumulativeProfit": 4.88
+          },
+          {
+            "gameweek": 5,
+            "bets": 10,
+            "hits": 7,
+            "profit": 0.84,
+            "cumulativeProfit": 5.72
+          },
+          {
+            "gameweek": 6,
+            "bets": 10,
+            "hits": 6,
+            "profit": 0.99,
+            "cumulativeProfit": 6.71
+          },
+          {
+            "gameweek": 7,
+            "bets": 11,
+            "hits": 4,
+            "profit": -4.13,
+            "cumulativeProfit": 2.58
+          },
+          {
+            "gameweek": 8,
+            "bets": 10,
+            "hits": 6,
+            "profit": 1.46,
+            "cumulativeProfit": 4.04
+          },
+          {
+            "gameweek": 9,
+            "bets": 10,
+            "hits": 8,
+            "profit": 3.84,
+            "cumulativeProfit": 7.88
+          },
+          {
+            "gameweek": 10,
+            "bets": 10,
+            "hits": 6,
+            "profit": -0.71,
+            "cumulativeProfit": 7.17
+          },
+          {
+            "gameweek": 11,
+            "bets": 10,
+            "hits": 4,
+            "profit": -1.37,
+            "cumulativeProfit": 5.8
+          },
+          {
+            "gameweek": 12,
+            "bets": 10,
+            "hits": 5,
+            "profit": -2.58,
+            "cumulativeProfit": 3.22
+          },
+          {
+            "gameweek": 13,
+            "bets": 10,
+            "hits": 7,
+            "profit": 6.48,
+            "cumulativeProfit": 9.7
+          },
+          {
+            "gameweek": 14,
+            "bets": 10,
+            "hits": 5,
+            "profit": -2.22,
+            "cumulativeProfit": 7.48
+          },
+          {
+            "gameweek": 15,
+            "bets": 10,
+            "hits": 6,
+            "profit": 1.1,
+            "cumulativeProfit": 8.58
+          },
+          {
+            "gameweek": 16,
+            "bets": 10,
+            "hits": 4,
+            "profit": -1.92,
+            "cumulativeProfit": 6.66
+          },
+          {
+            "gameweek": 17,
+            "bets": 9,
+            "hits": 7,
+            "profit": 3.79,
+            "cumulativeProfit": 10.45
+          },
+          {
+            "gameweek": 18,
+            "bets": 9,
+            "hits": 3,
+            "profit": -2.05,
+            "cumulativeProfit": 8.4
+          },
+          {
+            "gameweek": 19,
+            "bets": 10,
+            "hits": 5,
+            "profit": -0.58,
+            "cumulativeProfit": 7.82
+          },
+          {
+            "gameweek": 20,
+            "bets": 10,
+            "hits": 7,
+            "profit": 2.09,
+            "cumulativeProfit": 9.91
+          },
+          {
+            "gameweek": 21,
+            "bets": 10,
+            "hits": 5,
+            "profit": -1.89,
+            "cumulativeProfit": 8.02
+          },
+          {
+            "gameweek": 22,
+            "bets": 11,
+            "hits": 6,
+            "profit": -2.2,
+            "cumulativeProfit": 5.82
+          },
+          {
+            "gameweek": 23,
+            "bets": 9,
+            "hits": 3,
+            "profit": -4.01,
+            "cumulativeProfit": 1.81
+          },
+          {
+            "gameweek": 24,
+            "bets": 10,
+            "hits": 5,
+            "profit": -2.43,
+            "cumulativeProfit": -0.62
+          },
+          {
+            "gameweek": 25,
+            "bets": 11,
+            "hits": 7,
+            "profit": 1.26,
+            "cumulativeProfit": 0.64
+          },
+          {
+            "gameweek": 26,
+            "bets": 9,
+            "hits": 7,
+            "profit": 2.52,
+            "cumulativeProfit": 3.16
+          },
+          {
+            "gameweek": 27,
+            "bets": 10,
+            "hits": 7,
+            "profit": 1.07,
+            "cumulativeProfit": 4.23
+          },
+          {
+            "gameweek": 28,
+            "bets": 11,
+            "hits": 6,
+            "profit": -0.16,
+            "cumulativeProfit": 4.07
+          },
+          {
+            "gameweek": 29,
+            "bets": 7,
+            "hits": 2,
+            "profit": -3.43,
+            "cumulativeProfit": 0.64
+          },
+          {
+            "gameweek": 30,
+            "bets": 11,
+            "hits": 6,
+            "profit": -1.21,
+            "cumulativeProfit": -0.57
+          },
+          {
+            "gameweek": 31,
+            "bets": 10,
+            "hits": 4,
+            "profit": -4.65,
+            "cumulativeProfit": -5.22
+          },
+          {
+            "gameweek": 32,
+            "bets": 10,
+            "hits": 4,
+            "profit": -2.47,
+            "cumulativeProfit": -7.69
+          },
+          {
+            "gameweek": 33,
+            "bets": 8,
+            "hits": 4,
+            "profit": -2.64,
+            "cumulativeProfit": -10.33
+          },
+          {
+            "gameweek": 34,
+            "bets": 12,
+            "hits": 8,
+            "profit": 2.79,
+            "cumulativeProfit": -7.54
+          },
+          {
+            "gameweek": 35,
+            "bets": 10,
+            "hits": 5,
+            "profit": -1.42,
+            "cumulativeProfit": -8.96
+          },
+          {
+            "gameweek": 36,
+            "bets": 11,
+            "hits": 7,
+            "profit": 0.51,
+            "cumulativeProfit": -8.45
+          },
+          {
+            "gameweek": 37,
+            "bets": 12,
+            "hits": 9,
+            "profit": 3.08,
+            "cumulativeProfit": -5.37
+          },
+          {
+            "gameweek": 38,
+            "bets": 10,
+            "hits": 9,
+            "profit": 4.87,
+            "cumulativeProfit": -0.5
+          }
+        ]
+      },
+      {
+        "season": "2024/25",
+        "matches": 380,
+        "trainedOn": "2021/22-2023/24",
+        "trainSeasons": 3,
+        "accuracy": 54.5,
+        "logLoss": 0.981,
+        "baselineAccuracy": 40.8,
+        "edge": 13.7,
+        "profit": -7.62,
+        "roi": -2.0,
+        "byGameweek": [
+          {
+            "gameweek": 1,
+            "bets": 10,
+            "hits": 6,
+            "profit": 0.11,
+            "cumulativeProfit": 0.11
+          },
+          {
+            "gameweek": 2,
+            "bets": 10,
+            "hits": 8,
+            "profit": 4.5,
+            "cumulativeProfit": 4.61
+          },
+          {
+            "gameweek": 3,
+            "bets": 10,
+            "hits": 5,
+            "profit": -0.75,
+            "cumulativeProfit": 3.86
+          },
+          {
+            "gameweek": 4,
+            "bets": 10,
+            "hits": 6,
+            "profit": 0.91,
+            "cumulativeProfit": 4.77
+          },
+          {
+            "gameweek": 5,
+            "bets": 10,
+            "hits": 4,
+            "profit": -3.56,
+            "cumulativeProfit": 1.21
+          },
+          {
+            "gameweek": 6,
+            "bets": 10,
+            "hits": 5,
+            "profit": -1.35,
+            "cumulativeProfit": -0.14
+          },
+          {
+            "gameweek": 7,
+            "bets": 10,
+            "hits": 5,
+            "profit": -2.24,
+            "cumulativeProfit": -2.38
+          },
+          {
+            "gameweek": 8,
+            "bets": 10,
+            "hits": 7,
+            "profit": 4.43,
+            "cumulativeProfit": 2.05
+          },
+          {
+            "gameweek": 9,
+            "bets": 10,
+            "hits": 5,
+            "profit": -0.16,
+            "cumulativeProfit": 1.89
+          },
+          {
+            "gameweek": 10,
+            "bets": 10,
+            "hits": 4,
+            "profit": -2.5,
+            "cumulativeProfit": -0.61
+          },
+          {
+            "gameweek": 11,
+            "bets": 10,
+            "hits": 5,
+            "profit": -0.09,
+            "cumulativeProfit": -0.7
+          },
+          {
+            "gameweek": 12,
+            "bets": 10,
+            "hits": 3,
+            "profit": -5.89,
+            "cumulativeProfit": -6.59
+          },
+          {
+            "gameweek": 13,
+            "bets": 10,
+            "hits": 7,
+            "profit": 2.65,
+            "cumulativeProfit": -3.94
+          },
+          {
+            "gameweek": 14,
+            "bets": 10,
+            "hits": 7,
+            "profit": 3.09,
+            "cumulativeProfit": -0.85
+          },
+          {
+            "gameweek": 15,
+            "bets": 9,
+            "hits": 4,
+            "profit": -1.63,
+            "cumulativeProfit": -2.48
+          },
+          {
+            "gameweek": 16,
+            "bets": 10,
+            "hits": 3,
+            "profit": -5.67,
+            "cumulativeProfit": -8.15
+          },
+          {
+            "gameweek": 17,
+            "bets": 10,
+            "hits": 4,
+            "profit": -1.68,
+            "cumulativeProfit": -9.83
+          },
+          {
+            "gameweek": 18,
+            "bets": 10,
+            "hits": 5,
+            "profit": -1.3,
+            "cumulativeProfit": -11.13
+          },
+          {
+            "gameweek": 19,
+            "bets": 10,
+            "hits": 6,
+            "profit": 1.11,
+            "cumulativeProfit": -10.02
+          },
+          {
+            "gameweek": 20,
+            "bets": 10,
+            "hits": 6,
+            "profit": 1.43,
+            "cumulativeProfit": -8.59
+          },
+          {
+            "gameweek": 21,
+            "bets": 10,
+            "hits": 6,
+            "profit": 0.26,
+            "cumulativeProfit": -8.33
+          },
+          {
+            "gameweek": 22,
+            "bets": 10,
+            "hits": 6,
+            "profit": 0.3,
+            "cumulativeProfit": -8.03
+          },
+          {
+            "gameweek": 23,
+            "bets": 10,
+            "hits": 5,
+            "profit": -1.9,
+            "cumulativeProfit": -9.93
+          },
+          {
+            "gameweek": 24,
+            "bets": 11,
+            "hits": 5,
+            "profit": -1.76,
+            "cumulativeProfit": -11.69
+          },
+          {
+            "gameweek": 25,
+            "bets": 10,
+            "hits": 6,
+            "profit": 0.69,
+            "cumulativeProfit": -11.0
+          },
+          {
+            "gameweek": 26,
+            "bets": 9,
+            "hits": 4,
+            "profit": -1.77,
+            "cumulativeProfit": -12.77
+          },
+          {
+            "gameweek": 27,
+            "bets": 10,
+            "hits": 6,
+            "profit": 1.11,
+            "cumulativeProfit": -11.66
+          },
+          {
+            "gameweek": 28,
+            "bets": 10,
+            "hits": 6,
+            "profit": 0.93,
+            "cumulativeProfit": -10.73
+          },
+          {
+            "gameweek": 29,
+            "bets": 10,
+            "hits": 6,
+            "profit": 0.83,
+            "cumulativeProfit": -9.9
+          },
+          {
+            "gameweek": 30,
+            "bets": 10,
+            "hits": 7,
+            "profit": 2.3,
+            "cumulativeProfit": -7.6
+          },
+          {
+            "gameweek": 31,
+            "bets": 10,
+            "hits": 5,
+            "profit": -0.04,
+            "cumulativeProfit": -7.64
+          },
+          {
+            "gameweek": 32,
+            "bets": 11,
+            "hits": 7,
+            "profit": 1.09,
+            "cumulativeProfit": -6.55
+          },
+          {
+            "gameweek": 33,
+            "bets": 10,
+            "hits": 6,
+            "profit": 1.88,
+            "cumulativeProfit": -4.67
+          },
+          {
+            "gameweek": 34,
+            "bets": 10,
+            "hits": 7,
+            "profit": 0.68,
+            "cumulativeProfit": -3.99
+          },
+          {
+            "gameweek": 35,
+            "bets": 10,
+            "hits": 4,
+            "profit": -2.81,
+            "cumulativeProfit": -6.8
+          },
+          {
+            "gameweek": 36,
+            "bets": 10,
+            "hits": 3,
+            "profit": -3.51,
+            "cumulativeProfit": -10.31
+          },
+          {
+            "gameweek": 37,
+            "bets": 10,
+            "hits": 7,
+            "profit": 2.34,
+            "cumulativeProfit": -7.97
+          },
+          {
+            "gameweek": 38,
+            "bets": 10,
+            "hits": 6,
+            "profit": 0.35,
+            "cumulativeProfit": -7.62
+          }
+        ]
+      },
+      {
+        "season": "2025/26",
+        "matches": 380,
+        "trainedOn": "2021/22-2024/25",
+        "trainSeasons": 4,
+        "accuracy": 50.3,
+        "logLoss": 1.031,
+        "baselineAccuracy": 42.6,
+        "edge": 7.6,
+        "profit": -12.45,
+        "roi": -3.3,
+        "byGameweek": [
+          {
+            "gameweek": 1,
+            "bets": 10,
+            "hits": 6,
+            "profit": 1.45,
+            "cumulativeProfit": 1.45
+          },
+          {
+            "gameweek": 2,
+            "bets": 10,
+            "hits": 6,
+            "profit": 2.98,
+            "cumulativeProfit": 4.43
+          },
+          {
+            "gameweek": 3,
+            "bets": 10,
+            "hits": 5,
+            "profit": 2.13,
+            "cumulativeProfit": 6.56
+          },
+          {
+            "gameweek": 4,
+            "bets": 10,
+            "hits": 6,
+            "profit": 0.24,
+            "cumulativeProfit": 6.8
+          },
+          {
+            "gameweek": 5,
+            "bets": 10,
+            "hits": 3,
+            "profit": -4.16,
+            "cumulativeProfit": 2.64
+          },
+          {
+            "gameweek": 6,
+            "bets": 10,
+            "hits": 4,
+            "profit": -1.02,
+            "cumulativeProfit": 1.62
+          },
+          {
+            "gameweek": 7,
+            "bets": 10,
+            "hits": 7,
+            "profit": 1.96,
+            "cumulativeProfit": 3.58
+          },
+          {
+            "gameweek": 8,
+            "bets": 10,
+            "hits": 7,
+            "profit": 6.16,
+            "cumulativeProfit": 9.74
+          },
+          {
+            "gameweek": 9,
+            "bets": 10,
+            "hits": 5,
+            "profit": -1.37,
+            "cumulativeProfit": 8.37
+          },
+          {
+            "gameweek": 10,
+            "bets": 10,
+            "hits": 7,
+            "profit": 2.51,
+            "cumulativeProfit": 10.88
+          },
+          {
+            "gameweek": 11,
+            "bets": 10,
+            "hits": 7,
+            "profit": 4.63,
+            "cumulativeProfit": 15.51
+          },
+          {
+            "gameweek": 12,
+            "bets": 10,
+            "hits": 6,
+            "profit": 1.24,
+            "cumulativeProfit": 16.75
+          },
+          {
+            "gameweek": 13,
+            "bets": 10,
+            "hits": 7,
+            "profit": 4.81,
+            "cumulativeProfit": 21.56
+          },
+          {
+            "gameweek": 14,
+            "bets": 10,
+            "hits": 4,
+            "profit": -2.95,
+            "cumulativeProfit": 18.61
+          },
+          {
+            "gameweek": 15,
+            "bets": 10,
+            "hits": 5,
+            "profit": -0.77,
+            "cumulativeProfit": 17.84
+          },
+          {
+            "gameweek": 16,
+            "bets": 10,
+            "hits": 7,
+            "profit": 2.78,
+            "cumulativeProfit": 20.62
+          },
+          {
+            "gameweek": 17,
+            "bets": 10,
+            "hits": 6,
+            "profit": 1.36,
+            "cumulativeProfit": 21.98
+          },
+          {
+            "gameweek": 18,
+            "bets": 10,
+            "hits": 7,
+            "profit": 5.52,
+            "cumulativeProfit": 27.5
+          },
+          {
+            "gameweek": 19,
+            "bets": 10,
+            "hits": 2,
+            "profit": -6.98,
+            "cumulativeProfit": 20.52
+          },
+          {
+            "gameweek": 20,
+            "bets": 10,
+            "hits": 4,
+            "profit": -3.6,
+            "cumulativeProfit": 16.92
+          },
+          {
+            "gameweek": 21,
+            "bets": 10,
+            "hits": 4,
+            "profit": -2.09,
+            "cumulativeProfit": 14.83
+          },
+          {
+            "gameweek": 22,
+            "bets": 10,
+            "hits": 2,
+            "profit": -5.62,
+            "cumulativeProfit": 9.21
+          },
+          {
+            "gameweek": 23,
+            "bets": 10,
+            "hits": 3,
+            "profit": -4.25,
+            "cumulativeProfit": 4.96
+          },
+          {
+            "gameweek": 24,
+            "bets": 10,
+            "hits": 6,
+            "profit": 0.49,
+            "cumulativeProfit": 5.45
+          },
+          {
+            "gameweek": 25,
+            "bets": 10,
+            "hits": 5,
+            "profit": -1.22,
+            "cumulativeProfit": 4.23
+          },
+          {
+            "gameweek": 26,
+            "bets": 10,
+            "hits": 4,
+            "profit": -2.82,
+            "cumulativeProfit": 1.41
+          },
+          {
+            "gameweek": 27,
+            "bets": 9,
+            "hits": 3,
+            "profit": -3.8,
+            "cumulativeProfit": -2.39
+          },
+          {
+            "gameweek": 28,
+            "bets": 10,
+            "hits": 8,
+            "profit": 3.58,
+            "cumulativeProfit": 1.19
+          },
+          {
+            "gameweek": 29,
+            "bets": 10,
+            "hits": 3,
+            "profit": -3.87,
+            "cumulativeProfit": -2.68
+          },
+          {
+            "gameweek": 30,
+            "bets": 10,
+            "hits": 2,
+            "profit": -6.65,
+            "cumulativeProfit": -9.33
+          },
+          {
+            "gameweek": 31,
+            "bets": 10,
+            "hits": 4,
+            "profit": -2.04,
+            "cumulativeProfit": -11.37
+          },
+          {
+            "gameweek": 32,
+            "bets": 10,
+            "hits": 6,
+            "profit": 2.91,
+            "cumulativeProfit": -8.46
+          },
+          {
+            "gameweek": 33,
+            "bets": 10,
+            "hits": 6,
+            "profit": 2.29,
+            "cumulativeProfit": -6.17
+          },
+          {
+            "gameweek": 34,
+            "bets": 10,
+            "hits": 6,
+            "profit": 0.69,
+            "cumulativeProfit": -5.48
+          },
+          {
+            "gameweek": 35,
+            "bets": 10,
+            "hits": 5,
+            "profit": -1.44,
+            "cumulativeProfit": -6.92
+          },
+          {
+            "gameweek": 36,
+            "bets": 11,
+            "hits": 5,
+            "profit": -3.22,
+            "cumulativeProfit": -10.14
+          },
+          {
+            "gameweek": 37,
+            "bets": 10,
+            "hits": 6,
+            "profit": 2.46,
+            "cumulativeProfit": -7.68
+          },
+          {
+            "gameweek": 38,
+            "bets": 10,
+            "hits": 2,
+            "profit": -4.77,
+            "cumulativeProfit": -12.45
+          }
+        ]
+      }
+    ],
+    "overall": {
+      "matches": 1520,
+      "accuracy": 54.7,
+      "logLoss": 0.98,
+      "baselineAccuracy": 44.5,
+      "edge": 10.2,
+      "profit": 6.77,
+      "roi": 0.4
+    }
+  },
+  "competitions": {
+    "E0": {
+      "name": "Premier League",
+      "seasons": [
+        {
+          "season": "2022/23",
+          "matches": 380,
+          "trainedOn": "2021/22",
+          "trainSeasons": 1,
+          "accuracy": 56.3,
+          "logLoss": 0.969,
+          "baselineAccuracy": 48.4,
+          "edge": 7.9,
+          "profit": 27.34,
+          "roi": 7.2,
+          "byGameweek": [
+            {
+              "gameweek": 1,
+              "bets": 10,
+              "hits": 8,
+              "profit": 9.73,
+              "cumulativeProfit": 9.73
+            },
+            {
+              "gameweek": 2,
+              "bets": 10,
+              "hits": 4,
+              "profit": -1.79,
+              "cumulativeProfit": 7.94
+            },
+            {
+              "gameweek": 3,
+              "bets": 10,
+              "hits": 5,
+              "profit": 0.96,
+              "cumulativeProfit": 8.9
+            },
+            {
+              "gameweek": 4,
+              "bets": 10,
+              "hits": 7,
+              "profit": 0.22,
+              "cumulativeProfit": 9.12
+            },
+            {
+              "gameweek": 5,
+              "bets": 10,
+              "hits": 3,
+              "profit": -6.14,
+              "cumulativeProfit": 2.98
+            },
+            {
+              "gameweek": 6,
+              "bets": 10,
+              "hits": 5,
+              "profit": -0.68,
+              "cumulativeProfit": 2.3
+            },
+            {
+              "gameweek": 7,
+              "bets": 9,
+              "hits": 5,
+              "profit": 0.11,
+              "cumulativeProfit": 2.41
+            },
+            {
+              "gameweek": 8,
+              "bets": 9,
+              "hits": 6,
+              "profit": 2.59,
+              "cumulativeProfit": 5.0
+            },
+            {
+              "gameweek": 9,
+              "bets": 9,
+              "hits": 8,
+              "profit": 7.88,
+              "cumulativeProfit": 12.88
+            },
+            {
+              "gameweek": 10,
+              "bets": 10,
+              "hits": 4,
+              "profit": -3.41,
+              "cumulativeProfit": 9.47
+            },
+            {
+              "gameweek": 11,
+              "bets": 11,
+              "hits": 6,
+              "profit": 0.78,
+              "cumulativeProfit": 10.25
+            },
+            {
+              "gameweek": 12,
+              "bets": 10,
+              "hits": 4,
+              "profit": 0.52,
+              "cumulativeProfit": 10.77
+            },
+            {
+              "gameweek": 13,
+              "bets": 9,
+              "hits": 7,
+              "profit": 3.36,
+              "cumulativeProfit": 14.13
+            },
+            {
+              "gameweek": 14,
+              "bets": 9,
+              "hits": 5,
+              "profit": 1.06,
+              "cumulativeProfit": 15.19
+            },
+            {
+              "gameweek": 15,
+              "bets": 11,
+              "hits": 6,
+              "profit": -0.07,
+              "cumulativeProfit": 15.12
+            },
+            {
+              "gameweek": 16,
+              "bets": 10,
+              "hits": 7,
+              "profit": 2.37,
+              "cumulativeProfit": 17.49
+            },
+            {
+              "gameweek": 17,
+              "bets": 10,
+              "hits": 5,
+              "profit": 0.54,
+              "cumulativeProfit": 18.03
+            },
+            {
+              "gameweek": 18,
+              "bets": 11,
+              "hits": 4,
+              "profit": -2.23,
+              "cumulativeProfit": 15.8
+            },
+            {
+              "gameweek": 19,
+              "bets": 9,
+              "hits": 7,
+              "profit": 7.22,
+              "cumulativeProfit": 23.02
+            },
+            {
+              "gameweek": 20,
+              "bets": 11,
+              "hits": 6,
+              "profit": -0.72,
+              "cumulativeProfit": 22.3
+            },
+            {
+              "gameweek": 21,
+              "bets": 9,
+              "hits": 4,
+              "profit": -1.72,
+              "cumulativeProfit": 20.58
+            },
+            {
+              "gameweek": 22,
+              "bets": 10,
+              "hits": 3,
+              "profit": -4.68,
+              "cumulativeProfit": 15.9
+            },
+            {
+              "gameweek": 23,
+              "bets": 10,
+              "hits": 4,
+              "profit": -1.89,
+              "cumulativeProfit": 14.01
+            },
+            {
+              "gameweek": 24,
+              "bets": 9,
+              "hits": 5,
+              "profit": -0.07,
+              "cumulativeProfit": 13.94
+            },
+            {
+              "gameweek": 25,
+              "bets": 10,
+              "hits": 8,
+              "profit": 4.59,
+              "cumulativeProfit": 18.53
+            },
+            {
+              "gameweek": 26,
+              "bets": 10,
+              "hits": 4,
+              "profit": -3.3,
+              "cumulativeProfit": 15.23
+            },
+            {
+              "gameweek": 27,
+              "bets": 11,
+              "hits": 9,
+              "profit": 4.78,
+              "cumulativeProfit": 20.01
+            },
+            {
+              "gameweek": 28,
+              "bets": 9,
+              "hits": 3,
+              "profit": -3.95,
+              "cumulativeProfit": 16.06
+            },
+            {
+              "gameweek": 29,
+              "bets": 11,
+              "hits": 7,
+              "profit": 2.33,
+              "cumulativeProfit": 18.39
+            },
+            {
+              "gameweek": 30,
+              "bets": 9,
+              "hits": 5,
+              "profit": 0.03,
+              "cumulativeProfit": 18.42
+            },
+            {
+              "gameweek": 31,
+              "bets": 10,
+              "hits": 6,
+              "profit": 3.72,
+              "cumulativeProfit": 22.14
+            },
+            {
+              "gameweek": 32,
+              "bets": 9,
+              "hits": 4,
+              "profit": -1.71,
+              "cumulativeProfit": 20.43
+            },
+            {
+              "gameweek": 33,
+              "bets": 11,
+              "hits": 6,
+              "profit": 0.56,
+              "cumulativeProfit": 20.99
+            },
+            {
+              "gameweek": 34,
+              "bets": 11,
+              "hits": 10,
+              "profit": 6.17,
+              "cumulativeProfit": 27.16
+            },
+            {
+              "gameweek": 35,
+              "bets": 10,
+              "hits": 5,
+              "profit": -0.73,
+              "cumulativeProfit": 26.43
+            },
+            {
+              "gameweek": 36,
+              "bets": 12,
+              "hits": 9,
+              "profit": 4.35,
+              "cumulativeProfit": 30.78
+            },
+            {
+              "gameweek": 37,
+              "bets": 11,
+              "hits": 4,
+              "profit": -4.18,
+              "cumulativeProfit": 26.6
+            },
+            {
+              "gameweek": 38,
+              "bets": 10,
+              "hits": 6,
+              "profit": 0.74,
+              "cumulativeProfit": 27.34
+            }
+          ]
+        },
+        {
+          "season": "2023/24",
+          "matches": 380,
+          "trainedOn": "2021/22-2022/23",
+          "trainSeasons": 2,
+          "accuracy": 57.6,
+          "logLoss": 0.938,
+          "baselineAccuracy": 46.1,
+          "edge": 11.6,
+          "profit": -0.5,
+          "roi": -0.1,
+          "byGameweek": [
+            {
+              "gameweek": 1,
+              "bets": 10,
+              "hits": 5,
+              "profit": -3.07,
+              "cumulativeProfit": -3.07
+            },
+            {
+              "gameweek": 2,
+              "bets": 9,
+              "hits": 8,
+              "profit": 7.36,
+              "cumulativeProfit": 4.29
+            },
+            {
+              "gameweek": 3,
+              "bets": 10,
+              "hits": 5,
+              "profit": -2.11,
+              "cumulativeProfit": 2.18
+            },
+            {
+              "gameweek": 4,
+              "bets": 10,
+              "hits": 7,
+              "profit": 2.7,
+              "cumulativeProfit": 4.88
+            },
+            {
+              "gameweek": 5,
+              "bets": 10,
+              "hits": 7,
+              "profit": 0.84,
+              "cumulativeProfit": 5.72
+            },
+            {
+              "gameweek": 6,
+              "bets": 10,
+              "hits": 6,
+              "profit": 0.99,
+              "cumulativeProfit": 6.71
+            },
+            {
+              "gameweek": 7,
+              "bets": 11,
+              "hits": 4,
+              "profit": -4.13,
+              "cumulativeProfit": 2.58
+            },
+            {
+              "gameweek": 8,
+              "bets": 10,
+              "hits": 6,
+              "profit": 1.46,
+              "cumulativeProfit": 4.04
+            },
+            {
+              "gameweek": 9,
+              "bets": 10,
+              "hits": 8,
+              "profit": 3.84,
+              "cumulativeProfit": 7.88
+            },
+            {
+              "gameweek": 10,
+              "bets": 10,
+              "hits": 6,
+              "profit": -0.71,
+              "cumulativeProfit": 7.17
+            },
+            {
+              "gameweek": 11,
+              "bets": 10,
+              "hits": 4,
+              "profit": -1.37,
+              "cumulativeProfit": 5.8
+            },
+            {
+              "gameweek": 12,
+              "bets": 10,
+              "hits": 5,
+              "profit": -2.58,
+              "cumulativeProfit": 3.22
+            },
+            {
+              "gameweek": 13,
+              "bets": 10,
+              "hits": 7,
+              "profit": 6.48,
+              "cumulativeProfit": 9.7
+            },
+            {
+              "gameweek": 14,
+              "bets": 10,
+              "hits": 5,
+              "profit": -2.22,
+              "cumulativeProfit": 7.48
+            },
+            {
+              "gameweek": 15,
+              "bets": 10,
+              "hits": 6,
+              "profit": 1.1,
+              "cumulativeProfit": 8.58
+            },
+            {
+              "gameweek": 16,
+              "bets": 10,
+              "hits": 4,
+              "profit": -1.92,
+              "cumulativeProfit": 6.66
+            },
+            {
+              "gameweek": 17,
+              "bets": 9,
+              "hits": 7,
+              "profit": 3.79,
+              "cumulativeProfit": 10.45
+            },
+            {
+              "gameweek": 18,
+              "bets": 9,
+              "hits": 3,
+              "profit": -2.05,
+              "cumulativeProfit": 8.4
+            },
+            {
+              "gameweek": 19,
+              "bets": 10,
+              "hits": 5,
+              "profit": -0.58,
+              "cumulativeProfit": 7.82
+            },
+            {
+              "gameweek": 20,
+              "bets": 10,
+              "hits": 7,
+              "profit": 2.09,
+              "cumulativeProfit": 9.91
+            },
+            {
+              "gameweek": 21,
+              "bets": 10,
+              "hits": 5,
+              "profit": -1.89,
+              "cumulativeProfit": 8.02
+            },
+            {
+              "gameweek": 22,
+              "bets": 11,
+              "hits": 6,
+              "profit": -2.2,
+              "cumulativeProfit": 5.82
+            },
+            {
+              "gameweek": 23,
+              "bets": 9,
+              "hits": 3,
+              "profit": -4.01,
+              "cumulativeProfit": 1.81
+            },
+            {
+              "gameweek": 24,
+              "bets": 10,
+              "hits": 5,
+              "profit": -2.43,
+              "cumulativeProfit": -0.62
+            },
+            {
+              "gameweek": 25,
+              "bets": 11,
+              "hits": 7,
+              "profit": 1.26,
+              "cumulativeProfit": 0.64
+            },
+            {
+              "gameweek": 26,
+              "bets": 9,
+              "hits": 7,
+              "profit": 2.52,
+              "cumulativeProfit": 3.16
+            },
+            {
+              "gameweek": 27,
+              "bets": 10,
+              "hits": 7,
+              "profit": 1.07,
+              "cumulativeProfit": 4.23
+            },
+            {
+              "gameweek": 28,
+              "bets": 11,
+              "hits": 6,
+              "profit": -0.16,
+              "cumulativeProfit": 4.07
+            },
+            {
+              "gameweek": 29,
+              "bets": 7,
+              "hits": 2,
+              "profit": -3.43,
+              "cumulativeProfit": 0.64
+            },
+            {
+              "gameweek": 30,
+              "bets": 11,
+              "hits": 6,
+              "profit": -1.21,
+              "cumulativeProfit": -0.57
+            },
+            {
+              "gameweek": 31,
+              "bets": 10,
+              "hits": 4,
+              "profit": -4.65,
+              "cumulativeProfit": -5.22
+            },
+            {
+              "gameweek": 32,
+              "bets": 10,
+              "hits": 4,
+              "profit": -2.47,
+              "cumulativeProfit": -7.69
+            },
+            {
+              "gameweek": 33,
+              "bets": 8,
+              "hits": 4,
+              "profit": -2.64,
+              "cumulativeProfit": -10.33
+            },
+            {
+              "gameweek": 34,
+              "bets": 12,
+              "hits": 8,
+              "profit": 2.79,
+              "cumulativeProfit": -7.54
+            },
+            {
+              "gameweek": 35,
+              "bets": 10,
+              "hits": 5,
+              "profit": -1.42,
+              "cumulativeProfit": -8.96
+            },
+            {
+              "gameweek": 36,
+              "bets": 11,
+              "hits": 7,
+              "profit": 0.51,
+              "cumulativeProfit": -8.45
+            },
+            {
+              "gameweek": 37,
+              "bets": 12,
+              "hits": 9,
+              "profit": 3.08,
+              "cumulativeProfit": -5.37
+            },
+            {
+              "gameweek": 38,
+              "bets": 10,
+              "hits": 9,
+              "profit": 4.87,
+              "cumulativeProfit": -0.5
+            }
+          ]
+        },
+        {
+          "season": "2024/25",
+          "matches": 380,
+          "trainedOn": "2021/22-2023/24",
+          "trainSeasons": 3,
+          "accuracy": 54.5,
+          "logLoss": 0.981,
+          "baselineAccuracy": 40.8,
+          "edge": 13.7,
+          "profit": -7.62,
+          "roi": -2.0,
+          "byGameweek": [
+            {
+              "gameweek": 1,
+              "bets": 10,
+              "hits": 6,
+              "profit": 0.11,
+              "cumulativeProfit": 0.11
+            },
+            {
+              "gameweek": 2,
+              "bets": 10,
+              "hits": 8,
+              "profit": 4.5,
+              "cumulativeProfit": 4.61
+            },
+            {
+              "gameweek": 3,
+              "bets": 10,
+              "hits": 5,
+              "profit": -0.75,
+              "cumulativeProfit": 3.86
+            },
+            {
+              "gameweek": 4,
+              "bets": 10,
+              "hits": 6,
+              "profit": 0.91,
+              "cumulativeProfit": 4.77
+            },
+            {
+              "gameweek": 5,
+              "bets": 10,
+              "hits": 4,
+              "profit": -3.56,
+              "cumulativeProfit": 1.21
+            },
+            {
+              "gameweek": 6,
+              "bets": 10,
+              "hits": 5,
+              "profit": -1.35,
+              "cumulativeProfit": -0.14
+            },
+            {
+              "gameweek": 7,
+              "bets": 10,
+              "hits": 5,
+              "profit": -2.24,
+              "cumulativeProfit": -2.38
+            },
+            {
+              "gameweek": 8,
+              "bets": 10,
+              "hits": 7,
+              "profit": 4.43,
+              "cumulativeProfit": 2.05
+            },
+            {
+              "gameweek": 9,
+              "bets": 10,
+              "hits": 5,
+              "profit": -0.16,
+              "cumulativeProfit": 1.89
+            },
+            {
+              "gameweek": 10,
+              "bets": 10,
+              "hits": 4,
+              "profit": -2.5,
+              "cumulativeProfit": -0.61
+            },
+            {
+              "gameweek": 11,
+              "bets": 10,
+              "hits": 5,
+              "profit": -0.09,
+              "cumulativeProfit": -0.7
+            },
+            {
+              "gameweek": 12,
+              "bets": 10,
+              "hits": 3,
+              "profit": -5.89,
+              "cumulativeProfit": -6.59
+            },
+            {
+              "gameweek": 13,
+              "bets": 10,
+              "hits": 7,
+              "profit": 2.65,
+              "cumulativeProfit": -3.94
+            },
+            {
+              "gameweek": 14,
+              "bets": 10,
+              "hits": 7,
+              "profit": 3.09,
+              "cumulativeProfit": -0.85
+            },
+            {
+              "gameweek": 15,
+              "bets": 9,
+              "hits": 4,
+              "profit": -1.63,
+              "cumulativeProfit": -2.48
+            },
+            {
+              "gameweek": 16,
+              "bets": 10,
+              "hits": 3,
+              "profit": -5.67,
+              "cumulativeProfit": -8.15
+            },
+            {
+              "gameweek": 17,
+              "bets": 10,
+              "hits": 4,
+              "profit": -1.68,
+              "cumulativeProfit": -9.83
+            },
+            {
+              "gameweek": 18,
+              "bets": 10,
+              "hits": 5,
+              "profit": -1.3,
+              "cumulativeProfit": -11.13
+            },
+            {
+              "gameweek": 19,
+              "bets": 10,
+              "hits": 6,
+              "profit": 1.11,
+              "cumulativeProfit": -10.02
+            },
+            {
+              "gameweek": 20,
+              "bets": 10,
+              "hits": 6,
+              "profit": 1.43,
+              "cumulativeProfit": -8.59
+            },
+            {
+              "gameweek": 21,
+              "bets": 10,
+              "hits": 6,
+              "profit": 0.26,
+              "cumulativeProfit": -8.33
+            },
+            {
+              "gameweek": 22,
+              "bets": 10,
+              "hits": 6,
+              "profit": 0.3,
+              "cumulativeProfit": -8.03
+            },
+            {
+              "gameweek": 23,
+              "bets": 10,
+              "hits": 5,
+              "profit": -1.9,
+              "cumulativeProfit": -9.93
+            },
+            {
+              "gameweek": 24,
+              "bets": 11,
+              "hits": 5,
+              "profit": -1.76,
+              "cumulativeProfit": -11.69
+            },
+            {
+              "gameweek": 25,
+              "bets": 10,
+              "hits": 6,
+              "profit": 0.69,
+              "cumulativeProfit": -11.0
+            },
+            {
+              "gameweek": 26,
+              "bets": 9,
+              "hits": 4,
+              "profit": -1.77,
+              "cumulativeProfit": -12.77
+            },
+            {
+              "gameweek": 27,
+              "bets": 10,
+              "hits": 6,
+              "profit": 1.11,
+              "cumulativeProfit": -11.66
+            },
+            {
+              "gameweek": 28,
+              "bets": 10,
+              "hits": 6,
+              "profit": 0.93,
+              "cumulativeProfit": -10.73
+            },
+            {
+              "gameweek": 29,
+              "bets": 10,
+              "hits": 6,
+              "profit": 0.83,
+              "cumulativeProfit": -9.9
+            },
+            {
+              "gameweek": 30,
+              "bets": 10,
+              "hits": 7,
+              "profit": 2.3,
+              "cumulativeProfit": -7.6
+            },
+            {
+              "gameweek": 31,
+              "bets": 10,
+              "hits": 5,
+              "profit": -0.04,
+              "cumulativeProfit": -7.64
+            },
+            {
+              "gameweek": 32,
+              "bets": 11,
+              "hits": 7,
+              "profit": 1.09,
+              "cumulativeProfit": -6.55
+            },
+            {
+              "gameweek": 33,
+              "bets": 10,
+              "hits": 6,
+              "profit": 1.88,
+              "cumulativeProfit": -4.67
+            },
+            {
+              "gameweek": 34,
+              "bets": 10,
+              "hits": 7,
+              "profit": 0.68,
+              "cumulativeProfit": -3.99
+            },
+            {
+              "gameweek": 35,
+              "bets": 10,
+              "hits": 4,
+              "profit": -2.81,
+              "cumulativeProfit": -6.8
+            },
+            {
+              "gameweek": 36,
+              "bets": 10,
+              "hits": 3,
+              "profit": -3.51,
+              "cumulativeProfit": -10.31
+            },
+            {
+              "gameweek": 37,
+              "bets": 10,
+              "hits": 7,
+              "profit": 2.34,
+              "cumulativeProfit": -7.97
+            },
+            {
+              "gameweek": 38,
+              "bets": 10,
+              "hits": 6,
+              "profit": 0.35,
+              "cumulativeProfit": -7.62
+            }
+          ]
+        },
+        {
+          "season": "2025/26",
+          "matches": 380,
+          "trainedOn": "2021/22-2024/25",
+          "trainSeasons": 4,
+          "accuracy": 50.3,
+          "logLoss": 1.031,
+          "baselineAccuracy": 42.6,
+          "edge": 7.6,
+          "profit": -12.45,
+          "roi": -3.3,
+          "byGameweek": [
+            {
+              "gameweek": 1,
+              "bets": 10,
+              "hits": 6,
+              "profit": 1.45,
+              "cumulativeProfit": 1.45
+            },
+            {
+              "gameweek": 2,
+              "bets": 10,
+              "hits": 6,
+              "profit": 2.98,
+              "cumulativeProfit": 4.43
+            },
+            {
+              "gameweek": 3,
+              "bets": 10,
+              "hits": 5,
+              "profit": 2.13,
+              "cumulativeProfit": 6.56
+            },
+            {
+              "gameweek": 4,
+              "bets": 10,
+              "hits": 6,
+              "profit": 0.24,
+              "cumulativeProfit": 6.8
+            },
+            {
+              "gameweek": 5,
+              "bets": 10,
+              "hits": 3,
+              "profit": -4.16,
+              "cumulativeProfit": 2.64
+            },
+            {
+              "gameweek": 6,
+              "bets": 10,
+              "hits": 4,
+              "profit": -1.02,
+              "cumulativeProfit": 1.62
+            },
+            {
+              "gameweek": 7,
+              "bets": 10,
+              "hits": 7,
+              "profit": 1.96,
+              "cumulativeProfit": 3.58
+            },
+            {
+              "gameweek": 8,
+              "bets": 10,
+              "hits": 7,
+              "profit": 6.16,
+              "cumulativeProfit": 9.74
+            },
+            {
+              "gameweek": 9,
+              "bets": 10,
+              "hits": 5,
+              "profit": -1.37,
+              "cumulativeProfit": 8.37
+            },
+            {
+              "gameweek": 10,
+              "bets": 10,
+              "hits": 7,
+              "profit": 2.51,
+              "cumulativeProfit": 10.88
+            },
+            {
+              "gameweek": 11,
+              "bets": 10,
+              "hits": 7,
+              "profit": 4.63,
+              "cumulativeProfit": 15.51
+            },
+            {
+              "gameweek": 12,
+              "bets": 10,
+              "hits": 6,
+              "profit": 1.24,
+              "cumulativeProfit": 16.75
+            },
+            {
+              "gameweek": 13,
+              "bets": 10,
+              "hits": 7,
+              "profit": 4.81,
+              "cumulativeProfit": 21.56
+            },
+            {
+              "gameweek": 14,
+              "bets": 10,
+              "hits": 4,
+              "profit": -2.95,
+              "cumulativeProfit": 18.61
+            },
+            {
+              "gameweek": 15,
+              "bets": 10,
+              "hits": 5,
+              "profit": -0.77,
+              "cumulativeProfit": 17.84
+            },
+            {
+              "gameweek": 16,
+              "bets": 10,
+              "hits": 7,
+              "profit": 2.78,
+              "cumulativeProfit": 20.62
+            },
+            {
+              "gameweek": 17,
+              "bets": 10,
+              "hits": 6,
+              "profit": 1.36,
+              "cumulativeProfit": 21.98
+            },
+            {
+              "gameweek": 18,
+              "bets": 10,
+              "hits": 7,
+              "profit": 5.52,
+              "cumulativeProfit": 27.5
+            },
+            {
+              "gameweek": 19,
+              "bets": 10,
+              "hits": 2,
+              "profit": -6.98,
+              "cumulativeProfit": 20.52
+            },
+            {
+              "gameweek": 20,
+              "bets": 10,
+              "hits": 4,
+              "profit": -3.6,
+              "cumulativeProfit": 16.92
+            },
+            {
+              "gameweek": 21,
+              "bets": 10,
+              "hits": 4,
+              "profit": -2.09,
+              "cumulativeProfit": 14.83
+            },
+            {
+              "gameweek": 22,
+              "bets": 10,
+              "hits": 2,
+              "profit": -5.62,
+              "cumulativeProfit": 9.21
+            },
+            {
+              "gameweek": 23,
+              "bets": 10,
+              "hits": 3,
+              "profit": -4.25,
+              "cumulativeProfit": 4.96
+            },
+            {
+              "gameweek": 24,
+              "bets": 10,
+              "hits": 6,
+              "profit": 0.49,
+              "cumulativeProfit": 5.45
+            },
+            {
+              "gameweek": 25,
+              "bets": 10,
+              "hits": 5,
+              "profit": -1.22,
+              "cumulativeProfit": 4.23
+            },
+            {
+              "gameweek": 26,
+              "bets": 10,
+              "hits": 4,
+              "profit": -2.82,
+              "cumulativeProfit": 1.41
+            },
+            {
+              "gameweek": 27,
+              "bets": 9,
+              "hits": 3,
+              "profit": -3.8,
+              "cumulativeProfit": -2.39
+            },
+            {
+              "gameweek": 28,
+              "bets": 10,
+              "hits": 8,
+              "profit": 3.58,
+              "cumulativeProfit": 1.19
+            },
+            {
+              "gameweek": 29,
+              "bets": 10,
+              "hits": 3,
+              "profit": -3.87,
+              "cumulativeProfit": -2.68
+            },
+            {
+              "gameweek": 30,
+              "bets": 10,
+              "hits": 2,
+              "profit": -6.65,
+              "cumulativeProfit": -9.33
+            },
+            {
+              "gameweek": 31,
+              "bets": 10,
+              "hits": 4,
+              "profit": -2.04,
+              "cumulativeProfit": -11.37
+            },
+            {
+              "gameweek": 32,
+              "bets": 10,
+              "hits": 6,
+              "profit": 2.91,
+              "cumulativeProfit": -8.46
+            },
+            {
+              "gameweek": 33,
+              "bets": 10,
+              "hits": 6,
+              "profit": 2.29,
+              "cumulativeProfit": -6.17
+            },
+            {
+              "gameweek": 34,
+              "bets": 10,
+              "hits": 6,
+              "profit": 0.69,
+              "cumulativeProfit": -5.48
+            },
+            {
+              "gameweek": 35,
+              "bets": 10,
+              "hits": 5,
+              "profit": -1.44,
+              "cumulativeProfit": -6.92
+            },
+            {
+              "gameweek": 36,
+              "bets": 11,
+              "hits": 5,
+              "profit": -3.22,
+              "cumulativeProfit": -10.14
+            },
+            {
+              "gameweek": 37,
+              "bets": 10,
+              "hits": 6,
+              "profit": 2.46,
+              "cumulativeProfit": -7.68
+            },
+            {
+              "gameweek": 38,
+              "bets": 10,
+              "hits": 2,
+              "profit": -4.77,
+              "cumulativeProfit": -12.45
+            }
+          ]
+        }
+      ],
+      "overall": {
+        "matches": 1520,
+        "accuracy": 54.7,
+        "logLoss": 0.98,
+        "baselineAccuracy": 44.5,
+        "edge": 10.2,
+        "profit": 6.77,
+        "roi": 0.4
+      }
+    }
+  },
   "seasons": [
     {
       "season": "2022/23",

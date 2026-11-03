@@ -1,0 +1,12 @@
+{
+  "generated": "2026-11-03T15:14:42+00:00",
+  "site": "E0",
+  "competitions": [
+    {
+      "div": "E0",
+      "name": "Premier League",
+      "country": "ENG",
+      "kind": "league"
+    }
+  ]
+}

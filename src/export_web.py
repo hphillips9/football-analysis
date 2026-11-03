@@ -10,6 +10,11 @@ Reads data/processed/all_matches.csv, data/raw/Bets.csv and produces:
     web/src/data/stats.json        - headline numbers, calibration, by-gameweek
     web/src/data/elo.json          - current Elo ratings
     web/src/data/table.json        - current standings + projected final table
+    web/src/data/leagues.json      - the competitions the pipeline runs
+
+Every file but leagues.json covers SITE_DIV only, until the site goes
+multi-competition (docs: Phase 3). The model behind the projected table
+is still trained on every competition, as the live predictions are.
 
 Runs as part of run_week.py so CI keeps the site's data current.
 """
@@ -20,6 +25,7 @@ from datetime import datetime, timezone
 
 import pandas as pd
 
+import competitions
 from team_names import load_alias_map
 from predict_next_matches import (
     build_elo_feature,
@@ -41,6 +47,9 @@ PROB_COLS = ["HomeProb", "DrawProb", "AwayProb"]
 # Calibration buckets on the model's probability for its own pick
 CALIB_EDGES = [0, 40, 45, 50, 55, 60, 100]
 
+# The one competition the site shows for now
+SITE_DIV = "E0"
+
 
 # ============================================================
 # LOADERS
@@ -56,9 +65,15 @@ def load_matches():
     ).reset_index(drop=True)
 
 
-def load_bets():
+def load_bets(div=None):
+    """Bets.csv, of competition ``div`` only when given, in kickoff order."""
 
     bets = pd.read_csv(BETS_PATH)
+
+    # Before sorting, so other competitions' rows can't reorder this
+    # one's same-kickoff bets
+    if div is not None:
+        bets = bets[bets["Div"] == div].reset_index(drop=True)
 
     alias_map = load_alias_map()
     bets["HomeTeam"] = bets["HomeTeam"].replace(alias_map)
@@ -73,10 +88,16 @@ def load_bets():
     return bets.sort_values("Kickoff").reset_index(drop=True)
 
 
-def current_elos(matches):
-    """Elo ratings, restricted to the teams in the current season."""
+def current_elos(matches, div=None):
+    """
+    Elo ratings, restricted to the teams in the current season (of
+    competition ``div`` only, when given).
+    """
 
     ratings = build_elo_feature(matches.copy())
+
+    if div is not None:
+        matches = matches[matches["Div"] == div]
 
     latest_season = matches.sort_values("MatchDateTime")["Season"].iloc[-1]
     current = matches[matches["Season"] == latest_season]
@@ -433,7 +454,7 @@ def predicted_standings(matches, bets):
     return ordered
 
 
-def projected_table(matches):
+def projected_table(matches, history=None):
     """
     Projected final table: current standings plus, for every fixture not
     yet played this season, each team's *expected* points from the model's
@@ -442,10 +463,15 @@ def projected_table(matches):
     of freezing at its current value. Nothing here feeds back into the
     prediction model itself - it's a display-only addition for this table.
     Expected wins/draws/losses/goals are rounded for display.
+
+    ``matches`` is one competition; the model is trained on ``history``
+    (default: the same matches), e.g. every competition.
     """
 
-    matches, elos, team_history = build_history(matches)
-    model = train_model(matches)
+    history = matches if history is None else history
+
+    trained, elos, team_history = build_history(history)
+    model = train_model(trained)
 
     # Display-only extra: if the goal model can't be fitted, goal difference
     # just stays at its current value rather than failing the whole export.
@@ -464,6 +490,8 @@ def projected_table(matches):
         for away in teams
         if home != away and (home, away) not in played_pairs
     ])
+    if "Div" in matches.columns:
+        remaining.insert(0, "Div", matches["Div"].iloc[0])
 
     scored = predict_fixtures(remaining, model, elos, team_history)
 
@@ -517,11 +545,11 @@ def projected_table(matches):
     return ranked, len(remaining)
 
 
-def build_table(matches, bets):
+def build_table(matches, bets, history=None):
 
     current = current_standings(matches)
     predicted = predicted_standings(matches, bets)
-    projected, remaining = projected_table(matches)
+    projected, remaining = projected_table(matches, history)
 
     current_position = {row["team"]: row["position"] for row in current}
     for table in (predicted, projected):
@@ -582,11 +610,33 @@ def _write(name, payload):
 # MAIN
 # ============================================================
 
+def build_leagues():
+    """The competitions the pipeline runs, and which one the site shows."""
+
+    return {
+        "site": SITE_DIV,
+        "competitions": [
+            {
+                "div": div,
+                "name": competitions.get(div)["name"],
+                "country": competitions.get(div)["country"],
+                "kind": competitions.get(div)["kind"],
+            }
+            for div in competitions.enabled()
+        ],
+    }
+
+
 def export_web():
 
-    matches = load_matches()
-    bets = load_bets()
-    elos = current_elos(matches)
+    history = load_matches()
+    if "Div" not in history.columns:
+        history.insert(0, "Div", SITE_DIV)
+    matches = history[history["Div"] == SITE_DIV].reset_index(drop=True)
+
+    bets = load_bets(SITE_DIV)
+
+    elos = current_elos(history, SITE_DIV)
 
     generated = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
@@ -620,7 +670,12 @@ def export_web():
 
     _write("table.json", {
         "generated": generated,
-        **build_table(matches, bets),
+        **build_table(matches, bets, history),
+    })
+
+    _write("leagues.json", {
+        "generated": generated,
+        **build_leagues(),
     })
 
 
