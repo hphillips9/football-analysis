@@ -1,0 +1,307 @@
+day,home,away,home_id,away_id,hg,ag
+2021-08-13,Borussia Mönchengladbach,Bayern München,9788,9823,1,1
+2021-08-14,Arminia Bielefeld,Freiburg,9912,8358,0,0
+2021-08-14,Augsburg,Hoffenheim,8406,8226,0,4
+2021-08-14,Union Berlin,Bayer Leverkusen,8149,8178,1,1
+2021-08-14,VfB Stuttgart,Greuther Fürth,10269,8357,5,1
+2021-08-14,Wolfsburg,Bochum,8721,9911,1,0
+2021-08-14,Borussia Dortmund,Eintracht Frankfurt,9789,9810,5,2
+2021-08-15,Mainz 05,RB Leipzig,9905,178475,1,0
+2021-08-15,1. FC Köln,Hertha BSC,8722,8177,3,1
+2021-08-20,RB Leipzig,VfB Stuttgart,178475,10269,4,0
+2021-08-21,Bochum,Mainz 05,9911,9905,2,0
+2021-08-21,Eintracht Frankfurt,Augsburg,9810,8406,0,0
+2021-08-21,Freiburg,Borussia Dortmund,8358,9789,2,1
+2021-08-21,Greuther Fürth,Arminia Bielefeld,8357,9912,1,1
+2021-08-21,Hertha BSC,Wolfsburg,8177,8721,1,2
+2021-08-21,Bayer Leverkusen,Borussia Mönchengladbach,8178,9788,4,0
+2021-08-22,Hoffenheim,Union Berlin,8226,8149,2,2
+2021-08-22,Bayern München,1. FC Köln,9823,8722,3,2
+2021-08-27,Borussia Dortmund,Hoffenheim,9789,8226,3,2
+2021-08-28,Arminia Bielefeld,Eintracht Frankfurt,9912,9810,1,1
+2021-08-28,Augsburg,Bayer Leverkusen,8406,8178,1,4
+2021-08-28,1. FC Köln,Bochum,8722,9911,2,1
+2021-08-28,Mainz 05,Greuther Fürth,9905,8357,3,0
+2021-08-28,VfB Stuttgart,Freiburg,10269,8358,2,3
+2021-08-28,Bayern München,Hertha BSC,9823,8177,5,0
+2021-08-29,Union Berlin,Borussia Mönchengladbach,8149,9788,2,1
+2021-08-29,Wolfsburg,RB Leipzig,8721,178475,1,0
+2021-09-11,Bayer Leverkusen,Borussia Dortmund,8178,9789,3,4
+2021-09-11,Freiburg,1. FC Köln,8358,8722,1,1
+2021-09-11,Greuther Fürth,Wolfsburg,8357,8721,0,2
+2021-09-11,Hoffenheim,Mainz 05,8226,9905,0,2
+2021-09-11,Union Berlin,Augsburg,8149,8406,0,0
+2021-09-11,RB Leipzig,Bayern München,178475,9823,1,4
+2021-09-12,Eintracht Frankfurt,VfB Stuttgart,9810,10269,1,1
+2021-09-12,Bochum,Hertha BSC,9911,8177,1,3
+2021-09-12,Borussia Mönchengladbach,Arminia Bielefeld,9788,9912,3,1
+2021-09-17,Hertha BSC,Greuther Fürth,8177,8357,2,1
+2021-09-18,Arminia Bielefeld,Hoffenheim,9912,8226,0,0
+2021-09-18,Augsburg,Borussia Mönchengladbach,8406,9788,1,0
+2021-09-18,Bayern München,Bochum,9823,9911,7,0
+2021-09-18,Mainz 05,Freiburg,9905,8358,0,0
+2021-09-18,1. FC Köln,RB Leipzig,8722,178475,1,1
+2021-09-19,VfB Stuttgart,Bayer Leverkusen,10269,8178,1,3
+2021-09-19,Borussia Dortmund,Union Berlin,9789,8149,4,2
+2021-09-19,Wolfsburg,Eintracht Frankfurt,8721,9810,1,1
+2021-09-24,Greuther Fürth,Bayern München,8357,9823,1,3
+2021-09-25,Bayer Leverkusen,Mainz 05,8178,9905,1,0
+2021-09-25,Eintracht Frankfurt,1. FC Köln,9810,8722,1,1
+2021-09-25,Hoffenheim,Wolfsburg,8226,8721,3,1
+2021-09-25,RB Leipzig,Hertha BSC,178475,8177,6,0
+2021-09-25,Union Berlin,Arminia Bielefeld,8149,9912,1,0
+2021-09-25,Borussia Mönchengladbach,Borussia Dortmund,9788,9789,1,0
+2021-09-26,Bochum,VfB Stuttgart,9911,10269,0,0
+2021-09-26,Freiburg,Augsburg,8358,8406,3,0
+2021-10-01,1. FC Köln,Greuther Fürth,8722,8357,3,1
+2021-10-02,Borussia Dortmund,Augsburg,9789,8406,2,1
+2021-10-02,Hertha BSC,Freiburg,8177,8358,1,2
+2021-10-02,VfB Stuttgart,Hoffenheim,10269,8226,3,1
+2021-10-02,Wolfsburg,Borussia Mönchengladbach,8721,9788,1,3
+2021-10-02,RB Leipzig,Bochum,178475,9911,3,0
+2021-10-03,Mainz 05,Union Berlin,9905,8149,1,2
+2021-10-03,Bayern München,Eintracht Frankfurt,9823,9810,1,2
+2021-10-03,Arminia Bielefeld,Bayer Leverkusen,9912,8178,0,4
+2021-10-15,Hoffenheim,1. FC Köln,8226,8722,5,0
+2021-10-16,Borussia Dortmund,Mainz 05,9789,9905,3,1
+2021-10-16,Eintracht Frankfurt,Hertha BSC,9810,8177,1,2
+2021-10-16,Freiburg,RB Leipzig,8358,178475,1,1
+2021-10-16,Greuther Fürth,Bochum,8357,9911,0,1
+2021-10-16,Union Berlin,Wolfsburg,8149,8721,2,0
+2021-10-16,Borussia Mönchengladbach,VfB Stuttgart,9788,10269,1,1
+2021-10-17,Bayer Leverkusen,Bayern München,8178,9823,1,5
+2021-10-17,Augsburg,Arminia Bielefeld,8406,9912,1,1
+2021-10-22,Mainz 05,Augsburg,9905,8406,4,1
+2021-10-23,Arminia Bielefeld,Borussia Dortmund,9912,9789,1,3
+2021-10-23,Bayern München,Hoffenheim,9823,8226,4,0
+2021-10-23,RB Leipzig,Greuther Fürth,178475,8357,4,1
+2021-10-23,Wolfsburg,Freiburg,8721,8358,0,2
+2021-10-23,Hertha BSC,Borussia Mönchengladbach,8177,9788,1,0
+2021-10-24,1. FC Köln,Bayer Leverkusen,8722,8178,2,2
+2021-10-24,VfB Stuttgart,Union Berlin,10269,8149,1,1
+2021-10-24,Bochum,Eintracht Frankfurt,9911,9810,2,0
+2021-10-29,Hoffenheim,Hertha BSC,8226,8177,2,0
+2021-10-30,Arminia Bielefeld,Mainz 05,9912,9905,1,2
+2021-10-30,Bayer Leverkusen,Wolfsburg,8178,8721,0,2
+2021-10-30,Borussia Dortmund,1. FC Köln,9789,8722,2,0
+2021-10-30,Freiburg,Greuther Fürth,8358,8357,3,1
+2021-10-30,Union Berlin,Bayern München,8149,9823,2,5
+2021-10-30,Eintracht Frankfurt,RB Leipzig,9810,178475,1,1
+2021-10-31,Augsburg,VfB Stuttgart,8406,10269,4,1
+2021-10-31,Borussia Mönchengladbach,Bochum,9788,9911,2,1
+2021-11-05,Mainz 05,Borussia Mönchengladbach,9905,9788,1,1
+2021-11-06,Bayern München,Freiburg,9823,8358,2,1
+2021-11-06,Bochum,Hoffenheim,9911,8226,2,0
+2021-11-06,VfB Stuttgart,Arminia Bielefeld,10269,9912,0,1
+2021-11-06,Wolfsburg,Augsburg,8721,8406,1,0
+2021-11-06,RB Leipzig,Borussia Dortmund,178475,9789,2,1
+2021-11-07,Hertha BSC,Bayer Leverkusen,8177,8178,1,1
+2021-11-07,1. FC Köln,Union Berlin,8722,8149,2,2
+2021-11-07,Greuther Fürth,Eintracht Frankfurt,8357,9810,1,2
+2021-11-19,Augsburg,Bayern München,8406,9823,2,1
+2021-11-20,Arminia Bielefeld,Wolfsburg,9912,8721,2,2
+2021-11-20,Bayer Leverkusen,Bochum,8178,9911,1,0
+2021-11-20,Borussia Dortmund,VfB Stuttgart,9789,10269,2,1
+2021-11-20,Borussia Mönchengladbach,Greuther Fürth,9788,8357,4,0
+2021-11-20,Hoffenheim,RB Leipzig,8226,178475,2,0
+2021-11-20,Union Berlin,Hertha BSC,8149,8177,2,0
+2021-11-21,Freiburg,Eintracht Frankfurt,8358,9810,0,2
+2021-11-21,Mainz 05,1. FC Köln,9905,8722,1,1
+2021-11-26,VfB Stuttgart,Mainz 05,10269,9905,2,1
+2021-11-27,Bochum,Freiburg,9911,8358,2,1
+2021-11-27,1. FC Köln,Borussia Mönchengladbach,8722,9788,4,1
+2021-11-27,Greuther Fürth,Hoffenheim,8357,8226,3,6
+2021-11-27,Hertha BSC,Augsburg,8177,8406,1,1
+2021-11-27,Wolfsburg,Borussia Dortmund,8721,9789,1,3
+2021-11-27,Bayern München,Arminia Bielefeld,9823,9912,1,0
+2021-11-28,Eintracht Frankfurt,Union Berlin,9810,8149,2,1
+2021-11-28,RB Leipzig,Bayer Leverkusen,178475,8178,1,3
+2021-12-03,Union Berlin,RB Leipzig,8149,178475,2,1
+2021-12-04,Arminia Bielefeld,1. FC Köln,9912,8722,1,1
+2021-12-04,Augsburg,Bochum,8406,9911,2,3
+2021-12-04,Bayer Leverkusen,Greuther Fürth,8178,8357,7,1
+2021-12-04,Hoffenheim,Eintracht Frankfurt,8226,9810,3,2
+2021-12-04,Mainz 05,Wolfsburg,9905,8721,3,0
+2021-12-04,Borussia Dortmund,Bayern München,9789,9823,2,3
+2021-12-05,VfB Stuttgart,Hertha BSC,10269,8177,2,2
+2021-12-05,Borussia Mönchengladbach,Freiburg,9788,8358,0,6
+2021-12-10,1. FC Köln,Augsburg,8722,8406,0,2
+2021-12-11,Bayern München,Mainz 05,9823,9905,2,1
+2021-12-11,Bochum,Borussia Dortmund,9911,9789,1,1
+2021-12-11,Freiburg,Hoffenheim,8358,8226,1,2
+2021-12-11,Hertha BSC,Arminia Bielefeld,8177,9912,2,0
+2021-12-11,RB Leipzig,Borussia Mönchengladbach,178475,9788,4,1
+2021-12-11,Wolfsburg,VfB Stuttgart,8721,10269,0,2
+2021-12-12,Greuther Fürth,Union Berlin,8357,8149,1,0
+2021-12-12,Eintracht Frankfurt,Bayer Leverkusen,9810,8178,5,2
+2021-12-14,VfB Stuttgart,Bayern München,10269,9823,0,5
+2021-12-14,Arminia Bielefeld,Bochum,9912,9911,2,0
+2021-12-14,Mainz 05,Hertha BSC,9905,8177,4,0
+2021-12-14,Wolfsburg,1. FC Köln,8721,8722,2,3
+2021-12-15,Borussia Mönchengladbach,Eintracht Frankfurt,9788,9810,2,3
+2021-12-15,Augsburg,RB Leipzig,8406,178475,1,1
+2021-12-15,Bayer Leverkusen,Hoffenheim,8178,8226,2,2
+2021-12-15,Borussia Dortmund,Greuther Fürth,9789,8357,3,0
+2021-12-15,Union Berlin,Freiburg,8149,8358,0,0
+2021-12-17,Bayern München,Wolfsburg,9823,8721,4,0
+2021-12-18,Bochum,Union Berlin,9911,8149,0,1
+2021-12-18,Eintracht Frankfurt,Mainz 05,9810,9905,1,0
+2021-12-18,Greuther Fürth,Augsburg,8357,8406,0,0
+2021-12-18,Hoffenheim,Borussia Mönchengladbach,8226,9788,1,1
+2021-12-18,RB Leipzig,Arminia Bielefeld,178475,9912,0,2
+2021-12-18,Hertha BSC,Borussia Dortmund,8177,9789,3,2
+2021-12-19,Freiburg,Bayer Leverkusen,8358,8178,2,1
+2021-12-19,1. FC Köln,VfB Stuttgart,8722,10269,1,0
+2022-01-07,Bayern München,Borussia Mönchengladbach,9823,9788,1,2
+2022-01-08,Bayer Leverkusen,Union Berlin,8178,8149,2,2
+2022-01-08,Freiburg,Arminia Bielefeld,8358,9912,2,2
+2022-01-08,Greuther Fürth,VfB Stuttgart,8357,10269,0,0
+2022-01-08,Hoffenheim,Augsburg,8226,8406,3,1
+2022-01-08,RB Leipzig,Mainz 05,178475,9905,4,1
+2022-01-08,Eintracht Frankfurt,Borussia Dortmund,9810,9789,2,3
+2022-01-09,Hertha BSC,1. FC Köln,8177,8722,1,3
+2022-01-09,Bochum,Wolfsburg,9911,8721,1,0
+2022-01-14,Borussia Dortmund,Freiburg,9789,8358,5,1
+2022-01-15,1. FC Köln,Bayern München,8722,9823,0,4
+2022-01-15,Mainz 05,Bochum,9905,9911,1,0
+2022-01-15,Union Berlin,Hoffenheim,8149,8226,2,1
+2022-01-15,VfB Stuttgart,RB Leipzig,10269,178475,0,2
+2022-01-15,Wolfsburg,Hertha BSC,8721,8177,0,0
+2022-01-15,Borussia Mönchengladbach,Bayer Leverkusen,9788,8178,1,2
+2022-01-16,Augsburg,Eintracht Frankfurt,8406,9810,1,1
+2022-01-16,Arminia Bielefeld,Greuther Fürth,9912,8357,2,2
+2022-01-21,Eintracht Frankfurt,Arminia Bielefeld,9810,9912,0,2
+2022-01-22,Bayer Leverkusen,Augsburg,8178,8406,5,1
+2022-01-22,Borussia Mönchengladbach,Union Berlin,9788,8149,1,2
+2022-01-22,Freiburg,VfB Stuttgart,8358,10269,2,0
+2022-01-22,Greuther Fürth,Mainz 05,8357,9905,2,1
+2022-01-22,Hoffenheim,Borussia Dortmund,8226,9789,2,3
+2022-01-22,Bochum,1. FC Köln,9911,8722,2,2
+2022-01-23,RB Leipzig,Wolfsburg,178475,8721,2,0
+2022-01-23,Hertha BSC,Bayern München,8177,9823,1,4
+2022-02-04,Hertha BSC,Bochum,8177,9911,1,1
+2022-02-05,Arminia Bielefeld,Borussia Mönchengladbach,9912,9788,1,1
+2022-02-05,Augsburg,Union Berlin,8406,8149,2,0
+2022-02-05,1. FC Köln,Freiburg,8722,8358,1,0
+2022-02-05,Mainz 05,Hoffenheim,9905,8226,2,0
+2022-02-05,VfB Stuttgart,Eintracht Frankfurt,10269,9810,2,3
+2022-02-05,Bayern München,RB Leipzig,9823,178475,3,2
+2022-02-06,Borussia Dortmund,Bayer Leverkusen,9789,8178,2,5
+2022-02-06,Wolfsburg,Greuther Fürth,8721,8357,4,1
+2022-02-11,RB Leipzig,1. FC Köln,178475,8722,3,1
+2022-02-12,Bochum,Bayern München,9911,9823,4,2
+2022-02-12,Borussia Mönchengladbach,Augsburg,9788,8406,3,2
+2022-02-12,Eintracht Frankfurt,Wolfsburg,9810,8721,0,2
+2022-02-12,Freiburg,Mainz 05,8358,9905,1,1
+2022-02-12,Greuther Fürth,Hertha BSC,8357,8177,2,1
+2022-02-12,Bayer Leverkusen,VfB Stuttgart,8178,10269,4,2
+2022-02-13,Union Berlin,Borussia Dortmund,8149,9789,0,3
+2022-02-13,Hoffenheim,Arminia Bielefeld,8226,9912,2,0
+2022-02-18,Mainz 05,Bayer Leverkusen,9905,8178,3,2
+2022-02-19,Arminia Bielefeld,Union Berlin,9912,8149,1,0
+2022-02-19,Augsburg,Freiburg,8406,8358,1,2
+2022-02-19,VfB Stuttgart,Bochum,10269,9911,1,1
+2022-02-19,Wolfsburg,Hoffenheim,8721,8226,1,2
+2022-02-19,1. FC Köln,Eintracht Frankfurt,8722,9810,1,0
+2022-02-20,Bayern München,Greuther Fürth,9823,8357,4,1
+2022-02-20,Borussia Dortmund,Borussia Mönchengladbach,9789,9788,6,0
+2022-02-20,Hertha BSC,RB Leipzig,8177,178475,1,6
+2022-02-25,Hoffenheim,VfB Stuttgart,8226,10269,2,1
+2022-02-26,Bayer Leverkusen,Arminia Bielefeld,8178,9912,3,0
+2022-02-26,Borussia Mönchengladbach,Wolfsburg,9788,8721,2,2
+2022-02-26,Freiburg,Hertha BSC,8358,8177,3,0
+2022-02-26,Greuther Fürth,1. FC Köln,8357,8722,1,1
+2022-02-26,Union Berlin,Mainz 05,8149,9905,3,1
+2022-02-26,Eintracht Frankfurt,Bayern München,9810,9823,0,1
+2022-02-27,Bochum,RB Leipzig,9911,178475,0,1
+2022-02-27,Augsburg,Borussia Dortmund,8406,9789,1,1
+2022-03-04,Arminia Bielefeld,Augsburg,9912,8406,0,1
+2022-03-05,Bayern München,Bayer Leverkusen,9823,8178,1,1
+2022-03-05,Bochum,Greuther Fürth,9911,8357,2,1
+2022-03-05,Hertha BSC,Eintracht Frankfurt,8177,9810,1,4
+2022-03-05,RB Leipzig,Freiburg,178475,8358,1,1
+2022-03-05,Wolfsburg,Union Berlin,8721,8149,1,0
+2022-03-05,VfB Stuttgart,Borussia Mönchengladbach,10269,9788,3,2
+2022-03-06,1. FC Köln,Hoffenheim,8722,8226,0,1
+2022-03-12,Freiburg,Wolfsburg,8358,8721,3,2
+2022-03-12,Hoffenheim,Bayern München,8226,9823,1,1
+2022-03-12,Union Berlin,VfB Stuttgart,8149,10269,1,1
+2022-03-12,Borussia Mönchengladbach,Hertha BSC,9788,8177,2,0
+2022-03-13,Bayer Leverkusen,1. FC Köln,8178,8722,0,1
+2022-03-13,Borussia Dortmund,Arminia Bielefeld,9789,9912,1,0
+2022-03-13,Eintracht Frankfurt,Bochum,9810,9911,2,1
+2022-03-13,Greuther Fürth,RB Leipzig,8357,178475,1,6
+2022-03-16,Mainz 05,Borussia Dortmund,9905,9789,0,1
+2022-03-18,Bochum,Borussia Mönchengladbach,9911,9788,0,2
+2022-03-19,Greuther Fürth,Freiburg,8357,8358,0,0
+2022-03-19,Hertha BSC,Hoffenheim,8177,8226,3,0
+2022-03-19,Mainz 05,Arminia Bielefeld,9905,9912,4,0
+2022-03-19,VfB Stuttgart,Augsburg,10269,8406,3,2
+2022-03-19,Bayern München,Union Berlin,9823,8149,4,0
+2022-03-20,RB Leipzig,Eintracht Frankfurt,178475,9810,0,0
+2022-03-20,Wolfsburg,Bayer Leverkusen,8721,8178,0,2
+2022-03-20,1. FC Köln,Borussia Dortmund,8722,9789,1,1
+2022-04-01,Union Berlin,1. FC Köln,8149,8722,1,0
+2022-04-02,Arminia Bielefeld,VfB Stuttgart,9912,10269,1,1
+2022-04-02,Bayer Leverkusen,Hertha BSC,8178,8177,2,1
+2022-04-02,Eintracht Frankfurt,Greuther Fürth,9810,8357,0,0
+2022-04-02,Freiburg,Bayern München,8358,9823,1,4
+2022-04-02,Hoffenheim,Bochum,8226,9911,1,2
+2022-04-02,Borussia Dortmund,RB Leipzig,9789,178475,1,4
+2022-04-03,Augsburg,Wolfsburg,8406,8721,3,0
+2022-04-03,Borussia Mönchengladbach,Mainz 05,9788,9905,1,1
+2022-04-06,Augsburg,Mainz 05,8406,9905,2,1
+2022-04-08,VfB Stuttgart,Borussia Dortmund,10269,9789,0,2
+2022-04-09,Bayern München,Augsburg,9823,8406,1,0
+2022-04-09,1. FC Köln,Mainz 05,8722,9905,3,2
+2022-04-09,Greuther Fürth,Borussia Mönchengladbach,8357,9788,0,2
+2022-04-09,Wolfsburg,Arminia Bielefeld,8721,9912,4,0
+2022-04-09,Hertha BSC,Union Berlin,8177,8149,1,4
+2022-04-10,Bochum,Bayer Leverkusen,9911,8178,0,0
+2022-04-10,Eintracht Frankfurt,Freiburg,9810,8358,1,2
+2022-04-10,RB Leipzig,Hoffenheim,178475,8226,3,0
+2022-04-16,Augsburg,Hertha BSC,8406,8177,0,1
+2022-04-16,Borussia Dortmund,Wolfsburg,9789,8721,6,1
+2022-04-16,Freiburg,Bochum,8358,9911,3,0
+2022-04-16,Mainz 05,VfB Stuttgart,9905,10269,0,0
+2022-04-16,Borussia Mönchengladbach,1. FC Köln,9788,8722,1,3
+2022-04-17,Arminia Bielefeld,Bayern München,9912,9823,0,3
+2022-04-17,Hoffenheim,Greuther Fürth,8226,8357,0,0
+2022-04-17,Union Berlin,Eintracht Frankfurt,8149,9810,2,0
+2022-04-17,Bayer Leverkusen,RB Leipzig,8178,178475,0,1
+2022-04-22,Wolfsburg,Mainz 05,8721,9905,5,0
+2022-04-23,Eintracht Frankfurt,Hoffenheim,9810,8226,2,2
+2022-04-23,1. FC Köln,Arminia Bielefeld,8722,9912,3,1
+2022-04-23,Freiburg,Borussia Mönchengladbach,8358,9788,3,3
+2022-04-23,Greuther Fürth,Bayer Leverkusen,8357,8178,1,4
+2022-04-23,RB Leipzig,Union Berlin,178475,8149,1,2
+2022-04-23,Bayern München,Borussia Dortmund,9823,9789,3,1
+2022-04-24,Bochum,Augsburg,9911,8406,0,2
+2022-04-24,Hertha BSC,VfB Stuttgart,8177,10269,2,0
+2022-04-29,Union Berlin,Greuther Fürth,8149,8357,1,1
+2022-04-30,Arminia Bielefeld,Hertha BSC,9912,8177,1,1
+2022-04-30,Augsburg,1. FC Köln,8406,8722,1,4
+2022-04-30,Borussia Dortmund,Bochum,9789,9911,3,4
+2022-04-30,Mainz 05,Bayern München,9905,9823,3,1
+2022-04-30,VfB Stuttgart,Wolfsburg,10269,8721,1,1
+2022-04-30,Hoffenheim,Freiburg,8226,8358,3,4
+2022-05-02,Bayer Leverkusen,Eintracht Frankfurt,8178,9810,2,0
+2022-05-02,Borussia Mönchengladbach,RB Leipzig,9788,178475,3,1
+2022-05-06,Bochum,Arminia Bielefeld,9911,9912,2,1
+2022-05-07,1. FC Köln,Wolfsburg,8722,8721,0,1
+2022-05-07,Freiburg,Union Berlin,8358,8149,1,4
+2022-05-07,Greuther Fürth,Borussia Dortmund,8357,9789,1,3
+2022-05-07,Hoffenheim,Bayer Leverkusen,8226,8178,2,4
+2022-05-07,Hertha BSC,Mainz 05,8177,9905,1,2
+2022-05-08,Eintracht Frankfurt,Borussia Mönchengladbach,9810,9788,1,1
+2022-05-08,Bayern München,VfB Stuttgart,9823,10269,2,2
+2022-05-08,RB Leipzig,Augsburg,178475,8406,4,0
+2022-05-14,Arminia Bielefeld,RB Leipzig,9912,178475,1,1
+2022-05-14,Augsburg,Greuther Fürth,8406,8357,2,1
+2022-05-14,Bayer Leverkusen,Freiburg,8178,8358,2,1
+2022-05-14,Borussia Dortmund,Hertha BSC,9789,8177,2,1
+2022-05-14,Borussia Mönchengladbach,Hoffenheim,9788,8226,5,1
+2022-05-14,Mainz 05,Eintracht Frankfurt,9905,9810,2,2
+2022-05-14,Union Berlin,Bochum,8149,9911,3,2
+2022-05-14,VfB Stuttgart,1. FC Köln,10269,8722,2,1
+2022-05-14,Wolfsburg,Bayern München,8721,9823,2,2

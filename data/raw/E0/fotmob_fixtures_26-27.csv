@@ -1,0 +1,91 @@
+day,home,away,home_id,away_id,hg,ag
+2026-08-21,Arsenal,Coventry City,9825,8669,3,0
+2026-08-22,Hull City,Manchester United,8667,10260,2,0
+2026-08-22,Everton,Crystal Palace,8668,9826,2,0
+2026-08-22,Ipswich Town,Sunderland,9902,8472,2,1
+2026-08-22,Nottingham Forest,Leeds United,10203,8463,0,1
+2026-08-22,Brentford,Tottenham Hotspur,9937,8586,3,0
+2026-08-23,Brighton & Hove Albion,Aston Villa,10204,10252,4,0
+2026-08-23,Manchester City,AFC Bournemouth,8456,8678,2,1
+2026-08-23,Newcastle United,Liverpool,10261,8650,2,2
+2026-08-24,Fulham,Chelsea,9879,8455,2,3
+2026-08-28,Crystal Palace,Manchester City,9826,8456,1,4
+2026-08-29,Liverpool,Nottingham Forest,8650,10203,2,2
+2026-08-29,AFC Bournemouth,Everton,8678,8668,1,1
+2026-08-29,Coventry City,Hull City,8669,8667,0,1
+2026-08-29,Tottenham Hotspur,Newcastle United,8586,10261,0,2
+2026-08-30,Chelsea,Brighton & Hove Albion,8455,10204,4,3
+2026-08-30,Leeds United,Brentford,8463,9937,1,1
+2026-08-30,Sunderland,Fulham,8472,9879,1,0
+2026-08-30,Manchester United,Ipswich Town,10260,9902,5,2
+2026-08-31,Aston Villa,Arsenal,10252,9825,0,1
+2026-09-04,Ipswich Town,Liverpool,9902,8650,0,2
+2026-09-05,Newcastle United,AFC Bournemouth,10261,8678,2,2
+2026-09-05,Brentford,Sunderland,9937,8472,1,1
+2026-09-05,Brighton & Hove Albion,Leeds United,10204,8463,1,1
+2026-09-05,Fulham,Crystal Palace,9879,9826,2,3
+2026-09-05,Manchester City,Coventry City,8456,8669,1,0
+2026-09-05,Nottingham Forest,Tottenham Hotspur,10203,8586,0,0
+2026-09-05,Hull City,Aston Villa,8667,10252,0,0
+2026-09-06,Everton,Manchester United,8668,10260,2,2
+2026-09-06,Arsenal,Chelsea,9825,8455,2,1
+2026-09-12,AFC Bournemouth,Brentford,8678,9937,2,2
+2026-09-12,Aston Villa,Nottingham Forest,10252,10203,1,2
+2026-09-12,Chelsea,Hull City,8455,8667,2,2
+2026-09-12,Crystal Palace,Ipswich Town,9826,9902,2,3
+2026-09-12,Liverpool,Fulham,8650,9879,0,0
+2026-09-12,Tottenham Hotspur,Everton,8586,8668,0,0
+2026-09-12,Sunderland,Arsenal,8472,9825,0,2
+2026-09-13,Coventry City,Brighton & Hove Albion,8669,10204,0,5
+2026-09-13,Manchester United,Manchester City,10260,8456,0,1
+2026-09-14,Leeds United,Newcastle United,8463,10261,4,1
+2026-09-18,Brentford,Chelsea,9937,8455,3,0
+2026-09-19,Tottenham Hotspur,Aston Villa,8586,10252,2,3
+2026-09-19,Brighton & Hove Albion,Arsenal,10204,9825,3,0
+2026-09-19,Everton,Ipswich Town,8668,9902,1,0
+2026-09-19,Newcastle United,Hull City,10261,8667,2,1
+2026-09-19,Nottingham Forest,Coventry City,10203,8669,0,1
+2026-09-20,AFC Bournemouth,Liverpool,8678,8650,0,1
+2026-09-20,Leeds United,Crystal Palace,8463,9826,0,0
+2026-09-20,Manchester City,Sunderland,8456,8472,5,3
+2026-09-20,Fulham,Manchester United,9879,10260,1,1
+2026-10-10,Arsenal,Leeds United,9825,8463,2,1
+2026-10-10,Aston Villa,Brentford,10252,9937,2,2
+2026-10-10,Chelsea,AFC Bournemouth,8455,8678,5,1
+2026-10-10,Ipswich Town,Fulham,9902,9879,2,1
+2026-10-10,Sunderland,Brighton & Hove Albion,8472,10204,0,2
+2026-10-10,Manchester United,Tottenham Hotspur,10260,8586,1,1
+2026-10-11,Crystal Palace,Nottingham Forest,9826,10203,3,1
+2026-10-11,Hull City,Everton,8667,8668,2,2
+2026-10-11,Liverpool,Manchester City,8650,8456,0,3
+2026-10-12,Coventry City,Newcastle United,8669,10261,4,1
+2026-10-17,Everton,Chelsea,8668,8455,0,2
+2026-10-17,Brentford,Liverpool,9937,8650,1,2
+2026-10-17,Fulham,Hull City,9879,8667,1,0
+2026-10-17,Manchester City,Ipswich Town,8456,9902,3,2
+2026-10-17,Newcastle United,Aston Villa,10261,10252,0,1
+2026-10-18,AFC Bournemouth,Sunderland,8678,8472,2,0
+2026-10-18,Brighton & Hove Albion,Crystal Palace,10204,9826,5,0
+2026-10-18,Leeds United,Manchester United,8463,10260,1,1
+2026-10-18,Nottingham Forest,Arsenal,10203,9825,0,1
+2026-10-19,Tottenham Hotspur,Coventry City,8586,8669,3,1
+2026-10-23,Ipswich Town,Nottingham Forest,9902,10203,1,1
+2026-10-24,Aston Villa,Manchester City,10252,8456,2,1
+2026-10-24,Arsenal,Everton,9825,8668,2,0
+2026-10-24,Coventry City,Fulham,8669,9879,0,1
+2026-10-24,Chelsea,Tottenham Hotspur,8455,8586,0,2
+2026-10-25,Crystal Palace,Newcastle United,9826,10261,0,2
+2026-10-25,Hull City,Brentford,8667,9937,1,1
+2026-10-25,Liverpool,Brighton & Hove Albion,8650,10204,2,0
+2026-10-25,Manchester United,AFC Bournemouth,10260,8678,0,3
+2026-10-25,Sunderland,Leeds United,8472,8463,0,0
+2026-10-31,Chelsea,Manchester United,8455,10260,2,0
+2026-10-31,AFC Bournemouth,Leeds United,8678,8463,2,0
+2026-10-31,Brentford,Nottingham Forest,9937,10203,2,0
+2026-10-31,Coventry City,Sunderland,8669,8472,3,1
+2026-10-31,Hull City,Ipswich Town,8667,9902,2,2
+2026-10-31,Manchester City,Brighton & Hove Albion,8456,10204,0,1
+2026-10-31,Tottenham Hotspur,Crystal Palace,8586,9826,2,0
+2026-10-31,Aston Villa,Fulham,10252,9879,1,1
+2026-11-01,Liverpool,Arsenal,8650,9825,0,1
+2026-11-02,Newcastle United,Everton,10261,8668,0,1

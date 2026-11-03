@@ -1,0 +1,307 @@
+day,home,away,home_id,away_id,hg,ag
+2025-08-15,Rennes,Marseille,9851,8592,1,0
+2025-08-16,Lens,Lyon,8588,9748,0,1
+2025-08-16,Monaco,Le Havre,9829,9746,3,1
+2025-08-16,Nice,Toulouse,9831,9941,0,1
+2025-08-17,Brest,Lille,8521,8639,3,3
+2025-08-17,Angers,Paris FC,8121,6379,1,0
+2025-08-17,Auxerre,Lorient,8583,8689,1,0
+2025-08-17,Metz,Strasbourg,8550,9848,0,1
+2025-08-17,Nantes,Paris Saint-Germain,9830,9847,0,1
+2025-08-22,Paris Saint-Germain,Angers,9847,8121,1,0
+2025-08-23,Marseille,Paris FC,8592,6379,5,2
+2025-08-23,Nice,Auxerre,9831,8583,3,1
+2025-08-23,Lyon,Metz,9748,8550,3,0
+2025-08-24,Lorient,Rennes,8689,9851,4,0
+2025-08-24,Le Havre,Lens,9746,8588,1,2
+2025-08-24,Strasbourg,Nantes,9848,9830,1,0
+2025-08-24,Toulouse,Brest,9941,8521,2,0
+2025-08-24,Lille,Monaco,8639,9829,1,0
+2025-08-29,Lens,Brest,8588,8521,3,1
+2025-08-30,Lorient,Lille,8689,8639,1,7
+2025-08-30,Nantes,Auxerre,9830,8583,1,0
+2025-08-30,Toulouse,Paris Saint-Germain,9941,9847,3,6
+2025-08-31,Angers,Rennes,8121,9851,1,1
+2025-08-31,Le Havre,Nice,9746,9831,3,1
+2025-08-31,Monaco,Strasbourg,9829,9848,3,2
+2025-08-31,Paris FC,Metz,6379,8550,3,2
+2025-08-31,Lyon,Marseille,9748,8592,1,0
+2025-09-12,Marseille,Lorient,8592,8689,4,0
+2025-09-13,Nice,Nantes,9831,9830,1,0
+2025-09-13,Auxerre,Monaco,8583,9829,1,2
+2025-09-14,Lille,Toulouse,8639,9941,2,1
+2025-09-14,Brest,Paris FC,8521,6379,1,2
+2025-09-14,Metz,Angers,8550,8121,1,1
+2025-09-14,Paris Saint-Germain,Lens,9847,8588,2,0
+2025-09-14,Strasbourg,Le Havre,9848,9746,1,0
+2025-09-14,Rennes,Lyon,9851,9748,3,1
+2025-09-19,Lyon,Angers,9748,8121,1,0
+2025-09-20,Nantes,Rennes,9830,9851,2,2
+2025-09-20,Brest,Nice,8521,9831,4,1
+2025-09-20,Lens,Lille,8588,8639,3,0
+2025-09-21,Paris FC,Strasbourg,6379,9848,2,3
+2025-09-21,Auxerre,Toulouse,8583,9941,1,0
+2025-09-21,Le Havre,Lorient,9746,8689,1,1
+2025-09-21,Monaco,Metz,9829,8550,5,2
+2025-09-22,Marseille,Paris Saint-Germain,8592,9847,1,0
+2025-09-26,Strasbourg,Marseille,9848,8592,1,2
+2025-09-27,Lorient,Monaco,8689,9829,3,1
+2025-09-27,Toulouse,Nantes,9941,9830,2,2
+2025-09-27,Paris Saint-Germain,Auxerre,9847,8583,2,0
+2025-09-28,Nice,Paris FC,9831,6379,1,1
+2025-09-28,Angers,Brest,8121,8521,0,2
+2025-09-28,Lille,Lyon,8639,9748,0,1
+2025-09-28,Metz,Le Havre,8550,9746,0,0
+2025-09-28,Rennes,Lens,9851,8588,0,0
+2025-10-03,Paris FC,Lorient,6379,8689,2,0
+2025-10-04,Metz,Marseille,8550,8592,0,3
+2025-10-04,Brest,Nantes,8521,9830,0,0
+2025-10-04,Auxerre,Lens,8583,8588,1,2
+2025-10-05,Lyon,Toulouse,9748,9941,1,2
+2025-10-05,Le Havre,Rennes,9746,9851,2,2
+2025-10-05,Monaco,Nice,9829,9831,2,2
+2025-10-05,Strasbourg,Angers,9848,8121,5,0
+2025-10-05,Lille,Paris Saint-Germain,8639,9847,1,1
+2025-10-17,Paris Saint-Germain,Strasbourg,9847,9848,3,3
+2025-10-18,Nice,Lyon,9831,9748,3,2
+2025-10-18,Angers,Monaco,8121,9829,1,1
+2025-10-18,Marseille,Le Havre,8592,9746,6,2
+2025-10-19,Lens,Paris FC,8588,6379,2,1
+2025-10-19,Lorient,Brest,8689,8521,3,3
+2025-10-19,Rennes,Auxerre,9851,8583,2,2
+2025-10-19,Toulouse,Metz,9941,8550,4,0
+2025-10-19,Nantes,Lille,9830,8639,0,2
+2025-10-24,Paris FC,Nantes,6379,9830,1,2
+2025-10-25,Brest,Paris Saint-Germain,8521,9847,0,3
+2025-10-25,Monaco,Toulouse,9829,9941,1,0
+2025-10-25,Lens,Marseille,8588,8592,2,1
+2025-10-26,Lille,Metz,8639,8550,6,1
+2025-10-26,Angers,Lorient,8121,8689,2,0
+2025-10-26,Auxerre,Le Havre,8583,9746,0,1
+2025-10-26,Rennes,Nice,9851,9831,1,2
+2025-10-26,Lyon,Strasbourg,9748,9848,2,1
+2025-10-29,Le Havre,Brest,9746,8521,1,0
+2025-10-29,Lorient,Paris Saint-Germain,8689,9847,1,1
+2025-10-29,Metz,Lens,8550,8588,2,0
+2025-10-29,Nice,Lille,9831,8639,2,0
+2025-10-29,Marseille,Angers,8592,8121,2,2
+2025-10-29,Nantes,Monaco,9830,9829,3,5
+2025-10-29,Paris FC,Lyon,6379,9748,3,3
+2025-10-29,Strasbourg,Auxerre,9848,8583,3,0
+2025-10-29,Toulouse,Rennes,9941,9851,2,2
+2025-11-01,Paris Saint-Germain,Nice,9847,9831,1,0
+2025-11-01,Monaco,Paris FC,9829,6379,0,1
+2025-11-01,Auxerre,Marseille,8583,8592,0,1
+2025-11-02,Rennes,Strasbourg,9851,9848,4,1
+2025-11-02,Lens,Lorient,8588,8689,3,0
+2025-11-02,Lille,Angers,8639,8121,1,0
+2025-11-02,Nantes,Metz,9830,8550,0,2
+2025-11-02,Toulouse,Le Havre,9941,9746,0,0
+2025-11-02,Brest,Lyon,8521,9748,0,0
+2025-11-07,Paris FC,Rennes,6379,9851,0,1
+2025-11-08,Marseille,Brest,8592,8521,3,0
+2025-11-08,Le Havre,Nantes,9746,9830,1,1
+2025-11-08,Monaco,Lens,9829,8588,1,4
+2025-11-09,Lorient,Toulouse,8689,9941,1,1
+2025-11-09,Angers,Auxerre,8121,8583,2,0
+2025-11-09,Metz,Nice,8550,9831,2,1
+2025-11-09,Strasbourg,Lille,9848,8639,2,0
+2025-11-09,Lyon,Paris Saint-Germain,9748,9847,2,3
+2025-11-21,Nice,Marseille,9831,8592,1,5
+2025-11-22,Lens,Strasbourg,8588,9848,1,0
+2025-11-22,Rennes,Monaco,9851,9829,4,1
+2025-11-22,Paris Saint-Germain,Le Havre,9847,9746,3,0
+2025-11-23,Auxerre,Lyon,8583,9748,0,0
+2025-11-23,Brest,Metz,8521,8550,3,2
+2025-11-23,Nantes,Lorient,9830,8689,1,1
+2025-11-23,Toulouse,Angers,9941,8121,0,1
+2025-11-23,Lille,Paris FC,8639,6379,4,2
+2025-11-28,Metz,Rennes,8550,9851,0,1
+2025-11-29,Monaco,Paris Saint-Germain,9829,9847,1,0
+2025-11-29,Paris FC,Auxerre,6379,8583,1,1
+2025-11-29,Marseille,Toulouse,8592,9941,2,2
+2025-11-30,Strasbourg,Brest,9848,8521,1,2
+2025-11-30,Angers,Lens,8121,8588,1,2
+2025-11-30,Le Havre,Lille,9746,8639,0,1
+2025-11-30,Lorient,Nice,8689,9831,3,1
+2025-11-30,Lyon,Nantes,9748,9830,3,0
+2025-12-05,Brest,Monaco,8521,9829,1,0
+2025-12-05,Lille,Marseille,8639,8592,1,0
+2025-12-06,Nantes,Lens,9830,8588,1,2
+2025-12-06,Toulouse,Strasbourg,9941,9848,1,0
+2025-12-06,Paris Saint-Germain,Rennes,9847,9851,5,0
+2025-12-07,Nice,Angers,9831,8121,0,1
+2025-12-07,Auxerre,Metz,8583,8550,3,1
+2025-12-07,Le Havre,Paris FC,9746,6379,0,0
+2025-12-07,Lorient,Lyon,8689,9748,1,0
+2025-12-12,Angers,Nantes,8121,9830,4,1
+2025-12-13,Rennes,Brest,9851,8521,3,1
+2025-12-13,Metz,Paris Saint-Germain,8550,9847,2,3
+2025-12-13,Paris FC,Toulouse,6379,9941,0,3
+2025-12-14,Lyon,Le Havre,9748,9746,1,0
+2025-12-14,Auxerre,Lille,8583,8639,3,4
+2025-12-14,Lens,Nice,8588,9831,2,0
+2025-12-14,Strasbourg,Lorient,9848,8689,0,0
+2025-12-14,Marseille,Monaco,8592,9829,1,0
+2026-01-02,Toulouse,Lens,9941,8588,0,3
+2026-01-03,Monaco,Lyon,9829,9748,1,3
+2026-01-03,Nice,Strasbourg,9831,9848,1,1
+2026-01-03,Lille,Rennes,8639,9851,0,2
+2026-01-04,Marseille,Nantes,8592,9830,0,2
+2026-01-04,Brest,Auxerre,8521,8583,2,0
+2026-01-04,Le Havre,Angers,9746,8121,2,1
+2026-01-04,Lorient,Metz,8689,8550,1,1
+2026-01-04,Paris Saint-Germain,Paris FC,9847,6379,2,1
+2026-01-16,Monaco,Lorient,9829,8689,1,3
+2026-01-16,Paris Saint-Germain,Lille,9847,8639,3,0
+2026-01-17,Lens,Auxerre,8588,8583,1,0
+2026-01-17,Toulouse,Nice,9941,9831,5,1
+2026-01-17,Angers,Marseille,8121,8592,2,5
+2026-01-18,Strasbourg,Metz,9848,8550,2,1
+2026-01-18,Nantes,Paris FC,9830,6379,1,2
+2026-01-18,Rennes,Le Havre,9851,9746,1,1
+2026-01-18,Lyon,Brest,9748,8521,2,1
+2026-01-23,Auxerre,Paris Saint-Germain,8583,9847,0,1
+2026-01-24,Rennes,Lorient,9851,8689,0,2
+2026-01-24,Le Havre,Monaco,9746,9829,0,0
+2026-01-24,Marseille,Lens,8592,8588,3,1
+2026-01-25,Nantes,Nice,9830,9831,1,4
+2026-01-25,Brest,Toulouse,8521,9941,0,2
+2026-01-25,Metz,Lyon,8550,9748,2,5
+2026-01-25,Paris FC,Angers,6379,8121,0,0
+2026-01-25,Lille,Strasbourg,8639,9848,1,4
+2026-01-30,Lens,Le Havre,8588,9746,1,0
+2026-01-31,Paris FC,Marseille,6379,8592,2,2
+2026-01-31,Lorient,Nantes,8689,9830,2,1
+2026-01-31,Monaco,Rennes,9829,9851,4,0
+2026-02-01,Lyon,Lille,9748,8639,1,0
+2026-02-01,Angers,Metz,8121,8550,1,0
+2026-02-01,Nice,Brest,9831,8521,2,2
+2026-02-01,Toulouse,Auxerre,9941,8583,0,0
+2026-02-01,Strasbourg,Paris Saint-Germain,9848,9847,1,2
+2026-02-06,Metz,Lille,8550,8639,0,0
+2026-02-07,Lens,Rennes,8588,9851,3,1
+2026-02-07,Brest,Lorient,8521,8689,2,0
+2026-02-07,Nantes,Lyon,9830,9748,0,1
+2026-02-08,Nice,Monaco,9831,9829,0,0
+2026-02-08,Angers,Toulouse,8121,9941,1,0
+2026-02-08,Auxerre,Paris FC,8583,6379,0,0
+2026-02-08,Le Havre,Strasbourg,9746,9848,2,1
+2026-02-08,Paris Saint-Germain,Marseille,9847,8592,5,0
+2026-02-13,Rennes,Paris Saint-Germain,9851,9847,3,1
+2026-02-13,Monaco,Nantes,9829,9830,3,1
+2026-02-14,Marseille,Strasbourg,8592,9848,2,2
+2026-02-14,Lille,Brest,8639,8521,1,1
+2026-02-14,Paris FC,Lens,6379,8588,0,5
+2026-02-15,Le Havre,Toulouse,9746,9941,2,1
+2026-02-15,Lorient,Angers,8689,8121,2,0
+2026-02-15,Metz,Auxerre,8550,8583,1,3
+2026-02-15,Lyon,Nice,9748,9831,2,0
+2026-02-20,Brest,Marseille,8521,8592,2,0
+2026-02-21,Lens,Monaco,8588,9829,2,3
+2026-02-21,Toulouse,Paris FC,9941,6379,1,1
+2026-02-21,Paris Saint-Germain,Metz,9847,8550,3,0
+2026-02-22,Auxerre,Rennes,8583,9851,0,3
+2026-02-22,Angers,Lille,8121,8639,0,1
+2026-02-22,Nantes,Le Havre,9830,9746,2,0
+2026-02-22,Nice,Lorient,9831,8689,3,3
+2026-02-22,Strasbourg,Lyon,9848,9748,3,1
+2026-02-27,Strasbourg,Lens,9848,8588,1,1
+2026-02-28,Rennes,Toulouse,9851,9941,1,0
+2026-02-28,Monaco,Angers,9829,8121,2,0
+2026-02-28,Le Havre,Paris Saint-Germain,9746,9847,0,1
+2026-03-01,Paris FC,Nice,6379,9831,1,0
+2026-03-01,Lille,Nantes,8639,9830,1,0
+2026-03-01,Lorient,Auxerre,8689,8583,2,2
+2026-03-01,Metz,Brest,8550,8521,0,1
+2026-03-01,Marseille,Lyon,8592,9748,3,2
+2026-03-06,Paris Saint-Germain,Monaco,9847,9829,1,3
+2026-03-07,Nantes,Angers,9830,8121,0,1
+2026-03-07,Auxerre,Strasbourg,8583,9848,0,0
+2026-03-07,Toulouse,Marseille,9941,8592,0,1
+2026-03-08,Lens,Metz,8588,8550,3,0
+2026-03-08,Brest,Le Havre,8521,9746,2,0
+2026-03-08,Lille,Lorient,8639,8689,1,1
+2026-03-08,Nice,Rennes,9831,9851,0,4
+2026-03-08,Lyon,Paris FC,9748,6379,1,1
+2026-03-13,Marseille,Auxerre,8592,8583,1,0
+2026-03-14,Lorient,Lens,8689,8588,2,1
+2026-03-14,Angers,Nice,8121,9831,0,2
+2026-03-14,Monaco,Brest,9829,8521,2,0
+2026-03-15,Strasbourg,Paris FC,9848,6379,0,0
+2026-03-15,Le Havre,Lyon,9746,9748,0,0
+2026-03-15,Metz,Toulouse,8550,9941,3,4
+2026-03-15,Rennes,Lille,9851,8639,1,2
+2026-03-20,Lens,Angers,8588,8121,5,1
+2026-03-21,Toulouse,Lorient,9941,8689,1,0
+2026-03-21,Auxerre,Brest,8583,8521,3,0
+2026-03-21,Nice,Paris Saint-Germain,9831,9847,0,4
+2026-03-22,Lyon,Monaco,9748,9829,1,2
+2026-03-22,Marseille,Lille,8592,8639,1,2
+2026-03-22,Paris FC,Le Havre,6379,9746,3,2
+2026-03-22,Rennes,Metz,9851,8550,0,0
+2026-03-22,Nantes,Strasbourg,9830,9848,2,3
+2026-04-03,Paris Saint-Germain,Toulouse,9847,9941,3,1
+2026-04-04,Strasbourg,Nice,9848,9831,3,1
+2026-04-04,Brest,Rennes,8521,9851,3,4
+2026-04-04,Lille,Lens,8639,8588,3,0
+2026-04-05,Angers,Lyon,8121,9748,0,0
+2026-04-05,Le Havre,Auxerre,9746,8583,1,1
+2026-04-05,Lorient,Paris FC,8689,6379,1,1
+2026-04-05,Metz,Nantes,8550,9830,0,0
+2026-04-05,Monaco,Marseille,9829,8592,2,1
+2026-04-10,Paris FC,Monaco,6379,9829,4,1
+2026-04-10,Marseille,Metz,8592,8550,3,1
+2026-04-11,Auxerre,Nantes,8583,9830,0,0
+2026-04-11,Rennes,Angers,9851,8121,2,1
+2026-04-12,Nice,Le Havre,9831,9746,1,1
+2026-04-12,Toulouse,Lille,9941,8639,0,4
+2026-04-12,Lyon,Lorient,9748,8689,2,0
+2026-04-17,Lens,Toulouse,8588,9941,3,2
+2026-04-18,Lorient,Marseille,8689,8592,2,0
+2026-04-18,Angers,Le Havre,8121,9746,1,1
+2026-04-18,Lille,Nice,8639,9831,0,0
+2026-04-19,Monaco,Auxerre,9829,8583,2,2
+2026-04-19,Metz,Paris FC,8550,6379,1,3
+2026-04-19,Nantes,Brest,9830,8521,1,1
+2026-04-19,Strasbourg,Rennes,9848,9851,0,3
+2026-04-19,Paris Saint-Germain,Lyon,9847,9748,1,2
+2026-04-22,Paris Saint-Germain,Nantes,9847,9830,3,0
+2026-04-24,Brest,Lens,8521,8588,3,3
+2026-04-25,Lyon,Auxerre,9748,8583,3,2
+2026-04-25,Angers,Paris Saint-Germain,8121,9847,0,3
+2026-04-25,Toulouse,Monaco,9941,9829,2,2
+2026-04-26,Lorient,Strasbourg,8689,9848,2,3
+2026-04-26,Le Havre,Metz,9746,8550,4,4
+2026-04-26,Paris FC,Lille,6379,8639,0,1
+2026-04-26,Rennes,Nantes,9851,9830,2,1
+2026-04-26,Marseille,Nice,8592,9831,1,1
+2026-05-02,Nantes,Marseille,9830,8592,3,0
+2026-05-02,Paris Saint-Germain,Lorient,9847,8689,2,2
+2026-05-02,Metz,Monaco,8550,9829,1,2
+2026-05-02,Nice,Lens,9831,8588,1,1
+2026-05-03,Lille,Le Havre,8639,9746,1,1
+2026-05-03,Auxerre,Angers,8583,8121,3,1
+2026-05-03,Paris FC,Brest,6379,8521,4,0
+2026-05-03,Strasbourg,Toulouse,9848,9941,1,2
+2026-05-03,Lyon,Rennes,9748,9851,4,2
+2026-05-08,Lens,Nantes,8588,9830,1,0
+2026-05-10,Angers,Strasbourg,8121,9848,1,1
+2026-05-10,Auxerre,Nice,8583,9831,2,1
+2026-05-10,Le Havre,Marseille,9746,8592,0,1
+2026-05-10,Metz,Lorient,8550,8689,0,4
+2026-05-10,Monaco,Lille,9829,8639,0,1
+2026-05-10,Paris Saint-Germain,Brest,9847,8521,1,0
+2026-05-10,Rennes,Paris FC,9851,6379,2,1
+2026-05-10,Toulouse,Lyon,9941,9748,2,1
+2026-05-13,Brest,Strasbourg,8521,9848,1,2
+2026-05-13,Lens,Paris Saint-Germain,8588,9847,0,2
+2026-05-17,Brest,Angers,8521,8121,1,1
+2026-05-17,Lille,Auxerre,8639,8583,0,2
+2026-05-17,Lorient,Le Havre,8689,9746,0,2
+2026-05-17,Lyon,Lens,9748,8588,0,4
+2026-05-17,Marseille,Rennes,8592,9851,3,1
+2026-05-17,Nantes,Toulouse,9830,9941,0,0
+2026-05-17,Nice,Metz,9831,8550,0,0
+2026-05-17,Paris FC,Paris Saint-Germain,6379,9847,2,1
+2026-05-17,Strasbourg,Monaco,9848,9829,5,4

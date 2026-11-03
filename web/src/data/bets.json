@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02T21:59:52+00:00",
+  "generated": "2026-11-03T10:12:49+00:00",
   "bets": [
     {
       "gameweek": 1,
@@ -173,7 +173,7 @@
       "drawProb": 25.6,
       "awayProb": 58.0,
       "result": "A",
-      "profit": 0.6,
+      "profit": 0.65,
       "won": true,
       "settled": true
     },
@@ -253,7 +253,7 @@
       "drawProb": 27.0,
       "awayProb": 35.9,
       "result": "H",
-      "profit": 0.85,
+      "profit": 0.8,
       "won": true,
       "settled": true
     },
@@ -285,7 +285,7 @@
       "drawProb": 22.9,
       "awayProb": 26.6,
       "result": "H",
-      "profit": 1.38,
+      "profit": 1.4,
       "won": true,
       "settled": true
     },

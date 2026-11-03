@@ -1,0 +1,306 @@
+day,home,away,home_id,away_id,hg,ag
+2024-08-16,Le Havre AC,Paris Saint-Germain FC,533,524,1,4
+2024-08-17,Stade Brestois 29,Olympique de Marseille,512,516,1,5
+2024-08-17,Stade de Reims,Lille OSC,547,521,0,2
+2024-08-17,AS Monaco FC,AS Saint-Étienne,548,527,1,0
+2024-08-18,AJ Auxerre,OGC Nice,519,522,2,1
+2024-08-18,Montpellier HSC,RC Strasbourg Alsace,518,576,1,1
+2024-08-18,Toulouse FC,FC Nantes,511,543,0,0
+2024-08-18,Angers SCO,Racing Club de Lens,532,546,0,1
+2024-08-18,Stade Rennais FC 1901,Olympique Lyonnais,529,523,3,0
+2024-08-23,Paris Saint-Germain FC,Montpellier HSC,524,518,6,0
+2024-08-24,Olympique Lyonnais,AS Monaco FC,523,548,0,2
+2024-08-24,Lille OSC,Angers SCO,521,532,2,0
+2024-08-24,AS Saint-Étienne,Le Havre AC,527,533,0,2
+2024-08-25,Racing Club de Lens,Stade Brestois 29,546,512,2,0
+2024-08-25,RC Strasbourg Alsace,Stade Rennais FC 1901,576,529,3,1
+2024-08-25,FC Nantes,AJ Auxerre,543,519,2,0
+2024-08-25,OGC Nice,Toulouse FC,522,511,1,1
+2024-08-25,Olympique de Marseille,Stade de Reims,516,547,2,2
+2024-08-30,Olympique Lyonnais,RC Strasbourg Alsace,523,576,4,3
+2024-08-31,Stade Brestois 29,AS Saint-Étienne,512,527,4,0
+2024-08-31,Montpellier HSC,FC Nantes,518,543,1,3
+2024-08-31,Toulouse FC,Olympique de Marseille,511,516,1,3
+2024-09-01,AS Monaco FC,Racing Club de Lens,548,546,1,1
+2024-09-01,Angers SCO,OGC Nice,532,522,1,4
+2024-09-01,Le Havre AC,AJ Auxerre,533,519,3,1
+2024-09-01,Stade de Reims,Stade Rennais FC 1901,547,529,2,1
+2024-09-01,Lille OSC,Paris Saint-Germain FC,521,524,1,3
+2024-09-13,AS Saint-Étienne,Lille OSC,527,521,1,0
+2024-09-14,Olympique de Marseille,OGC Nice,516,522,2,0
+2024-09-14,AJ Auxerre,AS Monaco FC,519,548,0,3
+2024-09-14,Paris Saint-Germain FC,Stade Brestois 29,524,512,3,1
+2024-09-15,Stade Rennais FC 1901,Montpellier HSC,529,518,3,0
+2024-09-15,FC Nantes,Stade de Reims,543,547,1,2
+2024-09-15,Toulouse FC,Le Havre AC,511,533,2,0
+2024-09-15,RC Strasbourg Alsace,Angers SCO,576,532,1,1
+2024-09-15,Racing Club de Lens,Olympique Lyonnais,546,523,0,0
+2024-09-20,OGC Nice,AS Saint-Étienne,522,527,8,0
+2024-09-21,Lille OSC,RC Strasbourg Alsace,521,576,3,3
+2024-09-21,Stade Rennais FC 1901,Racing Club de Lens,529,546,1,1
+2024-09-21,Stade de Reims,Paris Saint-Germain FC,547,524,1,1
+2024-09-22,AS Monaco FC,Le Havre AC,548,533,3,1
+2024-09-22,Stade Brestois 29,Toulouse FC,512,511,2,0
+2024-09-22,Angers SCO,FC Nantes,532,543,1,1
+2024-09-22,Montpellier HSC,AJ Auxerre,518,519,3,2
+2024-09-22,Olympique Lyonnais,Olympique de Marseille,523,516,2,3
+2024-09-27,AJ Auxerre,Stade Brestois 29,519,512,3,0
+2024-09-27,Paris Saint-Germain FC,Stade Rennais FC 1901,524,529,3,1
+2024-09-28,Racing Club de Lens,OGC Nice,546,522,0,0
+2024-09-28,Le Havre AC,Lille OSC,533,521,0,3
+2024-09-28,AS Monaco FC,Montpellier HSC,548,518,2,1
+2024-09-29,Toulouse FC,Olympique Lyonnais,511,523,1,2
+2024-09-29,FC Nantes,AS Saint-Étienne,543,527,2,2
+2024-09-29,Angers SCO,Stade de Reims,532,547,1,3
+2024-09-29,RC Strasbourg Alsace,Olympique de Marseille,576,516,1,0
+2024-10-04,Olympique de Marseille,Angers SCO,516,532,1,1
+2024-10-05,AS Saint-Étienne,AJ Auxerre,527,519,3,1
+2024-10-05,Lille OSC,Toulouse FC,521,511,2,1
+2024-10-05,Stade Rennais FC 1901,AS Monaco FC,529,548,1,2
+2024-10-06,Olympique Lyonnais,FC Nantes,523,543,2,0
+2024-10-06,Stade Brestois 29,Le Havre AC,512,533,2,0
+2024-10-06,RC Strasbourg Alsace,Racing Club de Lens,576,546,2,2
+2024-10-06,Stade de Reims,Montpellier HSC,547,518,4,2
+2024-10-06,OGC Nice,Paris Saint-Germain FC,522,524,1,1
+2024-10-18,AS Monaco FC,Lille OSC,548,521,0,0
+2024-10-19,Stade Brestois 29,Stade Rennais FC 1901,512,529,1,1
+2024-10-19,AS Saint-Étienne,Racing Club de Lens,527,546,0,2
+2024-10-19,Paris Saint-Germain FC,RC Strasbourg Alsace,524,576,4,2
+2024-10-20,Le Havre AC,Olympique Lyonnais,533,523,0,4
+2024-10-20,AJ Auxerre,Stade de Reims,519,547,2,1
+2024-10-20,Toulouse FC,Angers SCO,511,532,1,1
+2024-10-20,FC Nantes,OGC Nice,543,522,1,1
+2024-10-20,Montpellier HSC,Olympique de Marseille,518,516,0,5
+2024-10-25,Stade Rennais FC 1901,Le Havre AC,529,533,1,0
+2024-10-26,Angers SCO,AS Saint-Étienne,532,527,4,2
+2024-10-26,Stade de Reims,Stade Brestois 29,547,512,1,2
+2024-10-26,Racing Club de Lens,Lille OSC,546,521,0,2
+2024-10-27,Olympique Lyonnais,AJ Auxerre,523,519,2,2
+2024-10-27,OGC Nice,AS Monaco FC,522,548,2,1
+2024-10-27,Montpellier HSC,Toulouse FC,518,511,0,3
+2024-10-27,RC Strasbourg Alsace,FC Nantes,576,543,3,1
+2024-10-27,Olympique de Marseille,Paris Saint-Germain FC,516,524,0,3
+2024-11-01,AS Monaco FC,Angers SCO,548,532,0,1
+2024-11-01,Lille OSC,Olympique Lyonnais,521,523,1,1
+2024-11-02,Paris Saint-Germain FC,Racing Club de Lens,524,546,1,0
+2024-11-02,Stade Brestois 29,OGC Nice,512,522,0,1
+2024-11-02,AS Saint-Étienne,RC Strasbourg Alsace,527,576,2,0
+2024-11-03,Toulouse FC,Stade de Reims,511,547,1,0
+2024-11-03,AJ Auxerre,Stade Rennais FC 1901,519,529,4,0
+2024-11-03,Le Havre AC,Montpellier HSC,533,518,1,0
+2024-11-03,FC Nantes,Olympique de Marseille,543,516,1,2
+2024-11-08,Olympique de Marseille,AJ Auxerre,516,519,1,3
+2024-11-09,RC Strasbourg Alsace,AS Monaco FC,576,548,1,3
+2024-11-09,Racing Club de Lens,FC Nantes,546,543,3,2
+2024-11-09,Angers SCO,Paris Saint-Germain FC,532,524,2,4
+2024-11-10,OGC Nice,Lille OSC,522,521,2,2
+2024-11-10,Montpellier HSC,Stade Brestois 29,518,512,3,1
+2024-11-10,Le Havre AC,Stade de Reims,533,547,0,3
+2024-11-10,Stade Rennais FC 1901,Toulouse FC,529,511,0,2
+2024-11-10,Olympique Lyonnais,AS Saint-Étienne,523,527,1,0
+2024-11-22,AS Monaco FC,Stade Brestois 29,548,512,3,2
+2024-11-22,Paris Saint-Germain FC,Toulouse FC,524,511,3,0
+2024-11-23,Racing Club de Lens,Olympique de Marseille,546,516,1,3
+2024-11-23,AS Saint-Étienne,Montpellier HSC,527,518,1,0
+2024-11-23,Stade de Reims,Olympique Lyonnais,547,523,1,1
+2024-11-24,Lille OSC,Stade Rennais FC 1901,521,529,1,0
+2024-11-24,FC Nantes,Le Havre AC,543,533,0,2
+2024-11-24,AJ Auxerre,Angers SCO,519,532,1,0
+2024-11-24,OGC Nice,RC Strasbourg Alsace,522,576,2,1
+2024-11-29,Stade de Reims,Racing Club de Lens,547,546,0,2
+2024-11-30,Stade Rennais FC 1901,AS Saint-Étienne,529,527,5,0
+2024-11-30,Stade Brestois 29,RC Strasbourg Alsace,512,576,3,1
+2024-11-30,Paris Saint-Germain FC,FC Nantes,524,543,1,1
+2024-12-01,Montpellier HSC,Lille OSC,518,521,2,2
+2024-12-01,Le Havre AC,Angers SCO,533,532,0,1
+2024-12-01,Toulouse FC,AJ Auxerre,511,519,2,0
+2024-12-01,Olympique Lyonnais,OGC Nice,523,522,4,1
+2024-12-01,Olympique de Marseille,AS Monaco FC,516,548,2,1
+2024-12-06,Lille OSC,Stade Brestois 29,521,512,3,1
+2024-12-06,AJ Auxerre,Paris Saint-Germain FC,519,524,0,0
+2024-12-07,AS Monaco FC,Toulouse FC,548,511,2,0
+2024-12-07,OGC Nice,Le Havre AC,522,533,2,1
+2024-12-07,Angers SCO,Olympique Lyonnais,532,523,0,3
+2024-12-08,Racing Club de Lens,Montpellier HSC,546,518,2,0
+2024-12-08,RC Strasbourg Alsace,Stade de Reims,576,547,0,0
+2024-12-08,FC Nantes,Stade Rennais FC 1901,543,529,1,0
+2024-12-08,AS Saint-Étienne,Olympique de Marseille,527,516,0,2
+2024-12-13,Toulouse FC,AS Saint-Étienne,511,527,2,1
+2024-12-14,Olympique de Marseille,Lille OSC,516,521,1,1
+2024-12-14,AJ Auxerre,Racing Club de Lens,519,546,2,2
+2024-12-14,Stade de Reims,AS Monaco FC,547,548,0,0
+2024-12-15,Montpellier HSC,OGC Nice,518,522,2,2
+2024-12-15,Stade Rennais FC 1901,Angers SCO,529,532,2,0
+2024-12-15,Le Havre AC,RC Strasbourg Alsace,533,576,0,3
+2024-12-15,Stade Brestois 29,FC Nantes,512,543,4,1
+2024-12-15,Paris Saint-Germain FC,Olympique Lyonnais,524,523,3,1
+2024-12-18,AS Monaco FC,Paris Saint-Germain FC,548,524,2,4
+2025-01-03,OGC Nice,Stade Rennais FC 1901,522,529,3,2
+2025-01-04,AS Saint-Étienne,Stade de Reims,527,547,3,1
+2025-01-04,Lille OSC,FC Nantes,521,543,1,1
+2025-01-04,Olympique Lyonnais,Montpellier HSC,523,518,1,0
+2025-01-05,Racing Club de Lens,Toulouse FC,546,511,0,1
+2025-01-05,Angers SCO,Stade Brestois 29,532,512,2,0
+2025-01-05,RC Strasbourg Alsace,AJ Auxerre,576,519,3,1
+2025-01-05,Olympique de Marseille,Le Havre AC,516,533,5,1
+2025-01-10,FC Nantes,AS Monaco FC,543,548,2,2
+2025-01-10,AJ Auxerre,Lille OSC,519,521,0,0
+2025-01-11,Stade Brestois 29,Olympique Lyonnais,512,523,2,1
+2025-01-11,Stade de Reims,OGC Nice,547,522,2,4
+2025-01-11,Stade Rennais FC 1901,Olympique de Marseille,529,516,1,2
+2025-01-12,Le Havre AC,Racing Club de Lens,533,546,1,2
+2025-01-12,Toulouse FC,RC Strasbourg Alsace,511,576,1,2
+2025-01-12,Montpellier HSC,Angers SCO,518,532,1,3
+2025-01-12,Paris Saint-Germain FC,AS Saint-Étienne,524,527,2,1
+2025-01-17,Montpellier HSC,AS Monaco FC,518,548,2,1
+2025-01-17,Lille OSC,OGC Nice,521,522,2,1
+2025-01-18,Racing Club de Lens,Paris Saint-Germain FC,546,524,1,2
+2025-01-18,Stade Rennais FC 1901,Stade Brestois 29,529,512,1,2
+2025-01-18,Olympique Lyonnais,Toulouse FC,523,511,0,0
+2025-01-19,AS Saint-Étienne,FC Nantes,527,543,1,1
+2025-01-19,Stade de Reims,Le Havre AC,547,533,1,1
+2025-01-19,Angers SCO,AJ Auxerre,532,519,2,0
+2025-01-19,Olympique de Marseille,RC Strasbourg Alsace,516,576,1,1
+2025-01-24,AJ Auxerre,AS Saint-Étienne,519,527,1,1
+2025-01-25,AS Monaco FC,Stade Rennais FC 1901,548,529,3,2
+2025-01-25,RC Strasbourg Alsace,Lille OSC,576,521,2,1
+2025-01-25,Paris Saint-Germain FC,Stade de Reims,524,547,1,1
+2025-01-26,Le Havre AC,Stade Brestois 29,533,512,0,1
+2025-01-26,FC Nantes,Olympique Lyonnais,543,523,1,1
+2025-01-26,Toulouse FC,Montpellier HSC,511,518,1,2
+2025-01-26,Racing Club de Lens,Angers SCO,546,532,1,0
+2025-01-26,OGC Nice,Olympique de Marseille,522,516,2,0
+2025-01-31,Montpellier HSC,Racing Club de Lens,518,546,0,2
+2025-02-01,Stade Brestois 29,Paris Saint-Germain FC,512,524,2,5
+2025-02-01,AS Monaco FC,AJ Auxerre,548,519,4,2
+2025-02-01,Lille OSC,AS Saint-Étienne,521,527,4,1
+2025-02-02,Toulouse FC,OGC Nice,511,522,1,1
+2025-02-02,Stade de Reims,FC Nantes,547,543,1,2
+2025-02-02,Angers SCO,Le Havre AC,532,533,1,1
+2025-02-02,Stade Rennais FC 1901,RC Strasbourg Alsace,529,576,1,0
+2025-02-02,Olympique de Marseille,Olympique Lyonnais,516,523,3,2
+2025-02-07,FC Nantes,Stade Brestois 29,543,512,0,2
+2025-02-07,Paris Saint-Germain FC,AS Monaco FC,524,548,4,1
+2025-02-08,OGC Nice,Racing Club de Lens,522,546,2,0
+2025-02-08,Lille OSC,Le Havre AC,521,533,1,2
+2025-02-08,AS Saint-Étienne,Stade Rennais FC 1901,527,529,0,2
+2025-02-09,Olympique Lyonnais,Stade de Reims,523,547,4,0
+2025-02-09,AJ Auxerre,Toulouse FC,519,511,2,2
+2025-02-09,RC Strasbourg Alsace,Montpellier HSC,576,518,2,0
+2025-02-09,Angers SCO,Olympique de Marseille,532,516,0,2
+2025-02-14,Stade Brestois 29,AJ Auxerre,512,519,2,2
+2025-02-15,Olympique de Marseille,AS Saint-Étienne,516,527,5,1
+2025-02-15,AS Monaco FC,FC Nantes,548,543,7,1
+2025-02-15,Toulouse FC,Paris Saint-Germain FC,511,524,0,1
+2025-02-16,Montpellier HSC,Olympique Lyonnais,518,523,1,4
+2025-02-16,Racing Club de Lens,RC Strasbourg Alsace,546,576,0,2
+2025-02-16,Stade de Reims,Angers SCO,547,532,0,1
+2025-02-16,Le Havre AC,OGC Nice,533,522,1,3
+2025-02-16,Stade Rennais FC 1901,Lille OSC,529,521,0,2
+2025-02-21,Stade Rennais FC 1901,Stade de Reims,529,547,1,0
+2025-02-22,Lille OSC,AS Monaco FC,521,548,2,1
+2025-02-22,AS Saint-Étienne,Angers SCO,527,532,3,3
+2025-02-22,AJ Auxerre,Olympique de Marseille,519,516,3,0
+2025-02-23,FC Nantes,Racing Club de Lens,543,546,3,1
+2025-02-23,Le Havre AC,Toulouse FC,533,511,1,4
+2025-02-23,RC Strasbourg Alsace,Stade Brestois 29,576,512,0,0
+2025-02-23,OGC Nice,Montpellier HSC,522,518,2,0
+2025-02-23,Olympique Lyonnais,Paris Saint-Germain FC,523,524,2,3
+2025-02-28,AS Monaco FC,Stade de Reims,548,547,3,0
+2025-03-01,AS Saint-Étienne,OGC Nice,527,522,1,3
+2025-03-01,Racing Club de Lens,Le Havre AC,546,533,3,4
+2025-03-01,Paris Saint-Germain FC,Lille OSC,524,521,4,1
+2025-03-02,Olympique Lyonnais,Stade Brestois 29,523,512,2,1
+2025-03-02,Montpellier HSC,Stade Rennais FC 1901,518,529,0,4
+2025-03-02,AJ Auxerre,RC Strasbourg Alsace,519,576,0,1
+2025-03-02,Angers SCO,Toulouse FC,532,511,0,4
+2025-03-02,Olympique de Marseille,FC Nantes,516,543,2,0
+2025-03-07,Toulouse FC,AS Monaco FC,511,548,1,1
+2025-03-08,Stade Rennais FC 1901,Paris Saint-Germain FC,529,524,1,4
+2025-03-08,Lille OSC,Montpellier HSC,521,518,1,0
+2025-03-08,Olympique de Marseille,Racing Club de Lens,516,546,0,1
+2025-03-09,Stade Brestois 29,Angers SCO,512,532,2,0
+2025-03-09,Le Havre AC,AS Saint-Étienne,533,527,1,1
+2025-03-09,Stade de Reims,AJ Auxerre,547,519,0,2
+2025-03-09,FC Nantes,RC Strasbourg Alsace,543,576,0,1
+2025-03-09,OGC Nice,Olympique Lyonnais,522,523,0,2
+2025-03-14,OGC Nice,AJ Auxerre,522,519,1,1
+2025-03-15,FC Nantes,Lille OSC,543,521,1,0
+2025-03-15,Angers SCO,AS Monaco FC,532,548,0,2
+2025-03-15,Racing Club de Lens,Stade Rennais FC 1901,546,529,1,0
+2025-03-16,Olympique Lyonnais,Le Havre AC,523,533,4,2
+2025-03-16,Stade Brestois 29,Stade de Reims,512,547,0,0
+2025-03-16,RC Strasbourg Alsace,Toulouse FC,576,511,2,1
+2025-03-16,Paris Saint-Germain FC,Olympique de Marseille,524,516,3,1
+2025-03-28,RC Strasbourg Alsace,Olympique Lyonnais,576,523,4,2
+2025-03-29,Stade de Reims,Olympique de Marseille,547,516,3,1
+2025-03-29,AS Saint-Étienne,Paris Saint-Germain FC,527,524,1,6
+2025-03-29,AS Monaco FC,OGC Nice,548,522,2,1
+2025-03-30,Toulouse FC,Stade Brestois 29,511,512,2,4
+2025-03-30,Angers SCO,Stade Rennais FC 1901,532,529,0,3
+2025-03-30,AJ Auxerre,Montpellier HSC,519,518,1,0
+2025-03-30,Le Havre AC,FC Nantes,533,543,3,2
+2025-03-30,Lille OSC,Racing Club de Lens,521,546,1,0
+2025-04-04,OGC Nice,FC Nantes,522,543,1,2
+2025-04-05,Paris Saint-Germain FC,Angers SCO,524,532,1,0
+2025-04-05,Stade Brestois 29,AS Monaco FC,512,548,2,1
+2025-04-05,Olympique Lyonnais,Lille OSC,523,521,2,1
+2025-04-06,Racing Club de Lens,AS Saint-Étienne,546,527,1,0
+2025-04-06,Montpellier HSC,Le Havre AC,518,533,0,2
+2025-04-06,Stade de Reims,RC Strasbourg Alsace,547,576,0,1
+2025-04-06,Stade Rennais FC 1901,AJ Auxerre,529,519,0,1
+2025-04-06,Olympique de Marseille,Toulouse FC,516,511,3,2
+2025-04-11,Racing Club de Lens,Stade de Reims,546,547,0,2
+2025-04-12,AS Monaco FC,Olympique de Marseille,548,516,3,0
+2025-04-12,Toulouse FC,Lille OSC,511,521,1,2
+2025-04-12,RC Strasbourg Alsace,OGC Nice,576,522,2,2
+2025-04-13,AS Saint-Étienne,Stade Brestois 29,527,512,3,3
+2025-04-13,Le Havre AC,Stade Rennais FC 1901,533,529,1,5
+2025-04-13,Angers SCO,Montpellier HSC,532,518,2,0
+2025-04-13,AJ Auxerre,Olympique Lyonnais,519,523,1,3
+2025-04-18,Stade Rennais FC 1901,FC Nantes,529,543,2,1
+2025-04-19,Paris Saint-Germain FC,Le Havre AC,524,533,2,1
+2025-04-19,AS Monaco FC,RC Strasbourg Alsace,548,576,0,0
+2025-04-19,Olympique de Marseille,Montpellier HSC,516,518,5,1
+2025-04-20,Lille OSC,AJ Auxerre,521,519,3,1
+2025-04-20,OGC Nice,Angers SCO,522,532,2,1
+2025-04-20,Stade Brestois 29,Racing Club de Lens,512,546,1,3
+2025-04-20,Stade de Reims,Toulouse FC,547,511,1,0
+2025-04-20,AS Saint-Étienne,Olympique Lyonnais,527,523,2,1
+2025-04-22,FC Nantes,Paris Saint-Germain FC,543,524,1,1
+2025-04-25,Paris Saint-Germain FC,OGC Nice,524,522,1,3
+2025-04-26,RC Strasbourg Alsace,AS Saint-Étienne,576,527,3,1
+2025-04-26,Le Havre AC,AS Monaco FC,533,548,1,1
+2025-04-26,Olympique Lyonnais,Stade Rennais FC 1901,523,529,4,1
+2025-04-27,Angers SCO,Lille OSC,532,521,0,2
+2025-04-27,FC Nantes,Toulouse FC,543,511,0,0
+2025-04-27,Montpellier HSC,Stade de Reims,518,547,0,0
+2025-04-27,Racing Club de Lens,AJ Auxerre,546,519,0,4
+2025-04-27,Olympique de Marseille,Stade Brestois 29,516,512,4,1
+2025-05-02,OGC Nice,Stade de Reims,522,547,1,0
+2025-05-03,RC Strasbourg Alsace,Paris Saint-Germain FC,576,524,2,1
+2025-05-03,Toulouse FC,Stade Rennais FC 1901,511,529,2,1
+2025-05-03,AS Saint-Étienne,AS Monaco FC,527,548,1,3
+2025-05-04,FC Nantes,Angers SCO,543,532,0,1
+2025-05-04,Olympique Lyonnais,Racing Club de Lens,523,546,1,2
+2025-05-04,Stade Brestois 29,Montpellier HSC,512,518,1,0
+2025-05-04,AJ Auxerre,Le Havre AC,519,533,1,2
+2025-05-04,Lille OSC,Olympique de Marseille,521,516,1,1
+2025-05-10,Stade de Reims,AS Saint-Étienne,547,527,0,2
+2025-05-10,AJ Auxerre,FC Nantes,519,543,1,1
+2025-05-10,Angers SCO,RC Strasbourg Alsace,532,576,2,1
+2025-05-10,Le Havre AC,Olympique de Marseille,533,516,1,3
+2025-05-10,Stade Rennais FC 1901,OGC Nice,529,522,2,0
+2025-05-10,Montpellier HSC,Paris Saint-Germain FC,518,524,1,4
+2025-05-10,Toulouse FC,Racing Club de Lens,511,546,1,1
+2025-05-10,Stade Brestois 29,Lille OSC,512,521,2,0
+2025-05-10,AS Monaco FC,Olympique Lyonnais,548,523,2,0
+2025-05-17,Olympique de Marseille,Stade Rennais FC 1901,516,529,4,2
+2025-05-17,Olympique Lyonnais,Angers SCO,523,532,2,0
+2025-05-17,OGC Nice,Stade Brestois 29,522,512,6,0
+2025-05-17,AS Saint-Étienne,Toulouse FC,527,511,2,3
+2025-05-17,Lille OSC,Stade de Reims,521,547,2,1
+2025-05-17,RC Strasbourg Alsace,Le Havre AC,576,533,2,3
+2025-05-17,FC Nantes,Montpellier HSC,543,518,3,0
+2025-05-17,Racing Club de Lens,AS Monaco FC,546,548,4,0
+2025-05-17,Paris Saint-Germain FC,AJ Auxerre,524,519,3,1

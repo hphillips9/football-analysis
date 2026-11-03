@@ -71,7 +71,7 @@ One command, [`src/run_week.py`](src/run_week.py), runs the whole cycle:
 | Step | What it does |
 | --- | --- |
 | 1 | Fetch new results from football-data.co.uk into `data/raw/<Div>/results_<season>.csv` for each enabled competition (`CURRENT_SEASON` in `src/competitions.py`) |
-| 2 | Settle any pending bets in `data/raw/Bets.csv` (result + profit) |
+| 2 | Settle any pending bets in `data/raw/Bets.csv` (result, the odds used, profit; no odds = unpriced, counted for accuracy only) |
 | 3 | Rebuild `data/processed/all_matches.csv` (results + FotMob/Opta xG with Understat as backup, cached per season) |
 | 4 | Backfill gameweek / probabilities on any `Bets.csv` rows missing them |
 | 5 | Pull the next round's fixtures from football-data.org, predict them, append the bets |
@@ -152,15 +152,18 @@ src/
   export_web.py           write the site's JSON feed
   backtest.py             season-by-season evaluation
   evaluate.py             walk-forward, per-match log loss, paired bootstrap (shared with notebooks)
-  team_names.py           name normalisation across data sources
+  team_names.py           name normalisation across data sources; lookups by FotMob / football-data.org id
+  bet_schema.py           Bets.csv columns and order, shared by everything that writes it
   competitions.py         registry of competitions (codes, ids) and which are enabled
   tools/migrate_layout.py one-off move to the per-competition data layout
+  tools/migrate_bets.py   one-off Bets.csv migration to the multi-competition schema
+  tools/suggest_aliases.py  offline: suggest team_names.csv rows by date+score voting (run when clubs are promoted)
 data/
   raw/<Div>/              per competition: results_<yy-yy>.csv, fotmob_ + understat_ xG caches
   raw/                    Bets.csv, fixtures
   processed/              all_matches.csv, feature snapshots
-  reference/team_names.csv  canonical ↔ source name map
-tests/                    unit tests (python tests/test_evaluate.py)
+  reference/team_names.csv  one row per club: canonical name, country, FotMob + football-data.org ids, each source's name
+tests/                    unit tests (python tests/test_<name>.py, or pytest tests/)
 web/                      Observable Framework site
 notebooks/                the original research (01–15)
 ```

@@ -10,6 +10,7 @@ model.py. Their public names are re-exported here so existing imports
 
 import pandas as pd
 
+from bet_schema import BET_KEY, round_for, season_for
 from team_names import load_alias_map, normalize_team_names
 
 from elo import (  # noqa: F401 - re-exported
@@ -124,14 +125,20 @@ def add_bets(predictions, bets_path=BETS_PATH):
     bets = pd.read_csv(bets_path)
 
     predictions = predictions.rename(columns={"Prediction": "PredictedResult"})
-    predictions = predictions.assign(Div="E0")
+    if "Div" not in predictions.columns:
+        predictions = predictions.assign(Div="E0")
 
     # Carry the gameweek and probabilities through if the caller supplied them
     for column in ["Gameweek", *PROB_COLUMNS.values()]:
         if column not in predictions.columns:
             predictions[column] = pd.NA
 
-    key = ["Div", "Date", "Time", "HomeTeam", "AwayTeam"]
+    if "Season" not in predictions.columns:
+        predictions["Season"] = season_for(predictions["Date"])
+    if "Round" not in predictions.columns:
+        predictions["Round"] = round_for(predictions["Gameweek"])
+
+    key = BET_KEY
 
     alias_map = load_alias_map()
 
@@ -166,7 +173,10 @@ def add_bets(predictions, bets_path=BETS_PATH):
         )
 
     print(f"Added {len(new_bets)} new bet(s) to {bets_path}:")
-    print(new_bets[key + ["PredictedResult"]].to_string(index=False))
+    print(
+        new_bets[["Div", "Date", "Time", "HomeTeam", "AwayTeam", "PredictedResult"]]
+        .to_string(index=False)
+    )
 
 
 def print_predictions(results):

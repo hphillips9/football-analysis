@@ -174,9 +174,10 @@ def build_bets(bets):
 
 def build_stats(bets):
 
-    settled = bets[
-        bets["ActualResult"].notna() & bets["Profit"].notna()
-    ].copy()
+    # Unpriced bets (Bet = 0, no Profit) count towards hit rate and
+    # calibration, but not towards profit, stake or the bankroll
+    settled = bets[bets["ActualResult"].notna()].copy()
+    priced = settled[settled["Profit"].notna()]
 
     if settled.empty:
         return {
@@ -192,9 +193,9 @@ def build_stats(bets):
             "worstBets": [],
         }
 
-    stake = settled["Bet"].fillna(1)
+    stake = priced["Bet"].fillna(1)
     wins = int(settled["Won"].sum())
-    profit = float(settled["Profit"].sum())
+    profit = float(priced["Profit"].sum())
     staked = float(stake.sum())
 
     baseline_hit = float((settled["ActualResult"] == "H").mean())
@@ -203,7 +204,7 @@ def build_stats(bets):
     # Cumulative profit, one point per settled bet in kickoff order
     running = 0.0
     bankroll = []
-    for _, row in settled.sort_values("Kickoff").iterrows():
+    for _, row in priced.sort_values("Kickoff").iterrows():
         running += float(row["Profit"])
         bankroll.append({
             "kickoff": row["Kickoff"].isoformat(),
@@ -230,7 +231,7 @@ def build_stats(bets):
     running_gw = 0.0
     for gameweek in sorted(bets["Gameweek"].dropna().unique()):
         group = bets[bets["Gameweek"] == gameweek]
-        done = group[group["Profit"].notna()]
+        done = group[group["ActualResult"].notna()]
 
         gw_profit = round(float(done["Profit"].sum()), 2) if len(done) else None
         if gw_profit is not None:
@@ -278,7 +279,7 @@ def build_stats(bets):
     # Biggest wins, and the most confident misses
     best_bets = [
         _bet_summary(row)
-        for _, row in settled[settled["Won"]]
+        for _, row in priced[priced["Won"]]
         .sort_values("Profit", ascending=False)
         .head(3)
         .iterrows()
@@ -553,7 +554,7 @@ def _bet_summary(row):
         "pick": row["PredictedResult"],
         "result": row["ActualResult"],
         "pickProb": round(float(row["PickProb"]), 1),
-        "profit": round(float(row["Profit"]), 2),
+        "profit": _num(row["Profit"]),
     }
 
 

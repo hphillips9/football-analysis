@@ -1,0 +1,101 @@
+day,home,away,home_id,away_id,hg,ag
+2026-08-22,Udinese Calcio,Como 1907,115,7397,1,1
+2026-08-22,FC Internazionale Milano,AC Monza,108,5911,4,1
+2026-08-22,Genoa CFC,SSC Napoli,107,113,0,2
+2026-08-22,Parma Calcio 1913,Cagliari Calcio,112,104,0,1
+2026-08-23,Frosinone Calcio,Juventus FC,470,109,0,1
+2026-08-23,Venezia FC,US Lecce,454,5890,0,2
+2026-08-23,Atalanta BC,US Sassuolo Calcio,102,471,2,1
+2026-08-23,Torino FC,AC Milan,586,98,1,2
+2026-08-24,Bologna FC 1909,SS Lazio,103,110,0,1
+2026-08-24,AS Roma,ACF Fiorentina,100,99,4,0
+2026-08-28,AC Milan,Venezia FC,98,454,2,0
+2026-08-29,US Sassuolo Calcio,Torino FC,471,586,2,1
+2026-08-29,AC Monza,Udinese Calcio,5911,115,2,3
+2026-08-29,ACF Fiorentina,Frosinone Calcio,99,470,0,3
+2026-08-29,Juventus FC,Parma Calcio 1913,109,112,2,0
+2026-08-30,SSC Napoli,Como 1907,113,7397,1,2
+2026-08-30,SS Lazio,Genoa CFC,110,107,1,0
+2026-08-30,Cagliari Calcio,FC Internazionale Milano,104,108,0,1
+2026-08-31,US Lecce,AS Roma,5890,100,0,4
+2026-08-31,Atalanta BC,Bologna FC 1909,102,103,1,0
+2026-09-04,Genoa CFC,Como 1907,107,7397,1,4
+2026-09-05,ACF Fiorentina,Torino FC,99,586,1,2
+2026-09-05,FC Internazionale Milano,SSC Napoli,108,113,3,2
+2026-09-05,AS Roma,Atalanta BC,100,102,2,1
+2026-09-06,Parma Calcio 1913,AC Monza,112,5911,1,1
+2026-09-06,Frosinone Calcio,Venezia FC,470,454,3,2
+2026-09-06,Bologna FC 1909,US Sassuolo Calcio,103,471,2,2
+2026-09-06,Juventus FC,AC Milan,109,98,1,1
+2026-09-07,Cagliari Calcio,US Lecce,104,5890,1,0
+2026-09-07,Udinese Calcio,SS Lazio,115,110,1,2
+2026-09-11,Venezia FC,ACF Fiorentina,454,99,2,4
+2026-09-12,Genoa CFC,Frosinone Calcio,107,470,1,1
+2026-09-12,SS Lazio,AC Milan,110,98,2,2
+2026-09-12,Atalanta BC,Cagliari Calcio,102,104,1,2
+2026-09-13,US Lecce,AC Monza,5890,5911,3,2
+2026-09-13,SSC Napoli,Bologna FC 1909,113,103,1,0
+2026-09-13,US Sassuolo Calcio,Juventus FC,471,109,3,2
+2026-09-14,Como 1907,Parma Calcio 1913,7397,112,2,1
+2026-09-14,Torino FC,AS Roma,586,100,0,2
+2026-09-14,FC Internazionale Milano,Udinese Calcio,108,115,5,3
+2026-09-18,AC Monza,US Sassuolo Calcio,5911,471,2,1
+2026-09-19,Bologna FC 1909,Torino FC,103,586,1,1
+2026-09-19,Udinese Calcio,Cagliari Calcio,115,104,0,1
+2026-09-19,AS Roma,FC Internazionale Milano,100,108,2,2
+2026-09-19,Venezia FC,SS Lazio,454,110,0,2
+2026-09-20,ACF Fiorentina,SSC Napoli,99,113,1,1
+2026-09-20,Frosinone Calcio,Como 1907,470,7397,2,0
+2026-09-20,Parma Calcio 1913,Genoa CFC,112,107,2,1
+2026-09-20,Juventus FC,Atalanta BC,109,102,2,0
+2026-09-20,AC Milan,US Lecce,98,5890,3,0
+2026-10-10,Genoa CFC,ACF Fiorentina,107,99,2,1
+2026-10-10,FC Internazionale Milano,Parma Calcio 1913,108,112,3,0
+2026-10-10,SSC Napoli,Frosinone Calcio,113,470,3,0
+2026-10-11,Como 1907,AS Roma,7397,100,0,0
+2026-10-11,US Lecce,Bologna FC 1909,5890,103,1,2
+2026-10-11,SS Lazio,AC Monza,110,5911,3,1
+2026-10-11,US Sassuolo Calcio,AC Milan,471,98,1,1
+2026-10-11,Cagliari Calcio,Juventus FC,104,109,1,1
+2026-10-12,Atalanta BC,Venezia FC,102,454,3,1
+2026-10-12,Torino FC,Udinese Calcio,586,115,2,1
+2026-10-16,Frosinone Calcio,US Sassuolo Calcio,470,471,4,2
+2026-10-17,Venezia FC,SSC Napoli,454,113,1,0
+2026-10-17,Bologna FC 1909,FC Internazionale Milano,103,108,1,3
+2026-10-17,AS Roma,Genoa CFC,100,107,2,0
+2026-10-18,Udinese Calcio,US Lecce,115,5890,0,3
+2026-10-18,ACF Fiorentina,Como 1907,99,7397,1,3
+2026-10-18,AC Milan,Atalanta BC,98,102,3,2
+2026-10-18,Juventus FC,SS Lazio,109,110,0,3
+2026-10-19,AC Monza,Cagliari Calcio,5911,104,4,0
+2026-10-19,Parma Calcio 1913,Torino FC,112,586,0,3
+2026-10-23,Torino FC,AC Monza,586,5911,3,2
+2026-10-24,Cagliari Calcio,Bologna FC 1909,104,103,0,2
+2026-10-24,Como 1907,US Sassuolo Calcio,7397,471,2,0
+2026-10-24,SSC Napoli,AS Roma,113,100,3,3
+2026-10-24,SS Lazio,Parma Calcio 1913,110,112,2,1
+2026-10-25,FC Internazionale Milano,ACF Fiorentina,108,99,2,1
+2026-10-25,Atalanta BC,Frosinone Calcio,102,470,4,4
+2026-10-25,Genoa CFC,Venezia FC,107,454,1,0
+2026-10-25,US Lecce,Juventus FC,5890,109,0,2
+2026-10-25,Udinese Calcio,AC Milan,115,98,0,2
+2026-10-27,US Sassuolo Calcio,SS Lazio,471,110,2,6
+2026-10-27,AS Roma,Cagliari Calcio,100,104,4,2
+2026-10-27,Torino FC,Como 1907,586,7397,1,3
+2026-10-28,AC Milan,Bologna FC 1909,98,103,2,4
+2026-10-28,Venezia FC,FC Internazionale Milano,454,108,0,2
+2026-10-28,Parma Calcio 1913,Udinese Calcio,112,115,0,0
+2026-10-28,Genoa CFC,Juventus FC,107,109,2,0
+2026-10-28,AC Monza,SSC Napoli,5911,113,1,4
+2026-10-29,Frosinone Calcio,US Lecce,470,5890,5,1
+2026-10-29,ACF Fiorentina,Atalanta BC,99,102,2,2
+2026-10-31,Bologna FC 1909,AC Monza,103,5911,2,1
+2026-10-31,Udinese Calcio,AS Roma,115,100,2,5
+2026-10-31,AC Milan,FC Internazionale Milano,98,108,3,1
+2026-11-01,Como 1907,Venezia FC,7397,454,1,0
+2026-11-01,Frosinone Calcio,Torino FC,470,586,2,0
+2026-11-01,SS Lazio,Cagliari Calcio,110,104,2,1
+2026-11-01,US Lecce,Genoa CFC,5890,107,1,2
+2026-11-01,Juventus FC,SSC Napoli,109,113,2,0
+2026-11-02,US Sassuolo Calcio,ACF Fiorentina,471,99,2,4
+2026-11-02,Atalanta BC,Parma Calcio 1913,102,112,0,3

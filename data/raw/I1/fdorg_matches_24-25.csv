@@ -1,0 +1,381 @@
+day,home,away,home_id,away_id,hg,ag
+2024-08-17,Genoa CFC,FC Internazionale Milano,107,108,2,2
+2024-08-17,Parma Calcio 1913,ACF Fiorentina,112,99,1,1
+2024-08-17,Empoli FC,AC Monza,445,5911,0,0
+2024-08-17,AC Milan,Torino FC,98,586,2,2
+2024-08-18,Bologna FC 1909,Udinese Calcio,103,115,1,1
+2024-08-18,Hellas Verona FC,SSC Napoli,450,113,3,0
+2024-08-18,Cagliari Calcio,AS Roma,104,100,0,0
+2024-08-18,SS Lazio,Venezia FC,110,454,3,1
+2024-08-19,US Lecce,Atalanta BC,5890,102,0,4
+2024-08-19,Juventus FC,Como 1907,109,7397,3,0
+2024-08-24,Parma Calcio 1913,AC Milan,112,98,2,1
+2024-08-24,Udinese Calcio,SS Lazio,115,110,2,1
+2024-08-24,FC Internazionale Milano,US Lecce,108,5890,2,0
+2024-08-24,AC Monza,Genoa CFC,5911,107,0,1
+2024-08-25,ACF Fiorentina,Venezia FC,99,454,0,0
+2024-08-25,Torino FC,Atalanta BC,586,102,2,1
+2024-08-25,SSC Napoli,Bologna FC 1909,113,103,3,0
+2024-08-25,AS Roma,Empoli FC,100,445,1,2
+2024-08-26,Cagliari Calcio,Como 1907,104,7397,1,1
+2024-08-26,Hellas Verona FC,Juventus FC,450,109,0,3
+2024-08-30,Venezia FC,Torino FC,454,586,0,1
+2024-08-30,FC Internazionale Milano,Atalanta BC,108,102,4,0
+2024-08-31,Bologna FC 1909,Empoli FC,103,445,1,1
+2024-08-31,US Lecce,Cagliari Calcio,5890,104,1,0
+2024-08-31,SS Lazio,AC Milan,110,98,2,2
+2024-08-31,SSC Napoli,Parma Calcio 1913,113,112,2,1
+2024-09-01,ACF Fiorentina,AC Monza,99,5911,2,2
+2024-09-01,Genoa CFC,Hellas Verona FC,107,450,0,2
+2024-09-01,Juventus FC,AS Roma,109,100,0,0
+2024-09-01,Udinese Calcio,Como 1907,115,7397,1,0
+2024-09-14,Como 1907,Bologna FC 1909,7397,103,2,2
+2024-09-14,Empoli FC,Juventus FC,445,109,0,0
+2024-09-14,AC Milan,Venezia FC,98,454,4,0
+2024-09-15,Genoa CFC,AS Roma,107,100,1,1
+2024-09-15,Atalanta BC,ACF Fiorentina,102,99,3,2
+2024-09-15,Torino FC,US Lecce,586,5890,0,0
+2024-09-15,Cagliari Calcio,SSC Napoli,104,113,0,4
+2024-09-15,AC Monza,FC Internazionale Milano,5911,108,1,1
+2024-09-16,Parma Calcio 1913,Udinese Calcio,112,115,2,3
+2024-09-16,SS Lazio,Hellas Verona FC,110,450,2,1
+2024-09-20,Cagliari Calcio,Empoli FC,104,445,0,2
+2024-09-20,Hellas Verona FC,Torino FC,450,586,2,3
+2024-09-21,Venezia FC,Genoa CFC,454,107,2,0
+2024-09-21,Juventus FC,SSC Napoli,109,113,0,0
+2024-09-21,US Lecce,Parma Calcio 1913,5890,112,2,2
+2024-09-22,ACF Fiorentina,SS Lazio,99,110,2,1
+2024-09-22,AC Monza,Bologna FC 1909,5911,103,1,2
+2024-09-22,AS Roma,Udinese Calcio,100,115,3,0
+2024-09-22,FC Internazionale Milano,AC Milan,108,98,1,2
+2024-09-24,Atalanta BC,Como 1907,102,7397,2,3
+2024-09-27,AC Milan,US Lecce,98,5890,3,0
+2024-09-28,Udinese Calcio,FC Internazionale Milano,115,108,2,3
+2024-09-28,Genoa CFC,Juventus FC,107,109,0,3
+2024-09-28,Bologna FC 1909,Atalanta BC,103,102,1,1
+2024-09-29,Torino FC,SS Lazio,586,110,2,3
+2024-09-29,Como 1907,Hellas Verona FC,7397,450,3,2
+2024-09-29,AS Roma,Venezia FC,100,454,2,1
+2024-09-29,Empoli FC,ACF Fiorentina,445,99,0,0
+2024-09-29,SSC Napoli,AC Monza,113,5911,2,0
+2024-09-30,Parma Calcio 1913,Cagliari Calcio,112,104,2,3
+2024-10-04,SSC Napoli,Como 1907,113,7397,3,1
+2024-10-04,Hellas Verona FC,Venezia FC,450,454,2,1
+2024-10-05,Udinese Calcio,US Lecce,115,5890,1,0
+2024-10-05,Atalanta BC,Genoa CFC,102,107,5,1
+2024-10-05,FC Internazionale Milano,Torino FC,108,586,3,2
+2024-10-06,Juventus FC,Cagliari Calcio,109,104,1,1
+2024-10-06,Bologna FC 1909,Parma Calcio 1913,103,112,0,0
+2024-10-06,SS Lazio,Empoli FC,110,445,2,1
+2024-10-06,AC Monza,AS Roma,5911,100,1,1
+2024-10-06,ACF Fiorentina,AC Milan,99,98,2,1
+2024-10-19,Como 1907,Parma Calcio 1913,7397,112,1,1
+2024-10-19,Genoa CFC,Bologna FC 1909,107,103,2,2
+2024-10-19,AC Milan,Udinese Calcio,98,115,1,0
+2024-10-19,Juventus FC,SS Lazio,109,110,1,0
+2024-10-20,Empoli FC,SSC Napoli,445,113,0,1
+2024-10-20,US Lecce,ACF Fiorentina,5890,99,0,6
+2024-10-20,Venezia FC,Atalanta BC,454,102,0,2
+2024-10-20,Cagliari Calcio,Torino FC,104,586,3,2
+2024-10-20,AS Roma,FC Internazionale Milano,100,108,0,1
+2024-10-21,Hellas Verona FC,AC Monza,450,5911,0,3
+2024-10-25,Udinese Calcio,Cagliari Calcio,115,104,2,0
+2024-10-25,Torino FC,Como 1907,586,7397,1,0
+2024-10-26,SSC Napoli,US Lecce,113,5890,1,0
+2024-10-26,Atalanta BC,Hellas Verona FC,102,450,6,1
+2024-10-27,Parma Calcio 1913,Empoli FC,112,445,1,1
+2024-10-27,SS Lazio,Genoa CFC,110,107,3,0
+2024-10-27,AC Monza,Venezia FC,5911,454,2,2
+2024-10-27,FC Internazionale Milano,Juventus FC,108,109,4,4
+2024-10-27,ACF Fiorentina,AS Roma,99,100,5,1
+2024-10-29,Cagliari Calcio,Bologna FC 1909,104,103,0,2
+2024-10-29,US Lecce,Hellas Verona FC,5890,450,1,0
+2024-10-29,AC Milan,SSC Napoli,98,113,0,2
+2024-10-30,Empoli FC,FC Internazionale Milano,445,108,0,3
+2024-10-30,Venezia FC,Udinese Calcio,454,115,3,2
+2024-10-30,Atalanta BC,AC Monza,102,5911,2,0
+2024-10-30,Juventus FC,Parma Calcio 1913,109,112,2,2
+2024-10-31,Genoa CFC,ACF Fiorentina,107,99,0,1
+2024-10-31,Como 1907,SS Lazio,7397,110,1,5
+2024-10-31,AS Roma,Torino FC,100,586,1,0
+2024-11-02,Bologna FC 1909,US Lecce,103,5890,1,0
+2024-11-02,Udinese Calcio,Juventus FC,115,109,0,2
+2024-11-02,AC Monza,AC Milan,5911,98,0,1
+2024-11-03,SSC Napoli,Atalanta BC,113,102,0,3
+2024-11-03,Torino FC,ACF Fiorentina,586,99,0,1
+2024-11-03,Hellas Verona FC,AS Roma,450,100,3,2
+2024-11-03,FC Internazionale Milano,Venezia FC,108,454,1,0
+2024-11-04,Empoli FC,Como 1907,445,7397,1,0
+2024-11-04,Parma Calcio 1913,Genoa CFC,112,107,0,1
+2024-11-04,SS Lazio,Cagliari Calcio,110,104,2,1
+2024-11-07,Genoa CFC,Como 1907,107,7397,1,1
+2024-11-08,US Lecce,Empoli FC,5890,445,1,1
+2024-11-09,Venezia FC,Parma Calcio 1913,454,112,1,2
+2024-11-09,Cagliari Calcio,AC Milan,104,98,3,3
+2024-11-09,Juventus FC,Torino FC,109,586,2,0
+2024-11-10,Atalanta BC,Udinese Calcio,102,115,2,1
+2024-11-10,ACF Fiorentina,Hellas Verona FC,99,450,3,1
+2024-11-10,AS Roma,Bologna FC 1909,100,103,2,3
+2024-11-10,AC Monza,SS Lazio,5911,110,0,1
+2024-11-10,FC Internazionale Milano,SSC Napoli,108,113,1,1
+2024-11-23,Hellas Verona FC,FC Internazionale Milano,450,108,0,5
+2024-11-23,AC Milan,Juventus FC,98,109,0,0
+2024-11-23,Parma Calcio 1913,Atalanta BC,112,102,1,3
+2024-11-24,Genoa CFC,Cagliari Calcio,107,104,2,2
+2024-11-24,Como 1907,ACF Fiorentina,7397,99,0,2
+2024-11-24,Torino FC,AC Monza,586,5911,1,1
+2024-11-24,SSC Napoli,AS Roma,113,100,1,0
+2024-11-24,SS Lazio,Bologna FC 1909,110,103,3,0
+2024-11-25,Empoli FC,Udinese Calcio,445,115,1,1
+2024-11-25,Venezia FC,US Lecce,454,5890,0,1
+2024-11-29,Cagliari Calcio,Hellas Verona FC,104,450,1,0
+2024-11-30,Como 1907,AC Monza,7397,5911,1,1
+2024-11-30,AC Milan,Empoli FC,98,445,3,0
+2024-11-30,Bologna FC 1909,Venezia FC,103,454,3,0
+2024-12-01,Udinese Calcio,Genoa CFC,115,107,0,2
+2024-12-01,Parma Calcio 1913,SS Lazio,112,110,3,1
+2024-12-01,Torino FC,SSC Napoli,586,113,0,1
+2024-12-01,US Lecce,Juventus FC,5890,109,1,1
+2024-12-02,AS Roma,Atalanta BC,100,102,0,2
+2024-12-06,FC Internazionale Milano,Parma Calcio 1913,108,112,3,1
+2024-12-06,Atalanta BC,AC Milan,102,98,2,1
+2024-12-07,Genoa CFC,Torino FC,107,586,0,0
+2024-12-07,Juventus FC,Bologna FC 1909,109,103,2,2
+2024-12-07,AS Roma,US Lecce,100,5890,4,1
+2024-12-08,ACF Fiorentina,Cagliari Calcio,99,104,1,0
+2024-12-08,Hellas Verona FC,Empoli FC,450,445,1,4
+2024-12-08,Venezia FC,Como 1907,454,7397,2,2
+2024-12-08,SSC Napoli,SS Lazio,113,110,0,1
+2024-12-09,AC Monza,Udinese Calcio,5911,115,1,2
+2024-12-13,Empoli FC,Torino FC,445,586,0,1
+2024-12-14,Cagliari Calcio,Atalanta BC,104,102,0,1
+2024-12-14,Udinese Calcio,SSC Napoli,115,113,1,3
+2024-12-14,Juventus FC,Venezia FC,109,454,2,2
+2024-12-15,US Lecce,AC Monza,5890,5911,2,1
+2024-12-15,Bologna FC 1909,ACF Fiorentina,103,99,1,0
+2024-12-15,Parma Calcio 1913,Hellas Verona FC,112,450,2,3
+2024-12-15,Como 1907,AS Roma,7397,100,2,0
+2024-12-15,AC Milan,Genoa CFC,98,107,0,0
+2024-12-16,SS Lazio,FC Internazionale Milano,110,108,0,6
+2024-12-20,Hellas Verona FC,AC Milan,450,98,0,1
+2024-12-21,Torino FC,Bologna FC 1909,586,103,0,2
+2024-12-21,Genoa CFC,SSC Napoli,107,113,1,2
+2024-12-21,US Lecce,SS Lazio,5890,110,1,2
+2024-12-22,AS Roma,Parma Calcio 1913,100,112,5,0
+2024-12-22,Venezia FC,Cagliari Calcio,454,104,2,1
+2024-12-22,Atalanta BC,Empoli FC,102,445,3,2
+2024-12-22,AC Monza,Juventus FC,5911,109,1,2
+2024-12-23,ACF Fiorentina,Udinese Calcio,99,115,1,2
+2024-12-23,FC Internazionale Milano,Como 1907,108,7397,2,0
+2024-12-28,Empoli FC,Genoa CFC,445,107,1,2
+2024-12-28,Parma Calcio 1913,AC Monza,112,5911,2,1
+2024-12-28,Cagliari Calcio,FC Internazionale Milano,104,108,0,3
+2024-12-28,SS Lazio,Atalanta BC,110,102,1,1
+2024-12-29,Udinese Calcio,Torino FC,115,586,2,2
+2024-12-29,SSC Napoli,Venezia FC,113,454,1,0
+2024-12-29,Juventus FC,ACF Fiorentina,109,99,2,2
+2024-12-29,AC Milan,AS Roma,98,100,1,1
+2024-12-30,Como 1907,US Lecce,7397,5890,2,0
+2024-12-30,Bologna FC 1909,Hellas Verona FC,103,450,2,3
+2025-01-04,Venezia FC,Empoli FC,454,445,1,1
+2025-01-04,ACF Fiorentina,SSC Napoli,99,113,0,3
+2025-01-04,Hellas Verona FC,Udinese Calcio,450,115,0,0
+2025-01-05,AC Monza,Cagliari Calcio,5911,104,1,2
+2025-01-05,US Lecce,Genoa CFC,5890,107,0,0
+2025-01-05,Torino FC,Parma Calcio 1913,586,112,0,0
+2025-01-05,AS Roma,SS Lazio,100,110,2,0
+2025-01-10,SS Lazio,Como 1907,110,7397,1,1
+2025-01-11,Empoli FC,US Lecce,445,5890,1,3
+2025-01-11,Udinese Calcio,Atalanta BC,115,102,0,0
+2025-01-11,Torino FC,Juventus FC,586,109,1,1
+2025-01-11,AC Milan,Cagliari Calcio,98,104,1,1
+2025-01-12,Genoa CFC,Parma Calcio 1913,107,112,1,0
+2025-01-12,Venezia FC,FC Internazionale Milano,454,108,0,1
+2025-01-12,Bologna FC 1909,AS Roma,103,100,2,2
+2025-01-12,SSC Napoli,Hellas Verona FC,113,450,2,0
+2025-01-13,AC Monza,ACF Fiorentina,5911,99,2,1
+2025-01-14,Como 1907,AC Milan,7397,98,1,2
+2025-01-14,Atalanta BC,Juventus FC,102,109,1,1
+2025-01-15,FC Internazionale Milano,Bologna FC 1909,108,103,2,2
+2025-01-17,AS Roma,Genoa CFC,100,107,3,1
+2025-01-18,Bologna FC 1909,AC Monza,103,5911,3,1
+2025-01-18,Juventus FC,AC Milan,109,98,2,0
+2025-01-18,Atalanta BC,SSC Napoli,102,113,2,3
+2025-01-19,ACF Fiorentina,Torino FC,99,586,1,1
+2025-01-19,Cagliari Calcio,US Lecce,104,5890,4,1
+2025-01-19,Parma Calcio 1913,Venezia FC,112,454,1,1
+2025-01-19,Hellas Verona FC,SS Lazio,450,110,0,3
+2025-01-19,FC Internazionale Milano,Empoli FC,108,445,3,1
+2025-01-20,Como 1907,Udinese Calcio,7397,115,4,1
+2025-01-24,Torino FC,Cagliari Calcio,586,104,2,0
+2025-01-25,Como 1907,Atalanta BC,7397,102,1,2
+2025-01-25,SSC Napoli,Juventus FC,113,109,2,1
+2025-01-25,Empoli FC,Bologna FC 1909,445,103,1,1
+2025-01-26,AC Milan,Parma Calcio 1913,98,112,3,2
+2025-01-26,Udinese Calcio,AS Roma,115,100,1,2
+2025-01-26,US Lecce,FC Internazionale Milano,5890,108,0,4
+2025-01-26,SS Lazio,ACF Fiorentina,110,99,1,2
+2025-01-27,Venezia FC,Hellas Verona FC,454,450,1,1
+2025-01-27,Genoa CFC,AC Monza,107,5911,2,0
+2025-01-31,Parma Calcio 1913,US Lecce,112,5890,1,3
+2025-02-01,AC Monza,Hellas Verona FC,5911,450,0,1
+2025-02-01,Udinese Calcio,Venezia FC,115,454,3,2
+2025-02-01,Atalanta BC,Torino FC,102,586,1,1
+2025-02-01,Bologna FC 1909,Como 1907,103,7397,2,0
+2025-02-02,Juventus FC,Empoli FC,109,445,4,1
+2025-02-02,ACF Fiorentina,Genoa CFC,99,107,2,1
+2025-02-02,AC Milan,FC Internazionale Milano,98,108,1,1
+2025-02-02,AS Roma,SSC Napoli,100,113,1,1
+2025-02-03,Cagliari Calcio,SS Lazio,104,110,1,2
+2025-02-06,ACF Fiorentina,FC Internazionale Milano,99,108,3,0
+2025-02-07,Como 1907,Juventus FC,7397,109,1,2
+2025-02-08,Hellas Verona FC,Atalanta BC,450,102,0,5
+2025-02-08,Empoli FC,AC Milan,445,98,0,2
+2025-02-08,Torino FC,Genoa CFC,586,107,1,1
+2025-02-09,Venezia FC,AS Roma,454,100,0,1
+2025-02-09,Cagliari Calcio,Parma Calcio 1913,104,112,2,1
+2025-02-09,SS Lazio,AC Monza,110,5911,5,1
+2025-02-09,US Lecce,Bologna FC 1909,5890,103,0,0
+2025-02-09,SSC Napoli,Udinese Calcio,113,115,1,1
+2025-02-10,FC Internazionale Milano,ACF Fiorentina,108,99,2,1
+2025-02-14,Bologna FC 1909,Torino FC,103,586,3,2
+2025-02-15,Atalanta BC,Cagliari Calcio,102,104,0,0
+2025-02-15,SS Lazio,SSC Napoli,110,113,2,2
+2025-02-15,AC Milan,Hellas Verona FC,98,450,1,0
+2025-02-16,ACF Fiorentina,Como 1907,99,7397,0,2
+2025-02-16,AC Monza,US Lecce,5911,5890,0,0
+2025-02-16,Udinese Calcio,Empoli FC,115,445,3,0
+2025-02-16,Parma Calcio 1913,AS Roma,112,100,0,1
+2025-02-16,Juventus FC,FC Internazionale Milano,109,108,1,0
+2025-02-17,Genoa CFC,Venezia FC,107,454,2,0
+2025-02-21,US Lecce,Udinese Calcio,5890,115,0,1
+2025-02-22,Parma Calcio 1913,Bologna FC 1909,112,103,2,0
+2025-02-22,Venezia FC,SS Lazio,454,110,0,0
+2025-02-22,Torino FC,AC Milan,586,98,2,1
+2025-02-22,FC Internazionale Milano,Genoa CFC,108,107,1,0
+2025-02-23,Como 1907,SSC Napoli,7397,113,2,1
+2025-02-23,Hellas Verona FC,ACF Fiorentina,450,99,1,0
+2025-02-23,Empoli FC,Atalanta BC,445,102,0,5
+2025-02-23,Cagliari Calcio,Juventus FC,104,109,0,1
+2025-02-24,AS Roma,AC Monza,100,5911,4,0
+2025-02-27,Bologna FC 1909,AC Milan,103,98,2,1
+2025-02-28,ACF Fiorentina,US Lecce,99,5890,1,0
+2025-03-01,Atalanta BC,Venezia FC,102,454,0,0
+2025-03-01,SSC Napoli,FC Internazionale Milano,113,108,1,1
+2025-03-01,Udinese Calcio,Parma Calcio 1913,115,112,1,0
+2025-03-02,AC Monza,Torino FC,5911,586,0,2
+2025-03-02,Bologna FC 1909,Cagliari Calcio,103,104,2,1
+2025-03-02,Genoa CFC,Empoli FC,107,445,1,1
+2025-03-02,AS Roma,Como 1907,100,7397,2,1
+2025-03-02,AC Milan,SS Lazio,98,110,1,2
+2025-03-03,Juventus FC,Hellas Verona FC,109,450,2,0
+2025-03-07,Cagliari Calcio,Genoa CFC,104,107,1,1
+2025-03-08,Como 1907,Venezia FC,7397,454,1,1
+2025-03-08,Parma Calcio 1913,Torino FC,112,586,2,2
+2025-03-08,US Lecce,AC Milan,5890,98,2,3
+2025-03-08,FC Internazionale Milano,AC Monza,108,5911,3,2
+2025-03-09,Hellas Verona FC,Bologna FC 1909,450,103,1,2
+2025-03-09,SSC Napoli,ACF Fiorentina,113,99,2,1
+2025-03-09,Empoli FC,AS Roma,445,100,0,1
+2025-03-09,Juventus FC,Atalanta BC,109,102,0,4
+2025-03-10,SS Lazio,Udinese Calcio,110,115,1,1
+2025-03-14,Genoa CFC,US Lecce,107,5890,2,1
+2025-03-15,AC Monza,Parma Calcio 1913,5911,112,1,1
+2025-03-15,Udinese Calcio,Hellas Verona FC,115,450,0,1
+2025-03-15,AC Milan,Como 1907,98,7397,2,1
+2025-03-15,Torino FC,Empoli FC,586,445,1,0
+2025-03-16,Venezia FC,SSC Napoli,454,113,0,0
+2025-03-16,Bologna FC 1909,SS Lazio,103,110,5,0
+2025-03-16,AS Roma,Cagliari Calcio,100,104,1,0
+2025-03-16,ACF Fiorentina,Juventus FC,99,109,3,0
+2025-03-16,Atalanta BC,FC Internazionale Milano,102,108,0,2
+2025-03-29,Como 1907,Empoli FC,7397,445,1,1
+2025-03-29,Venezia FC,Bologna FC 1909,454,103,0,1
+2025-03-29,Juventus FC,Genoa CFC,109,107,1,0
+2025-03-29,US Lecce,AS Roma,5890,100,0,1
+2025-03-30,Cagliari Calcio,AC Monza,104,5911,3,0
+2025-03-30,ACF Fiorentina,Atalanta BC,99,102,1,0
+2025-03-30,FC Internazionale Milano,Udinese Calcio,108,115,2,1
+2025-03-30,SSC Napoli,AC Milan,113,98,2,1
+2025-03-31,Hellas Verona FC,Parma Calcio 1913,450,112,0,0
+2025-03-31,SS Lazio,Torino FC,110,586,1,1
+2025-04-04,Genoa CFC,Udinese Calcio,107,115,1,0
+2025-04-05,AC Monza,Como 1907,5911,7397,1,3
+2025-04-05,Parma Calcio 1913,FC Internazionale Milano,112,108,2,2
+2025-04-05,AC Milan,ACF Fiorentina,98,99,2,2
+2025-04-06,US Lecce,Venezia FC,5890,454,1,1
+2025-04-06,Empoli FC,Cagliari Calcio,445,104,0,0
+2025-04-06,Torino FC,Hellas Verona FC,586,450,1,1
+2025-04-06,Atalanta BC,SS Lazio,102,110,0,1
+2025-04-06,AS Roma,Juventus FC,100,109,1,1
+2025-04-07,Bologna FC 1909,SSC Napoli,103,113,1,1
+2025-04-11,Udinese Calcio,AC Milan,115,98,0,4
+2025-04-12,Venezia FC,AC Monza,454,5911,1,0
+2025-04-12,FC Internazionale Milano,Cagliari Calcio,108,104,3,1
+2025-04-12,Juventus FC,US Lecce,109,5890,2,1
+2025-04-13,Atalanta BC,Bologna FC 1909,102,103,2,0
+2025-04-13,ACF Fiorentina,Parma Calcio 1913,99,112,0,0
+2025-04-13,Hellas Verona FC,Genoa CFC,450,107,0,0
+2025-04-13,Como 1907,Torino FC,7397,586,1,0
+2025-04-13,SS Lazio,AS Roma,110,100,1,1
+2025-04-14,SSC Napoli,Empoli FC,113,445,3,0
+2025-04-19,US Lecce,Como 1907,5890,7397,0,3
+2025-04-19,AC Monza,SSC Napoli,5911,113,0,1
+2025-04-19,AS Roma,Hellas Verona FC,100,450,1,0
+2025-04-20,Empoli FC,Venezia FC,445,454,2,2
+2025-04-20,Bologna FC 1909,FC Internazionale Milano,103,108,1,0
+2025-04-20,AC Milan,Atalanta BC,98,102,0,1
+2025-04-23,Cagliari Calcio,ACF Fiorentina,104,99,1,2
+2025-04-23,Genoa CFC,SS Lazio,107,110,0,2
+2025-04-23,Parma Calcio 1913,Juventus FC,112,109,1,0
+2025-04-23,Torino FC,Udinese Calcio,586,115,2,0
+2025-04-27,Como 1907,Genoa CFC,7397,107,1,0
+2025-04-27,Venezia FC,AC Milan,454,98,0,2
+2025-04-27,ACF Fiorentina,Empoli FC,99,445,2,1
+2025-04-27,FC Internazionale Milano,AS Roma,108,100,0,1
+2025-04-27,Juventus FC,AC Monza,109,5911,2,0
+2025-04-27,Atalanta BC,US Lecce,102,5890,1,1
+2025-04-27,SSC Napoli,Torino FC,113,586,2,0
+2025-04-28,Udinese Calcio,Bologna FC 1909,115,103,0,0
+2025-04-28,Hellas Verona FC,Cagliari Calcio,450,104,0,2
+2025-04-28,SS Lazio,Parma Calcio 1913,110,112,2,2
+2025-05-02,Torino FC,Venezia FC,586,454,1,1
+2025-05-03,Cagliari Calcio,Udinese Calcio,104,115,1,2
+2025-05-03,Parma Calcio 1913,Como 1907,112,7397,0,1
+2025-05-03,US Lecce,SSC Napoli,5890,113,0,1
+2025-05-03,FC Internazionale Milano,Hellas Verona FC,108,450,1,0
+2025-05-04,Empoli FC,SS Lazio,445,110,0,1
+2025-05-04,AC Monza,Atalanta BC,5911,102,0,4
+2025-05-04,AS Roma,ACF Fiorentina,100,99,1,0
+2025-05-04,Bologna FC 1909,Juventus FC,103,109,1,1
+2025-05-05,Genoa CFC,AC Milan,107,98,1,2
+2025-05-09,AC Milan,Bologna FC 1909,98,103,3,1
+2025-05-10,Como 1907,Cagliari Calcio,7397,104,3,1
+2025-05-10,SS Lazio,Juventus FC,110,109,1,1
+2025-05-10,Empoli FC,Parma Calcio 1913,445,112,2,1
+2025-05-11,Udinese Calcio,AC Monza,115,5911,1,2
+2025-05-11,Hellas Verona FC,US Lecce,450,5890,1,1
+2025-05-11,Torino FC,FC Internazionale Milano,586,108,0,2
+2025-05-11,SSC Napoli,Genoa CFC,113,107,2,2
+2025-05-12,Venezia FC,ACF Fiorentina,454,99,2,1
+2025-05-12,Atalanta BC,AS Roma,102,100,2,1
+2025-05-17,Genoa CFC,Atalanta BC,107,102,2,3
+2025-05-18,Cagliari Calcio,Venezia FC,104,454,3,0
+2025-05-18,ACF Fiorentina,Bologna FC 1909,99,103,3,2
+2025-05-18,Hellas Verona FC,Como 1907,450,7397,1,1
+2025-05-18,FC Internazionale Milano,SS Lazio,108,110,2,2
+2025-05-18,Juventus FC,Udinese Calcio,109,115,2,0
+2025-05-18,US Lecce,Torino FC,5890,586,1,0
+2025-05-18,AC Monza,Empoli FC,5911,445,1,3
+2025-05-18,Parma Calcio 1913,SSC Napoli,112,113,0,0
+2025-05-18,AS Roma,AC Milan,100,98,3,1
+2025-05-23,Como 1907,FC Internazionale Milano,7397,108,0,2
+2025-05-23,SSC Napoli,Cagliari Calcio,113,104,2,0
+2025-05-24,Bologna FC 1909,Genoa CFC,103,107,1,3
+2025-05-24,AC Milan,AC Monza,98,5911,2,0
+2025-05-25,Atalanta BC,Parma Calcio 1913,102,112,2,3
+2025-05-25,Empoli FC,Hellas Verona FC,445,450,1,2
+2025-05-25,SS Lazio,US Lecce,110,5890,0,1
+2025-05-25,Torino FC,AS Roma,586,100,0,2
+2025-05-25,Udinese Calcio,ACF Fiorentina,115,99,2,3
+2025-05-25,Venezia FC,Juventus FC,454,109,2,3

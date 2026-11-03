@@ -1,0 +1,381 @@
+day,home,away,home_id,away_id,hg,ag
+2024-08-15,Athletic Club,Getafe CF,77,82,1,1
+2024-08-15,Real Betis Balompié,Girona FC,90,298,1,1
+2024-08-16,RC Celta de Vigo,Deportivo Alavés,558,263,2,1
+2024-08-16,UD Las Palmas,Sevilla FC,275,559,2,2
+2024-08-17,CA Osasuna,CD Leganés,79,745,1,1
+2024-08-17,Valencia CF,FC Barcelona,95,81,1,2
+2024-08-18,Real Sociedad de Fútbol,Rayo Vallecano de Madrid,92,87,1,2
+2024-08-18,RCD Mallorca,Real Madrid CF,89,86,1,1
+2024-08-19,Real Valladolid CF,RCD Espanyol de Barcelona,250,80,1,0
+2024-08-19,Villarreal CF,Club Atlético de Madrid,94,78,2,2
+2024-08-23,RC Celta de Vigo,Valencia CF,558,95,3,1
+2024-08-23,Sevilla FC,Villarreal CF,559,94,1,2
+2024-08-24,CA Osasuna,RCD Mallorca,79,89,1,0
+2024-08-24,FC Barcelona,Athletic Club,81,77,2,1
+2024-08-24,Getafe CF,Rayo Vallecano de Madrid,82,87,0,0
+2024-08-24,RCD Espanyol de Barcelona,Real Sociedad de Fútbol,80,92,0,1
+2024-08-25,Real Madrid CF,Real Valladolid CF,86,250,3,0
+2024-08-25,CD Leganés,UD Las Palmas,745,275,2,1
+2024-08-25,Deportivo Alavés,Real Betis Balompié,263,90,0,0
+2024-08-25,Club Atlético de Madrid,Girona FC,78,298,3,0
+2024-08-26,Villarreal CF,RC Celta de Vigo,94,558,4,3
+2024-08-27,RCD Mallorca,Sevilla FC,89,559,0,0
+2024-08-27,Rayo Vallecano de Madrid,FC Barcelona,87,81,1,2
+2024-08-28,Athletic Club,Valencia CF,77,95,1,0
+2024-08-28,Real Valladolid CF,CD Leganés,250,745,0,0
+2024-08-28,Real Sociedad de Fútbol,Deportivo Alavés,92,263,1,2
+2024-08-28,Club Atlético de Madrid,RCD Espanyol de Barcelona,78,80,0,0
+2024-08-29,Girona FC,CA Osasuna,298,79,4,0
+2024-08-29,UD Las Palmas,Real Madrid CF,275,86,1,1
+2024-08-31,FC Barcelona,Real Valladolid CF,81,250,7,0
+2024-08-31,Athletic Club,Club Atlético de Madrid,77,78,0,1
+2024-08-31,RCD Espanyol de Barcelona,Rayo Vallecano de Madrid,80,87,2,1
+2024-08-31,CD Leganés,RCD Mallorca,745,89,0,1
+2024-08-31,Valencia CF,Villarreal CF,95,94,1,1
+2024-09-01,CA Osasuna,RC Celta de Vigo,79,558,3,2
+2024-09-01,Deportivo Alavés,UD Las Palmas,263,275,2,0
+2024-09-01,Sevilla FC,Girona FC,559,298,0,2
+2024-09-01,Getafe CF,Real Sociedad de Fútbol,82,92,0,0
+2024-09-01,Real Madrid CF,Real Betis Balompié,86,90,2,0
+2024-09-13,Real Betis Balompié,CD Leganés,90,745,2,0
+2024-09-14,RCD Mallorca,Villarreal CF,89,94,1,2
+2024-09-14,RCD Espanyol de Barcelona,Deportivo Alavés,80,263,3,2
+2024-09-14,Sevilla FC,Getafe CF,559,82,1,0
+2024-09-14,Real Sociedad de Fútbol,Real Madrid CF,92,86,0,2
+2024-09-15,RC Celta de Vigo,Real Valladolid CF,558,250,3,1
+2024-09-15,Girona FC,FC Barcelona,298,81,1,4
+2024-09-15,UD Las Palmas,Athletic Club,275,77,2,3
+2024-09-15,Club Atlético de Madrid,Valencia CF,78,95,3,0
+2024-09-16,Rayo Vallecano de Madrid,CA Osasuna,87,79,3,1
+2024-09-17,RCD Mallorca,Real Sociedad de Fútbol,89,92,1,0
+2024-09-18,Real Betis Balompié,Getafe CF,90,82,2,1
+2024-09-19,CD Leganés,Athletic Club,745,77,0,2
+2024-09-20,Deportivo Alavés,Sevilla FC,263,559,2,1
+2024-09-21,Real Valladolid CF,Real Sociedad de Fútbol,250,92,0,0
+2024-09-21,CA Osasuna,UD Las Palmas,79,275,2,1
+2024-09-21,Valencia CF,Girona FC,95,298,2,0
+2024-09-21,Real Madrid CF,RCD Espanyol de Barcelona,86,80,4,1
+2024-09-22,Getafe CF,CD Leganés,82,745,1,1
+2024-09-22,Athletic Club,RC Celta de Vigo,77,558,3,1
+2024-09-22,Villarreal CF,FC Barcelona,94,81,1,5
+2024-09-22,Rayo Vallecano de Madrid,Club Atlético de Madrid,87,78,1,1
+2024-09-23,Real Betis Balompié,RCD Mallorca,90,89,1,2
+2024-09-24,Sevilla FC,Real Valladolid CF,559,250,2,1
+2024-09-24,Valencia CF,CA Osasuna,95,79,0,0
+2024-09-24,Real Madrid CF,Deportivo Alavés,86,263,3,2
+2024-09-25,Girona FC,Rayo Vallecano de Madrid,298,87,0,0
+2024-09-25,FC Barcelona,Getafe CF,81,82,1,0
+2024-09-26,UD Las Palmas,Real Betis Balompié,275,90,1,1
+2024-09-26,RCD Espanyol de Barcelona,Villarreal CF,80,94,1,2
+2024-09-26,RC Celta de Vigo,Club Atlético de Madrid,558,78,0,1
+2024-09-27,Real Valladolid CF,RCD Mallorca,250,89,1,2
+2024-09-28,Getafe CF,Deportivo Alavés,82,263,2,0
+2024-09-28,Rayo Vallecano de Madrid,CD Leganés,87,745,1,1
+2024-09-28,Real Sociedad de Fútbol,Valencia CF,92,95,3,0
+2024-09-28,CA Osasuna,FC Barcelona,79,81,4,2
+2024-09-29,RC Celta de Vigo,Girona FC,558,298,1,1
+2024-09-29,Athletic Club,Sevilla FC,77,559,1,1
+2024-09-29,Real Betis Balompié,RCD Espanyol de Barcelona,90,80,1,0
+2024-09-29,Club Atlético de Madrid,Real Madrid CF,78,86,1,1
+2024-09-30,Villarreal CF,UD Las Palmas,94,275,3,1
+2024-10-04,CD Leganés,Valencia CF,745,95,0,0
+2024-10-05,RCD Espanyol de Barcelona,RCD Mallorca,80,89,2,1
+2024-10-05,Getafe CF,CA Osasuna,82,79,1,1
+2024-10-05,Real Valladolid CF,Rayo Vallecano de Madrid,250,87,1,2
+2024-10-05,UD Las Palmas,RC Celta de Vigo,275,558,0,1
+2024-10-05,Real Madrid CF,Villarreal CF,86,94,2,0
+2024-10-06,Girona FC,Athletic Club,298,77,2,1
+2024-10-06,Deportivo Alavés,FC Barcelona,263,81,0,3
+2024-10-06,Sevilla FC,Real Betis Balompié,559,90,1,0
+2024-10-06,Real Sociedad de Fútbol,Club Atlético de Madrid,92,78,1,1
+2024-10-18,Deportivo Alavés,Real Valladolid CF,263,250,2,3
+2024-10-19,Athletic Club,RCD Espanyol de Barcelona,77,80,4,1
+2024-10-19,CA Osasuna,Real Betis Balompié,79,90,1,2
+2024-10-19,Girona FC,Real Sociedad de Fútbol,298,92,0,1
+2024-10-19,RC Celta de Vigo,Real Madrid CF,558,86,1,2
+2024-10-20,RCD Mallorca,Rayo Vallecano de Madrid,89,87,1,0
+2024-10-20,Club Atlético de Madrid,CD Leganés,78,745,3,1
+2024-10-20,Villarreal CF,Getafe CF,94,82,1,1
+2024-10-20,FC Barcelona,Sevilla FC,81,559,5,1
+2024-10-21,Valencia CF,UD Las Palmas,95,275,2,3
+2024-10-25,RCD Espanyol de Barcelona,Sevilla FC,80,559,0,2
+2024-10-26,Real Valladolid CF,Villarreal CF,250,94,1,2
+2024-10-26,Rayo Vallecano de Madrid,Deportivo Alavés,87,263,1,0
+2024-10-26,UD Las Palmas,Girona FC,275,298,1,0
+2024-10-26,Real Madrid CF,FC Barcelona,86,81,0,4
+2024-10-27,CD Leganés,RC Celta de Vigo,745,558,3,0
+2024-10-27,Getafe CF,Valencia CF,82,95,1,1
+2024-10-27,Real Betis Balompié,Club Atlético de Madrid,90,78,1,0
+2024-10-27,Real Sociedad de Fútbol,CA Osasuna,92,79,0,2
+2024-10-28,RCD Mallorca,Athletic Club,89,77,0,0
+2024-11-01,Deportivo Alavés,RCD Mallorca,263,89,1,0
+2024-11-02,CA Osasuna,Real Valladolid CF,79,250,1,0
+2024-11-02,Girona FC,CD Leganés,298,745,4,3
+2024-11-03,Club Atlético de Madrid,UD Las Palmas,78,275,2,0
+2024-11-03,FC Barcelona,RCD Espanyol de Barcelona,81,80,3,1
+2024-11-03,Sevilla FC,Real Sociedad de Fútbol,559,92,0,2
+2024-11-03,Athletic Club,Real Betis Balompié,77,90,1,1
+2024-11-04,RC Celta de Vigo,Getafe CF,558,82,1,0
+2024-11-08,Rayo Vallecano de Madrid,UD Las Palmas,87,275,1,3
+2024-11-09,Real Madrid CF,CA Osasuna,86,79,4,0
+2024-11-09,Villarreal CF,Deportivo Alavés,94,263,3,0
+2024-11-09,CD Leganés,Sevilla FC,745,559,1,0
+2024-11-10,Real Betis Balompié,RC Celta de Vigo,90,558,2,2
+2024-11-10,RCD Mallorca,Club Atlético de Madrid,89,78,0,1
+2024-11-10,Getafe CF,Girona FC,82,298,0,1
+2024-11-10,Real Valladolid CF,Athletic Club,250,77,1,1
+2024-11-10,Real Sociedad de Fútbol,FC Barcelona,92,81,1,0
+2024-11-22,Getafe CF,Real Valladolid CF,82,250,2,0
+2024-11-23,Valencia CF,Real Betis Balompié,95,90,4,2
+2024-11-23,Club Atlético de Madrid,Deportivo Alavés,78,263,2,1
+2024-11-23,UD Las Palmas,RCD Mallorca,275,89,2,3
+2024-11-23,Girona FC,RCD Espanyol de Barcelona,298,80,4,1
+2024-11-23,RC Celta de Vigo,FC Barcelona,558,81,2,2
+2024-11-24,CA Osasuna,Villarreal CF,79,94,2,2
+2024-11-24,Sevilla FC,Rayo Vallecano de Madrid,559,87,1,0
+2024-11-24,CD Leganés,Real Madrid CF,745,86,0,3
+2024-11-24,Athletic Club,Real Sociedad de Fútbol,77,92,1,0
+2024-11-29,RCD Mallorca,Valencia CF,89,95,2,1
+2024-11-30,FC Barcelona,UD Las Palmas,81,275,1,2
+2024-11-30,Deportivo Alavés,CD Leganés,263,745,1,1
+2024-11-30,RCD Espanyol de Barcelona,RC Celta de Vigo,80,558,3,1
+2024-11-30,Real Valladolid CF,Club Atlético de Madrid,250,78,0,5
+2024-12-01,Villarreal CF,Girona FC,94,298,2,2
+2024-12-01,Real Madrid CF,Getafe CF,86,82,2,0
+2024-12-01,Rayo Vallecano de Madrid,Athletic Club,87,77,1,2
+2024-12-01,Real Sociedad de Fútbol,Real Betis Balompié,92,90,2,0
+2024-12-02,Sevilla FC,CA Osasuna,559,79,1,1
+2024-12-03,RCD Mallorca,FC Barcelona,89,81,1,5
+2024-12-04,Athletic Club,Real Madrid CF,77,86,2,1
+2024-12-06,RC Celta de Vigo,RCD Mallorca,558,89,2,0
+2024-12-07,UD Las Palmas,Real Valladolid CF,275,250,2,1
+2024-12-07,Real Betis Balompié,FC Barcelona,90,81,2,2
+2024-12-07,Valencia CF,Rayo Vallecano de Madrid,95,87,0,1
+2024-12-07,Girona FC,Real Madrid CF,298,86,0,3
+2024-12-08,CD Leganés,Real Sociedad de Fútbol,745,92,0,3
+2024-12-08,Athletic Club,Villarreal CF,77,94,2,0
+2024-12-08,CA Osasuna,Deportivo Alavés,79,263,2,2
+2024-12-08,Club Atlético de Madrid,Sevilla FC,78,559,4,3
+2024-12-09,Getafe CF,RCD Espanyol de Barcelona,82,80,1,0
+2024-12-13,Real Valladolid CF,Valencia CF,250,95,1,0
+2024-12-14,RCD Espanyol de Barcelona,CA Osasuna,80,79,0,0
+2024-12-14,RCD Mallorca,Girona FC,89,298,2,1
+2024-12-14,Sevilla FC,RC Celta de Vigo,559,558,1,0
+2024-12-14,Rayo Vallecano de Madrid,Real Madrid CF,87,86,3,3
+2024-12-15,Club Atlético de Madrid,Getafe CF,78,82,1,0
+2024-12-15,Deportivo Alavés,Athletic Club,263,77,1,1
+2024-12-15,Villarreal CF,Real Betis Balompié,94,90,1,2
+2024-12-15,Real Sociedad de Fútbol,UD Las Palmas,92,275,0,0
+2024-12-15,FC Barcelona,CD Leganés,81,745,0,1
+2024-12-18,Villarreal CF,Rayo Vallecano de Madrid,94,87,1,1
+2024-12-18,RCD Espanyol de Barcelona,Valencia CF,80,95,1,1
+2024-12-20,Girona FC,Real Valladolid CF,298,250,3,0
+2024-12-21,Getafe CF,RCD Mallorca,82,89,0,1
+2024-12-21,RC Celta de Vigo,Real Sociedad de Fútbol,558,92,2,0
+2024-12-21,CA Osasuna,Athletic Club,79,77,1,2
+2024-12-21,FC Barcelona,Club Atlético de Madrid,81,78,1,2
+2024-12-22,Valencia CF,Deportivo Alavés,95,263,2,2
+2024-12-22,Real Madrid CF,Sevilla FC,86,559,4,2
+2024-12-22,CD Leganés,Villarreal CF,745,94,2,5
+2024-12-22,UD Las Palmas,RCD Espanyol de Barcelona,275,80,1,0
+2024-12-22,Real Betis Balompié,Rayo Vallecano de Madrid,90,87,1,1
+2025-01-03,Valencia CF,Real Madrid CF,95,86,1,2
+2025-01-10,Rayo Vallecano de Madrid,RC Celta de Vigo,87,558,2,1
+2025-01-11,Deportivo Alavés,Girona FC,263,298,0,1
+2025-01-11,Real Valladolid CF,Real Betis Balompié,250,90,1,0
+2025-01-11,RCD Espanyol de Barcelona,CD Leganés,80,745,1,1
+2025-01-11,Sevilla FC,Valencia CF,559,95,1,1
+2025-01-12,UD Las Palmas,Getafe CF,275,82,1,2
+2025-01-12,Club Atlético de Madrid,CA Osasuna,78,79,1,0
+2025-01-13,Real Sociedad de Fútbol,Villarreal CF,92,94,1,0
+2025-01-17,RCD Espanyol de Barcelona,Real Valladolid CF,80,250,2,1
+2025-01-18,Girona FC,Sevilla FC,298,559,1,2
+2025-01-18,CD Leganés,Club Atlético de Madrid,745,78,1,0
+2025-01-18,Real Betis Balompié,Deportivo Alavés,90,263,1,3
+2025-01-18,Getafe CF,FC Barcelona,82,81,1,1
+2025-01-19,RC Celta de Vigo,Athletic Club,558,77,1,2
+2025-01-19,Real Madrid CF,UD Las Palmas,86,275,4,1
+2025-01-19,CA Osasuna,Rayo Vallecano de Madrid,79,87,1,1
+2025-01-19,Valencia CF,Real Sociedad de Fútbol,95,92,1,0
+2025-01-20,Villarreal CF,RCD Mallorca,94,89,4,0
+2025-01-24,UD Las Palmas,CA Osasuna,275,79,1,1
+2025-01-25,RCD Mallorca,Real Betis Balompié,89,90,0,1
+2025-01-25,Club Atlético de Madrid,Villarreal CF,78,94,1,1
+2025-01-25,Sevilla FC,RCD Espanyol de Barcelona,559,80,1,1
+2025-01-25,Real Valladolid CF,Real Madrid CF,250,86,0,3
+2025-01-26,Rayo Vallecano de Madrid,Girona FC,87,298,2,1
+2025-01-26,Real Sociedad de Fútbol,Getafe CF,92,82,0,3
+2025-01-26,Athletic Club,CD Leganés,77,745,0,0
+2025-01-26,FC Barcelona,Valencia CF,81,95,7,1
+2025-01-27,Deportivo Alavés,RC Celta de Vigo,263,558,1,1
+2025-01-31,CD Leganés,Rayo Vallecano de Madrid,745,87,0,1
+2025-02-01,Getafe CF,Sevilla FC,82,559,0,0
+2025-02-01,Villarreal CF,Real Valladolid CF,94,250,5,1
+2025-02-01,Club Atlético de Madrid,RCD Mallorca,78,89,2,0
+2025-02-01,RCD Espanyol de Barcelona,Real Madrid CF,80,86,1,0
+2025-02-02,FC Barcelona,Deportivo Alavés,81,263,1,0
+2025-02-02,Valencia CF,RC Celta de Vigo,95,558,2,1
+2025-02-02,CA Osasuna,Real Sociedad de Fútbol,79,92,2,1
+2025-02-02,Real Betis Balompié,Athletic Club,90,77,2,2
+2025-02-03,Girona FC,UD Las Palmas,298,275,2,1
+2025-02-07,Rayo Vallecano de Madrid,Real Valladolid CF,87,250,1,0
+2025-02-08,RC Celta de Vigo,Real Betis Balompié,558,90,3,2
+2025-02-08,Athletic Club,Girona FC,77,298,3,0
+2025-02-08,UD Las Palmas,Villarreal CF,275,94,1,2
+2025-02-08,Real Madrid CF,Club Atlético de Madrid,86,78,1,1
+2025-02-09,Deportivo Alavés,Getafe CF,263,82,0,1
+2025-02-09,Valencia CF,CD Leganés,95,745,2,0
+2025-02-09,Real Sociedad de Fútbol,RCD Espanyol de Barcelona,92,80,2,1
+2025-02-09,Sevilla FC,FC Barcelona,559,81,1,4
+2025-02-10,RCD Mallorca,CA Osasuna,89,79,1,1
+2025-02-14,Girona FC,Getafe CF,298,82,1,2
+2025-02-15,CD Leganés,Deportivo Alavés,745,263,3,3
+2025-02-15,CA Osasuna,Real Madrid CF,79,86,1,1
+2025-02-15,Club Atlético de Madrid,RC Celta de Vigo,78,558,1,1
+2025-02-15,Villarreal CF,Valencia CF,94,95,1,1
+2025-02-16,RCD Espanyol de Barcelona,Athletic Club,80,77,1,1
+2025-02-16,Real Valladolid CF,Sevilla FC,250,559,0,4
+2025-02-16,RCD Mallorca,UD Las Palmas,89,275,3,1
+2025-02-16,Real Betis Balompié,Real Sociedad de Fútbol,90,92,3,0
+2025-02-17,FC Barcelona,Rayo Vallecano de Madrid,81,87,1,0
+2025-02-21,RC Celta de Vigo,CA Osasuna,558,79,1,0
+2025-02-22,Deportivo Alavés,RCD Espanyol de Barcelona,263,80,0,1
+2025-02-22,Rayo Vallecano de Madrid,Villarreal CF,87,94,0,1
+2025-02-22,Valencia CF,Club Atlético de Madrid,95,78,0,3
+2025-02-22,UD Las Palmas,FC Barcelona,275,81,0,2
+2025-02-23,Athletic Club,Real Valladolid CF,77,250,7,1
+2025-02-23,Real Madrid CF,Girona FC,86,298,2,0
+2025-02-23,Getafe CF,Real Betis Balompié,82,90,1,2
+2025-02-23,Real Sociedad de Fútbol,CD Leganés,92,745,3,0
+2025-02-24,Sevilla FC,RCD Mallorca,559,89,1,1
+2025-02-28,Real Valladolid CF,UD Las Palmas,250,275,1,1
+2025-03-01,Girona FC,RC Celta de Vigo,298,558,2,2
+2025-03-01,Rayo Vallecano de Madrid,Sevilla FC,87,559,1,1
+2025-03-01,Real Betis Balompié,Real Madrid CF,90,86,2,1
+2025-03-01,Club Atlético de Madrid,Athletic Club,78,77,1,0
+2025-03-02,CD Leganés,Getafe CF,745,82,1,0
+2025-03-02,FC Barcelona,Real Sociedad de Fútbol,81,92,4,0
+2025-03-02,RCD Mallorca,Deportivo Alavés,89,263,1,1
+2025-03-02,CA Osasuna,Valencia CF,79,95,3,3
+2025-03-08,RC Celta de Vigo,CD Leganés,558,745,2,1
+2025-03-08,Deportivo Alavés,Villarreal CF,263,94,1,0
+2025-03-08,Valencia CF,Real Valladolid CF,95,250,2,1
+2025-03-09,Getafe CF,Club Atlético de Madrid,82,78,2,1
+2025-03-09,Real Madrid CF,Rayo Vallecano de Madrid,86,87,2,1
+2025-03-09,Athletic Club,RCD Mallorca,77,89,1,1
+2025-03-09,Real Betis Balompié,UD Las Palmas,90,275,1,0
+2025-03-09,Real Sociedad de Fútbol,Sevilla FC,92,559,0,1
+2025-03-10,RCD Espanyol de Barcelona,Girona FC,80,298,1,1
+2025-03-14,UD Las Palmas,Deportivo Alavés,275,263,2,2
+2025-03-15,Real Valladolid CF,RC Celta de Vigo,250,558,0,1
+2025-03-15,RCD Mallorca,RCD Espanyol de Barcelona,89,80,2,1
+2025-03-15,Villarreal CF,Real Madrid CF,94,86,1,2
+2025-03-15,Girona FC,Valencia CF,298,95,1,1
+2025-03-16,CD Leganés,Real Betis Balompié,745,90,2,3
+2025-03-16,Sevilla FC,Athletic Club,559,77,0,1
+2025-03-16,CA Osasuna,Getafe CF,79,82,1,2
+2025-03-16,Rayo Vallecano de Madrid,Real Sociedad de Fútbol,87,92,2,2
+2025-03-16,Club Atlético de Madrid,FC Barcelona,78,81,2,4
+2025-03-27,FC Barcelona,CA Osasuna,81,79,3,0
+2025-03-29,Real Sociedad de Fútbol,Real Valladolid CF,92,250,2,1
+2025-03-29,RCD Espanyol de Barcelona,Club Atlético de Madrid,80,78,1,1
+2025-03-29,Deportivo Alavés,Rayo Vallecano de Madrid,263,87,0,2
+2025-03-29,Real Madrid CF,CD Leganés,86,745,3,2
+2025-03-30,Getafe CF,Villarreal CF,82,94,1,2
+2025-03-30,FC Barcelona,Girona FC,81,298,4,1
+2025-03-30,Athletic Club,CA Osasuna,77,79,0,0
+2025-03-30,Valencia CF,RCD Mallorca,95,89,1,0
+2025-03-30,Real Betis Balompié,Sevilla FC,90,559,2,1
+2025-03-31,RC Celta de Vigo,UD Las Palmas,558,275,1,1
+2025-04-04,Rayo Vallecano de Madrid,RCD Espanyol de Barcelona,87,80,0,4
+2025-04-05,Girona FC,Deportivo Alavés,298,263,0,1
+2025-04-05,Real Madrid CF,Valencia CF,86,95,1,2
+2025-04-05,RCD Mallorca,RC Celta de Vigo,89,558,1,2
+2025-04-05,FC Barcelona,Real Betis Balompié,81,90,1,1
+2025-04-06,UD Las Palmas,Real Sociedad de Fútbol,275,92,1,3
+2025-04-06,Sevilla FC,Club Atlético de Madrid,559,78,1,2
+2025-04-06,Real Valladolid CF,Getafe CF,250,82,0,4
+2025-04-06,Villarreal CF,Athletic Club,94,77,0,0
+2025-04-07,CD Leganés,CA Osasuna,745,79,1,1
+2025-04-11,Valencia CF,Sevilla FC,95,559,1,0
+2025-04-12,Real Sociedad de Fútbol,RCD Mallorca,92,89,0,2
+2025-04-12,Getafe CF,UD Las Palmas,82,275,1,3
+2025-04-12,RC Celta de Vigo,RCD Espanyol de Barcelona,558,80,0,2
+2025-04-12,CD Leganés,FC Barcelona,745,81,0,1
+2025-04-13,CA Osasuna,Girona FC,79,298,2,1
+2025-04-13,Deportivo Alavés,Real Madrid CF,263,86,0,1
+2025-04-13,Real Betis Balompié,Villarreal CF,90,94,1,2
+2025-04-13,Athletic Club,Rayo Vallecano de Madrid,77,87,3,1
+2025-04-14,Club Atlético de Madrid,Real Valladolid CF,78,250,4,2
+2025-04-18,RCD Espanyol de Barcelona,Getafe CF,80,82,1,0
+2025-04-19,Rayo Vallecano de Madrid,Valencia CF,87,95,1,1
+2025-04-19,FC Barcelona,RC Celta de Vigo,81,558,4,3
+2025-04-19,RCD Mallorca,CD Leganés,89,745,0,0
+2025-04-19,UD Las Palmas,Club Atlético de Madrid,275,78,1,0
+2025-04-20,Real Valladolid CF,CA Osasuna,250,79,2,3
+2025-04-20,Villarreal CF,Real Sociedad de Fútbol,94,92,2,2
+2025-04-20,Sevilla FC,Deportivo Alavés,559,263,1,1
+2025-04-20,Real Madrid CF,Athletic Club,86,77,1,0
+2025-04-21,Girona FC,Real Betis Balompié,298,90,1,3
+2025-04-22,Valencia CF,RCD Espanyol de Barcelona,95,80,1,1
+2025-04-22,FC Barcelona,RCD Mallorca,81,89,1,0
+2025-04-23,Athletic Club,UD Las Palmas,77,275,1,0
+2025-04-23,RC Celta de Vigo,Villarreal CF,558,94,3,0
+2025-04-23,Deportivo Alavés,Real Sociedad de Fútbol,263,92,1,0
+2025-04-23,Getafe CF,Real Madrid CF,82,86,0,1
+2025-04-24,CA Osasuna,Sevilla FC,79,559,1,0
+2025-04-24,CD Leganés,Girona FC,745,298,1,1
+2025-04-24,Club Atlético de Madrid,Rayo Vallecano de Madrid,78,87,3,0
+2025-04-24,Real Betis Balompié,Real Valladolid CF,90,250,5,1
+2025-04-27,Villarreal CF,RCD Espanyol de Barcelona,94,80,1,0
+2025-05-02,Rayo Vallecano de Madrid,Getafe CF,87,82,1,0
+2025-05-03,Deportivo Alavés,Club Atlético de Madrid,263,78,0,0
+2025-05-03,Villarreal CF,CA Osasuna,94,79,4,2
+2025-05-03,UD Las Palmas,Valencia CF,275,95,2,3
+2025-05-03,Real Valladolid CF,FC Barcelona,250,81,1,2
+2025-05-04,Real Madrid CF,RC Celta de Vigo,86,558,3,2
+2025-05-04,Sevilla FC,CD Leganés,559,745,2,2
+2025-05-04,RCD Espanyol de Barcelona,Real Betis Balompié,80,90,1,2
+2025-05-04,Real Sociedad de Fútbol,Athletic Club,92,77,0,0
+2025-05-05,Girona FC,RCD Mallorca,298,89,1,0
+2025-05-09,UD Las Palmas,Rayo Vallecano de Madrid,275,87,0,1
+2025-05-10,Valencia CF,Getafe CF,95,82,3,0
+2025-05-10,RC Celta de Vigo,Sevilla FC,558,559,3,2
+2025-05-10,Girona FC,Villarreal CF,298,94,0,1
+2025-05-10,RCD Mallorca,Real Valladolid CF,89,250,2,1
+2025-05-10,Club Atlético de Madrid,Real Sociedad de Fútbol,78,92,4,0
+2025-05-11,CD Leganés,RCD Espanyol de Barcelona,745,80,3,2
+2025-05-11,FC Barcelona,Real Madrid CF,81,86,4,3
+2025-05-11,Athletic Club,Deportivo Alavés,77,263,1,0
+2025-05-11,Real Betis Balompié,CA Osasuna,90,79,1,1
+2025-05-13,Real Valladolid CF,Girona FC,250,298,0,1
+2025-05-13,Real Sociedad de Fútbol,RC Celta de Vigo,92,558,0,1
+2025-05-13,Sevilla FC,UD Las Palmas,559,275,1,0
+2025-05-14,Deportivo Alavés,Valencia CF,263,95,1,0
+2025-05-14,Villarreal CF,CD Leganés,94,745,3,0
+2025-05-14,Real Madrid CF,RCD Mallorca,86,89,2,1
+2025-05-15,CA Osasuna,Club Atlético de Madrid,79,78,2,0
+2025-05-15,Rayo Vallecano de Madrid,Real Betis Balompié,87,90,2,2
+2025-05-15,Getafe CF,Athletic Club,82,77,0,2
+2025-05-15,RCD Espanyol de Barcelona,FC Barcelona,80,81,0,2
+2025-05-18,Club Atlético de Madrid,Real Betis Balompié,78,90,4,1
+2025-05-18,RC Celta de Vigo,Rayo Vallecano de Madrid,558,87,1,2
+2025-05-18,FC Barcelona,Villarreal CF,81,94,2,3
+2025-05-18,Sevilla FC,Real Madrid CF,559,86,0,2
+2025-05-18,Valencia CF,Athletic Club,95,77,0,1
+2025-05-18,RCD Mallorca,Getafe CF,89,82,1,2
+2025-05-18,Real Sociedad de Fútbol,Girona FC,92,298,3,2
+2025-05-18,Real Valladolid CF,Deportivo Alavés,250,263,0,1
+2025-05-18,UD Las Palmas,CD Leganés,275,745,0,1
+2025-05-18,CA Osasuna,RCD Espanyol de Barcelona,79,80,2,0
+2025-05-23,Real Betis Balompié,Valencia CF,90,95,1,1
+2025-05-24,Real Madrid CF,Real Sociedad de Fútbol,86,92,2,0
+2025-05-24,CD Leganés,Real Valladolid CF,745,250,3,0
+2025-05-24,RCD Espanyol de Barcelona,UD Las Palmas,80,275,2,0
+2025-05-24,Deportivo Alavés,CA Osasuna,263,79,1,1
+2025-05-24,Getafe CF,RC Celta de Vigo,82,558,1,2
+2025-05-24,Rayo Vallecano de Madrid,RCD Mallorca,87,89,0,0
+2025-05-25,Girona FC,Club Atlético de Madrid,298,78,0,4
+2025-05-25,Villarreal CF,Sevilla FC,94,559,4,2
+2025-05-25,Athletic Club,FC Barcelona,77,81,0,3

@@ -10,6 +10,10 @@ form features are rebuilt using only matches that kicked off *before*
 that betting round, so no result leaks into its own prediction. Bets are
 grouped into rounds by date (a gap of more than --round-gap-days starts a
 new round), matching the way a whole gameweek is predicted at once.
+Rounds and gameweeks are worked out per competition (Div), because the
+leagues' calendars overlap.
+
+Every write also brings the file up to the current schema (bet_schema).
 
     python src/backfill_bet_probs.py            # fill missing only
     python src/backfill_bet_probs.py --force    # recompute every row
@@ -20,6 +24,7 @@ from pathlib import Path
 
 import pandas as pd
 
+from bet_schema import COLUMN_ORDER, add_missing_columns, round_for
 from team_names import load_alias_map, normalize_team_names
 from predict_next_matches import (
     build_history,
@@ -35,14 +40,6 @@ MATCHES_PATH = ROOT / "data" / "processed" / "all_matches.csv"
 
 PROB_COLS = list(PROB_COLUMNS.values())
 
-# Gameweek,Div,Date,Time,HomeTeam,AwayTeam,PredictedResult,<probs>,ActualResult,Bet,Profit
-COLUMN_ORDER = [
-    "Gameweek",
-    "Div", "Date", "Time", "HomeTeam", "AwayTeam", "PredictedResult",
-    *PROB_COLS,
-    "ActualResult", "Bet", "Profit",
-]
-
 
 def load_matches(matches_path=MATCHES_PATH):
 
@@ -52,13 +49,26 @@ def load_matches(matches_path=MATCHES_PATH):
     return matches
 
 
-def assign_rounds(kickoffs, gap_days):
-    """Group kickoff datetimes into rounds separated by a gap in days."""
+def assign_rounds(kickoffs, gap_days, divs=None):
+    """
+    Group kickoff datetimes into rounds separated by a gap in days.
+    With ``divs``, each competition is grouped on its own and the round
+    ids are (Div, n) pairs.
+    """
 
-    ordered = kickoffs.sort_values()
-    new_round = ordered.diff() > pd.Timedelta(days=gap_days)
+    if divs is None:
+        ordered = kickoffs.sort_values()
+        new_round = ordered.diff() > pd.Timedelta(days=gap_days)
 
-    return new_round.cumsum().reindex(kickoffs.index)
+        return new_round.cumsum().reindex(kickoffs.index)
+
+    rounds = pd.Series(index=kickoffs.index, dtype="object")
+
+    for div, index in kickoffs.groupby(divs).groups.items():
+        numbers = assign_rounds(kickoffs.loc[index], gap_days)
+        rounds.loc[index] = [(div, n) for n in numbers]
+
+    return rounds
 
 
 def attach_gameweeks(bets, matches, alias_map, gap_days):
@@ -68,23 +78,24 @@ def attach_gameweeks(bets, matches, alias_map, gap_days):
     rounds following the last played gameweek.
     """
 
-    keyed = bets[["Date", "HomeTeam", "AwayTeam"]].copy()
+    key = ["Div", "Date", "HomeTeam", "AwayTeam"]
+
+    keyed = bets[key].copy()
     keyed["HomeTeam"] = keyed["HomeTeam"].replace(alias_map)
     keyed["AwayTeam"] = keyed["AwayTeam"].replace(alias_map)
 
-    played = matches[["Date", "HomeTeam", "AwayTeam", "Gameweek"]].drop_duplicates(
-        subset=["Date", "HomeTeam", "AwayTeam"]
-    )
+    played = matches[key + ["Gameweek"]].drop_duplicates(subset=key)
 
-    gameweek = keyed.merge(
-        played, on=["Date", "HomeTeam", "AwayTeam"], how="left"
-    )["Gameweek"]
+    gameweek = keyed.merge(played, on=key, how="left")["Gameweek"]
     gameweek.index = bets.index
 
-    missing = bets.index[gameweek.isna()]
+    for div in bets.loc[gameweek.isna(), "Div"].unique():
 
-    if len(missing):
-        base = int(gameweek.max()) if gameweek.notna().any() else 0
+        in_div = bets["Div"] == div
+        missing = bets.index[in_div & gameweek.isna()]
+
+        known = gameweek[in_div].dropna()
+        base = int(known.max()) if len(known) else 0
         rounds = assign_rounds(bets.loc[missing, "_kickoff"], gap_days)
         rank = {r: i for i, r in enumerate(sorted(rounds.dropna().unique()))}
         gameweek.loc[missing] = rounds.map(rank) + base + 1
@@ -125,12 +136,16 @@ def backfill(
 
     if len(gw_todo):
         bets["Gameweek"] = attach_gameweeks(bets, matches, alias_map, gap_days)
+        if "Round" in bets.columns:
+            bets["Round"] = bets["Round"].where(
+                bets["Round"].notna(), round_for(bets["Gameweek"])
+            )
         print(f"Filled gameweek on {len(gw_todo)} bet(s).")
 
     if len(prob_todo) == 0:
         return _write(bets, bets_path)
 
-    bets["_round"] = assign_rounds(bets["_kickoff"], gap_days)
+    bets["_round"] = assign_rounds(bets["_kickoff"], gap_days, bets["Div"])
     todo = prob_todo
 
     filled = 0
@@ -173,10 +188,19 @@ def backfill(
     return _write(bets, bets_path)
 
 
+def format_bets(bets):
+    """Bets in the current schema and column order, ready to write."""
+
+    bets = add_missing_columns(bets)[COLUMN_ORDER]
+    # Whole units, written as complete_bets writes them ("1", not "1.0")
+    bets["Bet"] = bets["Bet"].astype("Int64")
+
+    return bets
+
+
 def _write(bets, bets_path):
 
-    bets = bets.drop(columns=["_kickoff", "_round"], errors="ignore")
-    bets = bets[[c for c in COLUMN_ORDER if c in bets.columns]]
+    bets = format_bets(bets)
     bets.to_csv(bets_path, index=False)
 
     print(f"Wrote {bets_path}")

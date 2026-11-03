@@ -1,30 +1,139 @@
-canonical_name,football_data_name,understat_name,bbc_name,football_data_org_name,fotmob_name
-Arsenal,Arsenal,Arsenal,Arsenal,Arsenal FC,Arsenal
-Aston Villa,Aston Villa,Aston Villa,Aston Villa,Aston Villa FC,Aston Villa
-Bournemouth,Bournemouth,Bournemouth,AFC Bournemouth,AFC Bournemouth,AFC Bournemouth
-Brentford,Brentford,Brentford,Brentford,Brentford FC,Brentford
-Brighton and Hove Albion,Brighton,Brighton,Brighton & Hove Albion,Brighton & Hove Albion FC,Brighton & Hove Albion
-Burnley,Burnley,Burnley,,Burnley FC,Burnley
-Chelsea,Chelsea,Chelsea,Chelsea,Chelsea FC,Chelsea
-Coventry,Coventry,Coventry,Coventry City,Coventry City FC,Coventry City
-Crystal Palace,Crystal Palace,Crystal Palace,Crystal Palace,Crystal Palace FC,Crystal Palace
-Everton,Everton,Everton,Everton,Everton FC,Everton
-Fulham,Fulham,Fulham,Fulham,Fulham FC,Fulham
-Hull City,Hull,Hull,Hull City,Hull City AFC,Hull City
-Ipswich,Ipswich,Ipswich,Ipswich Town,Ipswich Town FC,Ipswich Town
-Leeds United,Leeds,Leeds,Leeds United,Leeds United FC,Leeds United
-Leicester City,Leicester,Leicester,,Leicester City FC,Leicester City
-Liverpool,Liverpool,Liverpool,Liverpool,Liverpool FC,Liverpool
-Luton,Luton,Luton,,Luton Town FC,Luton Town
-Manchester City,Man City,Manchester City,Manchester City,Manchester City FC,Manchester City
-Manchester United,Man United,Manchester United,Manchester United,Manchester United FC,Manchester United
-Newcastle United,Newcastle,Newcastle United,Newcastle United,Newcastle United FC,Newcastle United
-Norwich City,Norwich,Norwich,,Norwich City FC,Norwich City
-Nottingham Forest,Nott'm Forest,Nottingham Forest,Nottingham Forest,Nottingham Forest FC,Nottingham Forest
-Sheffield United,Sheffield United,Sheffield United,,Sheffield United FC,Sheffield United
-Southampton,Southampton,Southampton,,Southampton FC,Southampton
-Sunderland,Sunderland,Sunderland,Sunderland,Sunderland AFC,Sunderland
-Tottenham Hotspur,Tottenham,Tottenham,Tottenham Hotspur,Tottenham Hotspur FC,Tottenham Hotspur
-Watford,Watford,Watford,,Watford FC,Watford
-West Ham United,West Ham,West Ham,West Ham United,West Ham United FC,West Ham United
-Wolverhampton Wanderers,Wolves,Wolverhampton Wanderers,,Wolverhampton Wanderers FC,Wolverhampton Wanderers
+canonical_name,country,fotmob_id,football_data_org_id,football_data_name,understat_name,bbc_name,football_data_org_name,fotmob_name
+Arsenal,ENG,9825,57,Arsenal,Arsenal,Arsenal,Arsenal FC,Arsenal
+Aston Villa,ENG,10252,58,Aston Villa,Aston Villa,Aston Villa,Aston Villa FC,Aston Villa
+Bournemouth,ENG,8678,1044,Bournemouth,Bournemouth,AFC Bournemouth,AFC Bournemouth,AFC Bournemouth
+Brentford,ENG,9937,402,Brentford,Brentford,Brentford,Brentford FC,Brentford
+Brighton and Hove Albion,ENG,10204,397,Brighton,Brighton,Brighton & Hove Albion,Brighton & Hove Albion FC,Brighton & Hove Albion
+Burnley,ENG,8191,328,Burnley,Burnley,,Burnley FC,Burnley
+Chelsea,ENG,8455,61,Chelsea,Chelsea,Chelsea,Chelsea FC,Chelsea
+Coventry,ENG,8669,1076,Coventry,Coventry,Coventry City,Coventry City FC,Coventry City
+Crystal Palace,ENG,9826,354,Crystal Palace,Crystal Palace,Crystal Palace,Crystal Palace FC,Crystal Palace
+Everton,ENG,8668,62,Everton,Everton,Everton,Everton FC,Everton
+Fulham,ENG,9879,63,Fulham,Fulham,Fulham,Fulham FC,Fulham
+Hull City,ENG,8667,322,Hull,Hull,Hull City,Hull City AFC,Hull City
+Ipswich,ENG,9902,349,Ipswich,Ipswich,Ipswich Town,Ipswich Town FC,Ipswich Town
+Leeds United,ENG,8463,341,Leeds,Leeds,Leeds United,Leeds United FC,Leeds United
+Leicester City,ENG,8197,338,Leicester,Leicester,,Leicester City FC,Leicester City
+Liverpool,ENG,8650,64,Liverpool,Liverpool,Liverpool,Liverpool FC,Liverpool
+Luton,ENG,8346,,Luton,Luton,,Luton Town FC,Luton Town
+Manchester City,ENG,8456,65,Man City,Manchester City,Manchester City,Manchester City FC,Manchester City
+Manchester United,ENG,10260,66,Man United,Manchester United,Manchester United,Manchester United FC,Manchester United
+Newcastle United,ENG,10261,67,Newcastle,Newcastle United,Newcastle United,Newcastle United FC,Newcastle United
+Norwich City,ENG,9850,,Norwich,Norwich,,Norwich City FC,Norwich City
+Nottingham Forest,ENG,10203,351,Nott'm Forest,Nottingham Forest,Nottingham Forest,Nottingham Forest FC,Nottingham Forest
+Sheffield United,ENG,8657,,Sheffield United,Sheffield United,,Sheffield United FC,Sheffield United
+Southampton,ENG,8466,340,Southampton,Southampton,,Southampton FC,Southampton
+Sunderland,ENG,8472,71,Sunderland,Sunderland,Sunderland,Sunderland AFC,Sunderland
+Tottenham Hotspur,ENG,8586,73,Tottenham,Tottenham,Tottenham Hotspur,Tottenham Hotspur FC,Tottenham Hotspur
+Watford,ENG,9817,,Watford,Watford,,Watford FC,Watford
+West Ham United,ENG,8654,563,West Ham,West Ham,West Ham United,West Ham United FC,West Ham United
+Wolverhampton Wanderers,ENG,8602,76,Wolves,Wolverhampton Wanderers,,Wolverhampton Wanderers FC,Wolverhampton Wanderers
+Deportivo Alavés,ESP,9866,263,Alaves,Alaves,,Deportivo Alavés,Deportivo Alavés
+Almería,ESP,9865,,Almeria,Almeria,,,Almería
+Athletic Club,ESP,8315,77,Ath Bilbao,Athletic Club,,Athletic Club,Athletic Club
+Atlético Madrid,ESP,9906,78,Ath Madrid,Atletico Madrid,,Club Atlético de Madrid,Atlético Madrid
+Barcelona,ESP,8634,81,Barcelona,Barcelona,,FC Barcelona,Barcelona
+Real Betis,ESP,8603,90,Betis,Real Betis,,Real Betis Balompié,Real Betis
+Cádiz,ESP,8385,,Cadiz,Cadiz,,,Cádiz
+Celta Vigo,ESP,9910,558,Celta,Celta Vigo,,RC Celta de Vigo,Celta Vigo
+Elche,ESP,10268,285,Elche,Elche,,Elche CF,Elche
+Espanyol,ESP,8558,80,Espanol,Espanyol,,RCD Espanyol de Barcelona,Espanyol
+Getafe,ESP,8305,82,Getafe,Getafe,,Getafe CF,Getafe
+Girona,ESP,7732,298,Girona,Girona,,Girona FC,Girona
+Granada,ESP,7878,,Granada,Granada,,,Granada
+Deportivo A Coruña,ESP,9783,560,La Coruna,Deportivo La Coruna,,RC Deportivo La Coruña,Deportivo A Coruña
+Las Palmas,ESP,8306,275,Las Palmas,Las Palmas,,UD Las Palmas,Las Palmas
+Leganés,ESP,7854,745,Leganes,Leganes,,CD Leganés,Leganés
+Levante,ESP,8581,88,Levante,Levante,,Levante UD,Levante
+Málaga,ESP,9864,84,Malaga,Malaga,,Málaga CF,Málaga
+Mallorca,ESP,8661,89,Mallorca,Mallorca,,RCD Mallorca,Mallorca
+Osasuna,ESP,8371,79,Osasuna,Osasuna,,CA Osasuna,Osasuna
+Real Oviedo,ESP,8670,1048,Oviedo,Real Oviedo,,Real Oviedo,Real Oviedo
+Real Madrid,ESP,8633,86,Real Madrid,Real Madrid,,Real Madrid CF,Real Madrid
+Racing Santander,ESP,8696,5335,Santander,Racing Santander,,Real Racing Club de Santander,Racing Santander
+Sevilla,ESP,8302,559,Sevilla,Sevilla,,Sevilla FC,Sevilla
+Real Sociedad,ESP,8560,92,Sociedad,Real Sociedad,,Real Sociedad de Fútbol,Real Sociedad
+Valencia,ESP,10267,95,Valencia,Valencia,,Valencia CF,Valencia
+Real Valladolid,ESP,10281,250,Valladolid,Real Valladolid,,Real Valladolid CF,Real Valladolid
+Rayo Vallecano,ESP,8370,87,Vallecano,Rayo Vallecano,,Rayo Vallecano de Madrid,Rayo Vallecano
+Villarreal,ESP,10205,94,Villarreal,Villarreal,,Villarreal CF,Villarreal
+Augsburg,GER,8406,16,Augsburg,Augsburg,,FC Augsburg,Augsburg
+Bayern München,GER,9823,5,Bayern Munich,Bayern Munich,,FC Bayern München,Bayern München
+Arminia Bielefeld,GER,9912,,Bielefeld,Arminia Bielefeld,,,Arminia Bielefeld
+Bochum,GER,9911,36,Bochum,Bochum,,VfL Bochum 1848,Bochum
+Darmstadt,GER,8262,,Darmstadt,Darmstadt,,,Darmstadt
+Borussia Dortmund,GER,9789,4,Dortmund,Borussia Dortmund,,Borussia Dortmund,Borussia Dortmund
+Eintracht Frankfurt,GER,9810,19,Ein Frankfurt,Eintracht Frankfurt,,Eintracht Frankfurt,Eintracht Frankfurt
+Elversberg,GER,8232,719,Elversberg,Elversberg,,SV 07 Elversberg,Elversberg
+1. FC Köln,GER,8722,1,FC Koln,FC Cologne,,1. FC Köln,1. FC Köln
+Freiburg,GER,8358,17,Freiburg,Freiburg,,SC Freiburg,Freiburg
+Greuther Fürth,GER,8357,,Greuther Furth,Greuther Fuerth,,,Greuther Fürth
+Hamburger SV,GER,9790,7,Hamburg,Hamburger SV,,Hamburger SV,Hamburger SV
+FC Heidenheim,GER,94937,44,Heidenheim,FC Heidenheim,,1. FC Heidenheim 1846,FC Heidenheim
+Hertha BSC,GER,8177,,Hertha,Hertha Berlin,,,Hertha BSC
+Hoffenheim,GER,8226,2,Hoffenheim,Hoffenheim,,TSG 1899 Hoffenheim,Hoffenheim
+Holstein Kiel,GER,8150,720,Holstein Kiel,Holstein Kiel,,Holstein Kiel,Holstein Kiel
+Bayer Leverkusen,GER,8178,3,Leverkusen,Bayer Leverkusen,,Bayer 04 Leverkusen,Bayer Leverkusen
+Borussia Mönchengladbach,GER,9788,18,M'gladbach,Borussia M.Gladbach,,Borussia Mönchengladbach,Borussia Mönchengladbach
+Mainz 05,GER,9905,15,Mainz,Mainz 05,,1. FSV Mainz 05,Mainz 05
+Paderborn,GER,8460,29,Paderborn,Paderborn,,SC Paderborn 07,Paderborn
+RB Leipzig,GER,178475,721,RB Leipzig,RasenBallsport Leipzig,,RB Leipzig,RB Leipzig
+Schalke 04,GER,10189,6,Schalke 04,Schalke 04,,FC Schalke 04,Schalke 04
+St. Pauli,GER,8152,20,St Pauli,St. Pauli,,FC St. Pauli 1910,St. Pauli
+VfB Stuttgart,GER,10269,10,Stuttgart,VfB Stuttgart,,VfB Stuttgart,VfB Stuttgart
+Union Berlin,GER,8149,28,Union Berlin,Union Berlin,,1. FC Union Berlin,Union Berlin
+Werder Bremen,GER,8697,12,Werder Bremen,Werder Bremen,,SV Werder Bremen,Werder Bremen
+Wolfsburg,GER,8721,11,Wolfsburg,Wolfsburg,,VfL Wolfsburg,Wolfsburg
+Atalanta,ITA,8524,102,Atalanta,Atalanta,,Atalanta BC,Atalanta
+Bologna,ITA,9857,103,Bologna,Bologna,,Bologna FC 1909,Bologna
+Cagliari,ITA,8529,104,Cagliari,Cagliari,,Cagliari Calcio,Cagliari
+Como,ITA,10171,7397,Como,Como,,Como 1907,Como
+Cremonese,ITA,7801,457,Cremonese,Cremonese,,US Cremonese,Cremonese
+Empoli,ITA,8534,445,Empoli,Empoli,,Empoli FC,Empoli
+Fiorentina,ITA,8535,99,Fiorentina,Fiorentina,,ACF Fiorentina,Fiorentina
+Frosinone,ITA,9891,470,Frosinone,Frosinone,,Frosinone Calcio,Frosinone
+Genoa,ITA,10233,107,Genoa,Genoa,,Genoa CFC,Genoa
+Inter,ITA,8636,108,Inter,Inter,,FC Internazionale Milano,Inter
+Juventus,ITA,9885,109,Juventus,Juventus,,Juventus FC,Juventus
+Lazio,ITA,8543,110,Lazio,Lazio,,SS Lazio,Lazio
+Lecce,ITA,9888,5890,Lecce,Lecce,,US Lecce,Lecce
+Milan,ITA,8564,98,Milan,AC Milan,,AC Milan,Milan
+Monza,ITA,6504,5911,Monza,Monza,,AC Monza,Monza
+Napoli,ITA,9875,113,Napoli,Napoli,,SSC Napoli,Napoli
+Parma,ITA,10167,112,Parma,Parma Calcio 1913,,Parma Calcio 1913,Parma
+Pisa,ITA,6479,487,Pisa,Pisa,,AC Pisa 1909,Pisa
+Roma,ITA,8686,100,Roma,Roma,,AS Roma,Roma
+Salernitana,ITA,6480,,Salernitana,Salernitana,,,Salernitana
+Sampdoria,ITA,9882,,Sampdoria,Sampdoria,,,Sampdoria
+Sassuolo,ITA,7943,471,Sassuolo,Sassuolo,,US Sassuolo Calcio,Sassuolo
+Spezia,ITA,9881,,Spezia,Spezia,,,Spezia
+Torino,ITA,9804,586,Torino,Torino,,Torino FC,Torino
+Udinese,ITA,8600,115,Udinese,Udinese,,Udinese Calcio,Udinese
+Venezia,ITA,7881,454,Venezia,Venezia,,Venezia FC,Venezia
+Hellas Verona,ITA,9876,450,Verona,Verona,,Hellas Verona FC,Hellas Verona
+AC Ajaccio,FRA,8576,,Ajaccio,Ajaccio,,,AC Ajaccio
+Angers,FRA,8121,532,Angers,Angers,,Angers SCO,Angers
+Auxerre,FRA,8583,519,Auxerre,Auxerre,,AJ Auxerre,Auxerre
+Bordeaux,FRA,9827,,Bordeaux,Bordeaux,,,Bordeaux
+Brest,FRA,8521,512,Brest,Brest,,Stade Brestois 29,Brest
+Clermont Foot,FRA,8311,,Clermont,Clermont Foot,,,Clermont Foot
+Le Havre,FRA,9746,533,Le Havre,Le Havre,,Le Havre AC,Le Havre
+Le Mans,FRA,8682,535,Le Mans,Le Mans,,Le Mans FC,Le Mans
+Lens,FRA,8588,546,Lens,Lens,,Racing Club de Lens,Lens
+Lille,FRA,8639,521,Lille,Lille,,Lille OSC,Lille
+Lorient,FRA,8689,525,Lorient,Lorient,,FC Lorient,Lorient
+Lyon,FRA,9748,523,Lyon,Lyon,,Olympique Lyonnais,Lyon
+Marseille,FRA,8592,516,Marseille,Marseille,,Olympique de Marseille,Marseille
+Metz,FRA,8550,545,Metz,Metz,,FC Metz,Metz
+Monaco,FRA,9829,548,Monaco,Monaco,,AS Monaco FC,Monaco
+Montpellier,FRA,10249,518,Montpellier,Montpellier,,Montpellier HSC,Montpellier
+Nantes,FRA,9830,543,Nantes,Nantes,,FC Nantes,Nantes
+Nice,FRA,9831,522,Nice,Nice,,OGC Nice,Nice
+Paris FC,FRA,6379,1045,Paris FC,Paris FC,,Paris FC,Paris FC
+Paris Saint-Germain,FRA,9847,524,Paris SG,Paris Saint Germain,,Paris Saint-Germain FC,Paris Saint-Germain
+Reims,FRA,9837,547,Reims,Reims,,Stade de Reims,Reims
+Rennes,FRA,9851,529,Rennes,Rennes,,Stade Rennais FC 1901,Rennes
+Saint-Étienne,FRA,9853,527,St Etienne,Saint-Etienne,,AS Saint-Étienne,Saint-Étienne
+Strasbourg,FRA,9848,576,Strasbourg,Strasbourg,,RC Strasbourg Alsace,Strasbourg
+Toulouse,FRA,9941,511,Toulouse,Toulouse,,Toulouse FC,Toulouse
+Troyes,FRA,10242,531,Troyes,Troyes,,ES Troyes AC,Troyes
