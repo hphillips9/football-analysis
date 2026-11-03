@@ -162,7 +162,7 @@ def backfill(
         history, elos, team_history = build_history(history)
         model = train_model(history)
 
-        fixtures = group[["Date", "Time", "HomeTeam", "AwayTeam"]].copy()
+        fixtures = group[["Div", "Date", "Time", "HomeTeam", "AwayTeam"]].copy()
         fixtures["HomeTeam"] = normalize_team_names(
             fixtures["HomeTeam"], alias_map, source_name="Bets.csv"
         )

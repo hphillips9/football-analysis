@@ -2,6 +2,11 @@
 Chronological, leak-free match features: season goals per game, last-5
 xG difference, the same features for upcoming fixtures, and
 build_history to compute them all over a match history.
+
+Every builder takes a ``scope`` (see elo.SCOPES). The default,
+"competition", keeps each Div's history separate, so pooling several
+leagues in one frame leaves each league's features as they would be
+on its own.
 """
 
 import pandas as pd
@@ -9,7 +14,13 @@ import numpy as np
 
 from collections import defaultdict
 
-from elo import build_elo_feature, fixture_elo
+from elo import (
+    DEFAULT_SCOPE,
+    build_elo_feature,
+    fixture_elo,
+    match_div,
+    scope_key,
+)
 
 
 # ============================================================
@@ -67,7 +78,7 @@ def calculate_season_stats(previous_matches, team):
     }
 
 
-def build_goals_per_game_feature(matches):
+def build_goals_per_game_feature(matches, scope=DEFAULT_SCOPE):
 
     season_history = defaultdict(lambda: defaultdict(list))
 
@@ -77,12 +88,16 @@ def build_goals_per_game_feature(matches):
     for _, current_match in matches.iterrows():
 
         season = current_match["Season"]
+        div = match_div(current_match)
 
         home_team = current_match["HomeTeam"]
         away_team = current_match["AwayTeam"]
 
-        home_previous = season_history[season][home_team]
-        away_previous = season_history[season][away_team]
+        home_key = scope_key(div, home_team, scope)
+        away_key = scope_key(div, away_team, scope)
+
+        home_previous = season_history[season][home_key]
+        away_previous = season_history[season][away_key]
 
         home_stats = calculate_season_stats(home_previous, home_team)
         away_stats = calculate_season_stats(away_previous, away_team)
@@ -91,8 +106,8 @@ def build_goals_per_game_feature(matches):
         away_goals_pg.append(away_stats["goals_pg"])
 
         # Add AFTER calculating features
-        season_history[season][home_team].append(current_match)
-        season_history[season][away_team].append(current_match)
+        season_history[season][home_key].append(current_match)
+        season_history[season][away_key].append(current_match)
 
     matches["HomeGoalsPerGame"] = home_goals_pg
     matches["AwayGoalsPerGame"] = away_goals_pg
@@ -142,7 +157,11 @@ def calculate_team_xgd_last5(last5, team):
     return np.mean(xgf) - np.mean(xga)
 
 
-def build_xgd_last5_feature(matches):
+def build_xgd_last5_feature(matches, scope=DEFAULT_SCOPE):
+    """
+    Last-5 xG difference for every row of ``matches``. Returns each
+    team's match history, keyed by elo.scope_key.
+    """
 
     team_history = defaultdict(list)
 
@@ -150,11 +169,16 @@ def build_xgd_last5_feature(matches):
 
     for _, current_match in matches.iterrows():
 
+        div = match_div(current_match)
+
         home_team = current_match["HomeTeam"]
         away_team = current_match["AwayTeam"]
 
-        home_last5 = team_history[home_team][-5:]
-        away_last5 = team_history[away_team][-5:]
+        home_key = scope_key(div, home_team, scope)
+        away_key = scope_key(div, away_team, scope)
+
+        home_last5 = team_history[home_key][-5:]
+        away_last5 = team_history[away_key][-5:]
 
         home_xgd = calculate_team_xgd_last5(home_last5, home_team)
         away_xgd = calculate_team_xgd_last5(away_last5, away_team)
@@ -162,8 +186,8 @@ def build_xgd_last5_feature(matches):
         xgd_last5_diff.append(home_xgd - away_xgd)
 
         # Add AFTER calculating features
-        team_history[home_team].append(current_match)
-        team_history[away_team].append(current_match)
+        team_history[home_key].append(current_match)
+        team_history[away_key].append(current_match)
 
     matches["XGDDiffLast5"] = xgd_last5_diff
 
@@ -174,11 +198,12 @@ def build_xgd_last5_feature(matches):
 # HISTORY
 # ============================================================
 
-def build_history(matches):
+def build_history(matches, scope=DEFAULT_SCOPE):
     """
     Build the chronological features on a copy of ``matches`` and return
     ``(matches, elos, team_history)`` - the end-of-history Elo ratings and
-    per-team match history needed to score upcoming fixtures.
+    per-team match history needed to score upcoming fixtures (with
+    build_future_features and the same ``scope``).
     """
 
     matches = (
@@ -188,9 +213,9 @@ def build_history(matches):
         .copy()
     )
 
-    elos = build_elo_feature(matches)
-    build_goals_per_game_feature(matches)
-    team_history = build_xgd_last5_feature(matches)
+    elos = build_elo_feature(matches, scope=scope)
+    build_goals_per_game_feature(matches, scope=scope)
+    team_history = build_xgd_last5_feature(matches, scope=scope)
 
     return matches, elos, team_history
 
@@ -212,53 +237,85 @@ def _season_label_for(date_text, default):
     return f"{start % 100:02d}-{(start + 1) % 100:02d}"
 
 
-def _season_goals_per_game(team_history, team, season):
+def _season_goals_per_game(team_matches, team, season):
 
-    played = [m for m in team_history[team] if m["Season"] == season]
+    played = [m for m in team_matches if m["Season"] == season]
 
     return calculate_season_stats(played, team)["goals_pg"]
 
 
-def build_future_features(future, elos, team_history):
+def fixture_divs(fixtures, team_history):
+    """
+    Each fixture's Div: its own Div column, or - for fixtures without
+    one - the only competition in ``team_history``.
+    """
+
+    if "Div" in fixtures.columns:
+        return fixtures["Div"]
+
+    divs = {match_div(m) for rows in team_history.values() for m in rows}
+
+    if len(divs) != 1:
+        raise ValueError(
+            "Fixtures need a Div column when the history spans several "
+            f"competitions ({', '.join(sorted(divs))})."
+        )
+
+    return pd.Series(divs.pop(), index=fixtures.index)
+
+
+def build_future_features(future, elos, team_history, scope=DEFAULT_SCOPE):
+    """
+    EloDiff, XGDDiffLast5 and GoalsPerGameDiff for upcoming fixtures,
+    from build_history's ratings and team history (built with the same
+    ``scope``), plus each fixture's Div.
+    """
 
     future_features = []
 
-    latest_season = max(
-        rows[-1]["Season"] for rows in team_history.values() if rows
-    )
+    # Div -> the seasons it has on record, in order
+    seasons_by_div = defaultdict(set)
+    for rows in team_history.values():
+        for m in rows:
+            seasons_by_div[match_div(m)].add(m["Season"])
+    seasons_by_div = {div: sorted(s) for div, s in seasons_by_div.items()}
 
-    seasons_on_record = sorted({
-        m["Season"] for rows in team_history.values() for m in rows
-    })
+    all_seasons = sorted(set().union(*seasons_by_div.values()))
 
-    for _, match in future.iterrows():
+    for (_, match), div in zip(future.iterrows(), fixture_divs(future, team_history)):
 
         home_team = match["HomeTeam"]
         away_team = match["AwayTeam"]
 
+        home_matches = team_history[scope_key(div, home_team, scope)]
+        away_matches = team_history[scope_key(div, away_team, scope)]
+
+        seasons_on_record = (
+            seasons_by_div.get(div, []) if scope == "competition" else all_seasons
+        )
+        latest_season = (seasons_on_record or all_seasons)[-1]
+
         season = _season_label_for(match.get("Date", ""), latest_season)
 
-        home_elo = fixture_elo(home_team, season, elos, team_history, seasons_on_record)
-        away_elo = fixture_elo(away_team, season, elos, team_history, seasons_on_record)
+        home_elo = fixture_elo(home_team, season, elos, home_matches, seasons_on_record)
+        away_elo = fixture_elo(away_team, season, elos, away_matches, seasons_on_record)
 
         elo_diff = home_elo - away_elo
 
-        home_last5 = team_history[home_team][-5:]
-        away_last5 = team_history[away_team][-5:]
-
-        home_xgd = calculate_team_xgd_last5(home_last5, home_team)
-        away_xgd = calculate_team_xgd_last5(away_last5, away_team)
+        home_xgd = calculate_team_xgd_last5(home_matches[-5:], home_team)
+        away_xgd = calculate_team_xgd_last5(away_matches[-5:], away_team)
 
         xgd_diff = home_xgd - away_xgd
 
         # Season-to-date, exactly as in training; 0 for a team with no games
         # yet this season (so it is 0 for everyone in a season's first round)
         goals_per_game_diff = (
-            _season_goals_per_game(team_history, home_team, season)
-            - _season_goals_per_game(team_history, away_team, season)
+            _season_goals_per_game(home_matches, home_team, season)
+            - _season_goals_per_game(away_matches, away_team, season)
         )
 
         future_features.append({
+            "Div": div,
             "EloDiff": elo_diff,
             "XGDDiffLast5": xgd_diff,
             "GoalsPerGameDiff": goals_per_game_diff

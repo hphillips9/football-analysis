@@ -145,9 +145,9 @@ src/
   fetch_fixtures.py       football-data.org → Future_Fixtures.csv
   future_games_parser.py  Next_Matchweek.txt → Future_Fixtures.csv (fallback)
   predict_next_matches.py  predict the next round, record bets (re-exports the three below)
-  elo.py                  Elo ratings: update rule, pre-match Elo, fixture Elo
-  features.py             goals per game, last-5 xG difference, build_history
-  model.py                FEATURES, calibrated logistic regression, predict_fixtures
+  elo.py                  Elo ratings: update rule, pre-match Elo, fixture Elo; feature scope
+  features.py             goals per game, last-5 xG difference, build_history (per competition)
+  model.py                FEATURES + League_<Div> columns, calibrated logistic regression, predict_fixtures
   backfill_bet_probs.py   fill gameweek / probabilities on older bets
   export_web.py           write the site's JSON feed
   backtest.py             season-by-season evaluation
