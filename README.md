@@ -72,7 +72,7 @@ One command, [`src/run_week.py`](src/run_week.py), runs the whole cycle:
 | --- | --- |
 | 1 | Fetch new results from football-data.co.uk into `data/raw/<Div>/results_<season>.csv` for each enabled competition (`CURRENT_SEASON` in `src/competitions.py`) |
 | 2 | Settle any pending bets in `data/raw/Bets.csv` (result, the odds used, profit; no odds = unpriced, counted for accuracy only) |
-| 3 | Rebuild `data/processed/all_matches.csv` (results + FotMob/Opta xG with Understat as backup, cached per season) |
+| 3 | Rebuild `data/processed/all_matches.csv` (results + FotMob/Opta xG, with football-data.co.uk's xG then Understat as backup, cached per season) |
 | 4 | Backfill gameweek / probabilities on any `Bets.csv` rows missing them |
 | 5 | Pull the next round's fixtures from football-data.org, predict them, append the bets |
 | 6 | Export `web/src/data/*.json` for the website |
@@ -141,7 +141,7 @@ npm run build    # static build → web/dist/
 src/
   run_week.py             orchestrator for the weekly cycle
   fetch_results.py        pull new results, settle bets
-  load_data.py            build all_matches.csv (results + FotMob xG, Understat backup)
+  load_data.py            build all_matches.csv (results + FotMob xG; football-data, Understat backup)
   fetch_fixtures.py       football-data.org → Future_Fixtures.csv
   future_games_parser.py  Next_Matchweek.txt → Future_Fixtures.csv (fallback)
   predict_next_matches.py  predict the next round, record bets (re-exports the three below)
@@ -156,6 +156,7 @@ src/
   bet_schema.py           Bets.csv columns and order, shared by everything that writes it
   competitions.py         registry of competitions (codes, ids) and which are enabled
   tools/migrate_layout.py one-off move to the per-competition data layout
+  tools/backfill_top5.py  one-off: La Liga / Bundesliga / Serie A / Ligue 1 results + xG caches
   tools/migrate_bets.py   one-off Bets.csv migration to the multi-competition schema
   tools/suggest_aliases.py  offline: suggest team_names.csv rows by date+score voting (run when clubs are promoted)
 data/
@@ -181,6 +182,7 @@ pip install -r requirements.txt
 
 Data sources: match results and odds from
 [football-data.co.uk](https://www.football-data.co.uk/), expected goals from
-[FotMob](https://www.fotmob.com/) (Opta's xG, as shown on BBC and Sky), with
-[Understat](https://understat.com/) (via `penaltyblog`) filling any match FotMob
-is missing.
+[FotMob](https://www.fotmob.com/) (Opta's xG, as shown on BBC and Sky). Any
+match FotMob is missing takes football-data.co.uk's own xG columns (2026-27 on;
+also Opta, but not updated after Opta's revisions), then
+[Understat](https://understat.com/) (via `penaltyblog`).

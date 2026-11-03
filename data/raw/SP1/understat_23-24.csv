@@ -1,0 +1,381 @@
+HomeTeam,AwayTeam,HomeXG,AwayXG
+Almeria,Rayo Vallecano,1.1196,2.09532
+Sevilla,Valencia,0.714148,1.06796
+Athletic Club,Real Madrid,0.700577,1.33266
+Las Palmas,Mallorca,0.871699,1.49411
+Real Sociedad,Girona,1.46019,1.27791
+Celta Vigo,Osasuna,0.783184,0.964645
+Getafe,Barcelona,0.804505,1.67817
+Villarreal,Real Betis,0.737812,0.969349
+Atletico Madrid,Granada,3.01246,1.13452
+Cadiz,Alaves,0.822358,0.227442
+Mallorca,Villarreal,0.370077,2.12458
+Valencia,Las Palmas,1.50324,0.741978
+Almeria,Real Madrid,1.81328,2.8802
+Osasuna,Athletic Club,1.33582,1.88906
+Real Sociedad,Celta Vigo,0.917678,1.77937
+Barcelona,Cadiz,3.42524,1.11132
+Girona,Getafe,1.86612,0.754861
+Real Betis,Atletico Madrid,1.02642,0.34492
+Alaves,Sevilla,2.17962,0.958638
+Granada,Rayo Vallecano,0.837141,2.7851
+Celta Vigo,Real Madrid,1.17827,1.6167
+Las Palmas,Real Sociedad,1.56933,1.11751
+Cadiz,Almeria,1.56203,0.271622
+Granada,Mallorca,1.81377,2.50232
+Sevilla,Girona,1.93643,1.07498
+Athletic Club,Real Betis,2.86727,0.346198
+Valencia,Osasuna,1.87647,1.45939
+Villarreal,Barcelona,1.87195,2.95807
+Getafe,Alaves,2.67029,0.860623
+Rayo Vallecano,Atletico Madrid,0.542939,3.29424
+Almeria,Celta Vigo,3.16421,1.96028
+Cadiz,Villarreal,1.97214,0.494033
+Alaves,Valencia,1.90475,0.715753
+Real Betis,Rayo Vallecano,0.91924,1.53554
+Real Madrid,Getafe,2.64665,0.893748
+Real Sociedad,Granada,2.08686,0.549509
+Girona,Las Palmas,1.42397,1.18696
+Mallorca,Athletic Club,0.403052,0.645541
+Osasuna,Barcelona,0.801843,1.77255
+Rayo Vallecano,Alaves,2.64605,0.556231
+Athletic Club,Cadiz,4.05837,0.238836
+Barcelona,Real Betis,2.54628,0.852869
+Celta Vigo,Mallorca,2.06489,0.853213
+Valencia,Atletico Madrid,2.22142,0.564083
+Getafe,Osasuna,0.736469,1.29606
+Real Madrid,Real Sociedad,2.56902,2.1546
+Sevilla,Las Palmas,2.43059,1.03513
+Villarreal,Almeria,1.43205,1.76794
+Granada,Girona,1.97263,2.1418
+Alaves,Athletic Club,1.97317,1.77623
+Almeria,Valencia,2.46387,0.995742
+Barcelona,Celta Vigo,1.82246,1.67938
+Girona,Mallorca,4.19225,2.42602
+Osasuna,Sevilla,1.57361,0.693906
+Atletico Madrid,Real Madrid,1.79578,0.847915
+Las Palmas,Granada,0.701293,0.0378648
+Rayo Vallecano,Villarreal,1.0345,1.0365
+Real Betis,Cadiz,2.70742,0.570946
+Real Sociedad,Getafe,2.13384,1.59398
+Mallorca,Barcelona,1.21366,1.62815
+Sevilla,Almeria,2.90509,1.37069
+Athletic Club,Getafe,0.60877,1.30782
+Cadiz,Rayo Vallecano,0.35761,0.258447
+Real Madrid,Las Palmas,2.71542,0.618032
+Valencia,Real Sociedad,0.356756,0.29355
+Villarreal,Girona,1.89071,2.29941
+Celta Vigo,Alaves,0.497466,2.39712
+Granada,Real Betis,1.55108,0.870668
+Osasuna,Atletico Madrid,0.759357,1.22827
+Barcelona,Sevilla,2.5598,1.07557
+Getafe,Villarreal,0.768368,0.112227
+Girona,Real Madrid,2.17781,2.78602
+Rayo Vallecano,Mallorca,1.78616,1.33689
+Real Sociedad,Athletic Club,1.38238,1.96039
+Alaves,Osasuna,1.5824,1.26744
+Almeria,Granada,2.24188,3.51421
+Atletico Madrid,Cadiz,3.10102,0.677345
+Real Betis,Valencia,2.53745,0.510459
+Las Palmas,Celta Vigo,1.46382,1.54337
+Athletic Club,Almeria,3.02889,0.0892217
+Cadiz,Girona,0.653575,1.26462
+Mallorca,Valencia,0.919992,0.509313
+Real Madrid,Osasuna,4.47802,0.164111
+Sevilla,Rayo Vallecano,0.807105,0.998714
+Alaves,Real Betis,1.89594,0.872851
+Atletico Madrid,Real Sociedad,2.94239,0.928071
+Celta Vigo,Getafe,3.02859,1.00866
+Granada,Barcelona,0.611577,2.99552
+Villarreal,Las Palmas,1.16305,1.1602
+Osasuna,Granada,1.79846,0.776224
+Celta Vigo,Atletico Madrid,1.26757,2.39246
+Getafe,Real Betis,1.86677,1.42816
+Real Sociedad,Mallorca,2.0056,2.03914
+Sevilla,Real Madrid,1.8723,2.17904
+Barcelona,Athletic Club,1.70266,0.453295
+Girona,Almeria,2.1972,0.878392
+Las Palmas,Rayo Vallecano,1.18559,1.25598
+Villarreal,Alaves,1.71642,1.79896
+Valencia,Cadiz,1.6763,0.551967
+Girona,Celta Vigo,0.619488,0.174681
+Almeria,Las Palmas,0.275712,1.06446
+Barcelona,Real Madrid,1.32038,0.959404
+Cadiz,Sevilla,1.42705,1.28392
+Mallorca,Getafe,0.722341,0.292202
+Athletic Club,Valencia,1.63308,2.17868
+Atletico Madrid,Alaves,1.94088,0.385398
+Rayo Vallecano,Real Sociedad,0.844003,1.93178
+Real Betis,Osasuna,1.43393,0.446425
+Granada,Villarreal,2.80131,1.90197
+Las Palmas,Atletico Madrid,0.452709,1.52768
+Celta Vigo,Sevilla,3.01524,1.25089
+Osasuna,Girona,2.18398,2.78694
+Real Betis,Mallorca,2.84664,0.540374
+Real Sociedad,Barcelona,0.84705,1.22041
+Alaves,Almeria,2.57982,0.893084
+Real Madrid,Rayo Vallecano,1.85349,0.134981
+Valencia,Granada,1.18921,0.344591
+Villarreal,Athletic Club,1.78074,2.22797
+Getafe,Cadiz,1.21452,0.821864
+Athletic Club,Celta Vigo,4.72334,2.25302
+Almeria,Real Sociedad,0.637245,2.53693
+Granada,Getafe,1.4404,2.30149
+Osasuna,Las Palmas,1.44069,0.291858
+Rayo Vallecano,Girona,1.67584,4.2691
+Real Madrid,Valencia,1.90598,2.03068
+Atletico Madrid,Villarreal,3.93786,0.868854
+Barcelona,Alaves,1.81139,1.83858
+Sevilla,Real Betis,0.615603,2.17922
+Alaves,Granada,0.871813,1.13855
+Atletico Madrid,Mallorca,2.29683,0.945212
+Getafe,Almeria,1.39391,1.72918
+Rayo Vallecano,Barcelona,0.912299,1.30627
+Valencia,Celta Vigo,0.247015,0.609862
+Cadiz,Real Madrid,1.13056,1.84054
+Real Betis,Las Palmas,1.92649,0.751589
+Real Sociedad,Sevilla,1.05204,0.374082
+Villarreal,Osasuna,2.84591,1.26437
+Girona,Athletic Club,1.36177,1.67266
+Mallorca,Cadiz,0.8514,0.251799
+Las Palmas,Getafe,1.8817,0.76355
+Athletic Club,Rayo Vallecano,1.6869,0.34629
+Girona,Valencia,1.85396,1.00981
+Osasuna,Real Sociedad,1.01822,1.69944
+Real Madrid,Granada,2.2606,0.110085
+Almeria,Real Betis,2.69938,0.769817
+Barcelona,Atletico Madrid,3.18789,0.996297
+Mallorca,Alaves,0.909609,0.277842
+Sevilla,Villarreal,2.4784,1.47061
+Celta Vigo,Cadiz,2.73216,0.346727
+Getafe,Valencia,0.841976,0.183916
+Alaves,Las Palmas,2.20546,0.473883
+Mallorca,Sevilla,0.533315,0.554467
+Real Betis,Real Madrid,1.51575,0.803862
+Villarreal,Real Sociedad,2.37019,2.19834
+Atletico Madrid,Almeria,2.16876,1.6656
+Barcelona,Girona,4.25448,2.93797
+Cadiz,Osasuna,1.15321,1.81825
+Rayo Vallecano,Celta Vigo,1.32415,0.126167
+Granada,Athletic Club,0.543471,1.68816
+Osasuna,Rayo Vallecano,1.77561,1.15316
+Athletic Club,Atletico Madrid,2.73082,0.342126
+Celta Vigo,Granada,1.33261,0.690175
+Sevilla,Getafe,0.80788,2.83746
+Valencia,Barcelona,0.78681,3.16129
+Almeria,Mallorca,0.314828,1.51369
+Las Palmas,Cadiz,0.826817,1.42619
+Real Madrid,Villarreal,3.22478,0.421986
+Real Sociedad,Real Betis,0.989954,1.37163
+Girona,Alaves,1.92988,0.546438
+Atletico Madrid,Getafe,2.02936,2.53681
+Granada,Sevilla,1.12822,0.514939
+Rayo Vallecano,Valencia,0.51265,0.33485
+Athletic Club,Las Palmas,3.53577,0.2514
+Barcelona,Almeria,4.04903,1.39703
+Villarreal,Celta Vigo,2.59564,1.98503
+Alaves,Real Madrid,0.388196,0.947483
+Cadiz,Real Sociedad,0.856097,0.6603
+Mallorca,Osasuna,1.68391,1.5871
+Real Betis,Girona,1.61394,1.64551
+Atletico Madrid,Sevilla,1.53277,0.279969
+Getafe,Rayo Vallecano,0.651184,2.73568
+Real Sociedad,Alaves,0.98082,0.969339
+Valencia,Villarreal,2.78114,1.15004
+Celta Vigo,Real Betis,2.54675,1.73674
+Girona,Atletico Madrid,2.32369,2.67389
+Granada,Cadiz,3.87666,0.746073
+Real Madrid,Mallorca,1.87575,0.840414
+Las Palmas,Barcelona,0.967341,2.3608
+Osasuna,Almeria,2.03356,0.239636
+Sevilla,Athletic Club,0.54777,1.99704
+Sevilla,Alaves,2.49561,2.08895
+Athletic Club,Real Sociedad,1.73042,1.02381
+Las Palmas,Villarreal,0.963955,1.71198
+Mallorca,Celta Vigo,2.59976,0.711693
+Real Betis,Granada,2.00904,0.658067
+Almeria,Girona,2.20551,0.246622
+Cadiz,Valencia,1.55289,1.7596
+Alaves,Cadiz,1.83115,0.670357
+Celta Vigo,Real Sociedad,0.257377,0.630224
+Rayo Vallecano,Las Palmas,2.16832,0.786109
+Valencia,Athletic Club,0.7444,0.351363
+Villarreal,Mallorca,1.7328,0.430539
+Girona,Sevilla,2.95279,0.947841
+Osasuna,Getafe,1.57055,1.50775
+Real Betis,Barcelona,1.61122,2.71025
+Real Madrid,Almeria,3.07258,0.928735
+Granada,Atletico Madrid,0.684269,1.42876
+Almeria,Alaves,1.80182,2.061
+Barcelona,Villarreal,2.02779,2.36875
+Las Palmas,Real Madrid,0.929969,2.05683
+Mallorca,Real Betis,1.72961,0.400759
+Real Sociedad,Rayo Vallecano,0.251108,0.129675
+Atletico Madrid,Valencia,2.80234,0.406631
+Cadiz,Athletic Club,0.367526,0.25604
+Celta Vigo,Girona,1.03961,1.60712
+Sevilla,Osasuna,1.42372,1.07779
+Getafe,Granada,1.03385,1.504
+Atletico Madrid,Rayo Vallecano,1.29884,0.426602
+Barcelona,Osasuna,2.21737,1.41966
+Getafe,Real Madrid,0.791039,2.72231
+Athletic Club,Mallorca,1.95995,0.469702
+Alaves,Barcelona,1.04716,1.55781
+Girona,Real Sociedad,1.04543,0.583723
+Granada,Las Palmas,0.155607,1.27614
+Valencia,Almeria,1.38646,1.5882
+Osasuna,Celta Vigo,1.00524,1.37845
+Real Betis,Getafe,1.54414,1.9002
+Real Madrid,Atletico Madrid,2.36334,1.35012
+Villarreal,Cadiz,1.00089,0.686978
+Rayo Vallecano,Sevilla,2.1306,1.77647
+Cadiz,Real Betis,0.755069,1.43872
+Alaves,Villarreal,2.09111,1.29002
+Las Palmas,Valencia,1.41954,0.251178
+Real Madrid,Girona,3.32636,0.180194
+Real Sociedad,Osasuna,2.50503,0.704714
+Barcelona,Granada,2.5229,1.20453
+Getafe,Celta Vigo,2.22295,1.2733
+Mallorca,Rayo Vallecano,0.82898,1.40787
+Sevilla,Atletico Madrid,2.15338,1.67549
+Almeria,Athletic Club,0.900611,0.621857
+Villarreal,Getafe,1.61961,0.976893
+Atletico Madrid,Las Palmas,2.79269,0.660284
+Celta Vigo,Barcelona,0.636492,1.5046
+Osasuna,Cadiz,1.37854,0.919753
+Valencia,Sevilla,1.11987,0.0457854
+Granada,Almeria,1.79616,0.693843
+Mallorca,Real Sociedad,0.188904,1.20859
+Rayo Vallecano,Real Madrid,1.1431,1.0219
+Real Betis,Alaves,1.18267,0.490778
+Athletic Club,Girona,2.7904,1.80583
+Real Sociedad,Villarreal,1.48985,1.6421
+Alaves,Mallorca,0.501891,1.80166
+Almeria,Atletico Madrid,0.352281,1.87638
+Barcelona,Getafe,2.65095,0.316762
+Cadiz,Celta Vigo,1.87476,0.680213
+Las Palmas,Osasuna,0.942659,0.387933
+Real Betis,Athletic Club,0.921277,0.137757
+Real Madrid,Sevilla,1.01644,0.967099
+Girona,Rayo Vallecano,2.81311,0.564655
+Celta Vigo,Almeria,1.82317,0.3259
+Getafe,Las Palmas,2.38804,1.37145
+Rayo Vallecano,Cadiz,0.688061,1.21648
+Sevilla,Real Sociedad,2.15506,1.27238
+Valencia,Real Madrid,1.33185,1.45798
+Athletic Club,Barcelona,0.468397,0.714592
+Atletico Madrid,Real Betis,3.54138,0.588581
+Mallorca,Girona,0.943297,1.08616
+Villarreal,Granada,3.02991,0.276758
+Osasuna,Alaves,1.71646,1.14533
+Barcelona,Mallorca,2.06225,0.504754
+Cadiz,Atletico Madrid,1.18033,0.895711
+Girona,Osasuna,2.1772,0.185235
+Granada,Real Sociedad,2.0551,1.88323
+Valencia,Getafe,1.27245,1.17773
+Alaves,Rayo Vallecano,0.640241,0.579451
+Las Palmas,Athletic Club,0.834663,1.27321
+Real Betis,Villarreal,1.39975,1.30814
+Real Madrid,Celta Vigo,3.6885,0.53726
+Almeria,Sevilla,1.81235,2.6495
+Real Sociedad,Cadiz,2.34962,0.695705
+Athletic Club,Alaves,2.31129,1.38702
+Getafe,Girona,1.10963,1.70185
+Mallorca,Granada,1.65502,0.295993
+Osasuna,Real Madrid,0.669756,3.05767
+Atletico Madrid,Barcelona,0.570805,1.94966
+Las Palmas,Almeria,0.793707,0.688106
+Rayo Vallecano,Real Betis,0.790186,0.69375
+Sevilla,Celta Vigo,1.75591,2.23423
+Villarreal,Valencia,2.1872,1.07722
+Cadiz,Granada,1.19169,0.412637
+Almeria,Osasuna,0.745696,1.00888
+Barcelona,Las Palmas,1.72947,0.314295
+Getafe,Sevilla,1.57791,0.901033
+Valencia,Mallorca,1.33845,0.673736
+Alaves,Real Sociedad,0.142958,1.29248
+Celta Vigo,Rayo Vallecano,0.838396,0.515128
+Girona,Real Betis,2.43161,0.524961
+Real Madrid,Athletic Club,1.1877,0.304704
+Villarreal,Atletico Madrid,0.681964,1.2402
+Granada,Valencia,0.729135,0.718558
+Real Betis,Celta Vigo,1.22903,1.58129
+Atletico Madrid,Girona,2.58629,2.20992
+Cadiz,Barcelona,0.79048,0.833415
+Mallorca,Real Madrid,0.592998,1.81161
+Rayo Vallecano,Getafe,0.777828,0.25153
+Athletic Club,Villarreal,0.823044,2.1913
+Granada,Alaves,1.86823,0.279326
+Las Palmas,Sevilla,0.0909476,2.06406
+Real Sociedad,Almeria,1.68743,1.77546
+Osasuna,Valencia,2.26875,0.235711
+Athletic Club,Granada,1.64137,0.150973
+Celta Vigo,Las Palmas,3.58931,0.90843
+Girona,Cadiz,2.30941,1.82433
+Rayo Vallecano,Osasuna,0.560289,0.930714
+Valencia,Real Betis,0.951475,1.82123
+Alaves,Atletico Madrid,0.521018,0.715212
+Almeria,Villarreal,2.14538,1.60008
+Getafe,Real Sociedad,1.19821,1.03517
+Real Madrid,Barcelona,2.7698,1.34666
+Sevilla,Mallorca,1.72842,0.879845
+Real Sociedad,Real Madrid,0.380904,0.462672
+Alaves,Celta Vigo,3.41094,0.188273
+Almeria,Getafe,2.748,1.67485
+Atletico Madrid,Athletic Club,0.62028,0.894572
+Las Palmas,Girona,1.41676,2.0472
+Cadiz,Mallorca,0.441837,0.827497
+Granada,Osasuna,2.31468,0.989028
+Real Betis,Sevilla,2.39465,1.26484
+Villarreal,Rayo Vallecano,1.98091,0.896929
+Barcelona,Valencia,2.59636,1.49346
+Getafe,Athletic Club,4.41644,0.925588
+Girona,Barcelona,2.31519,2.6053
+Mallorca,Atletico Madrid,0.328479,0.874778
+Real Madrid,Cadiz,2.63447,0.998827
+Real Sociedad,Las Palmas,0.899129,0.56693
+Celta Vigo,Villarreal,4.41257,0.544766
+Osasuna,Real Betis,1.02463,1.44688
+Rayo Vallecano,Almeria,2.09609,0.555982
+Sevilla,Granada,2.45224,0.227083
+Valencia,Alaves,1.40821,1.16915
+Alaves,Girona,2.40148,1.53657
+Athletic Club,Osasuna,2.17034,1.05326
+Granada,Real Madrid,0.699759,2.7909
+Mallorca,Las Palmas,0.45718,0.313172
+Villarreal,Sevilla,3.10775,1.95835
+Atletico Madrid,Celta Vigo,1.81009,0.370026
+Cadiz,Getafe,1.42818,0.310309
+Real Betis,Almeria,1.69343,1.08304
+Valencia,Rayo Vallecano,1.1633,0.785651
+Barcelona,Real Sociedad,1.66029,0.799193
+Girona,Villarreal,2.28453,0.776468
+Osasuna,Mallorca,0.428998,0.919263
+Real Madrid,Alaves,2.88216,1.50657
+Celta Vigo,Athletic Club,0.758179,0.377111
+Getafe,Atletico Madrid,0.446969,1.67036
+Rayo Vallecano,Granada,3.00296,0.933417
+Sevilla,Cadiz,1.43788,2.85137
+Almeria,Barcelona,1.03949,2.13122
+Las Palmas,Real Betis,2.61533,1.3277
+Real Sociedad,Valencia,1.13192,0.774644
+Alaves,Getafe,1.57753,0.658124
+Athletic Club,Sevilla,1.78593,1.29208
+Atletico Madrid,Osasuna,1.76117,1.88434
+Barcelona,Rayo Vallecano,1.69959,1.68527
+Cadiz,Las Palmas,1.36112,0.966249
+Granada,Celta Vigo,1.75765,2.02078
+Mallorca,Almeria,2.45608,0.238391
+Real Betis,Real Sociedad,1.60754,0.792849
+Valencia,Girona,3.35606,2.90299
+Villarreal,Real Madrid,2.21178,1.59129
+Girona,Granada,4.75092,0.987219
+Almeria,Cadiz,3.23442,0.494605
+Osasuna,Villarreal,1.09355,0.835313
+Rayo Vallecano,Athletic Club,1.47462,0.930597
+Real Madrid,Real Betis,1.24417,1.15552
+Real Sociedad,Atletico Madrid,0.570544,2.19824
+Celta Vigo,Valencia,1.50162,2.16042
+Getafe,Mallorca,1.07908,1.34437
+Las Palmas,Alaves,1.15618,2.23542
+Sevilla,Barcelona,1.96266,1.4772

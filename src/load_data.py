@@ -40,7 +40,11 @@ FOTMOB_HEADERS = {
         "(KHTML, like Gecko) Chrome/130.0 Safari/537.36"
     )
 }
-FOTMOB_DELAY = 0.6  # seconds between match requests
+FOTMOB_DELAY = 1.0  # seconds between match requests (keep it serial)
+# FotMob rate-limits (HTTP 429) when pushed. Wait this long, doubling
+# each time, before retrying; give up after FOTMOB_MAX_RETRIES.
+FOTMOB_BACKOFF = 5
+FOTMOB_MAX_RETRIES = 5
 # Opta revises xG for a day or two after full time, so matches this
 # recent are re-fetched on every refresh rather than kept from the cache
 FOTMOB_REFETCH_DAYS = 3
@@ -55,6 +59,13 @@ FOTMOB_CHECKPOINT_EVERY = 50
 SEASON_FILE_RE = re.compile(r"results_(\d{2})-(\d{2})\.csv$", re.IGNORECASE)
 
 XG_COLUMNS = ["Div", "Season", "HomeTeam", "AwayTeam", "HomeXG", "AwayXG"]
+
+# Where each match's xG comes from, first choice first (XGSource).
+# football-data.co.uk's HxG/AxG (2026-27 on) is the same Opta data as
+# FotMob's but frozen when first published, while FotMob is re-fetched
+# until Opta's revisions settle (FOTMOB_REFETCH_DAYS) - so FotMob wins
+# where it has the match and football-data fills the gaps.
+XG_PRIORITY = ["FotMob", "football-data", "Understat"]
 
 
 def competition_dir(div, raw_dir=RAW_DIR):
@@ -319,10 +330,21 @@ def _load_xg_seasons(
 # ============================================================
 
 def _fotmob_get(session, endpoint, params):
+    """GET one FotMob endpoint, backing off exponentially on HTTP 429."""
 
-    response = session.get(
-        f"{FOTMOB_API}/{endpoint}", params=params, timeout=30
-    )
+    for attempt in range(FOTMOB_MAX_RETRIES + 1):
+
+        response = session.get(
+            f"{FOTMOB_API}/{endpoint}", params=params, timeout=30
+        )
+
+        if response.status_code != 429 or attempt == FOTMOB_MAX_RETRIES:
+            break
+
+        wait = FOTMOB_BACKOFF * 2 ** attempt
+        print(f"FotMob rate limit (429) on {endpoint}; waiting {wait}s")
+        time.sleep(wait)
+
     response.raise_for_status()
 
     return response.json()
@@ -528,8 +550,10 @@ def _normalise_xg(xg, alias_map, source_name):
 def merge_xg(matches, fotmob, understat, alias_map):
     """
     Left-join xG onto the match history by competition, season and
-    teams. FotMob (Opta) is used wherever it has the match; Understat
-    fills any gaps. XGSource records which one each row's xG came from.
+    teams. Each row takes its xG from the first source in XG_PRIORITY
+    that has both sides of it: FotMob, then football-data.co.uk's own
+    HxG/AxG columns (where the results file has them), then Understat.
+    XGSource records which one was used.
     """
 
     keys = ["Div", "Season", "HomeTeam", "AwayTeam"]
@@ -546,20 +570,37 @@ def merge_xg(matches, fotmob, understat, alias_map):
         )
     )
 
-    has_fotmob = merged["HomeXG"].notna() & merged["AwayXG"].notna()
-    has_understat = (
-        merged["HomeXGUnderstat"].notna() & merged["AwayXGUnderstat"].notna()
-    )
+    # Source -> its (home, away) columns in ``merged``
+    candidates = {
+        "FotMob": ("HomeXG", "AwayXG"),
+        "Understat": ("HomeXGUnderstat", "AwayXGUnderstat"),
+    }
+    if {"HxG", "AxG"} <= set(merged.columns):
+        candidates["football-data"] = ("HxG", "AxG")
 
-    use_understat = ~has_fotmob & has_understat
+    home = pd.Series(float("nan"), index=merged.index)
+    away = pd.Series(float("nan"), index=merged.index)
+    source = pd.Series([None] * len(merged), index=merged.index, dtype=object)
 
-    merged.loc[use_understat, "HomeXG"] = merged.loc[use_understat, "HomeXGUnderstat"]
-    merged.loc[use_understat, "AwayXG"] = merged.loc[use_understat, "AwayXGUnderstat"]
-    merged.loc[~has_fotmob & ~has_understat, ["HomeXG", "AwayXG"]] = float("nan")
+    for name in XG_PRIORITY:
 
-    merged["XGSource"] = None
-    merged.loc[has_fotmob, "XGSource"] = "FotMob"
-    merged.loc[use_understat, "XGSource"] = "Understat"
+        if name not in candidates:
+            continue
+
+        home_col, away_col = candidates[name]
+        use = (
+            source.isna()
+            & merged[home_col].notna()
+            & merged[away_col].notna()
+        )
+
+        home[use] = merged.loc[use, home_col]
+        away[use] = merged.loc[use, away_col]
+        source[use] = name
+
+    merged["HomeXG"] = home
+    merged["AwayXG"] = away
+    merged["XGSource"] = source
 
     return merged.drop(columns=["HomeXGUnderstat", "AwayXGUnderstat"]).copy()
 
@@ -589,6 +630,7 @@ def report(matches):
         .assign(
             HasXG=~missing_mask,
             FotMob=matches["XGSource"] == "FotMob",
+            FootballData=matches["XGSource"] == "football-data",
             Understat=matches["XGSource"] == "Understat"
         )
         .groupby(["Div", "Season"])
@@ -596,6 +638,7 @@ def report(matches):
             Games=("HomeTeam", "size"),
             GamesWithXG=("HasXG", "sum"),
             FotMob=("FotMob", "sum"),
+            FootballData=("FootballData", "sum"),
             Understat=("Understat", "sum")
         )
     )
@@ -608,7 +651,7 @@ def report(matches):
     print("=" * 70)
     print("XG COVERAGE BY SEASON")
     print("=" * 70)
-    print(coverage)
+    print(coverage.to_string())
 
     if len(missing) > 0:
         print()
@@ -636,8 +679,8 @@ def build_dataset(
     """
     Rebuild ``data/processed/all_matches.csv`` from the raw result
     files of each competition in ``divs`` (default: the enabled ones)
-    plus FotMob (Opta) xG, with Understat filling any match FotMob
-    doesn't have. Returns the resulting DataFrame.
+    plus xG from FotMob (Opta), football-data.co.uk or Understat, in
+    that order of preference. Returns the resulting DataFrame.
     """
 
     divs = divs or competitions.enabled()
@@ -690,11 +733,11 @@ def build_dataset(
         report(matches)
     else:
         covered = (~(matches["HomeXG"].isna() | matches["AwayXG"].isna())).mean()
-        backup = (matches["XGSource"] == "Understat").sum()
+        backup = (matches["XGSource"] != "FotMob").sum()
         print(
             f"Built {len(matches)} matches "
             f"({covered * 100:.1f}% xG coverage, "
-            f"{backup} from Understat backup)"
+            f"{backup} from football-data/Understat backup)"
         )
 
     matches = matches.drop(columns=["OriginalHomeTeam", "OriginalAwayTeam"])
@@ -716,7 +759,8 @@ def main():
     parser = argparse.ArgumentParser(
         description=(
             "Build data/processed/all_matches.csv from the enabled "
-            "competitions' results and FotMob xG (Understat as backup)."
+            "competitions' results and xG (FotMob, then football-data.co.uk, "
+            "then Understat)."
         )
     )
     parser.add_argument(
@@ -732,9 +776,26 @@ def main():
             "the current one (no network calls if the caches are populated)."
         )
     )
+    parser.add_argument(
+        "--divs",
+        nargs="+",
+        metavar="DIV",
+        help="Competitions to build (default: competitions.ENABLED)."
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=OUTPUT_PATH,
+        help=f"Where to write the dataset (default: {OUTPUT_PATH.relative_to(ROOT)})."
+    )
     args = parser.parse_args()
 
+    for div in args.divs or []:
+        competitions.get(div)
+
     build_dataset(
+        divs=args.divs,
+        output_path=args.output,
         refresh_current=not args.no_refresh,
         verbose=args.verbose
     )
