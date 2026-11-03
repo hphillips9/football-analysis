@@ -19,13 +19,17 @@ Each match is described by three chronological, leak-free features:
 
 | Feature | Definition |
 | --- | --- |
-| `EloDiff` | home Elo + 130 home advantage − away Elo |
+| `EloDiff` | home Elo − away Elo |
 | `XGDDiffLast5` | each team's (xG for − xG against) over its last 5 games, home − away |
 | `GoalsPerGameDiff` | season-to-date goals per game, home − away |
 
 Every team has an **Elo rating** (starts at 1500, K-factor 35, carries across
-seasons; a promoted team restarts at 1350 - see
-`notebooks/19_championship_promoted_teams.ipynb`). A **calibrated logistic regression** (`CalibratedClassifierCV`, sigmoid)
+seasons). The 130-point home advantage is used only inside the Elo update's
+expected result; the model learns home advantage for itself through its
+intercept. A promoted team keeps the rating it last had, and a team new to
+the data starts at 1500 (`PROMOTED_ELO = None`). Restarting promoted teams at
+1350 was tested in `notebooks/19_championship_promoted_teams.ipynb`, but the
+gain was too small to keep. A **calibrated logistic regression** (`CalibratedClassifierCV`, sigmoid)
 maps the three features to H / D / A probabilities and is retrained on all
 available history on every run.
 
@@ -41,11 +45,11 @@ before it**. Baseline = always predicting a home win.
 
 | Season | Trained on | Accuracy | Baseline | Edge | Log loss |
 | --- | --- | --- | --- | --- | --- |
-| 2022/23 | 2021/22 | 55.8% | 48.4% | +7.4 | 0.969 |
-| 2023/24 | 2021/22–2022/23 | 57.9% | 46.1% | +11.8 | 0.939 |
-| 2024/25 | 2021/22–2023/24 | 53.7% | 40.8% | +12.9 | 0.983 |
-| 2025/26 | 2021/22–2024/25 | 49.7% | 42.6% | +7.1 | 1.031 |
-| **Overall** | | **54.3%** | 44.5% | **+9.8** | 0.98 |
+| 2022/23 | 2021/22 | 56.3% | 48.4% | +7.9 | 0.969 |
+| 2023/24 | 2021/22–2022/23 | 57.6% | 46.1% | +11.6 | 0.938 |
+| 2024/25 | 2021/22–2023/24 | 54.5% | 40.8% | +13.7 | 0.981 |
+| 2025/26 | 2021/22–2024/25 | 50.3% | 42.6% | +7.6 | 1.031 |
+| **Overall** | | **54.7%** | 44.5% | **+10.2** | 0.980 |
 
 Beats the home-win baseline in every season, across 1,520 matches.
 
@@ -56,7 +60,7 @@ Beats the home-win baseline in every season, across 1,520 matches.
 - Venue-specific recent form did **not** improve performance.
 - The model rarely predicts a draw — a common limitation of 3-class football
   models, and the biggest remaining weakness.
-- Predictions above 0.55 confidence land around 57% of the time.
+- Predictions above 0.55 confidence (47% of picks) land 62% of the time.
 
 ---
 
