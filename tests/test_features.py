@@ -16,7 +16,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from features import build_future_features, build_history
-from model import FEATURES, model_features, predict_fixtures, train_model
+from model import FEATURES, model_features, predict_fixtures, train_model, train_models
+from model import POOLED as POOLED_KEY
 
 FEATURE_COLUMNS = [
     "HomeElo", "AwayElo", "EloDiff",
@@ -126,6 +127,46 @@ def test_league_columns_only_for_leagues_in_training():
     try:
         predict_fixtures(fixtures.assign(Div="I1"), model, elos, team_history)
         raise AssertionError("expected a ValueError for a league with no training data")
+    except ValueError:
+        pass
+
+
+def test_train_models_gives_e0_its_own_model_and_pools_the_rest():
+    fixtures = pd.DataFrame({
+        "Div": ["E0", "SP1"],
+        "Date": ["20/08/2022"] * 2,
+        "Time": ["15:00"] * 2,
+        "HomeTeam": ["Arsenal"] * 2,
+        "AwayTeam": ["Chelsea"] * 2,
+    })
+    probs = ["HomeProb", "DrawProb", "AwayProb"]
+
+    history, elos, team_history = build_history(POOLED)
+    models = train_models(history)
+    assert set(models) == {"E0", POOLED_KEY}
+
+    scored = predict_fixtures(fixtures, models, elos, team_history)
+
+    # E0 is scored exactly as by a model trained on E0 alone...
+    e0_only = train_model(history[history["Div"] == "E0"])
+    alone = predict_fixtures(fixtures.head(1), e0_only, elos, team_history)
+    assert scored.loc[[0], probs].equals(alone[probs])
+
+    # ...and SP1 by the pooled model
+    pooled = predict_fixtures(fixtures.tail(1), train_model(history), elos, team_history)
+    assert scored.loc[[1], probs].equals(pooled[probs])
+
+    # A Premier-League-only history trains just the original model
+    e0_history, _, _ = build_history(E0)
+    assert set(train_models(e0_history)) == {"E0"}
+
+    # No E0 rows: no E0 model, and an E0 fixture can't fall through to the pooled one
+    sp1_history, sp1_elos, sp1_team_history = build_history(SP1)
+    sp1_models = train_models(sp1_history)
+    assert set(sp1_models) == {POOLED_KEY}
+    try:
+        predict_fixtures(fixtures.head(1), sp1_models, sp1_elos, sp1_team_history)
+        raise AssertionError("expected a ValueError for E0 without an E0 model")
     except ValueError:
         pass
 

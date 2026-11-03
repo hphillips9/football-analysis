@@ -35,7 +35,7 @@ def check_shape(payload):
     assert set(payload) == {
         "generated", "model", "pooled", "competitions", "seasons", "overall",
     }
-    assert set(payload["model"]) == {"features", "leagueIndicators", "trainFrom"}
+    assert set(payload["model"]) == {"features", "leagueIndicators", "ownModel", "trainFrom"}
 
     sections = [payload["pooled"], *payload["competitions"].values()]
     for section in sections:
@@ -103,6 +103,7 @@ def test_two_leagues_give_pooled_and_per_competition_sections():
     check_shape(payload)
 
     assert payload["model"]["leagueIndicators"] == ["League_SP1"]
+    assert payload["model"]["ownModel"] == ["E0"]
     assert payload["model"]["trainFrom"] == "21-22"
     assert list(payload["competitions"]) == ["E0", "SP1"]
     assert payload["competitions"]["SP1"]["name"] == "La Liga"

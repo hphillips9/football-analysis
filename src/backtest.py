@@ -9,11 +9,12 @@ web/src/data/backtest.json (accuracy, log loss, always-home baseline) and
 the profit a 1-unit flat bet on every pick would have made, gameweek by
 gameweek.
 
-One pooled model covers every competition in the data, with a
-League_<Div> column per non-baseline league (model.LEAGUE_COLUMNS). The
-results are reported pooled and per competition; the top-level
-``seasons``/``overall`` are a copy of the Premier League's, kept for the
-site's about page until it moves to ``competitions``.
+Each competition is scored with the model the pipeline predicts it
+with (model.train_models): its own, or the pooled one with a
+League_<Div> column per non-baseline league. The results are reported
+for all competitions together ("pooled") and per competition; the
+top-level ``seasons``/``overall`` are a copy of the Premier League's,
+kept for the site's about page until it moves to ``competitions``.
 
 Features (Elo gap, last-5 xG difference, season goals-per-game
 difference) are built chronologically over the whole dataset, so each
@@ -37,11 +38,9 @@ from predict_next_matches import (
     build_elo_feature,
     build_goals_per_game_feature,
     build_xgd_last5_feature,
-    make_model,
     FEATURES,
 )
-from model import BASELINE_LEAGUE, LEAGUE_COLUMNS, league_columns
-from evaluate import walk_forward
+from model import BASELINE_LEAGUE, LEAGUE_COLUMNS, OWN_MODEL, league_columns, walk_forward_models
 
 ROOT = Path(__file__).resolve().parents[1]
 MATCHES_PATH = ROOT / "data" / "processed" / "all_matches.csv"
@@ -207,7 +206,7 @@ def run_backtest(matches_path=MATCHES_PATH, out_path=OUT_PATH):
         if smallest[season] >= MIN_SEASON_MATCHES
     ]
 
-    all_proba = walk_forward(matches, make_model, FEATURES + indicators, test_seasons)
+    all_proba = walk_forward_models(matches, test_seasons)
 
     pooled_rows, pooled_overall = score(matches, all_proba, seasons, test_seasons)
 
@@ -235,6 +234,7 @@ def run_backtest(matches_path=MATCHES_PATH, out_path=OUT_PATH):
         "model": {
             "features": FEATURES,
             "leagueIndicators": indicators,
+            "ownModel": [div for div in OWN_MODEL if div in by_competition],
             "trainFrom": seasons[0],
         },
         "pooled": {"seasons": pooled_rows, "overall": pooled_overall},

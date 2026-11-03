@@ -29,7 +29,7 @@ from team_names import load_alias_map, normalize_team_names
 from predict_next_matches import (
     build_history,
     predict_fixtures,
-    train_model,
+    train_models,
     PROB_COLUMNS,
 )
 
@@ -160,7 +160,7 @@ def backfill(
             continue
 
         history, elos, team_history = build_history(history)
-        model = train_model(history)
+        models = train_models(history)
 
         fixtures = group[["Div", "Date", "Time", "HomeTeam", "AwayTeam"]].copy()
         fixtures["HomeTeam"] = normalize_team_names(
@@ -170,7 +170,7 @@ def backfill(
             fixtures["AwayTeam"], alias_map, source_name="Bets.csv"
         )
 
-        scored = predict_fixtures(fixtures, model, elos, team_history)
+        scored = predict_fixtures(fixtures, models, elos, team_history)
 
         for column in PROB_COLS:
             bets.loc[group.index, column] = scored[column].to_numpy()

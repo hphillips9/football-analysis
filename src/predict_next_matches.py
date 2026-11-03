@@ -34,6 +34,7 @@ from model import (  # noqa: F401 - re-exported
     PROB_COLUMNS,
     make_model,
     train_model,
+    train_models,
     predict_fixtures,
 )
 
@@ -103,7 +104,8 @@ def infer_gameweek(fixtures, matches, bets_path=BETS_PATH):
 def load_model(matches_path="data/processed/all_matches.csv"):
     """
     Build the features over the whole match history and train on it.
-    Returns ``(matches, model, elos, team_history)`` for predict_round.
+    Returns ``(matches, models, elos, team_history)`` for predict_round
+    (models as model.train_models gives them).
     """
 
     matches = pd.read_csv(matches_path)
@@ -111,9 +113,9 @@ def load_model(matches_path="data/processed/all_matches.csv"):
 
     matches, elos, team_history = build_history(matches)
 
-    calibrated_model = train_model(matches)
+    models = train_models(matches)
 
-    return matches, calibrated_model, elos, team_history
+    return matches, models, elos, team_history
 
 
 def predict_round(future, trained, source_name="Future_Fixtures.csv"):
@@ -123,7 +125,7 @@ def predict_round(future, trained, source_name="Future_Fixtures.csv"):
     through when the fixtures have one.
     """
 
-    matches, calibrated_model, elos, team_history = trained
+    matches, models, elos, team_history = trained
 
     future = future.copy()
 
@@ -139,7 +141,7 @@ def predict_round(future, trained, source_name="Future_Fixtures.csv"):
     if "Gameweek" not in future.columns or future["Gameweek"].isna().any():
         future["Gameweek"] = infer_gameweek(future, matches)
 
-    results = predict_fixtures(future, calibrated_model, elos, team_history)
+    results = predict_fixtures(future, models, elos, team_history)
 
     if "Div" in future.columns:
         results.insert(0, "Div", future["Div"].to_numpy())

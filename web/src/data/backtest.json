@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-03T15:13:27+00:00",
+  "generated": "2026-11-03T15:32:17+00:00",
   "model": {
     "features": [
       "EloDiff",
@@ -7,6 +7,9 @@
       "GoalsPerGameDiff"
     ],
     "leagueIndicators": [],
+    "ownModel": [
+      "E0"
+    ],
     "trainFrom": "21-22"
   },
   "pooled": {

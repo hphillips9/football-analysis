@@ -30,7 +30,7 @@ from team_names import load_alias_map
 from predict_next_matches import (
     build_elo_feature,
     build_history,
-    train_model,
+    train_models,
     predict_fixtures,
     HOME_ADVANTAGE,
 )
@@ -464,14 +464,15 @@ def projected_table(matches, history=None):
     prediction model itself - it's a display-only addition for this table.
     Expected wins/draws/losses/goals are rounded for display.
 
-    ``matches`` is one competition; the model is trained on ``history``
-    (default: the same matches), e.g. every competition.
+    ``matches`` is one competition; the models are trained on ``history``
+    (default: the same matches), e.g. every competition, as for the
+    live predictions.
     """
 
     history = matches if history is None else history
 
     trained, elos, team_history = build_history(history)
-    model = train_model(trained)
+    models = train_models(trained)
 
     # Display-only extra: if the goal model can't be fitted, goal difference
     # just stays at its current value rather than failing the whole export.
@@ -493,7 +494,7 @@ def projected_table(matches, history=None):
     if "Div" in matches.columns:
         remaining.insert(0, "Div", matches["Div"].iloc[0])
 
-    scored = predict_fixtures(remaining, model, elos, team_history)
+    scored = predict_fixtures(remaining, models, elos, team_history)
 
     rows = {row["team"]: dict(row) for row in current_standings(matches)}
     for row in rows.values():

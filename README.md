@@ -41,10 +41,11 @@ K-factor, promoted-team start) and [`src/model.py`](src/model.py) (features).
 ## Results
 
 `src/backtest.py` scores each season with a model trained **only on the seasons
-before it**. Baseline = always predicting a home win. One pooled model covers
-every competition in the data (with a `League_<Div>` column per league), and
-`backtest.json` reports it pooled and per competition; the table below is the
-Premier League.
+before it**. Baseline = always predicting a home win. The Premier League has a
+model of its own (exactly the original one); the other leagues share one pooled
+model with a `League_<Div>` column per league, which beats a model per league
+(notebook 20). `backtest.json` reports all competitions together and each one;
+the table below is the Premier League.
 
 | Season | Trained on | Accuracy | Baseline | Edge | Log loss |
 | --- | --- | --- | --- | --- | --- |
@@ -165,7 +166,7 @@ src/
   predict_next_matches.py  predict the next round, record bets (re-exports the three below)
   elo.py                  Elo ratings: update rule, pre-match Elo, fixture Elo; feature scope
   features.py             goals per game, last-5 xG difference, build_history (per competition)
-  model.py                FEATURES + League_<Div> columns, calibrated logistic regression, predict_fixtures
+  model.py                FEATURES, calibrated logistic regression; E0's own model + the pooled one (train_models)
   backfill_bet_probs.py   fill gameweek / probabilities on older bets
   export_web.py           write the site's JSON feed (Premier League only for now) + leagues.json
   backtest.py             season-by-season evaluation, pooled and per competition
