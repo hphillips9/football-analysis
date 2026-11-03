@@ -1,0 +1,307 @@
+HomeTeam,AwayTeam,HomeXG,AwayXG
+Rennes,Marseille,1.31418,2.07298
+Lens,Lyon,1.87447,1.615
+Monaco,Le Havre,1.88048,0.427494
+Nice,Toulouse,0.95554,0.56945
+Angers,Paris FC,0.82142,0.71125
+Auxerre,Lorient,1.4925,1.84516
+Brest,Lille,1.49573,1.84218
+Metz,Strasbourg,0.184483,0.731013
+Nantes,Paris Saint Germain,0.124428,1.35682
+Paris Saint Germain,Angers,2.0878,0.176876
+Lyon,Metz,2.35479,0.504863
+Marseille,Paris FC,3.337,1.05457
+Nice,Auxerre,2.66284,2.24407
+Le Havre,Lens,2.0398,1.29098
+Lille,Monaco,2.41091,1.52213
+Lorient,Rennes,3.4466,0.0728372
+Strasbourg,Nantes,1.81743,0.425423
+Toulouse,Brest,1.32432,0.750148
+Lens,Brest,4.42054,0.963409
+Lorient,Lille,1.1603,3.70255
+Nantes,Auxerre,0.418091,1.10996
+Toulouse,Paris Saint Germain,2.33006,2.49609
+Angers,Rennes,1.58619,1.73758
+Le Havre,Nice,1.75553,0.715595
+Lyon,Marseille,3.15727,0.896862
+Monaco,Strasbourg,2.35547,1.7732
+Paris FC,Metz,3.39898,1.6248
+Marseille,Lorient,2.83367,0.187377
+Auxerre,Monaco,0.904229,1.62646
+Nice,Nantes,2.34645,0.775945
+Brest,Paris FC,2.60519,1.85008
+Lille,Toulouse,2.42116,1.15678
+Metz,Angers,1.76271,1.98184
+Paris Saint Germain,Lens,1.05815,1.2242
+Rennes,Lyon,2.20918,1.7381
+Strasbourg,Le Havre,1.43354,0.524832
+Lyon,Angers,2.20483,0.677354
+Brest,Nice,2.07376,2.26393
+Lens,Lille,3.8174,1.89889
+Nantes,Rennes,2.65629,1.44041
+Auxerre,Toulouse,0.883373,1.50957
+Le Havre,Lorient,2.23396,1.26993
+Monaco,Metz,3.497,1.91296
+Paris FC,Strasbourg,1.9014,2.46459
+Marseille,Paris Saint Germain,1.77744,0.919565
+Strasbourg,Marseille,1.0976,2.00258
+Lorient,Monaco,2.09364,0.894035
+Paris Saint Germain,Auxerre,2.11672,0.73132
+Toulouse,Nantes,1.98573,1.8303
+Angers,Brest,0.501827,1.34192
+Lille,Lyon,1.65271,0.642572
+Metz,Le Havre,0.39939,0.395921
+Nice,Paris FC,1.36997,1.49444
+Rennes,Lens,1.57438,1.51932
+Paris FC,Lorient,1.83687,0.855852
+Auxerre,Lens,1.27422,0.471027
+Brest,Nantes,1.44552,0.489862
+Metz,Marseille,0.1529,2.67719
+Le Havre,Rennes,1.98097,1.21285
+Lille,Paris Saint Germain,0.647492,1.71207
+Lyon,Toulouse,1.42206,1.36525
+Monaco,Nice,2.4556,1.13121
+Strasbourg,Angers,4.2783,0.294622
+Paris Saint Germain,Strasbourg,2.85659,1.92082
+Angers,Monaco,1.58102,1.65166
+Marseille,Le Havre,4.20445,0.352985
+Nice,Lyon,1.16366,2.89867
+Lens,Paris FC,1.98018,0.583966
+Lorient,Brest,1.5878,1.56803
+Nantes,Lille,0.772603,2.7603
+Rennes,Auxerre,1.93587,1.66634
+Toulouse,Metz,2.73037,0.119104
+Paris FC,Nantes,0.951277,0.916827
+Brest,Paris Saint Germain,1.89257,2.92453
+Lens,Marseille,1.87596,0.765479
+Monaco,Toulouse,3.37276,0.584122
+Angers,Lorient,1.30397,2.00206
+Auxerre,Le Havre,0.563862,1.52215
+Lille,Metz,3.85054,1.01476
+Lyon,Strasbourg,1.14566,0.798152
+Rennes,Nice,1.54435,0.88734
+Le Havre,Brest,0.556063,0.370311
+Lorient,Paris Saint Germain,0.192946,1.28813
+Marseille,Angers,1.58833,0.996929
+Metz,Lens,3.11925,1.23771
+Nantes,Monaco,2.1261,4.10211
+Nice,Lille,1.74459,0.661109
+Paris FC,Lyon,0.581508,1.21871
+Strasbourg,Auxerre,4.10806,0.68695
+Toulouse,Rennes,1.62131,1.26096
+Auxerre,Marseille,1.09464,0.698037
+Monaco,Paris FC,0.820947,1.18048
+Paris Saint Germain,Nice,1.88647,0.3867
+Brest,Lyon,1.63942,0.143862
+Lens,Lorient,3.21467,1.98367
+Lille,Angers,2.2089,0.277522
+Nantes,Metz,1.07598,1.36245
+Rennes,Strasbourg,3.06877,2.08816
+Toulouse,Le Havre,1.07851,1.07299
+Paris FC,Rennes,2.2285,1.36728
+Le Havre,Nantes,0.984753,0.353936
+Marseille,Brest,3.09058,0.69584
+Monaco,Lens,2.4076,3.23933
+Angers,Auxerre,1.15143,0.589602
+Lorient,Toulouse,1.26999,1.15206
+Lyon,Paris Saint Germain,0.712588,1.69872
+Metz,Nice,1.32977,0.784993
+Strasbourg,Lille,0.768163,0.480004
+Nice,Marseille,1.36131,3.09163
+Lens,Strasbourg,2.2242,0.400272
+Paris Saint Germain,Le Havre,4.11577,1.28573
+Rennes,Monaco,3.067,1.60818
+Auxerre,Lyon,1.512,1.27606
+Brest,Metz,3.36815,1.02855
+Lille,Paris FC,4.14474,1.50332
+Nantes,Lorient,0.915515,0.352154
+Toulouse,Angers,1.85382,0.324057
+Metz,Rennes,1.31354,0.980088
+Marseille,Toulouse,1.62768,1.09387
+Monaco,Paris Saint Germain,0.637875,1.47676
+Paris FC,Auxerre,1.80891,1.15143
+Angers,Lens,1.10642,1.96335
+Le Havre,Lille,0.867678,1.35017
+Lorient,Nice,3.49255,1.3285
+Lyon,Nantes,2.1878,0.384922
+Strasbourg,Brest,1.14608,1.00638
+Brest,Monaco,1.13774,0.485017
+Lille,Marseille,0.572302,0.902813
+Nantes,Lens,1.1817,3.26397
+Paris Saint Germain,Rennes,2.32641,0.153549
+Toulouse,Strasbourg,0.64097,0.0918532
+Auxerre,Metz,2.22374,0.346523
+Le Havre,Paris FC,1.93371,1.2524
+Lorient,Lyon,2.48644,0.475087
+Nice,Angers,1.38209,1.33715
+Angers,Nantes,3.04663,0.26526
+Metz,Paris Saint Germain,0.363683,1.94768
+Paris FC,Toulouse,0.366399,2.03766
+Rennes,Brest,1.58903,0.872611
+Auxerre,Lille,2.50862,0.733512
+Lens,Nice,1.91622,0.733412
+Lyon,Le Havre,2.9604,1.44459
+Marseille,Monaco,2.02467,1.94962
+Strasbourg,Lorient,0.911848,0.415871
+Toulouse,Lens,0.46972,2.67769
+Lille,Rennes,1.06111,1.49739
+Monaco,Lyon,0.799996,1.95535
+Nice,Strasbourg,2.39473,1.38731
+Brest,Auxerre,1.54399,0.835513
+Le Havre,Angers,1.54881,0.730978
+Lorient,Metz,1.55407,0.364932
+Marseille,Nantes,1.14141,3.16795
+Paris Saint Germain,Paris FC,1.58716,0.938334
+Monaco,Lorient,1.31321,1.17141
+Paris Saint Germain,Lille,1.29284,0.67995
+Angers,Marseille,1.03735,3.91118
+Lens,Auxerre,2.61821,0.393025
+Toulouse,Nice,1.77349,1.41914
+Lyon,Brest,2.62893,1.16318
+Nantes,Paris FC,0.411699,0.738941
+Rennes,Le Havre,2.54723,0.538741
+Strasbourg,Metz,1.019,0.984265
+Auxerre,Paris Saint Germain,0.352997,2.19544
+Le Havre,Monaco,0.171551,0.562454
+Marseille,Lens,1.07239,1.00288
+Rennes,Lorient,1.88241,1.10359
+Brest,Toulouse,0.988274,0.684258
+Lille,Strasbourg,1.74087,3.56512
+Metz,Lyon,1.18331,3.34121
+Nantes,Nice,1.98581,1.6112
+Paris FC,Angers,0.759097,0.342734
+Lens,Le Havre,1.60367,0.407119
+Lorient,Nantes,0.777027,1.20179
+Monaco,Rennes,2.28518,0.427968
+Paris FC,Marseille,1.82048,2.71118
+Angers,Metz,1.34676,0.397871
+Lyon,Lille,0.616999,0.390671
+Nice,Brest,1.2009,1.83505
+Strasbourg,Paris Saint Germain,1.97116,1.16489
+Toulouse,Auxerre,0.804565,0.871363
+Angers,Toulouse,1.17089,0.691991
+Auxerre,Paris FC,1.27393,0.758207
+Brest,Lorient,2.05135,0.720569
+Le Havre,Strasbourg,0.856821,0.51294
+Lens,Rennes,1.01131,1.33597
+Metz,Lille,0.581838,1.53538
+Nantes,Lyon,0.795659,0.990033
+Nice,Monaco,0.455943,0.827302
+Paris Saint Germain,Marseille,4.63077,0.90611
+Monaco,Nantes,2.20188,1.00661
+Rennes,Paris Saint Germain,1.80204,4.17604
+Lille,Brest,1.77426,0.841964
+Marseille,Strasbourg,1.61535,2.39153
+Paris FC,Lens,0.399344,3.50163
+Le Havre,Toulouse,0.977711,3.12342
+Lorient,Angers,1.4393,0.406012
+Lyon,Nice,1.9974,1.30477
+Metz,Auxerre,0.753602,1.05829
+Brest,Marseille,1.33408,1.3575
+Lens,Monaco,1.82827,2.34004
+Paris Saint Germain,Metz,2.41445,0.0591146
+Toulouse,Paris FC,2.67763,0.687806
+Angers,Lille,0.24039,2.74265
+Auxerre,Rennes,0.700042,1.10597
+Nantes,Le Havre,1.70753,0.753349
+Nice,Lorient,2.74646,1.97697
+Strasbourg,Lyon,2.22901,0.427324
+Strasbourg,Lens,0.874721,2.03807
+Le Havre,Paris Saint Germain,0.682797,4.03627
+Monaco,Angers,1.67082,0.609359
+Rennes,Toulouse,0.709138,0.668386
+Lille,Nantes,0.495693,0.171014
+Lorient,Auxerre,1.02766,1.96667
+Marseille,Lyon,1.78764,1.78524
+Metz,Brest,1.58374,0.963216
+Paris FC,Nice,1.3017,1.26295
+Paris Saint Germain,Monaco,1.22179,1.75294
+Auxerre,Strasbourg,1.03226,1.27324
+Nantes,Angers,0.611683,0.853223
+Toulouse,Marseille,1.28713,1.3226
+Brest,Le Havre,1.26459,1.10286
+Lens,Metz,2.22106,0.250806
+Lille,Lorient,0.850092,0.929269
+Lyon,Paris FC,1.92522,2.32579
+Nice,Rennes,2.68488,1.87138
+Marseille,Auxerre,1.12898,0.293047
+Angers,Nice,0.889177,1.60128
+Lorient,Lens,2.37345,1.01216
+Monaco,Brest,2.81345,1.56097
+Le Havre,Lyon,0.640079,1.13833
+Metz,Toulouse,1.62616,1.74262
+Rennes,Lille,1.5463,1.3508
+Strasbourg,Paris FC,1.20221,0.616395
+Lens,Angers,4.33933,1.15185
+Auxerre,Brest,2.0573,0.882319
+Nice,Paris Saint Germain,0.17662,4.04442
+Toulouse,Lorient,1.48458,0.477676
+Lyon,Monaco,1.10723,3.4997
+Marseille,Lille,1.02929,1.61107
+Nantes,Strasbourg,1.91469,2.83907
+Paris FC,Le Havre,2.42628,1.74386
+Rennes,Metz,1.70552,0.314914
+Paris Saint Germain,Toulouse,1.7337,0.102597
+Brest,Rennes,1.89452,2.7958
+Lille,Lens,3.82171,0.412713
+Strasbourg,Nice,2.70892,0.354354
+Angers,Lyon,0.353538,0.522379
+Le Havre,Auxerre,0.711193,2.40825
+Lorient,Paris FC,1.16554,1.39879
+Metz,Nantes,2.3189,0.389282
+Monaco,Marseille,1.67743,3.10791
+Marseille,Metz,3.31638,0.535052
+Paris FC,Monaco,2.95341,1.7647
+Auxerre,Nantes,0.797017,1.44705
+Rennes,Angers,1.09968,1.19461
+Lyon,Lorient,1.84879,1.57488
+Nice,Le Havre,2.14773,2.12622
+Toulouse,Lille,1.46514,2.08775
+Lens,Toulouse,3.98387,0.578481
+Angers,Le Havre,0.961095,1.54566
+Lille,Nice,0.413432,0.171356
+Lorient,Marseille,1.28628,2.13073
+Metz,Paris FC,1.48448,1.97282
+Monaco,Auxerre,1.94243,0.745123
+Nantes,Brest,0.970265,0.631132
+Paris Saint Germain,Lyon,3.20455,1.20364
+Strasbourg,Rennes,0.944239,3.25297
+Paris Saint Germain,Nantes,2.26452,0.672206
+Brest,Lens,0.309794,3.24582
+Angers,Paris Saint Germain,0.977437,3.00296
+Lyon,Auxerre,2.16328,0.883316
+Toulouse,Monaco,2.15303,1.34617
+Le Havre,Metz,2.64995,1.88709
+Lorient,Strasbourg,2.57081,1.98869
+Marseille,Nice,2.82843,1.41493
+Paris FC,Lille,1.12423,1.75999
+Rennes,Nantes,1.55601,2.51691
+Auxerre,Angers,2.5499,2.16783
+Lille,Le Havre,1.9163,0.334256
+Lyon,Rennes,2.6657,1.06495
+Metz,Monaco,1.1478,1.58879
+Nantes,Marseille,3.07178,1.55164
+Nice,Lens,1.33864,1.55241
+Paris FC,Brest,2.86094,0.733091
+Paris Saint Germain,Lorient,2.98414,1.27737
+Strasbourg,Toulouse,0.405296,1.67665
+Lens,Nantes,0.719134,1.06721
+Angers,Strasbourg,0.793655,1.81952
+Auxerre,Nice,0.866185,2.07007
+Le Havre,Marseille,1.23305,1.03467
+Metz,Lorient,0.730271,1.76754
+Monaco,Lille,0.308864,0.400405
+Paris Saint Germain,Brest,1.608,0.123268
+Rennes,Paris FC,1.53143,1.59351
+Toulouse,Lyon,1.87108,1.56954
+Brest,Strasbourg,2.64653,1.69163
+Lens,Paris Saint Germain,3.03896,0.943876
+Brest,Angers,2.38724,1.06418
+Lille,Auxerre,1.22445,0.615778
+Lorient,Le Havre,1.26937,1.28765
+Lyon,Lens,1.12358,2.01573
+Marseille,Rennes,3.90151,2.20696
+Nantes,Toulouse,0.0840142,0.319014
+Nice,Metz,1.216,0.836784
+Paris FC,Paris Saint Germain,2.32862,0.863934
+Strasbourg,Monaco,2.11536,1.44729

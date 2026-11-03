@@ -1,0 +1,36 @@
+{
+  "generated": "2026-11-03T16:06:11+00:00",
+  "site": "E0",
+  "competitions": [
+    {
+      "div": "E0",
+      "name": "Premier League",
+      "country": "ENG",
+      "kind": "league"
+    },
+    {
+      "div": "SP1",
+      "name": "La Liga",
+      "country": "ESP",
+      "kind": "league"
+    },
+    {
+      "div": "D1",
+      "name": "Bundesliga",
+      "country": "GER",
+      "kind": "league"
+    },
+    {
+      "div": "I1",
+      "name": "Serie A",
+      "country": "ITA",
+      "kind": "league"
+    },
+    {
+      "div": "F1",
+      "name": "Ligue 1",
+      "country": "FRA",
+      "kind": "league"
+    }
+  ]
+}

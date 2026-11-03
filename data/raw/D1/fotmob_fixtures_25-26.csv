@@ -1,0 +1,307 @@
+day,home,away,home_id,away_id,hg,ag
+2025-08-22,Bayern München,RB Leipzig,9823,178475,6,0
+2025-08-23,Bayer Leverkusen,Hoffenheim,8178,8226,1,2
+2025-08-23,Eintracht Frankfurt,Werder Bremen,9810,8697,4,1
+2025-08-23,FC Heidenheim,Wolfsburg,94937,8721,1,3
+2025-08-23,Freiburg,Augsburg,8358,8406,1,3
+2025-08-23,Union Berlin,VfB Stuttgart,8149,10269,2,1
+2025-08-23,St. Pauli,Borussia Dortmund,8152,9789,3,3
+2025-08-24,Mainz 05,1. FC Köln,9905,8722,0,1
+2025-08-24,Borussia Mönchengladbach,Hamburger SV,9788,9790,0,0
+2025-08-29,Hamburger SV,St. Pauli,9790,8152,0,2
+2025-08-30,Hoffenheim,Eintracht Frankfurt,8226,9810,1,3
+2025-08-30,RB Leipzig,FC Heidenheim,178475,94937,2,0
+2025-08-30,VfB Stuttgart,Borussia Mönchengladbach,10269,9788,1,0
+2025-08-30,Werder Bremen,Bayer Leverkusen,8697,8178,3,3
+2025-08-30,Augsburg,Bayern München,8406,9823,2,3
+2025-08-31,Wolfsburg,Mainz 05,8721,9905,1,1
+2025-08-31,Borussia Dortmund,Union Berlin,9789,8149,3,0
+2025-08-31,1. FC Köln,Freiburg,8722,8358,4,1
+2025-09-12,Bayer Leverkusen,Eintracht Frankfurt,8178,9810,3,1
+2025-09-13,FC Heidenheim,Borussia Dortmund,94937,9789,0,2
+2025-09-13,Freiburg,VfB Stuttgart,8358,10269,3,1
+2025-09-13,Mainz 05,RB Leipzig,9905,178475,0,1
+2025-09-13,Union Berlin,Hoffenheim,8149,8226,2,4
+2025-09-13,Wolfsburg,1. FC Köln,8721,8722,3,3
+2025-09-13,Bayern München,Hamburger SV,9823,9790,5,0
+2025-09-14,St. Pauli,Augsburg,8152,8406,2,1
+2025-09-14,Borussia Mönchengladbach,Werder Bremen,9788,8697,0,4
+2025-09-19,VfB Stuttgart,St. Pauli,10269,8152,2,0
+2025-09-20,Augsburg,Mainz 05,8406,9905,1,4
+2025-09-20,Hamburger SV,FC Heidenheim,9790,94937,2,1
+2025-09-20,Hoffenheim,Bayern München,8226,9823,1,4
+2025-09-20,Werder Bremen,Freiburg,8697,8358,0,3
+2025-09-20,RB Leipzig,1. FC Köln,178475,8722,3,1
+2025-09-21,Eintracht Frankfurt,Union Berlin,9810,8149,3,4
+2025-09-21,Bayer Leverkusen,Borussia Mönchengladbach,8178,9788,1,1
+2025-09-21,Borussia Dortmund,Wolfsburg,9789,8721,1,0
+2025-09-26,Bayern München,Werder Bremen,9823,8697,4,0
+2025-09-27,FC Heidenheim,Augsburg,94937,8406,2,1
+2025-09-27,Mainz 05,Borussia Dortmund,9905,9789,0,2
+2025-09-27,St. Pauli,Bayer Leverkusen,8152,8178,1,2
+2025-09-27,Wolfsburg,RB Leipzig,8721,178475,0,1
+2025-09-27,Borussia Mönchengladbach,Eintracht Frankfurt,9788,9810,4,6
+2025-09-28,Freiburg,Hoffenheim,8358,8226,1,1
+2025-09-28,1. FC Köln,VfB Stuttgart,8722,10269,1,2
+2025-09-28,Union Berlin,Hamburger SV,8149,9790,0,0
+2025-10-03,Hoffenheim,1. FC Köln,8226,8722,0,1
+2025-10-04,Augsburg,Wolfsburg,8406,8721,3,1
+2025-10-04,Bayer Leverkusen,Union Berlin,8178,8149,2,0
+2025-10-04,Borussia Dortmund,RB Leipzig,9789,178475,1,1
+2025-10-04,Werder Bremen,St. Pauli,8697,8152,1,0
+2025-10-04,Eintracht Frankfurt,Bayern München,9810,9823,0,3
+2025-10-05,VfB Stuttgart,FC Heidenheim,10269,94937,1,0
+2025-10-05,Hamburger SV,Mainz 05,9790,9905,4,0
+2025-10-05,Borussia Mönchengladbach,Freiburg,9788,8358,0,0
+2025-10-17,Union Berlin,Borussia Mönchengladbach,8149,9788,3,1
+2025-10-18,FC Heidenheim,Werder Bremen,94937,8697,2,2
+2025-10-18,1. FC Köln,Augsburg,8722,8406,1,1
+2025-10-18,Mainz 05,Bayer Leverkusen,9905,8178,3,4
+2025-10-18,RB Leipzig,Hamburger SV,178475,9790,2,1
+2025-10-18,Wolfsburg,VfB Stuttgart,8721,10269,0,3
+2025-10-18,Bayern München,Borussia Dortmund,9823,9789,2,1
+2025-10-19,Freiburg,Eintracht Frankfurt,8358,9810,2,2
+2025-10-19,St. Pauli,Hoffenheim,8152,8226,0,3
+2025-10-24,Werder Bremen,Union Berlin,8697,8149,1,0
+2025-10-25,Augsburg,RB Leipzig,8406,178475,0,6
+2025-10-25,Eintracht Frankfurt,St. Pauli,9810,8152,2,0
+2025-10-25,Hamburger SV,Wolfsburg,9790,8721,0,1
+2025-10-25,Hoffenheim,FC Heidenheim,8226,94937,3,1
+2025-10-25,Borussia Mönchengladbach,Bayern München,9788,9823,0,3
+2025-10-25,Borussia Dortmund,1. FC Köln,9789,8722,1,0
+2025-10-26,Bayer Leverkusen,Freiburg,8178,8358,2,0
+2025-10-26,VfB Stuttgart,Mainz 05,10269,9905,2,1
+2025-10-31,Augsburg,Borussia Dortmund,8406,9789,0,1
+2025-11-01,FC Heidenheim,Eintracht Frankfurt,94937,9810,1,1
+2025-11-01,Mainz 05,Werder Bremen,9905,8697,1,1
+2025-11-01,RB Leipzig,VfB Stuttgart,178475,10269,3,1
+2025-11-01,St. Pauli,Borussia Mönchengladbach,8152,9788,0,4
+2025-11-01,Union Berlin,Freiburg,8149,8358,0,0
+2025-11-01,Bayern München,Bayer Leverkusen,9823,8178,3,0
+2025-11-02,1. FC Köln,Hamburger SV,8722,9790,4,1
+2025-11-02,Wolfsburg,Hoffenheim,8721,8226,2,3
+2025-11-07,Werder Bremen,Wolfsburg,8697,8721,2,1
+2025-11-08,Bayer Leverkusen,FC Heidenheim,8178,94937,6,0
+2025-11-08,Hamburger SV,Borussia Dortmund,9790,9789,1,1
+2025-11-08,Hoffenheim,RB Leipzig,8226,178475,3,1
+2025-11-08,Union Berlin,Bayern München,8149,9823,2,2
+2025-11-08,Borussia Mönchengladbach,1. FC Köln,9788,8722,3,1
+2025-11-09,Freiburg,St. Pauli,8358,8152,2,1
+2025-11-09,VfB Stuttgart,Augsburg,10269,8406,3,2
+2025-11-09,Eintracht Frankfurt,Mainz 05,9810,9905,1,0
+2025-11-21,Mainz 05,Hoffenheim,9905,8226,1,1
+2025-11-22,Augsburg,Hamburger SV,8406,9790,1,0
+2025-11-22,Bayern München,Freiburg,9823,8358,6,2
+2025-11-22,Borussia Dortmund,VfB Stuttgart,9789,10269,3,3
+2025-11-22,FC Heidenheim,Borussia Mönchengladbach,94937,9788,0,3
+2025-11-22,Wolfsburg,Bayer Leverkusen,8721,8178,1,3
+2025-11-22,1. FC Köln,Eintracht Frankfurt,8722,9810,3,4
+2025-11-23,RB Leipzig,Werder Bremen,178475,8697,2,0
+2025-11-23,St. Pauli,Union Berlin,8152,8149,0,1
+2025-11-28,Borussia Mönchengladbach,RB Leipzig,9788,178475,0,0
+2025-11-29,Bayern München,St. Pauli,9823,8152,3,1
+2025-11-29,Hoffenheim,Augsburg,8226,8406,3,0
+2025-11-29,Union Berlin,FC Heidenheim,8149,94937,1,2
+2025-11-29,Werder Bremen,1. FC Köln,8697,8722,1,1
+2025-11-29,Bayer Leverkusen,Borussia Dortmund,8178,9789,1,2
+2025-11-30,Hamburger SV,VfB Stuttgart,9790,10269,2,1
+2025-11-30,Eintracht Frankfurt,Wolfsburg,9810,8721,1,1
+2025-11-30,Freiburg,Mainz 05,8358,9905,4,0
+2025-12-05,Mainz 05,Borussia Mönchengladbach,9905,9788,0,1
+2025-12-06,Augsburg,Bayer Leverkusen,8406,8178,2,0
+2025-12-06,FC Heidenheim,Freiburg,94937,8358,2,1
+2025-12-06,1. FC Köln,St. Pauli,8722,8152,1,1
+2025-12-06,VfB Stuttgart,Bayern München,10269,9823,0,5
+2025-12-06,Wolfsburg,Union Berlin,8721,8149,3,1
+2025-12-06,RB Leipzig,Eintracht Frankfurt,178475,9810,6,0
+2025-12-07,Hamburger SV,Werder Bremen,9790,8697,3,2
+2025-12-07,Borussia Dortmund,Hoffenheim,9789,8226,2,0
+2025-12-12,Union Berlin,RB Leipzig,8149,178475,3,1
+2025-12-13,Borussia Mönchengladbach,Wolfsburg,9788,8721,1,3
+2025-12-13,Eintracht Frankfurt,Augsburg,9810,8406,1,0
+2025-12-13,Hoffenheim,Hamburger SV,8226,9790,4,1
+2025-12-13,St. Pauli,FC Heidenheim,8152,94937,2,1
+2025-12-13,Bayer Leverkusen,1. FC Köln,8178,8722,2,0
+2025-12-14,Freiburg,Borussia Dortmund,8358,9789,1,1
+2025-12-14,Bayern München,Mainz 05,9823,9905,2,2
+2025-12-14,Werder Bremen,VfB Stuttgart,8697,10269,0,4
+2025-12-19,Borussia Dortmund,Borussia Mönchengladbach,9789,9788,2,0
+2025-12-20,Augsburg,Werder Bremen,8406,8697,0,0
+2025-12-20,1. FC Köln,Union Berlin,8722,8149,0,1
+2025-12-20,Hamburger SV,Eintracht Frankfurt,9790,9810,1,1
+2025-12-20,VfB Stuttgart,Hoffenheim,10269,8226,0,0
+2025-12-20,Wolfsburg,Freiburg,8721,8358,3,4
+2025-12-20,RB Leipzig,Bayer Leverkusen,178475,8178,1,3
+2025-12-21,Mainz 05,St. Pauli,9905,8152,0,0
+2025-12-21,FC Heidenheim,Bayern München,94937,9823,0,4
+2026-01-09,Eintracht Frankfurt,Borussia Dortmund,9810,9789,3,3
+2026-01-10,FC Heidenheim,1. FC Köln,94937,8722,2,2
+2026-01-10,Freiburg,Hamburger SV,8358,9790,2,1
+2026-01-10,Union Berlin,Mainz 05,8149,9905,2,2
+2026-01-10,Bayer Leverkusen,VfB Stuttgart,8178,10269,1,4
+2026-01-11,Borussia Mönchengladbach,Augsburg,9788,8406,4,0
+2026-01-11,Bayern München,Wolfsburg,9823,8721,8,1
+2026-01-13,VfB Stuttgart,Eintracht Frankfurt,10269,9810,3,2
+2026-01-13,Borussia Dortmund,Werder Bremen,9789,8697,3,0
+2026-01-13,Mainz 05,FC Heidenheim,9905,94937,2,1
+2026-01-14,Wolfsburg,St. Pauli,8721,8152,2,1
+2026-01-14,1. FC Köln,Bayern München,8722,9823,1,3
+2026-01-14,Hoffenheim,Borussia Mönchengladbach,8226,9788,5,1
+2026-01-14,RB Leipzig,Freiburg,178475,8358,2,0
+2026-01-15,Augsburg,Union Berlin,8406,8149,1,1
+2026-01-16,Werder Bremen,Eintracht Frankfurt,8697,9810,3,3
+2026-01-17,Borussia Dortmund,St. Pauli,9789,8152,3,2
+2026-01-17,1. FC Köln,Mainz 05,8722,9905,2,1
+2026-01-17,Hamburger SV,Borussia Mönchengladbach,9790,9788,0,0
+2026-01-17,Hoffenheim,Bayer Leverkusen,8226,8178,1,0
+2026-01-17,Wolfsburg,FC Heidenheim,8721,94937,1,1
+2026-01-17,RB Leipzig,Bayern München,178475,9823,1,5
+2026-01-18,VfB Stuttgart,Union Berlin,10269,8149,1,1
+2026-01-18,Augsburg,Freiburg,8406,8358,2,2
+2026-01-23,St. Pauli,Hamburger SV,8152,9790,0,0
+2026-01-24,Bayer Leverkusen,Werder Bremen,8178,8697,1,0
+2026-01-24,Bayern München,Augsburg,9823,8406,1,2
+2026-01-24,Eintracht Frankfurt,Hoffenheim,9810,8226,1,3
+2026-01-24,FC Heidenheim,RB Leipzig,94937,178475,0,3
+2026-01-24,Mainz 05,Wolfsburg,9905,8721,3,1
+2026-01-24,Union Berlin,Borussia Dortmund,8149,9789,0,3
+2026-01-25,Borussia Mönchengladbach,VfB Stuttgart,9788,10269,0,3
+2026-01-25,Freiburg,1. FC Köln,8358,8722,2,1
+2026-01-27,St. Pauli,RB Leipzig,8152,178475,1,1
+2026-01-27,Werder Bremen,Hoffenheim,8697,8226,0,2
+2026-01-30,1. FC Köln,Wolfsburg,8722,8721,1,0
+2026-01-31,Augsburg,St. Pauli,8406,8152,2,1
+2026-01-31,Eintracht Frankfurt,Bayer Leverkusen,9810,8178,1,3
+2026-01-31,Hoffenheim,Union Berlin,8226,8149,3,1
+2026-01-31,RB Leipzig,Mainz 05,178475,9905,1,2
+2026-01-31,Werder Bremen,Borussia Mönchengladbach,8697,9788,1,1
+2026-01-31,Hamburger SV,Bayern München,9790,9823,2,2
+2026-02-01,VfB Stuttgart,Freiburg,10269,8358,1,0
+2026-02-01,Borussia Dortmund,FC Heidenheim,9789,94937,3,2
+2026-02-06,Union Berlin,Eintracht Frankfurt,8149,9810,1,1
+2026-02-07,FC Heidenheim,Hamburger SV,94937,9790,0,2
+2026-02-07,Freiburg,Werder Bremen,8358,8697,1,0
+2026-02-07,Mainz 05,Augsburg,9905,8406,2,0
+2026-02-07,St. Pauli,VfB Stuttgart,8152,10269,2,1
+2026-02-07,Wolfsburg,Borussia Dortmund,8721,9789,1,2
+2026-02-07,Borussia Mönchengladbach,Bayer Leverkusen,9788,8178,1,1
+2026-02-08,1. FC Köln,RB Leipzig,8722,178475,1,2
+2026-02-08,Bayern München,Hoffenheim,9823,8226,5,1
+2026-02-13,Borussia Dortmund,Mainz 05,9789,9905,4,0
+2026-02-14,Bayer Leverkusen,St. Pauli,8178,8152,4,0
+2026-02-14,Eintracht Frankfurt,Borussia Mönchengladbach,9810,9788,3,0
+2026-02-14,Hamburger SV,Union Berlin,9790,8149,3,2
+2026-02-14,Hoffenheim,Freiburg,8226,8358,3,0
+2026-02-14,Werder Bremen,Bayern München,8697,9823,0,3
+2026-02-14,VfB Stuttgart,1. FC Köln,10269,8722,3,1
+2026-02-15,Augsburg,FC Heidenheim,8406,94937,1,0
+2026-02-15,RB Leipzig,Wolfsburg,178475,8721,2,2
+2026-02-20,Mainz 05,Hamburger SV,9905,9790,1,1
+2026-02-21,Bayern München,Eintracht Frankfurt,9823,9810,3,2
+2026-02-21,1. FC Köln,Hoffenheim,8722,8226,2,2
+2026-02-21,Union Berlin,Bayer Leverkusen,8149,8178,1,0
+2026-02-21,Wolfsburg,Augsburg,8721,8406,2,3
+2026-02-21,RB Leipzig,Borussia Dortmund,178475,9789,2,2
+2026-02-22,Freiburg,Borussia Mönchengladbach,8358,9788,2,1
+2026-02-22,St. Pauli,Werder Bremen,8152,8697,2,1
+2026-02-22,FC Heidenheim,VfB Stuttgart,94937,10269,3,3
+2026-02-27,Augsburg,1. FC Köln,8406,8722,2,0
+2026-02-28,Bayer Leverkusen,Mainz 05,8178,9905,1,1
+2026-02-28,Borussia Mönchengladbach,Union Berlin,9788,8149,1,0
+2026-02-28,Hoffenheim,St. Pauli,8226,8152,0,1
+2026-02-28,Werder Bremen,FC Heidenheim,8697,94937,2,0
+2026-02-28,Borussia Dortmund,Bayern München,9789,9823,2,3
+2026-03-01,VfB Stuttgart,Wolfsburg,10269,8721,4,0
+2026-03-01,Eintracht Frankfurt,Freiburg,9810,8358,2,0
+2026-03-01,Hamburger SV,RB Leipzig,9790,178475,1,2
+2026-03-04,Hamburger SV,Bayer Leverkusen,9790,8178,0,1
+2026-03-06,Bayern München,Borussia Mönchengladbach,9823,9788,4,1
+2026-03-07,FC Heidenheim,Hoffenheim,94937,8226,2,4
+2026-03-07,Freiburg,Bayer Leverkusen,8358,8178,3,3
+2026-03-07,Mainz 05,VfB Stuttgart,9905,10269,2,2
+2026-03-07,RB Leipzig,Augsburg,178475,8406,2,1
+2026-03-07,Wolfsburg,Hamburger SV,8721,9790,1,2
+2026-03-07,1. FC Köln,Borussia Dortmund,8722,9789,1,2
+2026-03-08,St. Pauli,Eintracht Frankfurt,8152,9810,0,0
+2026-03-08,Union Berlin,Werder Bremen,8149,8697,1,4
+2026-03-13,Borussia Mönchengladbach,St. Pauli,9788,8152,2,0
+2026-03-14,Bayer Leverkusen,Bayern München,8178,9823,1,1
+2026-03-14,Borussia Dortmund,Augsburg,9789,8406,2,0
+2026-03-14,Eintracht Frankfurt,FC Heidenheim,9810,94937,1,0
+2026-03-14,Hoffenheim,Wolfsburg,8226,8721,1,1
+2026-03-14,Hamburger SV,1. FC Köln,9790,8722,1,1
+2026-03-15,Werder Bremen,Mainz 05,8697,9905,0,2
+2026-03-15,Freiburg,Union Berlin,8358,8149,0,1
+2026-03-15,VfB Stuttgart,RB Leipzig,10269,178475,1,0
+2026-03-20,RB Leipzig,Hoffenheim,178475,8226,5,0
+2026-03-21,Bayern München,Union Berlin,9823,8149,4,0
+2026-03-21,FC Heidenheim,Bayer Leverkusen,94937,8178,3,3
+2026-03-21,1. FC Köln,Borussia Mönchengladbach,8722,9788,3,3
+2026-03-21,Wolfsburg,Werder Bremen,8721,8697,0,1
+2026-03-21,Borussia Dortmund,Hamburger SV,9789,9790,3,2
+2026-03-22,Mainz 05,Eintracht Frankfurt,9905,9810,2,1
+2026-03-22,St. Pauli,Freiburg,8152,8358,1,2
+2026-03-22,Augsburg,VfB Stuttgart,8406,10269,2,5
+2026-04-04,Bayer Leverkusen,Wolfsburg,8178,8721,6,3
+2026-04-04,Borussia Mönchengladbach,FC Heidenheim,9788,94937,2,2
+2026-04-04,Freiburg,Bayern München,8358,9823,2,3
+2026-04-04,Hamburger SV,Augsburg,9790,8406,1,1
+2026-04-04,Hoffenheim,Mainz 05,8226,9905,1,2
+2026-04-04,Werder Bremen,RB Leipzig,8697,178475,1,2
+2026-04-04,VfB Stuttgart,Borussia Dortmund,10269,9789,0,2
+2026-04-05,Union Berlin,St. Pauli,8149,8152,1,1
+2026-04-05,Eintracht Frankfurt,1. FC Köln,9810,8722,2,2
+2026-04-10,Augsburg,Hoffenheim,8406,8226,2,2
+2026-04-11,Borussia Dortmund,Bayer Leverkusen,9789,8178,0,1
+2026-04-11,FC Heidenheim,Union Berlin,94937,8149,3,1
+2026-04-11,RB Leipzig,Borussia Mönchengladbach,178475,9788,1,0
+2026-04-11,Wolfsburg,Eintracht Frankfurt,8721,9810,1,2
+2026-04-11,St. Pauli,Bayern München,8152,9823,0,5
+2026-04-12,1. FC Köln,Werder Bremen,8722,8697,3,1
+2026-04-12,VfB Stuttgart,Hamburger SV,10269,9790,4,0
+2026-04-12,Mainz 05,Freiburg,9905,8358,0,1
+2026-04-17,St. Pauli,1. FC Köln,8152,8722,1,1
+2026-04-18,Bayer Leverkusen,Augsburg,8178,8406,1,2
+2026-04-18,Hoffenheim,Borussia Dortmund,8226,9789,2,1
+2026-04-18,Union Berlin,Wolfsburg,8149,8721,1,2
+2026-04-18,Werder Bremen,Hamburger SV,8697,9790,3,1
+2026-04-18,Eintracht Frankfurt,RB Leipzig,9810,178475,1,3
+2026-04-19,Freiburg,FC Heidenheim,8358,94937,2,1
+2026-04-19,Bayern München,VfB Stuttgart,9823,10269,4,2
+2026-04-19,Borussia Mönchengladbach,Mainz 05,9788,9905,1,1
+2026-04-24,RB Leipzig,Union Berlin,178475,8149,3,1
+2026-04-25,Augsburg,Eintracht Frankfurt,8406,9810,1,1
+2026-04-25,FC Heidenheim,St. Pauli,94937,8152,2,0
+2026-04-25,1. FC Köln,Bayer Leverkusen,8722,8178,1,2
+2026-04-25,Mainz 05,Bayern München,9905,9823,3,4
+2026-04-25,Wolfsburg,Borussia Mönchengladbach,8721,9788,0,0
+2026-04-25,Hamburger SV,Hoffenheim,9790,8226,1,2
+2026-04-26,VfB Stuttgart,Werder Bremen,10269,8697,1,1
+2026-04-26,Borussia Dortmund,Freiburg,9789,8358,4,0
+2026-05-02,Bayern München,FC Heidenheim,9823,94937,3,3
+2026-05-02,Eintracht Frankfurt,Hamburger SV,9810,9790,1,2
+2026-05-02,Hoffenheim,VfB Stuttgart,8226,10269,3,3
+2026-05-02,Union Berlin,1. FC Köln,8149,8722,2,2
+2026-05-02,Werder Bremen,Augsburg,8697,8406,1,3
+2026-05-02,Bayer Leverkusen,RB Leipzig,8178,178475,4,1
+2026-05-03,St. Pauli,Mainz 05,8152,9905,1,2
+2026-05-03,Borussia Mönchengladbach,Borussia Dortmund,9788,9789,1,0
+2026-05-03,Freiburg,Wolfsburg,8358,8721,1,1
+2026-05-08,Borussia Dortmund,Eintracht Frankfurt,9789,9810,3,2
+2026-05-09,Augsburg,Borussia Mönchengladbach,8406,9788,3,1
+2026-05-09,Hoffenheim,Werder Bremen,8226,8697,1,0
+2026-05-09,RB Leipzig,St. Pauli,178475,8152,2,1
+2026-05-09,VfB Stuttgart,Bayer Leverkusen,10269,8178,3,1
+2026-05-09,Wolfsburg,Bayern München,8721,9823,0,1
+2026-05-10,Hamburger SV,Freiburg,9790,8358,3,2
+2026-05-10,1. FC Köln,FC Heidenheim,8722,94937,1,3
+2026-05-10,Mainz 05,Union Berlin,9905,8149,1,3
+2026-05-16,Bayer Leverkusen,Hamburger SV,8178,9790,1,1
+2026-05-16,Bayern München,1. FC Köln,9823,8722,5,1
+2026-05-16,Borussia Mönchengladbach,Hoffenheim,9788,8226,4,0
+2026-05-16,Eintracht Frankfurt,VfB Stuttgart,9810,10269,2,2
+2026-05-16,FC Heidenheim,Mainz 05,94937,9905,0,2
+2026-05-16,Freiburg,RB Leipzig,8358,178475,4,1
+2026-05-16,St. Pauli,Wolfsburg,8152,8721,1,3
+2026-05-16,Union Berlin,Augsburg,8149,8406,4,0
+2026-05-16,Werder Bremen,Borussia Dortmund,8697,9789,0,2

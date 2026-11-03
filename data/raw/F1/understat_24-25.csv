@@ -1,0 +1,307 @@
+HomeTeam,AwayTeam,HomeXG,AwayXG
+Le Havre,Paris Saint Germain,0.197023,2.9098
+Brest,Marseille,1.51475,2.96496
+Monaco,Saint-Etienne,2.78444,0.484117
+Reims,Lille,0.0758907,2.31711
+Angers,Lens,0.297792,1.04077
+Auxerre,Nice,3.03248,0.58056
+Montpellier,Strasbourg,1.44704,1.10476
+Rennes,Lyon,2.57411,2.20066
+Toulouse,Nantes,1.50937,0.513845
+Paris Saint Germain,Montpellier,4.93703,0.772997
+Lille,Angers,1.25796,0.737042
+Lyon,Monaco,0.0144803,2.60916
+Saint-Etienne,Le Havre,1.48827,2.23362
+Lens,Brest,4.01926,0.695576
+Marseille,Reims,2.94016,1.01201
+Nantes,Auxerre,1.52541,0.876338
+Nice,Toulouse,1.23725,0.946618
+Strasbourg,Rennes,1.58875,1.40309
+Lyon,Strasbourg,3.22754,2.44695
+Brest,Saint-Etienne,3.60698,0.256612
+Montpellier,Nantes,0.745975,1.69437
+Toulouse,Marseille,0.485368,1.29819
+Angers,Nice,1.33204,2.53408
+Le Havre,Auxerre,2.83661,0.743523
+Lille,Paris Saint Germain,1.57562,3.24139
+Monaco,Lens,0.905621,1.91297
+Reims,Rennes,2.00948,1.02619
+Saint-Etienne,Lille,1.1774,2.73176
+Auxerre,Monaco,0.419427,3.37672
+Marseille,Nice,1.02694,1.72041
+Paris Saint Germain,Brest,2.91245,1.00928
+Lens,Lyon,0.623644,0.529029
+Nantes,Reims,1.43325,0.549218
+Rennes,Montpellier,1.26867,0.310262
+Strasbourg,Angers,2.47918,0.855084
+Toulouse,Le Havre,1.8674,0.15045
+Nice,Saint-Etienne,4.50007,0.335532
+Lille,Strasbourg,2.30213,3.02005
+Reims,Paris Saint Germain,0.760314,1.90277
+Rennes,Lens,1.34636,0.853348
+Angers,Nantes,0.82486,1.28588
+Brest,Toulouse,0.709045,2.3505
+Lyon,Marseille,3.89273,0.675578
+Monaco,Le Havre,1.84023,0.580512
+Montpellier,Auxerre,1.78396,1.42586
+Auxerre,Brest,2.9504,0.726126
+Paris Saint Germain,Rennes,3.22405,2.02646
+Le Havre,Lille,0.488988,3.5706
+Lens,Nice,2.06424,0.9614
+Monaco,Montpellier,3.45707,0.768868
+Angers,Reims,1.08284,4.18122
+Nantes,Saint-Etienne,2.61562,1.0242
+Strasbourg,Marseille,1.67455,0.782395
+Toulouse,Lyon,0.716626,0.730803
+Marseille,Angers,0.896807,1.19435
+Lille,Toulouse,1.37754,1.43654
+Rennes,Monaco,0.640297,0.498715
+Saint-Etienne,Auxerre,2.45106,0.71964
+Brest,Le Havre,0.890433,2.11913
+Lyon,Nantes,2.43324,0.765938
+Nice,Paris Saint Germain,0.326466,0.822322
+Reims,Montpellier,3.71514,0.874094
+Strasbourg,Lens,1.31135,1.43012
+Monaco,Lille,1.1914,0.163769
+Brest,Rennes,1.42573,1.14445
+Paris Saint Germain,Strasbourg,4.66981,2.22038
+Saint-Etienne,Lens,0.782727,1.35593
+Auxerre,Reims,2.86385,1.22872
+Le Havre,Lyon,0.360268,2.76676
+Montpellier,Marseille,1.75684,3.88109
+Nantes,Nice,0.832336,0.776883
+Toulouse,Angers,2.43778,1.47299
+Rennes,Le Havre,1.84154,0.272294
+Angers,Saint-Etienne,3.26778,1.33
+Lens,Lille,0.865293,1.47637
+Reims,Brest,1.44911,1.64092
+Lyon,Auxerre,2.21183,1.0609
+Marseille,Paris Saint Germain,0.277951,4.04221
+Montpellier,Toulouse,0.241419,2.88708
+Nice,Monaco,1.79435,0.796703
+Strasbourg,Nantes,1.99679,0.761926
+Lille,Lyon,1.67241,1.58011
+Monaco,Angers,1.47525,0.50003
+Brest,Nice,1.02021,1.92085
+Paris Saint Germain,Lens,2.76932,0.803421
+Saint-Etienne,Strasbourg,2.82745,0.451174
+Auxerre,Rennes,2.39897,0.701873
+Le Havre,Montpellier,1.7998,0.722691
+Nantes,Marseille,1.25901,0.876221
+Toulouse,Reims,0.910081,0.818661
+Marseille,Auxerre,2.02831,2.09466
+Angers,Paris Saint Germain,1.21483,4.38095
+Lens,Nantes,3.74705,1.49891
+Strasbourg,Monaco,0.771173,3.42574
+Le Havre,Reims,1.51035,2.69952
+Lyon,Saint-Etienne,2.28647,0.703111
+Montpellier,Brest,3.03758,1.88669
+Nice,Lille,1.92983,2.19562
+Rennes,Toulouse,0.31279,1.31564
+Monaco,Brest,2.55781,1.38684
+Paris Saint Germain,Toulouse,1.63216,1.84157
+Lens,Marseille,2.1723,1.37895
+Reims,Lyon,1.17295,1.92683
+Saint-Etienne,Montpellier,1.27297,0.862794
+Auxerre,Angers,0.683126,1.14148
+Lille,Rennes,0.641516,0.178059
+Nantes,Le Havre,0.846924,0.977121
+Nice,Strasbourg,2.03827,0.524154
+Reims,Lens,0.589301,1.40788
+Brest,Strasbourg,2.90417,0.930345
+Paris Saint Germain,Nantes,3.85838,0.742742
+Rennes,Saint-Etienne,3.01812,0.168428
+Le Havre,Angers,0.322626,2.10367
+Lyon,Nice,2.88467,2.03621
+Marseille,Monaco,1.65632,0.958578
+Montpellier,Lille,1.28241,2.06485
+Toulouse,Auxerre,2.78623,0.129647
+Auxerre,Paris Saint Germain,0.34154,3.04535
+Lille,Brest,3.01042,0.740372
+Angers,Lyon,0.505438,2.02701
+Monaco,Toulouse,2.8043,0.232536
+Nice,Le Havre,2.27599,1.42884
+Lens,Montpellier,1.10272,1.51819
+Nantes,Rennes,1.70972,0.285927
+Saint-Etienne,Marseille,0.166752,2.9851
+Strasbourg,Reims,1.0949,1.28455
+Toulouse,Saint-Etienne,1.73249,0.388289
+Auxerre,Lens,0.51026,1.73768
+Marseille,Lille,1.21515,1.24013
+Reims,Monaco,1.52074,1.3291
+Brest,Nantes,2.20104,1.39913
+Le Havre,Strasbourg,1.58328,1.39172
+Montpellier,Nice,2.45121,1.55192
+Paris Saint Germain,Lyon,2.59615,1.23945
+Rennes,Angers,0.62717,0.391796
+Monaco,Paris Saint Germain,3.10193,2.40654
+Nice,Rennes,1.51944,1.50451
+Lille,Nantes,1.13415,1.07277
+Lyon,Montpellier,1.07725,1.55585
+Saint-Etienne,Reims,3.18639,1.27612
+Angers,Brest,1.90119,0.608874
+Lens,Toulouse,1.32887,2.19226
+Marseille,Le Havre,3.17491,0.885341
+Strasbourg,Auxerre,2.89722,1.7605
+Auxerre,Lille,0.601359,1.51829
+Nantes,Monaco,1.41184,3.48791
+Brest,Lyon,1.28964,1.40093
+Reims,Nice,0.950928,3.22004
+Rennes,Marseille,1.76569,2.49254
+Le Havre,Lens,1.84216,3.10793
+Montpellier,Angers,1.44663,3.46863
+Paris Saint Germain,Saint-Etienne,5.07062,0.410024
+Toulouse,Strasbourg,1.19281,1.82783
+Lille,Nice,1.29219,2.90437
+Montpellier,Monaco,2.60645,1.74957
+Lens,Paris Saint Germain,1.34901,1.57299
+Lyon,Toulouse,0.619056,1.36611
+Rennes,Brest,1.92675,1.87321
+Angers,Auxerre,1.21759,0.462137
+Marseille,Strasbourg,3.29082,0.854933
+Reims,Le Havre,1.49091,1.29453
+Saint-Etienne,Nantes,0.836137,1.36031
+Auxerre,Saint-Etienne,0.582829,1.1913
+Monaco,Rennes,3.47384,1.85205
+Paris Saint Germain,Reims,1.79628,0.613384
+Strasbourg,Lille,1.19703,1.95469
+Le Havre,Brest,0.696232,2.38282
+Lens,Angers,2.01118,0.0813578
+Nantes,Lyon,1.62983,1.61762
+Nice,Marseille,2.10992,1.11157
+Toulouse,Montpellier,1.34257,0.939857
+Montpellier,Lens,1.11121,3.21001
+Brest,Paris Saint Germain,0.63646,3.94899
+Lille,Saint-Etienne,2.74822,2.10343
+Monaco,Auxerre,2.07751,1.6376
+Angers,Le Havre,1.77333,2.19254
+Marseille,Lyon,3.61972,1.83806
+Reims,Nantes,0.960868,1.41652
+Rennes,Strasbourg,0.763344,0.994427
+Toulouse,Nice,0.854551,1.51342
+Nantes,Brest,1.45114,2.49765
+Paris Saint Germain,Monaco,3.13964,0.924683
+Lille,Le Havre,1.76979,1.65349
+Nice,Lens,3.37347,1.02488
+Saint-Etienne,Rennes,0.462142,4.06991
+Angers,Marseille,0.367397,2.87581
+Auxerre,Toulouse,0.716768,1.16269
+Lyon,Reims,3.24979,0.307882
+Strasbourg,Montpellier,3.17215,1.9822
+Brest,Auxerre,1.97492,1.48646
+Marseille,Saint-Etienne,5.94236,1.0312
+Monaco,Nantes,5.14782,1.36606
+Toulouse,Paris Saint Germain,1.19618,2.93281
+Le Havre,Nice,0.555829,1.22276
+Lens,Strasbourg,0.265561,1.97845
+Montpellier,Lyon,1.33893,1.59077
+Reims,Angers,2.06733,2.43148
+Rennes,Lille,0.417057,3.01977
+Rennes,Reims,3.0636,0.160269
+Auxerre,Marseille,1.96607,1.22185
+Lille,Monaco,1.04956,2.78007
+Saint-Etienne,Angers,1.70031,3.1805
+Le Havre,Toulouse,1.04249,2.60783
+Lyon,Paris Saint Germain,1.76184,2.74583
+Nantes,Lens,4.25273,2.06191
+Nice,Montpellier,2.14122,0.916772
+Strasbourg,Brest,0.785346,0.498988
+Monaco,Reims,4.01066,0.722972
+Lens,Le Havre,2.02687,1.73131
+Paris Saint Germain,Lille,3.59846,0.872733
+Saint-Etienne,Nice,1.01895,2.41374
+Angers,Toulouse,0.363765,4.43647
+Auxerre,Strasbourg,2.09273,1.52559
+Lyon,Brest,1.54474,1.89282
+Marseille,Nantes,2.61727,0.838148
+Montpellier,Rennes,1.60296,2.49604
+Toulouse,Monaco,1.25392,2.8576
+Lille,Montpellier,1.7771,0.305936
+Marseille,Lens,1.18945,1.23993
+Rennes,Paris Saint Germain,2.10922,3.39834
+Brest,Angers,4.53611,0.48923
+Le Havre,Saint-Etienne,2.15479,1.3916
+Nantes,Strasbourg,0.66134,1.17018
+Nice,Lyon,1.50591,0.78019
+Reims,Auxerre,1.83707,1.87605
+Nice,Auxerre,2.29143,0.606081
+Angers,Monaco,0.497795,2.03553
+Lens,Rennes,0.643819,0.653605
+Nantes,Lille,2.00991,2.45036
+Brest,Reims,0.33799,0.985266
+Lyon,Le Havre,3.58655,1.56105
+Montpellier,Saint-Etienne,1.33869,1.13788
+Paris Saint Germain,Marseille,2.60859,0.734284
+Strasbourg,Toulouse,1.98742,1.39687
+Strasbourg,Lyon,1.77552,2.87161
+Monaco,Nice,2.52612,0.60151
+Reims,Marseille,1.05547,1.07885
+Saint-Etienne,Paris Saint Germain,1.27635,3.96021
+Angers,Rennes,1.04854,1.63382
+Auxerre,Montpellier,2.11681,0.457017
+Le Havre,Nantes,4.01379,1.06585
+Lille,Lens,1.95492,0.596446
+Toulouse,Brest,2.44172,1.99117
+Nice,Nantes,2.17922,0.945149
+Brest,Monaco,0.90697,1.75483
+Lyon,Lille,1.75398,0.656931
+Paris Saint Germain,Angers,1.64379,0.280438
+Lens,Saint-Etienne,2.50421,1.69228
+Marseille,Toulouse,1.13222,1.30619
+Montpellier,Le Havre,0.956146,1.72977
+Reims,Strasbourg,0.891063,2.80314
+Rennes,Auxerre,1.06426,1.10602
+Lens,Reims,2.71917,1.44859
+Monaco,Marseille,2.91516,0.877673
+Strasbourg,Nice,0.789035,1.83829
+Toulouse,Lille,0.982005,0.599675
+Angers,Montpellier,1.771,0.452518
+Auxerre,Lyon,1.00397,3.11801
+Le Havre,Rennes,0.718016,3.72188
+Saint-Etienne,Brest,1.02329,2.01379
+Rennes,Nantes,2.52992,0.702331
+Marseille,Montpellier,3.82233,0.304052
+Monaco,Strasbourg,0.969947,0.340219
+Paris Saint Germain,Le Havre,3.19233,0.709291
+Brest,Lens,1.05399,2.98551
+Lille,Auxerre,2.97047,0.280948
+Nice,Angers,2.72567,0.278639
+Reims,Toulouse,0.659517,1.32734
+Saint-Etienne,Lyon,1.74645,0.632299
+Nantes,Paris Saint Germain,0.520926,2.30552
+Paris Saint Germain,Nice,4.50698,1.63001
+Le Havre,Monaco,0.807798,3.28954
+Lyon,Rennes,2.25879,0.781584
+Strasbourg,Saint-Etienne,2.8346,2.2201
+Angers,Lille,0.916985,2.22596
+Lens,Auxerre,2.31455,2.38411
+Marseille,Brest,1.12568,2.00913
+Montpellier,Reims,0.949696,1.03714
+Nantes,Toulouse,1.33764,0.410988
+Nice,Reims,1.2118,0.876237
+Saint-Etienne,Monaco,1.16957,1.84407
+Strasbourg,Paris Saint Germain,1.42064,2.35931
+Toulouse,Rennes,1.01393,1.57739
+Auxerre,Le Havre,0.32277,1.30285
+Brest,Montpellier,1.34191,0.413817
+Lille,Marseille,0.682721,1.42571
+Lyon,Lens,1.1801,0.952824
+Nantes,Angers,0.14126,0.727966
+Angers,Strasbourg,1.33058,0.710143
+Auxerre,Nantes,0.624481,0.823377
+Brest,Lille,1.88589,1.84479
+Le Havre,Marseille,1.10297,2.16132
+Monaco,Lyon,1.48659,0.390411
+Montpellier,Paris Saint Germain,0.594471,1.78222
+Reims,Saint-Etienne,1.12267,0.71062
+Rennes,Nice,2.06744,1.23457
+Toulouse,Lens,1.12406,0.766404
+Lens,Monaco,2.49045,0.481188
+Lille,Reims,2.31624,0.0983246
+Lyon,Angers,3.75818,0.556633
+Marseille,Rennes,4.06558,1.40321
+Nantes,Montpellier,3.00657,0.602786
+Nice,Brest,5.0223,0.68904
+Paris Saint Germain,Auxerre,3.71972,0.9013
+Saint-Etienne,Toulouse,1.32698,3.82215
+Strasbourg,Le Havre,1.74414,2.49529

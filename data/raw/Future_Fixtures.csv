@@ -1,11 +1,39 @@
 Gameweek,Div,Date,Time,HomeTeam,AwayTeam
-10,E0,06/11/2026,20:00,Everton,Coventry
-10,E0,07/11/2026,12:30,Leeds United,Tottenham Hotspur
-10,E0,07/11/2026,15:00,Arsenal,Hull City
-10,E0,07/11/2026,15:00,Fulham,Newcastle United
-10,E0,07/11/2026,17:30,Nottingham Forest,Manchester City
-10,E0,08/11/2026,14:00,Brighton and Hove Albion,Brentford
-10,E0,08/11/2026,14:00,Crystal Palace,Liverpool
-10,E0,08/11/2026,14:00,Ipswich,Bournemouth
-10,E0,08/11/2026,14:00,Sunderland,Chelsea
-10,E0,08/11/2026,16:30,Manchester United,Aston Villa
+9,D1,06/11/2026,19:30,Hamburger SV,Borussia Mönchengladbach
+10,F1,06/11/2026,19:45,Toulouse,Strasbourg
+11,I1,06/11/2026,19:45,Venezia,Udinese
+12,SP1,06/11/2026,20:00,Sevilla,Deportivo Alavés
+12,SP1,07/11/2026,13:00,Málaga,Racing Santander
+11,I1,07/11/2026,14:00,Cagliari,Frosinone
+11,I1,07/11/2026,14:00,Torino,Lecce
+9,D1,07/11/2026,14:30,Borussia Dortmund,Elversberg
+9,D1,07/11/2026,14:30,Mainz 05,Bayern München
+9,D1,07/11/2026,14:30,Paderborn,Eintracht Frankfurt
+9,D1,07/11/2026,14:30,RB Leipzig,Augsburg
+12,SP1,07/11/2026,15:15,Espanyol,Deportivo A Coruña
+10,F1,07/11/2026,16:15,Auxerre,Paris FC
+11,I1,07/11/2026,17:00,Parma,Bologna
+12,SP1,07/11/2026,17:30,Osasuna,Athletic Club
+9,D1,07/11/2026,17:30,VfB Stuttgart,Werder Bremen
+10,F1,07/11/2026,19:45,Paris Saint-Germain,Troyes
+11,I1,07/11/2026,19:45,Roma,Sassuolo
+12,SP1,07/11/2026,20:00,Valencia,Real Madrid
+11,I1,08/11/2026,11:30,Napoli,Lazio
+12,SP1,08/11/2026,13:00,Elche,Real Betis
+11,I1,08/11/2026,14:00,Genoa,Milan
+11,I1,08/11/2026,14:00,Monza,Atalanta
+10,F1,08/11/2026,14:00,Rennes,Lille
+9,D1,08/11/2026,14:30,1. FC Köln,Bayer Leverkusen
+12,SP1,08/11/2026,15:15,Real Sociedad,Rayo Vallecano
+10,F1,08/11/2026,16:15,Angers,Nice
+10,F1,08/11/2026,16:15,Brest,Lyon
+10,F1,08/11/2026,16:15,Le Havre,Lorient
+10,F1,08/11/2026,16:15,Le Mans,Monaco
+9,D1,08/11/2026,16:30,Freiburg,Union Berlin
+11,I1,08/11/2026,17:00,Inter,Como
+12,SP1,08/11/2026,17:30,Celta Vigo,Levante
+12,SP1,08/11/2026,17:30,Villarreal,Getafe
+9,D1,08/11/2026,18:30,Hoffenheim,Schalke 04
+11,I1,08/11/2026,19:45,Fiorentina,Juventus
+10,F1,08/11/2026,19:45,Lens,Marseille
+12,SP1,08/11/2026,20:00,Atlético Madrid,Barcelona

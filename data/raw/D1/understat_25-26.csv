@@ -1,0 +1,307 @@
+HomeTeam,AwayTeam,HomeXG,AwayXG
+Bayern Munich,RasenBallsport Leipzig,3.29885,0.52226
+Bayer Leverkusen,Hoffenheim,1.05253,0.505193
+Eintracht Frankfurt,Werder Bremen,3.10684,0.587822
+FC Heidenheim,Wolfsburg,0.783156,2.57718
+Freiburg,Augsburg,2.27247,1.30191
+St. Pauli,Borussia Dortmund,1.46772,2.10289
+Union Berlin,VfB Stuttgart,0.529421,1.80147
+Borussia M.Gladbach,Hamburger SV,1.01717,0.285593
+Mainz 05,FC Cologne,1.31655,1.64676
+Hamburger SV,St. Pauli,0.74111,1.85404
+Augsburg,Bayern Munich,0.506028,3.37523
+Hoffenheim,Eintracht Frankfurt,1.28178,1.82087
+RasenBallsport Leipzig,FC Heidenheim,3.29717,0.969982
+VfB Stuttgart,Borussia M.Gladbach,0.925105,1.60717
+Werder Bremen,Bayer Leverkusen,2.32676,2.03733
+Borussia Dortmund,Union Berlin,1.82606,0.971167
+FC Cologne,Freiburg,1.84068,0.933072
+Wolfsburg,Mainz 05,0.616661,1.81482
+Bayer Leverkusen,Eintracht Frankfurt,2.31465,0.791863
+Bayern Munich,Hamburger SV,3.03718,0.559174
+FC Heidenheim,Borussia Dortmund,0.299026,2.84999
+Freiburg,VfB Stuttgart,1.6832,0.548804
+Mainz 05,RasenBallsport Leipzig,0.770276,1.5009
+Union Berlin,Hoffenheim,3.0814,3.34084
+Wolfsburg,FC Cologne,1.79835,1.72631
+Borussia M.Gladbach,Werder Bremen,1.58932,2.24671
+St. Pauli,Augsburg,1.95499,0.934223
+VfB Stuttgart,St. Pauli,2.78829,1.05657
+Augsburg,Mainz 05,0.870451,2.57047
+Hamburger SV,FC Heidenheim,3.32157,2.63607
+Hoffenheim,Bayern Munich,1.03716,2.7142
+RasenBallsport Leipzig,FC Cologne,3.79591,1.39264
+Werder Bremen,Freiburg,1.27257,2.36315
+Bayer Leverkusen,Borussia M.Gladbach,1.9461,1.29876
+Borussia Dortmund,Wolfsburg,1.24747,0.975457
+Eintracht Frankfurt,Union Berlin,1.75582,2.23419
+Bayern Munich,Werder Bremen,4.31859,0.298618
+Borussia M.Gladbach,Eintracht Frankfurt,2.12935,3.78879
+FC Heidenheim,Augsburg,1.79097,0.619833
+Mainz 05,Borussia Dortmund,0.525149,1.75519
+St. Pauli,Bayer Leverkusen,0.813325,1.28912
+Wolfsburg,RasenBallsport Leipzig,2.59654,2.61107
+FC Cologne,VfB Stuttgart,1.07972,2.20939
+Freiburg,Hoffenheim,1.2587,2.24224
+Union Berlin,Hamburger SV,1.54274,1.11274
+Hoffenheim,FC Cologne,1.42371,1.30873
+Augsburg,Wolfsburg,1.75326,1.22584
+Bayer Leverkusen,Union Berlin,3.35673,1.19684
+Borussia Dortmund,RasenBallsport Leipzig,0.668613,1.14077
+Eintracht Frankfurt,Bayern Munich,0.560138,2.2301
+Werder Bremen,St. Pauli,1.77957,0.912425
+Borussia M.Gladbach,Freiburg,0.471184,0.689073
+Hamburger SV,Mainz 05,1.65883,0.591161
+VfB Stuttgart,FC Heidenheim,1.10781,0.290942
+Union Berlin,Borussia M.Gladbach,1.53032,0.628848
+Bayern Munich,Borussia Dortmund,2.81994,1.41011
+FC Cologne,Augsburg,0.523854,1.11917
+FC Heidenheim,Werder Bremen,3.07635,1.85638
+Mainz 05,Bayer Leverkusen,1.62978,4.43462
+RasenBallsport Leipzig,Hamburger SV,1.15611,1.29355
+Wolfsburg,VfB Stuttgart,0.392885,2.39474
+Freiburg,Eintracht Frankfurt,1.12896,0.772638
+St. Pauli,Hoffenheim,0.871968,1.79103
+Werder Bremen,Union Berlin,1.1444,0.487613
+Augsburg,RasenBallsport Leipzig,0.639182,2.69438
+Borussia Dortmund,FC Cologne,2.09125,0.70563
+Borussia M.Gladbach,Bayern Munich,0.757777,2.65026
+Eintracht Frankfurt,St. Pauli,2.42632,0.519973
+Hamburger SV,Wolfsburg,2.40547,0.695528
+Hoffenheim,FC Heidenheim,2.4278,0.902315
+Bayer Leverkusen,Freiburg,2.46787,0.542897
+VfB Stuttgart,Mainz 05,1.66805,1.40956
+Augsburg,Borussia Dortmund,0.969501,0.588196
+Bayern Munich,Bayer Leverkusen,2.28295,0.382774
+FC Heidenheim,Eintracht Frankfurt,0.831882,1.22406
+Mainz 05,Werder Bremen,1.90161,0.880505
+RasenBallsport Leipzig,VfB Stuttgart,1.73471,1.0701
+St. Pauli,Borussia M.Gladbach,0.804394,3.6262
+Union Berlin,Freiburg,1.34842,1.16519
+FC Cologne,Hamburger SV,3.87376,1.19296
+Wolfsburg,Hoffenheim,1.40117,1.74291
+Werder Bremen,Wolfsburg,1.69456,0.676326
+Bayer Leverkusen,FC Heidenheim,3.90142,0.063377
+Borussia M.Gladbach,FC Cologne,2.46206,2.15818
+Hamburger SV,Borussia Dortmund,0.419878,1.42582
+Hoffenheim,RasenBallsport Leipzig,1.92349,1.56187
+Union Berlin,Bayern Munich,1.02778,1.34246
+Eintracht Frankfurt,Mainz 05,1.77854,0.121469
+Freiburg,St. Pauli,1.66558,0.640748
+VfB Stuttgart,Augsburg,2.44526,1.90345
+Mainz 05,Hoffenheim,2.88712,1.54404
+Augsburg,Hamburger SV,1.61897,1.555
+Bayern Munich,Freiburg,3.13858,0.516966
+Borussia Dortmund,VfB Stuttgart,3.15124,1.80942
+FC Cologne,Eintracht Frankfurt,1.38923,2.44506
+FC Heidenheim,Borussia M.Gladbach,0.363207,2.79666
+Wolfsburg,Bayer Leverkusen,2.07979,1.58644
+RasenBallsport Leipzig,Werder Bremen,2.42834,0.774872
+St. Pauli,Union Berlin,0.568717,0.398431
+Borussia M.Gladbach,RasenBallsport Leipzig,0.388883,1.09232
+Bayer Leverkusen,Borussia Dortmund,1.08287,1.1562
+Bayern Munich,St. Pauli,2.53942,0.74073
+Hoffenheim,Augsburg,1.79612,0.655496
+Union Berlin,FC Heidenheim,0.942923,0.522102
+Werder Bremen,FC Cologne,1.53668,1.1848
+Eintracht Frankfurt,Wolfsburg,1.66051,1.60645
+Freiburg,Mainz 05,4.15677,0.0500621
+Hamburger SV,VfB Stuttgart,1.21357,1.10868
+Mainz 05,Borussia M.Gladbach,1.09331,1.90297
+Augsburg,Bayer Leverkusen,2.14102,1.41889
+FC Cologne,St. Pauli,1.90409,0.143945
+FC Heidenheim,Freiburg,2.66592,0.800321
+RasenBallsport Leipzig,Eintracht Frankfurt,3.64182,0.473289
+VfB Stuttgart,Bayern Munich,0.729313,4.07867
+Wolfsburg,Union Berlin,0.929936,2.01932
+Borussia Dortmund,Hoffenheim,1.10147,1.42364
+Hamburger SV,Werder Bremen,1.57713,1.17349
+Union Berlin,RasenBallsport Leipzig,1.4766,0.495677
+Bayer Leverkusen,FC Cologne,2.295,0.436565
+Borussia M.Gladbach,Wolfsburg,0.620418,2.72142
+Eintracht Frankfurt,Augsburg,1.52024,0.655733
+Hoffenheim,Hamburger SV,2.48806,1.40522
+St. Pauli,FC Heidenheim,1.00037,1.8944
+Bayern Munich,Mainz 05,4.67956,0.803171
+Freiburg,Borussia Dortmund,1.10621,1.47427
+Werder Bremen,VfB Stuttgart,0.607898,2.05209
+Borussia Dortmund,Borussia M.Gladbach,1.65394,0.221237
+Augsburg,Werder Bremen,1.49411,0.90686
+FC Cologne,Union Berlin,0.677102,1.4739
+Hamburger SV,Eintracht Frankfurt,1.09769,1.09137
+RasenBallsport Leipzig,Bayer Leverkusen,1.93929,2.70478
+VfB Stuttgart,Hoffenheim,1.46116,0.154175
+Wolfsburg,Freiburg,1.30583,2.65964
+FC Heidenheim,Bayern Munich,1.48758,3.36795
+Mainz 05,St. Pauli,1.87368,0.227249
+Eintracht Frankfurt,Borussia Dortmund,1.66426,2.29827
+Bayer Leverkusen,VfB Stuttgart,1.98318,2.68822
+FC Heidenheim,FC Cologne,2.14635,2.75624
+Freiburg,Hamburger SV,2.93517,0.850812
+Union Berlin,Mainz 05,3.6505,1.56492
+Bayern Munich,Wolfsburg,3.54931,1.08515
+Borussia M.Gladbach,Augsburg,3.57201,1.57502
+Borussia Dortmund,Werder Bremen,2.31769,0.39948
+Mainz 05,FC Heidenheim,1.95686,1.23557
+VfB Stuttgart,Eintracht Frankfurt,3.54461,0.896468
+FC Cologne,Bayern Munich,0.714659,2.11635
+Hoffenheim,Borussia M.Gladbach,4.3777,0.83294
+RasenBallsport Leipzig,Freiburg,2.80289,0.147682
+Wolfsburg,St. Pauli,1.78032,1.21171
+Augsburg,Union Berlin,0.559529,1.73831
+Werder Bremen,Eintracht Frankfurt,2.10111,1.20772
+Borussia Dortmund,St. Pauli,2.5477,0.532613
+FC Cologne,Mainz 05,2.41277,1.91073
+Hamburger SV,Borussia M.Gladbach,1.26205,0.576522
+Hoffenheim,Bayer Leverkusen,2.11995,1.27048
+RasenBallsport Leipzig,Bayern Munich,2.86917,4.65226
+Wolfsburg,FC Heidenheim,1.07653,0.991172
+Augsburg,Freiburg,0.986653,1.59107
+VfB Stuttgart,Union Berlin,2.1978,1.88763
+St. Pauli,Hamburger SV,0.311991,0.333197
+Bayer Leverkusen,Werder Bremen,2.51599,0.673986
+Bayern Munich,Augsburg,2.30773,1.24551
+Eintracht Frankfurt,Hoffenheim,0.829658,1.62813
+FC Heidenheim,RasenBallsport Leipzig,0.987658,2.07675
+Mainz 05,Wolfsburg,4.34199,1.09338
+Union Berlin,Borussia Dortmund,0.989732,2.27286
+Borussia M.Gladbach,VfB Stuttgart,1.22197,2.72682
+Freiburg,FC Cologne,2.56728,1.69119
+St. Pauli,RasenBallsport Leipzig,1.33165,2.05989
+Werder Bremen,Hoffenheim,1.42692,0.567567
+FC Cologne,Wolfsburg,1.43559,1.34631
+Augsburg,St. Pauli,2.11699,2.88611
+Eintracht Frankfurt,Bayer Leverkusen,1.31849,1.52952
+Hamburger SV,Bayern Munich,2.64497,2.28911
+Hoffenheim,Union Berlin,1.50682,1.23275
+RasenBallsport Leipzig,Mainz 05,2.09422,2.57678
+Werder Bremen,Borussia M.Gladbach,0.991152,1.25715
+Borussia Dortmund,FC Heidenheim,4.13897,3.04324
+VfB Stuttgart,Freiburg,2.95203,0.936187
+Union Berlin,Eintracht Frankfurt,1.27118,0.296813
+Borussia M.Gladbach,Bayer Leverkusen,0.783478,0.741257
+FC Heidenheim,Hamburger SV,1.04614,1.55106
+Freiburg,Werder Bremen,0.36452,1.12332
+Mainz 05,Augsburg,3.00656,1.35939
+St. Pauli,VfB Stuttgart,1.66217,0.912627
+Wolfsburg,Borussia Dortmund,2.02751,1.70601
+Bayern Munich,Hoffenheim,6.37827,2.66829
+FC Cologne,RasenBallsport Leipzig,1.12167,3.0577
+Borussia Dortmund,Mainz 05,1.81026,1.67199
+Bayer Leverkusen,St. Pauli,2.26044,0.654783
+Eintracht Frankfurt,Borussia M.Gladbach,1.98736,1.03155
+Hamburger SV,Union Berlin,2.20339,2.18966
+Hoffenheim,Freiburg,1.90052,0.744054
+VfB Stuttgart,FC Cologne,2.56266,1.13246
+Werder Bremen,Bayern Munich,0.77965,1.87713
+Augsburg,FC Heidenheim,1.87679,0.697774
+RasenBallsport Leipzig,Wolfsburg,2.51087,0.687761
+Mainz 05,Hamburger SV,1.75215,0.823398
+Bayern Munich,Eintracht Frankfurt,2.83518,2.29258
+FC Cologne,Hoffenheim,1.12252,1.8243
+RasenBallsport Leipzig,Borussia Dortmund,3.50934,1.35347
+Union Berlin,Bayer Leverkusen,0.757702,1.20274
+Wolfsburg,Augsburg,2.17584,1.56427
+FC Heidenheim,VfB Stuttgart,2.21575,2.27505
+Freiburg,Borussia M.Gladbach,1.29234,1.02855
+St. Pauli,Werder Bremen,0.260698,1.61141
+Augsburg,FC Cologne,1.55844,0.492698
+Bayer Leverkusen,Mainz 05,1.94817,0.9714
+Borussia Dortmund,Bayern Munich,1.39761,1.89016
+Borussia M.Gladbach,Union Berlin,2.56014,0.137598
+Hoffenheim,St. Pauli,2.57411,0.946504
+Werder Bremen,FC Heidenheim,3.47889,1.70919
+Eintracht Frankfurt,Freiburg,1.67095,0.64193
+Hamburger SV,RasenBallsport Leipzig,0.820585,2.28997
+VfB Stuttgart,Wolfsburg,2.95189,0.865739
+Hamburger SV,Bayer Leverkusen,1.28692,2.67874
+Bayern Munich,Borussia M.Gladbach,3.11976,1.21993
+FC Cologne,Borussia Dortmund,0.96405,1.9574
+FC Heidenheim,Hoffenheim,0.966678,2.79383
+Freiburg,Bayer Leverkusen,2.58409,2.1863
+Mainz 05,VfB Stuttgart,3.52523,0.920068
+RasenBallsport Leipzig,Augsburg,2.19435,3.6651
+Wolfsburg,Hamburger SV,2.46612,1.80445
+St. Pauli,Eintracht Frankfurt,0.472285,0.451537
+Union Berlin,Werder Bremen,1.12998,2.23984
+Borussia M.Gladbach,St. Pauli,1.08342,0.628713
+Bayer Leverkusen,Bayern Munich,2.65255,1.26817
+Borussia Dortmund,Augsburg,2.49053,0.755745
+Eintracht Frankfurt,FC Heidenheim,0.725159,0.136174
+Hamburger SV,FC Cologne,0.556493,0.984168
+Hoffenheim,Wolfsburg,2.23813,0.221431
+Freiburg,Union Berlin,1.34508,1.0006
+VfB Stuttgart,RasenBallsport Leipzig,1.93167,1.12178
+Werder Bremen,Mainz 05,0.890006,2.05621
+RasenBallsport Leipzig,Hoffenheim,2.90699,0.521404
+Bayern Munich,Union Berlin,5.93389,0.224572
+Borussia Dortmund,Hamburger SV,6.10187,1.23049
+FC Cologne,Borussia M.Gladbach,1.29293,1.08153
+FC Heidenheim,Bayer Leverkusen,1.73738,1.96287
+Wolfsburg,Werder Bremen,1.05686,0.414924
+Augsburg,VfB Stuttgart,1.59097,3.87094
+Mainz 05,Eintracht Frankfurt,1.38387,1.71748
+St. Pauli,Freiburg,1.39653,2.74421
+Bayer Leverkusen,Wolfsburg,4.59518,2.54712
+Borussia M.Gladbach,FC Heidenheim,1.09174,0.883368
+Freiburg,Bayern Munich,2.04585,2.49116
+Hamburger SV,Augsburg,1.53108,2.57589
+Hoffenheim,Mainz 05,1.51732,2.22893
+VfB Stuttgart,Borussia Dortmund,0.553248,0.76449
+Werder Bremen,RasenBallsport Leipzig,0.898486,1.61345
+Eintracht Frankfurt,FC Cologne,2.16998,3.09815
+Union Berlin,St. Pauli,1.78288,0.325477
+Augsburg,Hoffenheim,2.67199,1.43152
+Borussia Dortmund,Bayer Leverkusen,1.01423,0.728586
+FC Heidenheim,Union Berlin,2.11247,1.11885
+RasenBallsport Leipzig,Borussia M.Gladbach,2.56843,1.66258
+St. Pauli,Bayern Munich,0.355983,4.15447
+Wolfsburg,Eintracht Frankfurt,2.26232,1.38694
+FC Cologne,Werder Bremen,3.90871,0.870139
+Mainz 05,Freiburg,0.458085,0.538882
+VfB Stuttgart,Hamburger SV,3.8645,0.417554
+St. Pauli,FC Cologne,2.2798,1.26761
+Bayer Leverkusen,Augsburg,3.73107,1.29743
+Eintracht Frankfurt,RasenBallsport Leipzig,1.40341,2.02122
+Hoffenheim,Borussia Dortmund,2.22458,1.28292
+Union Berlin,Wolfsburg,2.38881,0.23493
+Werder Bremen,Hamburger SV,1.60257,0.914249
+Bayern Munich,VfB Stuttgart,5.11014,1.26038
+Borussia M.Gladbach,Mainz 05,1.11134,2.46195
+Freiburg,FC Heidenheim,2.13766,1.74426
+RasenBallsport Leipzig,Union Berlin,4.53545,0.372365
+Augsburg,Eintracht Frankfurt,2.13872,0.854238
+FC Cologne,Bayer Leverkusen,3.49945,1.85749
+FC Heidenheim,St. Pauli,2.17234,1.17753
+Hamburger SV,Hoffenheim,1.48261,2.42862
+Mainz 05,Bayern Munich,3.22403,2.36194
+Wolfsburg,Borussia M.Gladbach,1.61116,0.473153
+Borussia Dortmund,Freiburg,3.09306,0.496971
+VfB Stuttgart,Werder Bremen,1.99681,0.958992
+Bayer Leverkusen,RasenBallsport Leipzig,5.41733,1.49733
+Bayern Munich,FC Heidenheim,1.87973,2.48197
+Eintracht Frankfurt,Hamburger SV,0.992322,0.627209
+Hoffenheim,VfB Stuttgart,2.6399,1.76153
+Union Berlin,FC Cologne,0.887532,1.6958
+Werder Bremen,Augsburg,0.814452,3.23625
+Borussia M.Gladbach,Borussia Dortmund,2.68245,0.4281
+Freiburg,Wolfsburg,0.947988,1.11086
+St. Pauli,Mainz 05,1.08664,2.80672
+Borussia Dortmund,Eintracht Frankfurt,2.94988,0.942523
+Augsburg,Borussia M.Gladbach,2.80244,1.05493
+Hoffenheim,Werder Bremen,1.28965,1.45272
+RasenBallsport Leipzig,St. Pauli,2.32909,0.945954
+VfB Stuttgart,Bayer Leverkusen,3.42891,0.631905
+Wolfsburg,Bayern Munich,3.26878,1.9054
+FC Cologne,FC Heidenheim,1.51486,2.04489
+Hamburger SV,Freiburg,2.02228,0.583605
+Mainz 05,Union Berlin,2.09983,2.94155
+Bayer Leverkusen,Hamburger SV,3.08571,1.63049
+Bayern Munich,FC Cologne,2.81515,0.880203
+Borussia M.Gladbach,Hoffenheim,0.845598,1.77286
+Eintracht Frankfurt,VfB Stuttgart,2.99231,1.81013
+FC Heidenheim,Mainz 05,3.03813,3.90834
+Freiburg,RasenBallsport Leipzig,2.54392,1.51341
+St. Pauli,Wolfsburg,1.98722,4.0649
+Union Berlin,Augsburg,2.45125,0.506181
+Werder Bremen,Borussia Dortmund,0.530615,3.37413

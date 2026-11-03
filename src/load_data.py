@@ -10,6 +10,7 @@ import pandas as pd
 import penaltyblog as pb
 import requests
 
+import competitions
 from team_names import load_alias_map, normalize_team_names
 
 # The football-data result files carry ~200 bookmaker-odds columns, so
@@ -23,44 +24,64 @@ warnings.simplefilter("ignore", pd.errors.PerformanceWarning)
 
 ROOT = Path(__file__).resolve().parents[1]
 
+# Each competition keeps its files in data/raw/<Div>/:
+#   results_<yy-yy>.csv    football-data.co.uk results + odds
+#   fotmob_<yy-yy>.csv     FotMob xG cache
+#   understat_<yy-yy>.csv  Understat xG cache (top 5 leagues only)
 RAW_DIR = ROOT / "data" / "raw"
-FOTMOB_CACHE_DIR = RAW_DIR / "fotmob"
-UNDERSTAT_CACHE_DIR = RAW_DIR / "understat"
 OUTPUT_PATH = ROOT / "data" / "processed" / "all_matches.csv"
 
-UNDERSTAT_COMPETITION = "ENG Premier League"
-
-# FotMob's xG is Opta's - the same numbers BBC and Sky show
+# FotMob's xG is Opta's - the same numbers BBC and Sky show. League ids
+# and Understat names come from competitions.py.
 FOTMOB_API = "https://www.fotmob.com/api/data"
-FOTMOB_LEAGUE_ID = 47  # Premier League
 FOTMOB_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
         "(KHTML, like Gecko) Chrome/130.0 Safari/537.36"
     )
 }
-FOTMOB_DELAY = 0.6  # seconds between match requests
+FOTMOB_DELAY = 1.0  # seconds between match requests (keep it serial)
+# FotMob rate-limits (HTTP 429) when pushed. Wait this long, doubling
+# each time, before retrying; give up after FOTMOB_MAX_RETRIES.
+FOTMOB_BACKOFF = 5
+FOTMOB_MAX_RETRIES = 5
 # Opta revises xG for a day or two after full time, so matches this
 # recent are re-fetched on every refresh rather than kept from the cache
 FOTMOB_REFETCH_DAYS = 3
 FOTMOB_CACHE_COLUMNS = [
     "MatchId", "Date", "HomeTeam", "AwayTeam", "HomeXG", "AwayXG"
 ]
+# Save progress this often during a long scrape, so a crash mid-backfill
+# doesn't lose everything fetched so far
+FOTMOB_CHECKPOINT_EVERY = 50
 
-# EPL25-26.csv -> ("25", "26")
-SEASON_FILE_RE = re.compile(r"EPL(\d{2})-(\d{2})\.csv$", re.IGNORECASE)
+# results_25-26.csv -> ("25", "26")
+SEASON_FILE_RE = re.compile(r"results_(\d{2})-(\d{2})\.csv$", re.IGNORECASE)
 
-XG_COLUMNS = ["Season", "HomeTeam", "AwayTeam", "HomeXG", "AwayXG"]
+XG_COLUMNS = ["Div", "Season", "HomeTeam", "AwayTeam", "HomeXG", "AwayXG"]
+
+# Where each match's xG comes from, first choice first (XGSource).
+# football-data.co.uk's HxG/AxG (2026-27 on) is the same Opta data as
+# FotMob's but frozen when first published, while FotMob is re-fetched
+# until Opta's revisions settle (FOTMOB_REFETCH_DAYS) - so FotMob wins
+# where it has the match and football-data fills the gaps.
+XG_PRIORITY = ["FotMob", "football-data", "Understat"]
+
+
+def competition_dir(div, raw_dir=RAW_DIR):
+    """data/raw/<Div>/ - where one competition's raw files live."""
+
+    return raw_dir / div
 
 
 # ============================================================
 # SEASON DISCOVERY
 # ============================================================
 
-def discover_seasons(raw_dir=RAW_DIR):
+def discover_seasons(div="E0", raw_dir=RAW_DIR):
     """
-    Map season label -> full season string, derived from the EPL*.csv
-    result files that are actually present.
+    Map season label -> full season string, derived from the
+    results_*.csv files actually present for competition ``div``.
 
         {"21-22": "2021-2022", ..., "26-27": "2026-2027"}
 
@@ -72,7 +93,7 @@ def discover_seasons(raw_dir=RAW_DIR):
 
     seasons = {}
 
-    for path in sorted(glob.glob(str(raw_dir / "EPL*.csv"))):
+    for path in sorted(glob.glob(str(competition_dir(div, raw_dir) / "results_*.csv"))):
 
         match = SEASON_FILE_RE.search(os.path.basename(path))
 
@@ -91,30 +112,37 @@ def discover_seasons(raw_dir=RAW_DIR):
 # LOAD EXISTING MATCH DATA
 # ============================================================
 
-def load_result_files(raw_dir=RAW_DIR):
+def load_result_files(divs=None, raw_dir=RAW_DIR):
     """
-    Concatenate every EPL*.csv result file into one chronologically
-    sorted frame with Season, Gameweek and MatchDateTime columns.
+    Concatenate every results_*.csv file of each competition in ``divs``
+    (default: the enabled ones) into one chronologically sorted frame
+    with Season, Gameweek and MatchDateTime columns.
     """
 
     frames = []
 
-    for path in sorted(glob.glob(str(raw_dir / "EPL*.csv"))):
+    for div in divs or competitions.enabled():
 
-        match = SEASON_FILE_RE.search(os.path.basename(path))
+        for path in sorted(glob.glob(str(competition_dir(div, raw_dir) / "results_*.csv"))):
 
-        if not match:
-            continue
+            match = SEASON_FILE_RE.search(os.path.basename(path))
 
-        label = f"{match.group(1)}-{match.group(2)}"
+            if not match:
+                continue
 
-        df = pd.read_csv(path)
+            label = f"{match.group(1)}-{match.group(2)}"
 
-        frames.append(df.assign(Season=label))
+            df = pd.read_csv(path)
+
+            # football-data.co.uk files carry their own Div column
+            if "Div" not in df.columns:
+                df.insert(0, "Div", div)
+
+            frames.append(df.assign(Season=label))
 
     if not frames:
         raise FileNotFoundError(
-            f"No EPL*.csv result files found in {raw_dir}"
+            f"No results_*.csv files found under {raw_dir} for {divs or competitions.enabled()}"
         )
 
     matches = pd.concat(frames, ignore_index=True)
@@ -148,9 +176,10 @@ def add_gameweek(matches):
     Label every match with its gameweek (1-38).
 
     For each team, its gameweek is the running count of matches it has
-    played that season. The two sides of a fixture normally agree; where a
-    postponement makes them differ, take the larger so a rescheduled game
-    carries the number of when it was actually played.
+    played that season in that competition. The two sides of a fixture
+    normally agree; where a postponement makes them differ, take the
+    larger so a rescheduled game carries the number of when it was
+    actually played. Cup competitions have no gameweek.
     """
 
     matches = (
@@ -160,17 +189,22 @@ def add_gameweek(matches):
         .copy()
     )
 
+    # Without a Div column (an old single-league frame) treat it all as one
+    div = matches["Div"] if "Div" in matches.columns else pd.Series("", index=matches.index)
+
     # One row per team appearance, in chronological order, so a running
     # count per team spans both home and away games
     appearances = pd.concat([
         pd.DataFrame({
             "match": matches.index,
+            "Div": div,
             "Season": matches["Season"],
             "Team": matches["HomeTeam"],
             "side": "home",
         }),
         pd.DataFrame({
             "match": matches.index,
+            "Div": div,
             "Season": matches["Season"],
             "Team": matches["AwayTeam"],
             "side": "away",
@@ -178,15 +212,23 @@ def add_gameweek(matches):
     ]).sort_values("match")
 
     appearances["n"] = (
-        appearances.groupby(["Season", "Team"]).cumcount() + 1
+        appearances.groupby(["Div", "Season", "Team"]).cumcount() + 1
     )
 
     home_n = appearances[appearances["side"] == "home"].set_index("match")["n"]
     away_n = appearances[appearances["side"] == "away"].set_index("match")["n"]
 
-    matches["Gameweek"] = (
-        pd.concat([home_n, away_n], axis=1).max(axis=1).astype(int)
+    gameweek = pd.concat([home_n, away_n], axis=1).max(axis=1)
+
+    # Codes not in the registry (e.g. E1 in notebook 19) count as leagues
+    is_cup = div.map(
+        lambda d: competitions.COMPETITIONS.get(d, {}).get("kind") == "cup"
     )
+
+    if is_cup.any():
+        matches["Gameweek"] = gameweek.astype("Int64").mask(is_cup)
+    else:
+        matches["Gameweek"] = gameweek.astype(int)
 
     lead = ["Season", "Gameweek"]
     return matches[lead + [c for c in matches.columns if c not in lead]]
@@ -199,20 +241,22 @@ def add_gameweek(matches):
 def _load_xg_seasons(
     source,
     fetch_season,
+    div,
     seasons,
     cache_dir,
     refresh_current=True,
     verbose=False
 ):
     """
-    Return combined xG from one source for every season in ``seasons``.
+    Return combined xG from one source for every season in ``seasons``
+    of competition ``div``.
 
     ``fetch_season(season, cache_path)`` scrapes one season (it may read
     ``cache_path`` to fetch only what is new). Historical seasons never
-    change, so they are scraped once and then read from ``cache_dir``.
-    The current (last) season is re-scraped on every run unless
-    ``refresh_current`` is False. A failed scrape falls back to the
-    cached copy when one exists.
+    change, so they are scraped once and then read from
+    ``cache_dir/<source>_<season>.csv``. The current (last) season is
+    re-scraped on every run unless ``refresh_current`` is False. A failed
+    scrape falls back to the cached copy when one exists.
     """
 
     cache_dir.mkdir(parents=True, exist_ok=True)
@@ -224,7 +268,7 @@ def _load_xg_seasons(
 
     for label in labels:
 
-        cache_path = cache_dir / f"{label}.csv"
+        cache_path = cache_dir / f"{source.lower()}_{label}.csv"
         is_current = label == current_label
 
         want_fresh = (is_current and refresh_current) or not cache_path.exists()
@@ -237,7 +281,7 @@ def _load_xg_seasons(
 
                 if verbose:
                     print(
-                        f"Fetched {source} {label} "
+                        f"Fetched {source} {div} {label} "
                         f"({len(season_df)} games) -> {cache_path.name}"
                     )
 
@@ -245,13 +289,13 @@ def _load_xg_seasons(
 
                 if cache_path.exists():
                     print(
-                        f"WARNING: {source} fetch failed for {label} "
+                        f"WARNING: {source} fetch failed for {div} {label} "
                         f"({exc}); using cached copy."
                     )
                     season_df = pd.read_csv(cache_path)
                 else:
                     print(
-                        f"WARNING: {source} fetch failed for {label} "
+                        f"WARNING: {source} fetch failed for {div} {label} "
                         f"({exc}); no cache available, skipping its xG "
                         f"for this season."
                     )
@@ -262,12 +306,13 @@ def _load_xg_seasons(
 
             if verbose:
                 print(
-                    f"Loaded {source} {label} from cache "
+                    f"Loaded {source} {div} {label} from cache "
                     f"({len(season_df)} games)"
                 )
 
         season_df = season_df[["HomeTeam", "AwayTeam", "HomeXG", "AwayXG"]].copy()
         season_df.insert(0, "Season", label)
+        season_df.insert(0, "Div", div)
         frames.append(season_df)
 
     if not frames:
@@ -276,7 +321,7 @@ def _load_xg_seasons(
     combined = pd.concat(frames, ignore_index=True)
 
     return combined.drop_duplicates(
-        subset=["Season", "HomeTeam", "AwayTeam"]
+        subset=["Div", "Season", "HomeTeam", "AwayTeam"]
     )
 
 
@@ -285,10 +330,21 @@ def _load_xg_seasons(
 # ============================================================
 
 def _fotmob_get(session, endpoint, params):
+    """GET one FotMob endpoint, backing off exponentially on HTTP 429."""
 
-    response = session.get(
-        f"{FOTMOB_API}/{endpoint}", params=params, timeout=30
-    )
+    for attempt in range(FOTMOB_MAX_RETRIES + 1):
+
+        response = session.get(
+            f"{FOTMOB_API}/{endpoint}", params=params, timeout=30
+        )
+
+        if response.status_code != 429 or attempt == FOTMOB_MAX_RETRIES:
+            break
+
+        wait = FOTMOB_BACKOFF * 2 ** attempt
+        print(f"FotMob rate limit (429) on {endpoint}; waiting {wait}s")
+        time.sleep(wait)
+
     response.raise_for_status()
 
     return response.json()
@@ -312,15 +368,17 @@ def _fotmob_match_xg(session, match_id):
     return None, None
 
 
-def _fetch_fotmob_season(season, cache_path):
+def _fetch_fotmob_season(season, cache_path, league_id):
     """
-    Scrape one season of FotMob xG (finished games only).
+    Scrape one season of FotMob xG (finished games only) for FotMob
+    league ``league_id``.
 
     Matches already in ``cache_path`` with xG are kept as they are, so a
     weekly refresh only requests the newly played round (plus anything
     from the last FOTMOB_REFETCH_DAYS, to pick up Opta's revisions). A
     match that fails or has no xG yet is left out and retried on the
-    next run.
+    next run. Progress is saved to ``cache_path`` every
+    FOTMOB_CHECKPOINT_EVERY matches.
     """
 
     cached = (
@@ -345,7 +403,7 @@ def _fetch_fotmob_season(season, cache_path):
     league = _fotmob_get(
         session,
         "leagues",
-        {"id": FOTMOB_LEAGUE_ID, "season": season.replace("-", "/")}
+        {"id": league_id, "season": season.replace("-", "/")}
     )
 
     finished = [
@@ -380,6 +438,11 @@ def _fetch_fotmob_season(season, cache_path):
             "AwayXG": away_xg,
         })
 
+        if len(rows) % FOTMOB_CHECKPOINT_EVERY == 0:
+            pd.concat(
+                [cached, pd.DataFrame(rows)], ignore_index=True
+            )[FOTMOB_CACHE_COLUMNS].to_csv(cache_path, index=False)
+
     if not rows:
         return cached[FOTMOB_CACHE_COLUMNS]
 
@@ -389,18 +452,28 @@ def _fetch_fotmob_season(season, cache_path):
 
 
 def fetch_fotmob_xg(
+    div,
     seasons,
-    cache_dir=FOTMOB_CACHE_DIR,
+    raw_dir=RAW_DIR,
     refresh_current=True,
     verbose=False
 ):
-    """Return combined FotMob (Opta) xG for every season in ``seasons``."""
+    """
+    Return combined FotMob (Opta) xG for every season in ``seasons`` of
+    competition ``div`` (empty if FotMob has no id for it).
+    """
+
+    league_id = competitions.get(div)["fotmob"]
+
+    if league_id is None:
+        return pd.DataFrame(columns=XG_COLUMNS)
 
     return _load_xg_seasons(
         "FotMob",
-        _fetch_fotmob_season,
+        lambda season, cache_path: _fetch_fotmob_season(season, cache_path, league_id),
+        div,
         seasons,
-        cache_dir,
+        competition_dir(div, raw_dir),
         refresh_current=refresh_current,
         verbose=verbose
     )
@@ -410,10 +483,10 @@ def fetch_fotmob_xg(
 # UNDERSTAT XG - BACKUP SOURCE
 # ============================================================
 
-def _fetch_understat_season(understat_season, cache_path=None):
+def _fetch_understat_season(understat_season, competition):
     """Scrape one season of xG from Understat (played games only)."""
 
-    scraper = pb.scrapers.Understat(UNDERSTAT_COMPETITION, understat_season)
+    scraper = pb.scrapers.Understat(competition, understat_season)
     fixtures = scraper.get_fixtures()
 
     return (
@@ -429,18 +502,28 @@ def _fetch_understat_season(understat_season, cache_path=None):
 
 
 def fetch_understat_xg(
+    div,
     seasons,
-    cache_dir=UNDERSTAT_CACHE_DIR,
+    raw_dir=RAW_DIR,
     refresh_current=True,
     verbose=False
 ):
-    """Return combined Understat xG for every season in ``seasons``."""
+    """
+    Return combined Understat xG for every season in ``seasons`` of
+    competition ``div`` (empty if Understat doesn't cover it).
+    """
+
+    competition = competitions.get(div)["understat"]
+
+    if competition is None:
+        return pd.DataFrame(columns=XG_COLUMNS)
 
     return _load_xg_seasons(
         "Understat",
-        _fetch_understat_season,
+        lambda season, cache_path: _fetch_understat_season(season, competition),
+        div,
         seasons,
-        cache_dir,
+        competition_dir(div, raw_dir),
         refresh_current=refresh_current,
         verbose=verbose
     )
@@ -461,17 +544,19 @@ def _normalise_xg(xg, alias_map, source_name):
         xg["AwayTeam"], alias_map, source_name=source_name
     )
 
-    return xg.drop_duplicates(subset=["Season", "HomeTeam", "AwayTeam"])
+    return xg.drop_duplicates(subset=["Div", "Season", "HomeTeam", "AwayTeam"])
 
 
 def merge_xg(matches, fotmob, understat, alias_map):
     """
-    Left-join xG onto the match history by season + teams. FotMob (Opta)
-    is used wherever it has the match; Understat fills any gaps.
-    XGSource records which one each row's xG came from.
+    Left-join xG onto the match history by competition, season and
+    teams. Each row takes its xG from the first source in XG_PRIORITY
+    that has both sides of it: FotMob, then football-data.co.uk's own
+    HxG/AxG columns (where the results file has them), then Understat.
+    XGSource records which one was used.
     """
 
-    keys = ["Season", "HomeTeam", "AwayTeam"]
+    keys = ["Div", "Season", "HomeTeam", "AwayTeam"]
 
     fotmob = _normalise_xg(fotmob, alias_map, "FotMob")
     understat = _normalise_xg(understat, alias_map, "Understat")
@@ -485,20 +570,37 @@ def merge_xg(matches, fotmob, understat, alias_map):
         )
     )
 
-    has_fotmob = merged["HomeXG"].notna() & merged["AwayXG"].notna()
-    has_understat = (
-        merged["HomeXGUnderstat"].notna() & merged["AwayXGUnderstat"].notna()
-    )
+    # Source -> its (home, away) columns in ``merged``
+    candidates = {
+        "FotMob": ("HomeXG", "AwayXG"),
+        "Understat": ("HomeXGUnderstat", "AwayXGUnderstat"),
+    }
+    if {"HxG", "AxG"} <= set(merged.columns):
+        candidates["football-data"] = ("HxG", "AxG")
 
-    use_understat = ~has_fotmob & has_understat
+    home = pd.Series(float("nan"), index=merged.index)
+    away = pd.Series(float("nan"), index=merged.index)
+    source = pd.Series([None] * len(merged), index=merged.index, dtype=object)
 
-    merged.loc[use_understat, "HomeXG"] = merged.loc[use_understat, "HomeXGUnderstat"]
-    merged.loc[use_understat, "AwayXG"] = merged.loc[use_understat, "AwayXGUnderstat"]
-    merged.loc[~has_fotmob & ~has_understat, ["HomeXG", "AwayXG"]] = float("nan")
+    for name in XG_PRIORITY:
 
-    merged["XGSource"] = None
-    merged.loc[has_fotmob, "XGSource"] = "FotMob"
-    merged.loc[use_understat, "XGSource"] = "Understat"
+        if name not in candidates:
+            continue
+
+        home_col, away_col = candidates[name]
+        use = (
+            source.isna()
+            & merged[home_col].notna()
+            & merged[away_col].notna()
+        )
+
+        home[use] = merged.loc[use, home_col]
+        away[use] = merged.loc[use, away_col]
+        source[use] = name
+
+    merged["HomeXG"] = home
+    merged["AwayXG"] = away
+    merged["XGSource"] = source
 
     return merged.drop(columns=["HomeXGUnderstat", "AwayXGUnderstat"]).copy()
 
@@ -528,13 +630,15 @@ def report(matches):
         .assign(
             HasXG=~missing_mask,
             FotMob=matches["XGSource"] == "FotMob",
+            FootballData=matches["XGSource"] == "football-data",
             Understat=matches["XGSource"] == "Understat"
         )
-        .groupby("Season")
+        .groupby(["Div", "Season"])
         .agg(
             Games=("HomeTeam", "size"),
             GamesWithXG=("HasXG", "sum"),
             FotMob=("FotMob", "sum"),
+            FootballData=("FootballData", "sum"),
             Understat=("Understat", "sum")
         )
     )
@@ -547,7 +651,7 @@ def report(matches):
     print("=" * 70)
     print("XG COVERAGE BY SEASON")
     print("=" * 70)
-    print(coverage)
+    print(coverage.to_string())
 
     if len(missing) > 0:
         print()
@@ -556,7 +660,7 @@ def report(matches):
         print("=" * 70)
         print(
             missing[
-                ["Season", "Date", "OriginalHomeTeam", "OriginalAwayTeam"]
+                ["Div", "Season", "Date", "OriginalHomeTeam", "OriginalAwayTeam"]
             ].to_string(index=False)
         )
 
@@ -565,23 +669,10 @@ def report(matches):
 # BUILD
 # ============================================================
 
-def build_dataset(
-    raw_dir=RAW_DIR,
-    output_path=OUTPUT_PATH,
-    fotmob_cache_dir=FOTMOB_CACHE_DIR,
-    understat_cache_dir=UNDERSTAT_CACHE_DIR,
-    refresh_current=True,
-    verbose=False
-):
-    """
-    Rebuild ``data/processed/all_matches.csv`` from the raw result
-    files plus FotMob (Opta) xG, with Understat filling any match
-    FotMob doesn't have. Returns the resulting DataFrame.
-    """
+def _build_competition(div, alias_map, raw_dir, refresh_current, verbose):
+    """One competition's results with xG merged on (see build_dataset)."""
 
-    alias_map = load_alias_map()
-
-    matches = load_result_files(raw_dir)
+    matches = load_result_files([div], raw_dir)
 
     # Keep original names so the coverage report can point at gaps
     matches = matches.assign(
@@ -596,33 +687,88 @@ def build_dataset(
         matches["AwayTeam"], alias_map, source_name="football-data.co.uk"
     )
 
-    seasons = discover_seasons(raw_dir)
+    seasons = discover_seasons(div, raw_dir)
 
     fotmob = fetch_fotmob_xg(
+        div,
         seasons,
-        cache_dir=fotmob_cache_dir,
+        raw_dir=raw_dir,
         refresh_current=refresh_current,
         verbose=verbose
     )
 
     understat = fetch_understat_xg(
+        div,
         seasons,
-        cache_dir=understat_cache_dir,
+        raw_dir=raw_dir,
         refresh_current=refresh_current,
         verbose=verbose
     )
 
-    matches = merge_xg(matches, fotmob, understat, alias_map)
+    return merge_xg(matches, fotmob, understat, alias_map)
+
+
+def build_dataset(
+    divs=None,
+    raw_dir=RAW_DIR,
+    output_path=OUTPUT_PATH,
+    refresh_current=True,
+    verbose=False,
+    status=None
+):
+    """
+    Rebuild ``data/processed/all_matches.csv`` from the raw result
+    files of each competition in ``divs`` (default: the enabled ones)
+    plus xG from FotMob (Opta), football-data.co.uk or Understat, in
+    that order of preference. Returns the resulting DataFrame.
+
+    Each competition is built on its own: one that fails (an unknown
+    team name, a missing results file) is left out and the rest still
+    build. Each one's xG outcome goes to ``status`` (a
+    run_status.RunStatus) when given. Raises RuntimeError if none built.
+    """
+
+    divs = divs or competitions.enabled()
+
+    alias_map = load_alias_map()
+
+    frames = []
+
+    for div in divs:
+
+        try:
+            built = _build_competition(div, alias_map, raw_dir, refresh_current, verbose)
+        except Exception as exc:
+            if status is None:
+                print(f"{div}: FAILED - {type(exc).__name__}: {exc}; left out of the dataset.")
+            else:
+                status.fail(div, exc, xg="failed")
+            continue
+
+        if status is not None:
+            complete = (built["HomeXG"].notna() & built["AwayXG"].notna()).all()
+            status.set(div, xg="ok" if complete else "partial")
+
+        frames.append(built)
+
+    if not frames:
+        raise RuntimeError(f"No competition could be built ({', '.join(divs)}).")
+
+    matches = (
+        pd.concat(frames, ignore_index=True)
+        .sort_values(["MatchDateTime", "HomeTeam", "AwayTeam"])
+        .reset_index(drop=True)
+    )
 
     if verbose:
         report(matches)
     else:
         covered = (~(matches["HomeXG"].isna() | matches["AwayXG"].isna())).mean()
-        backup = (matches["XGSource"] == "Understat").sum()
+        backup = (matches["XGSource"] != "FotMob").sum()
         print(
             f"Built {len(matches)} matches "
             f"({covered * 100:.1f}% xG coverage, "
-            f"{backup} from Understat backup)"
+            f"{backup} from football-data/Understat backup)"
         )
 
     matches = matches.drop(columns=["OriginalHomeTeam", "OriginalAwayTeam"])
@@ -643,8 +789,9 @@ def main():
 
     parser = argparse.ArgumentParser(
         description=(
-            "Build data/processed/all_matches.csv from raw EPL results "
-            "and FotMob xG (Understat as backup)."
+            "Build data/processed/all_matches.csv from the enabled "
+            "competitions' results and xG (FotMob, then football-data.co.uk, "
+            "then Understat)."
         )
     )
     parser.add_argument(
@@ -660,9 +807,26 @@ def main():
             "the current one (no network calls if the caches are populated)."
         )
     )
+    parser.add_argument(
+        "--divs",
+        nargs="+",
+        metavar="DIV",
+        help="Competitions to build (default: competitions.ENABLED)."
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=OUTPUT_PATH,
+        help=f"Where to write the dataset (default: {OUTPUT_PATH.relative_to(ROOT)})."
+    )
     args = parser.parse_args()
 
+    for div in args.divs or []:
+        competitions.get(div)
+
     build_dataset(
+        divs=args.divs,
+        output_path=args.output,
         refresh_current=not args.no_refresh,
         verbose=args.verbose
     )

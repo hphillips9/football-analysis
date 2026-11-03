@@ -1,0 +1,381 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+4837112,2025-08-15,Girona,Rayo Vallecano,0.56,3.43
+4837118,2025-08-15,Villarreal,Real Oviedo,2.44,0.93
+4837114,2025-08-16,Mallorca,Barcelona,0.21,2.13
+4837109,2025-08-16,Deportivo Alavés,Levante,1.29,0.87
+4837117,2025-08-16,Valencia,Real Sociedad,2.04,0.81
+4837111,2025-08-17,Celta Vigo,Getafe,0.73,1.43
+4837110,2025-08-17,Athletic Club,Sevilla,2.89,1.01
+4837113,2025-08-17,Espanyol,Atlético Madrid,1.26,1.1
+4837115,2025-08-18,Elche,Real Betis,0.64,1.86
+4837116,2025-08-19,Real Madrid,Osasuna,1.64,0.36
+4837123,2025-08-22,Real Betis,Deportivo Alavés,1.95,1.12
+4837125,2025-08-23,Mallorca,Celta Vigo,0.68,0.74
+4837120,2025-08-23,Atlético Madrid,Elche,1.74,0.57
+4837124,2025-08-23,Levante,Barcelona,2.14,1.93
+4837121,2025-08-24,Osasuna,Valencia,0.83,0.41
+4837126,2025-08-24,Real Sociedad,Espanyol,1.1,1.81
+4837128,2025-08-24,Villarreal,Girona,2.3,0.14
+4837122,2025-08-24,Real Oviedo,Real Madrid,0.5,2.68
+4837119,2025-08-25,Athletic Club,Rayo Vallecano,1.51,0.29
+4837127,2025-08-25,Sevilla,Getafe,0.51,0.71
+4837167,2025-08-27,Celta Vigo,Real Betis,0.83,0.33
+4837131,2025-08-29,Elche,Levante,1.12,0.71
+4837137,2025-08-29,Valencia,Getafe,1.08,0.74
+4837129,2025-08-30,Deportivo Alavés,Atlético Madrid,0.91,1.06
+4837134,2025-08-30,Real Oviedo,Real Sociedad,0.5,1.07
+4837133,2025-08-30,Girona,Sevilla,2.13,1.32
+4837138,2025-08-30,Real Madrid,Mallorca,1.82,0.72
+4837130,2025-08-31,Celta Vigo,Villarreal,0.96,1.04
+4837135,2025-08-31,Real Betis,Athletic Club,0.62,1.11
+4837132,2025-08-31,Espanyol,Osasuna,1.21,1.37
+4837136,2025-08-31,Rayo Vallecano,Barcelona,1.85,1.83
+4837147,2025-09-12,Sevilla,Elche,0.4,0.95
+4837143,2025-09-13,Getafe,Real Oviedo,0.75,0.46
+4837148,2025-09-13,Real Sociedad,Real Madrid,2.23,2.42
+4837145,2025-09-13,Athletic Club,Deportivo Alavés,1.08,0.09
+4837139,2025-09-13,Atlético Madrid,Villarreal,1.01,1.03
+4837141,2025-09-14,Celta Vigo,Girona,2.5,0.64
+4837146,2025-09-14,Levante,Real Betis,0.73,2.12
+4837144,2025-09-14,Osasuna,Rayo Vallecano,1.59,1.09
+4837140,2025-09-14,Barcelona,Valencia,4.02,0.18
+4837142,2025-09-15,Espanyol,Mallorca,2.46,2.23
+4837151,2025-09-19,Real Betis,Real Sociedad,2.47,0.84
+4837153,2025-09-20,Girona,Levante,0.5,2.88
+4837157,2025-09-20,Real Madrid,Espanyol,1.18,0.96
+4837149,2025-09-20,Deportivo Alavés,Sevilla,0.95,0.48
+4837158,2025-09-20,Villarreal,Osasuna,2.55,1.8
+4837154,2025-09-20,Valencia,Athletic Club,1.88,0.49
+4837156,2025-09-21,Rayo Vallecano,Celta Vigo,1.08,0.81
+4837155,2025-09-21,Mallorca,Atlético Madrid,0.6,2.26
+4837152,2025-09-21,Elche,Real Oviedo,1.55,1.09
+4837150,2025-09-21,Barcelona,Getafe,1.97,0.27
+4837160,2025-09-23,Athletic Club,Girona,1.46,0.78
+4837162,2025-09-23,Espanyol,Valencia,2.57,0.74
+4837163,2025-09-23,Levante,Real Madrid,1.6,3.94
+4837164,2025-09-23,Sevilla,Villarreal,0.97,1.95
+4837165,2025-09-24,Getafe,Deportivo Alavés,0.24,0.57
+4837161,2025-09-24,Atlético Madrid,Rayo Vallecano,3.61,1.6
+4837169,2025-09-24,Real Sociedad,Mallorca,2.76,0.76
+4837168,2025-09-25,Osasuna,Elche,0.9,0.82
+4837166,2025-09-25,Real Oviedo,Barcelona,1.04,2.07
+4837178,2025-09-26,Girona,Espanyol,1.08,1.08
+4837173,2025-09-27,Getafe,Levante,0.55,1.24
+4837170,2025-09-27,Atlético Madrid,Real Madrid,2.34,0.66
+4837175,2025-09-27,Mallorca,Deportivo Alavés,0.74,0.78
+4837176,2025-09-27,Villarreal,Athletic Club,1.22,1.44
+4837174,2025-09-28,Rayo Vallecano,Sevilla,1.89,0.63
+4837177,2025-09-28,Elche,Celta Vigo,3.58,0.77
+4837171,2025-09-28,Barcelona,Real Sociedad,2.22,0.97
+4837172,2025-09-28,Real Betis,Osasuna,0.76,0.7
+4837179,2025-09-30,Valencia,Real Oviedo,1.51,0.77
+4837187,2025-10-03,Osasuna,Getafe,0.43,0.82
+4837188,2025-10-04,Real Oviedo,Levante,1.31,1.94
+4837182,2025-10-04,Girona,Valencia,1.02,1.14
+4837181,2025-10-04,Athletic Club,Mallorca,2.05,0.32
+4837183,2025-10-04,Real Madrid,Villarreal,3.52,1.0
+4837180,2025-10-05,Deportivo Alavés,Elche,2.42,0.38
+4837185,2025-10-05,Sevilla,Barcelona,2.8,2.25
+4837186,2025-10-05,Espanyol,Real Betis,2.28,1.4
+4837189,2025-10-05,Real Sociedad,Rayo Vallecano,0.79,0.8
+4837184,2025-10-05,Celta Vigo,Atlético Madrid,1.92,0.3
+4837198,2025-10-17,Real Oviedo,Espanyol,0.77,3.74
+4837199,2025-10-18,Sevilla,Mallorca,1.26,1.85
+4837192,2025-10-18,Barcelona,Girona,1.61,1.55
+4837197,2025-10-18,Villarreal,Real Betis,0.66,1.18
+4837191,2025-10-18,Atlético Madrid,Osasuna,2.58,1.14
+4837196,2025-10-19,Elche,Athletic Club,1.08,0.25
+4837193,2025-10-19,Celta Vigo,Real Sociedad,0.95,1.55
+4837195,2025-10-19,Levante,Rayo Vallecano,0.91,1.55
+4837194,2025-10-19,Getafe,Real Madrid,0.52,2.3
+4837190,2025-10-20,Deportivo Alavés,Valencia,0.74,0.45
+4837202,2025-10-24,Real Sociedad,Sevilla,1.61,0.23
+4837201,2025-10-25,Girona,Real Oviedo,2.03,1.79
+4837208,2025-10-25,Espanyol,Elche,1.93,0.86
+4837200,2025-10-25,Athletic Club,Getafe,0.38,0.93
+4837203,2025-10-25,Valencia,Villarreal,0.8,2.18
+4837209,2025-10-26,Mallorca,Levante,1.58,2.08
+4837206,2025-10-26,Real Madrid,Barcelona,3.63,1.03
+4837207,2025-10-26,Osasuna,Celta Vigo,2.31,1.96
+4837204,2025-10-26,Rayo Vallecano,Deportivo Alavés,1.18,0.84
+4837205,2025-10-27,Real Betis,Atlético Madrid,1.07,0.6
+4837214,2025-10-31,Getafe,Girona,0.88,1.43
+4837219,2025-11-01,Villarreal,Rayo Vallecano,3.02,1.02
+4837211,2025-11-01,Atlético Madrid,Sevilla,3.53,0.46
+4837216,2025-11-01,Real Sociedad,Athletic Club,1.52,0.83
+4837215,2025-11-01,Real Madrid,Valencia,2.71,0.49
+4837217,2025-11-02,Levante,Celta Vigo,1.2,2.0
+4837210,2025-11-02,Deportivo Alavés,Espanyol,1.22,1.06
+4837212,2025-11-02,Barcelona,Elche,1.88,0.66
+4837213,2025-11-02,Real Betis,Mallorca,2.36,0.62
+4837218,2025-11-03,Real Oviedo,Osasuna,0.96,0.82
+4837222,2025-11-07,Elche,Real Sociedad,0.8,1.36
+4837225,2025-11-08,Girona,Deportivo Alavés,0.85,1.84
+4837229,2025-11-08,Sevilla,Osasuna,1.7,1.29
+4837221,2025-11-08,Atlético Madrid,Levante,2.92,1.19
+4837223,2025-11-08,Espanyol,Villarreal,0.5,1.61
+4837220,2025-11-09,Athletic Club,Real Oviedo,1.7,0.22
+4837224,2025-11-09,Rayo Vallecano,Real Madrid,1.2,0.98
+4837228,2025-11-09,Mallorca,Getafe,1.11,0.75
+4837227,2025-11-09,Valencia,Real Betis,1.94,1.6
+4837226,2025-11-09,Celta Vigo,Barcelona,0.58,3.31
+4837238,2025-11-21,Valencia,Levante,1.49,0.72
+4837230,2025-11-22,Deportivo Alavés,Celta Vigo,0.67,1.37
+4837236,2025-11-22,Barcelona,Athletic Club,2.0,0.8
+4837234,2025-11-22,Osasuna,Real Sociedad,1.34,1.63
+4837239,2025-11-22,Villarreal,Mallorca,2.23,1.02
+4837235,2025-11-23,Real Oviedo,Rayo Vallecano,0.43,1.74
+4837231,2025-11-23,Real Betis,Girona,1.42,1.46
+4837237,2025-11-23,Getafe,Atlético Madrid,0.7,0.99
+4837232,2025-11-23,Elche,Real Madrid,1.44,3.49
+4837233,2025-11-24,Espanyol,Sevilla,1.09,1.82
+4837249,2025-11-28,Getafe,Elche,1.06,0.51
+4837243,2025-11-29,Mallorca,Osasuna,1.49,1.09
+4837246,2025-11-29,Barcelona,Deportivo Alavés,2.24,1.59
+4837247,2025-11-29,Levante,Athletic Club,1.3,2.9
+4837240,2025-11-29,Atlético Madrid,Real Oviedo,1.93,0.93
+4837245,2025-11-30,Real Sociedad,Villarreal,1.02,1.51
+4837248,2025-11-30,Sevilla,Real Betis,0.35,1.1
+4837241,2025-11-30,Celta Vigo,Espanyol,0.63,0.38
+4837242,2025-11-30,Girona,Real Madrid,0.79,2.53
+4837244,2025-12-01,Rayo Vallecano,Valencia,1.57,0.63
+4837294,2025-12-02,Barcelona,Atlético Madrid,3.6,0.98
+4837290,2025-12-03,Athletic Club,Real Madrid,0.84,2.21
+4837258,2025-12-05,Real Oviedo,Mallorca,1.18,0.68
+4837256,2025-12-06,Villarreal,Getafe,0.61,0.22
+4837250,2025-12-06,Deportivo Alavés,Real Sociedad,1.39,1.17
+4837254,2025-12-06,Real Betis,Barcelona,2.51,2.83
+4837251,2025-12-06,Athletic Club,Atlético Madrid,1.15,0.69
+4837252,2025-12-07,Elche,Girona,2.03,0.94
+4837259,2025-12-07,Valencia,Sevilla,1.19,0.32
+4837253,2025-12-07,Espanyol,Rayo Vallecano,1.33,0.25
+4837255,2025-12-07,Real Madrid,Celta Vigo,2.46,1.55
+4837257,2025-12-08,Osasuna,Levante,1.05,0.48
+4837268,2025-12-12,Real Sociedad,Girona,0.92,1.44
+4837261,2025-12-13,Atlético Madrid,Valencia,1.01,1.17
+4837266,2025-12-13,Mallorca,Elche,2.44,0.29
+4837262,2025-12-13,Barcelona,Osasuna,2.41,0.37
+4837267,2025-12-13,Getafe,Espanyol,0.23,0.5
+4837269,2025-12-14,Sevilla,Real Oviedo,2.03,0.64
+4837264,2025-12-14,Celta Vigo,Athletic Club,1.35,1.61
+4837260,2025-12-14,Deportivo Alavés,Real Madrid,1.36,1.83
+4837265,2025-12-15,Rayo Vallecano,Real Betis,1.86,0.81
+4837279,2025-12-19,Valencia,Mallorca,1.28,0.19
+4837278,2025-12-20,Real Oviedo,Celta Vigo,0.63,0.66
+4837273,2025-12-20,Levante,Real Sociedad,1.29,1.38
+4837275,2025-12-20,Osasuna,Deportivo Alavés,2.01,0.57
+4837274,2025-12-20,Real Madrid,Sevilla,2.33,1.56
+4837276,2025-12-21,Girona,Atlético Madrid,1.06,0.9
+4837277,2025-12-21,Villarreal,Barcelona,1.66,2.72
+4837272,2025-12-21,Elche,Rayo Vallecano,2.51,0.95
+4837271,2025-12-21,Real Betis,Getafe,3.3,1.42
+4837270,2025-12-22,Athletic Club,Espanyol,1.59,0.9
+4837287,2026-01-02,Rayo Vallecano,Getafe,0.96,0.65
+4837281,2026-01-03,Celta Vigo,Valencia,2.7,1.94
+4837283,2026-01-03,Osasuna,Athletic Club,0.67,1.46
+4837282,2026-01-03,Elche,Villarreal,1.32,1.74
+4837285,2026-01-03,Espanyol,Barcelona,1.6,1.94
+4837289,2026-01-04,Sevilla,Levante,1.7,1.03
+4837286,2026-01-04,Real Madrid,Real Betis,2.94,1.06
+4837280,2026-01-04,Deportivo Alavés,Real Oviedo,1.83,2.44
+4837288,2026-01-04,Mallorca,Girona,1.26,1.51
+4837284,2026-01-04,Real Sociedad,Atlético Madrid,1.73,1.25
+4837291,2026-01-09,Getafe,Real Sociedad,0.27,1.56
+4837295,2026-01-10,Real Oviedo,Real Betis,1.24,2.24
+4837293,2026-01-10,Villarreal,Deportivo Alavés,1.5,0.94
+4837292,2026-01-10,Girona,Osasuna,0.65,1.41
+4837297,2026-01-10,Valencia,Elche,1.94,0.18
+4837299,2026-01-11,Rayo Vallecano,Mallorca,2.37,0.72
+4837298,2026-01-11,Levante,Espanyol,1.11,1.36
+4837296,2026-01-12,Sevilla,Celta Vigo,0.27,1.63
+4837303,2026-01-16,Espanyol,Girona,1.07,1.95
+4837309,2026-01-17,Real Madrid,Levante,2.88,0.8
+4837307,2026-01-17,Mallorca,Athletic Club,2.79,2.08
+4837305,2026-01-17,Osasuna,Real Oviedo,1.37,1.34
+4837300,2026-01-17,Real Betis,Villarreal,1.07,1.02
+4837304,2026-01-18,Getafe,Valencia,0.62,0.89
+4837306,2026-01-18,Atlético Madrid,Deportivo Alavés,1.78,0.85
+4837301,2026-01-18,Celta Vigo,Rayo Vallecano,1.87,1.11
+4837308,2026-01-18,Real Sociedad,Barcelona,1.01,3.68
+4837302,2026-01-19,Elche,Sevilla,1.54,3.0
+4837315,2026-01-23,Levante,Elche,2.61,0.65
+4837318,2026-01-24,Rayo Vallecano,Osasuna,0.69,1.41
+4837316,2026-01-24,Valencia,Espanyol,2.29,1.41
+4837313,2026-01-24,Sevilla,Athletic Club,2.07,2.14
+4837319,2026-01-24,Villarreal,Real Madrid,0.58,1.63
+4837311,2026-01-25,Atlético Madrid,Mallorca,1.48,0.46
+4837312,2026-01-25,Barcelona,Real Oviedo,2.09,0.48
+4837314,2026-01-25,Real Sociedad,Celta Vigo,1.61,1.6
+4837310,2026-01-25,Deportivo Alavés,Real Betis,1.32,1.27
+4837317,2026-01-26,Girona,Getafe,0.75,0.8
+4837324,2026-01-30,Espanyol,Deportivo Alavés,0.67,1.74
+4837328,2026-01-31,Real Oviedo,Girona,1.4,0.65
+4837323,2026-01-31,Osasuna,Villarreal,1.37,0.92
+4837325,2026-01-31,Levante,Atlético Madrid,0.37,0.86
+4837326,2026-01-31,Elche,Barcelona,1.0,6.44
+4837329,2026-02-01,Real Madrid,Rayo Vallecano,2.21,1.03
+4837321,2026-02-01,Real Betis,Valencia,1.87,1.9
+4837327,2026-02-01,Getafe,Celta Vigo,0.43,0.18
+4837320,2026-02-01,Athletic Club,Real Sociedad,0.97,1.66
+4837322,2026-02-02,Mallorca,Sevilla,2.63,1.13
+4837334,2026-02-06,Celta Vigo,Osasuna,2.39,0.67
+4837333,2026-02-07,Barcelona,Mallorca,2.73,0.8
+4837335,2026-02-07,Real Sociedad,Elche,2.63,1.27
+4837330,2026-02-08,Deportivo Alavés,Getafe,2.02,1.91
+4837331,2026-02-08,Athletic Club,Levante,2.08,0.51
+4837337,2026-02-08,Sevilla,Girona,0.78,2.56
+4837332,2026-02-08,Atlético Madrid,Real Betis,0.67,0.7
+4837338,2026-02-08,Valencia,Real Madrid,0.44,0.96
+4837336,2026-02-09,Villarreal,Espanyol,0.77,0.51
+4837340,2026-02-13,Elche,Osasuna,1.7,0.77
+4837349,2026-02-14,Espanyol,Celta Vigo,0.77,2.36
+4837341,2026-02-14,Getafe,Villarreal,1.48,0.6
+4837344,2026-02-14,Sevilla,Deportivo Alavés,0.27,1.13
+4837343,2026-02-14,Real Madrid,Real Sociedad,3.12,1.73
+4837345,2026-02-15,Real Oviedo,Athletic Club,0.34,1.29
+4837346,2026-02-15,Rayo Vallecano,Atlético Madrid,1.61,0.7
+4837342,2026-02-15,Levante,Valencia,0.61,0.6
+4837348,2026-02-15,Mallorca,Real Betis,1.1,2.04
+4837347,2026-02-16,Girona,Barcelona,2.86,2.72
+4837263,2026-02-18,Levante,Villarreal,0.92,2.4
+4837351,2026-02-20,Athletic Club,Elche,2.97,0.82
+4837359,2026-02-21,Real Sociedad,Real Oviedo,2.06,1.68
+4837354,2026-02-21,Real Betis,Rayo Vallecano,1.86,0.88
+4837357,2026-02-21,Osasuna,Real Madrid,2.29,1.7
+4837352,2026-02-21,Atlético Madrid,Espanyol,3.12,1.06
+4837356,2026-02-22,Getafe,Sevilla,0.32,0.32
+4837353,2026-02-22,Barcelona,Levante,2.88,0.53
+4837355,2026-02-22,Celta Vigo,Mallorca,2.51,0.04
+4837358,2026-02-22,Villarreal,Valencia,2.34,1.53
+4837350,2026-02-23,Deportivo Alavés,Girona,1.94,2.22
+4837364,2026-02-27,Levante,Deportivo Alavés,2.34,1.35
+4837365,2026-02-28,Rayo Vallecano,Athletic Club,1.44,0.54
+4837360,2026-02-28,Barcelona,Villarreal,3.2,1.31
+4837363,2026-02-28,Mallorca,Real Sociedad,0.66,0.43
+4837366,2026-02-28,Real Oviedo,Atlético Madrid,1.1,0.75
+4837362,2026-03-01,Elche,Espanyol,2.0,0.77
+4837369,2026-03-01,Valencia,Osasuna,1.56,0.32
+4837361,2026-03-01,Real Betis,Sevilla,1.59,0.87
+4837367,2026-03-01,Girona,Celta Vigo,1.37,0.6
+4837368,2026-03-02,Real Madrid,Getafe,1.91,0.49
+4837339,2026-03-04,Rayo Vallecano,Real Oviedo,2.51,0.99
+4837372,2026-03-06,Celta Vigo,Real Madrid,1.04,0.86
+4837378,2026-03-07,Osasuna,Mallorca,2.56,1.08
+4837377,2026-03-07,Levante,Girona,0.75,1.95
+4837371,2026-03-07,Atlético Madrid,Real Sociedad,2.31,0.41
+4837370,2026-03-07,Athletic Club,Barcelona,0.85,0.4
+4837376,2026-03-08,Villarreal,Elche,1.58,1.22
+4837375,2026-03-08,Getafe,Real Betis,0.41,1.38
+4837379,2026-03-08,Sevilla,Rayo Vallecano,1.0,0.35
+4837374,2026-03-08,Valencia,Deportivo Alavés,2.79,1.33
+4837373,2026-03-09,Espanyol,Real Oviedo,1.83,0.87
+4837380,2026-03-13,Deportivo Alavés,Villarreal,0.22,0.59
+4837385,2026-03-14,Girona,Athletic Club,1.61,1.84
+4837381,2026-03-14,Atlético Madrid,Getafe,1.63,1.18
+4837384,2026-03-14,Real Oviedo,Valencia,0.87,0.61
+4837386,2026-03-14,Real Madrid,Elche,1.37,0.84
+4837387,2026-03-15,Mallorca,Espanyol,2.25,1.3
+4837382,2026-03-15,Barcelona,Sevilla,3.66,0.83
+4837383,2026-03-15,Real Betis,Celta Vigo,1.47,0.75
+4837389,2026-03-15,Real Sociedad,Osasuna,2.13,0.65
+4837388,2026-03-16,Rayo Vallecano,Levante,1.88,1.2
+4837399,2026-03-20,Villarreal,Real Sociedad,3.7,1.08
+4837392,2026-03-21,Elche,Mallorca,1.6,1.37
+4837393,2026-03-21,Espanyol,Getafe,1.75,1.51
+4837394,2026-03-21,Levante,Real Oviedo,2.36,1.34
+4837398,2026-03-21,Osasuna,Girona,1.71,0.21
+4837395,2026-03-21,Sevilla,Valencia,0.4,1.81
+4837391,2026-03-22,Barcelona,Rayo Vallecano,1.39,1.56
+4837396,2026-03-22,Celta Vigo,Deportivo Alavés,1.84,1.83
+4837390,2026-03-22,Athletic Club,Real Betis,1.26,0.47
+4837397,2026-03-22,Real Madrid,Atlético Madrid,2.41,1.0
+4837408,2026-04-03,Rayo Vallecano,Elche,1.39,0.44
+4837409,2026-04-04,Real Sociedad,Levante,2.78,0.28
+4837404,2026-04-04,Mallorca,Real Madrid,1.22,1.28
+4837402,2026-04-04,Real Betis,Espanyol,1.38,0.2
+4837401,2026-04-04,Atlético Madrid,Barcelona,0.92,2.52
+4837406,2026-04-05,Getafe,Athletic Club,1.94,0.57
+4837407,2026-04-05,Valencia,Celta Vigo,0.8,1.05
+4837405,2026-04-05,Real Oviedo,Sevilla,0.48,0.66
+4837400,2026-04-05,Deportivo Alavés,Osasuna,2.07,1.31
+4837403,2026-04-06,Girona,Villarreal,0.48,0.55
+4837419,2026-04-10,Real Madrid,Girona,2.3,0.52
+4837415,2026-04-11,Real Sociedad,Deportivo Alavés,1.27,1.04
+4837413,2026-04-11,Elche,Valencia,0.71,2.54
+4837411,2026-04-11,Barcelona,Espanyol,2.73,1.13
+4837416,2026-04-11,Sevilla,Atlético Madrid,1.85,0.84
+4837417,2026-04-12,Osasuna,Real Betis,1.45,0.41
+4837414,2026-04-12,Mallorca,Rayo Vallecano,1.68,1.95
+4837412,2026-04-12,Celta Vigo,Real Oviedo,0.77,1.47
+4837410,2026-04-12,Athletic Club,Villarreal,1.16,1.31
+4837418,2026-04-13,Levante,Getafe,2.9,0.29
+4837430,2026-04-21,Athletic Club,Osasuna,0.54,1.21
+4837433,2026-04-21,Mallorca,Valencia,1.82,1.68
+4837437,2026-04-21,Girona,Real Betis,1.38,1.04
+4837435,2026-04-21,Real Madrid,Deportivo Alavés,1.62,1.76
+4837436,2026-04-22,Elche,Atlético Madrid,2.78,1.01
+4837439,2026-04-22,Real Sociedad,Getafe,1.89,0.12
+4837431,2026-04-22,Barcelona,Celta Vigo,1.3,0.8
+4837432,2026-04-23,Levante,Sevilla,1.53,0.28
+4837438,2026-04-23,Rayo Vallecano,Espanyol,1.6,1.96
+4837434,2026-04-23,Real Oviedo,Villarreal,0.8,1.39
+4837421,2026-04-24,Real Betis,Real Madrid,1.08,1.19
+4837420,2026-04-25,Deportivo Alavés,Mallorca,1.22,0.22
+4837426,2026-04-25,Getafe,Barcelona,1.14,1.79
+4837429,2026-04-25,Valencia,Girona,1.4,1.56
+4837425,2026-04-25,Atlético Madrid,Athletic Club,2.09,0.8
+4837424,2026-04-26,Rayo Vallecano,Real Sociedad,2.38,2.23
+4837428,2026-04-26,Real Oviedo,Elche,0.99,0.4
+4837423,2026-04-26,Osasuna,Sevilla,1.43,0.4
+4837427,2026-04-26,Villarreal,Celta Vigo,1.89,1.98
+4837422,2026-04-27,Espanyol,Levante,0.72,1.12
+4837445,2026-05-01,Girona,Mallorca,1.72,1.09
+4837448,2026-05-02,Villarreal,Levante,2.36,0.76
+4837446,2026-05-02,Valencia,Atlético Madrid,1.09,2.04
+4837440,2026-05-02,Deportivo Alavés,Athletic Club,0.49,0.97
+4837447,2026-05-02,Osasuna,Barcelona,0.8,1.29
+4837442,2026-05-03,Celta Vigo,Elche,1.05,1.71
+4837444,2026-05-03,Getafe,Rayo Vallecano,1.49,0.98
+4837441,2026-05-03,Real Betis,Real Oviedo,1.53,1.59
+4837443,2026-05-03,Espanyol,Real Madrid,1.21,2.1
+4837449,2026-05-04,Sevilla,Real Sociedad,1.82,0.16
+4837453,2026-05-08,Levante,Osasuna,2.99,0.63
+4837455,2026-05-09,Elche,Deportivo Alavés,1.39,2.05
+4837457,2026-05-09,Sevilla,Espanyol,1.38,0.61
+4837451,2026-05-09,Atlético Madrid,Celta Vigo,2.18,0.13
+4837456,2026-05-09,Real Sociedad,Real Betis,2.4,1.94
+4837454,2026-05-10,Mallorca,Villarreal,1.74,1.12
+4837450,2026-05-10,Athletic Club,Valencia,0.93,1.19
+4837458,2026-05-10,Real Oviedo,Getafe,0.54,1.36
+4837452,2026-05-10,Barcelona,Real Madrid,1.01,0.85
+4837459,2026-05-11,Rayo Vallecano,Girona,1.2,0.98
+4837462,2026-05-12,Celta Vigo,Levante,2.18,1.52
+4837461,2026-05-12,Real Betis,Elche,1.8,0.4
+4837466,2026-05-12,Osasuna,Atlético Madrid,2.3,1.56
+4837465,2026-05-13,Espanyol,Athletic Club,0.76,0.82
+4837468,2026-05-13,Villarreal,Sevilla,0.83,0.87
+4837460,2026-05-13,Deportivo Alavés,Barcelona,0.72,0.6
+4837463,2026-05-13,Getafe,Mallorca,1.58,0.41
+4837467,2026-05-14,Valencia,Rayo Vallecano,0.76,1.16
+4837464,2026-05-14,Girona,Real Sociedad,2.11,0.33
+4837469,2026-05-14,Real Madrid,Real Oviedo,1.36,1.04
+4837470,2026-05-17,Athletic Club,Celta Vigo,2.49,0.15
+4837471,2026-05-17,Atlético Madrid,Girona,1.97,2.17
+4837473,2026-05-17,Elche,Getafe,0.66,0.11
+4837474,2026-05-17,Levante,Mallorca,2.39,0.3
+4837478,2026-05-17,Osasuna,Espanyol,1.72,0.79
+4837475,2026-05-17,Rayo Vallecano,Villarreal,1.49,0.97
+4837477,2026-05-17,Real Oviedo,Deportivo Alavés,0.33,1.06
+4837476,2026-05-17,Real Sociedad,Valencia,1.15,1.67
+4837479,2026-05-17,Sevilla,Real Madrid,0.72,1.0
+4837472,2026-05-17,Barcelona,Real Betis,1.12,0.97
+4837482,2026-05-23,Celta Vigo,Sevilla,1.6,0.8
+4837480,2026-05-23,Deportivo Alavés,Rayo Vallecano,1.63,1.34
+4837483,2026-05-23,Espanyol,Real Sociedad,2.41,1.4
+4837484,2026-05-23,Getafe,Osasuna,0.27,0.51
+4837489,2026-05-23,Girona,Elche,0.58,0.18
+4837485,2026-05-23,Mallorca,Real Oviedo,2.61,0.34
+4837481,2026-05-23,Real Betis,Levante,1.57,2.53
+4837486,2026-05-23,Real Madrid,Athletic Club,1.9,0.81
+4837488,2026-05-23,Valencia,Barcelona,1.35,1.18
+4837487,2026-05-24,Villarreal,Atlético Madrid,2.48,1.16

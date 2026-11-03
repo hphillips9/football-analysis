@@ -1,0 +1,381 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+3625829,2021-08-06,Monaco,Nantes,1.61,0.22
+3625827,2021-08-07,Lyon,Brest,1.39,0.85
+3625835,2021-08-07,Troyes,Paris Saint-Germain,0.86,1.23
+3625832,2021-08-08,Rennes,Lens,0.74,2.15
+3625826,2021-08-08,Bordeaux,Clermont Foot,0.68,3.13
+3625831,2021-08-08,Nice,Reims,0.82,0.16
+3625833,2021-08-08,Saint-Étienne,Lorient,1.89,0.62
+3625834,2021-08-08,Strasbourg,Angers,0.34,0.87
+3625828,2021-08-08,Metz,Lille,0.87,1.28
+3625830,2021-08-08,Montpellier,Marseille,0.57,1.87
+3625841,2021-08-13,Lorient,Monaco,0.81,1.13
+3625840,2021-08-14,Lille,Nice,0.79,2.17
+3625844,2021-08-14,Paris Saint-Germain,Strasbourg,3.13,0.74
+3625836,2021-08-15,Angers,Lyon,1.82,0.91
+3625837,2021-08-15,Brest,Rennes,1.88,1.0
+3625838,2021-08-15,Clermont Foot,Troyes,1.93,0.71
+3625843,2021-08-15,Nantes,Metz,1.68,0.65
+3625845,2021-08-15,Reims,Montpellier,1.83,2.0
+3625839,2021-08-15,Lens,Saint-Étienne,1.29,0.92
+3625842,2021-08-15,Marseille,Bordeaux,1.0,0.26
+3625847,2021-08-20,Brest,Paris Saint-Germain,1.13,0.97
+3625850,2021-08-21,Monaco,Lens,0.34,0.49
+3625854,2021-08-21,Saint-Étienne,Lille,0.53,0.98
+3625848,2021-08-22,Lyon,Clermont Foot,3.29,1.57
+3625846,2021-08-22,Bordeaux,Angers,0.9,0.92
+3625849,2021-08-22,Metz,Reims,0.51,0.89
+3625851,2021-08-22,Montpellier,Lorient,3.16,0.64
+3625855,2021-08-22,Strasbourg,Troyes,2.15,1.36
+3625853,2021-08-22,Rennes,Nantes,0.94,0.55
+3625861,2021-08-27,Nantes,Lyon,1.39,1.25
+3625862,2021-08-28,Nice,Bordeaux,3.19,1.09
+3625860,2021-08-28,Marseille,Saint-Étienne,2.14,1.15
+3625865,2021-08-29,Troyes,Monaco,0.65,1.87
+3625856,2021-08-29,Angers,Rennes,2.21,0.95
+3625857,2021-08-29,Clermont Foot,Metz,1.63,1.36
+3625858,2021-08-29,Lens,Lorient,1.89,1.18
+3625864,2021-08-29,Strasbourg,Brest,1.47,0.75
+3625859,2021-08-29,Lille,Montpellier,1.76,0.61
+3625863,2021-08-29,Reims,Paris Saint-Germain,0.67,1.27
+3625868,2021-09-10,Lorient,Lille,1.83,1.3
+3625874,2021-09-11,Paris Saint-Germain,Clermont Foot,2.52,1.25
+3625871,2021-09-11,Monaco,Marseille,0.81,1.65
+3625872,2021-09-12,Montpellier,Saint-Étienne,1.13,0.75
+3625866,2021-09-12,Bordeaux,Lens,0.83,2.6
+3625867,2021-09-12,Brest,Angers,1.35,1.17
+3625870,2021-09-12,Metz,Troyes,0.66,0.62
+3625875,2021-09-12,Rennes,Reims,0.64,0.51
+3625873,2021-09-12,Nantes,Nice,2.11,2.13
+3625869,2021-09-12,Lyon,Strasbourg,1.62,1.66
+3625884,2021-09-17,Strasbourg,Metz,2.06,0.57
+3625878,2021-09-18,Lens,Lille,0.59,0.71
+3625883,2021-09-18,Saint-Étienne,Bordeaux,1.39,2.3
+3625880,2021-09-19,Nice,Monaco,1.77,2.47
+3625876,2021-09-19,Angers,Nantes,0.94,2.07
+3625877,2021-09-19,Clermont Foot,Brest,1.05,0.46
+3625882,2021-09-19,Reims,Lorient,0.81,0.29
+3625885,2021-09-19,Troyes,Montpellier,1.07,0.24
+3625879,2021-09-19,Marseille,Rennes,2.12,1.82
+3625881,2021-09-19,Paris Saint-Germain,Lyon,2.01,0.8
+3625888,2021-09-22,Lille,Reims,0.7,1.31
+3625892,2021-09-22,Monaco,Saint-Étienne,1.72,0.42
+3625893,2021-09-22,Montpellier,Bordeaux,1.27,1.36
+3625894,2021-09-22,Nantes,Brest,1.29,0.76
+3625895,2021-09-22,Rennes,Clermont Foot,2.45,0.28
+3625886,2021-09-22,Angers,Marseille,0.37,0.73
+3625887,2021-09-22,Lens,Strasbourg,1.5,1.13
+3625889,2021-09-22,Lorient,Nice,0.47,2.18
+3625890,2021-09-22,Lyon,Troyes,1.83,1.49
+3625891,2021-09-22,Metz,Paris Saint-Germain,0.93,1.32
+3625903,2021-09-25,Saint-Étienne,Nice,0.65,2.16
+3625904,2021-09-25,Strasbourg,Lille,0.42,2.35
+3625899,2021-09-25,Lyon,Lorient,1.38,0.7
+3625901,2021-09-25,Paris Saint-Germain,Montpellier,2.1,0.24
+3625896,2021-09-26,Bordeaux,Rennes,0.69,2.1
+3625897,2021-09-26,Brest,Metz,1.61,0.58
+3625902,2021-09-26,Reims,Nantes,1.13,0.58
+3625905,2021-09-26,Troyes,Angers,1.05,1.27
+3625898,2021-09-26,Clermont Foot,Monaco,1.08,1.64
+3625900,2021-09-26,Marseille,Lens,2.05,2.02
+3625907,2021-10-01,Lens,Reims,2.19,0.15
+3625911,2021-10-02,Montpellier,Strasbourg,1.07,0.28
+3625913,2021-10-02,Nice,Brest,3.93,0.57
+3625914,2021-10-03,Rennes,Paris Saint-Germain,1.02,1.55
+3625906,2021-10-03,Angers,Metz,2.44,1.15
+3625909,2021-10-03,Lorient,Clermont Foot,0.53,1.13
+3625910,2021-10-03,Monaco,Bordeaux,1.6,0.29
+3625912,2021-10-03,Nantes,Troyes,1.95,1.3
+3625908,2021-10-03,Lille,Marseille,3.14,0.44
+3625915,2021-10-03,Saint-Étienne,Lyon,2.41,1.36
+3625923,2021-10-15,Paris Saint-Germain,Angers,2.1,1.14
+3625918,2021-10-16,Clermont Foot,Lille,0.33,0.96
+3625919,2021-10-16,Lyon,Monaco,2.57,0.56
+3625925,2021-10-17,Troyes,Nice,0.87,0.59
+3625916,2021-10-17,Bordeaux,Nantes,0.52,1.29
+3625917,2021-10-17,Brest,Reims,0.46,0.83
+3625921,2021-10-17,Metz,Rennes,0.89,2.22
+3625924,2021-10-17,Strasbourg,Saint-Étienne,2.09,0.98
+3625922,2021-10-17,Montpellier,Lens,1.53,1.29
+3625920,2021-10-17,Marseille,Lorient,1.8,2.16
+3625935,2021-10-22,Saint-Étienne,Angers,1.8,0.49
+3625931,2021-10-23,Nantes,Clermont Foot,1.27,1.14
+3625927,2021-10-23,Lille,Brest,1.74,1.15
+3625932,2021-10-24,Nice,Lyon,2.41,1.38
+3625926,2021-10-24,Lens,Metz,1.96,0.78
+3625928,2021-10-24,Lorient,Bordeaux,1.22,0.97
+3625933,2021-10-24,Reims,Troyes,0.79,0.85
+3625934,2021-10-24,Rennes,Strasbourg,1.21,0.89
+3625930,2021-10-24,Monaco,Montpellier,1.35,1.34
+3625929,2021-10-24,Marseille,Paris Saint-Germain,1.13,1.38
+3726614,2021-10-27,Nice,Marseille,1.47,0.5
+3625943,2021-10-29,Paris Saint-Germain,Lille,2.09,1.82
+3625941,2021-10-30,Metz,Saint-Étienne,0.41,0.4
+3625940,2021-10-30,Lyon,Lens,1.94,2.07
+3625936,2021-10-31,Angers,Nice,1.15,0.81
+3625937,2021-10-31,Bordeaux,Reims,1.96,1.45
+3625942,2021-10-31,Montpellier,Nantes,1.16,1.0
+3625944,2021-10-31,Strasbourg,Lorient,2.25,1.32
+3625945,2021-10-31,Troyes,Rennes,1.28,1.34
+3625938,2021-10-31,Brest,Monaco,1.32,0.4
+3625939,2021-10-31,Clermont Foot,Marseille,0.67,1.05
+3625947,2021-11-05,Lens,Troyes,3.05,0.52
+3625948,2021-11-06,Lille,Angers,1.4,1.11
+3625946,2021-11-06,Bordeaux,Paris Saint-Germain,1.36,1.46
+3625950,2021-11-07,Marseille,Metz,1.31,1.18
+3625949,2021-11-07,Lorient,Brest,1.34,2.57
+3625951,2021-11-07,Nantes,Strasbourg,2.33,2.09
+3625953,2021-11-07,Reims,Monaco,0.25,1.02
+3625955,2021-11-07,Saint-Étienne,Clermont Foot,1.3,1.11
+3625952,2021-11-07,Nice,Montpellier,1.61,0.39
+3625954,2021-11-07,Rennes,Lyon,3.38,1.06
+3625961,2021-11-19,Monaco,Lille,1.07,2.24
+3625962,2021-11-20,Paris Saint-Germain,Nantes,1.83,1.57
+3625963,2021-11-20,Rennes,Montpellier,3.54,0.69
+3625957,2021-11-21,Brest,Lens,1.35,1.45
+3625956,2021-11-21,Angers,Lorient,1.42,0.67
+3625960,2021-11-21,Metz,Bordeaux,1.24,2.23
+3625964,2021-11-21,Strasbourg,Reims,1.71,0.88
+3625965,2021-11-21,Troyes,Saint-Étienne,1.11,1.12
+3625958,2021-11-21,Clermont Foot,Nice,0.71,0.57
+3625967,2021-11-26,Lens,Angers,1.3,1.55
+3625968,2021-11-27,Lille,Nantes,1.33,0.55
+3625973,2021-11-27,Nice,Metz,1.23,0.36
+3625975,2021-11-28,Saint-Étienne,Paris Saint-Germain,0.75,2.78
+3625966,2021-11-28,Bordeaux,Brest,1.37,2.45
+3625969,2021-11-28,Lorient,Rennes,0.82,1.27
+3625971,2021-11-28,Monaco,Strasbourg,2.06,0.99
+3625974,2021-11-28,Reims,Clermont Foot,0.63,0.45
+3625972,2021-11-28,Montpellier,Lyon,1.23,0.89
+3625970,2021-11-28,Marseille,Troyes,1.63,0.13
+3625976,2021-12-01,Angers,Monaco,1.25,3.05
+3625977,2021-12-01,Brest,Saint-Étienne,1.5,0.61
+3625980,2021-12-01,Metz,Montpellier,1.29,1.29
+3625984,2021-12-01,Strasbourg,Bordeaux,2.92,1.09
+3625985,2021-12-01,Troyes,Lorient,0.97,0.45
+3625978,2021-12-01,Clermont Foot,Lens,2.08,0.7
+3625979,2021-12-01,Lyon,Reims,2.58,1.21
+3625981,2021-12-01,Nantes,Marseille,0.13,1.11
+3625983,2021-12-01,Rennes,Lille,0.86,0.71
+3625982,2021-12-01,Paris Saint-Germain,Nice,1.92,1.04
+3625990,2021-12-04,Marseille,Brest,1.49,1.29
+3625988,2021-12-04,Lille,Troyes,1.39,0.34
+3625987,2021-12-04,Lens,Paris Saint-Germain,1.1,1.96
+3625995,2021-12-05,Saint-Étienne,Rennes,0.51,2.73
+3625989,2021-12-05,Lorient,Nantes,0.86,0.19
+3625991,2021-12-05,Monaco,Metz,1.59,0.59
+3625992,2021-12-05,Montpellier,Clermont Foot,0.95,0.59
+3625994,2021-12-05,Reims,Angers,1.23,2.22
+3625993,2021-12-05,Nice,Strasbourg,1.34,2.59
+3625986,2021-12-05,Bordeaux,Lyon,2.79,2.28
+3626000,2021-12-10,Nantes,Lens,1.37,1.02
+3625997,2021-12-11,Brest,Montpellier,0.94,1.65
+3626002,2021-12-11,Reims,Saint-Étienne,2.31,0.14
+3625998,2021-12-12,Lille,Lyon,1.54,0.39
+3625996,2021-12-12,Angers,Clermont Foot,1.73,1.7
+3625999,2021-12-12,Metz,Lorient,1.15,1.44
+3626003,2021-12-12,Rennes,Nice,1.62,1.4
+3626005,2021-12-12,Troyes,Bordeaux,1.49,1.36
+3626004,2021-12-12,Strasbourg,Marseille,1.95,0.74
+3626001,2021-12-12,Paris Saint-Germain,Monaco,1.71,0.74
+3626006,2021-12-22,Bordeaux,Lille,1.2,1.31
+3626008,2021-12-22,Lorient,Paris Saint-Germain,1.6,1.81
+3626009,2021-12-22,Lyon,Metz,2.36,0.49
+3626010,2021-12-22,Marseille,Reims,1.44,0.78
+3626011,2021-12-22,Monaco,Rennes,1.89,1.43
+3626012,2021-12-22,Montpellier,Angers,1.06,0.62
+3626013,2021-12-22,Nice,Lens,0.92,1.33
+3626014,2021-12-22,Saint-Étienne,Nantes,1.03,0.87
+3626015,2021-12-22,Troyes,Brest,1.25,0.56
+3626017,2022-01-07,Bordeaux,Marseille,0.54,2.44
+3626020,2022-01-08,Lens,Rennes,0.8,0.47
+3626018,2022-01-09,Brest,Nice,1.93,1.21
+3626019,2022-01-09,Clermont Foot,Reims,0.92,0.86
+3626023,2022-01-09,Metz,Strasbourg,0.34,2.62
+3626025,2022-01-09,Nantes,Monaco,0.41,0.84
+3626022,2022-01-09,Lyon,Paris Saint-Germain,1.05,1.02
+3626029,2022-01-14,Nice,Nantes,1.75,0.42
+3626033,2022-01-15,Saint-Étienne,Lens,1.32,0.9
+3626030,2022-01-15,Paris Saint-Germain,Brest,1.99,0.97
+3626032,2022-01-16,Rennes,Bordeaux,3.15,0.29
+3626026,2022-01-16,Lorient,Angers,0.51,0.43
+3626028,2022-01-16,Monaco,Clermont Foot,3.71,0.44
+3626031,2022-01-16,Reims,Metz,0.57,0.77
+3626034,2022-01-16,Strasbourg,Montpellier,1.64,0.59
+3626035,2022-01-16,Troyes,Lyon,0.37,2.84
+3626027,2022-01-16,Marseille,Lille,1.81,0.74
+3626007,2022-01-19,Clermont Foot,Strasbourg,0.59,1.55
+3626021,2022-01-19,Lille,Lorient,1.67,1.08
+3626024,2022-01-19,Montpellier,Troyes,0.85,0.8
+3626041,2022-01-21,Lyon,Saint-Étienne,1.85,0.3
+3626038,2022-01-22,Brest,Lille,1.17,1.21
+3626040,2022-01-22,Lens,Marseille,0.81,1.32
+3626042,2022-01-23,Metz,Nice,0.36,1.88
+3626036,2022-01-23,Angers,Troyes,2.36,1.73
+3626037,2022-01-23,Bordeaux,Strasbourg,1.92,1.88
+3626039,2022-01-23,Clermont Foot,Rennes,1.11,1.74
+3626044,2022-01-23,Nantes,Lorient,0.95,2.22
+3626043,2022-01-23,Montpellier,Monaco,1.69,1.2
+3626045,2022-01-23,Paris Saint-Germain,Reims,2.35,0.54
+3626016,2022-01-26,Angers,Saint-Étienne,0.35,0.37
+3811468,2022-02-01,Lyon,Marseille,1.05,0.44
+3626048,2022-02-04,Marseille,Angers,2.61,0.39
+3626053,2022-02-05,Saint-Étienne,Montpellier,2.06,0.62
+3626049,2022-02-05,Monaco,Lyon,2.26,1.34
+3626047,2022-02-06,Lorient,Lens,1.64,0.57
+3626050,2022-02-06,Nice,Clermont Foot,0.97,1.55
+3626051,2022-02-06,Reims,Bordeaux,2.38,0.13
+3626054,2022-02-06,Strasbourg,Nantes,1.41,0.4
+3626055,2022-02-06,Troyes,Metz,0.58,0.46
+3626052,2022-02-06,Rennes,Brest,2.09,0.4
+3626046,2022-02-06,Lille,Paris Saint-Germain,1.03,3.91
+3626065,2022-02-11,Paris Saint-Germain,Rennes,0.88,0.83
+3626063,2022-02-12,Montpellier,Lille,1.0,1.3
+3626060,2022-02-12,Lyon,Nice,2.71,0.09
+3626062,2022-02-13,Monaco,Lorient,1.21,0.12
+3626056,2022-02-13,Angers,Strasbourg,0.46,0.31
+3626057,2022-02-13,Brest,Troyes,2.73,0.45
+3626058,2022-02-13,Clermont Foot,Saint-Étienne,0.95,0.69
+3626064,2022-02-13,Nantes,Reims,0.55,0.43
+3626059,2022-02-13,Lens,Bordeaux,2.11,0.86
+3626061,2022-02-13,Metz,Marseille,0.92,1.18
+3626068,2022-02-18,Lille,Metz,1.08,0.41
+3626067,2022-02-19,Lens,Lyon,1.2,1.38
+3626071,2022-02-19,Nantes,Paris Saint-Germain,2.38,3.39
+3626072,2022-02-20,Nice,Angers,0.78,0.78
+3626069,2022-02-20,Lorient,Montpellier,0.93,0.36
+3626073,2022-02-20,Reims,Brest,0.74,1.74
+3626074,2022-02-20,Rennes,Troyes,2.79,0.67
+3626075,2022-02-20,Saint-Étienne,Strasbourg,1.14,0.8
+3626066,2022-02-20,Bordeaux,Monaco,0.54,1.78
+3626070,2022-02-20,Marseille,Clermont Foot,1.26,0.79
+3626082,2022-02-25,Montpellier,Rennes,1.12,2.04
+3626084,2022-02-26,Strasbourg,Nice,0.77,0.17
+3626083,2022-02-26,Paris Saint-Germain,Saint-Étienne,2.14,0.85
+3626081,2022-02-27,Monaco,Reims,1.2,1.43
+3626076,2022-02-27,Angers,Lens,0.6,0.56
+3626077,2022-02-27,Brest,Lorient,0.19,2.47
+3626078,2022-02-27,Clermont Foot,Bordeaux,0.64,0.83
+3626080,2022-02-27,Metz,Nantes,0.51,0.64
+3626085,2022-02-27,Troyes,Marseille,1.51,1.16
+3626079,2022-02-27,Lyon,Lille,1.43,0.69
+3626089,2022-03-04,Lorient,Lyon,1.48,2.61
+3626087,2022-03-05,Lens,Brest,1.97,0.5
+3626092,2022-03-05,Nice,Paris Saint-Germain,0.87,0.43
+3626095,2022-03-06,Saint-Étienne,Metz,1.44,0.49
+3626086,2022-03-06,Bordeaux,Troyes,1.29,2.45
+3626091,2022-03-06,Nantes,Montpellier,1.66,0.19
+3626093,2022-03-06,Reims,Strasbourg,0.86,0.76
+3626094,2022-03-06,Rennes,Angers,1.64,0.61
+3626088,2022-03-06,Lille,Clermont Foot,2.03,0.87
+3626090,2022-03-06,Marseille,Monaco,0.72,0.77
+3626099,2022-03-11,Lille,Saint-Étienne,1.05,0.41
+3626102,2022-03-12,Montpellier,Nice,3.01,0.82
+3626105,2022-03-12,Troyes,Nantes,1.66,0.43
+3626103,2022-03-13,Paris Saint-Germain,Bordeaux,1.22,0.76
+3626096,2022-03-13,Angers,Reims,2.94,1.56
+3626098,2022-03-13,Clermont Foot,Lorient,1.01,1.02
+3626101,2022-03-13,Metz,Lens,0.73,0.48
+3626104,2022-03-13,Strasbourg,Monaco,0.82,0.75
+3626100,2022-03-13,Lyon,Rennes,1.29,1.46
+3626097,2022-03-13,Brest,Marseille,0.57,2.17
+3626115,2022-03-18,Saint-Étienne,Troyes,1.3,1.11
+3626108,2022-03-19,Lens,Clermont Foot,1.24,1.54
+3626112,2022-03-19,Nantes,Lille,0.8,1.08
+3626111,2022-03-20,Monaco,Paris Saint-Germain,1.91,0.98
+3626106,2022-03-20,Angers,Brest,1.85,1.22
+3626107,2022-03-20,Bordeaux,Montpellier,3.53,0.4
+3626109,2022-03-20,Lorient,Strasbourg,0.34,1.09
+3626114,2022-03-20,Rennes,Metz,3.51,0.69
+3626113,2022-03-20,Reims,Lyon,0.47,1.5
+3626110,2022-03-20,Marseille,Nice,1.55,1.4
+3626121,2022-04-02,Nice,Rennes,0.84,1.15
+3626117,2022-04-02,Lille,Bordeaux,2.69,0.04
+3626124,2022-04-03,Strasbourg,Lens,2.5,0.88
+3626116,2022-04-03,Clermont Foot,Nantes,0.95,2.03
+3626119,2022-04-03,Metz,Monaco,0.94,1.51
+3626120,2022-04-03,Montpellier,Brest,1.43,0.71
+3626123,2022-04-03,Saint-Étienne,Marseille,0.21,4.0
+3626125,2022-04-03,Troyes,Reims,1.11,0.65
+3626118,2022-04-03,Lyon,Angers,1.7,1.8
+3626122,2022-04-03,Paris Saint-Germain,Lorient,1.93,0.61
+3626131,2022-04-08,Lorient,Saint-Étienne,3.74,0.95
+3626134,2022-04-09,Reims,Rennes,2.61,1.5
+3626129,2022-04-09,Clermont Foot,Paris Saint-Germain,1.39,3.72
+3626127,2022-04-10,Bordeaux,Metz,1.99,0.55
+3626126,2022-04-10,Angers,Lille,0.53,1.17
+3626128,2022-04-10,Brest,Nantes,1.09,0.7
+3626133,2022-04-10,Monaco,Troyes,0.43,0.95
+3626130,2022-04-10,Lens,Nice,0.85,1.42
+3626135,2022-04-10,Strasbourg,Lyon,1.04,2.05
+3626132,2022-04-10,Marseille,Montpellier,3.39,0.42
+3626143,2022-04-15,Rennes,Monaco,2.26,2.74
+3626144,2022-04-16,Saint-Étienne,Brest,1.03,0.39
+3626136,2022-04-16,Lille,Lens,0.82,1.19
+3626141,2022-04-17,Nice,Lorient,2.23,0.24
+3626138,2022-04-17,Metz,Clermont Foot,0.35,2.42
+3626139,2022-04-17,Montpellier,Reims,1.52,0.98
+3626140,2022-04-17,Nantes,Angers,3.65,0.84
+3626145,2022-04-17,Troyes,Strasbourg,1.72,1.73
+3626137,2022-04-17,Lyon,Bordeaux,1.69,2.25
+3626142,2022-04-17,Paris Saint-Germain,Marseille,1.57,0.93
+3626147,2022-04-20,Bordeaux,Saint-Étienne,0.9,0.86
+3626150,2022-04-20,Lorient,Metz,1.84,1.46
+3626152,2022-04-20,Monaco,Nice,1.69,0.75
+3626153,2022-04-20,Reims,Lille,1.04,1.25
+3626155,2022-04-20,Troyes,Clermont Foot,1.18,0.23
+3626146,2022-04-20,Angers,Paris Saint-Germain,0.84,1.75
+3626148,2022-04-20,Brest,Lyon,1.17,2.72
+3626149,2022-04-20,Lens,Montpellier,1.28,0.71
+3626151,2022-04-20,Marseille,Nantes,3.25,0.6
+3626154,2022-04-20,Strasbourg,Rennes,2.46,0.74
+3626158,2022-04-23,Lyon,Montpellier,3.46,2.49
+3626165,2022-04-23,Saint-Étienne,Monaco,1.06,3.38
+3626162,2022-04-23,Paris Saint-Germain,Lens,1.99,0.8
+3626164,2022-04-24,Rennes,Lorient,1.65,0.63
+3626156,2022-04-24,Clermont Foot,Angers,2.08,1.34
+3626159,2022-04-24,Metz,Brest,0.4,1.67
+3626160,2022-04-24,Nantes,Bordeaux,2.47,2.84
+3626161,2022-04-24,Nice,Troyes,2.0,0.45
+3626157,2022-04-24,Lille,Strasbourg,0.48,1.01
+3626163,2022-04-24,Reims,Marseille,0.59,0.59
+3626174,2022-04-29,Strasbourg,Paris Saint-Germain,1.65,2.33
+3626168,2022-04-30,Lens,Nantes,2.28,1.4
+3626173,2022-04-30,Rennes,Saint-Étienne,1.76,0.7
+3626175,2022-05-01,Troyes,Lille,2.86,0.53
+3626167,2022-05-01,Brest,Clermont Foot,1.29,1.08
+3626169,2022-05-01,Lorient,Reims,1.88,1.57
+3626171,2022-05-01,Monaco,Angers,3.26,0.66
+3626172,2022-05-01,Montpellier,Metz,2.14,1.09
+3626166,2022-05-01,Bordeaux,Nice,0.3,2.69
+3626170,2022-05-01,Marseille,Lyon,1.4,2.43
+3626179,2022-05-06,Lille,Monaco,0.99,0.34
+3626177,2022-05-07,Brest,Strasbourg,0.43,2.08
+3626181,2022-05-08,Metz,Lyon,2.13,2.45
+3626176,2022-05-08,Angers,Bordeaux,2.88,0.78
+3626178,2022-05-08,Clermont Foot,Montpellier,2.23,1.24
+3626185,2022-05-08,Reims,Lens,0.51,1.85
+3626180,2022-05-08,Lorient,Marseille,0.24,1.63
+3626184,2022-05-08,Paris Saint-Germain,Troyes,2.47,1.75
+3626183,2022-05-11,Nice,Saint-Étienne,1.44,2.13
+3626182,2022-05-11,Nantes,Rennes,1.16,2.0
+3626186,2022-05-14,Bordeaux,Lorient,1.04,0.62
+3626187,2022-05-14,Lyon,Nantes,2.26,2.05
+3626188,2022-05-14,Metz,Angers,0.44,0.69
+3626189,2022-05-14,Monaco,Brest,3.15,1.88
+3626190,2022-05-14,Montpellier,Paris Saint-Germain,0.71,2.73
+3626191,2022-05-14,Nice,Lille,1.4,2.03
+3626192,2022-05-14,Rennes,Marseille,1.62,0.42
+3626193,2022-05-14,Saint-Étienne,Reims,1.61,2.07
+3626194,2022-05-14,Strasbourg,Clermont Foot,0.94,0.69
+3626195,2022-05-14,Troyes,Lens,0.27,0.82
+3626196,2022-05-21,Angers,Montpellier,2.74,1.63
+3626197,2022-05-21,Brest,Bordeaux,0.87,2.8
+3626198,2022-05-21,Clermont Foot,Lyon,2.36,1.98
+3626199,2022-05-21,Lens,Monaco,2.08,1.49
+3626200,2022-05-21,Lille,Rennes,1.79,1.21
+3626201,2022-05-21,Lorient,Troyes,1.23,0.41
+3626202,2022-05-21,Marseille,Strasbourg,2.43,1.11
+3626203,2022-05-21,Nantes,Saint-Étienne,1.98,1.58
+3626204,2022-05-21,Paris Saint-Germain,Metz,5.43,0.74
+3626205,2022-05-21,Reims,Nice,0.71,1.84

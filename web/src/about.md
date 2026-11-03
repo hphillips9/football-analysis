@@ -20,16 +20,22 @@ as a backup. Five past seasons plus the current one, about 1,900 matches.
 **The rating.** Each team has an **Elo rating**, starting at 1500. After a match
 the winner takes points from the loser — up to 35, scaled by how surprising the
 result was — and a draw nudges the higher-rated team down. Ratings carry across
-seasons, except that a newly promoted team restarts at **1350**: promoted sides
-are usually among the weakest in the league, not average. Home advantage is a flat **+130** added to the home team's rating.
+seasons, including for promoted teams, which come back on the rating they last
+had (a team new to the data starts at 1500). Restarting promoted teams lower
+was tested, but the gain was too small to keep. When ratings are updated, the
+home team gets a flat **+130** for home advantage.
 
 **The features.** Three numbers go into the model for each match:
 
 | Feature | What it is |
 |---|---|
-| Elo gap | home Elo + 130 − away Elo |
+| Elo gap | home Elo − away Elo |
 | xG difference, last 5 | each team's (xG for − xG against) over its last five games, home minus away |
 | Goals per game difference | same idea, season-to-date actual goals |
+
+The model learns home advantage for itself, so it isn't added to this feature. The
+"Elo gap" shown next to each prediction does include the +130, so it reads as how
+far ahead the home side is once home advantage is counted.
 
 **The model.** A logistic regression maps those three features to Home / Draw /
 Away probabilities, wrapped in probability calibration so a stated 60% really

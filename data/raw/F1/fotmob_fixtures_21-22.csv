@@ -1,0 +1,381 @@
+day,home,away,home_id,away_id,hg,ag
+2021-08-06,Monaco,Nantes,9829,9830,1,1
+2021-08-07,Lyon,Brest,9748,8521,1,1
+2021-08-07,Troyes,Paris Saint-Germain,10242,9847,1,2
+2021-08-08,Rennes,Lens,9851,8588,1,1
+2021-08-08,Bordeaux,Clermont Foot,9827,8311,0,2
+2021-08-08,Nice,Reims,9831,9837,0,0
+2021-08-08,Saint-Étienne,Lorient,9853,8689,1,1
+2021-08-08,Strasbourg,Angers,9848,8121,0,2
+2021-08-08,Metz,Lille,8550,8639,3,3
+2021-08-08,Montpellier,Marseille,10249,8592,2,3
+2021-08-13,Lorient,Monaco,8689,9829,1,0
+2021-08-14,Lille,Nice,8639,9831,0,4
+2021-08-14,Paris Saint-Germain,Strasbourg,9847,9848,4,2
+2021-08-15,Angers,Lyon,8121,9748,3,0
+2021-08-15,Brest,Rennes,8521,9851,1,1
+2021-08-15,Clermont Foot,Troyes,8311,10242,2,0
+2021-08-15,Nantes,Metz,9830,8550,2,0
+2021-08-15,Reims,Montpellier,9837,10249,3,3
+2021-08-15,Lens,Saint-Étienne,8588,9853,2,2
+2021-08-15,Marseille,Bordeaux,8592,9827,2,2
+2021-08-20,Brest,Paris Saint-Germain,8521,9847,2,4
+2021-08-21,Monaco,Lens,9829,8588,0,2
+2021-08-21,Saint-Étienne,Lille,9853,8639,1,1
+2021-08-22,Lyon,Clermont Foot,9748,8311,3,3
+2021-08-22,Bordeaux,Angers,9827,8121,1,1
+2021-08-22,Metz,Reims,8550,9837,1,1
+2021-08-22,Montpellier,Lorient,10249,8689,3,1
+2021-08-22,Strasbourg,Troyes,9848,10242,1,1
+2021-08-22,Rennes,Nantes,9851,9830,1,0
+2021-08-27,Nantes,Lyon,9830,9748,0,1
+2021-08-28,Nice,Bordeaux,9831,9827,4,0
+2021-08-28,Marseille,Saint-Étienne,8592,9853,3,1
+2021-08-29,Troyes,Monaco,10242,9829,1,2
+2021-08-29,Angers,Rennes,8121,9851,2,0
+2021-08-29,Clermont Foot,Metz,8311,8550,2,2
+2021-08-29,Lens,Lorient,8588,8689,2,2
+2021-08-29,Strasbourg,Brest,9848,8521,3,1
+2021-08-29,Lille,Montpellier,8639,10249,2,1
+2021-08-29,Reims,Paris Saint-Germain,9837,9847,0,2
+2021-09-10,Lorient,Lille,8689,8639,2,1
+2021-09-11,Paris Saint-Germain,Clermont Foot,9847,8311,4,0
+2021-09-11,Monaco,Marseille,9829,8592,0,2
+2021-09-12,Montpellier,Saint-Étienne,10249,9853,2,0
+2021-09-12,Bordeaux,Lens,9827,8588,2,3
+2021-09-12,Brest,Angers,8521,8121,1,1
+2021-09-12,Metz,Troyes,8550,10242,0,2
+2021-09-12,Rennes,Reims,9851,9837,0,2
+2021-09-12,Nantes,Nice,9830,9831,0,2
+2021-09-12,Lyon,Strasbourg,9748,9848,3,1
+2021-09-17,Strasbourg,Metz,9848,8550,3,0
+2021-09-18,Lens,Lille,8588,8639,1,0
+2021-09-18,Saint-Étienne,Bordeaux,9853,9827,1,2
+2021-09-19,Nice,Monaco,9831,9829,2,2
+2021-09-19,Angers,Nantes,8121,9830,1,4
+2021-09-19,Clermont Foot,Brest,8311,8521,1,1
+2021-09-19,Reims,Lorient,9837,8689,0,0
+2021-09-19,Troyes,Montpellier,10242,10249,1,1
+2021-09-19,Marseille,Rennes,8592,9851,2,0
+2021-09-19,Paris Saint-Germain,Lyon,9847,9748,2,1
+2021-09-22,Lille,Reims,8639,9837,2,1
+2021-09-22,Monaco,Saint-Étienne,9829,9853,3,1
+2021-09-22,Montpellier,Bordeaux,10249,9827,3,3
+2021-09-22,Nantes,Brest,9830,8521,3,1
+2021-09-22,Rennes,Clermont Foot,9851,8311,6,0
+2021-09-22,Angers,Marseille,8121,8592,0,0
+2021-09-22,Lens,Strasbourg,8588,9848,0,1
+2021-09-22,Lorient,Nice,8689,9831,1,0
+2021-09-22,Lyon,Troyes,9748,10242,3,1
+2021-09-22,Metz,Paris Saint-Germain,8550,9847,1,2
+2021-09-25,Saint-Étienne,Nice,9853,9831,0,3
+2021-09-25,Strasbourg,Lille,9848,8639,1,2
+2021-09-25,Lyon,Lorient,9748,8689,1,1
+2021-09-25,Paris Saint-Germain,Montpellier,9847,10249,2,0
+2021-09-26,Bordeaux,Rennes,9827,9851,1,1
+2021-09-26,Brest,Metz,8521,8550,1,2
+2021-09-26,Reims,Nantes,9837,9830,3,1
+2021-09-26,Troyes,Angers,10242,8121,1,1
+2021-09-26,Clermont Foot,Monaco,8311,9829,1,3
+2021-09-26,Marseille,Lens,8592,8588,2,3
+2021-10-01,Lens,Reims,8588,9837,2,0
+2021-10-02,Montpellier,Strasbourg,10249,9848,1,1
+2021-10-02,Nice,Brest,9831,8521,2,1
+2021-10-03,Rennes,Paris Saint-Germain,9851,9847,2,0
+2021-10-03,Angers,Metz,8121,8550,3,2
+2021-10-03,Lorient,Clermont Foot,8689,8311,1,1
+2021-10-03,Monaco,Bordeaux,9829,9827,3,0
+2021-10-03,Nantes,Troyes,9830,10242,2,0
+2021-10-03,Lille,Marseille,8639,8592,2,0
+2021-10-03,Saint-Étienne,Lyon,9853,9748,1,1
+2021-10-15,Paris Saint-Germain,Angers,9847,8121,2,1
+2021-10-16,Clermont Foot,Lille,8311,8639,1,0
+2021-10-16,Lyon,Monaco,9748,9829,2,0
+2021-10-17,Troyes,Nice,10242,9831,1,0
+2021-10-17,Bordeaux,Nantes,9827,9830,1,1
+2021-10-17,Brest,Reims,8521,9837,1,1
+2021-10-17,Metz,Rennes,8550,9851,0,3
+2021-10-17,Strasbourg,Saint-Étienne,9848,9853,5,1
+2021-10-17,Montpellier,Lens,10249,8588,1,0
+2021-10-17,Marseille,Lorient,8592,8689,4,1
+2021-10-22,Saint-Étienne,Angers,9853,8121,2,2
+2021-10-23,Nantes,Clermont Foot,9830,8311,2,1
+2021-10-23,Lille,Brest,8639,8521,1,1
+2021-10-24,Nice,Lyon,9831,9748,3,2
+2021-10-24,Lens,Metz,8588,8550,4,1
+2021-10-24,Lorient,Bordeaux,8689,9827,1,1
+2021-10-24,Reims,Troyes,9837,10242,1,2
+2021-10-24,Rennes,Strasbourg,9851,9848,1,0
+2021-10-24,Monaco,Montpellier,9829,10249,3,1
+2021-10-24,Marseille,Paris Saint-Germain,8592,9847,0,0
+2021-10-27,Nice,Marseille,9831,8592,1,1
+2021-10-29,Paris Saint-Germain,Lille,9847,8639,2,1
+2021-10-30,Metz,Saint-Étienne,8550,9853,1,1
+2021-10-30,Lyon,Lens,9748,8588,2,1
+2021-10-31,Angers,Nice,8121,9831,1,2
+2021-10-31,Bordeaux,Reims,9827,9837,3,2
+2021-10-31,Montpellier,Nantes,10249,9830,2,0
+2021-10-31,Strasbourg,Lorient,9848,8689,4,0
+2021-10-31,Troyes,Rennes,10242,9851,2,2
+2021-10-31,Brest,Monaco,8521,9829,2,0
+2021-10-31,Clermont Foot,Marseille,8311,8592,0,1
+2021-11-05,Lens,Troyes,8588,10242,4,0
+2021-11-06,Lille,Angers,8639,8121,1,1
+2021-11-06,Bordeaux,Paris Saint-Germain,9827,9847,2,3
+2021-11-07,Marseille,Metz,8592,8550,0,0
+2021-11-07,Lorient,Brest,8689,8521,1,2
+2021-11-07,Nantes,Strasbourg,9830,9848,2,2
+2021-11-07,Reims,Monaco,9837,9829,0,0
+2021-11-07,Saint-Étienne,Clermont Foot,9853,8311,3,2
+2021-11-07,Nice,Montpellier,9831,10249,0,1
+2021-11-07,Rennes,Lyon,9851,9748,4,1
+2021-11-19,Monaco,Lille,9829,8639,2,2
+2021-11-20,Paris Saint-Germain,Nantes,9847,9830,3,1
+2021-11-20,Rennes,Montpellier,9851,10249,2,0
+2021-11-21,Brest,Lens,8521,8588,4,0
+2021-11-21,Angers,Lorient,8121,8689,1,0
+2021-11-21,Metz,Bordeaux,8550,9827,3,3
+2021-11-21,Strasbourg,Reims,9848,9837,1,1
+2021-11-21,Troyes,Saint-Étienne,10242,9853,0,1
+2021-11-21,Clermont Foot,Nice,8311,9831,1,2
+2021-11-26,Lens,Angers,8588,8121,2,2
+2021-11-27,Lille,Nantes,8639,9830,1,1
+2021-11-27,Nice,Metz,9831,8550,0,1
+2021-11-28,Saint-Étienne,Paris Saint-Germain,9853,9847,1,3
+2021-11-28,Bordeaux,Brest,9827,8521,1,2
+2021-11-28,Lorient,Rennes,8689,9851,0,2
+2021-11-28,Monaco,Strasbourg,9829,9848,1,1
+2021-11-28,Reims,Clermont Foot,9837,8311,1,0
+2021-11-28,Montpellier,Lyon,10249,9748,0,1
+2021-11-28,Marseille,Troyes,8592,10242,1,0
+2021-12-01,Angers,Monaco,8121,9829,1,3
+2021-12-01,Brest,Saint-Étienne,8521,9853,1,0
+2021-12-01,Metz,Montpellier,8550,10249,1,3
+2021-12-01,Strasbourg,Bordeaux,9848,9827,5,2
+2021-12-01,Troyes,Lorient,10242,8689,2,0
+2021-12-01,Clermont Foot,Lens,8311,8588,2,2
+2021-12-01,Lyon,Reims,9748,9837,1,2
+2021-12-01,Nantes,Marseille,9830,8592,0,1
+2021-12-01,Rennes,Lille,9851,8639,1,2
+2021-12-01,Paris Saint-Germain,Nice,9847,9831,0,0
+2021-12-04,Marseille,Brest,8592,8521,1,2
+2021-12-04,Lille,Troyes,8639,10242,2,1
+2021-12-04,Lens,Paris Saint-Germain,8588,9847,1,1
+2021-12-05,Saint-Étienne,Rennes,9853,9851,0,5
+2021-12-05,Lorient,Nantes,8689,9830,0,1
+2021-12-05,Monaco,Metz,9829,8550,4,0
+2021-12-05,Montpellier,Clermont Foot,10249,8311,1,0
+2021-12-05,Reims,Angers,9837,8121,1,2
+2021-12-05,Nice,Strasbourg,9831,9848,0,3
+2021-12-05,Bordeaux,Lyon,9827,9748,2,2
+2021-12-10,Nantes,Lens,9830,8588,3,2
+2021-12-11,Brest,Montpellier,8521,10249,0,4
+2021-12-11,Reims,Saint-Étienne,9837,9853,2,0
+2021-12-12,Lille,Lyon,8639,9748,0,0
+2021-12-12,Angers,Clermont Foot,8121,8311,0,1
+2021-12-12,Metz,Lorient,8550,8689,4,1
+2021-12-12,Rennes,Nice,9851,9831,1,2
+2021-12-12,Troyes,Bordeaux,10242,9827,1,2
+2021-12-12,Strasbourg,Marseille,9848,8592,0,2
+2021-12-12,Paris Saint-Germain,Monaco,9847,9829,2,0
+2021-12-22,Bordeaux,Lille,9827,8639,2,3
+2021-12-22,Lorient,Paris Saint-Germain,8689,9847,1,1
+2021-12-22,Lyon,Metz,9748,8550,1,1
+2021-12-22,Marseille,Reims,8592,9837,1,1
+2021-12-22,Monaco,Rennes,9829,9851,2,1
+2021-12-22,Montpellier,Angers,10249,8121,4,1
+2021-12-22,Nice,Lens,9831,8588,2,1
+2021-12-22,Saint-Étienne,Nantes,9853,9830,0,1
+2021-12-22,Troyes,Brest,10242,8521,1,1
+2022-01-07,Bordeaux,Marseille,9827,8592,0,1
+2022-01-08,Lens,Rennes,8588,9851,1,0
+2022-01-09,Brest,Nice,8521,9831,0,3
+2022-01-09,Clermont Foot,Reims,8311,9837,0,0
+2022-01-09,Metz,Strasbourg,8550,9848,0,2
+2022-01-09,Nantes,Monaco,9830,9829,0,0
+2022-01-09,Lyon,Paris Saint-Germain,9748,9847,1,1
+2022-01-14,Nice,Nantes,9831,9830,2,1
+2022-01-15,Saint-Étienne,Lens,9853,8588,1,2
+2022-01-15,Paris Saint-Germain,Brest,9847,8521,2,0
+2022-01-16,Rennes,Bordeaux,9851,9827,6,0
+2022-01-16,Lorient,Angers,8689,8121,0,0
+2022-01-16,Monaco,Clermont Foot,9829,8311,4,0
+2022-01-16,Reims,Metz,9837,8550,0,1
+2022-01-16,Strasbourg,Montpellier,9848,10249,3,1
+2022-01-16,Troyes,Lyon,10242,9748,0,1
+2022-01-16,Marseille,Lille,8592,8639,1,1
+2022-01-19,Clermont Foot,Strasbourg,8311,9848,0,2
+2022-01-19,Lille,Lorient,8639,8689,3,1
+2022-01-19,Montpellier,Troyes,10249,10242,0,1
+2022-01-21,Lyon,Saint-Étienne,9748,9853,1,0
+2022-01-22,Brest,Lille,8521,8639,2,0
+2022-01-22,Lens,Marseille,8588,8592,0,2
+2022-01-23,Metz,Nice,8550,9831,0,2
+2022-01-23,Angers,Troyes,8121,10242,2,1
+2022-01-23,Bordeaux,Strasbourg,9827,9848,4,3
+2022-01-23,Clermont Foot,Rennes,8311,9851,2,1
+2022-01-23,Nantes,Lorient,9830,8689,4,2
+2022-01-23,Montpellier,Monaco,10249,9829,3,2
+2022-01-23,Paris Saint-Germain,Reims,9847,9837,4,0
+2022-01-26,Angers,Saint-Étienne,8121,9853,0,1
+2022-02-01,Lyon,Marseille,9748,8592,2,1
+2022-02-04,Marseille,Angers,8592,8121,5,2
+2022-02-05,Saint-Étienne,Montpellier,9853,10249,3,1
+2022-02-05,Monaco,Lyon,9829,9748,2,0
+2022-02-06,Lorient,Lens,8689,8588,2,0
+2022-02-06,Nice,Clermont Foot,9831,8311,0,1
+2022-02-06,Reims,Bordeaux,9837,9827,5,0
+2022-02-06,Strasbourg,Nantes,9848,9830,1,0
+2022-02-06,Troyes,Metz,10242,8550,0,0
+2022-02-06,Rennes,Brest,9851,8521,2,0
+2022-02-06,Lille,Paris Saint-Germain,8639,9847,1,5
+2022-02-11,Paris Saint-Germain,Rennes,9847,9851,1,0
+2022-02-12,Montpellier,Lille,10249,8639,0,1
+2022-02-12,Lyon,Nice,9748,9831,2,0
+2022-02-13,Monaco,Lorient,9829,8689,0,0
+2022-02-13,Angers,Strasbourg,8121,9848,0,1
+2022-02-13,Brest,Troyes,8521,10242,5,1
+2022-02-13,Clermont Foot,Saint-Étienne,8311,9853,1,2
+2022-02-13,Nantes,Reims,9830,9837,1,0
+2022-02-13,Lens,Bordeaux,8588,9827,3,2
+2022-02-13,Metz,Marseille,8550,8592,1,2
+2022-02-18,Lille,Metz,8639,8550,0,0
+2022-02-19,Lens,Lyon,8588,9748,1,1
+2022-02-19,Nantes,Paris Saint-Germain,9830,9847,3,1
+2022-02-20,Nice,Angers,9831,8121,1,0
+2022-02-20,Lorient,Montpellier,8689,10249,0,1
+2022-02-20,Reims,Brest,9837,8521,1,1
+2022-02-20,Rennes,Troyes,9851,10242,4,1
+2022-02-20,Saint-Étienne,Strasbourg,9853,9848,2,2
+2022-02-20,Bordeaux,Monaco,9827,9829,1,1
+2022-02-20,Marseille,Clermont Foot,8592,8311,0,2
+2022-02-25,Montpellier,Rennes,10249,9851,2,4
+2022-02-26,Strasbourg,Nice,9848,9831,0,0
+2022-02-26,Paris Saint-Germain,Saint-Étienne,9847,9853,3,1
+2022-02-27,Monaco,Reims,9829,9837,1,2
+2022-02-27,Angers,Lens,8121,8588,1,2
+2022-02-27,Brest,Lorient,8521,8689,0,1
+2022-02-27,Clermont Foot,Bordeaux,8311,9827,1,1
+2022-02-27,Metz,Nantes,8550,9830,0,0
+2022-02-27,Troyes,Marseille,10242,8592,1,1
+2022-02-27,Lyon,Lille,9748,8639,0,1
+2022-03-04,Lorient,Lyon,8689,9748,1,4
+2022-03-05,Lens,Brest,8588,8521,0,1
+2022-03-05,Nice,Paris Saint-Germain,9831,9847,1,0
+2022-03-06,Saint-Étienne,Metz,9853,8550,1,0
+2022-03-06,Bordeaux,Troyes,9827,10242,0,2
+2022-03-06,Nantes,Montpellier,9830,10249,2,0
+2022-03-06,Reims,Strasbourg,9837,9848,1,1
+2022-03-06,Rennes,Angers,9851,8121,2,0
+2022-03-06,Lille,Clermont Foot,8639,8311,4,0
+2022-03-06,Marseille,Monaco,8592,9829,0,1
+2022-03-11,Lille,Saint-Étienne,8639,9853,0,0
+2022-03-12,Montpellier,Nice,10249,9831,0,0
+2022-03-12,Troyes,Nantes,10242,9830,1,0
+2022-03-13,Paris Saint-Germain,Bordeaux,9847,9827,3,0
+2022-03-13,Angers,Reims,8121,9837,0,1
+2022-03-13,Clermont Foot,Lorient,8311,8689,0,2
+2022-03-13,Metz,Lens,8550,8588,0,0
+2022-03-13,Strasbourg,Monaco,9848,9829,1,0
+2022-03-13,Lyon,Rennes,9748,9851,2,4
+2022-03-13,Brest,Marseille,8521,8592,1,4
+2022-03-18,Saint-Étienne,Troyes,9853,10242,1,1
+2022-03-19,Lens,Clermont Foot,8588,8311,3,1
+2022-03-19,Nantes,Lille,9830,8639,0,1
+2022-03-20,Monaco,Paris Saint-Germain,9829,9847,3,0
+2022-03-20,Angers,Brest,8121,8521,1,0
+2022-03-20,Bordeaux,Montpellier,9827,10249,0,2
+2022-03-20,Lorient,Strasbourg,8689,9848,0,0
+2022-03-20,Rennes,Metz,9851,8550,6,1
+2022-03-20,Reims,Lyon,9837,9748,0,0
+2022-03-20,Marseille,Nice,8592,9831,2,1
+2022-04-02,Nice,Rennes,9831,9851,1,1
+2022-04-02,Lille,Bordeaux,8639,9827,0,0
+2022-04-03,Strasbourg,Lens,9848,8588,1,0
+2022-04-03,Clermont Foot,Nantes,8311,9830,2,3
+2022-04-03,Metz,Monaco,8550,9829,1,2
+2022-04-03,Montpellier,Brest,10249,8521,1,2
+2022-04-03,Saint-Étienne,Marseille,9853,8592,2,4
+2022-04-03,Troyes,Reims,10242,9837,1,0
+2022-04-03,Lyon,Angers,9748,8121,3,2
+2022-04-03,Paris Saint-Germain,Lorient,9847,8689,5,1
+2022-04-08,Lorient,Saint-Étienne,8689,9853,6,2
+2022-04-09,Reims,Rennes,9837,9851,2,3
+2022-04-09,Clermont Foot,Paris Saint-Germain,8311,9847,1,6
+2022-04-10,Bordeaux,Metz,9827,8550,3,1
+2022-04-10,Angers,Lille,8121,8639,1,1
+2022-04-10,Brest,Nantes,8521,9830,1,1
+2022-04-10,Monaco,Troyes,9829,10242,2,1
+2022-04-10,Lens,Nice,8588,9831,3,0
+2022-04-10,Strasbourg,Lyon,9848,9748,1,1
+2022-04-10,Marseille,Montpellier,8592,10249,2,0
+2022-04-15,Rennes,Monaco,9851,9829,2,3
+2022-04-16,Saint-Étienne,Brest,9853,8521,2,1
+2022-04-16,Lille,Lens,8639,8588,1,2
+2022-04-17,Nice,Lorient,9831,8689,2,1
+2022-04-17,Metz,Clermont Foot,8550,8311,1,1
+2022-04-17,Montpellier,Reims,10249,9837,0,0
+2022-04-17,Nantes,Angers,9830,8121,1,1
+2022-04-17,Troyes,Strasbourg,10242,9848,1,1
+2022-04-17,Lyon,Bordeaux,9748,9827,6,1
+2022-04-17,Paris Saint-Germain,Marseille,9847,8592,2,1
+2022-04-20,Bordeaux,Saint-Étienne,9827,9853,2,2
+2022-04-20,Lorient,Metz,8689,8550,1,0
+2022-04-20,Monaco,Nice,9829,9831,1,0
+2022-04-20,Reims,Lille,9837,8639,2,1
+2022-04-20,Troyes,Clermont Foot,10242,8311,0,1
+2022-04-20,Angers,Paris Saint-Germain,8121,9847,0,3
+2022-04-20,Brest,Lyon,8521,9748,2,1
+2022-04-20,Lens,Montpellier,8588,10249,2,0
+2022-04-20,Marseille,Nantes,8592,9830,3,2
+2022-04-20,Strasbourg,Rennes,9848,9851,2,1
+2022-04-23,Lyon,Montpellier,9748,10249,5,2
+2022-04-23,Saint-Étienne,Monaco,9853,9829,1,4
+2022-04-23,Paris Saint-Germain,Lens,9847,8588,1,1
+2022-04-24,Rennes,Lorient,9851,8689,5,0
+2022-04-24,Clermont Foot,Angers,8311,8121,2,2
+2022-04-24,Metz,Brest,8550,8521,0,1
+2022-04-24,Nantes,Bordeaux,9830,9827,5,3
+2022-04-24,Nice,Troyes,9831,10242,1,0
+2022-04-24,Lille,Strasbourg,8639,9848,1,0
+2022-04-24,Reims,Marseille,9837,8592,0,1
+2022-04-29,Strasbourg,Paris Saint-Germain,9848,9847,3,3
+2022-04-30,Lens,Nantes,8588,9830,2,2
+2022-04-30,Rennes,Saint-Étienne,9851,9853,2,0
+2022-05-01,Troyes,Lille,10242,8639,3,0
+2022-05-01,Brest,Clermont Foot,8521,8311,2,0
+2022-05-01,Lorient,Reims,8689,9837,1,2
+2022-05-01,Monaco,Angers,9829,8121,2,0
+2022-05-01,Montpellier,Metz,10249,8550,2,2
+2022-05-01,Bordeaux,Nice,9827,9831,0,1
+2022-05-01,Marseille,Lyon,8592,9748,0,3
+2022-05-06,Lille,Monaco,8639,9829,1,2
+2022-05-07,Brest,Strasbourg,8521,9848,0,1
+2022-05-08,Metz,Lyon,8550,9748,3,2
+2022-05-08,Angers,Bordeaux,8121,9827,4,1
+2022-05-08,Clermont Foot,Montpellier,8311,10249,2,1
+2022-05-08,Reims,Lens,9837,8588,1,2
+2022-05-08,Lorient,Marseille,8689,8592,0,3
+2022-05-08,Paris Saint-Germain,Troyes,9847,10242,2,2
+2022-05-11,Nice,Saint-Étienne,9831,9853,4,2
+2022-05-11,Nantes,Rennes,9830,9851,2,1
+2022-05-14,Bordeaux,Lorient,9827,8689,0,0
+2022-05-14,Lyon,Nantes,9748,9830,3,2
+2022-05-14,Metz,Angers,8550,8121,1,0
+2022-05-14,Monaco,Brest,9829,8521,4,2
+2022-05-14,Montpellier,Paris Saint-Germain,10249,9847,0,4
+2022-05-14,Nice,Lille,9831,8639,1,3
+2022-05-14,Rennes,Marseille,9851,8592,2,0
+2022-05-14,Saint-Étienne,Reims,9853,9837,1,2
+2022-05-14,Strasbourg,Clermont Foot,9848,8311,1,0
+2022-05-14,Troyes,Lens,10242,8588,1,3
+2022-05-21,Angers,Montpellier,8121,10249,2,0
+2022-05-21,Brest,Bordeaux,8521,9827,2,4
+2022-05-21,Clermont Foot,Lyon,8311,9748,1,2
+2022-05-21,Lens,Monaco,8588,9829,2,2
+2022-05-21,Lille,Rennes,8639,9851,2,2
+2022-05-21,Lorient,Troyes,8689,10242,1,1
+2022-05-21,Marseille,Strasbourg,8592,9848,4,0
+2022-05-21,Nantes,Saint-Étienne,9830,9853,1,1
+2022-05-21,Paris Saint-Germain,Metz,9847,8550,5,0
+2022-05-21,Reims,Nice,9837,9831,2,3

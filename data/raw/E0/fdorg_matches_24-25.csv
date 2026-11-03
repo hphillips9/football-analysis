@@ -1,0 +1,381 @@
+day,home,away,home_id,away_id,hg,ag
+2024-08-16,Manchester United FC,Fulham FC,66,63,1,0
+2024-08-17,Ipswich Town FC,Liverpool FC,349,64,0,2
+2024-08-17,Arsenal FC,Wolverhampton Wanderers FC,57,76,2,0
+2024-08-17,Everton FC,Brighton & Hove Albion FC,62,397,0,3
+2024-08-17,Newcastle United FC,Southampton FC,67,340,1,0
+2024-08-17,Nottingham Forest FC,AFC Bournemouth,351,1044,1,1
+2024-08-17,West Ham United FC,Aston Villa FC,563,58,1,2
+2024-08-18,Brentford FC,Crystal Palace FC,402,354,2,1
+2024-08-18,Chelsea FC,Manchester City FC,61,65,0,2
+2024-08-19,Leicester City FC,Tottenham Hotspur FC,338,73,1,1
+2024-08-24,Brighton & Hove Albion FC,Manchester United FC,397,66,2,1
+2024-08-24,Crystal Palace FC,West Ham United FC,354,563,0,2
+2024-08-24,Fulham FC,Leicester City FC,63,338,2,1
+2024-08-24,Manchester City FC,Ipswich Town FC,65,349,4,1
+2024-08-24,Southampton FC,Nottingham Forest FC,340,351,0,1
+2024-08-24,Tottenham Hotspur FC,Everton FC,73,62,4,0
+2024-08-24,Aston Villa FC,Arsenal FC,58,57,0,2
+2024-08-25,AFC Bournemouth,Newcastle United FC,1044,67,1,1
+2024-08-25,Wolverhampton Wanderers FC,Chelsea FC,76,61,2,6
+2024-08-25,Liverpool FC,Brentford FC,64,402,2,0
+2024-08-31,Arsenal FC,Brighton & Hove Albion FC,57,397,1,1
+2024-08-31,Brentford FC,Southampton FC,402,340,3,1
+2024-08-31,Everton FC,AFC Bournemouth,62,1044,2,3
+2024-08-31,Ipswich Town FC,Fulham FC,349,63,1,1
+2024-08-31,Leicester City FC,Aston Villa FC,338,58,1,2
+2024-08-31,Nottingham Forest FC,Wolverhampton Wanderers FC,351,76,1,1
+2024-08-31,West Ham United FC,Manchester City FC,563,65,1,3
+2024-09-01,Chelsea FC,Crystal Palace FC,61,354,1,1
+2024-09-01,Newcastle United FC,Tottenham Hotspur FC,67,73,2,1
+2024-09-01,Manchester United FC,Liverpool FC,66,64,0,3
+2024-09-14,Southampton FC,Manchester United FC,340,66,0,3
+2024-09-14,Brighton & Hove Albion FC,Ipswich Town FC,397,349,0,0
+2024-09-14,Crystal Palace FC,Leicester City FC,354,338,2,2
+2024-09-14,Fulham FC,West Ham United FC,63,563,1,1
+2024-09-14,Liverpool FC,Nottingham Forest FC,64,351,0,1
+2024-09-14,Manchester City FC,Brentford FC,65,402,2,1
+2024-09-14,Aston Villa FC,Everton FC,58,62,3,2
+2024-09-14,AFC Bournemouth,Chelsea FC,1044,61,0,1
+2024-09-15,Tottenham Hotspur FC,Arsenal FC,73,57,0,1
+2024-09-15,Wolverhampton Wanderers FC,Newcastle United FC,76,67,1,2
+2024-09-21,West Ham United FC,Chelsea FC,563,61,0,3
+2024-09-21,Aston Villa FC,Wolverhampton Wanderers FC,58,76,3,1
+2024-09-21,Fulham FC,Newcastle United FC,63,67,3,1
+2024-09-21,Leicester City FC,Everton FC,338,62,1,1
+2024-09-21,Liverpool FC,AFC Bournemouth,64,1044,3,0
+2024-09-21,Southampton FC,Ipswich Town FC,340,349,1,1
+2024-09-21,Tottenham Hotspur FC,Brentford FC,73,402,3,1
+2024-09-21,Crystal Palace FC,Manchester United FC,354,66,0,0
+2024-09-22,Brighton & Hove Albion FC,Nottingham Forest FC,397,351,2,2
+2024-09-22,Manchester City FC,Arsenal FC,65,57,2,2
+2024-09-28,Newcastle United FC,Manchester City FC,67,65,1,1
+2024-09-28,Arsenal FC,Leicester City FC,57,338,4,2
+2024-09-28,Brentford FC,West Ham United FC,402,563,1,1
+2024-09-28,Chelsea FC,Brighton & Hove Albion FC,61,397,4,2
+2024-09-28,Everton FC,Crystal Palace FC,62,354,2,1
+2024-09-28,Nottingham Forest FC,Fulham FC,351,63,0,1
+2024-09-28,Wolverhampton Wanderers FC,Liverpool FC,76,64,1,2
+2024-09-29,Ipswich Town FC,Aston Villa FC,349,58,2,2
+2024-09-29,Manchester United FC,Tottenham Hotspur FC,66,73,0,3
+2024-09-30,AFC Bournemouth,Southampton FC,1044,340,3,1
+2024-10-05,Crystal Palace FC,Liverpool FC,354,64,0,1
+2024-10-05,Arsenal FC,Southampton FC,57,340,3,1
+2024-10-05,Brentford FC,Wolverhampton Wanderers FC,402,76,5,3
+2024-10-05,Leicester City FC,AFC Bournemouth,338,1044,1,0
+2024-10-05,Manchester City FC,Fulham FC,65,63,3,2
+2024-10-05,West Ham United FC,Ipswich Town FC,563,349,4,1
+2024-10-05,Everton FC,Newcastle United FC,62,67,0,0
+2024-10-06,Aston Villa FC,Manchester United FC,58,66,0,0
+2024-10-06,Chelsea FC,Nottingham Forest FC,61,351,1,1
+2024-10-06,Brighton & Hove Albion FC,Tottenham Hotspur FC,397,73,3,2
+2024-10-19,Tottenham Hotspur FC,West Ham United FC,73,563,4,1
+2024-10-19,Fulham FC,Aston Villa FC,63,58,1,3
+2024-10-19,Ipswich Town FC,Everton FC,349,62,0,2
+2024-10-19,Manchester United FC,Brentford FC,66,402,2,1
+2024-10-19,Newcastle United FC,Brighton & Hove Albion FC,67,397,0,1
+2024-10-19,Southampton FC,Leicester City FC,340,338,2,3
+2024-10-19,AFC Bournemouth,Arsenal FC,1044,57,2,0
+2024-10-20,Wolverhampton Wanderers FC,Manchester City FC,76,65,1,2
+2024-10-20,Liverpool FC,Chelsea FC,64,61,2,1
+2024-10-21,Nottingham Forest FC,Crystal Palace FC,351,354,1,0
+2024-10-25,Leicester City FC,Nottingham Forest FC,338,351,1,3
+2024-10-26,Aston Villa FC,AFC Bournemouth,58,1044,1,1
+2024-10-26,Brentford FC,Ipswich Town FC,402,349,4,3
+2024-10-26,Brighton & Hove Albion FC,Wolverhampton Wanderers FC,397,76,2,2
+2024-10-26,Manchester City FC,Southampton FC,65,340,1,0
+2024-10-26,Everton FC,Fulham FC,62,63,1,1
+2024-10-27,Chelsea FC,Newcastle United FC,61,67,2,1
+2024-10-27,Crystal Palace FC,Tottenham Hotspur FC,354,73,1,0
+2024-10-27,West Ham United FC,Manchester United FC,563,66,2,1
+2024-10-27,Arsenal FC,Liverpool FC,57,64,2,2
+2024-11-02,Newcastle United FC,Arsenal FC,67,57,1,0
+2024-11-02,AFC Bournemouth,Manchester City FC,1044,65,2,1
+2024-11-02,Ipswich Town FC,Leicester City FC,349,338,1,1
+2024-11-02,Liverpool FC,Brighton & Hove Albion FC,64,397,2,1
+2024-11-02,Nottingham Forest FC,West Ham United FC,351,563,3,0
+2024-11-02,Southampton FC,Everton FC,340,62,1,0
+2024-11-02,Wolverhampton Wanderers FC,Crystal Palace FC,76,354,2,2
+2024-11-03,Tottenham Hotspur FC,Aston Villa FC,73,58,4,1
+2024-11-03,Manchester United FC,Chelsea FC,66,61,1,1
+2024-11-04,Fulham FC,Brentford FC,63,402,2,1
+2024-11-09,Brentford FC,AFC Bournemouth,402,1044,3,2
+2024-11-09,Crystal Palace FC,Fulham FC,354,63,0,2
+2024-11-09,West Ham United FC,Everton FC,563,62,0,0
+2024-11-09,Wolverhampton Wanderers FC,Southampton FC,76,340,2,0
+2024-11-09,Brighton & Hove Albion FC,Manchester City FC,397,65,2,1
+2024-11-09,Liverpool FC,Aston Villa FC,64,58,2,0
+2024-11-10,Manchester United FC,Leicester City FC,66,338,3,0
+2024-11-10,Nottingham Forest FC,Newcastle United FC,351,67,1,3
+2024-11-10,Tottenham Hotspur FC,Ipswich Town FC,73,349,1,2
+2024-11-10,Chelsea FC,Arsenal FC,61,57,1,1
+2024-11-23,Leicester City FC,Chelsea FC,338,61,1,2
+2024-11-23,AFC Bournemouth,Brighton & Hove Albion FC,1044,397,1,2
+2024-11-23,Arsenal FC,Nottingham Forest FC,57,351,3,0
+2024-11-23,Aston Villa FC,Crystal Palace FC,58,354,2,2
+2024-11-23,Everton FC,Brentford FC,62,402,0,0
+2024-11-23,Fulham FC,Wolverhampton Wanderers FC,63,76,1,4
+2024-11-23,Manchester City FC,Tottenham Hotspur FC,65,73,0,4
+2024-11-24,Southampton FC,Liverpool FC,340,64,2,3
+2024-11-24,Ipswich Town FC,Manchester United FC,349,66,1,1
+2024-11-25,Newcastle United FC,West Ham United FC,67,563,0,2
+2024-11-29,Brighton & Hove Albion FC,Southampton FC,397,340,1,1
+2024-11-30,Brentford FC,Leicester City FC,402,338,4,1
+2024-11-30,Crystal Palace FC,Newcastle United FC,354,67,1,1
+2024-11-30,Nottingham Forest FC,Ipswich Town FC,351,349,1,0
+2024-11-30,Wolverhampton Wanderers FC,AFC Bournemouth,76,1044,2,4
+2024-11-30,West Ham United FC,Arsenal FC,563,57,2,5
+2024-12-01,Chelsea FC,Aston Villa FC,61,58,3,0
+2024-12-01,Manchester United FC,Everton FC,66,62,4,0
+2024-12-01,Tottenham Hotspur FC,Fulham FC,73,63,1,1
+2024-12-01,Liverpool FC,Manchester City FC,64,65,2,0
+2024-12-03,Ipswich Town FC,Crystal Palace FC,349,354,0,1
+2024-12-03,Leicester City FC,West Ham United FC,338,563,3,1
+2024-12-04,Everton FC,Wolverhampton Wanderers FC,62,76,4,0
+2024-12-04,Manchester City FC,Nottingham Forest FC,65,351,3,0
+2024-12-04,Newcastle United FC,Liverpool FC,67,64,3,3
+2024-12-04,Southampton FC,Chelsea FC,340,61,1,5
+2024-12-04,Arsenal FC,Manchester United FC,57,66,2,0
+2024-12-04,Aston Villa FC,Brentford FC,58,402,3,1
+2024-12-05,Fulham FC,Brighton & Hove Albion FC,63,397,3,1
+2024-12-05,AFC Bournemouth,Tottenham Hotspur FC,1044,73,1,0
+2024-12-07,Aston Villa FC,Southampton FC,58,340,1,0
+2024-12-07,Brentford FC,Newcastle United FC,402,67,4,2
+2024-12-07,Crystal Palace FC,Manchester City FC,354,65,2,2
+2024-12-07,Manchester United FC,Nottingham Forest FC,66,351,2,3
+2024-12-08,Fulham FC,Arsenal FC,63,57,1,1
+2024-12-08,Ipswich Town FC,AFC Bournemouth,349,1044,1,2
+2024-12-08,Leicester City FC,Brighton & Hove Albion FC,338,397,2,2
+2024-12-08,Tottenham Hotspur FC,Chelsea FC,73,61,3,4
+2024-12-09,West Ham United FC,Wolverhampton Wanderers FC,563,76,2,1
+2024-12-14,Arsenal FC,Everton FC,57,62,0,0
+2024-12-14,Liverpool FC,Fulham FC,64,63,2,2
+2024-12-14,Newcastle United FC,Leicester City FC,67,338,4,0
+2024-12-14,Wolverhampton Wanderers FC,Ipswich Town FC,76,349,1,2
+2024-12-14,Nottingham Forest FC,Aston Villa FC,351,58,2,1
+2024-12-15,Brighton & Hove Albion FC,Crystal Palace FC,397,354,1,3
+2024-12-15,Manchester City FC,Manchester United FC,65,66,1,2
+2024-12-15,Chelsea FC,Brentford FC,61,402,2,1
+2024-12-15,Southampton FC,Tottenham Hotspur FC,340,73,0,5
+2024-12-16,AFC Bournemouth,West Ham United FC,1044,563,1,1
+2024-12-21,Aston Villa FC,Manchester City FC,58,65,2,1
+2024-12-21,Brentford FC,Nottingham Forest FC,402,351,0,2
+2024-12-21,Ipswich Town FC,Newcastle United FC,349,67,0,4
+2024-12-21,West Ham United FC,Brighton & Hove Albion FC,563,397,1,1
+2024-12-21,Crystal Palace FC,Arsenal FC,354,57,1,5
+2024-12-22,Everton FC,Chelsea FC,62,61,0,0
+2024-12-22,Fulham FC,Southampton FC,63,340,0,0
+2024-12-22,Leicester City FC,Wolverhampton Wanderers FC,338,76,0,3
+2024-12-22,Manchester United FC,AFC Bournemouth,66,1044,0,3
+2024-12-22,Tottenham Hotspur FC,Liverpool FC,73,64,3,6
+2024-12-26,Manchester City FC,Everton FC,65,62,1,1
+2024-12-26,AFC Bournemouth,Crystal Palace FC,1044,354,0,0
+2024-12-26,Chelsea FC,Fulham FC,61,63,1,2
+2024-12-26,Newcastle United FC,Aston Villa FC,67,58,3,0
+2024-12-26,Nottingham Forest FC,Tottenham Hotspur FC,351,73,1,0
+2024-12-26,Southampton FC,West Ham United FC,340,563,0,1
+2024-12-26,Wolverhampton Wanderers FC,Manchester United FC,76,66,2,0
+2024-12-26,Liverpool FC,Leicester City FC,64,338,3,1
+2024-12-27,Brighton & Hove Albion FC,Brentford FC,397,402,0,0
+2024-12-27,Arsenal FC,Ipswich Town FC,57,349,1,0
+2024-12-29,Leicester City FC,Manchester City FC,338,65,0,2
+2024-12-29,Crystal Palace FC,Southampton FC,354,340,2,1
+2024-12-29,Everton FC,Nottingham Forest FC,62,351,0,2
+2024-12-29,Fulham FC,AFC Bournemouth,63,1044,2,2
+2024-12-29,Tottenham Hotspur FC,Wolverhampton Wanderers FC,73,76,2,2
+2024-12-29,West Ham United FC,Liverpool FC,563,64,0,5
+2024-12-30,Aston Villa FC,Brighton & Hove Albion FC,58,397,2,2
+2024-12-30,Ipswich Town FC,Chelsea FC,349,61,2,0
+2024-12-30,Manchester United FC,Newcastle United FC,66,67,0,2
+2025-01-01,Brentford FC,Arsenal FC,402,57,1,3
+2025-01-04,Tottenham Hotspur FC,Newcastle United FC,73,67,1,2
+2025-01-04,Southampton FC,Brentford FC,340,402,0,5
+2025-01-04,Crystal Palace FC,Chelsea FC,354,61,1,1
+2025-01-04,AFC Bournemouth,Everton FC,1044,62,1,0
+2025-01-04,Aston Villa FC,Leicester City FC,58,338,2,1
+2025-01-04,Manchester City FC,West Ham United FC,65,563,4,1
+2025-01-04,Brighton & Hove Albion FC,Arsenal FC,397,57,1,1
+2025-01-05,Fulham FC,Ipswich Town FC,63,349,2,2
+2025-01-05,Liverpool FC,Manchester United FC,64,66,2,2
+2025-01-06,Wolverhampton Wanderers FC,Nottingham Forest FC,76,351,0,3
+2025-01-14,West Ham United FC,Fulham FC,563,63,3,2
+2025-01-14,Brentford FC,Manchester City FC,402,65,2,2
+2025-01-14,Chelsea FC,AFC Bournemouth,61,1044,2,2
+2025-01-14,Nottingham Forest FC,Liverpool FC,351,64,1,1
+2025-01-15,Everton FC,Aston Villa FC,62,58,0,1
+2025-01-15,Leicester City FC,Crystal Palace FC,338,354,0,2
+2025-01-15,Newcastle United FC,Wolverhampton Wanderers FC,67,76,3,0
+2025-01-15,Arsenal FC,Tottenham Hotspur FC,57,73,2,1
+2025-01-16,Ipswich Town FC,Brighton & Hove Albion FC,349,397,0,2
+2025-01-16,Manchester United FC,Southampton FC,66,340,3,1
+2025-01-18,Newcastle United FC,AFC Bournemouth,67,1044,1,4
+2025-01-18,West Ham United FC,Crystal Palace FC,563,354,0,2
+2025-01-18,Leicester City FC,Fulham FC,338,63,0,2
+2025-01-18,Brentford FC,Liverpool FC,402,64,0,2
+2025-01-18,Arsenal FC,Aston Villa FC,57,58,2,2
+2025-01-19,Manchester United FC,Brighton & Hove Albion FC,66,397,1,3
+2025-01-19,Nottingham Forest FC,Southampton FC,351,340,3,2
+2025-01-19,Everton FC,Tottenham Hotspur FC,62,73,3,2
+2025-01-19,Ipswich Town FC,Manchester City FC,349,65,0,6
+2025-01-20,Chelsea FC,Wolverhampton Wanderers FC,61,76,3,1
+2025-01-25,Liverpool FC,Ipswich Town FC,64,349,4,1
+2025-01-25,Wolverhampton Wanderers FC,Arsenal FC,76,57,0,1
+2025-01-25,Brighton & Hove Albion FC,Everton FC,397,62,0,1
+2025-01-25,Southampton FC,Newcastle United FC,340,67,1,3
+2025-01-25,AFC Bournemouth,Nottingham Forest FC,1044,351,5,0
+2025-01-25,Manchester City FC,Chelsea FC,65,61,3,1
+2025-01-26,Crystal Palace FC,Brentford FC,354,402,1,2
+2025-01-26,Tottenham Hotspur FC,Leicester City FC,73,338,1,2
+2025-01-26,Aston Villa FC,West Ham United FC,58,563,1,1
+2025-01-26,Fulham FC,Manchester United FC,63,66,0,1
+2025-02-01,Nottingham Forest FC,Brighton & Hove Albion FC,351,397,7,0
+2025-02-01,Newcastle United FC,Fulham FC,67,63,1,2
+2025-02-01,Everton FC,Leicester City FC,62,338,4,0
+2025-02-01,AFC Bournemouth,Liverpool FC,1044,64,0,2
+2025-02-01,Ipswich Town FC,Southampton FC,349,340,1,2
+2025-02-01,Wolverhampton Wanderers FC,Aston Villa FC,76,58,2,0
+2025-02-02,Manchester United FC,Crystal Palace FC,66,354,0,2
+2025-02-02,Brentford FC,Tottenham Hotspur FC,402,73,0,2
+2025-02-02,Arsenal FC,Manchester City FC,57,65,5,1
+2025-02-03,Chelsea FC,West Ham United FC,61,563,2,1
+2025-02-12,Everton FC,Liverpool FC,62,64,2,2
+2025-02-14,Brighton & Hove Albion FC,Chelsea FC,397,61,3,0
+2025-02-15,Leicester City FC,Arsenal FC,338,57,0,2
+2025-02-15,Southampton FC,AFC Bournemouth,340,1044,1,3
+2025-02-15,West Ham United FC,Brentford FC,563,402,0,1
+2025-02-15,Aston Villa FC,Ipswich Town FC,58,349,1,1
+2025-02-15,Manchester City FC,Newcastle United FC,65,67,4,0
+2025-02-15,Fulham FC,Nottingham Forest FC,63,351,2,1
+2025-02-15,Crystal Palace FC,Everton FC,354,62,1,2
+2025-02-16,Liverpool FC,Wolverhampton Wanderers FC,64,76,2,1
+2025-02-16,Tottenham Hotspur FC,Manchester United FC,73,66,1,0
+2025-02-19,Aston Villa FC,Liverpool FC,58,64,2,2
+2025-02-21,Leicester City FC,Brentford FC,338,402,0,4
+2025-02-22,Everton FC,Manchester United FC,62,66,2,2
+2025-02-22,Ipswich Town FC,Tottenham Hotspur FC,349,73,1,4
+2025-02-22,Fulham FC,Crystal Palace FC,63,354,0,2
+2025-02-22,Arsenal FC,West Ham United FC,57,563,0,1
+2025-02-22,AFC Bournemouth,Wolverhampton Wanderers FC,1044,76,0,1
+2025-02-22,Southampton FC,Brighton & Hove Albion FC,340,397,0,4
+2025-02-22,Aston Villa FC,Chelsea FC,58,61,2,1
+2025-02-23,Newcastle United FC,Nottingham Forest FC,67,351,4,3
+2025-02-23,Manchester City FC,Liverpool FC,65,64,0,2
+2025-02-25,Brighton & Hove Albion FC,AFC Bournemouth,397,1044,2,1
+2025-02-25,Crystal Palace FC,Aston Villa FC,354,58,4,1
+2025-02-25,Wolverhampton Wanderers FC,Fulham FC,76,63,1,2
+2025-02-25,Chelsea FC,Southampton FC,61,340,4,0
+2025-02-26,Nottingham Forest FC,Arsenal FC,351,57,0,0
+2025-02-26,Brentford FC,Everton FC,402,62,1,1
+2025-02-26,Tottenham Hotspur FC,Manchester City FC,73,65,0,1
+2025-02-26,Manchester United FC,Ipswich Town FC,66,349,3,2
+2025-02-26,Liverpool FC,Newcastle United FC,64,67,2,0
+2025-02-27,West Ham United FC,Leicester City FC,563,338,2,0
+2025-03-08,Nottingham Forest FC,Manchester City FC,351,65,1,0
+2025-03-08,Brighton & Hove Albion FC,Fulham FC,397,63,2,1
+2025-03-08,Crystal Palace FC,Ipswich Town FC,354,349,1,0
+2025-03-08,Liverpool FC,Southampton FC,64,340,3,1
+2025-03-08,Brentford FC,Aston Villa FC,402,58,0,1
+2025-03-08,Wolverhampton Wanderers FC,Everton FC,76,62,1,1
+2025-03-09,Tottenham Hotspur FC,AFC Bournemouth,73,1044,2,2
+2025-03-09,Chelsea FC,Leicester City FC,61,338,1,0
+2025-03-09,Manchester United FC,Arsenal FC,66,57,1,1
+2025-03-10,West Ham United FC,Newcastle United FC,563,67,0,1
+2025-03-15,Everton FC,West Ham United FC,62,563,1,1
+2025-03-15,Ipswich Town FC,Nottingham Forest FC,349,351,2,4
+2025-03-15,Manchester City FC,Brighton & Hove Albion FC,65,397,2,2
+2025-03-15,Southampton FC,Wolverhampton Wanderers FC,340,76,1,2
+2025-03-15,AFC Bournemouth,Brentford FC,1044,402,1,2
+2025-03-16,Arsenal FC,Chelsea FC,57,61,1,0
+2025-03-16,Fulham FC,Tottenham Hotspur FC,63,73,2,0
+2025-03-16,Leicester City FC,Manchester United FC,338,66,0,3
+2025-04-01,Arsenal FC,Fulham FC,57,63,2,1
+2025-04-01,Wolverhampton Wanderers FC,West Ham United FC,76,563,1,0
+2025-04-01,Nottingham Forest FC,Manchester United FC,351,66,1,0
+2025-04-02,AFC Bournemouth,Ipswich Town FC,1044,349,1,2
+2025-04-02,Brighton & Hove Albion FC,Aston Villa FC,397,58,0,3
+2025-04-02,Manchester City FC,Leicester City FC,65,338,2,0
+2025-04-02,Newcastle United FC,Brentford FC,67,402,2,1
+2025-04-02,Southampton FC,Crystal Palace FC,340,354,1,1
+2025-04-02,Liverpool FC,Everton FC,64,62,1,0
+2025-04-03,Chelsea FC,Tottenham Hotspur FC,61,73,1,0
+2025-04-05,Everton FC,Arsenal FC,62,57,1,1
+2025-04-05,Crystal Palace FC,Brighton & Hove Albion FC,354,397,2,1
+2025-04-05,Ipswich Town FC,Wolverhampton Wanderers FC,349,76,1,2
+2025-04-05,West Ham United FC,AFC Bournemouth,563,1044,2,2
+2025-04-05,Aston Villa FC,Nottingham Forest FC,58,351,2,1
+2025-04-06,Brentford FC,Chelsea FC,402,61,0,0
+2025-04-06,Fulham FC,Liverpool FC,63,64,3,2
+2025-04-06,Tottenham Hotspur FC,Southampton FC,73,340,3,1
+2025-04-06,Manchester United FC,Manchester City FC,66,65,0,0
+2025-04-07,Leicester City FC,Newcastle United FC,338,67,0,3
+2025-04-12,Manchester City FC,Crystal Palace FC,65,354,5,2
+2025-04-12,Brighton & Hove Albion FC,Leicester City FC,397,338,2,2
+2025-04-12,Nottingham Forest FC,Everton FC,351,62,0,1
+2025-04-12,Southampton FC,Aston Villa FC,340,58,0,3
+2025-04-12,Arsenal FC,Brentford FC,57,402,1,1
+2025-04-13,Chelsea FC,Ipswich Town FC,61,349,2,2
+2025-04-13,Liverpool FC,West Ham United FC,64,563,2,1
+2025-04-13,Wolverhampton Wanderers FC,Tottenham Hotspur FC,76,73,4,2
+2025-04-13,Newcastle United FC,Manchester United FC,67,66,4,1
+2025-04-14,AFC Bournemouth,Fulham FC,1044,63,1,0
+2025-04-16,Newcastle United FC,Crystal Palace FC,67,354,5,0
+2025-04-19,Brentford FC,Brighton & Hove Albion FC,402,397,4,2
+2025-04-19,Crystal Palace FC,AFC Bournemouth,354,1044,0,0
+2025-04-19,Everton FC,Manchester City FC,62,65,0,2
+2025-04-19,West Ham United FC,Southampton FC,563,340,1,1
+2025-04-19,Aston Villa FC,Newcastle United FC,58,67,4,1
+2025-04-20,Fulham FC,Chelsea FC,63,61,1,2
+2025-04-20,Ipswich Town FC,Arsenal FC,349,57,0,4
+2025-04-20,Manchester United FC,Wolverhampton Wanderers FC,66,76,0,1
+2025-04-20,Leicester City FC,Liverpool FC,338,64,0,1
+2025-04-21,Tottenham Hotspur FC,Nottingham Forest FC,73,351,1,2
+2025-04-22,Manchester City FC,Aston Villa FC,65,58,2,1
+2025-04-23,Arsenal FC,Crystal Palace FC,57,354,2,2
+2025-04-26,Chelsea FC,Everton FC,61,62,1,0
+2025-04-26,Brighton & Hove Albion FC,West Ham United FC,397,563,3,2
+2025-04-26,Newcastle United FC,Ipswich Town FC,67,349,3,0
+2025-04-26,Southampton FC,Fulham FC,340,63,1,2
+2025-04-26,Wolverhampton Wanderers FC,Leicester City FC,76,338,3,0
+2025-04-27,AFC Bournemouth,Manchester United FC,1044,66,1,1
+2025-04-27,Liverpool FC,Tottenham Hotspur FC,64,73,5,1
+2025-05-01,Nottingham Forest FC,Brentford FC,351,402,0,2
+2025-05-02,Manchester City FC,Wolverhampton Wanderers FC,65,76,1,0
+2025-05-03,Aston Villa FC,Fulham FC,58,63,1,0
+2025-05-03,Everton FC,Ipswich Town FC,62,349,2,2
+2025-05-03,Leicester City FC,Southampton FC,338,340,2,0
+2025-05-03,Arsenal FC,AFC Bournemouth,57,1044,1,2
+2025-05-04,Brentford FC,Manchester United FC,402,66,4,3
+2025-05-04,Brighton & Hove Albion FC,Newcastle United FC,397,67,1,1
+2025-05-04,West Ham United FC,Tottenham Hotspur FC,563,73,1,1
+2025-05-04,Chelsea FC,Liverpool FC,61,64,3,1
+2025-05-05,Crystal Palace FC,Nottingham Forest FC,354,351,1,1
+2025-05-10,Fulham FC,Everton FC,63,62,1,3
+2025-05-10,Ipswich Town FC,Brentford FC,349,402,0,1
+2025-05-10,Southampton FC,Manchester City FC,340,65,0,0
+2025-05-10,Wolverhampton Wanderers FC,Brighton & Hove Albion FC,76,397,0,2
+2025-05-10,AFC Bournemouth,Aston Villa FC,1044,58,0,1
+2025-05-11,Newcastle United FC,Chelsea FC,67,61,2,0
+2025-05-11,Manchester United FC,West Ham United FC,66,563,0,2
+2025-05-11,Nottingham Forest FC,Leicester City FC,351,338,2,2
+2025-05-11,Tottenham Hotspur FC,Crystal Palace FC,73,354,0,2
+2025-05-11,Liverpool FC,Arsenal FC,64,57,2,2
+2025-05-16,Aston Villa FC,Tottenham Hotspur FC,58,73,2,0
+2025-05-16,Chelsea FC,Manchester United FC,61,66,1,0
+2025-05-18,Everton FC,Southampton FC,62,340,2,0
+2025-05-18,West Ham United FC,Nottingham Forest FC,563,351,1,2
+2025-05-18,Brentford FC,Fulham FC,402,63,2,3
+2025-05-18,Leicester City FC,Ipswich Town FC,338,349,2,0
+2025-05-18,Arsenal FC,Newcastle United FC,57,67,1,0
+2025-05-19,Brighton & Hove Albion FC,Liverpool FC,397,64,3,2
+2025-05-20,Crystal Palace FC,Wolverhampton Wanderers FC,354,76,4,2
+2025-05-20,Manchester City FC,AFC Bournemouth,65,1044,3,1
+2025-05-25,AFC Bournemouth,Leicester City FC,1044,338,2,0
+2025-05-25,Fulham FC,Manchester City FC,63,65,0,2
+2025-05-25,Ipswich Town FC,West Ham United FC,349,563,1,3
+2025-05-25,Liverpool FC,Crystal Palace FC,64,354,1,1
+2025-05-25,Manchester United FC,Aston Villa FC,66,58,2,0
+2025-05-25,Newcastle United FC,Everton FC,67,62,0,1
+2025-05-25,Nottingham Forest FC,Chelsea FC,351,61,0,1
+2025-05-25,Southampton FC,Arsenal FC,340,57,1,2
+2025-05-25,Tottenham Hotspur FC,Brighton & Hove Albion FC,73,397,1,4
+2025-05-25,Wolverhampton Wanderers FC,Brentford FC,76,402,1,1

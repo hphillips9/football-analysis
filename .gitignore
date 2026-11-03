@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Backups written by src/tools/migrate_bets.py
+data/raw/*.bak

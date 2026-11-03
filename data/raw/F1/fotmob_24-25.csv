@@ -1,0 +1,307 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+4513014,2024-08-16,Le Havre,Paris Saint-Germain,0.21,2.87
+4513007,2024-08-17,Brest,Marseille,1.32,2.38
+4513012,2024-08-17,Reims,Lille,0.07,2.1
+4513011,2024-08-17,Monaco,Saint-Étienne,1.96,0.45
+4513013,2024-08-18,Auxerre,Nice,1.96,0.71
+4513010,2024-08-18,Angers,Lens,0.39,1.23
+4513008,2024-08-18,Montpellier,Strasbourg,1.41,0.91
+4513009,2024-08-18,Toulouse,Nantes,1.71,0.47
+4513015,2024-08-18,Rennes,Lyon,2.05,2.06
+4513866,2024-08-23,Paris Saint-Germain,Montpellier,3.82,0.63
+4513873,2024-08-24,Lyon,Monaco,0.03,2.26
+4513870,2024-08-24,Lille,Angers,0.88,0.58
+4513869,2024-08-24,Saint-Étienne,Le Havre,1.11,2.38
+4513872,2024-08-25,Lens,Brest,2.97,0.86
+4513868,2024-08-25,Nantes,Auxerre,1.44,1.11
+4513871,2024-08-25,Nice,Toulouse,1.28,0.98
+4513867,2024-08-25,Strasbourg,Rennes,0.72,1.09
+4513874,2024-08-25,Marseille,Reims,3.17,0.88
+4513876,2024-08-30,Lyon,Strasbourg,2.92,2.72
+4513877,2024-08-31,Brest,Saint-Étienne,3.12,0.17
+4513878,2024-08-31,Montpellier,Nantes,0.92,1.48
+4513883,2024-08-31,Toulouse,Marseille,0.99,1.1
+4513880,2024-09-01,Monaco,Lens,1.03,2.24
+4513879,2024-09-01,Angers,Nice,1.42,2.24
+4513881,2024-09-01,Le Havre,Auxerre,2.76,0.58
+4513882,2024-09-01,Reims,Rennes,1.39,0.79
+4513875,2024-09-01,Lille,Paris Saint-Germain,1.4,2.6
+4513890,2024-09-13,Saint-Étienne,Lille,1.25,1.24
+4513891,2024-09-14,Marseille,Nice,0.67,2.05
+4513884,2024-09-14,Auxerre,Monaco,0.56,3.49
+4513892,2024-09-14,Paris Saint-Germain,Brest,2.88,0.97
+4513885,2024-09-15,Rennes,Montpellier,1.29,0.33
+4513887,2024-09-15,Nantes,Reims,1.53,0.51
+4513889,2024-09-15,Strasbourg,Angers,2.26,0.92
+4513888,2024-09-15,Toulouse,Le Havre,1.32,0.21
+4513886,2024-09-15,Lens,Lyon,1.05,0.56
+4513894,2024-09-20,Nice,Saint-Étienne,4.73,0.32
+4513899,2024-09-21,Lille,Strasbourg,2.75,3.23
+4513900,2024-09-21,Rennes,Lens,1.37,0.56
+4513895,2024-09-21,Reims,Paris Saint-Germain,0.31,1.59
+4513901,2024-09-22,Monaco,Le Havre,1.98,0.57
+4513897,2024-09-22,Angers,Nantes,0.85,0.62
+4513896,2024-09-22,Brest,Toulouse,0.46,2.73
+4513898,2024-09-22,Montpellier,Auxerre,2.04,1.27
+4513893,2024-09-22,Lyon,Marseille,3.01,0.79
+4513904,2024-09-27,Auxerre,Brest,2.57,0.8
+4513903,2024-09-27,Paris Saint-Germain,Rennes,3.05,1.5
+4513905,2024-09-28,Lens,Nice,1.99,1.15
+4513907,2024-09-28,Le Havre,Lille,0.41,3.61
+4513909,2024-09-28,Monaco,Montpellier,3.25,0.88
+4513908,2024-09-29,Toulouse,Lyon,0.94,0.42
+4513910,2024-09-29,Angers,Reims,1.12,2.91
+4513906,2024-09-29,Nantes,Saint-Étienne,1.8,1.02
+4513902,2024-09-29,Strasbourg,Marseille,1.31,0.5
+4513954,2024-10-04,Marseille,Angers,0.89,0.83
+4513952,2024-10-05,Saint-Étienne,Auxerre,2.73,0.79
+4513951,2024-10-05,Lille,Toulouse,1.61,1.11
+4513955,2024-10-05,Rennes,Monaco,0.75,0.58
+4513949,2024-10-06,Lyon,Nantes,3.28,0.88
+4513953,2024-10-06,Brest,Le Havre,0.75,1.06
+4513957,2024-10-06,Reims,Montpellier,3.03,0.5
+4513956,2024-10-06,Strasbourg,Lens,1.24,0.99
+4513950,2024-10-06,Nice,Paris Saint-Germain,0.45,1.42
+4513963,2024-10-18,Monaco,Lille,1.23,0.25
+4513965,2024-10-19,Brest,Rennes,1.47,1.17
+4513964,2024-10-19,Saint-Étienne,Lens,0.78,1.22
+4513966,2024-10-19,Paris Saint-Germain,Strasbourg,3.49,1.96
+4513960,2024-10-20,Le Havre,Lyon,0.49,2.72
+4513958,2024-10-20,Auxerre,Reims,2.91,1.08
+4513961,2024-10-20,Nantes,Nice,0.49,0.85
+4513959,2024-10-20,Toulouse,Angers,1.97,1.38
+4513962,2024-10-20,Montpellier,Marseille,1.19,3.36
+4513982,2024-10-25,Rennes,Le Havre,1.59,0.43
+4513983,2024-10-26,Angers,Saint-Étienne,2.96,1.47
+4513984,2024-10-26,Reims,Brest,0.79,1.5
+4513977,2024-10-26,Lens,Lille,1.09,1.72
+4513979,2024-10-27,Lyon,Auxerre,2.05,1.54
+4513980,2024-10-27,Montpellier,Toulouse,0.21,1.88
+4513976,2024-10-27,Nice,Monaco,1.63,0.4
+4513981,2024-10-27,Strasbourg,Nantes,1.73,0.76
+4513978,2024-10-27,Marseille,Paris Saint-Germain,0.22,3.1
+4513969,2024-11-01,Monaco,Angers,1.39,0.46
+4513972,2024-11-01,Lille,Lyon,1.67,1.24
+4513975,2024-11-02,Paris Saint-Germain,Lens,2.88,0.83
+4513974,2024-11-02,Brest,Nice,1.02,1.52
+4513973,2024-11-02,Saint-Étienne,Strasbourg,2.65,0.53
+4513968,2024-11-03,Toulouse,Reims,0.88,1.09
+4513967,2024-11-03,Auxerre,Rennes,2.79,0.8
+4513970,2024-11-03,Le Havre,Montpellier,2.18,1.01
+4513971,2024-11-03,Nantes,Marseille,1.36,1.22
+4513985,2024-11-08,Marseille,Auxerre,2.59,1.92
+4513989,2024-11-09,Strasbourg,Monaco,0.79,3.89
+4513990,2024-11-09,Lens,Nantes,2.99,1.42
+4513993,2024-11-09,Angers,Paris Saint-Germain,1.03,3.5
+4513992,2024-11-10,Nice,Lille,2.11,1.68
+4513988,2024-11-10,Le Havre,Reims,1.63,2.65
+4513987,2024-11-10,Montpellier,Brest,2.47,0.93
+4513991,2024-11-10,Rennes,Toulouse,0.58,0.97
+4513986,2024-11-10,Lyon,Saint-Étienne,1.17,0.68
+4514071,2024-11-22,Monaco,Brest,2.7,1.04
+4514065,2024-11-22,Paris Saint-Germain,Toulouse,1.16,1.39
+4514066,2024-11-23,Lens,Marseille,2.72,1.21
+4514068,2024-11-23,Saint-Étienne,Montpellier,1.49,0.95
+4514073,2024-11-23,Reims,Lyon,1.01,1.7
+4514069,2024-11-24,Lille,Rennes,0.41,0.19
+4514072,2024-11-24,Auxerre,Angers,0.59,0.88
+4514070,2024-11-24,Nantes,Le Havre,0.87,0.83
+4514067,2024-11-24,Nice,Strasbourg,2.12,0.32
+4514074,2024-11-29,Reims,Lens,0.85,1.82
+4514075,2024-11-30,Rennes,Saint-Étienne,3.36,0.11
+4514077,2024-11-30,Brest,Strasbourg,2.46,1.02
+4514079,2024-11-30,Paris Saint-Germain,Nantes,2.73,0.65
+4514078,2024-12-01,Montpellier,Lille,1.47,2.22
+4514076,2024-12-01,Le Havre,Angers,0.17,2.14
+4514081,2024-12-01,Lyon,Nice,2.86,2.16
+4514082,2024-12-01,Toulouse,Auxerre,2.33,0.12
+4514080,2024-12-01,Marseille,Monaco,1.94,1.02
+4514087,2024-12-06,Lille,Brest,2.51,0.65
+4514084,2024-12-06,Auxerre,Paris Saint-Germain,0.29,2.51
+4514091,2024-12-07,Monaco,Toulouse,3.23,0.51
+4514083,2024-12-07,Nice,Le Havre,2.03,1.01
+4514086,2024-12-07,Angers,Lyon,0.63,2.03
+4514088,2024-12-08,Lens,Montpellier,1.27,1.1
+4514090,2024-12-08,Nantes,Rennes,1.19,0.39
+4514089,2024-12-08,Strasbourg,Reims,0.8,1.11
+4514085,2024-12-08,Saint-Étienne,Marseille,0.16,2.51
+4514096,2024-12-13,Toulouse,Saint-Étienne,1.41,0.52
+4514099,2024-12-14,Marseille,Lille,1.27,1.44
+4514095,2024-12-14,Auxerre,Lens,0.58,1.61
+4514094,2024-12-14,Reims,Monaco,1.51,1.3
+4514097,2024-12-15,Montpellier,Nice,1.97,1.12
+4514098,2024-12-15,Brest,Nantes,1.99,1.15
+4514093,2024-12-15,Le Havre,Strasbourg,0.86,0.99
+4514092,2024-12-15,Rennes,Angers,0.56,0.36
+4514100,2024-12-15,Paris Saint-Germain,Lyon,2.88,1.46
+4514101,2024-12-18,Monaco,Paris Saint-Germain,2.48,1.77
+4514109,2025-01-03,Nice,Rennes,1.5,1.71
+4514104,2025-01-04,Saint-Étienne,Reims,2.22,1.11
+4514106,2025-01-04,Lille,Nantes,1.19,1.33
+4514102,2025-01-04,Lyon,Montpellier,1.35,1.17
+4514105,2025-01-05,Angers,Brest,1.78,0.98
+4514103,2025-01-05,Lens,Toulouse,1.41,2.03
+4514108,2025-01-05,Strasbourg,Auxerre,2.42,1.38
+4514107,2025-01-05,Marseille,Le Havre,3.23,0.45
+4514111,2025-01-10,Nantes,Monaco,0.81,3.59
+4514112,2025-01-10,Auxerre,Lille,0.82,1.47
+4514116,2025-01-11,Brest,Lyon,1.07,1.43
+4514113,2025-01-11,Reims,Nice,0.79,2.47
+4514118,2025-01-11,Rennes,Marseille,1.63,1.66
+4514114,2025-01-12,Le Havre,Lens,1.99,2.79
+4514115,2025-01-12,Montpellier,Angers,1.3,3.81
+4514110,2025-01-12,Toulouse,Strasbourg,1.24,2.35
+4514117,2025-01-12,Paris Saint-Germain,Saint-Étienne,4.07,0.24
+4513835,2025-01-17,Montpellier,Monaco,2.41,1.85
+4513832,2025-01-17,Lille,Nice,1.12,2.93
+4513831,2025-01-18,Lens,Paris Saint-Germain,0.72,1.23
+4513838,2025-01-18,Rennes,Brest,1.46,0.99
+4513833,2025-01-18,Lyon,Toulouse,0.74,1.23
+4513834,2025-01-19,Saint-Étienne,Nantes,0.82,1.35
+4513837,2025-01-19,Angers,Auxerre,0.93,0.7
+4513836,2025-01-19,Reims,Le Havre,0.78,0.94
+4513830,2025-01-19,Marseille,Strasbourg,2.92,0.8
+4513843,2025-01-24,Auxerre,Saint-Étienne,0.84,1.17
+4513840,2025-01-25,Monaco,Rennes,3.53,1.77
+4513839,2025-01-25,Strasbourg,Lille,1.06,1.76
+4513845,2025-01-25,Paris Saint-Germain,Reims,1.25,0.97
+4513842,2025-01-26,Le Havre,Brest,0.96,2.05
+4513844,2025-01-26,Lens,Angers,1.91,0.16
+4513847,2025-01-26,Nantes,Lyon,1.26,1.11
+4513841,2025-01-26,Toulouse,Montpellier,0.98,0.58
+4513846,2025-01-26,Nice,Marseille,1.13,0.83
+4513850,2025-01-31,Montpellier,Lens,0.83,2.08
+4513849,2025-02-01,Brest,Paris Saint-Germain,0.87,3.59
+4513856,2025-02-01,Monaco,Auxerre,2.62,1.48
+4513851,2025-02-01,Lille,Saint-Étienne,3.41,2.11
+4513854,2025-02-02,Toulouse,Nice,1.47,1.69
+4513853,2025-02-02,Angers,Le Havre,1.48,2.07
+4513852,2025-02-02,Reims,Nantes,1.04,1.92
+4513855,2025-02-02,Rennes,Strasbourg,0.91,1.19
+4513848,2025-02-02,Marseille,Lyon,3.24,1.75
+4513858,2025-02-07,Nantes,Brest,1.1,2.51
+4513862,2025-02-07,Paris Saint-Germain,Monaco,3.14,1.0
+4513865,2025-02-08,Nice,Lens,2.28,1.17
+4513860,2025-02-08,Lille,Le Havre,1.52,2.04
+4513861,2025-02-08,Saint-Étienne,Rennes,0.48,3.75
+4513863,2025-02-09,Lyon,Reims,3.3,0.35
+4513857,2025-02-09,Auxerre,Toulouse,0.9,0.91
+4513859,2025-02-09,Strasbourg,Montpellier,2.75,1.83
+4513864,2025-02-09,Angers,Marseille,0.49,2.47
+4513917,2025-02-14,Brest,Auxerre,2.18,1.15
+4513914,2025-02-15,Marseille,Saint-Étienne,6.43,0.96
+4513921,2025-02-15,Monaco,Nantes,4.44,1.18
+4513913,2025-02-15,Toulouse,Paris Saint-Germain,0.88,2.44
+4513915,2025-02-16,Montpellier,Lyon,1.4,0.95
+4513920,2025-02-16,Le Havre,Nice,0.7,1.42
+4513916,2025-02-16,Lens,Strasbourg,0.36,2.35
+4513919,2025-02-16,Reims,Angers,1.68,1.61
+4513918,2025-02-16,Rennes,Lille,0.46,3.18
+4513922,2025-02-21,Rennes,Reims,2.38,0.18
+4513924,2025-02-22,Lille,Monaco,1.11,2.34
+4513927,2025-02-22,Saint-Étienne,Angers,1.69,2.94
+4513928,2025-02-22,Auxerre,Marseille,1.96,0.66
+4513926,2025-02-23,Nantes,Lens,4.41,1.77
+4513923,2025-02-23,Le Havre,Toulouse,0.77,2.38
+4513929,2025-02-23,Nice,Montpellier,1.77,0.57
+4513925,2025-02-23,Strasbourg,Brest,0.54,0.56
+4513930,2025-02-23,Lyon,Paris Saint-Germain,1.78,2.46
+4513938,2025-02-28,Monaco,Reims,3.83,0.63
+4513935,2025-03-01,Saint-Étienne,Nice,0.89,1.91
+4513936,2025-03-01,Lens,Le Havre,1.88,1.44
+4513931,2025-03-01,Paris Saint-Germain,Lille,3.59,1.07
+4513933,2025-03-02,Lyon,Brest,1.39,2.0
+4513939,2025-03-02,Angers,Toulouse,0.35,3.54
+4513937,2025-03-02,Auxerre,Strasbourg,2.24,0.95
+4513934,2025-03-02,Montpellier,Rennes,1.64,2.46
+4513932,2025-03-02,Marseille,Nantes,2.15,0.88
+4513943,2025-03-07,Toulouse,Monaco,0.57,2.43
+4513947,2025-03-08,Rennes,Paris Saint-Germain,1.75,3.85
+4513946,2025-03-08,Lille,Montpellier,1.54,0.33
+4513948,2025-03-08,Marseille,Lens,1.01,0.87
+4513945,2025-03-09,Brest,Angers,3.57,0.37
+4513940,2025-03-09,Le Havre,Saint-Étienne,2.08,1.51
+4513942,2025-03-09,Nantes,Strasbourg,0.82,0.98
+4513941,2025-03-09,Reims,Auxerre,1.55,2.14
+4513944,2025-03-09,Nice,Lyon,1.44,1.07
+4514029,2025-03-14,Nice,Auxerre,2.17,0.75
+4514035,2025-03-15,Nantes,Lille,1.21,1.58
+4514036,2025-03-15,Angers,Monaco,0.49,2.05
+4514033,2025-03-15,Lens,Rennes,0.75,0.59
+4514032,2025-03-16,Lyon,Le Havre,3.98,1.7
+4514031,2025-03-16,Brest,Reims,0.33,1.19
+4514030,2025-03-16,Montpellier,Saint-Étienne,1.46,1.21
+4514034,2025-03-16,Strasbourg,Toulouse,1.65,1.74
+4514028,2025-03-16,Paris Saint-Germain,Marseille,2.59,1.19
+4514040,2025-03-28,Strasbourg,Lyon,1.09,1.99
+4514043,2025-03-29,Reims,Marseille,0.98,1.09
+4514042,2025-03-29,Saint-Étienne,Paris Saint-Germain,0.97,3.27
+4514045,2025-03-29,Monaco,Nice,2.45,0.51
+4514041,2025-03-30,Toulouse,Brest,2.06,1.36
+4514037,2025-03-30,Angers,Rennes,0.81,1.54
+4514038,2025-03-30,Auxerre,Montpellier,2.1,0.53
+4514039,2025-03-30,Le Havre,Nantes,4.33,0.9
+4514044,2025-03-30,Lille,Lens,1.86,0.41
+4514047,2025-04-04,Nice,Nantes,1.9,0.57
+4514052,2025-04-05,Paris Saint-Germain,Angers,1.92,0.18
+4514048,2025-04-05,Brest,Monaco,1.0,1.71
+4514050,2025-04-05,Lyon,Lille,1.82,0.91
+4514051,2025-04-06,Lens,Saint-Étienne,2.18,1.42
+4514049,2025-04-06,Montpellier,Le Havre,1.02,1.37
+4514053,2025-04-06,Reims,Strasbourg,1.45,2.55
+4514054,2025-04-06,Rennes,Auxerre,1.21,0.78
+4514046,2025-04-06,Marseille,Toulouse,1.03,1.23
+4514062,2025-04-11,Lens,Reims,3.43,1.34
+4514063,2025-04-12,Monaco,Marseille,2.67,1.06
+4514055,2025-04-12,Toulouse,Lille,0.91,0.4
+4514059,2025-04-12,Strasbourg,Nice,0.71,1.75
+4514060,2025-04-13,Saint-Étienne,Brest,0.7,1.53
+4514061,2025-04-13,Angers,Montpellier,1.35,0.38
+4514056,2025-04-13,Le Havre,Rennes,0.62,2.79
+4514057,2025-04-13,Auxerre,Lyon,0.74,3.09
+4514127,2025-04-18,Rennes,Nantes,2.77,0.68
+4514123,2025-04-19,Paris Saint-Germain,Le Havre,3.14,0.45
+4514126,2025-04-19,Monaco,Strasbourg,0.93,0.39
+4514124,2025-04-19,Marseille,Montpellier,4.17,0.3
+4514122,2025-04-20,Lille,Auxerre,2.04,0.25
+4514121,2025-04-20,Brest,Lens,0.73,2.52
+4514120,2025-04-20,Nice,Angers,2.86,0.45
+4514125,2025-04-20,Reims,Toulouse,0.74,1.29
+4514119,2025-04-20,Saint-Étienne,Lyon,1.6,0.76
+4514058,2025-04-22,Nantes,Paris Saint-Germain,0.49,1.6
+4514134,2025-04-25,Paris Saint-Germain,Nice,3.16,0.96
+4514129,2025-04-26,Strasbourg,Saint-Étienne,2.83,2.06
+4514128,2025-04-26,Le Havre,Monaco,0.51,3.2
+4514136,2025-04-26,Lyon,Rennes,1.88,0.82
+4514133,2025-04-27,Angers,Lille,0.72,1.43
+4514132,2025-04-27,Lens,Auxerre,1.44,2.65
+4514131,2025-04-27,Montpellier,Reims,0.59,0.6
+4514130,2025-04-27,Nantes,Toulouse,1.05,0.36
+4514135,2025-04-27,Marseille,Brest,0.96,1.47
+4514139,2025-05-02,Nice,Reims,1.51,1.28
+4514144,2025-05-03,Strasbourg,Paris Saint-Germain,0.73,1.73
+4514143,2025-05-03,Toulouse,Rennes,0.81,1.48
+4514141,2025-05-03,Saint-Étienne,Monaco,0.6,1.98
+4514142,2025-05-04,Nantes,Angers,0.52,1.12
+4514145,2025-05-04,Auxerre,Le Havre,0.24,1.54
+4514140,2025-05-04,Brest,Montpellier,1.1,0.56
+4514137,2025-05-04,Lyon,Lens,1.04,0.73
+4514138,2025-05-04,Lille,Marseille,0.46,1.32
+4514148,2025-05-10,Angers,Strasbourg,0.75,0.99
+4514147,2025-05-10,Auxerre,Nantes,0.43,0.67
+4514153,2025-05-10,Brest,Lille,1.2,2.06
+4514149,2025-05-10,Le Havre,Marseille,0.96,2.57
+4514154,2025-05-10,Monaco,Lyon,1.16,0.39
+4514151,2025-05-10,Montpellier,Paris Saint-Germain,0.61,1.5
+4514146,2025-05-10,Reims,Saint-Étienne,1.91,0.66
+4514150,2025-05-10,Rennes,Nice,1.24,1.07
+4514152,2025-05-10,Toulouse,Lens,1.14,0.79
+4513024,2025-05-17,Lens,Monaco,1.78,0.45
+4513021,2025-05-17,Lille,Reims,2.06,0.11
+4513018,2025-05-17,Lyon,Angers,3.95,0.5
+4513017,2025-05-17,Marseille,Rennes,3.99,1.15
+4513023,2025-05-17,Nantes,Montpellier,2.51,0.79
+4513019,2025-05-17,Nice,Brest,5.69,1.0
+4513025,2025-05-17,Paris Saint-Germain,Auxerre,3.11,0.63
+4513020,2025-05-17,Saint-Étienne,Toulouse,1.33,3.21
+4513022,2025-05-17,Strasbourg,Le Havre,1.46,2.52

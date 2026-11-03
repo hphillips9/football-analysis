@@ -1,0 +1,381 @@
+day,home,away,home_id,away_id,hg,ag
+2024-08-15,Athletic Club,Getafe,8315,8305,1,1
+2024-08-15,Real Betis,Girona,8603,7732,1,1
+2024-08-16,Celta Vigo,Deportivo Alavés,9910,9866,2,1
+2024-08-16,Las Palmas,Sevilla,8306,8302,2,2
+2024-08-17,Osasuna,Leganés,8371,7854,1,1
+2024-08-17,Valencia,Barcelona,10267,8634,1,2
+2024-08-18,Real Sociedad,Rayo Vallecano,8560,8370,1,2
+2024-08-18,Mallorca,Real Madrid,8661,8633,1,1
+2024-08-19,Real Valladolid,Espanyol,10281,8558,1,0
+2024-08-19,Villarreal,Atlético Madrid,10205,9906,2,2
+2024-08-23,Celta Vigo,Valencia,9910,10267,3,1
+2024-08-23,Sevilla,Villarreal,8302,10205,1,2
+2024-08-24,Osasuna,Mallorca,8371,8661,1,0
+2024-08-24,Barcelona,Athletic Club,8634,8315,2,1
+2024-08-24,Espanyol,Real Sociedad,8558,8560,0,1
+2024-08-24,Getafe,Rayo Vallecano,8305,8370,0,0
+2024-08-25,Real Madrid,Real Valladolid,8633,10281,3,0
+2024-08-25,Leganés,Las Palmas,7854,8306,2,1
+2024-08-25,Deportivo Alavés,Real Betis,9866,8603,0,0
+2024-08-25,Atlético Madrid,Girona,9906,7732,3,0
+2024-08-26,Villarreal,Celta Vigo,10205,9910,4,3
+2024-08-27,Mallorca,Sevilla,8661,8302,0,0
+2024-08-27,Rayo Vallecano,Barcelona,8370,8634,1,2
+2024-08-28,Athletic Club,Valencia,8315,10267,1,0
+2024-08-28,Real Valladolid,Leganés,10281,7854,0,0
+2024-08-28,Atlético Madrid,Espanyol,9906,8558,0,0
+2024-08-28,Real Sociedad,Deportivo Alavés,8560,9866,1,2
+2024-08-29,Girona,Osasuna,7732,8371,4,0
+2024-08-29,Las Palmas,Real Madrid,8306,8633,1,1
+2024-08-31,Barcelona,Real Valladolid,8634,10281,7,0
+2024-08-31,Athletic Club,Atlético Madrid,8315,9906,0,1
+2024-08-31,Espanyol,Rayo Vallecano,8558,8370,2,1
+2024-08-31,Leganés,Mallorca,7854,8661,0,1
+2024-08-31,Valencia,Villarreal,10267,10205,1,1
+2024-09-01,Deportivo Alavés,Las Palmas,9866,8306,2,0
+2024-09-01,Osasuna,Celta Vigo,8371,9910,3,2
+2024-09-01,Sevilla,Girona,8302,7732,0,2
+2024-09-01,Getafe,Real Sociedad,8305,8560,0,0
+2024-09-01,Real Madrid,Real Betis,8633,8603,2,0
+2024-09-13,Real Betis,Leganés,8603,7854,2,0
+2024-09-14,Mallorca,Villarreal,8661,10205,1,2
+2024-09-14,Espanyol,Deportivo Alavés,8558,9866,3,2
+2024-09-14,Sevilla,Getafe,8302,8305,1,0
+2024-09-14,Real Sociedad,Real Madrid,8560,8633,0,2
+2024-09-15,Celta Vigo,Real Valladolid,9910,10281,3,1
+2024-09-15,Girona,Barcelona,7732,8634,1,4
+2024-09-15,Las Palmas,Athletic Club,8306,8315,2,3
+2024-09-15,Atlético Madrid,Valencia,9906,10267,3,0
+2024-09-16,Rayo Vallecano,Osasuna,8370,8371,3,1
+2024-09-17,Mallorca,Real Sociedad,8661,8560,1,0
+2024-09-18,Real Betis,Getafe,8603,8305,2,1
+2024-09-19,Leganés,Athletic Club,7854,8315,0,2
+2024-09-20,Deportivo Alavés,Sevilla,9866,8302,2,1
+2024-09-21,Real Valladolid,Real Sociedad,10281,8560,0,0
+2024-09-21,Osasuna,Las Palmas,8371,8306,2,1
+2024-09-21,Valencia,Girona,10267,7732,2,0
+2024-09-21,Real Madrid,Espanyol,8633,8558,4,1
+2024-09-22,Getafe,Leganés,8305,7854,1,1
+2024-09-22,Athletic Club,Celta Vigo,8315,9910,3,1
+2024-09-22,Villarreal,Barcelona,10205,8634,1,5
+2024-09-22,Rayo Vallecano,Atlético Madrid,8370,9906,1,1
+2024-09-23,Real Betis,Mallorca,8603,8661,1,2
+2024-09-24,Sevilla,Real Valladolid,8302,10281,2,1
+2024-09-24,Valencia,Osasuna,10267,8371,0,0
+2024-09-24,Real Madrid,Deportivo Alavés,8633,9866,3,2
+2024-09-25,Girona,Rayo Vallecano,7732,8370,0,0
+2024-09-25,Barcelona,Getafe,8634,8305,1,0
+2024-09-26,Espanyol,Villarreal,8558,10205,1,2
+2024-09-26,Las Palmas,Real Betis,8306,8603,1,1
+2024-09-26,Celta Vigo,Atlético Madrid,9910,9906,0,1
+2024-09-27,Real Valladolid,Mallorca,10281,8661,1,2
+2024-09-28,Getafe,Deportivo Alavés,8305,9866,2,0
+2024-09-28,Rayo Vallecano,Leganés,8370,7854,1,1
+2024-09-28,Real Sociedad,Valencia,8560,10267,3,0
+2024-09-28,Osasuna,Barcelona,8371,8634,4,2
+2024-09-29,Celta Vigo,Girona,9910,7732,1,1
+2024-09-29,Athletic Club,Sevilla,8315,8302,1,1
+2024-09-29,Real Betis,Espanyol,8603,8558,1,0
+2024-09-29,Atlético Madrid,Real Madrid,9906,8633,1,1
+2024-09-30,Villarreal,Las Palmas,10205,8306,3,1
+2024-10-04,Leganés,Valencia,7854,10267,0,0
+2024-10-05,Espanyol,Mallorca,8558,8661,2,1
+2024-10-05,Getafe,Osasuna,8305,8371,1,1
+2024-10-05,Las Palmas,Celta Vigo,8306,9910,0,1
+2024-10-05,Real Valladolid,Rayo Vallecano,10281,8370,1,2
+2024-10-05,Real Madrid,Villarreal,8633,10205,2,0
+2024-10-06,Girona,Athletic Club,7732,8315,2,1
+2024-10-06,Deportivo Alavés,Barcelona,9866,8634,0,3
+2024-10-06,Sevilla,Real Betis,8302,8603,1,0
+2024-10-06,Real Sociedad,Atlético Madrid,8560,9906,1,1
+2024-10-18,Deportivo Alavés,Real Valladolid,9866,10281,2,3
+2024-10-19,Athletic Club,Espanyol,8315,8558,4,1
+2024-10-19,Osasuna,Real Betis,8371,8603,1,2
+2024-10-19,Girona,Real Sociedad,7732,8560,0,1
+2024-10-19,Celta Vigo,Real Madrid,9910,8633,1,2
+2024-10-20,Mallorca,Rayo Vallecano,8661,8370,1,0
+2024-10-20,Atlético Madrid,Leganés,9906,7854,3,1
+2024-10-20,Villarreal,Getafe,10205,8305,1,1
+2024-10-20,Barcelona,Sevilla,8634,8302,5,1
+2024-10-21,Valencia,Las Palmas,10267,8306,2,3
+2024-10-25,Espanyol,Sevilla,8558,8302,0,2
+2024-10-26,Real Valladolid,Villarreal,10281,10205,1,2
+2024-10-26,Rayo Vallecano,Deportivo Alavés,8370,9866,1,0
+2024-10-26,Las Palmas,Girona,8306,7732,1,0
+2024-10-26,Real Madrid,Barcelona,8633,8634,0,4
+2024-10-27,Leganés,Celta Vigo,7854,9910,3,0
+2024-10-27,Getafe,Valencia,8305,10267,1,1
+2024-10-27,Real Betis,Atlético Madrid,8603,9906,1,0
+2024-10-27,Real Sociedad,Osasuna,8560,8371,0,2
+2024-10-28,Mallorca,Athletic Club,8661,8315,0,0
+2024-11-01,Deportivo Alavés,Mallorca,9866,8661,1,0
+2024-11-02,Osasuna,Real Valladolid,8371,10281,1,0
+2024-11-02,Girona,Leganés,7732,7854,4,3
+2024-11-03,Atlético Madrid,Las Palmas,9906,8306,2,0
+2024-11-03,Barcelona,Espanyol,8634,8558,3,1
+2024-11-03,Sevilla,Real Sociedad,8302,8560,0,2
+2024-11-03,Athletic Club,Real Betis,8315,8603,1,1
+2024-11-04,Celta Vigo,Getafe,9910,8305,1,0
+2024-11-08,Rayo Vallecano,Las Palmas,8370,8306,1,3
+2024-11-09,Real Madrid,Osasuna,8633,8371,4,0
+2024-11-09,Villarreal,Deportivo Alavés,10205,9866,3,0
+2024-11-09,Leganés,Sevilla,7854,8302,1,0
+2024-11-10,Real Betis,Celta Vigo,8603,9910,2,2
+2024-11-10,Mallorca,Atlético Madrid,8661,9906,0,1
+2024-11-10,Getafe,Girona,8305,7732,0,1
+2024-11-10,Real Valladolid,Athletic Club,10281,8315,1,1
+2024-11-10,Real Sociedad,Barcelona,8560,8634,1,0
+2024-11-22,Getafe,Real Valladolid,8305,10281,2,0
+2024-11-23,Valencia,Real Betis,10267,8603,4,2
+2024-11-23,Atlético Madrid,Deportivo Alavés,9906,9866,2,1
+2024-11-23,Girona,Espanyol,7732,8558,4,1
+2024-11-23,Las Palmas,Mallorca,8306,8661,2,3
+2024-11-23,Celta Vigo,Barcelona,9910,8634,2,2
+2024-11-24,Osasuna,Villarreal,8371,10205,2,2
+2024-11-24,Sevilla,Rayo Vallecano,8302,8370,1,0
+2024-11-24,Leganés,Real Madrid,7854,8633,0,3
+2024-11-24,Athletic Club,Real Sociedad,8315,8560,1,0
+2024-11-29,Mallorca,Valencia,8661,10267,2,1
+2024-11-30,Barcelona,Las Palmas,8634,8306,1,2
+2024-11-30,Deportivo Alavés,Leganés,9866,7854,1,1
+2024-11-30,Espanyol,Celta Vigo,8558,9910,3,1
+2024-11-30,Real Valladolid,Atlético Madrid,10281,9906,0,5
+2024-12-01,Villarreal,Girona,10205,7732,2,2
+2024-12-01,Real Madrid,Getafe,8633,8305,2,0
+2024-12-01,Rayo Vallecano,Athletic Club,8370,8315,1,2
+2024-12-01,Real Sociedad,Real Betis,8560,8603,2,0
+2024-12-02,Sevilla,Osasuna,8302,8371,1,1
+2024-12-03,Mallorca,Barcelona,8661,8634,1,5
+2024-12-04,Athletic Club,Real Madrid,8315,8633,2,1
+2024-12-06,Celta Vigo,Mallorca,9910,8661,2,0
+2024-12-07,Las Palmas,Real Valladolid,8306,10281,2,1
+2024-12-07,Real Betis,Barcelona,8603,8634,2,2
+2024-12-07,Valencia,Rayo Vallecano,10267,8370,0,1
+2024-12-07,Girona,Real Madrid,7732,8633,0,3
+2024-12-08,Leganés,Real Sociedad,7854,8560,0,3
+2024-12-08,Athletic Club,Villarreal,8315,10205,2,0
+2024-12-08,Osasuna,Deportivo Alavés,8371,9866,2,2
+2024-12-08,Atlético Madrid,Sevilla,9906,8302,4,3
+2024-12-09,Getafe,Espanyol,8305,8558,1,0
+2024-12-13,Real Valladolid,Valencia,10281,10267,1,0
+2024-12-14,Espanyol,Osasuna,8558,8371,0,0
+2024-12-14,Mallorca,Girona,8661,7732,2,1
+2024-12-14,Sevilla,Celta Vigo,8302,9910,1,0
+2024-12-14,Rayo Vallecano,Real Madrid,8370,8633,3,3
+2024-12-15,Atlético Madrid,Getafe,9906,8305,1,0
+2024-12-15,Deportivo Alavés,Athletic Club,9866,8315,1,1
+2024-12-15,Real Sociedad,Las Palmas,8560,8306,0,0
+2024-12-15,Villarreal,Real Betis,10205,8603,1,2
+2024-12-15,Barcelona,Leganés,8634,7854,0,1
+2024-12-18,Espanyol,Valencia,8558,10267,1,1
+2024-12-18,Villarreal,Rayo Vallecano,10205,8370,1,1
+2024-12-20,Girona,Real Valladolid,7732,10281,3,0
+2024-12-21,Getafe,Mallorca,8305,8661,0,1
+2024-12-21,Celta Vigo,Real Sociedad,9910,8560,2,0
+2024-12-21,Osasuna,Athletic Club,8371,8315,1,2
+2024-12-21,Barcelona,Atlético Madrid,8634,9906,1,2
+2024-12-22,Valencia,Deportivo Alavés,10267,9866,2,2
+2024-12-22,Real Madrid,Sevilla,8633,8302,4,2
+2024-12-22,Las Palmas,Espanyol,8306,8558,1,0
+2024-12-22,Leganés,Villarreal,7854,10205,2,5
+2024-12-22,Real Betis,Rayo Vallecano,8603,8370,1,1
+2025-01-03,Valencia,Real Madrid,10267,8633,1,2
+2025-01-10,Rayo Vallecano,Celta Vigo,8370,9910,2,1
+2025-01-11,Deportivo Alavés,Girona,9866,7732,0,1
+2025-01-11,Real Valladolid,Real Betis,10281,8603,1,0
+2025-01-11,Espanyol,Leganés,8558,7854,1,1
+2025-01-11,Sevilla,Valencia,8302,10267,1,1
+2025-01-12,Las Palmas,Getafe,8306,8305,1,2
+2025-01-12,Atlético Madrid,Osasuna,9906,8371,1,0
+2025-01-13,Real Sociedad,Villarreal,8560,10205,1,0
+2025-01-17,Espanyol,Real Valladolid,8558,10281,2,1
+2025-01-18,Girona,Sevilla,7732,8302,1,2
+2025-01-18,Leganés,Atlético Madrid,7854,9906,1,0
+2025-01-18,Real Betis,Deportivo Alavés,8603,9866,1,3
+2025-01-18,Getafe,Barcelona,8305,8634,1,1
+2025-01-19,Celta Vigo,Athletic Club,9910,8315,1,2
+2025-01-19,Real Madrid,Las Palmas,8633,8306,4,1
+2025-01-19,Osasuna,Rayo Vallecano,8371,8370,1,1
+2025-01-19,Valencia,Real Sociedad,10267,8560,1,0
+2025-01-20,Villarreal,Mallorca,10205,8661,4,0
+2025-01-24,Las Palmas,Osasuna,8306,8371,1,1
+2025-01-25,Mallorca,Real Betis,8661,8603,0,1
+2025-01-25,Atlético Madrid,Villarreal,9906,10205,1,1
+2025-01-25,Sevilla,Espanyol,8302,8558,1,1
+2025-01-25,Real Valladolid,Real Madrid,10281,8633,0,3
+2025-01-26,Rayo Vallecano,Girona,8370,7732,2,1
+2025-01-26,Real Sociedad,Getafe,8560,8305,0,3
+2025-01-26,Athletic Club,Leganés,8315,7854,0,0
+2025-01-26,Barcelona,Valencia,8634,10267,7,1
+2025-01-27,Deportivo Alavés,Celta Vigo,9866,9910,1,1
+2025-01-31,Leganés,Rayo Vallecano,7854,8370,0,1
+2025-02-01,Getafe,Sevilla,8305,8302,0,0
+2025-02-01,Villarreal,Real Valladolid,10205,10281,5,1
+2025-02-01,Atlético Madrid,Mallorca,9906,8661,2,0
+2025-02-01,Espanyol,Real Madrid,8558,8633,1,0
+2025-02-02,Barcelona,Deportivo Alavés,8634,9866,1,0
+2025-02-02,Valencia,Celta Vigo,10267,9910,2,1
+2025-02-02,Osasuna,Real Sociedad,8371,8560,2,1
+2025-02-02,Real Betis,Athletic Club,8603,8315,2,2
+2025-02-03,Girona,Las Palmas,7732,8306,2,1
+2025-02-07,Rayo Vallecano,Real Valladolid,8370,10281,1,0
+2025-02-08,Celta Vigo,Real Betis,9910,8603,3,2
+2025-02-08,Athletic Club,Girona,8315,7732,3,0
+2025-02-08,Las Palmas,Villarreal,8306,10205,1,2
+2025-02-08,Real Madrid,Atlético Madrid,8633,9906,1,1
+2025-02-09,Deportivo Alavés,Getafe,9866,8305,0,1
+2025-02-09,Valencia,Leganés,10267,7854,2,0
+2025-02-09,Real Sociedad,Espanyol,8560,8558,2,1
+2025-02-09,Sevilla,Barcelona,8302,8634,1,4
+2025-02-10,Mallorca,Osasuna,8661,8371,1,1
+2025-02-14,Girona,Getafe,7732,8305,1,2
+2025-02-15,Leganés,Deportivo Alavés,7854,9866,3,3
+2025-02-15,Osasuna,Real Madrid,8371,8633,1,1
+2025-02-15,Atlético Madrid,Celta Vigo,9906,9910,1,1
+2025-02-15,Villarreal,Valencia,10205,10267,1,1
+2025-02-16,Espanyol,Athletic Club,8558,8315,1,1
+2025-02-16,Real Valladolid,Sevilla,10281,8302,0,4
+2025-02-16,Mallorca,Las Palmas,8661,8306,3,1
+2025-02-16,Real Betis,Real Sociedad,8603,8560,3,0
+2025-02-17,Barcelona,Rayo Vallecano,8634,8370,1,0
+2025-02-21,Celta Vigo,Osasuna,9910,8371,1,0
+2025-02-22,Deportivo Alavés,Espanyol,9866,8558,0,1
+2025-02-22,Rayo Vallecano,Villarreal,8370,10205,0,1
+2025-02-22,Valencia,Atlético Madrid,10267,9906,0,3
+2025-02-22,Las Palmas,Barcelona,8306,8634,0,2
+2025-02-23,Athletic Club,Real Valladolid,8315,10281,7,1
+2025-02-23,Real Madrid,Girona,8633,7732,2,0
+2025-02-23,Getafe,Real Betis,8305,8603,1,2
+2025-02-23,Real Sociedad,Leganés,8560,7854,3,0
+2025-02-24,Sevilla,Mallorca,8302,8661,1,1
+2025-02-28,Real Valladolid,Las Palmas,10281,8306,1,1
+2025-03-01,Girona,Celta Vigo,7732,9910,2,2
+2025-03-01,Rayo Vallecano,Sevilla,8370,8302,1,1
+2025-03-01,Real Betis,Real Madrid,8603,8633,2,1
+2025-03-01,Atlético Madrid,Athletic Club,9906,8315,1,0
+2025-03-02,Leganés,Getafe,7854,8305,1,0
+2025-03-02,Barcelona,Real Sociedad,8634,8560,4,0
+2025-03-02,Mallorca,Deportivo Alavés,8661,9866,1,1
+2025-03-02,Osasuna,Valencia,8371,10267,3,3
+2025-03-08,Celta Vigo,Leganés,9910,7854,2,1
+2025-03-08,Deportivo Alavés,Villarreal,9866,10205,1,0
+2025-03-08,Valencia,Real Valladolid,10267,10281,2,1
+2025-03-09,Getafe,Atlético Madrid,8305,9906,2,1
+2025-03-09,Real Madrid,Rayo Vallecano,8633,8370,2,1
+2025-03-09,Athletic Club,Mallorca,8315,8661,1,1
+2025-03-09,Real Betis,Las Palmas,8603,8306,1,0
+2025-03-09,Real Sociedad,Sevilla,8560,8302,0,1
+2025-03-10,Espanyol,Girona,8558,7732,1,1
+2025-03-14,Las Palmas,Deportivo Alavés,8306,9866,2,2
+2025-03-15,Real Valladolid,Celta Vigo,10281,9910,0,1
+2025-03-15,Mallorca,Espanyol,8661,8558,2,1
+2025-03-15,Villarreal,Real Madrid,10205,8633,1,2
+2025-03-15,Girona,Valencia,7732,10267,1,1
+2025-03-16,Leganés,Real Betis,7854,8603,2,3
+2025-03-16,Sevilla,Athletic Club,8302,8315,0,1
+2025-03-16,Osasuna,Getafe,8371,8305,1,2
+2025-03-16,Rayo Vallecano,Real Sociedad,8370,8560,2,2
+2025-03-16,Atlético Madrid,Barcelona,9906,8634,2,4
+2025-03-27,Barcelona,Osasuna,8634,8371,3,0
+2025-03-29,Real Sociedad,Real Valladolid,8560,10281,2,1
+2025-03-29,Espanyol,Atlético Madrid,8558,9906,1,1
+2025-03-29,Deportivo Alavés,Rayo Vallecano,9866,8370,0,2
+2025-03-29,Real Madrid,Leganés,8633,7854,3,2
+2025-03-30,Getafe,Villarreal,8305,10205,1,2
+2025-03-30,Barcelona,Girona,8634,7732,4,1
+2025-03-30,Athletic Club,Osasuna,8315,8371,0,0
+2025-03-30,Valencia,Mallorca,10267,8661,1,0
+2025-03-30,Real Betis,Sevilla,8603,8302,2,1
+2025-03-31,Celta Vigo,Las Palmas,9910,8306,1,1
+2025-04-04,Rayo Vallecano,Espanyol,8370,8558,0,4
+2025-04-05,Girona,Deportivo Alavés,7732,9866,0,1
+2025-04-05,Real Madrid,Valencia,8633,10267,1,2
+2025-04-05,Mallorca,Celta Vigo,8661,9910,1,2
+2025-04-05,Barcelona,Real Betis,8634,8603,1,1
+2025-04-06,Las Palmas,Real Sociedad,8306,8560,1,3
+2025-04-06,Sevilla,Atlético Madrid,8302,9906,1,2
+2025-04-06,Real Valladolid,Getafe,10281,8305,0,4
+2025-04-06,Villarreal,Athletic Club,10205,8315,0,0
+2025-04-07,Leganés,Osasuna,7854,8371,1,1
+2025-04-11,Valencia,Sevilla,10267,8302,1,0
+2025-04-12,Real Sociedad,Mallorca,8560,8661,0,2
+2025-04-12,Getafe,Las Palmas,8305,8306,1,3
+2025-04-12,Celta Vigo,Espanyol,9910,8558,0,2
+2025-04-12,Leganés,Barcelona,7854,8634,0,1
+2025-04-13,Osasuna,Girona,8371,7732,2,1
+2025-04-13,Deportivo Alavés,Real Madrid,9866,8633,0,1
+2025-04-13,Real Betis,Villarreal,8603,10205,1,2
+2025-04-13,Athletic Club,Rayo Vallecano,8315,8370,3,1
+2025-04-14,Atlético Madrid,Real Valladolid,9906,10281,4,2
+2025-04-18,Espanyol,Getafe,8558,8305,1,0
+2025-04-19,Rayo Vallecano,Valencia,8370,10267,1,1
+2025-04-19,Barcelona,Celta Vigo,8634,9910,4,3
+2025-04-19,Mallorca,Leganés,8661,7854,0,0
+2025-04-19,Las Palmas,Atlético Madrid,8306,9906,1,0
+2025-04-20,Real Valladolid,Osasuna,10281,8371,2,3
+2025-04-20,Villarreal,Real Sociedad,10205,8560,2,2
+2025-04-20,Sevilla,Deportivo Alavés,8302,9866,1,1
+2025-04-20,Real Madrid,Athletic Club,8633,8315,1,0
+2025-04-21,Girona,Real Betis,7732,8603,1,3
+2025-04-22,Valencia,Espanyol,10267,8558,1,1
+2025-04-22,Barcelona,Mallorca,8634,8661,1,0
+2025-04-23,Athletic Club,Las Palmas,8315,8306,1,0
+2025-04-23,Celta Vigo,Villarreal,9910,10205,3,0
+2025-04-23,Deportivo Alavés,Real Sociedad,9866,8560,1,0
+2025-04-23,Getafe,Real Madrid,8305,8633,0,1
+2025-04-24,Leganés,Girona,7854,7732,1,1
+2025-04-24,Osasuna,Sevilla,8371,8302,1,0
+2025-04-24,Atlético Madrid,Rayo Vallecano,9906,8370,3,0
+2025-04-24,Real Betis,Real Valladolid,8603,10281,5,1
+2025-04-27,Villarreal,Espanyol,10205,8558,1,0
+2025-05-02,Rayo Vallecano,Getafe,8370,8305,1,0
+2025-05-03,Deportivo Alavés,Atlético Madrid,9866,9906,0,0
+2025-05-03,Villarreal,Osasuna,10205,8371,4,2
+2025-05-03,Las Palmas,Valencia,8306,10267,2,3
+2025-05-03,Real Valladolid,Barcelona,10281,8634,1,2
+2025-05-04,Real Madrid,Celta Vigo,8633,9910,3,2
+2025-05-04,Sevilla,Leganés,8302,7854,2,2
+2025-05-04,Espanyol,Real Betis,8558,8603,1,2
+2025-05-04,Real Sociedad,Athletic Club,8560,8315,0,0
+2025-05-05,Girona,Mallorca,7732,8661,1,0
+2025-05-09,Las Palmas,Rayo Vallecano,8306,8370,0,1
+2025-05-10,Valencia,Getafe,10267,8305,3,0
+2025-05-10,Celta Vigo,Sevilla,9910,8302,3,2
+2025-05-10,Girona,Villarreal,7732,10205,0,1
+2025-05-10,Mallorca,Real Valladolid,8661,10281,2,1
+2025-05-10,Atlético Madrid,Real Sociedad,9906,8560,4,0
+2025-05-11,Leganés,Espanyol,7854,8558,3,2
+2025-05-11,Barcelona,Real Madrid,8634,8633,4,3
+2025-05-11,Athletic Club,Deportivo Alavés,8315,9866,1,0
+2025-05-11,Real Betis,Osasuna,8603,8371,1,1
+2025-05-13,Real Valladolid,Girona,10281,7732,0,1
+2025-05-13,Real Sociedad,Celta Vigo,8560,9910,0,1
+2025-05-13,Sevilla,Las Palmas,8302,8306,1,0
+2025-05-14,Deportivo Alavés,Valencia,9866,10267,1,0
+2025-05-14,Villarreal,Leganés,10205,7854,3,0
+2025-05-14,Real Madrid,Mallorca,8633,8661,2,1
+2025-05-15,Osasuna,Atlético Madrid,8371,9906,2,0
+2025-05-15,Rayo Vallecano,Real Betis,8370,8603,2,2
+2025-05-15,Espanyol,Barcelona,8558,8634,0,2
+2025-05-15,Getafe,Athletic Club,8305,8315,0,2
+2025-05-18,Atlético Madrid,Real Betis,9906,8603,4,1
+2025-05-18,Barcelona,Villarreal,8634,10205,2,3
+2025-05-18,Celta Vigo,Rayo Vallecano,9910,8370,1,2
+2025-05-18,Las Palmas,Leganés,8306,7854,0,1
+2025-05-18,Mallorca,Getafe,8661,8305,1,2
+2025-05-18,Osasuna,Espanyol,8371,8558,2,0
+2025-05-18,Real Sociedad,Girona,8560,7732,3,2
+2025-05-18,Real Valladolid,Deportivo Alavés,10281,9866,0,1
+2025-05-18,Sevilla,Real Madrid,8302,8633,0,2
+2025-05-18,Valencia,Athletic Club,10267,8315,0,1
+2025-05-23,Real Betis,Valencia,8603,10267,1,1
+2025-05-24,Real Madrid,Real Sociedad,8633,8560,2,0
+2025-05-24,Espanyol,Las Palmas,8558,8306,2,0
+2025-05-24,Leganés,Real Valladolid,7854,10281,3,0
+2025-05-24,Deportivo Alavés,Osasuna,9866,8371,1,1
+2025-05-24,Getafe,Celta Vigo,8305,9910,1,2
+2025-05-24,Rayo Vallecano,Mallorca,8370,8661,0,0
+2025-05-25,Girona,Atlético Madrid,7732,9906,0,4
+2025-05-25,Villarreal,Sevilla,10205,8302,4,2
+2025-05-25,Athletic Club,Barcelona,8315,8634,0,3

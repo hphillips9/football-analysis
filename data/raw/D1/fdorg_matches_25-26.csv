@@ -1,0 +1,307 @@
+day,home,away,home_id,away_id,hg,ag
+2025-08-22,FC Bayern München,RB Leipzig,5,721,6,0
+2025-08-23,Eintracht Frankfurt,SV Werder Bremen,19,12,4,1
+2025-08-23,Bayer 04 Leverkusen,TSG 1899 Hoffenheim,3,2,1,2
+2025-08-23,SC Freiburg,FC Augsburg,17,16,1,3
+2025-08-23,1. FC Union Berlin,VfB Stuttgart,28,10,2,1
+2025-08-23,1. FC Heidenheim 1846,VfL Wolfsburg,44,11,1,3
+2025-08-23,FC St. Pauli 1910,Borussia Dortmund,20,4,3,3
+2025-08-24,1. FSV Mainz 05,1. FC Köln,15,1,0,1
+2025-08-24,Borussia Mönchengladbach,Hamburger SV,18,7,0,0
+2025-08-29,Hamburger SV,FC St. Pauli 1910,7,20,0,2
+2025-08-30,RB Leipzig,1. FC Heidenheim 1846,721,44,2,0
+2025-08-30,SV Werder Bremen,Bayer 04 Leverkusen,12,3,3,3
+2025-08-30,VfB Stuttgart,Borussia Mönchengladbach,10,18,1,0
+2025-08-30,TSG 1899 Hoffenheim,Eintracht Frankfurt,2,19,1,3
+2025-08-30,FC Augsburg,FC Bayern München,16,5,2,3
+2025-08-31,VfL Wolfsburg,1. FSV Mainz 05,11,15,1,1
+2025-08-31,Borussia Dortmund,1. FC Union Berlin,4,28,3,0
+2025-08-31,1. FC Köln,SC Freiburg,1,17,4,1
+2025-09-12,Bayer 04 Leverkusen,Eintracht Frankfurt,3,19,3,1
+2025-09-13,SC Freiburg,VfB Stuttgart,17,10,3,1
+2025-09-13,1. FSV Mainz 05,RB Leipzig,15,721,0,1
+2025-09-13,VfL Wolfsburg,1. FC Köln,11,1,3,3
+2025-09-13,1. FC Union Berlin,TSG 1899 Hoffenheim,28,2,2,4
+2025-09-13,1. FC Heidenheim 1846,Borussia Dortmund,44,4,0,2
+2025-09-13,FC Bayern München,Hamburger SV,5,7,5,0
+2025-09-14,FC St. Pauli 1910,FC Augsburg,20,16,2,1
+2025-09-14,Borussia Mönchengladbach,SV Werder Bremen,18,12,0,4
+2025-09-19,VfB Stuttgart,FC St. Pauli 1910,10,20,2,0
+2025-09-20,SV Werder Bremen,SC Freiburg,12,17,0,3
+2025-09-20,FC Augsburg,1. FSV Mainz 05,16,15,1,4
+2025-09-20,TSG 1899 Hoffenheim,FC Bayern München,2,5,1,4
+2025-09-20,Hamburger SV,1. FC Heidenheim 1846,7,44,2,1
+2025-09-20,RB Leipzig,1. FC Köln,721,1,3,1
+2025-09-21,Eintracht Frankfurt,1. FC Union Berlin,19,28,3,4
+2025-09-21,Bayer 04 Leverkusen,Borussia Mönchengladbach,3,18,1,1
+2025-09-21,Borussia Dortmund,VfL Wolfsburg,4,11,1,0
+2025-09-26,FC Bayern München,SV Werder Bremen,5,12,4,0
+2025-09-27,1. FSV Mainz 05,Borussia Dortmund,15,4,0,2
+2025-09-27,VfL Wolfsburg,RB Leipzig,11,721,0,1
+2025-09-27,FC St. Pauli 1910,Bayer 04 Leverkusen,20,3,1,2
+2025-09-27,1. FC Heidenheim 1846,FC Augsburg,44,16,2,1
+2025-09-27,Borussia Mönchengladbach,Eintracht Frankfurt,18,19,4,6
+2025-09-28,SC Freiburg,TSG 1899 Hoffenheim,17,2,1,1
+2025-09-28,1. FC Köln,VfB Stuttgart,1,10,1,2
+2025-09-28,1. FC Union Berlin,Hamburger SV,28,7,0,0
+2025-10-03,TSG 1899 Hoffenheim,1. FC Köln,2,1,0,1
+2025-10-04,Bayer 04 Leverkusen,1. FC Union Berlin,3,28,2,0
+2025-10-04,Borussia Dortmund,RB Leipzig,4,721,1,1
+2025-10-04,SV Werder Bremen,FC St. Pauli 1910,12,20,1,0
+2025-10-04,FC Augsburg,VfL Wolfsburg,16,11,3,1
+2025-10-04,Eintracht Frankfurt,FC Bayern München,19,5,0,3
+2025-10-05,VfB Stuttgart,1. FC Heidenheim 1846,10,44,1,0
+2025-10-05,Hamburger SV,1. FSV Mainz 05,7,15,4,0
+2025-10-05,Borussia Mönchengladbach,SC Freiburg,18,17,0,0
+2025-10-17,1. FC Union Berlin,Borussia Mönchengladbach,28,18,3,1
+2025-10-18,1. FSV Mainz 05,Bayer 04 Leverkusen,15,3,3,4
+2025-10-18,RB Leipzig,Hamburger SV,721,7,2,1
+2025-10-18,VfL Wolfsburg,VfB Stuttgart,11,10,0,3
+2025-10-18,1. FC Heidenheim 1846,SV Werder Bremen,44,12,2,2
+2025-10-18,1. FC Köln,FC Augsburg,1,16,1,1
+2025-10-18,FC Bayern München,Borussia Dortmund,5,4,2,1
+2025-10-19,SC Freiburg,Eintracht Frankfurt,17,19,2,2
+2025-10-19,FC St. Pauli 1910,TSG 1899 Hoffenheim,20,2,0,3
+2025-10-24,SV Werder Bremen,1. FC Union Berlin,12,28,1,0
+2025-10-25,Eintracht Frankfurt,FC St. Pauli 1910,19,20,2,0
+2025-10-25,FC Augsburg,RB Leipzig,16,721,0,6
+2025-10-25,TSG 1899 Hoffenheim,1. FC Heidenheim 1846,2,44,3,1
+2025-10-25,Hamburger SV,VfL Wolfsburg,7,11,0,1
+2025-10-25,Borussia Mönchengladbach,FC Bayern München,18,5,0,3
+2025-10-25,Borussia Dortmund,1. FC Köln,4,1,1,0
+2025-10-26,Bayer 04 Leverkusen,SC Freiburg,3,17,2,0
+2025-10-26,VfB Stuttgart,1. FSV Mainz 05,10,15,2,1
+2025-10-31,FC Augsburg,Borussia Dortmund,16,4,0,1
+2025-11-01,1. FSV Mainz 05,SV Werder Bremen,15,12,1,1
+2025-11-01,RB Leipzig,VfB Stuttgart,721,10,3,1
+2025-11-01,1. FC Union Berlin,SC Freiburg,28,17,0,0
+2025-11-01,FC St. Pauli 1910,Borussia Mönchengladbach,20,18,0,4
+2025-11-01,1. FC Heidenheim 1846,Eintracht Frankfurt,44,19,1,1
+2025-11-01,FC Bayern München,Bayer 04 Leverkusen,5,3,3,0
+2025-11-02,1. FC Köln,Hamburger SV,1,7,4,1
+2025-11-02,VfL Wolfsburg,TSG 1899 Hoffenheim,11,2,2,3
+2025-11-07,SV Werder Bremen,VfL Wolfsburg,12,11,2,1
+2025-11-08,Bayer 04 Leverkusen,1. FC Heidenheim 1846,3,44,6,0
+2025-11-08,1. FC Union Berlin,FC Bayern München,28,5,2,2
+2025-11-08,TSG 1899 Hoffenheim,RB Leipzig,2,721,3,1
+2025-11-08,Hamburger SV,Borussia Dortmund,7,4,1,1
+2025-11-08,Borussia Mönchengladbach,1. FC Köln,18,1,3,1
+2025-11-09,SC Freiburg,FC St. Pauli 1910,17,20,2,1
+2025-11-09,VfB Stuttgart,FC Augsburg,10,16,3,2
+2025-11-09,Eintracht Frankfurt,1. FSV Mainz 05,19,15,1,0
+2025-11-21,1. FSV Mainz 05,TSG 1899 Hoffenheim,15,2,1,1
+2025-11-22,FC Bayern München,SC Freiburg,5,17,6,2
+2025-11-22,Borussia Dortmund,VfB Stuttgart,4,10,3,3
+2025-11-22,VfL Wolfsburg,Bayer 04 Leverkusen,11,3,1,3
+2025-11-22,FC Augsburg,Hamburger SV,16,7,1,0
+2025-11-22,1. FC Heidenheim 1846,Borussia Mönchengladbach,44,18,0,3
+2025-11-22,1. FC Köln,Eintracht Frankfurt,1,19,3,4
+2025-11-23,RB Leipzig,SV Werder Bremen,721,12,2,0
+2025-11-23,FC St. Pauli 1910,1. FC Union Berlin,20,28,0,1
+2025-11-28,Borussia Mönchengladbach,RB Leipzig,18,721,0,0
+2025-11-29,FC Bayern München,FC St. Pauli 1910,5,20,3,1
+2025-11-29,SV Werder Bremen,1. FC Köln,12,1,1,1
+2025-11-29,1. FC Union Berlin,1. FC Heidenheim 1846,28,44,1,2
+2025-11-29,TSG 1899 Hoffenheim,FC Augsburg,2,16,3,0
+2025-11-29,Bayer 04 Leverkusen,Borussia Dortmund,3,4,1,2
+2025-11-30,Hamburger SV,VfB Stuttgart,7,10,2,1
+2025-11-30,Eintracht Frankfurt,VfL Wolfsburg,19,11,1,1
+2025-11-30,SC Freiburg,1. FSV Mainz 05,17,15,4,0
+2025-12-05,1. FSV Mainz 05,Borussia Mönchengladbach,15,18,0,1
+2025-12-06,VfB Stuttgart,FC Bayern München,10,5,0,5
+2025-12-06,VfL Wolfsburg,1. FC Union Berlin,11,28,3,1
+2025-12-06,1. FC Heidenheim 1846,SC Freiburg,44,17,2,1
+2025-12-06,1. FC Köln,FC St. Pauli 1910,1,20,1,1
+2025-12-06,FC Augsburg,Bayer 04 Leverkusen,16,3,2,0
+2025-12-06,RB Leipzig,Eintracht Frankfurt,721,19,6,0
+2025-12-07,Hamburger SV,SV Werder Bremen,7,12,3,2
+2025-12-07,Borussia Dortmund,TSG 1899 Hoffenheim,4,2,2,0
+2025-12-12,1. FC Union Berlin,RB Leipzig,28,721,3,1
+2025-12-13,Eintracht Frankfurt,FC Augsburg,19,16,1,0
+2025-12-13,Borussia Mönchengladbach,VfL Wolfsburg,18,11,1,3
+2025-12-13,FC St. Pauli 1910,1. FC Heidenheim 1846,20,44,2,1
+2025-12-13,TSG 1899 Hoffenheim,Hamburger SV,2,7,4,1
+2025-12-13,Bayer 04 Leverkusen,1. FC Köln,3,1,2,0
+2025-12-14,SC Freiburg,Borussia Dortmund,17,4,1,1
+2025-12-14,FC Bayern München,1. FSV Mainz 05,5,15,2,2
+2025-12-14,SV Werder Bremen,VfB Stuttgart,12,10,0,4
+2025-12-19,Borussia Dortmund,Borussia Mönchengladbach,4,18,2,0
+2025-12-20,VfB Stuttgart,TSG 1899 Hoffenheim,10,2,0,0
+2025-12-20,VfL Wolfsburg,SC Freiburg,11,17,3,4
+2025-12-20,FC Augsburg,SV Werder Bremen,16,12,0,0
+2025-12-20,1. FC Köln,1. FC Union Berlin,1,28,0,1
+2025-12-20,Hamburger SV,Eintracht Frankfurt,7,19,1,1
+2025-12-20,RB Leipzig,Bayer 04 Leverkusen,721,3,1,3
+2025-12-21,1. FSV Mainz 05,FC St. Pauli 1910,15,20,0,0
+2025-12-21,1. FC Heidenheim 1846,FC Bayern München,44,5,0,4
+2026-01-09,Eintracht Frankfurt,Borussia Dortmund,19,4,3,3
+2026-01-10,SC Freiburg,Hamburger SV,17,7,2,1
+2026-01-10,1. FC Union Berlin,1. FSV Mainz 05,28,15,2,2
+2026-01-10,1. FC Heidenheim 1846,1. FC Köln,44,1,2,2
+2026-01-10,Bayer 04 Leverkusen,VfB Stuttgart,3,10,1,4
+2026-01-11,Borussia Mönchengladbach,FC Augsburg,18,16,4,0
+2026-01-11,FC Bayern München,VfL Wolfsburg,5,11,8,1
+2026-01-13,VfB Stuttgart,Eintracht Frankfurt,10,19,3,2
+2026-01-13,Borussia Dortmund,SV Werder Bremen,4,12,3,0
+2026-01-13,1. FSV Mainz 05,1. FC Heidenheim 1846,15,44,2,1
+2026-01-14,VfL Wolfsburg,FC St. Pauli 1910,11,20,2,1
+2026-01-14,RB Leipzig,SC Freiburg,721,17,2,0
+2026-01-14,TSG 1899 Hoffenheim,Borussia Mönchengladbach,2,18,5,1
+2026-01-14,1. FC Köln,FC Bayern München,1,5,1,3
+2026-01-15,FC Augsburg,1. FC Union Berlin,16,28,1,1
+2026-01-16,SV Werder Bremen,Eintracht Frankfurt,12,19,3,3
+2026-01-17,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,2,3,1,0
+2026-01-17,1. FC Köln,1. FSV Mainz 05,1,15,2,1
+2026-01-17,Hamburger SV,Borussia Mönchengladbach,7,18,0,0
+2026-01-17,Borussia Dortmund,FC St. Pauli 1910,4,20,3,2
+2026-01-17,VfL Wolfsburg,1. FC Heidenheim 1846,11,44,1,1
+2026-01-17,RB Leipzig,FC Bayern München,721,5,1,5
+2026-01-18,VfB Stuttgart,1. FC Union Berlin,10,28,1,1
+2026-01-18,FC Augsburg,SC Freiburg,16,17,2,2
+2026-01-23,FC St. Pauli 1910,Hamburger SV,20,7,0,0
+2026-01-24,1. FC Heidenheim 1846,RB Leipzig,44,721,0,3
+2026-01-24,Bayer 04 Leverkusen,SV Werder Bremen,3,12,1,0
+2026-01-24,1. FSV Mainz 05,VfL Wolfsburg,15,11,3,1
+2026-01-24,FC Bayern München,FC Augsburg,5,16,1,2
+2026-01-24,Eintracht Frankfurt,TSG 1899 Hoffenheim,19,2,1,3
+2026-01-24,1. FC Union Berlin,Borussia Dortmund,28,4,0,3
+2026-01-25,Borussia Mönchengladbach,VfB Stuttgart,18,10,0,3
+2026-01-25,SC Freiburg,1. FC Köln,17,1,2,1
+2026-01-27,SV Werder Bremen,TSG 1899 Hoffenheim,12,2,0,2
+2026-01-27,FC St. Pauli 1910,RB Leipzig,20,721,1,1
+2026-01-30,1. FC Köln,VfL Wolfsburg,1,11,1,0
+2026-01-31,Eintracht Frankfurt,Bayer 04 Leverkusen,19,3,1,3
+2026-01-31,RB Leipzig,1. FSV Mainz 05,721,15,1,2
+2026-01-31,SV Werder Bremen,Borussia Mönchengladbach,12,18,1,1
+2026-01-31,TSG 1899 Hoffenheim,1. FC Union Berlin,2,28,3,1
+2026-01-31,FC Augsburg,FC St. Pauli 1910,16,20,2,1
+2026-01-31,Hamburger SV,FC Bayern München,7,5,2,2
+2026-02-01,VfB Stuttgart,SC Freiburg,10,17,1,0
+2026-02-01,Borussia Dortmund,1. FC Heidenheim 1846,4,44,3,2
+2026-02-06,1. FC Union Berlin,Eintracht Frankfurt,28,19,1,1
+2026-02-07,VfL Wolfsburg,Borussia Dortmund,11,4,1,2
+2026-02-07,SC Freiburg,SV Werder Bremen,17,12,1,0
+2026-02-07,FC St. Pauli 1910,VfB Stuttgart,20,10,2,1
+2026-02-07,1. FSV Mainz 05,FC Augsburg,15,16,2,0
+2026-02-07,1. FC Heidenheim 1846,Hamburger SV,44,7,0,2
+2026-02-07,Borussia Mönchengladbach,Bayer 04 Leverkusen,18,3,1,1
+2026-02-08,1. FC Köln,RB Leipzig,1,721,1,2
+2026-02-08,FC Bayern München,TSG 1899 Hoffenheim,5,2,5,1
+2026-02-13,Borussia Dortmund,1. FSV Mainz 05,4,15,4,0
+2026-02-14,SV Werder Bremen,FC Bayern München,12,5,0,3
+2026-02-14,TSG 1899 Hoffenheim,SC Freiburg,2,17,3,0
+2026-02-14,Eintracht Frankfurt,Borussia Mönchengladbach,19,18,3,0
+2026-02-14,Hamburger SV,1. FC Union Berlin,7,28,3,2
+2026-02-14,Bayer 04 Leverkusen,FC St. Pauli 1910,3,20,4,0
+2026-02-14,VfB Stuttgart,1. FC Köln,10,1,3,1
+2026-02-15,FC Augsburg,1. FC Heidenheim 1846,16,44,1,0
+2026-02-15,RB Leipzig,VfL Wolfsburg,721,11,2,2
+2026-02-20,1. FSV Mainz 05,Hamburger SV,15,7,1,1
+2026-02-21,1. FC Union Berlin,Bayer 04 Leverkusen,28,3,1,0
+2026-02-21,FC Bayern München,Eintracht Frankfurt,5,19,3,2
+2026-02-21,VfL Wolfsburg,FC Augsburg,11,16,2,3
+2026-02-21,1. FC Köln,TSG 1899 Hoffenheim,1,2,2,2
+2026-02-21,RB Leipzig,Borussia Dortmund,721,4,2,2
+2026-02-22,SC Freiburg,Borussia Mönchengladbach,17,18,2,1
+2026-02-22,FC St. Pauli 1910,SV Werder Bremen,20,12,2,1
+2026-02-22,1. FC Heidenheim 1846,VfB Stuttgart,44,10,3,3
+2026-02-27,FC Augsburg,1. FC Köln,16,1,2,0
+2026-02-28,Bayer 04 Leverkusen,1. FSV Mainz 05,3,15,1,1
+2026-02-28,Borussia Mönchengladbach,1. FC Union Berlin,18,28,1,0
+2026-02-28,TSG 1899 Hoffenheim,FC St. Pauli 1910,2,20,0,1
+2026-02-28,SV Werder Bremen,1. FC Heidenheim 1846,12,44,2,0
+2026-02-28,Borussia Dortmund,FC Bayern München,4,5,2,3
+2026-03-01,VfB Stuttgart,VfL Wolfsburg,10,11,4,0
+2026-03-01,Eintracht Frankfurt,SC Freiburg,19,17,2,0
+2026-03-01,Hamburger SV,RB Leipzig,7,721,1,2
+2026-03-04,Hamburger SV,Bayer 04 Leverkusen,7,3,0,1
+2026-03-06,FC Bayern München,Borussia Mönchengladbach,5,18,4,1
+2026-03-07,SC Freiburg,Bayer 04 Leverkusen,17,3,3,3
+2026-03-07,1. FSV Mainz 05,VfB Stuttgart,15,10,2,2
+2026-03-07,RB Leipzig,FC Augsburg,721,16,2,1
+2026-03-07,1. FC Heidenheim 1846,TSG 1899 Hoffenheim,44,2,2,4
+2026-03-07,VfL Wolfsburg,Hamburger SV,11,7,1,2
+2026-03-07,1. FC Köln,Borussia Dortmund,1,4,1,2
+2026-03-08,FC St. Pauli 1910,Eintracht Frankfurt,20,19,0,0
+2026-03-08,1. FC Union Berlin,SV Werder Bremen,28,12,1,4
+2026-03-13,Borussia Mönchengladbach,FC St. Pauli 1910,18,20,2,0
+2026-03-14,Bayer 04 Leverkusen,FC Bayern München,3,5,1,1
+2026-03-14,TSG 1899 Hoffenheim,VfL Wolfsburg,2,11,1,1
+2026-03-14,Borussia Dortmund,FC Augsburg,4,16,2,0
+2026-03-14,Eintracht Frankfurt,1. FC Heidenheim 1846,19,44,1,0
+2026-03-14,Hamburger SV,1. FC Köln,7,1,1,1
+2026-03-15,SV Werder Bremen,1. FSV Mainz 05,12,15,0,2
+2026-03-15,SC Freiburg,1. FC Union Berlin,17,28,0,1
+2026-03-15,VfB Stuttgart,RB Leipzig,10,721,1,0
+2026-03-20,RB Leipzig,TSG 1899 Hoffenheim,721,2,5,0
+2026-03-21,1. FC Heidenheim 1846,Bayer 04 Leverkusen,44,3,3,3
+2026-03-21,VfL Wolfsburg,SV Werder Bremen,11,12,0,1
+2026-03-21,1. FC Köln,Borussia Mönchengladbach,1,18,3,3
+2026-03-21,FC Bayern München,1. FC Union Berlin,5,28,4,0
+2026-03-21,Borussia Dortmund,Hamburger SV,4,7,3,2
+2026-03-22,1. FSV Mainz 05,Eintracht Frankfurt,15,19,2,1
+2026-03-22,FC St. Pauli 1910,SC Freiburg,20,17,1,2
+2026-03-22,FC Augsburg,VfB Stuttgart,16,10,2,5
+2026-04-04,SC Freiburg,FC Bayern München,17,5,2,3
+2026-04-04,TSG 1899 Hoffenheim,1. FSV Mainz 05,2,15,1,2
+2026-04-04,SV Werder Bremen,RB Leipzig,12,721,1,2
+2026-04-04,Bayer 04 Leverkusen,VfL Wolfsburg,3,11,6,3
+2026-04-04,Hamburger SV,FC Augsburg,7,16,1,1
+2026-04-04,Borussia Mönchengladbach,1. FC Heidenheim 1846,18,44,2,2
+2026-04-04,VfB Stuttgart,Borussia Dortmund,10,4,0,2
+2026-04-05,1. FC Union Berlin,FC St. Pauli 1910,28,20,1,1
+2026-04-05,Eintracht Frankfurt,1. FC Köln,19,1,2,2
+2026-04-10,FC Augsburg,TSG 1899 Hoffenheim,16,2,2,2
+2026-04-11,Borussia Dortmund,Bayer 04 Leverkusen,4,3,0,1
+2026-04-11,VfL Wolfsburg,Eintracht Frankfurt,11,19,1,2
+2026-04-11,RB Leipzig,Borussia Mönchengladbach,721,18,1,0
+2026-04-11,1. FC Heidenheim 1846,1. FC Union Berlin,44,28,3,1
+2026-04-11,FC St. Pauli 1910,FC Bayern München,20,5,0,5
+2026-04-12,1. FC Köln,SV Werder Bremen,1,12,3,1
+2026-04-12,VfB Stuttgart,Hamburger SV,10,7,4,0
+2026-04-12,1. FSV Mainz 05,SC Freiburg,15,17,0,1
+2026-04-17,FC St. Pauli 1910,1. FC Köln,20,1,1,1
+2026-04-18,SV Werder Bremen,Hamburger SV,12,7,3,1
+2026-04-18,Bayer 04 Leverkusen,FC Augsburg,3,16,1,2
+2026-04-18,TSG 1899 Hoffenheim,Borussia Dortmund,2,4,2,1
+2026-04-18,1. FC Union Berlin,VfL Wolfsburg,28,11,1,2
+2026-04-18,Eintracht Frankfurt,RB Leipzig,19,721,1,3
+2026-04-19,SC Freiburg,1. FC Heidenheim 1846,17,44,2,1
+2026-04-19,FC Bayern München,VfB Stuttgart,5,10,4,2
+2026-04-19,Borussia Mönchengladbach,1. FSV Mainz 05,18,15,1,1
+2026-04-24,RB Leipzig,1. FC Union Berlin,721,28,3,1
+2026-04-25,1. FSV Mainz 05,FC Bayern München,15,5,3,4
+2026-04-25,1. FC Köln,Bayer 04 Leverkusen,1,3,1,2
+2026-04-25,FC Augsburg,Eintracht Frankfurt,16,19,1,1
+2026-04-25,VfL Wolfsburg,Borussia Mönchengladbach,11,18,0,0
+2026-04-25,1. FC Heidenheim 1846,FC St. Pauli 1910,44,20,2,0
+2026-04-25,Hamburger SV,TSG 1899 Hoffenheim,7,2,1,2
+2026-04-26,VfB Stuttgart,SV Werder Bremen,10,12,1,1
+2026-04-26,Borussia Dortmund,SC Freiburg,4,17,4,0
+2026-05-02,TSG 1899 Hoffenheim,VfB Stuttgart,2,10,3,3
+2026-05-02,SV Werder Bremen,FC Augsburg,12,16,1,3
+2026-05-02,FC Bayern München,1. FC Heidenheim 1846,5,44,3,3
+2026-05-02,1. FC Union Berlin,1. FC Köln,28,1,2,2
+2026-05-02,Eintracht Frankfurt,Hamburger SV,19,7,1,2
+2026-05-02,Bayer 04 Leverkusen,RB Leipzig,3,721,4,1
+2026-05-03,FC St. Pauli 1910,1. FSV Mainz 05,20,15,1,2
+2026-05-03,Borussia Mönchengladbach,Borussia Dortmund,18,4,1,0
+2026-05-03,SC Freiburg,VfL Wolfsburg,17,11,1,1
+2026-05-08,Borussia Dortmund,Eintracht Frankfurt,4,19,3,2
+2026-05-09,VfB Stuttgart,Bayer 04 Leverkusen,10,3,3,1
+2026-05-09,TSG 1899 Hoffenheim,SV Werder Bremen,2,12,1,0
+2026-05-09,FC Augsburg,Borussia Mönchengladbach,16,18,3,1
+2026-05-09,RB Leipzig,FC St. Pauli 1910,721,20,2,1
+2026-05-09,VfL Wolfsburg,FC Bayern München,11,5,0,1
+2026-05-10,Hamburger SV,SC Freiburg,7,17,3,2
+2026-05-10,1. FC Köln,1. FC Heidenheim 1846,1,44,1,3
+2026-05-10,1. FSV Mainz 05,1. FC Union Berlin,15,28,1,3
+2026-05-16,SV Werder Bremen,Borussia Dortmund,12,4,0,2
+2026-05-16,1. FC Heidenheim 1846,1. FSV Mainz 05,44,15,0,2
+2026-05-16,SC Freiburg,RB Leipzig,17,721,4,1
+2026-05-16,Eintracht Frankfurt,VfB Stuttgart,19,10,2,2
+2026-05-16,FC St. Pauli 1910,VfL Wolfsburg,20,11,1,3
+2026-05-16,1. FC Union Berlin,FC Augsburg,28,16,4,0
+2026-05-16,Borussia Mönchengladbach,TSG 1899 Hoffenheim,18,2,4,0
+2026-05-16,FC Bayern München,1. FC Köln,5,1,5,1
+2026-05-16,Bayer 04 Leverkusen,Hamburger SV,3,7,1,1

@@ -1,0 +1,110 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+5868011,2026-08-15,Deportivo Alavés,Getafe,1.93,0.24
+5868019,2026-08-15,Sevilla,Rayo Vallecano,2.19,1.89
+5868017,2026-08-16,Racing Santander,Villarreal,1.87,0.67
+5868015,2026-08-16,Espanyol,Levante,1.47,0.19
+5868014,2026-08-17,Deportivo A Coruña,Elche,0.34,1.23
+5868012,2026-08-19,Atlético Madrid,Málaga,0.92,0.15
+5868029,2026-08-20,Rayo Vallecano,Deportivo Alavés,0.42,2.0
+5868023,2026-08-21,Real Betis,Real Sociedad,1.24,1.36
+5868021,2026-08-22,Athletic Club,Sevilla,1.37,1.26
+5868030,2026-08-22,Valencia,Celta Vigo,0.7,0.62
+5868025,2026-08-22,Espanyol,Real Madrid,1.05,2.71
+5868022,2026-08-23,Atlético Madrid,Villarreal,0.78,3.6
+5868026,2026-08-23,Getafe,Racing Santander,1.24,1.31
+5868024,2026-08-23,Elche,Barcelona,0.7,4.38
+5868028,2026-08-24,Osasuna,Levante,0.7,1.28
+5868027,2026-08-24,Málaga,Deportivo A Coruña,1.95,1.12
+5868020,2026-08-25,Valencia,Real Betis,1.12,0.71
+5868018,2026-08-26,Real Madrid,Real Sociedad,3.18,0.65
+5868013,2026-08-27,Celta Vigo,Osasuna,0.14,2.6
+5868016,2026-08-27,Barcelona,Athletic Club,4.23,0.25
+5868037,2026-08-28,Racing Santander,Elche,1.72,1.03
+5868031,2026-08-28,Deportivo Alavés,Villarreal,0.73,1.74
+5868035,2026-08-29,Levante,Real Betis,2.76,1.92
+5868039,2026-08-29,Real Sociedad,Espanyol,1.94,0.77
+5868040,2026-08-29,Sevilla,Atlético Madrid,0.9,0.93
+5868038,2026-08-30,Real Madrid,Málaga,2.62,0.71
+5868033,2026-08-30,Deportivo A Coruña,Valencia,1.42,1.4
+5868032,2026-08-30,Celta Vigo,Athletic Club,0.75,2.78
+5868036,2026-08-31,Osasuna,Getafe,1.68,0.68
+5868034,2026-08-31,Barcelona,Rayo Vallecano,3.04,1.21
+5868070,2026-09-03,Real Sociedad,Celta Vigo,1.05,0.43
+5868043,2026-09-04,Real Betis,Real Madrid,0.93,3.46
+5868042,2026-09-05,Athletic Club,Atlético Madrid,1.41,1.02
+5868048,2026-09-05,Rayo Vallecano,Racing Santander,1.61,0.48
+5868050,2026-09-05,Villarreal,Deportivo A Coruña,1.2,0.83
+5868049,2026-09-06,Valencia,Barcelona,0.66,4.08
+5868041,2026-09-06,Deportivo Alavés,Osasuna,1.2,1.64
+5868047,2026-09-06,Málaga,Levante,1.59,0.98
+5868045,2026-09-06,Espanyol,Sevilla,1.23,0.53
+5868046,2026-09-07,Getafe,Celta Vigo,0.65,1.03
+5868044,2026-09-07,Elche,Real Sociedad,2.37,0.57
+5868059,2026-09-11,Sevilla,Valencia,0.93,0.1
+5868056,2026-09-12,Racing Santander,Deportivo Alavés,2.01,1.98
+5868055,2026-09-12,Osasuna,Espanyol,1.05,1.43
+5868051,2026-09-12,Athletic Club,Elche,1.61,0.84
+5868057,2026-09-12,Real Madrid,Rayo Vallecano,2.62,1.21
+5868052,2026-09-13,Celta Vigo,Málaga,1.9,0.43
+5868054,2026-09-13,Levante,Barcelona,2.42,2.58
+5868053,2026-09-13,Getafe,Deportivo A Coruña,0.78,0.87
+5868058,2026-09-13,Real Sociedad,Atlético Madrid,0.27,2.05
+5868060,2026-09-14,Villarreal,Real Betis,1.88,3.75
+5868069,2026-09-15,Rayo Vallecano,Espanyol,1.71,1.65
+5868061,2026-09-15,Deportivo Alavés,Valencia,1.04,0.79
+5868065,2026-09-15,Elche,Real Madrid,0.78,3.61
+5868062,2026-09-16,Atlético Madrid,Osasuna,3.97,0.48
+5868064,2026-09-16,Deportivo A Coruña,Sevilla,0.14,0.73
+5868066,2026-09-16,Barcelona,Racing Santander,6.74,1.98
+5868063,2026-09-17,Real Betis,Getafe,1.89,0.29
+5868068,2026-09-17,Málaga,Villarreal,0.57,3.2
+5868075,2026-09-18,Espanyol,Elche,1.05,1.61
+5868077,2026-09-19,Osasuna,Rayo Vallecano,0.53,1.01
+5868071,2026-09-19,Athletic Club,Deportivo Alavés,1.62,0.05
+5868073,2026-09-19,Celta Vigo,Racing Santander,2.14,0.75
+5868078,2026-09-19,Sevilla,Barcelona,0.4,3.47
+5868076,2026-09-20,Getafe,Málaga,0.95,0.52
+5868072,2026-09-20,Atlético Madrid,Real Madrid,2.35,0.3
+5868074,2026-09-20,Deportivo A Coruña,Real Betis,2.09,0.8
+5868080,2026-09-20,Villarreal,Levante,4.27,0.45
+5868079,2026-09-20,Valencia,Real Sociedad,1.59,2.71
+5868086,2026-10-09,Málaga,Espanyol,0.69,1.08
+5868081,2026-10-10,Deportivo Alavés,Atlético Madrid,1.3,2.05
+5868084,2026-10-10,Barcelona,Getafe,1.93,0.14
+5868089,2026-10-10,Real Madrid,Villarreal,1.43,0.59
+5868083,2026-10-11,Elche,Celta Vigo,0.78,0.47
+5868090,2026-10-11,Real Sociedad,Deportivo A Coruña,1.44,2.13
+5868082,2026-10-11,Real Betis,Osasuna,2.89,1.94
+5868087,2026-10-11,Racing Santander,Valencia,1.29,1.8
+5868085,2026-10-12,Levante,Sevilla,1.82,2.2
+5868093,2026-10-16,Deportivo A Coruña,Levante,1.08,0.79
+5868094,2026-10-17,Espanyol,Atlético Madrid,0.53,1.47
+5868100,2026-10-17,Villarreal,Elche,2.39,0.3
+5868091,2026-10-17,Real Betis,Barcelona,1.24,3.1
+5868099,2026-10-17,Valencia,Athletic Club,1.41,0.59
+5868097,2026-10-18,Osasuna,Racing Santander,3.65,0.28
+5868092,2026-10-18,Celta Vigo,Deportivo Alavés,0.97,1.06
+5868096,2026-10-18,Málaga,Real Sociedad,1.24,2.44
+5868098,2026-10-18,Real Madrid,Sevilla,2.28,0.75
+5868095,2026-10-19,Getafe,Rayo Vallecano,0.57,2.25
+5868067,2026-10-21,Levante,Athletic Club,1.82,2.04
+5868101,2026-10-23,Deportivo Alavés,Málaga,1.51,0.47
+5868107,2026-10-24,Rayo Vallecano,Elche,1.52,2.52
+5868106,2026-10-24,Racing Santander,Espanyol,2.27,0.52
+5868110,2026-10-24,Valencia,Villarreal,1.13,1.5
+5868103,2026-10-24,Atlético Madrid,Deportivo A Coruña,1.41,1.67
+5868102,2026-10-25,Athletic Club,Getafe,0.72,0.43
+5868104,2026-10-25,Celta Vigo,Real Betis,0.76,1.15
+5868108,2026-10-25,Real Sociedad,Levante,2.22,0.48
+5868105,2026-10-25,Barcelona,Real Madrid,1.19,1.94
+5868109,2026-10-26,Sevilla,Osasuna,1.17,0.61
+5868120,2026-10-30,Villarreal,Espanyol,0.88,0.22
+5868117,2026-10-31,Levante,Atlético Madrid,1.4,0.7
+5868119,2026-10-31,Rayo Vallecano,Celta Vigo,1.09,1.39
+5868112,2026-10-31,Real Betis,Málaga,1.8,1.16
+5868115,2026-10-31,Barcelona,Deportivo Alavés,3.26,0.76
+5868116,2026-11-01,Getafe,Sevilla,1.58,0.77
+5868118,2026-11-01,Racing Santander,Real Madrid,0.97,3.36
+5868114,2026-11-01,Elche,Valencia,1.26,0.79
+5868111,2026-11-01,Athletic Club,Real Sociedad,3.08,1.15
+5868113,2026-11-02,Deportivo A Coruña,Osasuna,2.35,1.14

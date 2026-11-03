@@ -1,0 +1,381 @@
+day,home,away,home_id,away_id,hg,ag
+2022-08-12,Osasuna,Sevilla,8371,8302,2,1
+2022-08-13,Celta Vigo,Espanyol,9910,8558,2,2
+2022-08-13,Real Valladolid,Villarreal,10281,10205,0,3
+2022-08-13,Barcelona,Rayo Vallecano,8634,8370,0,0
+2022-08-14,Cádiz,Real Sociedad,8385,8560,0,1
+2022-08-14,Valencia,Girona,10267,7732,1,0
+2022-08-14,Almería,Real Madrid,9865,8633,1,2
+2022-08-15,Athletic Club,Mallorca,8315,8661,0,0
+2022-08-15,Getafe,Atlético Madrid,8305,9906,0,3
+2022-08-15,Real Betis,Elche,8603,10268,3,0
+2022-08-19,Espanyol,Rayo Vallecano,8558,8370,0,2
+2022-08-19,Sevilla,Real Valladolid,8302,10281,1,1
+2022-08-20,Osasuna,Cádiz,8371,8385,2,0
+2022-08-20,Mallorca,Real Betis,8661,8603,1,2
+2022-08-20,Celta Vigo,Real Madrid,9910,8633,1,4
+2022-08-21,Athletic Club,Valencia,8315,10267,1,0
+2022-08-21,Atlético Madrid,Villarreal,9906,10205,0,2
+2022-08-21,Real Sociedad,Barcelona,8560,8634,1,4
+2022-08-22,Elche,Almería,10268,9865,1,1
+2022-08-22,Girona,Getafe,7732,8305,3,1
+2022-08-26,Girona,Celta Vigo,7732,9910,0,1
+2022-08-26,Real Betis,Osasuna,8603,8371,1,0
+2022-08-27,Elche,Real Sociedad,10268,8560,0,1
+2022-08-27,Rayo Vallecano,Mallorca,8370,8661,0,2
+2022-08-27,Almería,Sevilla,9865,8302,2,1
+2022-08-28,Getafe,Villarreal,8305,10205,0,0
+2022-08-28,Barcelona,Real Valladolid,8634,10281,4,0
+2022-08-28,Espanyol,Real Madrid,8558,8633,1,3
+2022-08-29,Cádiz,Athletic Club,8385,8315,0,4
+2022-08-29,Valencia,Atlético Madrid,10267,9906,0,1
+2022-09-02,Celta Vigo,Cádiz,9910,8385,3,0
+2022-09-03,Mallorca,Girona,8661,7732,1,1
+2022-09-03,Real Madrid,Real Betis,8633,8603,2,1
+2022-09-03,Real Sociedad,Atlético Madrid,8560,9906,1,1
+2022-09-03,Sevilla,Barcelona,8302,8634,0,3
+2022-09-04,Osasuna,Rayo Vallecano,8371,8370,2,1
+2022-09-04,Athletic Club,Espanyol,8315,8558,0,1
+2022-09-04,Villarreal,Elche,10205,10268,4,0
+2022-09-04,Valencia,Getafe,10267,8305,5,1
+2022-09-05,Real Valladolid,Almería,10281,9865,1,0
+2022-09-09,Girona,Real Valladolid,7732,10281,2,1
+2022-09-10,Rayo Vallecano,Valencia,8370,10267,2,1
+2022-09-10,Espanyol,Sevilla,8558,8302,2,3
+2022-09-10,Cádiz,Barcelona,8385,8634,0,4
+2022-09-10,Atlético Madrid,Celta Vigo,9906,9910,4,1
+2022-09-11,Real Madrid,Mallorca,8633,8661,4,1
+2022-09-11,Elche,Athletic Club,10268,8315,1,4
+2022-09-11,Getafe,Real Sociedad,8305,8560,2,1
+2022-09-11,Real Betis,Villarreal,8603,10205,1,0
+2022-09-12,Almería,Osasuna,9865,8371,0,1
+2022-09-16,Real Valladolid,Cádiz,10281,8385,0,1
+2022-09-17,Mallorca,Almería,8661,9865,1,0
+2022-09-17,Barcelona,Elche,8634,10268,3,0
+2022-09-17,Valencia,Celta Vigo,10267,9910,3,0
+2022-09-17,Athletic Club,Rayo Vallecano,8315,8370,3,2
+2022-09-18,Osasuna,Getafe,8371,8305,0,2
+2022-09-18,Villarreal,Sevilla,10205,8302,1,1
+2022-09-18,Real Betis,Girona,8603,7732,2,1
+2022-09-18,Real Sociedad,Espanyol,8560,8558,2,1
+2022-09-18,Atlético Madrid,Real Madrid,9906,8633,1,2
+2022-09-30,Athletic Club,Almería,8315,9865,4,0
+2022-10-01,Cádiz,Villarreal,8385,10205,0,0
+2022-10-01,Getafe,Real Valladolid,8305,10281,2,3
+2022-10-01,Sevilla,Atlético Madrid,8302,9906,0,2
+2022-10-01,Mallorca,Barcelona,8661,8634,0,1
+2022-10-02,Espanyol,Valencia,8558,10267,2,2
+2022-10-02,Celta Vigo,Real Betis,9910,8603,1,0
+2022-10-02,Girona,Real Sociedad,7732,8560,3,5
+2022-10-02,Real Madrid,Osasuna,8633,8371,1,1
+2022-10-03,Rayo Vallecano,Elche,8370,10268,2,1
+2022-10-07,Osasuna,Valencia,8371,10267,1,2
+2022-10-08,Almería,Rayo Vallecano,9865,8370,3,1
+2022-10-08,Atlético Madrid,Girona,9906,7732,2,1
+2022-10-08,Sevilla,Athletic Club,8302,8315,1,1
+2022-10-08,Getafe,Real Madrid,8305,8633,0,1
+2022-10-09,Real Valladolid,Real Betis,10281,8603,0,0
+2022-10-09,Cádiz,Espanyol,8385,8558,2,2
+2022-10-09,Real Sociedad,Villarreal,8560,10205,1,0
+2022-10-09,Barcelona,Celta Vigo,8634,9910,1,0
+2022-10-10,Elche,Mallorca,10268,8661,1,1
+2022-10-14,Rayo Vallecano,Getafe,8370,8305,0,0
+2022-10-15,Girona,Cádiz,7732,8385,1,1
+2022-10-15,Valencia,Elche,10267,10268,2,2
+2022-10-15,Mallorca,Sevilla,8661,8302,0,1
+2022-10-15,Athletic Club,Atlético Madrid,8315,9906,0,1
+2022-10-16,Celta Vigo,Real Sociedad,9910,8560,1,2
+2022-10-16,Real Madrid,Barcelona,8633,8634,3,1
+2022-10-16,Espanyol,Real Valladolid,8558,10281,1,0
+2022-10-16,Real Betis,Almería,8603,9865,3,1
+2022-10-17,Villarreal,Osasuna,10205,8371,2,0
+2022-10-18,Sevilla,Valencia,8302,10267,1,1
+2022-10-18,Getafe,Athletic Club,8305,8315,2,2
+2022-10-18,Atlético Madrid,Rayo Vallecano,9906,8370,1,1
+2022-10-19,Cádiz,Real Betis,8385,8603,0,0
+2022-10-19,Real Valladolid,Celta Vigo,10281,9910,4,1
+2022-10-19,Real Sociedad,Mallorca,8560,8661,1,0
+2022-10-19,Elche,Real Madrid,10268,8633,0,3
+2022-10-20,Almería,Girona,9865,7732,3,2
+2022-10-20,Osasuna,Espanyol,8371,8558,1,0
+2022-10-20,Barcelona,Villarreal,8634,10205,3,0
+2022-10-22,Rayo Vallecano,Cádiz,8370,8385,5,1
+2022-10-22,Real Valladolid,Real Sociedad,10281,8560,1,0
+2022-10-22,Valencia,Mallorca,10267,8661,1,2
+2022-10-22,Real Madrid,Sevilla,8633,8302,3,1
+2022-10-23,Espanyol,Elche,8558,10268,2,2
+2022-10-23,Real Betis,Atlético Madrid,8603,9906,1,2
+2022-10-23,Girona,Osasuna,7732,8371,1,1
+2022-10-23,Villarreal,Almería,10205,9865,2,1
+2022-10-23,Barcelona,Athletic Club,8634,8315,4,0
+2022-10-24,Celta Vigo,Getafe,9910,8305,1,1
+2022-10-28,Mallorca,Espanyol,8661,8558,1,1
+2022-10-29,Almería,Celta Vigo,9865,9910,3,1
+2022-10-29,Cádiz,Atlético Madrid,8385,9906,3,2
+2022-10-29,Sevilla,Rayo Vallecano,8302,8370,0,1
+2022-10-29,Valencia,Barcelona,10267,8634,0,1
+2022-10-30,Osasuna,Real Valladolid,8371,10281,2,0
+2022-10-30,Real Madrid,Girona,8633,7732,1,1
+2022-10-30,Athletic Club,Villarreal,8315,10205,1,0
+2022-10-30,Real Sociedad,Real Betis,8560,8603,0,2
+2022-10-31,Elche,Getafe,10268,8305,0,1
+2022-11-04,Girona,Athletic Club,7732,8315,2,1
+2022-11-05,Getafe,Cádiz,8305,8385,0,0
+2022-11-05,Real Valladolid,Elche,10281,10268,2,1
+2022-11-05,Celta Vigo,Osasuna,9910,8371,1,2
+2022-11-05,Barcelona,Almería,8634,9865,2,0
+2022-11-06,Atlético Madrid,Espanyol,9906,8558,1,1
+2022-11-06,Real Sociedad,Valencia,8560,10267,1,1
+2022-11-06,Villarreal,Mallorca,10205,8661,0,2
+2022-11-06,Real Betis,Sevilla,8603,8302,1,1
+2022-11-07,Rayo Vallecano,Real Madrid,8370,8633,3,2
+2022-11-08,Elche,Girona,10268,7732,1,2
+2022-11-08,Athletic Club,Real Valladolid,8315,10281,3,0
+2022-11-08,Osasuna,Barcelona,8371,8634,1,2
+2022-11-09,Almería,Getafe,9865,8305,1,0
+2022-11-09,Sevilla,Real Sociedad,8302,8560,1,2
+2022-11-09,Espanyol,Villarreal,8558,10205,0,1
+2022-11-09,Mallorca,Atlético Madrid,8661,9906,1,0
+2022-11-10,Rayo Vallecano,Celta Vigo,8370,9910,0,0
+2022-11-10,Valencia,Real Betis,10267,8603,3,0
+2022-11-10,Real Madrid,Cádiz,8633,8385,2,1
+2022-12-29,Girona,Rayo Vallecano,7732,8370,2,2
+2022-12-29,Real Betis,Athletic Club,8603,8315,0,0
+2022-12-29,Atlético Madrid,Elche,9906,10268,2,0
+2022-12-30,Getafe,Mallorca,8305,8661,2,0
+2022-12-30,Cádiz,Almería,8385,9865,1,1
+2022-12-30,Celta Vigo,Sevilla,9910,8302,1,1
+2022-12-30,Real Valladolid,Real Madrid,10281,8633,0,2
+2022-12-31,Barcelona,Espanyol,8634,8558,1,1
+2022-12-31,Real Sociedad,Osasuna,8560,8371,2,0
+2022-12-31,Villarreal,Valencia,10205,10267,2,1
+2023-01-06,Elche,Celta Vigo,10268,9910,0,1
+2023-01-06,Valencia,Cádiz,10267,8385,0,1
+2023-01-07,Villarreal,Real Madrid,10205,8633,2,1
+2023-01-07,Mallorca,Real Valladolid,8661,10281,1,0
+2023-01-07,Espanyol,Girona,8558,7732,2,2
+2023-01-08,Almería,Real Sociedad,9865,8560,0,2
+2023-01-08,Rayo Vallecano,Real Betis,8370,8603,1,2
+2023-01-08,Sevilla,Getafe,8302,8305,2,1
+2023-01-08,Atlético Madrid,Barcelona,9906,8634,0,1
+2023-01-09,Athletic Club,Osasuna,8315,8371,0,0
+2023-01-13,Celta Vigo,Villarreal,9910,10205,1,1
+2023-01-14,Real Valladolid,Rayo Vallecano,10281,8370,0,1
+2023-01-14,Girona,Sevilla,7732,8302,2,1
+2023-01-14,Osasuna,Mallorca,8371,8661,1,0
+2023-01-14,Real Sociedad,Athletic Club,8560,8315,3,1
+2023-01-15,Getafe,Espanyol,8305,8558,1,2
+2023-01-15,Almería,Atlético Madrid,9865,9906,1,1
+2023-01-16,Cádiz,Elche,8385,10268,1,1
+2023-01-20,Mallorca,Celta Vigo,8661,9910,1,0
+2023-01-21,Rayo Vallecano,Real Sociedad,8370,8560,0,2
+2023-01-21,Espanyol,Real Betis,8558,8603,1,0
+2023-01-21,Atlético Madrid,Real Valladolid,9906,10281,3,0
+2023-01-21,Sevilla,Cádiz,8302,8385,1,0
+2023-01-22,Villarreal,Girona,10205,7732,1,0
+2023-01-22,Elche,Osasuna,10268,8371,1,1
+2023-01-22,Barcelona,Getafe,8634,8305,1,0
+2023-01-22,Athletic Club,Real Madrid,8315,8633,0,2
+2023-01-23,Valencia,Almería,10267,9865,2,2
+2023-01-27,Almería,Espanyol,9865,8558,3,1
+2023-01-28,Cádiz,Mallorca,8385,8661,2,0
+2023-01-28,Girona,Barcelona,7732,8634,0,1
+2023-01-28,Sevilla,Elche,8302,10268,3,0
+2023-01-28,Getafe,Real Betis,8305,8603,0,1
+2023-01-29,Real Valladolid,Valencia,10281,10267,1,0
+2023-01-29,Osasuna,Atlético Madrid,8371,9906,0,1
+2023-01-29,Celta Vigo,Athletic Club,9910,8315,1,0
+2023-01-29,Real Madrid,Real Sociedad,8633,8560,0,0
+2023-01-30,Villarreal,Rayo Vallecano,10205,8370,0,1
+2023-02-01,Real Betis,Barcelona,8603,8634,1,2
+2023-02-02,Real Madrid,Valencia,8633,10267,2,0
+2023-02-03,Athletic Club,Cádiz,8315,8385,4,1
+2023-02-04,Espanyol,Osasuna,8558,8371,1,1
+2023-02-04,Elche,Villarreal,10268,10205,3,1
+2023-02-04,Atlético Madrid,Getafe,9906,8305,1,1
+2023-02-04,Real Betis,Celta Vigo,8603,9910,3,4
+2023-02-05,Mallorca,Real Madrid,8661,8633,1,0
+2023-02-05,Girona,Valencia,7732,10267,1,0
+2023-02-05,Real Sociedad,Real Valladolid,8560,10281,0,1
+2023-02-05,Barcelona,Sevilla,8634,8302,3,0
+2023-02-06,Rayo Vallecano,Almería,8370,9865,2,0
+2023-02-10,Cádiz,Girona,8385,7732,2,0
+2023-02-11,Almería,Real Betis,9865,8603,2,3
+2023-02-11,Sevilla,Mallorca,8302,8661,2,0
+2023-02-11,Valencia,Athletic Club,10267,8315,1,2
+2023-02-12,Getafe,Rayo Vallecano,8305,8370,1,1
+2023-02-12,Celta Vigo,Atlético Madrid,9910,9906,0,1
+2023-02-12,Real Valladolid,Osasuna,10281,8371,0,0
+2023-02-12,Villarreal,Barcelona,10205,8634,0,1
+2023-02-13,Espanyol,Real Sociedad,8558,8560,2,3
+2023-02-15,Real Madrid,Elche,8633,10268,4,0
+2023-02-17,Girona,Almería,7732,9865,6,2
+2023-02-18,Real Sociedad,Celta Vigo,8560,9910,1,1
+2023-02-18,Real Betis,Real Valladolid,8603,10281,2,1
+2023-02-18,Mallorca,Villarreal,8661,10205,4,2
+2023-02-18,Osasuna,Real Madrid,8371,8633,0,2
+2023-02-19,Elche,Espanyol,10268,8558,0,1
+2023-02-19,Rayo Vallecano,Sevilla,8370,8302,1,1
+2023-02-19,Atlético Madrid,Athletic Club,9906,8315,1,0
+2023-02-19,Barcelona,Cádiz,8634,8385,2,0
+2023-02-20,Getafe,Valencia,8305,10267,1,0
+2023-02-24,Elche,Real Betis,10268,8603,2,3
+2023-02-25,Espanyol,Mallorca,8558,8661,2,1
+2023-02-25,Cádiz,Rayo Vallecano,8385,8370,1,0
+2023-02-25,Real Madrid,Atlético Madrid,8633,9906,1,1
+2023-02-25,Valencia,Real Sociedad,10267,8560,1,0
+2023-02-26,Athletic Club,Girona,8315,7732,2,3
+2023-02-26,Celta Vigo,Real Valladolid,9910,10281,3,0
+2023-02-26,Almería,Barcelona,9865,8634,1,0
+2023-02-26,Sevilla,Osasuna,8302,8371,2,3
+2023-02-27,Villarreal,Getafe,10205,8305,2,1
+2023-03-03,Real Sociedad,Cádiz,8560,8385,0,0
+2023-03-04,Getafe,Girona,8305,7732,3,2
+2023-03-04,Almería,Villarreal,9865,10205,0,2
+2023-03-04,Mallorca,Elche,8661,10268,0,1
+2023-03-04,Atlético Madrid,Sevilla,9906,8302,6,1
+2023-03-05,Real Valladolid,Espanyol,10281,8558,2,1
+2023-03-05,Barcelona,Valencia,8634,10267,1,0
+2023-03-05,Rayo Vallecano,Athletic Club,8370,8315,0,0
+2023-03-05,Real Betis,Real Madrid,8603,8633,0,0
+2023-03-06,Osasuna,Celta Vigo,8371,9910,0,0
+2023-03-10,Cádiz,Getafe,8385,8305,2,2
+2023-03-11,Real Madrid,Espanyol,8633,8558,3,1
+2023-03-11,Elche,Real Valladolid,10268,10281,1,1
+2023-03-11,Celta Vigo,Rayo Vallecano,9910,8370,3,0
+2023-03-11,Valencia,Osasuna,10267,8371,1,0
+2023-03-12,Mallorca,Real Sociedad,8661,8560,1,1
+2023-03-12,Sevilla,Almería,8302,9865,2,1
+2023-03-12,Villarreal,Real Betis,10205,8603,1,1
+2023-03-12,Athletic Club,Barcelona,8315,8634,0,1
+2023-03-13,Girona,Atlético Madrid,7732,9906,0,1
+2023-03-17,Real Valladolid,Athletic Club,10281,8315,1,3
+2023-03-18,Almería,Cádiz,9865,8385,1,1
+2023-03-18,Rayo Vallecano,Girona,8370,7732,2,2
+2023-03-18,Espanyol,Celta Vigo,8558,9910,1,3
+2023-03-18,Atlético Madrid,Valencia,9906,10267,3,0
+2023-03-19,Real Betis,Mallorca,8603,8661,1,0
+2023-03-19,Osasuna,Villarreal,8371,10205,0,3
+2023-03-19,Real Sociedad,Elche,8560,10268,2,0
+2023-03-19,Getafe,Sevilla,8305,8302,2,0
+2023-03-19,Barcelona,Real Madrid,8634,8633,2,1
+2023-03-31,Mallorca,Osasuna,8661,8371,0,0
+2023-04-01,Girona,Espanyol,7732,8558,2,1
+2023-04-01,Athletic Club,Getafe,8315,8305,0,0
+2023-04-01,Cádiz,Sevilla,8385,8302,0,2
+2023-04-01,Elche,Barcelona,10268,8634,0,4
+2023-04-02,Celta Vigo,Almería,9910,9865,2,2
+2023-04-02,Real Madrid,Real Valladolid,8633,10281,6,0
+2023-04-02,Villarreal,Real Sociedad,10205,8560,2,0
+2023-04-02,Atlético Madrid,Real Betis,9906,8603,1,0
+2023-04-03,Valencia,Rayo Vallecano,10267,8370,1,1
+2023-04-07,Sevilla,Celta Vigo,8302,9910,2,2
+2023-04-08,Osasuna,Elche,8371,10268,2,1
+2023-04-08,Espanyol,Athletic Club,8558,8315,1,2
+2023-04-08,Real Sociedad,Getafe,8560,8305,2,0
+2023-04-08,Real Madrid,Villarreal,8633,10205,2,3
+2023-04-09,Real Valladolid,Mallorca,10281,8661,3,3
+2023-04-09,Real Betis,Cádiz,8603,8385,0,2
+2023-04-09,Almería,Valencia,9865,10267,2,1
+2023-04-09,Rayo Vallecano,Atlético Madrid,8370,9906,1,2
+2023-04-10,Barcelona,Girona,8634,7732,0,0
+2023-04-14,Rayo Vallecano,Osasuna,8370,8371,2,1
+2023-04-15,Villarreal,Real Valladolid,10205,10281,1,2
+2023-04-15,Athletic Club,Real Sociedad,8315,8560,2,0
+2023-04-15,Real Betis,Espanyol,8603,8558,3,1
+2023-04-15,Cádiz,Real Madrid,8385,8633,0,2
+2023-04-16,Girona,Elche,7732,10268,2,0
+2023-04-16,Getafe,Barcelona,8305,8634,0,0
+2023-04-16,Atlético Madrid,Almería,9906,9865,2,1
+2023-04-16,Valencia,Sevilla,10267,8302,0,2
+2023-04-17,Celta Vigo,Mallorca,9910,8661,0,1
+2023-04-21,Espanyol,Cádiz,8558,8385,0,0
+2023-04-22,Osasuna,Real Betis,8371,8603,3,2
+2023-04-22,Almería,Athletic Club,9865,8315,1,2
+2023-04-22,Real Sociedad,Rayo Vallecano,8560,8370,2,1
+2023-04-22,Real Valladolid,Girona,10281,7732,1,0
+2023-04-22,Real Madrid,Celta Vigo,8633,9910,2,0
+2023-04-23,Elche,Valencia,10268,10267,0,2
+2023-04-23,Barcelona,Atlético Madrid,8634,9906,1,0
+2023-04-23,Mallorca,Getafe,8661,8305,3,1
+2023-04-23,Sevilla,Villarreal,8302,10205,2,1
+2023-04-25,Cádiz,Osasuna,8385,8371,0,1
+2023-04-25,Girona,Real Madrid,7732,8633,4,2
+2023-04-25,Real Betis,Real Sociedad,8603,8560,0,0
+2023-04-26,Atlético Madrid,Mallorca,9906,8661,3,1
+2023-04-26,Getafe,Almería,8305,9865,1,2
+2023-04-26,Celta Vigo,Elche,9910,10268,1,0
+2023-04-26,Rayo Vallecano,Barcelona,8370,8634,2,1
+2023-04-27,Valencia,Real Valladolid,10267,10281,2,1
+2023-04-27,Villarreal,Espanyol,10205,8558,4,2
+2023-04-27,Athletic Club,Sevilla,8315,8302,0,1
+2023-04-28,Osasuna,Real Sociedad,8371,8560,0,2
+2023-04-29,Elche,Rayo Vallecano,10268,8370,4,0
+2023-04-29,Real Madrid,Almería,8633,9865,4,2
+2023-04-29,Barcelona,Real Betis,8634,8603,4,0
+2023-04-30,Cádiz,Valencia,8385,10267,2,1
+2023-04-30,Villarreal,Celta Vigo,10205,9910,3,1
+2023-04-30,Espanyol,Getafe,8558,8305,1,0
+2023-04-30,Real Valladolid,Atlético Madrid,10281,9906,2,5
+2023-05-01,Mallorca,Athletic Club,8661,8315,1,1
+2023-05-01,Sevilla,Girona,8302,7732,0,2
+2023-05-02,Almería,Elche,9865,10268,2,1
+2023-05-02,Barcelona,Osasuna,8634,8371,1,0
+2023-05-02,Real Sociedad,Real Madrid,8560,8633,2,0
+2023-05-03,Valencia,Villarreal,10267,10205,1,1
+2023-05-03,Atlético Madrid,Cádiz,9906,8385,5,1
+2023-05-03,Getafe,Celta Vigo,8305,9910,1,0
+2023-05-04,Girona,Mallorca,7732,8661,2,1
+2023-05-04,Sevilla,Espanyol,8302,8558,3,2
+2023-05-04,Athletic Club,Real Betis,8315,8603,0,1
+2023-05-04,Rayo Vallecano,Real Valladolid,8370,10281,2,1
+2023-05-12,Mallorca,Cádiz,8661,8385,1,0
+2023-05-13,Real Sociedad,Girona,8560,7732,2,2
+2023-05-13,Osasuna,Almería,8371,9865,3,1
+2023-05-13,Villarreal,Athletic Club,10205,8315,5,1
+2023-05-13,Real Madrid,Getafe,8633,8305,1,0
+2023-05-14,Celta Vigo,Valencia,9910,10267,1,2
+2023-05-14,Elche,Atlético Madrid,10268,9906,1,0
+2023-05-14,Real Valladolid,Sevilla,10281,8302,0,3
+2023-05-14,Espanyol,Barcelona,8558,8634,2,4
+2023-05-15,Real Betis,Rayo Vallecano,8603,8370,3,1
+2023-05-19,Cádiz,Real Valladolid,8385,10281,2,0
+2023-05-20,Girona,Villarreal,7732,10205,1,2
+2023-05-20,Athletic Club,Celta Vigo,8315,9910,2,1
+2023-05-20,Almería,Mallorca,9865,8661,3,0
+2023-05-20,Getafe,Elche,8305,10268,1,1
+2023-05-20,Barcelona,Real Sociedad,8634,8560,1,2
+2023-05-21,Rayo Vallecano,Espanyol,8370,8558,1,2
+2023-05-21,Atlético Madrid,Osasuna,9906,8371,3,0
+2023-05-21,Valencia,Real Madrid,10267,8633,1,0
+2023-05-21,Sevilla,Real Betis,8302,8603,0,0
+2023-05-23,Celta Vigo,Girona,9910,7732,1,1
+2023-05-23,Real Sociedad,Almería,8560,9865,1,0
+2023-05-23,Real Valladolid,Barcelona,10281,8634,3,1
+2023-05-24,Elche,Sevilla,10268,8302,1,1
+2023-05-24,Real Madrid,Rayo Vallecano,8633,8370,2,1
+2023-05-24,Villarreal,Cádiz,10205,8385,2,0
+2023-05-24,Espanyol,Atlético Madrid,8558,9906,3,3
+2023-05-24,Real Betis,Getafe,8603,8305,0,1
+2023-05-25,Mallorca,Valencia,8661,10267,1,0
+2023-05-25,Osasuna,Athletic Club,8371,8315,2,0
+2023-05-27,Sevilla,Real Madrid,8302,8633,1,2
+2023-05-28,Almería,Real Valladolid,9865,10281,0,0
+2023-05-28,Athletic Club,Elche,8315,10268,0,1
+2023-05-28,Atlético Madrid,Real Sociedad,9906,8560,2,1
+2023-05-28,Barcelona,Mallorca,8634,8661,3,0
+2023-05-28,Cádiz,Celta Vigo,8385,9910,1,0
+2023-05-28,Getafe,Osasuna,8305,8371,2,1
+2023-05-28,Girona,Real Betis,7732,8603,1,2
+2023-05-28,Rayo Vallecano,Villarreal,8370,10205,2,1
+2023-05-28,Valencia,Espanyol,10267,8558,2,2
+2023-06-04,Mallorca,Rayo Vallecano,8661,8370,3,0
+2023-06-04,Osasuna,Girona,8371,7732,2,1
+2023-06-04,Real Madrid,Athletic Club,8633,8315,1,1
+2023-06-04,Real Sociedad,Sevilla,8560,8302,2,1
+2023-06-04,Villarreal,Atlético Madrid,10205,9906,2,2
+2023-06-04,Celta Vigo,Barcelona,9910,8634,2,1
+2023-06-04,Elche,Cádiz,10268,8385,1,1
+2023-06-04,Espanyol,Almería,8558,9865,3,3
+2023-06-04,Real Betis,Valencia,8603,10267,1,1
+2023-06-04,Real Valladolid,Getafe,10281,8305,0,0

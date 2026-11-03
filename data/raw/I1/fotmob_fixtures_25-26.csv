@@ -1,0 +1,381 @@
+day,home,away,home_id,away_id,hg,ag
+2025-08-23,Genoa,Lecce,10233,9888,0,0
+2025-08-23,Sassuolo,Napoli,7943,9875,0,2
+2025-08-23,Milan,Cremonese,8564,7801,1,2
+2025-08-23,Roma,Bologna,8686,9857,1,0
+2025-08-24,Cagliari,Fiorentina,8529,8535,1,1
+2025-08-24,Como,Lazio,10171,8543,2,0
+2025-08-24,Atalanta,Pisa,8524,6479,1,1
+2025-08-24,Juventus,Parma,9885,10167,2,0
+2025-08-25,Udinese,Hellas Verona,8600,9876,1,1
+2025-08-25,Inter,Torino,8636,9804,5,0
+2025-08-29,Cremonese,Sassuolo,7801,7943,3,2
+2025-08-29,Lecce,Milan,9888,8564,0,2
+2025-08-30,Bologna,Como,9857,10171,1,0
+2025-08-30,Parma,Atalanta,10167,8524,1,1
+2025-08-30,Pisa,Roma,6479,8686,0,1
+2025-08-30,Napoli,Cagliari,9875,8529,1,0
+2025-08-31,Genoa,Juventus,10233,9885,0,1
+2025-08-31,Torino,Fiorentina,9804,8535,0,0
+2025-08-31,Inter,Udinese,8636,8600,1,2
+2025-08-31,Lazio,Hellas Verona,8543,9876,4,0
+2025-09-13,Cagliari,Parma,8529,10167,2,0
+2025-09-13,Juventus,Inter,9885,8636,4,3
+2025-09-13,Fiorentina,Napoli,8535,9875,1,3
+2025-09-14,Roma,Torino,8686,9804,0,1
+2025-09-14,Atalanta,Lecce,8524,9888,4,1
+2025-09-14,Pisa,Udinese,6479,8600,0,1
+2025-09-14,Sassuolo,Lazio,7943,8543,1,0
+2025-09-14,Milan,Bologna,8564,9857,1,0
+2025-09-15,Hellas Verona,Cremonese,9876,7801,0,0
+2025-09-15,Como,Genoa,10171,10233,1,1
+2025-09-19,Lecce,Cagliari,9888,8529,1,2
+2025-09-20,Bologna,Genoa,9857,10233,2,1
+2025-09-20,Hellas Verona,Juventus,9876,9885,1,1
+2025-09-20,Udinese,Milan,8600,8564,0,3
+2025-09-21,Lazio,Roma,8543,8686,0,1
+2025-09-21,Cremonese,Parma,7801,10167,0,0
+2025-09-21,Torino,Atalanta,9804,8524,0,3
+2025-09-21,Fiorentina,Como,8535,10171,1,2
+2025-09-21,Inter,Sassuolo,8636,7943,2,1
+2025-09-22,Napoli,Pisa,9875,6479,3,2
+2025-09-27,Como,Cremonese,10171,7801,1,1
+2025-09-27,Juventus,Atalanta,9885,8524,1,1
+2025-09-27,Cagliari,Inter,8529,8636,0,2
+2025-09-28,Sassuolo,Udinese,7943,8600,3,1
+2025-09-28,Pisa,Fiorentina,6479,8535,0,0
+2025-09-28,Roma,Hellas Verona,8686,9876,2,0
+2025-09-28,Lecce,Bologna,9888,9857,2,2
+2025-09-28,Milan,Napoli,8564,9875,2,1
+2025-09-29,Parma,Torino,10167,9804,2,1
+2025-09-29,Genoa,Lazio,10233,8543,0,3
+2025-10-03,Hellas Verona,Sassuolo,9876,7943,0,1
+2025-10-04,Lazio,Torino,8543,9804,3,3
+2025-10-04,Parma,Lecce,10167,9888,0,1
+2025-10-04,Inter,Cremonese,8636,7801,4,1
+2025-10-04,Atalanta,Como,8524,10171,1,1
+2025-10-05,Udinese,Cagliari,8600,8529,1,1
+2025-10-05,Bologna,Pisa,9857,6479,4,0
+2025-10-05,Fiorentina,Roma,8535,8686,1,2
+2025-10-05,Napoli,Genoa,9875,10233,2,1
+2025-10-05,Juventus,Milan,9885,8564,0,0
+2025-10-18,Lecce,Sassuolo,9888,7943,0,0
+2025-10-18,Pisa,Hellas Verona,6479,9876,0,0
+2025-10-18,Torino,Napoli,9804,9875,1,0
+2025-10-18,Roma,Inter,8686,8636,0,1
+2025-10-19,Como,Juventus,10171,9885,2,0
+2025-10-19,Cagliari,Bologna,8529,9857,0,2
+2025-10-19,Genoa,Parma,10233,10167,0,0
+2025-10-19,Atalanta,Lazio,8524,8543,0,0
+2025-10-19,Milan,Fiorentina,8564,8535,2,1
+2025-10-20,Cremonese,Udinese,7801,8600,1,1
+2025-10-24,Milan,Pisa,8564,6479,2,2
+2025-10-25,Parma,Como,10167,10171,0,0
+2025-10-25,Udinese,Lecce,8600,9888,3,2
+2025-10-25,Napoli,Inter,9875,8636,3,1
+2025-10-25,Cremonese,Atalanta,7801,8524,1,1
+2025-10-26,Torino,Genoa,9804,10233,2,1
+2025-10-26,Hellas Verona,Cagliari,9876,8529,2,2
+2025-10-26,Sassuolo,Roma,7943,8686,0,1
+2025-10-26,Fiorentina,Bologna,8535,9857,2,2
+2025-10-26,Lazio,Juventus,8543,9885,1,0
+2025-10-28,Lecce,Napoli,9888,9875,0,1
+2025-10-28,Atalanta,Milan,8524,8564,1,1
+2025-10-29,Como,Hellas Verona,10171,9876,3,1
+2025-10-29,Juventus,Udinese,9885,8600,3,1
+2025-10-29,Roma,Parma,8686,10167,2,1
+2025-10-29,Bologna,Torino,9857,9804,0,0
+2025-10-29,Genoa,Cremonese,10233,7801,0,2
+2025-10-29,Inter,Fiorentina,8636,8535,3,0
+2025-10-30,Cagliari,Sassuolo,8529,7943,1,2
+2025-10-30,Pisa,Lazio,6479,8543,0,0
+2025-11-01,Udinese,Atalanta,8600,8524,1,0
+2025-11-01,Napoli,Como,9875,10171,0,0
+2025-11-01,Cremonese,Juventus,7801,9885,1,2
+2025-11-02,Hellas Verona,Inter,9876,8636,1,2
+2025-11-02,Fiorentina,Lecce,8535,9888,0,1
+2025-11-02,Torino,Pisa,9804,6479,2,2
+2025-11-02,Parma,Bologna,10167,9857,1,3
+2025-11-02,Milan,Roma,8564,8686,1,0
+2025-11-03,Sassuolo,Genoa,7943,10233,1,2
+2025-11-03,Lazio,Cagliari,8543,8529,2,0
+2025-11-07,Pisa,Cremonese,6479,7801,1,0
+2025-11-08,Como,Cagliari,10171,8529,0,0
+2025-11-08,Lecce,Hellas Verona,9888,9876,0,0
+2025-11-08,Juventus,Torino,9885,9804,0,0
+2025-11-08,Parma,Milan,10167,8564,2,2
+2025-11-09,Atalanta,Sassuolo,8524,7943,0,3
+2025-11-09,Bologna,Napoli,9857,9875,2,0
+2025-11-09,Genoa,Fiorentina,10233,8535,2,2
+2025-11-09,Roma,Udinese,8686,8600,2,0
+2025-11-09,Inter,Lazio,8636,8543,2,0
+2025-11-22,Cagliari,Genoa,8529,10233,3,3
+2025-11-22,Udinese,Bologna,8600,9857,0,3
+2025-11-22,Fiorentina,Juventus,8535,9885,1,1
+2025-11-22,Napoli,Atalanta,9875,8524,3,1
+2025-11-23,Hellas Verona,Parma,9876,10167,1,2
+2025-11-23,Cremonese,Roma,7801,8686,1,3
+2025-11-23,Lazio,Lecce,8543,9888,2,0
+2025-11-23,Inter,Milan,8636,8564,0,1
+2025-11-24,Torino,Como,9804,10171,1,5
+2025-11-24,Sassuolo,Pisa,7943,6479,2,2
+2025-11-28,Como,Sassuolo,10171,7943,2,0
+2025-11-29,Genoa,Hellas Verona,10233,9876,2,1
+2025-11-29,Parma,Udinese,10167,8600,0,2
+2025-11-29,Juventus,Cagliari,9885,8529,2,1
+2025-11-29,Milan,Lazio,8564,8543,1,0
+2025-11-30,Lecce,Torino,9888,9804,2,1
+2025-11-30,Pisa,Inter,6479,8636,0,2
+2025-11-30,Atalanta,Fiorentina,8524,8535,2,0
+2025-11-30,Roma,Napoli,8686,9875,0,1
+2025-12-01,Bologna,Cremonese,9857,7801,1,3
+2025-12-06,Sassuolo,Fiorentina,7943,8535,3,1
+2025-12-06,Inter,Como,8636,10171,4,0
+2025-12-06,Hellas Verona,Atalanta,9876,8524,3,1
+2025-12-07,Cremonese,Lecce,7801,9888,2,0
+2025-12-07,Cagliari,Roma,8529,8686,1,0
+2025-12-07,Lazio,Bologna,8543,9857,1,1
+2025-12-07,Napoli,Juventus,9875,9885,2,1
+2025-12-08,Pisa,Parma,6479,10167,0,1
+2025-12-08,Udinese,Genoa,8600,10233,1,2
+2025-12-08,Torino,Milan,9804,8564,2,3
+2025-12-12,Lecce,Pisa,9888,6479,1,0
+2025-12-13,Torino,Cremonese,9804,7801,1,0
+2025-12-13,Parma,Lazio,10167,8543,0,1
+2025-12-13,Atalanta,Cagliari,8524,8529,2,1
+2025-12-14,Milan,Sassuolo,8564,7943,2,2
+2025-12-14,Fiorentina,Hellas Verona,8535,9876,1,2
+2025-12-14,Udinese,Napoli,8600,9875,1,0
+2025-12-14,Genoa,Inter,10233,8636,1,2
+2025-12-14,Bologna,Juventus,9857,9885,0,1
+2025-12-15,Roma,Como,8686,10171,1,0
+2025-12-20,Lazio,Cremonese,8543,7801,0,0
+2025-12-20,Juventus,Roma,9885,8686,2,1
+2025-12-21,Cagliari,Pisa,8529,6479,2,2
+2025-12-21,Sassuolo,Torino,7943,9804,0,1
+2025-12-21,Fiorentina,Udinese,8535,8600,5,1
+2025-12-21,Genoa,Atalanta,10233,8524,0,1
+2025-12-27,Parma,Fiorentina,10167,8535,1,0
+2025-12-27,Lecce,Como,9888,10171,0,3
+2025-12-27,Torino,Cagliari,9804,8529,1,2
+2025-12-27,Udinese,Lazio,8600,8543,1,1
+2025-12-27,Pisa,Juventus,6479,9885,0,2
+2025-12-28,Milan,Hellas Verona,8564,9876,3,0
+2025-12-28,Cremonese,Napoli,7801,9875,0,2
+2025-12-28,Bologna,Sassuolo,9857,7943,1,1
+2025-12-28,Atalanta,Inter,8524,8636,0,1
+2025-12-29,Roma,Genoa,8686,10233,3,1
+2026-01-02,Cagliari,Milan,8529,8564,0,1
+2026-01-03,Como,Udinese,10171,8600,1,0
+2026-01-03,Genoa,Pisa,10233,6479,1,1
+2026-01-03,Sassuolo,Parma,7943,10167,1,1
+2026-01-03,Juventus,Lecce,9885,9888,1,1
+2026-01-03,Atalanta,Roma,8524,8686,1,0
+2026-01-04,Lazio,Napoli,8543,9875,0,2
+2026-01-04,Fiorentina,Cremonese,8535,7801,1,0
+2026-01-04,Hellas Verona,Torino,9876,9804,0,3
+2026-01-04,Inter,Bologna,8636,9857,3,1
+2026-01-06,Pisa,Como,6479,10171,0,3
+2026-01-06,Lecce,Roma,9888,8686,0,2
+2026-01-06,Sassuolo,Juventus,7943,9885,0,3
+2026-01-07,Bologna,Atalanta,9857,8524,0,2
+2026-01-07,Napoli,Hellas Verona,9875,9876,2,2
+2026-01-07,Lazio,Fiorentina,8543,8535,2,2
+2026-01-07,Parma,Inter,10167,8636,0,2
+2026-01-07,Torino,Udinese,9804,8600,1,2
+2026-01-08,Cremonese,Cagliari,7801,8529,2,2
+2026-01-08,Milan,Genoa,8564,10233,1,1
+2026-01-10,Como,Bologna,10171,9857,1,1
+2026-01-10,Udinese,Pisa,8600,6479,2,2
+2026-01-10,Roma,Sassuolo,8686,7943,2,0
+2026-01-10,Atalanta,Torino,8524,9804,2,0
+2026-01-11,Lecce,Parma,9888,10167,1,2
+2026-01-11,Fiorentina,Milan,8535,8564,1,1
+2026-01-11,Hellas Verona,Lazio,9876,8543,0,1
+2026-01-11,Inter,Napoli,8636,9875,2,2
+2026-01-12,Genoa,Cagliari,10233,8529,3,0
+2026-01-12,Juventus,Cremonese,9885,7801,5,0
+2026-01-14,Napoli,Parma,9875,10167,0,0
+2026-01-14,Inter,Lecce,8636,9888,1,0
+2026-01-15,Hellas Verona,Bologna,9876,9857,2,3
+2026-01-15,Como,Milan,10171,8564,1,3
+2026-01-16,Pisa,Atalanta,6479,8524,1,1
+2026-01-17,Udinese,Inter,8600,8636,0,1
+2026-01-17,Napoli,Sassuolo,9875,7943,1,0
+2026-01-17,Cagliari,Juventus,8529,9885,1,0
+2026-01-18,Parma,Genoa,10167,10233,0,0
+2026-01-18,Bologna,Fiorentina,9857,8535,1,2
+2026-01-18,Torino,Roma,9804,8686,0,2
+2026-01-18,Milan,Lecce,8564,9888,1,0
+2026-01-19,Cremonese,Hellas Verona,7801,9876,0,0
+2026-01-19,Lazio,Como,8543,10171,0,3
+2026-01-23,Inter,Pisa,8636,6479,6,2
+2026-01-24,Como,Torino,10171,9804,6,0
+2026-01-24,Fiorentina,Cagliari,8535,8529,1,2
+2026-01-24,Lecce,Lazio,9888,8543,0,0
+2026-01-25,Sassuolo,Cremonese,7943,7801,1,0
+2026-01-25,Atalanta,Parma,8524,10167,4,0
+2026-01-25,Genoa,Bologna,10233,9857,3,2
+2026-01-25,Juventus,Napoli,9885,9875,3,0
+2026-01-25,Roma,Milan,8686,8564,1,1
+2026-01-26,Hellas Verona,Udinese,9876,8600,1,3
+2026-01-30,Lazio,Genoa,8543,10233,3,2
+2026-01-31,Pisa,Sassuolo,6479,7943,1,3
+2026-01-31,Napoli,Fiorentina,9875,8535,2,1
+2026-01-31,Cagliari,Hellas Verona,8529,9876,4,0
+2026-02-01,Torino,Lecce,9804,9888,1,0
+2026-02-01,Como,Atalanta,10171,8524,0,0
+2026-02-01,Cremonese,Inter,7801,8636,0,2
+2026-02-01,Parma,Juventus,10167,9885,1,4
+2026-02-02,Udinese,Roma,8600,8686,1,0
+2026-02-03,Bologna,Milan,9857,8564,0,3
+2026-02-06,Hellas Verona,Pisa,9876,6479,0,0
+2026-02-07,Genoa,Napoli,10233,9875,2,3
+2026-02-07,Fiorentina,Torino,8535,9804,2,2
+2026-02-08,Bologna,Parma,9857,10167,0,1
+2026-02-08,Lecce,Udinese,9888,8600,2,1
+2026-02-08,Sassuolo,Inter,7943,8636,0,5
+2026-02-08,Juventus,Lazio,9885,8543,2,2
+2026-02-09,Atalanta,Cremonese,8524,7801,2,1
+2026-02-09,Roma,Cagliari,8686,8529,2,0
+2026-02-13,Pisa,Milan,6479,8564,1,2
+2026-02-14,Como,Fiorentina,10171,8535,1,2
+2026-02-14,Lazio,Atalanta,8543,8524,0,2
+2026-02-14,Inter,Juventus,8636,9885,3,2
+2026-02-15,Udinese,Sassuolo,8600,7943,1,2
+2026-02-15,Cremonese,Genoa,7801,10233,0,0
+2026-02-15,Parma,Hellas Verona,10167,9876,2,1
+2026-02-15,Torino,Bologna,9804,9857,1,2
+2026-02-15,Napoli,Roma,9875,8686,2,2
+2026-02-16,Cagliari,Lecce,8529,9888,0,2
+2026-02-18,Milan,Como,8564,10171,1,1
+2026-02-20,Sassuolo,Hellas Verona,7943,9876,3,0
+2026-02-21,Juventus,Como,9885,10171,0,2
+2026-02-21,Lecce,Inter,9888,8636,0,2
+2026-02-21,Cagliari,Lazio,8529,8543,0,0
+2026-02-22,Genoa,Torino,10233,9804,3,0
+2026-02-22,Atalanta,Napoli,8524,9875,2,1
+2026-02-22,Milan,Parma,8564,10167,0,1
+2026-02-22,Roma,Cremonese,8686,7801,3,0
+2026-02-23,Fiorentina,Pisa,8535,6479,1,0
+2026-02-23,Bologna,Udinese,9857,8600,1,0
+2026-02-27,Parma,Cagliari,10167,8529,1,1
+2026-02-28,Como,Lecce,10171,9888,3,1
+2026-02-28,Hellas Verona,Napoli,9876,9875,1,2
+2026-02-28,Inter,Genoa,8636,10233,2,0
+2026-03-01,Cremonese,Milan,7801,8564,0,2
+2026-03-01,Sassuolo,Atalanta,7943,8524,2,1
+2026-03-01,Torino,Lazio,9804,8543,2,0
+2026-03-01,Roma,Juventus,8686,9885,3,3
+2026-03-02,Pisa,Bologna,6479,9857,0,1
+2026-03-02,Udinese,Fiorentina,8600,8535,3,0
+2026-03-06,Napoli,Torino,9875,9804,2,1
+2026-03-07,Cagliari,Como,8529,10171,1,2
+2026-03-07,Atalanta,Udinese,8524,8600,2,2
+2026-03-07,Juventus,Pisa,9885,6479,4,0
+2026-03-08,Lecce,Cremonese,9888,7801,2,1
+2026-03-08,Bologna,Hellas Verona,9857,9876,1,2
+2026-03-08,Fiorentina,Parma,8535,10167,0,0
+2026-03-08,Genoa,Roma,10233,8686,2,1
+2026-03-08,Milan,Inter,8564,8636,1,0
+2026-03-09,Lazio,Sassuolo,8543,7943,2,1
+2026-03-13,Torino,Parma,9804,10167,4,1
+2026-03-14,Inter,Atalanta,8636,8524,1,1
+2026-03-14,Napoli,Lecce,9875,9888,2,1
+2026-03-14,Udinese,Juventus,8600,9885,0,1
+2026-03-15,Hellas Verona,Genoa,9876,10233,0,2
+2026-03-15,Pisa,Cagliari,6479,8529,3,1
+2026-03-15,Sassuolo,Bologna,7943,9857,0,1
+2026-03-15,Como,Roma,10171,8686,2,1
+2026-03-15,Lazio,Milan,8543,8564,1,0
+2026-03-16,Cremonese,Fiorentina,7801,8535,1,4
+2026-03-20,Cagliari,Napoli,8529,9875,0,1
+2026-03-20,Genoa,Udinese,10233,8600,0,2
+2026-03-21,Parma,Cremonese,10167,7801,0,2
+2026-03-21,Milan,Torino,8564,9804,3,2
+2026-03-21,Juventus,Sassuolo,9885,7943,1,1
+2026-03-22,Como,Pisa,10171,6479,5,0
+2026-03-22,Atalanta,Hellas Verona,8524,9876,1,0
+2026-03-22,Bologna,Lazio,9857,8543,0,2
+2026-03-22,Roma,Lecce,8686,9888,1,0
+2026-03-22,Fiorentina,Inter,8535,8636,1,1
+2026-04-04,Sassuolo,Cagliari,7943,8529,2,1
+2026-04-04,Hellas Verona,Fiorentina,9876,8535,0,1
+2026-04-04,Lazio,Parma,8543,10167,1,1
+2026-04-05,Cremonese,Bologna,7801,9857,1,2
+2026-04-05,Pisa,Torino,6479,9804,0,1
+2026-04-05,Inter,Roma,8636,8686,5,2
+2026-04-06,Udinese,Como,8600,10171,0,0
+2026-04-06,Lecce,Atalanta,9888,8524,0,3
+2026-04-06,Juventus,Genoa,9885,10233,2,0
+2026-04-06,Napoli,Milan,9875,8564,1,0
+2026-04-10,Roma,Pisa,8686,6479,3,0
+2026-04-11,Cagliari,Cremonese,8529,7801,1,0
+2026-04-11,Torino,Hellas Verona,9804,9876,2,1
+2026-04-11,Milan,Udinese,8564,8600,0,3
+2026-04-11,Atalanta,Juventus,8524,9885,0,1
+2026-04-12,Genoa,Sassuolo,10233,7943,2,1
+2026-04-12,Parma,Napoli,10167,9875,1,1
+2026-04-12,Bologna,Lecce,9857,9888,2,0
+2026-04-12,Como,Inter,10171,8636,3,4
+2026-04-13,Fiorentina,Lazio,8535,8543,1,0
+2026-04-17,Sassuolo,Como,7943,10171,2,1
+2026-04-17,Inter,Cagliari,8636,8529,3,0
+2026-04-18,Udinese,Parma,8600,10167,0,1
+2026-04-18,Napoli,Lazio,9875,8543,0,2
+2026-04-18,Roma,Atalanta,8686,8524,1,1
+2026-04-19,Cremonese,Torino,7801,9804,0,0
+2026-04-19,Hellas Verona,Milan,9876,8564,0,1
+2026-04-19,Pisa,Genoa,6479,10233,1,2
+2026-04-19,Juventus,Bologna,9885,9857,2,0
+2026-04-20,Lecce,Fiorentina,9888,8535,1,1
+2026-04-24,Napoli,Cremonese,9875,7801,4,0
+2026-04-25,Parma,Pisa,10167,6479,1,0
+2026-04-25,Bologna,Roma,9857,8686,0,2
+2026-04-25,Hellas Verona,Lecce,9876,9888,0,0
+2026-04-26,Fiorentina,Sassuolo,8535,7943,0,0
+2026-04-26,Genoa,Como,10233,10171,0,2
+2026-04-26,Torino,Inter,9804,8636,2,2
+2026-04-26,Milan,Juventus,8564,9885,0,0
+2026-04-27,Cagliari,Atalanta,8529,8524,3,2
+2026-04-27,Lazio,Udinese,8543,8600,3,3
+2026-05-01,Pisa,Lecce,6479,9888,1,2
+2026-05-02,Udinese,Torino,8600,9804,2,0
+2026-05-02,Como,Napoli,10171,9875,0,0
+2026-05-02,Atalanta,Genoa,8524,10233,0,0
+2026-05-03,Bologna,Cagliari,9857,8529,0,0
+2026-05-03,Sassuolo,Milan,7943,8564,2,0
+2026-05-03,Juventus,Hellas Verona,9885,9876,1,1
+2026-05-03,Inter,Parma,8636,10167,2,0
+2026-05-04,Cremonese,Lazio,7801,8543,1,2
+2026-05-04,Roma,Fiorentina,8686,8535,4,0
+2026-05-08,Torino,Sassuolo,9804,7943,2,1
+2026-05-09,Cagliari,Udinese,8529,8600,0,2
+2026-05-09,Lazio,Inter,8543,8636,0,3
+2026-05-09,Lecce,Juventus,9888,9885,0,1
+2026-05-10,Hellas Verona,Como,9876,10171,0,1
+2026-05-10,Cremonese,Pisa,7801,6479,3,0
+2026-05-10,Fiorentina,Genoa,8535,10233,0,0
+2026-05-10,Parma,Roma,10167,8686,2,3
+2026-05-10,Milan,Atalanta,8564,8524,2,3
+2026-05-11,Napoli,Bologna,9875,9857,2,3
+2026-05-17,Como,Parma,10171,10167,1,0
+2026-05-17,Genoa,Milan,10233,8564,1,2
+2026-05-17,Juventus,Fiorentina,9885,8535,0,2
+2026-05-17,Pisa,Napoli,6479,9875,0,3
+2026-05-17,Roma,Lazio,8686,8543,2,0
+2026-05-17,Inter,Hellas Verona,8636,9876,1,1
+2026-05-17,Atalanta,Bologna,8524,9857,0,1
+2026-05-17,Cagliari,Torino,8529,9804,2,1
+2026-05-17,Sassuolo,Lecce,7943,9888,2,3
+2026-05-17,Udinese,Cremonese,8600,7801,0,1
+2026-05-22,Fiorentina,Atalanta,8535,8524,1,1
+2026-05-23,Bologna,Inter,9857,8636,3,3
+2026-05-23,Lazio,Pisa,8543,6479,2,1
+2026-05-24,Parma,Sassuolo,10167,7943,1,0
+2026-05-24,Napoli,Udinese,9875,8600,1,0
+2026-05-24,Milan,Cagliari,8564,8529,1,2
+2026-05-24,Hellas Verona,Roma,9876,8686,0,2
+2026-05-24,Lecce,Genoa,9888,10233,1,0
+2026-05-24,Cremonese,Como,7801,10171,1,4
+2026-05-24,Torino,Juventus,9804,9885,2,2

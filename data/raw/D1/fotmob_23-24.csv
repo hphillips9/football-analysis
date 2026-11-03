@@ -1,0 +1,307 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+4221721,2023-08-18,Werder Bremen,Bayern München,0.55,2.85
+4221728,2023-08-19,Augsburg,Borussia Mönchengladbach,2.28,1.72
+4221724,2023-08-19,Bayer Leverkusen,RB Leipzig,1.43,1.58
+4221727,2023-08-19,Hoffenheim,Freiburg,1.43,2.65
+4221729,2023-08-19,VfB Stuttgart,Bochum,3.13,0.83
+4221726,2023-08-19,Wolfsburg,FC Heidenheim,2.18,1.18
+4221722,2023-08-19,Borussia Dortmund,1. FC Köln,2.06,1.25
+4221723,2023-08-20,Union Berlin,Mainz 05,1.91,2.3
+4221725,2023-08-20,Eintracht Frankfurt,Darmstadt,1.51,0.54
+4221731,2023-08-25,RB Leipzig,VfB Stuttgart,1.76,1.13
+4221736,2023-08-26,Bochum,Borussia Dortmund,0.99,1.27
+4221738,2023-08-26,Darmstadt,Union Berlin,2.27,1.74
+4221737,2023-08-26,FC Heidenheim,Hoffenheim,2.44,2.97
+4221735,2023-08-26,1. FC Köln,Wolfsburg,0.85,1.68
+4221732,2023-08-26,Freiburg,Werder Bremen,2.42,1.06
+4221734,2023-08-26,Borussia Mönchengladbach,Bayer Leverkusen,0.93,2.74
+4221733,2023-08-27,Mainz 05,Eintracht Frankfurt,1.17,1.14
+4221730,2023-08-27,Bayern München,Augsburg,2.9,0.66
+4221739,2023-09-01,Borussia Dortmund,FC Heidenheim,3.36,2.15
+4221746,2023-09-02,Augsburg,Bochum,1.88,1.67
+4221741,2023-09-02,Bayer Leverkusen,Darmstadt,2.83,0.36
+4221744,2023-09-02,Hoffenheim,Wolfsburg,2.02,1.22
+4221747,2023-09-02,VfB Stuttgart,Freiburg,1.74,1.05
+4221745,2023-09-02,Werder Bremen,Mainz 05,2.74,0.55
+4221743,2023-09-02,Borussia Mönchengladbach,Bayern München,0.35,2.37
+4221742,2023-09-03,Eintracht Frankfurt,1. FC Köln,1.36,0.91
+4221740,2023-09-03,Union Berlin,RB Leipzig,0.32,1.16
+4221748,2023-09-15,Bayern München,Bayer Leverkusen,2.13,2.08
+4221753,2023-09-16,1. FC Köln,Hoffenheim,1.0,1.04
+4221750,2023-09-16,Freiburg,Borussia Dortmund,1.05,2.35
+4221752,2023-09-16,Mainz 05,VfB Stuttgart,0.97,1.56
+4221749,2023-09-16,RB Leipzig,Augsburg,1.08,1.69
+4221751,2023-09-16,Wolfsburg,Union Berlin,0.36,1.15
+4221754,2023-09-16,Bochum,Eintracht Frankfurt,2.05,0.61
+4221755,2023-09-17,FC Heidenheim,Werder Bremen,2.24,2.97
+4221756,2023-09-17,Darmstadt,Borussia Mönchengladbach,1.16,3.87
+4221765,2023-09-22,VfB Stuttgart,Darmstadt,2.29,0.16
+4221764,2023-09-23,Augsburg,Mainz 05,0.82,0.56
+4221757,2023-09-23,Bayern München,Bochum,5.05,0.14
+4221758,2023-09-23,Borussia Dortmund,Wolfsburg,1.67,0.53
+4221762,2023-09-23,Borussia Mönchengladbach,RB Leipzig,0.8,0.72
+4221759,2023-09-23,Union Berlin,Hoffenheim,1.62,1.97
+4221763,2023-09-23,Werder Bremen,1. FC Köln,2.14,1.39
+4221760,2023-09-24,Bayer Leverkusen,FC Heidenheim,3.64,0.52
+4221761,2023-09-24,Eintracht Frankfurt,Freiburg,0.65,0.56
+4221771,2023-09-29,Hoffenheim,Borussia Dortmund,1.97,1.64
+4221773,2023-09-30,FC Heidenheim,Union Berlin,0.77,2.15
+4221770,2023-09-30,1. FC Köln,VfB Stuttgart,0.74,2.5
+4221769,2023-09-30,Mainz 05,Bayer Leverkusen,0.47,1.13
+4221768,2023-09-30,Wolfsburg,Eintracht Frankfurt,3.25,1.3
+4221772,2023-09-30,Bochum,Borussia Mönchengladbach,1.74,2.9
+4221766,2023-09-30,RB Leipzig,Bayern München,0.73,2.36
+4221774,2023-10-01,Darmstadt,Werder Bremen,2.43,1.55
+4221767,2023-10-01,Freiburg,Augsburg,1.03,0.81
+4221780,2023-10-06,Borussia Mönchengladbach,Mainz 05,2.3,0.75
+4221782,2023-10-07,Augsburg,Darmstadt,0.94,1.8
+4221776,2023-10-07,Borussia Dortmund,Union Berlin,1.63,1.42
+4221777,2023-10-07,RB Leipzig,Bochum,2.55,0.37
+4221783,2023-10-07,VfB Stuttgart,Wolfsburg,2.69,1.23
+4221781,2023-10-07,Werder Bremen,Hoffenheim,0.83,1.86
+4221778,2023-10-08,Bayer Leverkusen,1. FC Köln,3.27,1.41
+4221775,2023-10-08,Bayern München,Freiburg,2.43,0.05
+4221779,2023-10-08,Eintracht Frankfurt,FC Heidenheim,1.86,1.16
+4221784,2023-10-20,Borussia Dortmund,Werder Bremen,2.69,0.37
+4221792,2023-10-21,Darmstadt,RB Leipzig,2.48,1.93
+4221786,2023-10-21,Freiburg,Bochum,2.43,1.49
+4221790,2023-10-21,Hoffenheim,Eintracht Frankfurt,1.43,2.53
+4221785,2023-10-21,Union Berlin,VfB Stuttgart,0.62,1.38
+4221787,2023-10-21,Wolfsburg,Bayer Leverkusen,1.48,1.92
+4221788,2023-10-21,Mainz 05,Bayern München,1.13,1.77
+4221789,2023-10-22,1. FC Köln,Borussia Mönchengladbach,2.73,0.26
+4221791,2023-10-22,FC Heidenheim,Augsburg,1.56,2.55
+4221802,2023-10-27,Bochum,Mainz 05,1.45,0.43
+4221803,2023-10-28,Augsburg,Wolfsburg,1.38,1.44
+4221796,2023-10-28,Bayern München,Darmstadt,5.86,0.7
+4221800,2023-10-28,Borussia Mönchengladbach,FC Heidenheim,1.05,0.38
+4221804,2023-10-28,VfB Stuttgart,Hoffenheim,3.61,1.73
+4221801,2023-10-28,Werder Bremen,Union Berlin,0.78,0.57
+4221797,2023-10-28,RB Leipzig,1. FC Köln,4.28,0.86
+4221799,2023-10-29,Eintracht Frankfurt,Borussia Dortmund,2.75,2.18
+4221798,2023-10-29,Bayer Leverkusen,Freiburg,1.39,0.87
+4221832,2023-11-03,Darmstadt,Bochum,0.68,1.19
+4221829,2023-11-04,1. FC Köln,Augsburg,2.09,2.61
+4221826,2023-11-04,Freiburg,Borussia Mönchengladbach,3.38,2.16
+4221830,2023-11-04,Hoffenheim,Bayer Leverkusen,1.74,1.03
+4221828,2023-11-04,Mainz 05,RB Leipzig,0.96,0.51
+4221825,2023-11-04,Union Berlin,Eintracht Frankfurt,0.69,1.59
+4221824,2023-11-04,Borussia Dortmund,Bayern München,0.96,3.38
+4221827,2023-11-05,Wolfsburg,Werder Bremen,1.57,1.24
+4221831,2023-11-05,FC Heidenheim,VfB Stuttgart,1.23,2.82
+4221953,2023-11-10,Borussia Mönchengladbach,Wolfsburg,1.54,0.49
+4221956,2023-11-11,Augsburg,Hoffenheim,0.96,0.85
+4221950,2023-11-11,Bayern München,FC Heidenheim,1.98,0.95
+4221958,2023-11-11,Darmstadt,Mainz 05,0.49,0.67
+4221957,2023-11-11,VfB Stuttgart,Borussia Dortmund,4.22,0.96
+4221955,2023-11-11,Bochum,1. FC Köln,3.78,0.94
+4221952,2023-11-12,Bayer Leverkusen,Union Berlin,2.44,0.04
+4221954,2023-11-12,Werder Bremen,Eintracht Frankfurt,1.55,2.01
+4221951,2023-11-12,RB Leipzig,Freiburg,1.9,0.54
+4221964,2023-11-24,1. FC Köln,Bayern München,0.21,3.62
+4221959,2023-11-25,Borussia Dortmund,Borussia Mönchengladbach,3.23,0.99
+4221961,2023-11-25,Freiburg,Darmstadt,1.64,0.35
+4221960,2023-11-25,Union Berlin,Augsburg,2.15,1.7
+4221966,2023-11-25,Werder Bremen,Bayer Leverkusen,0.19,1.03
+4221963,2023-11-25,Wolfsburg,RB Leipzig,0.96,2.77
+4221962,2023-11-25,Eintracht Frankfurt,VfB Stuttgart,0.9,2.28
+4221967,2023-11-26,FC Heidenheim,Bochum,0.76,0.39
+4221965,2023-11-26,Hoffenheim,Mainz 05,1.42,1.75
+4221976,2023-12-01,Darmstadt,1. FC Köln,0.71,1.49
+4221973,2023-12-02,Bochum,Wolfsburg,1.5,1.29
+4221972,2023-12-02,Borussia Mönchengladbach,Hoffenheim,1.65,1.41
+4221969,2023-12-02,RB Leipzig,FC Heidenheim,4.07,1.11
+4221975,2023-12-02,VfB Stuttgart,Werder Bremen,3.45,0.83
+4221971,2023-12-03,Mainz 05,Freiburg,2.38,0.92
+4221970,2023-12-03,Bayer Leverkusen,Borussia Dortmund,2.09,0.73
+4221974,2023-12-03,Augsburg,Eintracht Frankfurt,1.41,1.06
+4221982,2023-12-08,Hoffenheim,Bochum,1.5,1.55
+4221979,2023-12-09,Eintracht Frankfurt,Bayern München,1.32,2.08
+4221985,2023-12-09,FC Heidenheim,Darmstadt,1.51,0.92
+4221978,2023-12-09,Union Berlin,Borussia Mönchengladbach,2.06,1.09
+4221983,2023-12-09,Werder Bremen,Augsburg,1.53,0.72
+4221980,2023-12-09,Wolfsburg,Freiburg,1.19,1.09
+4221977,2023-12-09,Borussia Dortmund,RB Leipzig,1.59,2.86
+4221984,2023-12-10,VfB Stuttgart,Bayer Leverkusen,2.66,1.27
+4221981,2023-12-10,1. FC Köln,Mainz 05,0.28,1.42
+4221991,2023-12-15,Borussia Mönchengladbach,Werder Bremen,1.44,1.56
+4221993,2023-12-16,Augsburg,Borussia Dortmund,1.82,2.73
+4221992,2023-12-16,Bochum,Union Berlin,2.85,0.67
+4221994,2023-12-16,Darmstadt,Wolfsburg,0.64,0.64
+4221990,2023-12-16,Mainz 05,FC Heidenheim,1.63,0.53
+4221987,2023-12-16,RB Leipzig,Hoffenheim,3.13,0.82
+4221988,2023-12-17,Freiburg,1. FC Köln,3.15,1.16
+4221989,2023-12-17,Bayer Leverkusen,Eintracht Frankfurt,2.53,0.25
+4221986,2023-12-17,Bayern München,VfB Stuttgart,2.84,0.41
+4221881,2023-12-19,Werder Bremen,RB Leipzig,1.51,1.67
+4221875,2023-12-19,Borussia Dortmund,Mainz 05,1.21,0.95
+4221880,2023-12-19,Hoffenheim,Darmstadt,3.52,0.84
+4221876,2023-12-20,Union Berlin,1. FC Köln,1.5,0.8
+4221877,2023-12-20,Bayer Leverkusen,Bochum,3.32,0.37
+4221878,2023-12-20,Eintracht Frankfurt,Borussia Mönchengladbach,1.42,0.34
+4221883,2023-12-20,FC Heidenheim,Freiburg,1.89,1.85
+4221882,2023-12-20,VfB Stuttgart,Augsburg,2.61,0.25
+4221879,2023-12-20,Wolfsburg,Bayern München,0.33,2.81
+4221884,2024-01-12,Bayern München,Hoffenheim,2.77,1.22
+4221891,2024-01-13,Augsburg,Bayer Leverkusen,0.5,1.97
+4221889,2024-01-13,1. FC Köln,FC Heidenheim,0.9,0.97
+4221886,2024-01-13,Freiburg,Union Berlin,1.79,0.46
+4221887,2024-01-13,Mainz 05,Wolfsburg,0.42,0.56
+4221885,2024-01-13,RB Leipzig,Eintracht Frankfurt,3.56,1.09
+4221892,2024-01-13,Darmstadt,Borussia Dortmund,1.04,3.14
+4221890,2024-01-14,Bochum,Werder Bremen,0.73,0.81
+4221888,2024-01-14,Borussia Mönchengladbach,VfB Stuttgart,1.92,0.89
+4221899,2024-01-20,Bochum,VfB Stuttgart,0.9,1.45
+4221901,2024-01-20,Darmstadt,Eintracht Frankfurt,1.15,1.29
+4221900,2024-01-20,FC Heidenheim,Wolfsburg,1.12,1.11
+4221898,2024-01-20,1. FC Köln,Borussia Dortmund,1.3,3.38
+4221895,2024-01-20,Freiburg,Hoffenheim,2.69,1.45
+4221894,2024-01-20,RB Leipzig,Bayer Leverkusen,1.63,2.04
+4221893,2024-01-21,Bayern München,Werder Bremen,1.92,0.43
+4221897,2024-01-21,Borussia Mönchengladbach,Augsburg,2.14,1.33
+4221968,2024-01-24,Bayern München,Union Berlin,2.08,0.25
+4221905,2024-01-26,Eintracht Frankfurt,Mainz 05,1.3,0.76
+4221909,2024-01-27,Augsburg,Bayern München,2.61,2.33
+4221907,2024-01-27,Hoffenheim,FC Heidenheim,2.93,1.14
+4221910,2024-01-27,VfB Stuttgart,RB Leipzig,2.27,0.36
+4221908,2024-01-27,Werder Bremen,Freiburg,2.49,1.17
+4221906,2024-01-27,Wolfsburg,1. FC Köln,1.53,0.59
+4221904,2024-01-27,Bayer Leverkusen,Borussia Mönchengladbach,2.99,0.28
+4221903,2024-01-28,Union Berlin,Darmstadt,2.55,1.14
+4221902,2024-01-28,Borussia Dortmund,Bochum,2.96,0.51
+4221918,2024-02-02,FC Heidenheim,Borussia Dortmund,1.24,0.64
+4221911,2024-02-03,Bayern München,Borussia Mönchengladbach,2.08,0.96
+4221917,2024-02-03,Bochum,Augsburg,0.93,1.71
+4221919,2024-02-03,Darmstadt,Bayer Leverkusen,0.57,1.93
+4221913,2024-02-03,Freiburg,VfB Stuttgart,0.7,1.76
+4221915,2024-02-03,Mainz 05,Werder Bremen,0.8,0.59
+4221916,2024-02-03,1. FC Köln,Eintracht Frankfurt,1.36,0.83
+4221914,2024-02-04,Wolfsburg,Hoffenheim,1.71,1.68
+4221912,2024-02-04,RB Leipzig,Union Berlin,1.15,0.53
+4221896,2024-02-07,Mainz 05,Union Berlin,1.35,1.04
+4222002,2024-02-09,Borussia Dortmund,Freiburg,1.93,0.26
+4222009,2024-02-10,Augsburg,RB Leipzig,0.74,1.36
+4222006,2024-02-10,Borussia Mönchengladbach,Darmstadt,1.51,0.78
+4222005,2024-02-10,Eintracht Frankfurt,Bochum,2.39,1.53
+4222003,2024-02-10,Union Berlin,Wolfsburg,0.5,1.32
+4222008,2024-02-10,Werder Bremen,FC Heidenheim,1.76,1.79
+4222004,2024-02-10,Bayer Leverkusen,Bayern München,1.32,0.56
+4222010,2024-02-11,VfB Stuttgart,Mainz 05,1.94,1.45
+4222007,2024-02-11,Hoffenheim,1. FC Köln,1.26,0.14
+4222018,2024-02-16,1. FC Köln,Werder Bremen,0.81,1.79
+4222022,2024-02-17,Darmstadt,VfB Stuttgart,1.71,1.82
+4222021,2024-02-17,FC Heidenheim,Bayer Leverkusen,0.43,1.88
+4222019,2024-02-17,Hoffenheim,Union Berlin,1.02,1.41
+4222017,2024-02-17,Mainz 05,Augsburg,2.15,0.98
+4222016,2024-02-17,Wolfsburg,Borussia Dortmund,1.85,1.4
+4222014,2024-02-17,RB Leipzig,Borussia Mönchengladbach,1.69,0.7
+4222015,2024-02-18,Freiburg,Eintracht Frankfurt,2.24,1.01
+4222020,2024-02-18,Bochum,Bayern München,1.67,3.42
+4222026,2024-02-23,Bayer Leverkusen,Mainz 05,1.15,1.11
+4222025,2024-02-24,Union Berlin,FC Heidenheim,1.05,1.12
+4222031,2024-02-24,VfB Stuttgart,1. FC Köln,2.3,0.7
+4222029,2024-02-24,Werder Bremen,Darmstadt,1.82,0.96
+4222028,2024-02-24,Borussia Mönchengladbach,Bochum,3.65,1.59
+4222023,2024-02-24,Bayern München,RB Leipzig,1.54,0.88
+4222027,2024-02-25,Eintracht Frankfurt,Wolfsburg,0.92,1.02
+4222024,2024-02-25,Borussia Dortmund,Hoffenheim,1.94,1.25
+4222030,2024-02-25,Augsburg,Freiburg,1.65,1.61
+4222121,2024-03-01,Freiburg,Bayern München,1.52,1.81
+4222126,2024-03-02,Bochum,RB Leipzig,0.83,2.13
+4222128,2024-03-02,Darmstadt,Augsburg,0.8,2.88
+4222127,2024-03-02,FC Heidenheim,Eintracht Frankfurt,1.01,1.16
+4222123,2024-03-02,Mainz 05,Borussia Mönchengladbach,0.98,1.02
+4222120,2024-03-02,Union Berlin,Borussia Dortmund,1.26,1.58
+4222122,2024-03-02,Wolfsburg,VfB Stuttgart,0.86,1.14
+4222124,2024-03-03,1. FC Köln,Bayer Leverkusen,1.0,1.59
+4222125,2024-03-03,Hoffenheim,Werder Bremen,1.7,1.29
+4222137,2024-03-08,VfB Stuttgart,Union Berlin,0.99,0.91
+4222136,2024-03-09,Augsburg,FC Heidenheim,0.54,0.38
+4222129,2024-03-09,Bayern München,Mainz 05,6.41,0.84
+4222133,2024-03-09,Borussia Mönchengladbach,1. FC Köln,1.81,0.62
+4222130,2024-03-09,RB Leipzig,Darmstadt,3.38,0.55
+4222134,2024-03-09,Werder Bremen,Borussia Dortmund,1.82,1.17
+4222135,2024-03-10,Bochum,Freiburg,1.2,1.41
+4222132,2024-03-10,Eintracht Frankfurt,Hoffenheim,2.43,0.57
+4222131,2024-03-10,Bayer Leverkusen,Wolfsburg,2.09,0.17
+4222143,2024-03-15,1. FC Köln,RB Leipzig,1.28,3.36
+4222146,2024-03-16,Darmstadt,Bayern München,1.18,3.65
+4222145,2024-03-16,FC Heidenheim,Borussia Mönchengladbach,1.17,0.52
+4222142,2024-03-16,Mainz 05,Bochum,2.48,0.78
+4222139,2024-03-16,Union Berlin,Werder Bremen,1.15,1.05
+4222141,2024-03-16,Wolfsburg,Augsburg,1.35,0.75
+4222144,2024-03-16,Hoffenheim,VfB Stuttgart,0.51,3.79
+4222140,2024-03-17,Freiburg,Bayer Leverkusen,0.9,2.3
+4222138,2024-03-17,Borussia Dortmund,Eintracht Frankfurt,2.27,0.91
+4222149,2024-03-30,Bayer Leverkusen,Hoffenheim,3.15,0.75
+4222151,2024-03-30,Borussia Mönchengladbach,Freiburg,1.55,1.77
+4222150,2024-03-30,Eintracht Frankfurt,Union Berlin,1.06,1.47
+4222148,2024-03-30,RB Leipzig,Mainz 05,2.75,0.92
+4222152,2024-03-30,Werder Bremen,Wolfsburg,0.52,2.28
+4222147,2024-03-30,Bayern München,Borussia Dortmund,1.53,0.88
+4222154,2024-03-31,Augsburg,1. FC Köln,2.22,1.33
+4222155,2024-03-31,VfB Stuttgart,FC Heidenheim,3.04,1.32
+4222153,2024-03-31,Bochum,Darmstadt,1.84,0.87
+4222159,2024-04-05,Eintracht Frankfurt,Werder Bremen,2.18,1.65
+4222163,2024-04-06,FC Heidenheim,Bayern München,1.44,1.89
+4222164,2024-04-06,1. FC Köln,Bochum,1.06,0.59
+4222158,2024-04-06,Freiburg,RB Leipzig,1.64,2.35
+4222161,2024-04-06,Mainz 05,Darmstadt,3.68,0.55
+4222157,2024-04-06,Union Berlin,Bayer Leverkusen,0.32,3.0
+4222156,2024-04-06,Borussia Dortmund,VfB Stuttgart,2.48,1.56
+4222162,2024-04-07,Hoffenheim,Augsburg,1.79,1.29
+4222160,2024-04-07,Wolfsburg,Borussia Mönchengladbach,1.21,1.09
+4222171,2024-04-12,Augsburg,Union Berlin,1.6,1.6
+4222165,2024-04-13,Bayern München,1. FC Köln,2.22,0.88
+4222170,2024-04-13,Bochum,FC Heidenheim,1.26,1.11
+4222169,2024-04-13,Borussia Mönchengladbach,Borussia Dortmund,1.17,1.33
+4222168,2024-04-13,Mainz 05,Hoffenheim,2.15,0.55
+4222166,2024-04-13,RB Leipzig,Wolfsburg,1.3,0.38
+4222172,2024-04-13,VfB Stuttgart,Eintracht Frankfurt,1.22,0.59
+4222173,2024-04-14,Darmstadt,Freiburg,1.09,0.91
+4222167,2024-04-14,Bayer Leverkusen,Werder Bremen,3.2,0.67
+4222177,2024-04-19,Eintracht Frankfurt,Augsburg,1.85,0.45
+4222182,2024-04-20,FC Heidenheim,RB Leipzig,1.03,1.84
+4222179,2024-04-20,1. FC Köln,Darmstadt,1.04,1.78
+4222180,2024-04-20,Hoffenheim,Borussia Mönchengladbach,2.35,1.03
+4222178,2024-04-20,Wolfsburg,Bochum,0.85,1.3
+4222175,2024-04-20,Union Berlin,Bayern München,1.45,1.43
+4222181,2024-04-21,Werder Bremen,VfB Stuttgart,1.54,2.22
+4222174,2024-04-21,Borussia Dortmund,Bayer Leverkusen,0.49,1.14
+4222176,2024-04-21,Freiburg,Mainz 05,1.12,1.06
+4222359,2024-04-26,Bochum,Hoffenheim,3.31,1.01
+4222360,2024-04-27,Augsburg,Werder Bremen,0.59,2.03
+4222353,2024-04-27,Bayern München,Eintracht Frankfurt,3.36,0.49
+4222355,2024-04-27,Freiburg,Wolfsburg,2.25,0.52
+4222354,2024-04-27,RB Leipzig,Borussia Dortmund,2.61,1.67
+4222356,2024-04-27,Bayer Leverkusen,VfB Stuttgart,1.43,1.66
+4222358,2024-04-28,Borussia Mönchengladbach,Union Berlin,0.88,1.02
+4222357,2024-04-28,Mainz 05,1. FC Köln,1.57,2.55
+4222361,2024-04-28,Darmstadt,FC Heidenheim,0.73,1.59
+4222367,2024-05-03,Hoffenheim,RB Leipzig,1.61,0.81
+4222362,2024-05-04,Borussia Dortmund,Augsburg,4.4,2.6
+4222369,2024-05-04,VfB Stuttgart,Bayern München,1.81,1.7
+4222368,2024-05-04,Werder Bremen,Borussia Mönchengladbach,1.44,1.93
+4222365,2024-05-04,Wolfsburg,Darmstadt,2.19,0.38
+4222366,2024-05-04,1. FC Köln,Freiburg,0.92,0.82
+4222363,2024-05-05,Union Berlin,Bochum,0.94,1.42
+4222364,2024-05-05,Eintracht Frankfurt,Bayer Leverkusen,1.95,2.68
+4222370,2024-05-05,FC Heidenheim,Mainz 05,0.94,1.4
+4222378,2024-05-10,Augsburg,VfB Stuttgart,0.68,1.91
+4222375,2024-05-11,Borussia Mönchengladbach,Eintracht Frankfurt,0.43,1.59
+4222376,2024-05-11,1. FC Köln,Union Berlin,3.21,1.64
+4222373,2024-05-11,Freiburg,FC Heidenheim,1.54,0.66
+4222372,2024-05-11,RB Leipzig,Werder Bremen,1.44,1.05
+4222374,2024-05-11,Mainz 05,Borussia Dortmund,2.19,0.36
+4222379,2024-05-12,Darmstadt,Hoffenheim,0.63,3.27
+4222371,2024-05-12,Bayern München,Wolfsburg,0.29,0.16
+4222377,2024-05-12,Bochum,Bayer Leverkusen,0.3,4.26
+4222382,2024-05-18,Bayer Leverkusen,Augsburg,2.45,1.17
+4222380,2024-05-18,Borussia Dortmund,Darmstadt,2.57,0.32
+4222383,2024-05-18,Eintracht Frankfurt,RB Leipzig,2.12,1.63
+4222388,2024-05-18,FC Heidenheim,1. FC Köln,1.01,2.29
+4222385,2024-05-18,Hoffenheim,Bayern München,1.78,1.52
+4222381,2024-05-18,Union Berlin,Freiburg,2.31,0.98
+4222387,2024-05-18,VfB Stuttgart,Borussia Mönchengladbach,1.59,1.41
+4222386,2024-05-18,Werder Bremen,Bochum,3.02,2.09
+4222384,2024-05-18,Wolfsburg,Mainz 05,0.76,1.8

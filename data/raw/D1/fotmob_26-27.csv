@@ -1,0 +1,73 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+5881143,2026-08-28,Bayern München,VfB Stuttgart,4.06,0.79
+5881146,2026-08-29,Elversberg,Bayer Leverkusen,1.27,1.88
+5881147,2026-08-29,1. FC Köln,Hoffenheim,1.95,1.88
+5881149,2026-08-29,Mainz 05,Paderborn,1.23,0.73
+5881150,2026-08-29,RB Leipzig,Borussia Mönchengladbach,3.96,1.09
+5881151,2026-08-29,Union Berlin,Eintracht Frankfurt,1.84,1.47
+5881145,2026-08-29,Borussia Dortmund,Hamburger SV,1.51,0.91
+5881148,2026-08-30,Freiburg,Werder Bremen,2.37,0.54
+5881144,2026-08-30,Augsburg,Schalke 04,3.72,2.1
+5881159,2026-09-04,VfB Stuttgart,1. FC Köln,3.47,2.79
+5881152,2026-09-05,Bayer Leverkusen,Union Berlin,3.11,0.39
+5881153,2026-09-05,Borussia Mönchengladbach,Elversberg,2.36,2.31
+5881156,2026-09-05,Hoffenheim,Borussia Dortmund,1.76,2.04
+5881157,2026-09-05,Paderborn,Freiburg,0.77,1.24
+5881160,2026-09-05,Werder Bremen,RB Leipzig,0.95,1.5
+5881158,2026-09-05,Schalke 04,Bayern München,0.21,1.94
+5881155,2026-09-06,Hamburger SV,Mainz 05,0.19,2.77
+5881154,2026-09-06,Eintracht Frankfurt,Augsburg,2.22,1.13
+5881169,2026-09-11,Union Berlin,Schalke 04,1.95,2.52
+5881161,2026-09-12,Augsburg,Bayer Leverkusen,1.11,2.64
+5881162,2026-09-12,Borussia Dortmund,Paderborn,1.76,0.49
+5881165,2026-09-12,Freiburg,Borussia Mönchengladbach,2.6,0.19
+5881166,2026-09-12,Hoffenheim,VfB Stuttgart,2.76,2.16
+5881167,2026-09-12,Mainz 05,Eintracht Frankfurt,2.12,2.04
+5881164,2026-09-12,1. FC Köln,Werder Bremen,1.65,1.12
+5881168,2026-09-13,RB Leipzig,Hamburger SV,2.43,1.1
+5881163,2026-09-13,Elversberg,Bayern München,0.94,2.83
+5881171,2026-09-18,Bayern München,Union Berlin,3.71,0.34
+5881172,2026-09-19,Borussia Mönchengladbach,Mainz 05,3.24,2.82
+5881173,2026-09-19,Eintracht Frankfurt,Freiburg,2.18,3.09
+5881174,2026-09-19,Hamburger SV,1. FC Köln,1.45,1.41
+5881178,2026-09-19,Werder Bremen,Augsburg,2.78,1.12
+5881177,2026-09-19,VfB Stuttgart,Borussia Dortmund,1.15,1.33
+5881170,2026-09-20,Bayer Leverkusen,RB Leipzig,2.27,0.97
+5881176,2026-09-20,Schalke 04,Elversberg,1.01,1.01
+5881175,2026-09-20,Paderborn,Hoffenheim,0.68,1.5
+5881180,2026-10-09,Borussia Dortmund,Werder Bremen,2.31,1.31
+5881179,2026-10-10,Augsburg,Bayern München,2.37,4.96
+5881183,2026-10-10,Hoffenheim,Hamburger SV,0.93,1.28
+5881184,2026-10-10,Mainz 05,Bayer Leverkusen,3.13,2.09
+5881185,2026-10-10,Paderborn,VfB Stuttgart,1.96,2.47
+5881187,2026-10-10,Union Berlin,Elversberg,1.13,0.24
+5881186,2026-10-10,RB Leipzig,Eintracht Frankfurt,4.03,1.46
+5881181,2026-10-11,1. FC Köln,Borussia Mönchengladbach,1.32,1.17
+5881182,2026-10-11,Freiburg,Schalke 04,1.15,0.32
+5881191,2026-10-16,Eintracht Frankfurt,1. FC Köln,1.8,0.8
+5881192,2026-10-17,Elversberg,Augsburg,3.78,3.92
+5881193,2026-10-17,Hamburger SV,VfB Stuttgart,1.5,2.28
+5881194,2026-10-17,Schalke 04,Mainz 05,0.43,1.94
+5881195,2026-10-17,Union Berlin,Borussia Dortmund,0.8,1.09
+5881196,2026-10-17,Werder Bremen,Paderborn,3.21,1.15
+5881189,2026-10-17,Bayern München,RB Leipzig,3.4,0.84
+5881188,2026-10-18,Bayer Leverkusen,Freiburg,1.64,1.21
+5881190,2026-10-18,Borussia Mönchengladbach,Hoffenheim,0.47,1.8
+5881205,2026-10-23,VfB Stuttgart,Borussia Mönchengladbach,1.53,3.08
+5881197,2026-10-24,Augsburg,Union Berlin,1.92,1.16
+5881199,2026-10-24,1. FC Köln,Schalke 04,1.24,0.61
+5881202,2026-10-24,Mainz 05,Werder Bremen,1.7,2.69
+5881203,2026-10-24,Paderborn,Hamburger SV,1.37,0.46
+5881204,2026-10-24,RB Leipzig,Elversberg,2.87,0.8
+5881198,2026-10-24,Borussia Dortmund,Eintracht Frankfurt,1.48,0.85
+5881201,2026-10-25,Hoffenheim,Bayer Leverkusen,3.46,0.57
+5881200,2026-10-25,Freiburg,Bayern München,1.01,2.91
+5881211,2026-10-30,Elversberg,Mainz 05,0.94,1.17
+5881206,2026-10-31,Augsburg,Freiburg,1.19,1.19
+5881207,2026-10-31,Bayer Leverkusen,VfB Stuttgart,1.79,2.61
+5881209,2026-10-31,Borussia Mönchengladbach,Paderborn,1.32,0.99
+5881212,2026-10-31,Schalke 04,RB Leipzig,0.49,3.66
+5881214,2026-10-31,Werder Bremen,Hoffenheim,1.29,1.06
+5881208,2026-10-31,Bayern München,Borussia Dortmund,4.48,0.74
+5881213,2026-11-01,Union Berlin,1. FC Köln,0.68,1.18
+5881210,2026-11-01,Eintracht Frankfurt,Hamburger SV,1.95,1.16

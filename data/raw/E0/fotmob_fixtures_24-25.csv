@@ -1,0 +1,381 @@
+day,home,away,home_id,away_id,hg,ag
+2024-08-16,Manchester United,Fulham,10260,9879,1,0
+2024-08-17,Ipswich Town,Liverpool,9902,8650,0,2
+2024-08-17,Arsenal,Wolverhampton Wanderers,9825,8602,2,0
+2024-08-17,Everton,Brighton & Hove Albion,8668,10204,0,3
+2024-08-17,Newcastle United,Southampton,10261,8466,1,0
+2024-08-17,Nottingham Forest,AFC Bournemouth,10203,8678,1,1
+2024-08-17,West Ham United,Aston Villa,8654,10252,1,2
+2024-08-18,Brentford,Crystal Palace,9937,9826,2,1
+2024-08-18,Chelsea,Manchester City,8455,8456,0,2
+2024-08-19,Leicester City,Tottenham Hotspur,8197,8586,1,1
+2024-08-24,Brighton & Hove Albion,Manchester United,10204,10260,2,1
+2024-08-24,Crystal Palace,West Ham United,9826,8654,0,2
+2024-08-24,Fulham,Leicester City,9879,8197,2,1
+2024-08-24,Manchester City,Ipswich Town,8456,9902,4,1
+2024-08-24,Southampton,Nottingham Forest,8466,10203,0,1
+2024-08-24,Tottenham Hotspur,Everton,8586,8668,4,0
+2024-08-24,Aston Villa,Arsenal,10252,9825,0,2
+2024-08-25,AFC Bournemouth,Newcastle United,8678,10261,1,1
+2024-08-25,Wolverhampton Wanderers,Chelsea,8602,8455,2,6
+2024-08-25,Liverpool,Brentford,8650,9937,2,0
+2024-08-31,Arsenal,Brighton & Hove Albion,9825,10204,1,1
+2024-08-31,Brentford,Southampton,9937,8466,3,1
+2024-08-31,Everton,AFC Bournemouth,8668,8678,2,3
+2024-08-31,Ipswich Town,Fulham,9902,9879,1,1
+2024-08-31,Leicester City,Aston Villa,8197,10252,1,2
+2024-08-31,Nottingham Forest,Wolverhampton Wanderers,10203,8602,1,1
+2024-08-31,West Ham United,Manchester City,8654,8456,1,3
+2024-09-01,Chelsea,Crystal Palace,8455,9826,1,1
+2024-09-01,Newcastle United,Tottenham Hotspur,10261,8586,2,1
+2024-09-01,Manchester United,Liverpool,10260,8650,0,3
+2024-09-14,Southampton,Manchester United,8466,10260,0,3
+2024-09-14,Brighton & Hove Albion,Ipswich Town,10204,9902,0,0
+2024-09-14,Crystal Palace,Leicester City,9826,8197,2,2
+2024-09-14,Fulham,West Ham United,9879,8654,1,1
+2024-09-14,Liverpool,Nottingham Forest,8650,10203,0,1
+2024-09-14,Manchester City,Brentford,8456,9937,2,1
+2024-09-14,Aston Villa,Everton,10252,8668,3,2
+2024-09-14,AFC Bournemouth,Chelsea,8678,8455,0,1
+2024-09-15,Tottenham Hotspur,Arsenal,8586,9825,0,1
+2024-09-15,Wolverhampton Wanderers,Newcastle United,8602,10261,1,2
+2024-09-21,West Ham United,Chelsea,8654,8455,0,3
+2024-09-21,Aston Villa,Wolverhampton Wanderers,10252,8602,3,1
+2024-09-21,Fulham,Newcastle United,9879,10261,3,1
+2024-09-21,Leicester City,Everton,8197,8668,1,1
+2024-09-21,Liverpool,AFC Bournemouth,8650,8678,3,0
+2024-09-21,Southampton,Ipswich Town,8466,9902,1,1
+2024-09-21,Tottenham Hotspur,Brentford,8586,9937,3,1
+2024-09-21,Crystal Palace,Manchester United,9826,10260,0,0
+2024-09-22,Brighton & Hove Albion,Nottingham Forest,10204,10203,2,2
+2024-09-22,Manchester City,Arsenal,8456,9825,2,2
+2024-09-28,Newcastle United,Manchester City,10261,8456,1,1
+2024-09-28,Arsenal,Leicester City,9825,8197,4,2
+2024-09-28,Brentford,West Ham United,9937,8654,1,1
+2024-09-28,Chelsea,Brighton & Hove Albion,8455,10204,4,2
+2024-09-28,Everton,Crystal Palace,8668,9826,2,1
+2024-09-28,Nottingham Forest,Fulham,10203,9879,0,1
+2024-09-28,Wolverhampton Wanderers,Liverpool,8602,8650,1,2
+2024-09-29,Ipswich Town,Aston Villa,9902,10252,2,2
+2024-09-29,Manchester United,Tottenham Hotspur,10260,8586,0,3
+2024-09-30,AFC Bournemouth,Southampton,8678,8466,3,1
+2024-10-05,Crystal Palace,Liverpool,9826,8650,0,1
+2024-10-05,Arsenal,Southampton,9825,8466,3,1
+2024-10-05,Brentford,Wolverhampton Wanderers,9937,8602,5,3
+2024-10-05,Leicester City,AFC Bournemouth,8197,8678,1,0
+2024-10-05,Manchester City,Fulham,8456,9879,3,2
+2024-10-05,West Ham United,Ipswich Town,8654,9902,4,1
+2024-10-05,Everton,Newcastle United,8668,10261,0,0
+2024-10-06,Aston Villa,Manchester United,10252,10260,0,0
+2024-10-06,Chelsea,Nottingham Forest,8455,10203,1,1
+2024-10-06,Brighton & Hove Albion,Tottenham Hotspur,10204,8586,3,2
+2024-10-19,Tottenham Hotspur,West Ham United,8586,8654,4,1
+2024-10-19,Fulham,Aston Villa,9879,10252,1,3
+2024-10-19,Manchester United,Brentford,10260,9937,2,1
+2024-10-19,Newcastle United,Brighton & Hove Albion,10261,10204,0,1
+2024-10-19,Southampton,Leicester City,8466,8197,2,3
+2024-10-19,Ipswich Town,Everton,9902,8668,0,2
+2024-10-19,AFC Bournemouth,Arsenal,8678,9825,2,0
+2024-10-20,Wolverhampton Wanderers,Manchester City,8602,8456,1,2
+2024-10-20,Liverpool,Chelsea,8650,8455,2,1
+2024-10-21,Nottingham Forest,Crystal Palace,10203,9826,1,0
+2024-10-25,Leicester City,Nottingham Forest,8197,10203,1,3
+2024-10-26,Aston Villa,AFC Bournemouth,10252,8678,1,1
+2024-10-26,Brentford,Ipswich Town,9937,9902,4,3
+2024-10-26,Brighton & Hove Albion,Wolverhampton Wanderers,10204,8602,2,2
+2024-10-26,Manchester City,Southampton,8456,8466,1,0
+2024-10-26,Everton,Fulham,8668,9879,1,1
+2024-10-27,Chelsea,Newcastle United,8455,10261,2,1
+2024-10-27,Crystal Palace,Tottenham Hotspur,9826,8586,1,0
+2024-10-27,West Ham United,Manchester United,8654,10260,2,1
+2024-10-27,Arsenal,Liverpool,9825,8650,2,2
+2024-11-02,Newcastle United,Arsenal,10261,9825,1,0
+2024-11-02,AFC Bournemouth,Manchester City,8678,8456,2,1
+2024-11-02,Ipswich Town,Leicester City,9902,8197,1,1
+2024-11-02,Liverpool,Brighton & Hove Albion,8650,10204,2,1
+2024-11-02,Nottingham Forest,West Ham United,10203,8654,3,0
+2024-11-02,Southampton,Everton,8466,8668,1,0
+2024-11-02,Wolverhampton Wanderers,Crystal Palace,8602,9826,2,2
+2024-11-03,Tottenham Hotspur,Aston Villa,8586,10252,4,1
+2024-11-03,Manchester United,Chelsea,10260,8455,1,1
+2024-11-04,Fulham,Brentford,9879,9937,2,1
+2024-11-09,Brentford,AFC Bournemouth,9937,8678,3,2
+2024-11-09,Crystal Palace,Fulham,9826,9879,0,2
+2024-11-09,West Ham United,Everton,8654,8668,0,0
+2024-11-09,Wolverhampton Wanderers,Southampton,8602,8466,2,0
+2024-11-09,Brighton & Hove Albion,Manchester City,10204,8456,2,1
+2024-11-09,Liverpool,Aston Villa,8650,10252,2,0
+2024-11-10,Manchester United,Leicester City,10260,8197,3,0
+2024-11-10,Nottingham Forest,Newcastle United,10203,10261,1,3
+2024-11-10,Tottenham Hotspur,Ipswich Town,8586,9902,1,2
+2024-11-10,Chelsea,Arsenal,8455,9825,1,1
+2024-11-23,Leicester City,Chelsea,8197,8455,1,2
+2024-11-23,AFC Bournemouth,Brighton & Hove Albion,8678,10204,1,2
+2024-11-23,Arsenal,Nottingham Forest,9825,10203,3,0
+2024-11-23,Aston Villa,Crystal Palace,10252,9826,2,2
+2024-11-23,Everton,Brentford,8668,9937,0,0
+2024-11-23,Fulham,Wolverhampton Wanderers,9879,8602,1,4
+2024-11-23,Manchester City,Tottenham Hotspur,8456,8586,0,4
+2024-11-24,Southampton,Liverpool,8466,8650,2,3
+2024-11-24,Ipswich Town,Manchester United,9902,10260,1,1
+2024-11-25,Newcastle United,West Ham United,10261,8654,0,2
+2024-11-29,Brighton & Hove Albion,Southampton,10204,8466,1,1
+2024-11-30,Brentford,Leicester City,9937,8197,4,1
+2024-11-30,Crystal Palace,Newcastle United,9826,10261,1,1
+2024-11-30,Nottingham Forest,Ipswich Town,10203,9902,1,0
+2024-11-30,Wolverhampton Wanderers,AFC Bournemouth,8602,8678,2,4
+2024-11-30,West Ham United,Arsenal,8654,9825,2,5
+2024-12-01,Chelsea,Aston Villa,8455,10252,3,0
+2024-12-01,Manchester United,Everton,10260,8668,4,0
+2024-12-01,Tottenham Hotspur,Fulham,8586,9879,1,1
+2024-12-01,Liverpool,Manchester City,8650,8456,2,0
+2024-12-03,Ipswich Town,Crystal Palace,9902,9826,0,1
+2024-12-03,Leicester City,West Ham United,8197,8654,3,1
+2024-12-04,Everton,Wolverhampton Wanderers,8668,8602,4,0
+2024-12-04,Manchester City,Nottingham Forest,8456,10203,3,0
+2024-12-04,Newcastle United,Liverpool,10261,8650,3,3
+2024-12-04,Southampton,Chelsea,8466,8455,1,5
+2024-12-04,Arsenal,Manchester United,9825,10260,2,0
+2024-12-04,Aston Villa,Brentford,10252,9937,3,1
+2024-12-05,Fulham,Brighton & Hove Albion,9879,10204,3,1
+2024-12-05,AFC Bournemouth,Tottenham Hotspur,8678,8586,1,0
+2024-12-07,Aston Villa,Southampton,10252,8466,1,0
+2024-12-07,Brentford,Newcastle United,9937,10261,4,2
+2024-12-07,Crystal Palace,Manchester City,9826,8456,2,2
+2024-12-07,Manchester United,Nottingham Forest,10260,10203,2,3
+2024-12-08,Fulham,Arsenal,9879,9825,1,1
+2024-12-08,Ipswich Town,AFC Bournemouth,9902,8678,1,2
+2024-12-08,Leicester City,Brighton & Hove Albion,8197,10204,2,2
+2024-12-08,Tottenham Hotspur,Chelsea,8586,8455,3,4
+2024-12-09,West Ham United,Wolverhampton Wanderers,8654,8602,2,1
+2024-12-14,Arsenal,Everton,9825,8668,0,0
+2024-12-14,Liverpool,Fulham,8650,9879,2,2
+2024-12-14,Newcastle United,Leicester City,10261,8197,4,0
+2024-12-14,Wolverhampton Wanderers,Ipswich Town,8602,9902,1,2
+2024-12-14,Nottingham Forest,Aston Villa,10203,10252,2,1
+2024-12-15,Brighton & Hove Albion,Crystal Palace,10204,9826,1,3
+2024-12-15,Manchester City,Manchester United,8456,10260,1,2
+2024-12-15,Chelsea,Brentford,8455,9937,2,1
+2024-12-15,Southampton,Tottenham Hotspur,8466,8586,0,5
+2024-12-16,AFC Bournemouth,West Ham United,8678,8654,1,1
+2024-12-21,Aston Villa,Manchester City,10252,8456,2,1
+2024-12-21,Brentford,Nottingham Forest,9937,10203,0,2
+2024-12-21,Ipswich Town,Newcastle United,9902,10261,0,4
+2024-12-21,West Ham United,Brighton & Hove Albion,8654,10204,1,1
+2024-12-21,Crystal Palace,Arsenal,9826,9825,1,5
+2024-12-22,Everton,Chelsea,8668,8455,0,0
+2024-12-22,Fulham,Southampton,9879,8466,0,0
+2024-12-22,Leicester City,Wolverhampton Wanderers,8197,8602,0,3
+2024-12-22,Manchester United,AFC Bournemouth,10260,8678,0,3
+2024-12-22,Tottenham Hotspur,Liverpool,8586,8650,3,6
+2024-12-26,Manchester City,Everton,8456,8668,1,1
+2024-12-26,AFC Bournemouth,Crystal Palace,8678,9826,0,0
+2024-12-26,Chelsea,Fulham,8455,9879,1,2
+2024-12-26,Newcastle United,Aston Villa,10261,10252,3,0
+2024-12-26,Nottingham Forest,Tottenham Hotspur,10203,8586,1,0
+2024-12-26,Southampton,West Ham United,8466,8654,0,1
+2024-12-26,Wolverhampton Wanderers,Manchester United,8602,10260,2,0
+2024-12-26,Liverpool,Leicester City,8650,8197,3,1
+2024-12-27,Brighton & Hove Albion,Brentford,10204,9937,0,0
+2024-12-27,Arsenal,Ipswich Town,9825,9902,1,0
+2024-12-29,Leicester City,Manchester City,8197,8456,0,2
+2024-12-29,Crystal Palace,Southampton,9826,8466,2,1
+2024-12-29,Everton,Nottingham Forest,8668,10203,0,2
+2024-12-29,Fulham,AFC Bournemouth,9879,8678,2,2
+2024-12-29,Tottenham Hotspur,Wolverhampton Wanderers,8586,8602,2,2
+2024-12-29,West Ham United,Liverpool,8654,8650,0,5
+2024-12-30,Aston Villa,Brighton & Hove Albion,10252,10204,2,2
+2024-12-30,Ipswich Town,Chelsea,9902,8455,2,0
+2024-12-30,Manchester United,Newcastle United,10260,10261,0,2
+2025-01-01,Brentford,Arsenal,9937,9825,1,3
+2025-01-04,Tottenham Hotspur,Newcastle United,8586,10261,1,2
+2025-01-04,AFC Bournemouth,Everton,8678,8668,1,0
+2025-01-04,Aston Villa,Leicester City,10252,8197,2,1
+2025-01-04,Crystal Palace,Chelsea,9826,8455,1,1
+2025-01-04,Manchester City,West Ham United,8456,8654,4,1
+2025-01-04,Southampton,Brentford,8466,9937,0,5
+2025-01-04,Brighton & Hove Albion,Arsenal,10204,9825,1,1
+2025-01-05,Fulham,Ipswich Town,9879,9902,2,2
+2025-01-05,Liverpool,Manchester United,8650,10260,2,2
+2025-01-06,Wolverhampton Wanderers,Nottingham Forest,8602,10203,0,3
+2025-01-14,Brentford,Manchester City,9937,8456,2,2
+2025-01-14,Chelsea,AFC Bournemouth,8455,8678,2,2
+2025-01-14,West Ham United,Fulham,8654,9879,3,2
+2025-01-14,Nottingham Forest,Liverpool,10203,8650,1,1
+2025-01-15,Everton,Aston Villa,8668,10252,0,1
+2025-01-15,Leicester City,Crystal Palace,8197,9826,0,2
+2025-01-15,Newcastle United,Wolverhampton Wanderers,10261,8602,3,0
+2025-01-15,Arsenal,Tottenham Hotspur,9825,8586,2,1
+2025-01-16,Ipswich Town,Brighton & Hove Albion,9902,10204,0,2
+2025-01-16,Manchester United,Southampton,10260,8466,3,1
+2025-01-18,Newcastle United,AFC Bournemouth,10261,8678,1,4
+2025-01-18,Brentford,Liverpool,9937,8650,0,2
+2025-01-18,Leicester City,Fulham,8197,9879,0,2
+2025-01-18,West Ham United,Crystal Palace,8654,9826,0,2
+2025-01-18,Arsenal,Aston Villa,9825,10252,2,2
+2025-01-19,Everton,Tottenham Hotspur,8668,8586,3,2
+2025-01-19,Manchester United,Brighton & Hove Albion,10260,10204,1,3
+2025-01-19,Nottingham Forest,Southampton,10203,8466,3,2
+2025-01-19,Ipswich Town,Manchester City,9902,8456,0,6
+2025-01-20,Chelsea,Wolverhampton Wanderers,8455,8602,3,1
+2025-01-25,AFC Bournemouth,Nottingham Forest,8678,10203,5,0
+2025-01-25,Brighton & Hove Albion,Everton,10204,8668,0,1
+2025-01-25,Liverpool,Ipswich Town,8650,9902,4,1
+2025-01-25,Southampton,Newcastle United,8466,10261,1,3
+2025-01-25,Wolverhampton Wanderers,Arsenal,8602,9825,0,1
+2025-01-25,Manchester City,Chelsea,8456,8455,3,1
+2025-01-26,Crystal Palace,Brentford,9826,9937,1,2
+2025-01-26,Tottenham Hotspur,Leicester City,8586,8197,1,2
+2025-01-26,Aston Villa,West Ham United,10252,8654,1,1
+2025-01-26,Fulham,Manchester United,9879,10260,0,1
+2025-02-01,Nottingham Forest,Brighton & Hove Albion,10203,10204,7,0
+2025-02-01,AFC Bournemouth,Liverpool,8678,8650,0,2
+2025-02-01,Everton,Leicester City,8668,8197,4,0
+2025-02-01,Ipswich Town,Southampton,9902,8466,1,2
+2025-02-01,Newcastle United,Fulham,10261,9879,1,2
+2025-02-01,Wolverhampton Wanderers,Aston Villa,8602,10252,2,0
+2025-02-02,Brentford,Tottenham Hotspur,9937,8586,0,2
+2025-02-02,Manchester United,Crystal Palace,10260,9826,0,2
+2025-02-02,Arsenal,Manchester City,9825,8456,5,1
+2025-02-03,Chelsea,West Ham United,8455,8654,2,1
+2025-02-12,Everton,Liverpool,8668,8650,2,2
+2025-02-14,Brighton & Hove Albion,Chelsea,10204,8455,3,0
+2025-02-15,Leicester City,Arsenal,8197,9825,0,2
+2025-02-15,Aston Villa,Ipswich Town,10252,9902,1,1
+2025-02-15,Fulham,Nottingham Forest,9879,10203,2,1
+2025-02-15,Manchester City,Newcastle United,8456,10261,4,0
+2025-02-15,Southampton,AFC Bournemouth,8466,8678,1,3
+2025-02-15,West Ham United,Brentford,8654,9937,0,1
+2025-02-15,Crystal Palace,Everton,9826,8668,1,2
+2025-02-16,Liverpool,Wolverhampton Wanderers,8650,8602,2,1
+2025-02-16,Tottenham Hotspur,Manchester United,8586,10260,1,0
+2025-02-19,Aston Villa,Liverpool,10252,8650,2,2
+2025-02-21,Leicester City,Brentford,8197,9937,0,4
+2025-02-22,Everton,Manchester United,8668,10260,2,2
+2025-02-22,AFC Bournemouth,Wolverhampton Wanderers,8678,8602,0,1
+2025-02-22,Arsenal,West Ham United,9825,8654,0,1
+2025-02-22,Fulham,Crystal Palace,9879,9826,0,2
+2025-02-22,Ipswich Town,Tottenham Hotspur,9902,8586,1,4
+2025-02-22,Southampton,Brighton & Hove Albion,8466,10204,0,4
+2025-02-22,Aston Villa,Chelsea,10252,8455,2,1
+2025-02-23,Newcastle United,Nottingham Forest,10261,10203,4,3
+2025-02-23,Manchester City,Liverpool,8456,8650,0,2
+2025-02-25,Brighton & Hove Albion,AFC Bournemouth,10204,8678,2,1
+2025-02-25,Crystal Palace,Aston Villa,9826,10252,4,1
+2025-02-25,Wolverhampton Wanderers,Fulham,8602,9879,1,2
+2025-02-25,Chelsea,Southampton,8455,8466,4,0
+2025-02-26,Brentford,Everton,9937,8668,1,1
+2025-02-26,Manchester United,Ipswich Town,10260,9902,3,2
+2025-02-26,Nottingham Forest,Arsenal,10203,9825,0,0
+2025-02-26,Tottenham Hotspur,Manchester City,8586,8456,0,1
+2025-02-26,Liverpool,Newcastle United,8650,10261,2,0
+2025-02-27,West Ham United,Leicester City,8654,8197,2,0
+2025-03-08,Nottingham Forest,Manchester City,10203,8456,1,0
+2025-03-08,Brighton & Hove Albion,Fulham,10204,9879,2,1
+2025-03-08,Crystal Palace,Ipswich Town,9826,9902,1,0
+2025-03-08,Liverpool,Southampton,8650,8466,3,1
+2025-03-08,Brentford,Aston Villa,9937,10252,0,1
+2025-03-08,Wolverhampton Wanderers,Everton,8602,8668,1,1
+2025-03-09,Chelsea,Leicester City,8455,8197,1,0
+2025-03-09,Tottenham Hotspur,AFC Bournemouth,8586,8678,2,2
+2025-03-09,Manchester United,Arsenal,10260,9825,1,1
+2025-03-10,West Ham United,Newcastle United,8654,10261,0,1
+2025-03-15,Everton,West Ham United,8668,8654,1,1
+2025-03-15,Ipswich Town,Nottingham Forest,9902,10203,2,4
+2025-03-15,Southampton,Wolverhampton Wanderers,8466,8602,1,2
+2025-03-15,Manchester City,Brighton & Hove Albion,8456,10204,2,2
+2025-03-15,AFC Bournemouth,Brentford,8678,9937,1,2
+2025-03-16,Arsenal,Chelsea,9825,8455,1,0
+2025-03-16,Fulham,Tottenham Hotspur,9879,8586,2,0
+2025-03-16,Leicester City,Manchester United,8197,10260,0,3
+2025-04-01,Arsenal,Fulham,9825,9879,2,1
+2025-04-01,Wolverhampton Wanderers,West Ham United,8602,8654,1,0
+2025-04-01,Nottingham Forest,Manchester United,10203,10260,1,0
+2025-04-02,AFC Bournemouth,Ipswich Town,8678,9902,1,2
+2025-04-02,Brighton & Hove Albion,Aston Villa,10204,10252,0,3
+2025-04-02,Manchester City,Leicester City,8456,8197,2,0
+2025-04-02,Newcastle United,Brentford,10261,9937,2,1
+2025-04-02,Southampton,Crystal Palace,8466,9826,1,1
+2025-04-02,Liverpool,Everton,8650,8668,1,0
+2025-04-03,Chelsea,Tottenham Hotspur,8455,8586,1,0
+2025-04-05,Everton,Arsenal,8668,9825,1,1
+2025-04-05,Crystal Palace,Brighton & Hove Albion,9826,10204,2,1
+2025-04-05,Ipswich Town,Wolverhampton Wanderers,9902,8602,1,2
+2025-04-05,West Ham United,AFC Bournemouth,8654,8678,2,2
+2025-04-05,Aston Villa,Nottingham Forest,10252,10203,2,1
+2025-04-06,Brentford,Chelsea,9937,8455,0,0
+2025-04-06,Fulham,Liverpool,9879,8650,3,2
+2025-04-06,Tottenham Hotspur,Southampton,8586,8466,3,1
+2025-04-06,Manchester United,Manchester City,10260,8456,0,0
+2025-04-07,Leicester City,Newcastle United,8197,10261,0,3
+2025-04-12,Manchester City,Crystal Palace,8456,9826,5,2
+2025-04-12,Brighton & Hove Albion,Leicester City,10204,8197,2,2
+2025-04-12,Nottingham Forest,Everton,10203,8668,0,1
+2025-04-12,Southampton,Aston Villa,8466,10252,0,3
+2025-04-12,Arsenal,Brentford,9825,9937,1,1
+2025-04-13,Chelsea,Ipswich Town,8455,9902,2,2
+2025-04-13,Liverpool,West Ham United,8650,8654,2,1
+2025-04-13,Wolverhampton Wanderers,Tottenham Hotspur,8602,8586,4,2
+2025-04-13,Newcastle United,Manchester United,10261,10260,4,1
+2025-04-14,AFC Bournemouth,Fulham,8678,9879,1,0
+2025-04-16,Newcastle United,Crystal Palace,10261,9826,5,0
+2025-04-19,Brentford,Brighton & Hove Albion,9937,10204,4,2
+2025-04-19,Crystal Palace,AFC Bournemouth,9826,8678,0,0
+2025-04-19,Everton,Manchester City,8668,8456,0,2
+2025-04-19,West Ham United,Southampton,8654,8466,1,1
+2025-04-19,Aston Villa,Newcastle United,10252,10261,4,1
+2025-04-20,Fulham,Chelsea,9879,8455,1,2
+2025-04-20,Ipswich Town,Arsenal,9902,9825,0,4
+2025-04-20,Manchester United,Wolverhampton Wanderers,10260,8602,0,1
+2025-04-20,Leicester City,Liverpool,8197,8650,0,1
+2025-04-21,Tottenham Hotspur,Nottingham Forest,8586,10203,1,2
+2025-04-22,Manchester City,Aston Villa,8456,10252,2,1
+2025-04-23,Arsenal,Crystal Palace,9825,9826,2,2
+2025-04-26,Chelsea,Everton,8455,8668,1,0
+2025-04-26,Brighton & Hove Albion,West Ham United,10204,8654,3,2
+2025-04-26,Newcastle United,Ipswich Town,10261,9902,3,0
+2025-04-26,Southampton,Fulham,8466,9879,1,2
+2025-04-26,Wolverhampton Wanderers,Leicester City,8602,8197,3,0
+2025-04-27,AFC Bournemouth,Manchester United,8678,10260,1,1
+2025-04-27,Liverpool,Tottenham Hotspur,8650,8586,5,1
+2025-05-01,Nottingham Forest,Brentford,10203,9937,0,2
+2025-05-02,Manchester City,Wolverhampton Wanderers,8456,8602,1,0
+2025-05-03,Aston Villa,Fulham,10252,9879,1,0
+2025-05-03,Everton,Ipswich Town,8668,9902,2,2
+2025-05-03,Leicester City,Southampton,8197,8466,2,0
+2025-05-03,Arsenal,AFC Bournemouth,9825,8678,1,2
+2025-05-04,Brentford,Manchester United,9937,10260,4,3
+2025-05-04,Brighton & Hove Albion,Newcastle United,10204,10261,1,1
+2025-05-04,West Ham United,Tottenham Hotspur,8654,8586,1,1
+2025-05-04,Chelsea,Liverpool,8455,8650,3,1
+2025-05-05,Crystal Palace,Nottingham Forest,9826,10203,1,1
+2025-05-10,Fulham,Everton,9879,8668,1,3
+2025-05-10,Ipswich Town,Brentford,9902,9937,0,1
+2025-05-10,Southampton,Manchester City,8466,8456,0,0
+2025-05-10,Wolverhampton Wanderers,Brighton & Hove Albion,8602,10204,0,2
+2025-05-10,AFC Bournemouth,Aston Villa,8678,10252,0,1
+2025-05-11,Newcastle United,Chelsea,10261,8455,2,0
+2025-05-11,Manchester United,West Ham United,10260,8654,0,2
+2025-05-11,Nottingham Forest,Leicester City,10203,8197,2,2
+2025-05-11,Tottenham Hotspur,Crystal Palace,8586,9826,0,2
+2025-05-11,Liverpool,Arsenal,8650,9825,2,2
+2025-05-16,Aston Villa,Tottenham Hotspur,10252,8586,2,0
+2025-05-16,Chelsea,Manchester United,8455,10260,1,0
+2025-05-18,Everton,Southampton,8668,8466,2,0
+2025-05-18,West Ham United,Nottingham Forest,8654,10203,1,2
+2025-05-18,Brentford,Fulham,9937,9879,2,3
+2025-05-18,Leicester City,Ipswich Town,8197,9902,2,0
+2025-05-18,Arsenal,Newcastle United,9825,10261,1,0
+2025-05-19,Brighton & Hove Albion,Liverpool,10204,8650,3,2
+2025-05-20,Crystal Palace,Wolverhampton Wanderers,9826,8602,4,2
+2025-05-20,Manchester City,AFC Bournemouth,8456,8678,3,1
+2025-05-25,AFC Bournemouth,Leicester City,8678,8197,2,0
+2025-05-25,Fulham,Manchester City,9879,8456,0,2
+2025-05-25,Ipswich Town,West Ham United,9902,8654,1,3
+2025-05-25,Liverpool,Crystal Palace,8650,9826,1,1
+2025-05-25,Manchester United,Aston Villa,10260,10252,2,0
+2025-05-25,Newcastle United,Everton,10261,8668,0,1
+2025-05-25,Nottingham Forest,Chelsea,10203,8455,0,1
+2025-05-25,Southampton,Arsenal,8466,9825,1,2
+2025-05-25,Tottenham Hotspur,Brighton & Hove Albion,8586,10204,1,4
+2025-05-25,Wolverhampton Wanderers,Brentford,8602,9937,1,1

@@ -1,0 +1,381 @@
+HomeTeam,AwayTeam,HomeXG,AwayXG
+Empoli,Verona,0.844727,0.690842
+Frosinone,Napoli,0.871157,1.31464
+Genoa,Fiorentina,0.79732,1.1197
+Inter,Monza,2.49549,0.581247
+Lecce,Lazio,1.75411,2.22215
+Roma,Salernitana,2.00607,0.364297
+Sassuolo,Atalanta,0.381264,1.50058
+Udinese,Juventus,1.20988,1.86438
+Bologna,AC Milan,1.17349,1.1479
+Torino,Cagliari,1.03099,0.443184
+AC Milan,Torino,3.25277,0.563184
+Frosinone,Atalanta,0.760807,1.44199
+Monza,Empoli,2.0469,1.13824
+Verona,Roma,0.904461,2.00413
+Fiorentina,Lecce,1.51003,0.494028
+Juventus,Bologna,0.915803,0.687398
+Lazio,Genoa,0.937895,0.69511
+Napoli,Sassuolo,3.53489,0.145568
+Cagliari,Inter,0.484344,1.25423
+Salernitana,Udinese,0.559371,0.548425
+Roma,AC Milan,0.412392,1.62873
+Sassuolo,Verona,2.62139,0.555465
+Atalanta,Monza,1.96499,0.37036
+Bologna,Cagliari,2.8268,0.537052
+Napoli,Lazio,1.04344,1.04826
+Udinese,Frosinone,2.07837,2.41709
+Empoli,Juventus,0.304187,3.04937
+Inter,Fiorentina,5.21474,0.346607
+Lecce,Salernitana,1.83665,1.05367
+Torino,Genoa,0.481429,0.102008
+Genoa,Napoli,1.33007,0.984291
+Inter,AC Milan,2.95417,0.989611
+Juventus,Lazio,2.6734,0.704843
+Cagliari,Udinese,2.2007,0.836992
+Fiorentina,Atalanta,1.4533,0.632092
+Frosinone,Sassuolo,2.97022,1.93433
+Monza,Lecce,3.29559,0.895727
+Roma,Empoli,2.49292,0.166755
+Salernitana,Torino,0.694683,1.54562
+Verona,Bologna,0.408446,0.896605
+Lecce,Genoa,1.00903,0.532474
+Salernitana,Frosinone,0.834621,0.98737
+AC Milan,Verona,0.916672,0.845815
+Lazio,Monza,1.02354,1.80956
+Sassuolo,Juventus,1.74238,1.36816
+Atalanta,Cagliari,1.67724,1.00314
+Bologna,Napoli,0.184666,1.84847
+Empoli,Inter,0.330665,1.63518
+Torino,Roma,1.10678,1.10764
+Udinese,Fiorentina,2.40063,0.281122
+Juventus,Lecce,1.64987,0.0667791
+Cagliari,AC Milan,0.67613,2.10838
+Empoli,Salernitana,2.29107,0.477434
+Inter,Sassuolo,1.02458,1.02404
+Lazio,Torino,0.773684,0.213455
+Napoli,Udinese,3.70921,0.82191
+Verona,Atalanta,0.325267,1.38356
+Frosinone,Fiorentina,0.976021,1.45269
+Genoa,Roma,1.59801,1.29625
+Monza,Bologna,1.02777,1.04179
+AC Milan,Lazio,2.69178,0.502537
+Lecce,Napoli,0.612649,2.71689
+Salernitana,Inter,0.620122,2.5554
+Atalanta,Juventus,1.97735,0.203059
+Bologna,Empoli,3.28867,1.04905
+Roma,Frosinone,0.830718,0.791935
+Udinese,Genoa,1.53115,0.83333
+Fiorentina,Cagliari,1.52678,0.81356
+Sassuolo,Monza,1.49022,1.84951
+Torino,Verona,0.617691,0.273624
+Empoli,Udinese,1.00116,1.23968
+Lecce,Sassuolo,1.51817,1.74518
+Genoa,AC Milan,0.353901,0.898603
+Inter,Bologna,0.705274,1.04766
+Juventus,Torino,2.40906,0.592513
+Cagliari,Roma,1.76268,3.3327
+Frosinone,Verona,1.91977,0.506291
+Lazio,Atalanta,1.65045,1.0016
+Monza,Salernitana,3.73783,0.999628
+Napoli,Fiorentina,1.77418,1.76863
+Sassuolo,Lazio,0.319165,2.93562
+Torino,Inter,0.596799,2.44253
+Verona,Napoli,0.87241,2.65531
+AC Milan,Juventus,0.238518,1.80571
+Atalanta,Genoa,1.97081,1.04166
+Bologna,Frosinone,1.63336,1.42786
+Roma,Monza,2.53278,0.423669
+Salernitana,Cagliari,1.33333,1.4958
+Fiorentina,Empoli,0.764401,1.79488
+Udinese,Lecce,2.58184,0.808325
+Genoa,Salernitana,0.40726,0.778619
+Juventus,Verona,3.64831,0.318759
+Lecce,Torino,0.462357,1.33241
+Sassuolo,Bologna,0.864789,0.829724
+Cagliari,Frosinone,4.07472,1.29593
+Inter,Roma,2.25314,0.495306
+Monza,Udinese,0.40283,1.05616
+Napoli,AC Milan,1.50253,2.37489
+Empoli,Atalanta,0.271851,2.19175
+Lazio,Fiorentina,2.36178,0.389451
+Bologna,Lazio,0.698258,0.462021
+AC Milan,Udinese,1.28493,2.1049
+Atalanta,Inter,1.36089,1.39642
+Salernitana,Napoli,0.322231,1.67658
+Cagliari,Genoa,1.26944,0.669834
+Fiorentina,Juventus,0.675388,0.855784
+Roma,Lecce,2.55177,1.20256
+Verona,Monza,1.12724,1.39014
+Frosinone,Empoli,0.80376,1.87117
+Torino,Sassuolo,3.43408,0.499189
+Genoa,Verona,2.04226,0.2458
+Sassuolo,Salernitana,2.4684,0.946956
+Juventus,Cagliari,3.04248,0.477922
+Lecce,AC Milan,1.99035,2.22404
+Monza,Torino,1.16628,0.819686
+Fiorentina,Bologna,1.57435,2.31019
+Inter,Frosinone,3.2782,0.58612
+Lazio,Roma,0.398131,0.320262
+Napoli,Empoli,1.06052,0.38859
+Udinese,Atalanta,1.21433,0.575292
+AC Milan,Fiorentina,1.78395,1.69486
+Atalanta,Napoli,0.880466,2.51076
+Salernitana,Lazio,1.40102,1.83536
+Cagliari,Monza,1.58663,0.802396
+Empoli,Sassuolo,1.47716,2.97603
+Frosinone,Genoa,0.990501,1.82552
+Juventus,Inter,0.488914,0.692636
+Roma,Udinese,1.25942,0.532293
+Bologna,Torino,1.34938,0.573292
+Verona,Lecce,1.94683,1.52186
+Monza,Juventus,0.656513,2.95935
+AC Milan,Frosinone,1.01016,0.728766
+Genoa,Empoli,0.832928,0.753276
+Lazio,Cagliari,2.50417,0.613719
+Fiorentina,Salernitana,3.06935,0.780756
+Lecce,Bologna,1.65827,1.51659
+Napoli,Inter,0.787314,2.58503
+Sassuolo,Roma,0.916551,1.9994
+Udinese,Verona,2.14774,1.56674
+Torino,Atalanta,1.63866,0.345831
+Juventus,Napoli,0.662608,1.00524
+Atalanta,AC Milan,3.10106,1.00625
+Inter,Udinese,3.34151,0.847308
+Verona,Lazio,0.792676,1.01398
+Frosinone,Torino,1.50797,1.06355
+Monza,Genoa,0.67177,1.74997
+Roma,Fiorentina,0.702857,0.975261
+Salernitana,Bologna,0.601235,1.67302
+Cagliari,Sassuolo,1.2382,1.29012
+Empoli,Lecce,1.8919,0.985028
+Genoa,Juventus,0.844502,2.10424
+Lecce,Frosinone,0.729342,1.84133
+Napoli,Cagliari,3.03273,1.83831
+Torino,Empoli,2.11343,0.28927
+AC Milan,Monza,2.26584,1.42821
+Bologna,Roma,0.782175,0.566461
+Fiorentina,Verona,0.330363,2.92504
+Lazio,Inter,1.63799,1.69409
+Udinese,Sassuolo,0.750879,2.90114
+Atalanta,Salernitana,2.34764,0.976758
+Empoli,Lazio,0.659249,1.95383
+Monza,Fiorentina,0.659021,1.95676
+Salernitana,AC Milan,1.14336,2.9432
+Sassuolo,Genoa,2.17129,1.3709
+Bologna,Atalanta,0.986587,1.59382
+Frosinone,Juventus,0.495508,1.27523
+Inter,Lecce,3.28691,1.1279
+Roma,Napoli,2.06895,0.44093
+Torino,Udinese,0.666821,0.919531
+Verona,Cagliari,0.986759,1.20911
+Fiorentina,Torino,0.885643,0.439657
+Genoa,Inter,0.410279,1.8593
+Lazio,Frosinone,1.74892,1.13132
+Napoli,Monza,2.37308,1.09674
+AC Milan,Sassuolo,1.49842,0.40374
+Atalanta,Lecce,1.4919,1.38509
+Cagliari,Empoli,1.4357,0.222516
+Juventus,Roma,1.63273,0.39518
+Udinese,Bologna,1.53169,0.766703
+Verona,Salernitana,0.812164,0.768493
+Bologna,Genoa,1.35919,0.153342
+Frosinone,Monza,1.14998,1.45289
+Inter,Verona,2.12311,1.36479
+Lecce,Cagliari,1.61147,0.994223
+Sassuolo,Fiorentina,0.701861,1.4924
+Empoli,AC Milan,0.945682,1.51431
+Roma,Atalanta,2.58182,1.11144
+Salernitana,Juventus,0.930992,1.82515
+Torino,Napoli,2.13004,1.14787
+Udinese,Lazio,0.612027,0.498208
+Genoa,Torino,0.575708,0.30855
+Monza,Inter,1.07372,4.72502
+Napoli,Salernitana,2.73312,0.151576
+Verona,Empoli,1.25066,0.720625
+AC Milan,Roma,1.57355,1.23713
+Cagliari,Bologna,0.48909,0.738045
+Fiorentina,Udinese,1.66667,1.16643
+Lazio,Lecce,1.08287,0.971265
+Atalanta,Frosinone,4.91726,0.434507
+Juventus,Sassuolo,1.23237,0.29509
+Roma,Verona,1.4542,1.09599
+Udinese,AC Milan,0.813024,2.43121
+Empoli,Monza,1.78103,0.868813
+Frosinone,Cagliari,2.9278,0.599249
+Lecce,Juventus,0.493249,2.48407
+Salernitana,Genoa,1.1539,1.11078
+Cagliari,Torino,1.97593,2.42275
+AC Milan,Bologna,3.60116,2.07278
+Atalanta,Udinese,1.32201,0.616693
+Juventus,Empoli,0.990773,0.696403
+Fiorentina,Inter,1.89212,0.617311
+Genoa,Lecce,2.08542,2.29888
+Lazio,Napoli,0.414353,0.169707
+Monza,Sassuolo,0.419129,0.725542
+Verona,Frosinone,2.29871,1.66579
+Salernitana,Roma,1.42906,1.48834
+Lecce,Fiorentina,2.31602,1.07539
+Bologna,Sassuolo,0.889471,0.898681
+Empoli,Genoa,0.58479,0.577479
+Frosinone,AC Milan,1.0672,2.01173
+Udinese,Monza,0.780762,0.124799
+Atalanta,Lazio,2.87997,1.29656
+Inter,Juventus,1.64254,0.597312
+Napoli,Verona,1.97716,1.18484
+Torino,Salernitana,0.742534,0.0814573
+Roma,Cagliari,3.35931,0.503174
+Salernitana,Empoli,0.799924,2.14988
+Cagliari,Lazio,0.69339,1.60335
+Roma,Inter,1.00864,1.24183
+Sassuolo,Torino,0.803849,1.11139
+AC Milan,Napoli,1.37304,0.502118
+Bologna,Lecce,1.77523,1.10831
+Fiorentina,Frosinone,3.17846,1.2861
+Genoa,Atalanta,0.906299,2.84643
+Monza,Verona,0.831924,0.576842
+Juventus,Udinese,2.01527,1.13222
+Bologna,Fiorentina,2.65166,0.969673
+Inter,Salernitana,4.48759,0.0464174
+Torino,Lecce,1.52802,0.415653
+Atalanta,Sassuolo,5.00929,1.81361
+Napoli,Genoa,1.18788,0.285006
+Verona,Juventus,0.617246,1.80606
+Empoli,Fiorentina,0.945067,0.920295
+Frosinone,Roma,1.62402,1.81853
+Lazio,Bologna,1.14123,1.16044
+Monza,AC Milan,1.6186,1.33102
+Udinese,Cagliari,1.17588,0.817344
+Torino,Lazio,1.94911,0.352376
+Bologna,Verona,2.33279,0.701896
+Genoa,Udinese,1.62322,0.322829
+Salernitana,Monza,0.728802,2.6089
+Sassuolo,Empoli,1.60152,2.52542
+AC Milan,Atalanta,1.38915,1.06552
+Cagliari,Napoli,0.916353,1.46253
+Juventus,Frosinone,1.74414,0.570671
+Lecce,Inter,0.928229,3.07379
+Fiorentina,Lazio,3.86937,0.611852
+Roma,Torino,1.52399,0.551839
+Inter,Atalanta,2.91852,0.258264
+Sassuolo,Napoli,0.237572,2.7969
+Lazio,AC Milan,1.59899,0.849675
+Monza,Roma,1.01584,1.89657
+Torino,Fiorentina,0.561691,0.697752
+Udinese,Salernitana,1.98278,0.839171
+Atalanta,Bologna,1.20723,1.58258
+Empoli,Cagliari,1.50581,0.428646
+Frosinone,Lecce,1.53511,1.29494
+Napoli,Juventus,1.7764,2.0359
+Verona,Sassuolo,0.504318,0.360012
+Inter,Genoa,2.90423,1.17046
+Napoli,Torino,1.61516,1.12784
+Bologna,Inter,0.668681,0.81996
+Cagliari,Salernitana,3.41823,1.17253
+Genoa,Monza,1.81546,1.66208
+Sassuolo,Frosinone,0.596618,1.38509
+AC Milan,Empoli,0.988992,0.419598
+Fiorentina,Roma,2.47793,0.776614
+Juventus,Atalanta,1.66716,0.470912
+Lecce,Verona,1.03517,0.556534
+Lazio,Udinese,2.15139,1.48854
+Empoli,Bologna,0.868895,2.30568
+Frosinone,Lazio,1.90054,3.30539
+Monza,Cagliari,1.4436,0.443858
+Salernitana,Lecce,1.45145,2.01475
+Udinese,Torino,0.384805,1.54612
+Inter,Napoli,1.37916,1.36148
+Juventus,Genoa,1.38709,0.175513
+Roma,Sassuolo,0.858457,0.777601
+Verona,AC Milan,0.565727,2.75283
+Fiorentina,AC Milan,1.69969,3.17431
+Genoa,Frosinone,1.65796,1.00689
+Lazio,Juventus,1.24248,0.479175
+Napoli,Atalanta,1.83498,1.55904
+Torino,Monza,1.61585,0.560169
+Bologna,Salernitana,1.85322,0.702173
+Cagliari,Verona,0.594452,1.09202
+Inter,Empoli,2.03375,0.560443
+Lecce,Roma,1.97592,1.69372
+Sassuolo,Udinese,1.47611,1.72665
+Salernitana,Sassuolo,1.2795,1.88042
+AC Milan,Lecce,2.41313,0.841362
+Empoli,Torino,0.487874,2.5343
+Roma,Lazio,0.635152,0.480271
+Cagliari,Atalanta,0.715338,0.772446
+Frosinone,Bologna,0.568316,2.46415
+Juventus,Fiorentina,2.46449,0.508961
+Monza,Napoli,0.414034,2.70294
+Verona,Genoa,0.961468,2.01327
+Udinese,Inter,0.0699579,3.41188
+Lazio,Salernitana,2.50164,0.544591
+Bologna,Monza,2.77216,0.409248
+Lecce,Empoli,3.15126,0.136102
+Torino,Juventus,0.834792,1.25957
+Inter,Cagliari,1.95072,1.10904
+Napoli,Frosinone,2.7326,2.31434
+Sassuolo,AC Milan,1.37198,3.05285
+Udinese,Roma,0.94473,1.61555
+Atalanta,Verona,1.67088,1.10418
+Fiorentina,Genoa,1.78763,1.59509
+Cagliari,Juventus,1.97822,0.595113
+Genoa,Lazio,0.608539,0.952136
+Empoli,Napoli,1.25351,0.891755
+Verona,Udinese,1.29522,1.97219
+Monza,Atalanta,0.878869,2.19828
+Salernitana,Fiorentina,0.32683,2.45106
+Sassuolo,Lecce,0.410145,2.36614
+Torino,Frosinone,0.520991,0.57895
+AC Milan,Inter,2.51108,1.62976
+Roma,Bologna,1.83356,1.25682
+Frosinone,Salernitana,1.75172,1.03098
+Juventus,AC Milan,1.76562,0.277994
+Lazio,Verona,1.31699,0.629309
+Lecce,Monza,0.927644,1.09563
+Atalanta,Empoli,2.13088,0.593896
+Bologna,Udinese,0.709144,0.613931
+Fiorentina,Sassuolo,4.29626,0.268378
+Inter,Torino,1.90101,0.45813
+Napoli,Roma,3.87555,1.78885
+Genoa,Cagliari,1.09421,0.781529
+Torino,Bologna,0.786625,0.169889
+Monza,Lazio,2.08077,1.57454
+Sassuolo,Inter,0.334967,1.63693
+AC Milan,Genoa,2.31497,0.91116
+Cagliari,Lecce,0.923968,1.81298
+Empoli,Frosinone,0.318217,0.947755
+Roma,Juventus,1.60597,0.95263
+Verona,Fiorentina,1.49212,1.10741
+Salernitana,Atalanta,0.497067,2.26499
+Udinese,Napoli,0.521861,1.1157
+Frosinone,Inter,1.88809,2.05666
+AC Milan,Cagliari,3.56305,1.33911
+Napoli,Bologna,1.48316,1.74055
+Atalanta,Roma,2.85949,1.17185
+Genoa,Sassuolo,0.81296,1.69037
+Juventus,Salernitana,2.36999,0.921042
+Lazio,Empoli,1.61078,1.10282
+Verona,Torino,1.09252,0.956758
+Fiorentina,Monza,2.45011,1.19628
+Lecce,Udinese,0.3485,1.63735
+Fiorentina,Napoli,0.566509,1.32124
+Lecce,Atalanta,1.03049,2.22033
+Torino,AC Milan,1.08012,1.64179
+Inter,Lazio,1.61165,0.686603
+Monza,Frosinone,1.24886,2.22694
+Roma,Genoa,0.736827,0.508028
+Sassuolo,Cagliari,0.269648,1.47384
+Udinese,Empoli,1.66873,0.82957
+Bologna,Juventus,1.379,1.27372
+Salernitana,Verona,0.900837,2.33362
+Cagliari,Fiorentina,2.08262,2.21632
+Genoa,Bologna,1.5757,0.450804
+AC Milan,Salernitana,2.82527,1.80163
+Juventus,Monza,1.92843,1.13394
+Atalanta,Torino,2.56869,1.69527
+Empoli,Roma,2.88989,1.45583
+Frosinone,Udinese,0.869244,0.895463
+Lazio,Sassuolo,1.25146,1.11933
+Napoli,Lecce,1.83014,0.622384
+Verona,Inter,1.63678,2.99853
+Atalanta,Fiorentina,1.69732,1.0071
