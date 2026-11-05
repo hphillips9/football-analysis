@@ -28,5 +28,17 @@
     "xg": "ok",
     "predicted": 0,
     "error": null
+  },
+  "P1": {
+    "results": "ok",
+    "xg": "ok",
+    "predicted": 9,
+    "error": null
+  },
+  "N1": {
+    "results": "ok",
+    "xg": "ok",
+    "predicted": 9,
+    "error": null
   }
 }

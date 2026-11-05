@@ -1,0 +1,307 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+3900341,2022-08-05,SC Heerenveen,Sparta Rotterdam,0.45,0.35
+3900342,2022-08-06,Fortuna Sittard,Ajax,1.02,1.91
+3900343,2022-08-06,Cambuur,Excelsior,3.97,1.25
+3900344,2022-08-06,PSV Eindhoven,FC Emmen,1.73,0.57
+3900345,2022-08-06,RKC Waalwijk,FC Utrecht,1.89,2.06
+3900346,2022-08-07,FC Groningen,FC Volendam,1.8,1.5
+3900348,2022-08-07,NEC Nijmegen,FC Twente,0.99,0.9
+3900347,2022-08-07,Vitesse,Feyenoord,0.59,2.51
+3900349,2022-08-07,AZ Alkmaar,Go Ahead Eagles,2.37,1.0
+3900350,2022-08-12,Excelsior,Vitesse,1.5,2.0
+3900351,2022-08-13,Go Ahead Eagles,PSV Eindhoven,0.91,3.1
+3900352,2022-08-13,FC Emmen,RKC Waalwijk,1.41,0.71
+3900353,2022-08-13,FC Utrecht,Cambuur,1.5,0.84
+3900354,2022-08-13,Feyenoord,SC Heerenveen,1.86,0.79
+3900355,2022-08-14,FC Volendam,NEC Nijmegen,1.25,1.78
+3900356,2022-08-14,Ajax,FC Groningen,3.46,0.51
+3900357,2022-08-14,FC Twente,Fortuna Sittard,1.71,0.73
+3900358,2022-08-14,Sparta Rotterdam,AZ Alkmaar,0.88,2.9
+3900359,2022-08-20,Vitesse,SC Heerenveen,0.73,1.65
+3900363,2022-08-20,Fortuna Sittard,Cambuur,1.23,0.91
+3900362,2022-08-20,FC Emmen,FC Utrecht,1.09,1.29
+3900360,2022-08-21,FC Groningen,Go Ahead Eagles,0.45,0.37
+3900364,2022-08-21,Sparta Rotterdam,Ajax,0.65,2.07
+3900366,2022-08-21,RKC Waalwijk,Feyenoord,1.05,1.88
+3900368,2022-08-26,NEC Nijmegen,FC Groningen,1.25,0.95
+3900369,2022-08-27,Go Ahead Eagles,Sparta Rotterdam,0.48,1.75
+3900370,2022-08-27,Vitesse,RKC Waalwijk,3.25,0.67
+3900371,2022-08-27,Feyenoord,FC Emmen,2.21,0.61
+3900372,2022-08-27,SC Heerenveen,Fortuna Sittard,2.16,1.07
+3900373,2022-08-28,FC Utrecht,Ajax,0.24,1.22
+3900374,2022-08-28,Excelsior,PSV Eindhoven,0.93,4.03
+3900375,2022-08-28,FC Volendam,FC Twente,2.24,2.26
+3900376,2022-08-28,Cambuur,AZ Alkmaar,0.86,1.05
+3900361,2022-08-31,PSV Eindhoven,FC Volendam,5.11,0.95
+3900367,2022-08-31,FC Twente,Excelsior,2.19,0.8
+3900365,2022-09-01,AZ Alkmaar,NEC Nijmegen,2.62,0.07
+3900377,2022-09-02,Fortuna Sittard,FC Utrecht,2.03,3.87
+3900378,2022-09-03,Ajax,Cambuur,3.1,0.38
+3900379,2022-09-03,FC Twente,PSV Eindhoven,0.97,1.06
+3900380,2022-09-03,Sparta Rotterdam,FC Volendam,1.46,1.79
+3900381,2022-09-03,Go Ahead Eagles,Feyenoord,1.67,2.32
+3900382,2022-09-04,RKC Waalwijk,Excelsior,2.46,1.07
+3900383,2022-09-04,FC Emmen,AZ Alkmaar,0.57,2.46
+3900384,2022-09-04,SC Heerenveen,NEC Nijmegen,0.79,0.49
+3900385,2022-09-04,FC Groningen,Vitesse,0.8,2.32
+3900386,2022-09-09,FC Volendam,Go Ahead Eagles,1.38,1.04
+3900387,2022-09-10,NEC Nijmegen,Fortuna Sittard,2.17,0.58
+3900388,2022-09-10,Ajax,SC Heerenveen,3.51,0.68
+3900389,2022-09-10,Excelsior,FC Emmen,0.86,0.98
+3900391,2022-09-11,FC Utrecht,Vitesse,0.94,0.51
+3900392,2022-09-11,Cambuur,FC Groningen,1.04,0.6
+3900390,2022-09-11,PSV Eindhoven,RKC Waalwijk,3.55,0.58
+3900393,2022-09-11,AZ Alkmaar,FC Twente,0.76,0.62
+3900394,2022-09-11,Feyenoord,Sparta Rotterdam,1.42,0.89
+3900395,2022-09-16,FC Utrecht,NEC Nijmegen,1.13,1.08
+3900396,2022-09-17,Sparta Rotterdam,FC Groningen,1.46,0.31
+3900397,2022-09-17,Vitesse,FC Volendam,1.26,1.09
+3900398,2022-09-17,RKC Waalwijk,Cambuur,4.85,0.43
+3900399,2022-09-17,Fortuna Sittard,Excelsior,1.5,0.65
+3900400,2022-09-18,Go Ahead Eagles,FC Emmen,1.19,0.9
+3900401,2022-09-18,PSV Eindhoven,Feyenoord,2.82,1.28
+3900402,2022-09-18,SC Heerenveen,FC Twente,1.85,1.05
+3900403,2022-09-18,AZ Alkmaar,Ajax,1.49,2.32
+3900404,2022-10-01,Cambuur,PSV Eindhoven,0.47,0.99
+3900408,2022-10-01,FC Groningen,AZ Alkmaar,0.94,1.7
+3900406,2022-10-01,Ajax,Go Ahead Eagles,2.23,0.35
+3900407,2022-10-01,FC Twente,Vitesse,1.49,0.62
+3900410,2022-10-02,Fortuna Sittard,FC Volendam,1.83,0.96
+3900405,2022-10-02,Excelsior,FC Utrecht,1.14,2.5
+3900411,2022-10-02,NEC Nijmegen,Feyenoord,0.45,1.35
+3900412,2022-10-02,RKC Waalwijk,Sparta Rotterdam,0.97,1.03
+3900409,2022-10-02,FC Emmen,SC Heerenveen,1.12,0.39
+3900413,2022-10-07,FC Groningen,RKC Waalwijk,1.63,2.09
+3900414,2022-10-08,FC Volendam,Ajax,1.37,2.97
+3900416,2022-10-08,Sparta Rotterdam,FC Emmen,1.34,1.25
+3900415,2022-10-08,NEC Nijmegen,Excelsior,0.76,0.64
+3900418,2022-10-09,Go Ahead Eagles,Cambuur,1.42,0.62
+3900421,2022-10-09,FC Utrecht,AZ Alkmaar,0.77,0.89
+3900419,2022-10-09,Feyenoord,FC Twente,2.38,0.68
+3900417,2022-10-09,SC Heerenveen,PSV Eindhoven,0.68,0.85
+3900420,2022-10-09,Vitesse,Fortuna Sittard,0.58,0.77
+3900422,2022-10-14,FC Emmen,FC Volendam,1.78,0.62
+3900425,2022-10-15,Fortuna Sittard,RKC Waalwijk,0.5,0.54
+3900423,2022-10-15,Go Ahead Eagles,SC Heerenveen,2.06,1.06
+3900426,2022-10-15,Cambuur,Vitesse,0.83,1.73
+3900427,2022-10-16,Sparta Rotterdam,NEC Nijmegen,1.24,0.72
+3900428,2022-10-16,FC Twente,FC Groningen,2.21,0.21
+3900429,2022-10-16,PSV Eindhoven,FC Utrecht,3.02,1.07
+3900430,2022-10-16,AZ Alkmaar,Feyenoord,0.74,1.28
+3900424,2022-10-16,Ajax,Excelsior,4.67,0.44
+3900431,2022-10-22,Feyenoord,Fortuna Sittard,2.54,0.51
+3900432,2022-10-22,RKC Waalwijk,Ajax,2.38,2.07
+3900434,2022-10-22,Vitesse,FC Emmen,1.01,0.55
+3900436,2022-10-23,Excelsior,AZ Alkmaar,0.88,1.86
+3900433,2022-10-23,Cambuur,FC Twente,1.19,1.6
+3900435,2022-10-23,FC Groningen,PSV Eindhoven,1.84,3.51
+3900438,2022-10-23,NEC Nijmegen,Go Ahead Eagles,2.37,1.69
+3900439,2022-10-23,FC Utrecht,Sparta Rotterdam,2.3,1.19
+3900437,2022-10-23,FC Volendam,SC Heerenveen,0.91,1.17
+3900447,2022-10-29,SC Heerenveen,FC Utrecht,1.88,0.4
+3900448,2022-10-29,Sparta Rotterdam,Fortuna Sittard,1.95,0.59
+3900445,2022-10-29,Go Ahead Eagles,Excelsior,1.41,0.89
+3900442,2022-10-30,FC Emmen,FC Groningen,1.31,1.15
+3900443,2022-10-30,FC Twente,RKC Waalwijk,3.23,1.1
+3900446,2022-10-30,PSV Eindhoven,NEC Nijmegen,2.45,1.01
+3900441,2022-10-30,AZ Alkmaar,FC Volendam,1.03,1.47
+3900456,2022-11-04,Cambuur,NEC Nijmegen,2.35,1.9
+3900457,2022-11-05,Vitesse,Sparta Rotterdam,0.91,0.97
+3900454,2022-11-05,Fortuna Sittard,FC Emmen,0.92,1.55
+3900450,2022-11-05,Excelsior,SC Heerenveen,0.5,0.6
+3900452,2022-11-06,FC Utrecht,FC Groningen,2.22,1.03
+3900451,2022-11-06,FC Twente,Go Ahead Eagles,2.4,1.42
+3900453,2022-11-06,FC Volendam,Feyenoord,0.27,2.97
+3900449,2022-11-06,Ajax,PSV Eindhoven,0.95,0.76
+3900455,2022-11-06,RKC Waalwijk,AZ Alkmaar,2.1,1.62
+3900440,2022-11-09,Ajax,Vitesse,4.24,0.67
+3900444,2022-11-10,Feyenoord,Cambuur,1.99,0.86
+3900466,2022-11-11,Sparta Rotterdam,FC Twente,0.57,0.96
+3900460,2022-11-12,FC Volendam,FC Utrecht,0.88,1.44
+3900458,2022-11-12,FC Emmen,Ajax,1.69,1.3
+3900464,2022-11-12,PSV Eindhoven,AZ Alkmaar,1.27,0.73
+3900463,2022-11-13,NEC Nijmegen,RKC Waalwijk,3.83,1.11
+3900459,2022-11-13,FC Groningen,Fortuna Sittard,1.51,1.34
+3900465,2022-11-13,SC Heerenveen,Cambuur,1.17,1.79
+3900461,2022-11-13,Feyenoord,Excelsior,1.74,0.57
+3900462,2022-11-13,Go Ahead Eagles,Vitesse,0.85,1.46
+3900467,2023-01-06,FC Twente,FC Emmen,2.62,0.2
+3900468,2023-01-07,RKC Waalwijk,SC Heerenveen,0.87,1.06
+3900469,2023-01-07,AZ Alkmaar,Vitesse,1.45,1.38
+3900470,2023-01-07,Fortuna Sittard,Go Ahead Eagles,0.93,2.23
+3900471,2023-01-07,PSV Eindhoven,Sparta Rotterdam,1.14,0.68
+3900472,2023-01-08,FC Utrecht,Feyenoord,0.54,0.81
+3900474,2023-01-08,Cambuur,FC Volendam,1.2,1.28
+3900473,2023-01-08,NEC Nijmegen,Ajax,0.49,2.17
+3900475,2023-01-08,Excelsior,FC Groningen,1.47,0.85
+3900480,2023-01-14,FC Volendam,RKC Waalwijk,1.66,0.91
+3900476,2023-01-14,SC Heerenveen,AZ Alkmaar,2.11,1.55
+3900479,2023-01-14,Ajax,FC Twente,0.38,1.89
+3900478,2023-01-14,Sparta Rotterdam,Excelsior,2.05,0.51
+3900481,2023-01-15,Vitesse,NEC Nijmegen,1.63,0.29
+3900482,2023-01-15,Fortuna Sittard,PSV Eindhoven,1.68,4.68
+3900483,2023-01-15,Go Ahead Eagles,FC Utrecht,2.4,0.9
+3900484,2023-01-15,FC Emmen,Cambuur,1.23,0.76
+3900477,2023-01-15,FC Groningen,Feyenoord,0.2,2.47
+3900485,2023-01-20,Excelsior,FC Volendam,2.22,0.64
+3900486,2023-01-21,NEC Nijmegen,FC Emmen,2.94,0.96
+3900488,2023-01-21,Cambuur,Sparta Rotterdam,0.89,1.96
+3900487,2023-01-21,PSV Eindhoven,Vitesse,1.44,0.68
+3900490,2023-01-22,SC Heerenveen,FC Groningen,2.08,0.92
+3900491,2023-01-22,FC Twente,FC Utrecht,1.78,0.4
+3900492,2023-01-22,Feyenoord,Ajax,0.38,1.39
+3900493,2023-01-22,AZ Alkmaar,Fortuna Sittard,1.67,1.23
+3900494,2023-01-24,FC Emmen,PSV Eindhoven,0.87,1.33
+3900495,2023-01-24,Sparta Rotterdam,RKC Waalwijk,0.73,0.75
+3900496,2023-01-25,Go Ahead Eagles,AZ Alkmaar,1.82,1.81
+3900497,2023-01-25,Vitesse,FC Twente,1.11,1.68
+3900498,2023-01-25,Fortuna Sittard,SC Heerenveen,2.34,0.66
+3900499,2023-01-25,FC Utrecht,Excelsior,2.26,0.08
+3900500,2023-01-25,Feyenoord,NEC Nijmegen,2.05,0.59
+3900501,2023-01-26,FC Groningen,Cambuur,1.7,0.67
+3900502,2023-01-26,Ajax,FC Volendam,3.89,0.41
+3900504,2023-01-28,PSV Eindhoven,Go Ahead Eagles,1.29,0.39
+3900503,2023-01-28,RKC Waalwijk,FC Emmen,1.02,1.16
+3900505,2023-01-28,NEC Nijmegen,Sparta Rotterdam,2.0,0.65
+3900506,2023-01-28,SC Heerenveen,Vitesse,0.68,2.87
+3900507,2023-01-28,AZ Alkmaar,FC Utrecht,1.72,2.7
+3900508,2023-01-29,FC Twente,Feyenoord,1.74,1.76
+3900509,2023-01-29,Excelsior,Ajax,1.35,1.44
+3900510,2023-01-29,FC Volendam,FC Groningen,2.15,1.44
+3900511,2023-01-29,Cambuur,Fortuna Sittard,0.77,1.52
+3900489,2023-02-01,RKC Waalwijk,Go Ahead Eagles,0.82,0.74
+3900512,2023-02-03,Fortuna Sittard,Sparta Rotterdam,0.91,0.8
+3900513,2023-02-04,FC Volendam,AZ Alkmaar,0.7,1.31
+3900514,2023-02-04,FC Emmen,Vitesse,0.55,1.31
+3900515,2023-02-04,FC Utrecht,SC Heerenveen,1.84,0.5
+3900516,2023-02-04,Excelsior,RKC Waalwijk,1.01,1.99
+3900517,2023-02-05,Cambuur,Ajax,0.36,3.49
+3900518,2023-02-05,Feyenoord,PSV Eindhoven,3.54,0.46
+3900519,2023-02-05,Go Ahead Eagles,NEC Nijmegen,0.85,0.32
+3900520,2023-02-05,FC Groningen,FC Twente,1.76,1.37
+3900522,2023-02-10,AZ Alkmaar,Excelsior,3.64,0.21
+3900525,2023-02-11,NEC Nijmegen,Cambuur,1.08,1.18
+3900526,2023-02-11,PSV Eindhoven,FC Groningen,4.05,0.2
+3900523,2023-02-11,FC Emmen,Fortuna Sittard,1.13,1.45
+3900528,2023-02-12,Sparta Rotterdam,Go Ahead Eagles,2.01,1.01
+3900527,2023-02-12,SC Heerenveen,Feyenoord,1.62,1.83
+3900529,2023-02-12,Vitesse,FC Utrecht,0.98,1.29
+3900521,2023-02-12,Ajax,RKC Waalwijk,2.97,0.64
+3900524,2023-02-12,FC Twente,FC Volendam,1.41,0.4
+3900537,2023-02-17,RKC Waalwijk,Fortuna Sittard,3.26,0.6
+3900534,2023-02-18,FC Volendam,Vitesse,1.48,0.99
+3900532,2023-02-18,FC Groningen,FC Emmen,1.01,0.58
+3900535,2023-02-18,Feyenoord,AZ Alkmaar,1.01,0.2
+3900538,2023-02-19,Cambuur,SC Heerenveen,1.12,1.72
+3900533,2023-02-19,FC Utrecht,PSV Eindhoven,0.52,2.58
+3900536,2023-02-19,Go Ahead Eagles,FC Twente,1.35,1.25
+3900530,2023-02-19,Ajax,Sparta Rotterdam,4.12,0.37
+3900531,2023-02-19,Excelsior,NEC Nijmegen,1.59,1.99
+3900546,2023-02-24,Sparta Rotterdam,FC Utrecht,0.74,1.08
+3900541,2023-02-25,FC Groningen,Excelsior,1.4,0.16
+3900545,2023-02-25,SC Heerenveen,RKC Waalwijk,2.3,1.67
+3900539,2023-02-25,AZ Alkmaar,Cambuur,2.29,2.03
+3900543,2023-02-25,NEC Nijmegen,FC Volendam,2.54,0.64
+3900542,2023-02-26,Fortuna Sittard,Feyenoord,1.33,2.39
+3900540,2023-02-26,FC Emmen,Go Ahead Eagles,1.44,0.86
+3900547,2023-02-26,Vitesse,Ajax,0.94,1.12
+3900544,2023-02-26,PSV Eindhoven,FC Twente,2.12,0.92
+3900551,2023-03-03,FC Utrecht,Fortuna Sittard,1.48,1.49
+3900556,2023-03-03,Vitesse,AZ Alkmaar,0.71,1.35
+3900552,2023-03-04,FC Volendam,FC Emmen,2.68,2.5
+3900553,2023-03-04,Feyenoord,FC Groningen,2.54,0.28
+3900550,2023-03-04,FC Twente,SC Heerenveen,2.11,1.76
+3900549,2023-03-05,Excelsior,Sparta Rotterdam,2.01,1.31
+3900554,2023-03-05,RKC Waalwijk,PSV Eindhoven,1.25,2.08
+3900548,2023-03-05,Ajax,NEC Nijmegen,1.8,0.41
+3900555,2023-03-05,Cambuur,Go Ahead Eagles,2.24,1.33
+3900558,2023-03-11,FC Emmen,Excelsior,1.17,1.51
+3900560,2023-03-11,Fortuna Sittard,FC Twente,0.52,2.6
+3900557,2023-03-11,AZ Alkmaar,FC Groningen,0.92,0.66
+3900565,2023-03-11,Sparta Rotterdam,Vitesse,1.88,0.81
+3900562,2023-03-12,NEC Nijmegen,FC Utrecht,2.08,1.61
+3900564,2023-03-12,SC Heerenveen,Ajax,1.08,1.86
+3900563,2023-03-12,PSV Eindhoven,Cambuur,3.29,1.6
+3900559,2023-03-12,Feyenoord,FC Volendam,1.92,1.1
+3900572,2023-03-17,FC Volendam,Fortuna Sittard,0.6,0.6
+3900571,2023-03-18,FC Utrecht,Go Ahead Eagles,1.24,1.6
+3900568,2023-03-18,FC Emmen,Sparta Rotterdam,0.64,1.11
+3900573,2023-03-18,RKC Waalwijk,NEC Nijmegen,1.88,2.48
+3900569,2023-03-19,FC Groningen,SC Heerenveen,0.39,1.89
+3900566,2023-03-19,Ajax,Feyenoord,1.04,1.61
+3900567,2023-03-19,Excelsior,Cambuur,1.7,2.04
+3900574,2023-03-19,Vitesse,PSV Eindhoven,0.42,1.6
+3900570,2023-03-19,FC Twente,AZ Alkmaar,1.39,1.35
+3900575,2023-04-01,AZ Alkmaar,SC Heerenveen,3.12,1.88
+3900576,2023-04-01,Excelsior,FC Twente,0.59,2.38
+3900582,2023-04-01,Cambuur,FC Emmen,1.12,1.15
+3900580,2023-04-01,NEC Nijmegen,PSV Eindhoven,0.5,3.97
+3900581,2023-04-01,RKC Waalwijk,Vitesse,1.1,1.15
+3900579,2023-04-02,Go Ahead Eagles,Ajax,0.43,0.71
+3900577,2023-04-02,FC Utrecht,FC Volendam,2.17,0.42
+3900583,2023-04-02,Sparta Rotterdam,Feyenoord,1.31,3.25
+3900578,2023-04-02,Fortuna Sittard,FC Groningen,1.05,1.53
+3900587,2023-04-07,FC Groningen,FC Utrecht,0.37,1.64
+3900592,2023-04-08,Vitesse,Go Ahead Eagles,2.23,0.36
+3900585,2023-04-08,AZ Alkmaar,Sparta Rotterdam,1.91,0.83
+3900590,2023-04-08,PSV Eindhoven,Excelsior,3.98,0.34
+3900591,2023-04-08,SC Heerenveen,FC Volendam,2.39,1.47
+3900588,2023-04-09,FC Twente,Cambuur,4.36,0.37
+3900586,2023-04-09,FC Emmen,NEC Nijmegen,1.25,2.19
+3900584,2023-04-09,Ajax,Fortuna Sittard,2.31,0.37
+3900589,2023-04-09,Feyenoord,RKC Waalwijk,2.35,0.49
+3900594,2023-04-14,Excelsior,Go Ahead Eagles,1.73,1.73
+3900599,2023-04-15,RKC Waalwijk,FC Groningen,2.26,0.81
+3900601,2023-04-15,Sparta Rotterdam,SC Heerenveen,0.86,1.15
+3900598,2023-04-16,NEC Nijmegen,Vitesse,1.2,1.98
+3900595,2023-04-16,FC Utrecht,FC Twente,0.43,1.09
+3900596,2023-04-16,FC Volendam,PSV Eindhoven,1.62,1.82
+3900600,2023-04-16,Cambuur,Feyenoord,0.54,2.17
+3900593,2023-04-16,Ajax,FC Emmen,3.17,0.8
+3900597,2023-04-16,Fortuna Sittard,AZ Alkmaar,0.59,1.34
+3900561,2023-04-19,Go Ahead Eagles,RKC Waalwijk,3.8,0.4
+3900605,2023-04-21,FC Volendam,Cambuur,1.75,0.95
+3900609,2023-04-22,SC Heerenveen,FC Emmen,2.44,2.25
+3900610,2023-04-22,Vitesse,Excelsior,2.15,0.33
+3900604,2023-04-23,FC Twente,Sparta Rotterdam,1.41,2.09
+3900607,2023-04-23,Go Ahead Eagles,Fortuna Sittard,1.74,1.33
+3900608,2023-04-23,PSV Eindhoven,Ajax,2.82,0.59
+3900606,2023-04-23,Feyenoord,FC Utrecht,2.44,0.83
+3900602,2023-04-23,AZ Alkmaar,RKC Waalwijk,1.73,0.51
+3900603,2023-04-25,FC Groningen,NEC Nijmegen,1.36,1.39
+3900617,2023-05-05,RKC Waalwijk,FC Volendam,1.5,1.17
+3900619,2023-05-06,Sparta Rotterdam,PSV Eindhoven,0.49,2.7
+3900618,2023-05-06,Cambuur,FC Utrecht,0.48,2.01
+3900616,2023-05-06,NEC Nijmegen,SC Heerenveen,1.96,1.39
+3900611,2023-05-06,Ajax,AZ Alkmaar,2.47,0.99
+3900613,2023-05-07,FC Emmen,FC Twente,0.96,2.41
+3900612,2023-05-07,Excelsior,Feyenoord,0.63,1.21
+3900615,2023-05-07,Go Ahead Eagles,FC Groningen,1.69,1.36
+3900614,2023-05-07,Fortuna Sittard,Vitesse,0.77,0.97
+3900622,2023-05-12,FC Twente,NEC Nijmegen,4.11,0.73
+3900624,2023-05-13,FC Volendam,Sparta Rotterdam,2.23,1.18
+3900627,2023-05-13,SC Heerenveen,Excelsior,0.59,1.31
+3900623,2023-05-13,FC Utrecht,RKC Waalwijk,2.18,0.67
+3900628,2023-05-14,Vitesse,Cambuur,1.24,1.04
+3900625,2023-05-14,Feyenoord,Go Ahead Eagles,1.77,1.61
+3900620,2023-05-14,AZ Alkmaar,FC Emmen,3.0,0.68
+3900626,2023-05-14,PSV Eindhoven,Fortuna Sittard,2.52,0.44
+3900621,2023-05-16,FC Groningen,Ajax,1.06,2.81
+3900629,2023-05-21,Ajax,FC Utrecht,3.64,0.32
+3900631,2023-05-21,Excelsior,Fortuna Sittard,1.92,0.82
+3900630,2023-05-21,FC Emmen,Feyenoord,0.73,1.59
+3900632,2023-05-21,Go Ahead Eagles,FC Volendam,3.15,1.08
+3900633,2023-05-21,NEC Nijmegen,AZ Alkmaar,1.08,1.36
+3900634,2023-05-21,PSV Eindhoven,SC Heerenveen,3.63,1.24
+3900635,2023-05-21,RKC Waalwijk,FC Twente,0.47,3.71
+3900636,2023-05-21,Sparta Rotterdam,Cambuur,1.17,2.13
+3900637,2023-05-21,Vitesse,FC Groningen,2.06,0.63
+3900638,2023-05-28,AZ Alkmaar,PSV Eindhoven,1.4,1.28
+3900639,2023-05-28,Cambuur,RKC Waalwijk,3.57,1.33
+3900642,2023-05-28,FC Groningen,Sparta Rotterdam,0.31,4.14
+3900644,2023-05-28,FC Twente,Ajax,1.59,2.16
+3900645,2023-05-28,FC Utrecht,FC Emmen,2.9,1.29
+3900646,2023-05-28,FC Volendam,Excelsior,2.55,2.85
+3900640,2023-05-28,Feyenoord,Vitesse,1.66,1.65
+3900641,2023-05-28,Fortuna Sittard,NEC Nijmegen,1.48,3.09
+3900643,2023-05-28,SC Heerenveen,Go Ahead Eagles,1.51,1.21

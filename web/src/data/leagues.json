@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-04T15:52:30+00:00",
+  "generated": "2026-11-05T10:35:36+00:00",
   "default": "E0",
   "competitions": [
     {
@@ -39,6 +39,22 @@
       "slug": "f1",
       "name": "Ligue 1",
       "country": "FRA",
+      "kind": "league",
+      "promotedElo": null
+    },
+    {
+      "div": "P1",
+      "slug": "p1",
+      "name": "Primeira Liga",
+      "country": "POR",
+      "kind": "league",
+      "promotedElo": null
+    },
+    {
+      "div": "N1",
+      "slug": "n1",
+      "name": "Eredivisie",
+      "country": "NED",
       "kind": "league",
       "promotedElo": null
     }

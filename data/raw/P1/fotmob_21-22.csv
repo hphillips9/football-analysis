@@ -1,0 +1,307 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+3646991,2021-08-06,Sporting CP,Vizela,2.58,0.15
+3646999,2021-08-07,Arouca,Estoril,0.8,2.03
+3646995,2021-08-07,Moreirense,Benfica,1.53,1.31
+3646998,2021-08-07,Marítimo,Braga,0.27,1.15
+3646997,2021-08-08,Tondela,Santa Clara,2.02,1.22
+3646994,2021-08-08,Vitória de Guimarães,Portimonense,1.92,0.75
+3646992,2021-08-08,FC Porto,Cova da Piedade SAD,2.08,0.92
+3646993,2021-08-08,Paços de Ferreira,Famalicão,2.9,0.88
+3646996,2021-08-09,Gil Vicente,Boavista,1.2,0.69
+3647007,2021-08-13,Estoril,Vitória de Guimarães,1.04,0.67
+3647008,2021-08-14,Vizela,Tondela,2.03,1.05
+3647000,2021-08-14,Benfica,Arouca,4.24,0.2
+3647001,2021-08-14,Braga,Sporting CP,1.18,0.71
+3647006,2021-08-15,Portimonense,Gil Vicente,1.57,0.41
+3647003,2021-08-15,Famalicão,FC Porto,0.65,1.13
+3647002,2021-08-15,Santa Clara,Moreirense,1.49,1.22
+3647005,2021-08-16,Boavista,Paços de Ferreira,1.59,1.2
+3647004,2021-08-16,Cova da Piedade SAD,Marítimo,0.15,0.94
+3647017,2021-08-20,Arouca,Famalicão,1.95,0.74
+3647012,2021-08-20,Moreirense,Braga,2.18,1.96
+3647013,2021-08-21,Gil Vicente,Benfica,0.29,2.49
+3647009,2021-08-21,Sporting CP,Cova da Piedade SAD,3.36,0.09
+3647014,2021-08-22,Tondela,Portimonense,0.39,1.47
+3647016,2021-08-22,Marítimo,FC Porto,0.58,1.8
+3647011,2021-08-22,Vitória de Guimarães,Vizela,2.93,0.64
+3647010,2021-08-23,Paços de Ferreira,Estoril,0.69,1.77
+3647015,2021-08-23,Boavista,Santa Clara,1.02,1.2
+3647023,2021-08-27,Cova da Piedade SAD,Moreirense,0.51,2.35
+3647025,2021-08-27,Estoril,Marítimo,1.74,0.2
+3647026,2021-08-28,Vizela,Boavista,0.99,0.69
+3647018,2021-08-28,FC Porto,Arouca,2.31,0.25
+3647022,2021-08-28,Famalicão,Sporting CP,1.48,1.35
+3647019,2021-08-29,Benfica,Tondela,1.5,0.08
+3647020,2021-08-29,Braga,Vitória de Guimarães,1.2,0.82
+3647024,2021-08-29,Portimonense,Paços de Ferreira,1.29,0.38
+3647021,2021-08-29,Santa Clara,Gil Vicente,0.99,0.38
+3647028,2021-09-11,Paços de Ferreira,Braga,0.57,0.45
+3647029,2021-09-11,Santa Clara,Benfica,0.71,1.15
+3647027,2021-09-11,Sporting CP,FC Porto,1.09,0.23
+3647031,2021-09-12,Moreirense,Famalicão,1.33,1.6
+3647034,2021-09-12,Boavista,Portimonense,0.89,0.93
+3647032,2021-09-12,Gil Vicente,Vizela,1.29,2.79
+3647030,2021-09-12,Vitória de Guimarães,Cova da Piedade SAD,0.55,0.72
+3647035,2021-09-13,Marítimo,Arouca,2.47,0.97
+3647033,2021-09-13,Tondela,Estoril,1.55,0.61
+3647041,2021-09-17,Portimonense,Santa Clara,0.61,1.38
+3647039,2021-09-18,Famalicão,Marítimo,2.51,0.21
+3647040,2021-09-18,Cova da Piedade SAD,Gil Vicente,0.52,0.83
+3647044,2021-09-18,Arouca,Vitória de Guimarães,0.88,1.83
+3647043,2021-09-19,Vizela,Paços de Ferreira,2.21,0.79
+3647036,2021-09-19,FC Porto,Moreirense,4.15,0.19
+3647042,2021-09-19,Estoril,Sporting CP,0.94,1.76
+3647037,2021-09-20,Benfica,Boavista,2.8,0.32
+3647038,2021-09-20,Braga,Tondela,1.9,0.4
+3647045,2021-09-24,Sporting CP,Marítimo,2.72,0.12
+3647050,2021-09-24,Gil Vicente,FC Porto,1.21,1.47
+3647049,2021-09-25,Moreirense,Arouca,2.04,0.61
+3647048,2021-09-25,Vitória de Guimarães,Benfica,1.57,2.49
+3647051,2021-09-25,Tondela,Famalicão,0.83,1.43
+3647047,2021-09-26,Santa Clara,Braga,1.27,0.81
+3647053,2021-09-26,Portimonense,Vizela,0.37,0.77
+3647046,2021-09-27,Paços de Ferreira,Cova da Piedade SAD,1.31,1.36
+3647052,2021-09-27,Boavista,Estoril,1.2,0.51
+3647059,2021-10-01,Marítimo,Moreirense,0.15,0.96
+3647057,2021-10-01,Famalicão,Vitória de Guimarães,1.47,0.73
+3647061,2021-10-02,Vizela,Santa Clara,1.14,1.36
+3647054,2021-10-02,FC Porto,Paços de Ferreira,2.35,0.72
+3647062,2021-10-02,Arouca,Sporting CP,1.45,1.38
+3647058,2021-10-03,Cova da Piedade SAD,Tondela,0.85,1.2
+3647055,2021-10-03,Benfica,Portimonense,2.56,0.19
+3647060,2021-10-03,Estoril,Gil Vicente,1.46,1.34
+3647056,2021-10-03,Braga,Boavista,1.47,0.44
+3647066,2021-10-22,Vitória de Guimarães,Marítimo,2.64,1.04
+3647065,2021-10-23,Santa Clara,Famalicão,1.57,2.67
+3647068,2021-10-23,Tondela,FC Porto,0.2,2.65
+3647063,2021-10-23,Sporting CP,Moreirense,1.28,0.46
+3647064,2021-10-24,Paços de Ferreira,Arouca,0.12,0.81
+3647071,2021-10-24,Vizela,Benfica,0.87,1.04
+3647070,2021-10-24,Portimonense,Estoril,1.38,0.48
+3647067,2021-10-25,Gil Vicente,Braga,1.06,1.22
+3647069,2021-10-25,Boavista,Cova da Piedade SAD,0.6,0.1
+3647080,2021-10-29,Arouca,Tondela,0.92,1.35
+3647073,2021-10-30,FC Porto,Boavista,2.74,0.44
+3647079,2021-10-30,Estoril,Benfica,0.37,0.82
+3647072,2021-10-30,Sporting CP,Vitória de Guimarães,1.9,0.46
+3647078,2021-10-31,Marítimo,Gil Vicente,1.19,1.27
+3647077,2021-10-31,Cova da Piedade SAD,Santa Clara,1.29,1.31
+3647076,2021-10-31,Famalicão,Vizela,1.15,0.54
+3647074,2021-11-01,Braga,Portimonense,1.68,0.69
+3647075,2021-11-01,Moreirense,Paços de Ferreira,0.39,0.48
+3647085,2021-11-05,Gil Vicente,Arouca,2.02,0.38
+3647087,2021-11-05,Boavista,Famalicão,0.96,2.54
+3647089,2021-11-06,Vizela,Estoril,0.99,0.6
+3647088,2021-11-06,Portimonense,Cova da Piedade SAD,1.0,0.69
+3647084,2021-11-06,Vitória de Guimarães,Moreirense,1.14,1.37
+3647086,2021-11-07,Tondela,Marítimo,3.81,1.39
+3647083,2021-11-07,Santa Clara,FC Porto,0.21,2.29
+3647082,2021-11-07,Paços de Ferreira,Sporting CP,0.58,2.12
+3647081,2021-11-07,Benfica,Braga,1.59,0.67
+3647093,2021-11-26,Moreirense,Gil Vicente,1.62,1.15
+3647094,2021-11-27,Famalicão,Portimonense,1.55,0.27
+3647098,2021-11-27,Arouca,Boavista,0.87,0.5
+3647095,2021-11-27,Cova da Piedade SAD,Benfica,0.0,3.71
+3647096,2021-11-28,Marítimo,Paços de Ferreira,0.3,1.09
+3647090,2021-11-28,Sporting CP,Tondela,2.12,0.2
+3647091,2021-11-28,FC Porto,Vitória de Guimarães,3.9,1.62
+3647097,2021-11-29,Estoril,Santa Clara,1.74,1.42
+3647092,2021-11-30,Braga,Vizela,3.32,0.5
+3647106,2021-12-03,Portimonense,FC Porto,0.4,2.14
+3647099,2021-12-03,Benfica,Sporting CP,1.18,1.45
+3647105,2021-12-04,Boavista,Marítimo,0.94,0.43
+3647101,2021-12-04,Paços de Ferreira,Vitória de Guimarães,0.6,2.37
+3647102,2021-12-05,Santa Clara,Arouca,1.5,0.54
+3647103,2021-12-05,Gil Vicente,Famalicão,2.53,0.78
+3647100,2021-12-05,Braga,Estoril,2.99,0.52
+3647110,2021-12-10,Paços de Ferreira,Gil Vicente,0.58,1.21
+3647115,2021-12-11,Marítimo,Santa Clara,2.2,0.59
+3647111,2021-12-11,Vitória de Guimarães,Tondela,4.73,1.44
+3647108,2021-12-11,Sporting CP,Boavista,2.56,0.21
+3647114,2021-12-12,Cova da Piedade SAD,Estoril,0.28,0.82
+3647112,2021-12-12,Moreirense,Portimonense,1.52,0.33
+3647113,2021-12-12,Famalicão,Benfica,1.15,1.72
+3647109,2021-12-12,FC Porto,Braga,2.16,0.4
+3647116,2021-12-13,Arouca,Vizela,1.31,1.6
+3647119,2021-12-17,Santa Clara,Vitória de Guimarães,1.31,0.4
+3647124,2021-12-17,Estoril,Famalicão,0.57,0.32
+3647123,2021-12-18,Portimonense,Arouca,1.76,1.12
+3647121,2021-12-18,Tondela,Paços de Ferreira,0.53,1.47
+3647120,2021-12-18,Gil Vicente,Sporting CP,0.75,2.48
+3647117,2021-12-19,Benfica,Marítimo,4.17,0.28
+3647122,2021-12-19,Boavista,Moreirense,1.12,0.32
+3647125,2021-12-19,Vizela,FC Porto,0.5,2.71
+3647118,2021-12-19,Braga,Cova da Piedade SAD,1.52,0.19
+3647132,2021-12-28,Tondela,Gil Vicente,0.55,1.19
+3647133,2021-12-28,Marítimo,Vizela,1.54,1.02
+3647130,2021-12-28,Moreirense,Estoril,0.74,0.53
+3647129,2021-12-29,Vitória de Guimarães,Boavista,1.21,1.84
+3647126,2021-12-29,Sporting CP,Portimonense,2.71,0.29
+3647128,2021-12-30,Paços de Ferreira,Santa Clara,1.13,1.29
+3647134,2021-12-30,Arouca,Braga,0.35,3.33
+3647127,2021-12-30,FC Porto,Benfica,2.25,1.39
+3647107,2022-01-02,Vizela,Cova da Piedade SAD,1.6,2.35
+3647104,2022-01-03,Tondela,Moreirense,1.71,0.82
+3647137,2022-01-07,Santa Clara,Sporting CP,0.66,1.88
+3647143,2022-01-08,Vizela,Moreirense,1.0,1.04
+3647142,2022-01-08,Estoril,FC Porto,0.96,2.66
+3647140,2022-01-08,Boavista,Tondela,1.48,0.42
+3647141,2022-01-09,Portimonense,Marítimo,2.39,1.82
+3647135,2022-01-09,Benfica,Paços de Ferreira,4.23,0.21
+3647136,2022-01-09,Braga,Famalicão,2.73,0.84
+3647138,2022-01-09,Cova da Piedade SAD,Arouca,1.59,1.41
+3647139,2022-01-10,Gil Vicente,Vitória de Guimarães,2.49,1.51
+3801164,2022-01-13,Famalicão,Cova da Piedade SAD,0.49,0.59
+3647149,2022-01-15,Boavista,Gil Vicente,0.94,0.55
+3647148,2022-01-15,Benfica,Moreirense,2.27,0.22
+3647151,2022-01-15,Braga,Marítimo,0.6,0.37
+3647150,2022-01-16,Santa Clara,Tondela,2.37,0.86
+3647144,2022-01-16,Vizela,Sporting CP,0.48,1.54
+3647146,2022-01-16,Famalicão,Paços de Ferreira,0.94,0.37
+3647145,2022-01-16,Cova da Piedade SAD,FC Porto,0.33,3.43
+3647147,2022-01-17,Portimonense,Vitória de Guimarães,0.66,0.57
+3647153,2022-01-21,Arouca,Benfica,1.1,2.68
+3647158,2022-01-21,Paços de Ferreira,Boavista,1.04,1.73
+3647155,2022-01-22,Moreirense,Santa Clara,0.72,0.49
+3647162,2022-01-22,Tondela,Vizela,1.59,2.02
+3647154,2022-01-22,Sporting CP,Braga,2.08,1.23
+3647157,2022-01-23,Marítimo,Cova da Piedade SAD,2.26,1.59
+3647163,2022-01-23,Vitória de Guimarães,Estoril,1.67,0.42
+3647164,2022-01-23,Gil Vicente,Portimonense,2.32,0.15
+3647156,2022-01-23,FC Porto,Famalicão,3.72,0.95
+3647152,2022-01-27,Estoril,Arouca,0.52,1.85
+3647167,2022-01-30,Portimonense,Tondela,1.11,0.69
+3647159,2022-01-30,Vizela,Vitória de Guimarães,2.6,0.83
+3647165,2022-01-30,Braga,Moreirense,1.74,0.69
+3647169,2022-01-30,FC Porto,Marítimo,2.12,0.92
+3647160,2022-01-31,Estoril,Paços de Ferreira,1.13,0.62
+3647170,2022-01-31,Famalicão,Arouca,0.3,0.64
+3647168,2022-02-01,Santa Clara,Boavista,1.34,0.43
+3647166,2022-02-02,Benfica,Gil Vicente,1.77,0.91
+3647161,2022-02-02,Cova da Piedade SAD,Sporting CP,0.42,2.04
+3647178,2022-02-05,Marítimo,Estoril,1.82,0.38
+3647177,2022-02-05,Paços de Ferreira,Portimonense,1.5,1.94
+3647173,2022-02-05,Vitória de Guimarães,Braga,1.52,0.77
+3647179,2022-02-06,Boavista,Vizela,2.47,1.62
+3647174,2022-02-06,Gil Vicente,Santa Clara,1.32,1.34
+3647171,2022-02-06,Arouca,FC Porto,0.17,1.07
+3647175,2022-02-06,Sporting CP,Famalicão,1.46,1.09
+3647172,2022-02-07,Tondela,Benfica,1.33,1.53
+3647176,2022-02-07,Moreirense,Cova da Piedade SAD,2.05,0.18
+3647180,2022-02-11,FC Porto,Sporting CP,1.17,1.44
+3647181,2022-02-12,Braga,Paços de Ferreira,1.64,0.31
+3647182,2022-02-12,Benfica,Santa Clara,2.65,0.83
+3647187,2022-02-12,Portimonense,Boavista,1.9,0.89
+3647186,2022-02-12,Estoril,Tondela,1.66,0.46
+3647184,2022-02-13,Famalicão,Moreirense,2.98,0.45
+3647183,2022-02-13,Cova da Piedade SAD,Vitória de Guimarães,1.31,1.27
+3647185,2022-02-13,Vizela,Gil Vicente,1.4,1.2
+3647188,2022-02-14,Arouca,Marítimo,1.67,2.22
+3647190,2022-02-18,Boavista,Benfica,1.19,0.82
+3647193,2022-02-19,Gil Vicente,Cova da Piedade SAD,0.83,0.47
+3647196,2022-02-19,Paços de Ferreira,Vizela,0.99,0.4
+3647197,2022-02-19,Vitória de Guimarães,Arouca,1.44,1.95
+3647192,2022-02-20,Marítimo,Famalicão,0.85,2.53
+3647195,2022-02-20,Sporting CP,Estoril,2.03,0.12
+3647189,2022-02-20,Moreirense,FC Porto,0.77,2.15
+3647191,2022-02-20,Tondela,Braga,0.33,1.28
+3647194,2022-02-21,Santa Clara,Portimonense,1.24,0.95
+3647199,2022-02-25,Cova da Piedade SAD,Paços de Ferreira,0.57,2.13
+3647204,2022-02-26,Famalicão,Tondela,1.53,0.58
+3647198,2022-02-26,Marítimo,Sporting CP,0.21,1.77
+3647202,2022-02-26,Arouca,Moreirense,1.16,2.1
+3647206,2022-02-27,Vizela,Portimonense,1.01,0.4
+3647201,2022-02-27,Benfica,Vitória de Guimarães,1.86,1.23
+3647205,2022-02-27,Estoril,Boavista,1.11,1.01
+3647203,2022-02-27,FC Porto,Gil Vicente,2.99,0.68
+3647200,2022-02-28,Braga,Santa Clara,1.48,0.87
+3647213,2022-03-04,Gil Vicente,Estoril,1.41,0.54
+3647209,2022-03-05,Boavista,Braga,0.62,2.41
+3647208,2022-03-05,Portimonense,Benfica,1.03,1.51
+3647215,2022-03-05,Sporting CP,Arouca,1.94,0.12
+3647212,2022-03-06,Moreirense,Marítimo,0.63,1.16
+3647207,2022-03-06,Paços de Ferreira,FC Porto,0.89,3.14
+3647214,2022-03-06,Santa Clara,Vizela,1.32,0.88
+3647210,2022-03-06,Vitória de Guimarães,Famalicão,1.21,0.5
+3647211,2022-03-07,Tondela,Cova da Piedade SAD,0.68,1.21
+3647224,2022-03-11,Benfica,Vizela,3.5,1.33
+3647223,2022-03-12,Estoril,Portimonense,2.25,0.77
+3647218,2022-03-12,Famalicão,Santa Clara,0.76,0.33
+3647217,2022-03-12,Arouca,Paços de Ferreira,0.66,0.43
+3647222,2022-03-12,Cova da Piedade SAD,Boavista,1.06,1.07
+3647219,2022-03-13,Marítimo,Vitória de Guimarães,0.37,0.9
+3647221,2022-03-13,FC Porto,Tondela,4.08,0.26
+3647220,2022-03-13,Braga,Gil Vicente,1.14,1.39
+3647216,2022-03-14,Moreirense,Sporting CP,0.44,1.98
+3647229,2022-03-18,Vizela,Famalicão,1.33,1.42
+3647233,2022-03-19,Tondela,Arouca,1.34,0.88
+3647230,2022-03-19,Santa Clara,Cova da Piedade SAD,0.89,0.24
+3647225,2022-03-19,Vitória de Guimarães,Sporting CP,1.0,2.88
+3647231,2022-03-20,Gil Vicente,Marítimo,1.39,0.66
+3647228,2022-03-20,Paços de Ferreira,Moreirense,1.24,0.58
+3647232,2022-03-20,Benfica,Estoril,1.6,1.11
+3647227,2022-03-20,Portimonense,Braga,0.67,2.19
+3647226,2022-03-20,Boavista,FC Porto,0.99,1.8
+3647234,2022-04-01,Braga,Benfica,1.55,1.86
+3647241,2022-04-02,Cova da Piedade SAD,Portimonense,1.36,1.05
+3647238,2022-04-02,Arouca,Gil Vicente,0.2,1.3
+3647242,2022-04-02,Estoril,Vizela,1.35,0.75
+3647240,2022-04-02,Famalicão,Boavista,0.95,1.59
+3647239,2022-04-03,Marítimo,Tondela,0.51,2.14
+3647237,2022-04-03,Moreirense,Vitória de Guimarães,0.58,1.58
+3647235,2022-04-03,Sporting CP,Paços de Ferreira,2.51,0.09
+3647236,2022-04-04,FC Porto,Santa Clara,2.14,0.23
+3647246,2022-04-08,Gil Vicente,Moreirense,1.47,1.82
+3647249,2022-04-09,Paços de Ferreira,Marítimo,1.34,0.55
+3647248,2022-04-09,Benfica,Cova da Piedade SAD,3.35,1.58
+3647251,2022-04-09,Boavista,Arouca,0.7,0.69
+3647243,2022-04-09,Tondela,Sporting CP,0.39,2.28
+3647247,2022-04-10,Portimonense,Famalicão,1.54,0.43
+3647250,2022-04-10,Santa Clara,Estoril,0.92,0.99
+3647244,2022-04-10,Vitória de Guimarães,FC Porto,0.24,2.61
+3647245,2022-04-10,Vizela,Braga,1.24,0.81
+3647255,2022-04-15,Arouca,Santa Clara,2.4,1.1
+3647256,2022-04-15,Famalicão,Gil Vicente,1.56,2.58
+3647254,2022-04-15,Vitória de Guimarães,Paços de Ferreira,3.29,0.32
+3647257,2022-04-16,Moreirense,Tondela,2.05,0.3
+3647260,2022-04-16,Cova da Piedade SAD,Vizela,0.74,0.85
+3647258,2022-04-16,Marítimo,Boavista,2.85,0.21
+3647259,2022-04-16,FC Porto,Portimonense,5.43,0.15
+3647252,2022-04-17,Sporting CP,Benfica,1.32,1.36
+3647253,2022-04-18,Estoril,Braga,1.07,0.75
+3647269,2022-04-22,Vizela,Arouca,2.1,0.82
+3647265,2022-04-23,Portimonense,Moreirense,1.16,0.56
+3647266,2022-04-23,Benfica,Famalicão,1.44,0.17
+3647268,2022-04-23,Santa Clara,Marítimo,1.69,0.94
+3647263,2022-04-23,Gil Vicente,Paços de Ferreira,1.11,1.67
+3647267,2022-04-24,Estoril,Cova da Piedade SAD,1.08,2.39
+3647264,2022-04-24,Tondela,Vitória de Guimarães,0.61,0.39
+3647262,2022-04-25,Braga,FC Porto,1.57,0.86
+3647261,2022-04-25,Boavista,Sporting CP,0.53,2.12
+3647277,2022-04-29,Famalicão,Estoril,3.34,0.57
+3647276,2022-04-30,Arouca,Portimonense,1.2,0.3
+3647270,2022-04-30,Marítimo,Benfica,0.55,0.96
+3647278,2022-04-30,FC Porto,Vizela,2.41,0.13
+3647271,2022-04-30,Cova da Piedade SAD,Braga,0.66,1.82
+3647272,2022-05-01,Vitória de Guimarães,Santa Clara,0.68,1.05
+3647275,2022-05-01,Moreirense,Boavista,1.44,0.88
+3647273,2022-05-01,Sporting CP,Gil Vicente,3.67,0.36
+3647274,2022-05-02,Paços de Ferreira,Tondela,2.13,1.61
+3647282,2022-05-06,Boavista,Vitória de Guimarães,1.28,0.44
+3647283,2022-05-07,Estoril,Moreirense,0.2,1.91
+3647280,2022-05-07,Benfica,FC Porto,0.28,1.19
+3647279,2022-05-07,Portimonense,Sporting CP,0.84,2.86
+3647285,2022-05-08,Gil Vicente,Tondela,1.47,0.13
+3647286,2022-05-08,Vizela,Marítimo,1.18,0.95
+3647287,2022-05-08,Braga,Arouca,0.95,0.91
+3647281,2022-05-08,Santa Clara,Paços de Ferreira,2.41,0.12
+3647284,2022-05-09,Cova da Piedade SAD,Famalicão,2.69,2.39
+3647288,2022-05-13,Paços de Ferreira,Benfica,0.87,1.96
+3647291,2022-05-14,Arouca,Cova da Piedade SAD,1.61,1.04
+3647296,2022-05-14,Moreirense,Vizela,1.68,0.17
+3647293,2022-05-14,Tondela,Boavista,1.04,1.41
+3647295,2022-05-14,FC Porto,Estoril,1.55,0.61
+3647294,2022-05-14,Marítimo,Portimonense,1.36,1.79
+3647290,2022-05-14,Sporting CP,Santa Clara,1.92,1.03
+3647289,2022-05-15,Famalicão,Braga,2.31,0.54
+3647292,2022-05-15,Vitória de Guimarães,Gil Vicente,2.94,0.85
