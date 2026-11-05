@@ -11,11 +11,13 @@ One entry per competition, keyed by its football-data.co.uk division code
     fd_org        football-data.org competition code (fixtures API)
     fotmob        FotMob league id (xG)
     understat     Understat competition name (backup xG), or None
-    features      "full" (Elo + xG + goals) or "elo_only" (results only)
+    features      "full" (Elo + xG + goals) or "elo_only" (results only);
+                  None for a competition that's never predicted
     promoted_elo  starting Elo for a promoted club, or None to carry its
                   old rating over (see notebooks 19 and 20)
     model         "pooled" (the model shared across competitions) or "own"
-                  (one trained on this competition alone) - see model.py
+                  (one trained on this competition alone) - see model.py;
+                  None for a competition that's never predicted
 
 Adding a league means one entry here plus its rows in
 data/reference/team_names.csv. Only codes in ENABLED are run.
@@ -62,6 +64,18 @@ COMPETITIONS = {
         name="Champions League", kind="cup", country=None,
         fd_uk=None, fd_org="CL", fotmob=42, understat=None,
         features="full", promoted_elo=None, model="pooled",
+    ),
+    # Results and xG only (D10): they feed the league-strength Elo and
+    # its evaluation, and are never predicted or bet on
+    "EL": dict(
+        name="Europa League", kind="cup", country=None,
+        fd_uk=None, fd_org=None, fotmob=73, understat=None,
+        features=None, promoted_elo=None, model=None,
+    ),
+    "ECL": dict(
+        name="Conference League", kind="cup", country=None,
+        fd_uk=None, fd_org=None, fotmob=10216, understat=None,
+        features=None, promoted_elo=None, model=None,
     ),
 }
 

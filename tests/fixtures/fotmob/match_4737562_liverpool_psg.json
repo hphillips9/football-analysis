@@ -1,0 +1,271 @@
+{
+ "general": {
+  "matchId": "4737562",
+  "matchRound": "1/8",
+  "parentLeagueId": 42,
+  "homeTeam": {
+   "name": "Liverpool",
+   "id": 8650
+  },
+  "awayTeam": {
+   "name": "Paris Saint-Germain",
+   "id": 9847
+  },
+  "coverageLevel": "xG"
+ },
+ "header": {
+  "teams": [
+   {
+    "name": "Liverpool",
+    "id": 8650,
+    "score": 0
+   },
+   {
+    "name": "Paris Saint-Germain",
+    "id": 9847,
+    "score": 1
+   }
+  ],
+  "status": {
+   "utcTime": "2025-03-11T20:00:00.000Z",
+   "numberOfHomeRedCards": 0,
+   "numberOfAwayRedCards": 0,
+   "halfs": {
+    "firstHalfStarted": "11.03.2025 21:00:45",
+    "firstHalfEnded": "11.03.2025 21:47:00",
+    "secondHalfStarted": "11.03.2025 22:02:37",
+    "secondHalfEnded": "11.03.2025 22:52:59",
+    "firstExtraHalfStarted": "11.03.2025 22:58:01",
+    "secondExtraHalfStarted": "11.03.2025 23:16:17",
+    "gameEnded": "11.03.2025 23:42:30"
+   },
+   "finished": true,
+   "started": true,
+   "cancelled": false,
+   "awarded": false,
+   "scoreStr": "0 - 1",
+   "reason": {
+    "short": "Pen",
+    "shortKey": "penalties_short",
+    "long": "Pen 1 - 4",
+    "longKey": "afterpenalties",
+    "penalties": [
+     1,
+     4
+    ]
+   },
+   "aggregatedStr": "1 - 1",
+   "whoLostOnPenalties": "Liverpool",
+   "whoLostOnAggregated": "Liverpool"
+  }
+ },
+ "content": {
+  "matchFacts": {
+   "events": {
+    "events": [
+     {
+      "type": "Goal",
+      "time": 12,
+      "overloadTime": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "halfStrShort": null,
+      "isHome": false,
+      "newScore": [
+       0,
+       1
+      ]
+     },
+     {
+      "type": "Half",
+      "time": 45,
+      "overloadTime": null,
+      "homeScore": 0,
+      "awayScore": 1,
+      "halfStrShort": "HT",
+      "isHome": null,
+      "newScore": null
+     },
+     {
+      "type": "Half",
+      "time": 90,
+      "overloadTime": null,
+      "homeScore": 0,
+      "awayScore": 1,
+      "halfStrShort": "FT",
+      "isHome": null,
+      "newScore": null
+     },
+     {
+      "type": "Half",
+      "time": 120,
+      "overloadTime": null,
+      "homeScore": 0,
+      "awayScore": 1,
+      "halfStrShort": "AET",
+      "isHome": null,
+      "newScore": null
+     }
+    ]
+   },
+   "infoBox": {
+    "legInfo": {
+     "bestOf": 2,
+     "bestOfNum": 2,
+     "localizedString": {
+      "key": "second_leg",
+      "fallback": "2nd leg"
+     }
+    },
+    "Stadium": {
+     "name": "Anfield",
+     "city": "Liverpool",
+     "country": "England",
+     "lat": 53.430828,
+     "long": -2.960853,
+     "capacity": 61276,
+     "surface": "grass"
+    }
+   }
+  },
+  "stats": {
+   "Periods": {
+    "All": {
+     "stats": [
+      {
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "1.51",
+          "2.63"
+         ],
+         "rawStats": [
+          {
+           "value": 1.51
+          },
+          {
+           "value": 2.63
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "away"
+        }
+       ]
+      }
+     ]
+    },
+    "FirstHalf": {
+     "stats": [
+      {
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "0.98",
+          "2.03"
+         ],
+         "rawStats": [
+          {
+           "value": 0.98
+          },
+          {
+           "value": 2.03
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "away"
+        }
+       ]
+      }
+     ]
+    },
+    "SecondHalf": {
+     "stats": [
+      {
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "0.47",
+          "0.10"
+         ],
+         "rawStats": [
+          {
+           "value": 0.47
+          },
+          {
+           "value": 0.1
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "home"
+        }
+       ]
+      }
+     ]
+    },
+    "FirstExtraHalf": {
+     "stats": [
+      {
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "0.06",
+          "0.19"
+         ],
+         "rawStats": [
+          {
+           "value": 0.06
+          },
+          {
+           "value": 0.19
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "away"
+        }
+       ]
+      }
+     ]
+    },
+    "SecondExtraHalf": {
+     "stats": [
+      {
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "0.00",
+          "0.30"
+         ],
+         "rawStats": [
+          {
+           "value": 0
+          },
+          {
+           "value": 0.3
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "away"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  }
+ }
+}

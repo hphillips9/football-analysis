@@ -1,0 +1,346 @@
+{
+ "general": {
+  "matchId": "4737578",
+  "matchRound": "1/2",
+  "parentLeagueId": 42,
+  "homeTeam": {
+   "name": "Inter",
+   "id": 8636
+  },
+  "awayTeam": {
+   "name": "Barcelona",
+   "id": 8634
+  },
+  "coverageLevel": "xG"
+ },
+ "header": {
+  "teams": [
+   {
+    "name": "Inter",
+    "id": 8636,
+    "score": 4
+   },
+   {
+    "name": "Barcelona",
+    "id": 8634,
+    "score": 3
+   }
+  ],
+  "status": {
+   "utcTime": "2025-05-06T19:00:00.000Z",
+   "numberOfHomeRedCards": 0,
+   "numberOfAwayRedCards": 0,
+   "halfs": {
+    "firstHalfStarted": "06.05.2025 21:00:12",
+    "firstHalfEnded": "06.05.2025 21:48:44",
+    "secondHalfStarted": "06.05.2025 22:05:03",
+    "secondHalfEnded": "06.05.2025 22:56:17",
+    "firstExtraHalfStarted": "06.05.2025 23:01:17",
+    "secondExtraHalfStarted": "06.05.2025 23:21:50",
+    "gameEnded": "06.05.2025 23:39:31"
+   },
+   "finished": true,
+   "started": true,
+   "cancelled": false,
+   "awarded": false,
+   "scoreStr": "4 - 3",
+   "reason": {
+    "short": "AET",
+    "shortKey": "afterextratime_short",
+    "long": "After extra time",
+    "longKey": "afterextra"
+   },
+   "aggregatedStr": "7 - 6",
+   "whoLostOnPenalties": null,
+   "whoLostOnAggregated": "Barcelona"
+  }
+ },
+ "content": {
+  "matchFacts": {
+   "events": {
+    "events": [
+     {
+      "type": "Goal",
+      "time": 21,
+      "overloadTime": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "halfStrShort": null,
+      "isHome": true,
+      "newScore": [
+       1,
+       0
+      ]
+     },
+     {
+      "type": "Goal",
+      "time": 45,
+      "overloadTime": 1,
+      "homeScore": 1,
+      "awayScore": 0,
+      "halfStrShort": null,
+      "isHome": true,
+      "newScore": [
+       2,
+       0
+      ]
+     },
+     {
+      "type": "Half",
+      "time": 45,
+      "overloadTime": null,
+      "homeScore": 2,
+      "awayScore": 0,
+      "halfStrShort": "HT",
+      "isHome": null,
+      "newScore": null
+     },
+     {
+      "type": "Goal",
+      "time": 54,
+      "overloadTime": null,
+      "homeScore": 2,
+      "awayScore": 0,
+      "halfStrShort": null,
+      "isHome": false,
+      "newScore": [
+       2,
+       1
+      ]
+     },
+     {
+      "type": "Goal",
+      "time": 60,
+      "overloadTime": null,
+      "homeScore": 2,
+      "awayScore": 1,
+      "halfStrShort": null,
+      "isHome": false,
+      "newScore": [
+       2,
+       2
+      ]
+     },
+     {
+      "type": "Goal",
+      "time": 87,
+      "overloadTime": null,
+      "homeScore": 2,
+      "awayScore": 2,
+      "halfStrShort": null,
+      "isHome": false,
+      "newScore": [
+       2,
+       3
+      ]
+     },
+     {
+      "type": "Goal",
+      "time": 90,
+      "overloadTime": 3,
+      "homeScore": 2,
+      "awayScore": 3,
+      "halfStrShort": null,
+      "isHome": true,
+      "newScore": [
+       3,
+       3
+      ]
+     },
+     {
+      "type": "Half",
+      "time": 90,
+      "overloadTime": null,
+      "homeScore": 3,
+      "awayScore": 3,
+      "halfStrShort": "FT",
+      "isHome": null,
+      "newScore": null
+     },
+     {
+      "type": "Goal",
+      "time": 99,
+      "overloadTime": null,
+      "homeScore": 3,
+      "awayScore": 3,
+      "halfStrShort": null,
+      "isHome": true,
+      "newScore": [
+       4,
+       3
+      ]
+     },
+     {
+      "type": "Half",
+      "time": 120,
+      "overloadTime": null,
+      "homeScore": 4,
+      "awayScore": 3,
+      "halfStrShort": "AET",
+      "isHome": null,
+      "newScore": null
+     }
+    ]
+   },
+   "infoBox": {
+    "legInfo": {
+     "bestOf": 2,
+     "bestOfNum": 2,
+     "localizedString": {
+      "key": "second_leg",
+      "fallback": "2nd leg"
+     },
+     "linkToOtherLeg": "/matches/barcelona-vs-inter/2gso15#4737576"
+    },
+    "Stadium": {
+     "name": "Stadio Giuseppe Meazza",
+     "city": "Milano",
+     "country": "Italy",
+     "lat": 45.478084,
+     "long": 9.123979,
+     "capacity": 80018,
+     "surface": "grass"
+    }
+   }
+  },
+  "stats": {
+   "Periods": {
+    "All": {
+     "stats": [
+      {
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "2.28",
+          "2.81"
+         ],
+         "rawStats": [
+          {
+           "value": 2.28
+          },
+          {
+           "value": 2.81
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "away"
+        }
+       ]
+      }
+     ]
+    },
+    "FirstHalf": {
+     "stats": [
+      {
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "1.66",
+          "0.68"
+         ],
+         "rawStats": [
+          {
+           "value": 1.66
+          },
+          {
+           "value": 0.68
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "home"
+        }
+       ]
+      }
+     ]
+    },
+    "SecondHalf": {
+     "stats": [
+      {
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "0.37",
+          "1.54"
+         ],
+         "rawStats": [
+          {
+           "value": 0.37
+          },
+          {
+           "value": 1.54
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "away"
+        }
+       ]
+      }
+     ]
+    },
+    "FirstExtraHalf": {
+     "stats": [
+      {
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "0.14",
+          "0.01"
+         ],
+         "rawStats": [
+          {
+           "value": 0.14
+          },
+          {
+           "value": 0.01
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "home"
+        }
+       ]
+      }
+     ]
+    },
+    "SecondExtraHalf": {
+     "stats": [
+      {
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "0.11",
+          "0.59"
+         ],
+         "rawStats": [
+          {
+           "value": 0.11
+          },
+          {
+           "value": 0.59
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "away"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  }
+ }
+}
