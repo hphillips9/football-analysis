@@ -9,8 +9,13 @@ Reads data/processed/all_matches.csv, data/raw/Bets.csv and produces:
     web/src/data/bets.json         - every bet, with result and profit
     web/src/data/stats.json        - headline numbers, calibration, by-gameweek,
                                      as {overall, byCompetition: {E0: ...}}
-    web/src/data/elo.json          - current Elo ratings
-    web/src/data/table.json        - current standings + projected final table,
+    web/src/data/elo.json          - current Elo ratings: each league's own
+                                     (``elo``) and on the scale shared by
+                                     every league (``rating``), plus clubs
+                                     from outside the leagues seen in Europe
+    web/src/data/elo_history.json  - shared-scale ratings over the last
+                                     year, and each league's offset over time
+    web/src/data/table.json       - current standings + projected final table,
                                      as {byCompetition: {E0: ...}}
     web/src/data/leagues.json      - the competitions the pipeline runs
 
@@ -39,6 +44,8 @@ from predict_next_matches import (
     HOME_ADVANTAGE,
 )
 from dixon_coles import fit_dixon_coles, expected_goals
+from elo import shared_scale
+from european import results_for_elo
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -53,6 +60,9 @@ CALIB_EDGES = [0, 40, 45, 50, 55, 60, 100]
 
 # The competition the home page selects first
 DEFAULT_DIV = "E0"
+
+# How far back elo_history.json goes
+HISTORY_DAYS = 365
 
 
 # ============================================================
@@ -567,10 +577,10 @@ def projected_table(matches, history=None, trained=None):
     return ranked, len(remaining)
 
 
-def train_history(history):
+def train_history(history, european=None):
     """The models, Elo ratings and team history to score fixtures with."""
 
-    rows, elos, team_history = build_history(history)
+    rows, elos, team_history = build_history(history, european=european)
     return train_models(rows), elos, team_history
 
 
@@ -624,13 +634,16 @@ def _str(value):
     return None if pd.isna(value) else str(value)
 
 
-def _write(name, payload):
+def _write(name, payload, compact=False):
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     path = OUT_DIR / name
 
     with open(path, "w", encoding="utf-8", newline="\n") as f:
-        json.dump(payload, f, indent=2)
+        if compact:  # long series: one line keeps the file small
+            json.dump(payload, f, separators=(",", ":"))
+        else:
+            json.dump(payload, f, indent=2)
         f.write("\n")
 
     print(f"Wrote {path.relative_to(ROOT)}")
@@ -660,15 +673,71 @@ def build_leagues():
     }
 
 
+def build_shared_ratings(history, european, days=HISTORY_DAYS):
+    """
+    The shared-scale side of the ratings (elo.shared_scale): a
+    {(league, club): rating} lookup, rows for clubs from outside the
+    modelled leagues that played in Europe in the last ``days``, and the
+    elo_history.json payload. Empty without European results.
+    """
+
+    if european is None or european.empty:
+        return {}, [], {"from": None, "series": [], "offsets": []}
+
+    start = history["MatchDateTime"].max().normalize() - pd.Timedelta(days=days)
+    scale = shared_scale(history, european, history_from=start)
+
+    ratings = scale["ratings"]
+    lookup = {
+        (league, club): round(rating)
+        for league, club, rating in zip(ratings["League"], ratings["Club"], ratings["Rating"])
+    }
+
+    recent = scale["history"]
+    active_outsiders = set(recent.loc[recent["League"].str.startswith("X:"), "Club"])
+    outsider_rows = [
+        {"div": row.League, "team": row.Club, "elo": None, "rating": round(row.Rating),
+         "country": row.Country, "modelled": False}
+        for row in ratings.itertuples()
+        if not row.Modelled and row.Club in active_outsiders
+    ]
+
+    # One point per club per day (its rating after that day's match)
+    points = (
+        recent.assign(Day=recent["Date"].dt.strftime("%Y-%m-%d"))
+        .drop_duplicates(["Club", "League", "Day"], keep="last")
+    )
+    series = [
+        {"team": club, "div": league,
+         "points": [[day, round(rating)] for day, rating in zip(group["Day"], group["Rating"])]}
+        for (club, league), group in points.groupby(["Club", "League"], sort=True)
+    ]
+
+    offsets = scale["offsets"].drop_duplicates(["Date", "Div"], keep="last")
+    payload = {
+        "from": start.strftime("%Y-%m-%d"),
+        "series": series,
+        "offsets": [
+            {"date": day.strftime("%Y-%m-%d"), "season": season, "div": div, "offset": round(offset, 1)}
+            for day, season, div, offset in offsets.itertuples(index=False)
+        ],
+    }
+
+    return lookup, outsider_rows, payload
+
+
 def export_web():
 
     history = load_matches()
     if "Div" not in history.columns:
         history.insert(0, "Div", DEFAULT_DIV)
 
+    european = results_for_elo(history)
+
     # Fitted once on every competition, then scored per league
-    ratings = build_elo_feature(history.copy())
-    trained = train_history(history)
+    ratings = build_elo_feature(history.copy(), european=european)
+    trained = train_history(history, european)
+    shared, outsiders, elo_history = build_shared_ratings(history, european)
 
     fixtures, bet_records, elo_rows = [], [], []
     by_competition, tables, all_bets = {}, {}, []
@@ -688,7 +757,9 @@ def export_web():
 
         elo_rows += sorted(
             (
-                {"div": div, "team": team, "elo": rating}
+                {"div": div, "team": team, "elo": rating,
+                 "rating": shared.get((div, team), rating),
+                 "country": competitions.get(div)["country"], "modelled": True}
                 for team, rating in elos.items()
             ),
             key=lambda row: row["elo"],
@@ -729,8 +800,18 @@ def export_web():
 
     _write("elo.json", {
         "generated": generated,
-        "teams": elo_rows,
+        "teams": elo_rows + outsiders,
+        # The latest O_L per league (the shared-scale baseline is 1500 + O_L)
+        "offsets": {
+            row["div"]: row["offset"]
+            for row in elo_history["offsets"]
+        },
     })
+
+    _write("elo_history.json", {
+        "generated": generated,
+        **elo_history,
+    }, compact=True)
 
     _write("table.json", {
         "generated": generated,

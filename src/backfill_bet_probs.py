@@ -25,6 +25,7 @@ from pathlib import Path
 import pandas as pd
 
 from bet_schema import COLUMN_ORDER, add_missing_columns, round_for
+from european import results_for_elo
 from team_names import load_alias_map, normalize_team_names
 from predict_next_matches import (
     build_history,
@@ -148,6 +149,8 @@ def backfill(
     bets["_round"] = assign_rounds(bets["_kickoff"], gap_days, bets["Div"])
     todo = prob_todo
 
+    european = results_for_elo(matches)
+
     filled = 0
 
     for round_id, group in bets.loc[todo].groupby("_round"):
@@ -159,7 +162,12 @@ def backfill(
             print(f"Round starting {cutoff.date()}: no prior matches, skipped.")
             continue
 
-        history, elos, team_history = build_history(history)
+        # European results too, cut off at the same kick-off
+        prior_european = (
+            None if european is None
+            else european[european["Date"] < cutoff.normalize()]
+        )
+        history, elos, team_history = build_history(history, european=prior_european)
         models = train_models(history)
 
         fixtures = group[["Div", "Date", "Time", "HomeTeam", "AwayTeam"]].copy()

@@ -32,6 +32,7 @@ from sklearn.metrics import accuracy_score, log_loss
 warnings.simplefilter("ignore", pd.errors.PerformanceWarning)
 
 import competitions
+from european import results_for_elo
 from predict_next_matches import (
     build_elo_feature,
     build_goals_per_game_feature,
@@ -188,7 +189,7 @@ def run_backtest(matches_path=MATCHES_PATH, out_path=OUT_PATH):
     if "Div" not in matches.columns:
         matches.insert(0, "Div", BASELINE_LEAGUE)
 
-    build_elo_feature(matches)
+    build_elo_feature(matches, european=results_for_elo(matches))
     build_goals_per_game_feature(matches)
     build_xgd_last5_feature(matches)
 

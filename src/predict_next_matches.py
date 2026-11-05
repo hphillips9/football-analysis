@@ -11,6 +11,7 @@ model.py. Their public names are re-exported here so existing imports
 import pandas as pd
 
 from bet_schema import BET_KEY, round_for, season_for
+from european import results_for_elo
 from team_names import load_alias_map, normalize_team_names
 
 from elo import (  # noqa: F401 - re-exported
@@ -111,7 +112,9 @@ def load_model(matches_path="data/processed/all_matches.csv"):
     matches = pd.read_csv(matches_path)
     matches["MatchDateTime"] = pd.to_datetime(matches["MatchDateTime"])
 
-    matches, elos, team_history = build_history(matches)
+    matches, elos, team_history = build_history(
+        matches, european=results_for_elo(matches)
+    )
 
     models = train_models(matches)
 

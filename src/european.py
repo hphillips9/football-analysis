@@ -501,6 +501,26 @@ def _club_names(raw, id_map, teams):
     return names
 
 
+def results_for_elo(domestic, raw_dir=RAW_DIR, before=None):
+    """
+    load_european() rows for the shared-scale Elo, matched to the
+    ``domestic`` frame being rated (only matches dated before ``before``,
+    when given). If the caches can't be read the leagues are rated on
+    their own (None), with a warning, rather than failing the run.
+    """
+
+    try:
+        matches = load_european(domestic=domestic, raw_dir=raw_dir)
+    except (ValueError, OSError) as exc:
+        print(f"WARNING: European results unavailable ({exc}); rating each league on its own")
+        return None
+
+    if before is not None:
+        matches = matches[matches["Date"] < pd.Timestamp(before).normalize()]
+
+    return matches.reset_index(drop=True)
+
+
 def load_european(
     divs=EUROPEAN,
     domestic=None,

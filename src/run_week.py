@@ -7,7 +7,9 @@ Run the weekly update in one command.
 Always:
 
     1. Fetch last week's results into data/raw/<Div>/results_<season>.csv
-       for each enabled competition
+       for each enabled competition, and this season's Champions League,
+       Europa League and Conference League results from FotMob (they
+       move the Elo ratings - see elo.py's shared scale)
     2. Settle any pending bets in data/raw/Bets.csv
     3. Rebuild data/processed/all_matches.csv (results + FotMob xG, Understat backup)
     4. Backfill gameweek / probabilities on any Bets.csv rows missing them
@@ -35,6 +37,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 import competitions
+import european
 from fetch_results import fetch_all_new_results, complete_bets
 from fetch_fixtures import api_key, fetch_next_fixtures
 from future_games_parser import build_future_fixtures
@@ -67,11 +70,12 @@ def run_week(refresh_current=True, verbose=False, predict=True, divs=None):
     os.chdir(ROOT)
 
     divs = divs or competitions.enabled()
-    status = RunStatus(divs)
+    status = RunStatus(divs + european.EUROPEAN)
 
     try:
         step(1, "Fetch new results")
         fetch_all_new_results(divs, status=status)
+        fetch_european_results(status)
 
         step(2, "Settle pending bets")
         complete_bets(divs=divs)
@@ -96,6 +100,33 @@ def run_week(refresh_current=True, verbose=False, predict=True, divs=None):
 
         if status.failed():
             print(f"Competitions with errors this run: {', '.join(status.failed())}")
+
+
+def fetch_european_results(status):
+    """
+    Bring this season's European caches up to date. One that fails is
+    marked stale and its cached results are used - the ratings catch up
+    on the next run that gets through.
+    """
+
+    session = european._session()
+
+    for div in european.EUROPEAN:
+        try:
+            cache, listed = european.fetch_season(div, competitions.CURRENT_SEASON, session=session)
+            status.set(div, results="ok" if len(cache) >= listed else "stale")
+            print(f"{div}: {len(cache)} of {listed} finished matches cached")
+        except Exception as exc:
+            status.fail(div, exc, results="stale")
+
+    # Country and ground for any club new to Europe (load_european needs them)
+    try:
+        raw = european.load_cache()
+        european.fetch_teams(
+            set(raw["HomeId"].astype(int)) | set(raw["AwayId"].astype(int)), session=session
+        )
+    except Exception as exc:
+        print(f"WARNING: couldn't update European club details ({exc})")
 
 
 def _predict_next_round(divs, status):

@@ -19,6 +19,7 @@ export default {
 
   pages: [
     { name: "This Week", path: "/" },
+    { name: "Ratings Across Leagues", path: "/ratings" },
     ...competitions.map((c, i) => ({
       name: c.name,
       collapsible: true,

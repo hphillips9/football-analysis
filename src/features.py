@@ -198,12 +198,13 @@ def build_xgd_last5_feature(matches, scope=DEFAULT_SCOPE):
 # HISTORY
 # ============================================================
 
-def build_history(matches, scope=DEFAULT_SCOPE):
+def build_history(matches, scope=DEFAULT_SCOPE, european=None):
     """
     Build the chronological features on a copy of ``matches`` and return
     ``(matches, elos, team_history)`` - the end-of-history Elo ratings and
     per-team match history needed to score upcoming fixtures (with
-    build_future_features and the same ``scope``).
+    build_future_features and the same ``scope``). ``european`` results
+    (european.results_for_elo) move the Elo too.
     """
 
     matches = (
@@ -213,7 +214,7 @@ def build_history(matches, scope=DEFAULT_SCOPE):
         .copy()
     )
 
-    elos = build_elo_feature(matches, scope=scope)
+    elos = build_elo_feature(matches, scope=scope, european=european)
     build_goals_per_game_feature(matches, scope=scope)
     team_history = build_xgd_last5_feature(matches, scope=scope)
 
