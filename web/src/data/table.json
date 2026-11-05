@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T11:47:35+00:00",
+  "generated": "2026-11-05T15:54:47+00:00",
   "byCompetition": {
     "E0": {
       "name": "Premier League",
@@ -1410,7 +1410,7 @@
           "played": 38,
           "won": 11,
           "drawn": 10,
-          "lost": 17,
+          "lost": 18,
           "gf": 38.5,
           "ga": 54.8,
           "points": 42,
@@ -3363,7 +3363,7 @@
           "team": "Paris Saint-Germain",
           "played": 34,
           "won": 24,
-          "drawn": 8,
+          "drawn": 7,
           "lost": 3,
           "gf": 80.4,
           "ga": 33.2,
