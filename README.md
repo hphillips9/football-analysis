@@ -178,6 +178,7 @@ src/
   competitions.py         registry of competitions (codes, ids) and which are enabled
   tools/migrate_layout.py one-off move to the per-competition data layout
   tools/backfill_top5.py  one-off: La Liga / Bundesliga / Serie A / Ligue 1 results + xG caches
+  tools/backfill_league.py  one-off, resumable: a new league's results + FotMob xG history (Portugal, Netherlands)
   tools/migrate_bets.py   one-off Bets.csv migration to the multi-competition schema
   tools/suggest_aliases.py  offline: suggest team_names.csv rows by date+score voting (run when clubs are promoted)
 data/

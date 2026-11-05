@@ -1,0 +1,100 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+5781701,2026-08-07,Cambuur,Excelsior,0.72,2.87
+5781698,2026-08-08,NEC Nijmegen,Telstar,2.15,1.66
+5781702,2026-08-08,Go Ahead Eagles,Willem II,2.43,1.51
+5781700,2026-08-08,PSV Eindhoven,Fortuna Sittard,2.56,0.98
+5781699,2026-08-08,AZ Alkmaar,ADO Den Haag,2.74,0.86
+5781696,2026-08-09,Sparta Rotterdam,Feyenoord,0.97,3.59
+5781704,2026-08-09,FC Groningen,FC Utrecht,1.63,2.0
+5781697,2026-08-09,PEC Zwolle,Ajax,0.59,1.97
+5781703,2026-08-09,SC Heerenveen,FC Twente,0.4,1.41
+5781710,2026-08-14,Telstar,Sparta Rotterdam,1.42,3.08
+5781706,2026-08-15,Willem II,NEC Nijmegen,1.49,3.54
+5781707,2026-08-15,FC Utrecht,AZ Alkmaar,0.91,2.1
+5781711,2026-08-15,Excelsior,PSV Eindhoven,0.51,2.24
+5781713,2026-08-15,Fortuna Sittard,Cambuur,1.91,2.51
+5781712,2026-08-16,ADO Den Haag,FC Groningen,1.05,3.38
+5781705,2026-08-16,FC Twente,PEC Zwolle,2.62,0.8
+5781708,2026-08-16,Feyenoord,Go Ahead Eagles,2.83,1.77
+5781709,2026-08-16,Ajax,SC Heerenveen,2.53,1.53
+5781716,2026-08-22,Fortuna Sittard,AZ Alkmaar,0.4,4.53
+5781715,2026-08-22,Sparta Rotterdam,FC Utrecht,1.73,1.92
+5781719,2026-08-22,SC Heerenveen,PEC Zwolle,0.95,1.75
+5781717,2026-08-23,Go Ahead Eagles,ADO Den Haag,0.85,0.83
+5781714,2026-08-23,PSV Eindhoven,FC Groningen,4.4,1.09
+5781721,2026-08-23,Cambuur,Feyenoord,0.96,2.62
+5781729,2026-08-28,FC Groningen,Fortuna Sittard,1.92,0.87
+5781723,2026-08-29,Excelsior,Sparta Rotterdam,1.32,1.03
+5781724,2026-08-29,AZ Alkmaar,Go Ahead Eagles,2.37,1.66
+5781725,2026-08-29,PEC Zwolle,NEC Nijmegen,2.03,1.94
+5781726,2026-08-30,FC Utrecht,PSV Eindhoven,0.4,3.59
+5781727,2026-08-30,Feyenoord,ADO Den Haag,2.37,0.22
+5781728,2026-08-30,Willem II,SC Heerenveen,1.59,1.37
+5781730,2026-08-30,Telstar,Ajax,0.97,2.04
+5781731,2026-08-30,Cambuur,FC Twente,0.47,1.66
+5781738,2026-09-04,Sparta Rotterdam,PEC Zwolle,2.74,0.95
+5781737,2026-09-05,NEC Nijmegen,Feyenoord,0.96,1.35
+5781735,2026-09-05,Ajax,PSV Eindhoven,1.86,2.5
+5781739,2026-09-05,Willem II,Excelsior,1.1,1.73
+5781732,2026-09-06,FC Groningen,FC Twente,1.68,2.28
+5781736,2026-09-06,SC Heerenveen,AZ Alkmaar,1.48,1.04
+5781734,2026-09-06,Telstar,Cambuur,2.14,0.98
+5781740,2026-09-06,ADO Den Haag,Fortuna Sittard,0.5,0.55
+5781733,2026-09-08,FC Utrecht,Go Ahead Eagles,2.46,1.89
+5781720,2026-09-08,NEC Nijmegen,Excelsior,1.43,1.81
+5781722,2026-09-09,FC Twente,Telstar,2.65,0.52
+5781742,2026-09-11,AZ Alkmaar,Willem II,3.14,1.23
+5781746,2026-09-12,FC Twente,ADO Den Haag,2.98,0.65
+5781748,2026-09-12,Go Ahead Eagles,FC Groningen,3.5,0.17
+5781747,2026-09-12,Fortuna Sittard,Ajax,0.92,4.5
+5781741,2026-09-12,Cambuur,NEC Nijmegen,3.49,0.97
+5781745,2026-09-13,Excelsior,FC Utrecht,0.61,1.49
+5781744,2026-09-13,SC Heerenveen,Telstar,1.74,0.78
+5781749,2026-09-13,PEC Zwolle,Feyenoord,0.22,3.23
+5781743,2026-09-13,PSV Eindhoven,Sparta Rotterdam,3.5,2.14
+5781718,2026-09-15,Ajax,Willem II,3.36,1.57
+5781754,2026-09-18,FC Groningen,PEC Zwolle,1.35,0.53
+5781755,2026-09-19,ADO Den Haag,Cambuur,2.1,0.61
+5781756,2026-09-19,Sparta Rotterdam,SC Heerenveen,0.73,1.84
+5781757,2026-09-19,Ajax,Excelsior,2.51,0.82
+5781758,2026-09-19,Willem II,Fortuna Sittard,1.22,1.35
+5781750,2026-09-20,Feyenoord,FC Utrecht,3.59,0.66
+5781752,2026-09-20,AZ Alkmaar,Telstar,2.61,0.11
+5781753,2026-09-20,FC Twente,PSV Eindhoven,2.16,0.84
+5781751,2026-09-20,NEC Nijmegen,Go Ahead Eagles,1.12,2.86
+5781762,2026-10-09,PSV Eindhoven,SC Heerenveen,2.34,1.55
+5781765,2026-10-10,Go Ahead Eagles,Sparta Rotterdam,1.29,2.36
+5781759,2026-10-10,Feyenoord,AZ Alkmaar,2.3,0.77
+5781767,2026-10-10,Fortuna Sittard,FC Twente,0.86,1.13
+5781764,2026-10-10,Ajax,NEC Nijmegen,1.97,1.11
+5781761,2026-10-11,FC Utrecht,Willem II,1.25,0.71
+5781763,2026-10-11,PEC Zwolle,Cambuur,1.09,1.22
+5781766,2026-10-11,Telstar,ADO Den Haag,2.44,1.11
+5781760,2026-10-11,Excelsior,FC Groningen,1.74,3.06
+5781769,2026-10-16,SC Heerenveen,Excelsior,2.72,0.66
+5781776,2026-10-17,ADO Den Haag,PSV Eindhoven,0.56,1.06
+5781774,2026-10-17,Telstar,Feyenoord,1.43,3.81
+5781768,2026-10-17,Sparta Rotterdam,Willem II,3.57,1.57
+5781775,2026-10-18,PEC Zwolle,Go Ahead Eagles,1.93,2.48
+5781771,2026-10-18,Cambuur,AZ Alkmaar,1.64,1.57
+5781772,2026-10-18,FC Groningen,Ajax,2.36,3.08
+5781773,2026-10-18,FC Twente,FC Utrecht,1.5,1.17
+5781770,2026-10-18,NEC Nijmegen,Fortuna Sittard,2.87,0.44
+5781781,2026-10-23,Go Ahead Eagles,Telstar,1.32,0.77
+5781784,2026-10-24,FC Utrecht,PEC Zwolle,1.74,1.0
+5781785,2026-10-24,Willem II,Cambuur,1.02,1.93
+5781779,2026-10-24,ADO Den Haag,SC Heerenveen,3.1,2.87
+5781780,2026-10-25,Fortuna Sittard,Excelsior,0.57,0.87
+5781777,2026-10-25,NEC Nijmegen,FC Groningen,1.49,1.33
+5781783,2026-10-25,PSV Eindhoven,Feyenoord,2.03,1.22
+5781778,2026-10-25,Sparta Rotterdam,Ajax,1.25,1.43
+5781782,2026-10-25,AZ Alkmaar,FC Twente,1.53,2.02
+5781787,2026-10-31,Feyenoord,Fortuna Sittard,3.02,0.86
+5781793,2026-10-31,PSV Eindhoven,Willem II,2.7,1.35
+5781791,2026-10-31,SC Heerenveen,NEC Nijmegen,1.33,1.53
+5781786,2026-10-31,Ajax,AZ Alkmaar,0.72,2.3
+5781788,2026-10-31,Cambuur,Go Ahead Eagles,1.83,0.63
+5781792,2026-11-01,PEC Zwolle,ADO Den Haag,2.02,0.57
+5781794,2026-11-01,Excelsior,FC Twente,0.0,6.42
+5781790,2026-11-01,Telstar,FC Utrecht,2.83,1.28
+5781789,2026-11-01,FC Groningen,Sparta Rotterdam,2.6,2.4

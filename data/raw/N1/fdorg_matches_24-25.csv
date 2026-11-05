@@ -1,0 +1,307 @@
+day,home,away,home_id,away_id,hg,ag
+2024-08-09,FC Groningen,NAC Breda,677,681,4,1
+2024-08-10,Feyenoord Rotterdam,Willem II Tilburg,675,672,1,1
+2024-08-10,NEC,FC Twente '65,1915,666,1,2
+2024-08-10,Almere City FC,AZ,1911,682,0,1
+2024-08-10,PSV,RKC Waalwijk,674,683,5,1
+2024-08-11,Sparta Rotterdam,Heracles Almelo,6806,671,0,0
+2024-08-11,FC Utrecht,PEC Zwolle,676,684,1,0
+2024-08-11,Go Ahead Eagles,Fortuna Sittard,718,1920,0,2
+2024-08-11,AFC Ajax,SC Heerenveen,678,673,1,0
+2024-08-16,Fortuna Sittard,Almere City FC,1920,1911,3,0
+2024-08-17,SC Heerenveen,FC Utrecht,673,676,1,1
+2024-08-17,FC Twente '65,Sparta Rotterdam,666,6806,1,1
+2024-08-17,AZ,NEC,682,1915,1,0
+2024-08-17,RKC Waalwijk,FC Groningen,683,677,1,2
+2024-08-18,Heracles Almelo,PSV,671,674,1,3
+2024-08-18,PEC Zwolle,Feyenoord Rotterdam,684,675,1,5
+2024-08-18,Willem II Tilburg,Go Ahead Eagles,672,718,2,0
+2024-08-18,NAC Breda,AFC Ajax,681,678,2,1
+2024-08-24,NEC,PEC Zwolle,1915,684,1,0
+2024-08-24,Almere City FC,PSV,1911,674,1,7
+2024-08-24,NAC Breda,FC Utrecht,681,676,1,2
+2024-08-25,FC Groningen,AZ,677,682,0,0
+2024-08-25,Heracles Almelo,Willem II Tilburg,671,672,1,1
+2024-08-25,Sparta Rotterdam,Feyenoord Rotterdam,6806,675,1,1
+2024-08-25,Go Ahead Eagles,RKC Waalwijk,718,683,2,0
+2024-08-30,RKC Waalwijk,AZ,683,682,0,3
+2024-08-31,Almere City FC,FC Groningen,1911,677,1,1
+2024-08-31,Fortuna Sittard,NEC,1920,1915,0,3
+2024-08-31,SC Heerenveen,NAC Breda,673,681,4,0
+2024-08-31,Willem II Tilburg,Sparta Rotterdam,672,6806,1,2
+2024-09-01,FC Utrecht,FC Twente '65,676,666,2,1
+2024-09-01,PEC Zwolle,Heracles Almelo,684,671,3,0
+2024-09-01,PSV,Go Ahead Eagles,674,718,3,0
+2024-09-14,FC Twente '65,PEC Zwolle,666,684,1,1
+2024-09-14,PSV,NEC,674,1915,2,0
+2024-09-14,FC Groningen,Feyenoord Rotterdam,677,675,2,2
+2024-09-14,NAC Breda,Fortuna Sittard,681,1920,1,0
+2024-09-14,AZ,SC Heerenveen,682,673,9,1
+2024-09-15,Sparta Rotterdam,Go Ahead Eagles,6806,718,1,2
+2024-09-15,Willem II Tilburg,RKC Waalwijk,672,683,3,0
+2024-09-15,Heracles Almelo,Almere City FC,671,1911,0,0
+2024-09-17,FC Twente '65,SC Heerenveen,666,673,2,0
+2024-09-18,AFC Ajax,Fortuna Sittard,678,1920,5,0
+2024-09-20,PEC Zwolle,AZ,684,682,1,2
+2024-09-21,FC Utrecht,Willem II Tilburg,676,672,3,2
+2024-09-21,RKC Waalwijk,Sparta Rotterdam,683,6806,1,2
+2024-09-21,Go Ahead Eagles,AFC Ajax,718,678,1,1
+2024-09-21,NEC,Heracles Almelo,1915,671,1,2
+2024-09-22,SC Heerenveen,FC Groningen,673,677,2,1
+2024-09-22,Almere City FC,FC Twente '65,1911,666,0,5
+2024-09-22,Feyenoord Rotterdam,NAC Breda,675,681,2,0
+2024-09-22,Fortuna Sittard,PSV,1920,674,1,3
+2024-09-27,Heracles Almelo,SC Heerenveen,671,673,2,1
+2024-09-28,Willem II Tilburg,PSV,672,674,0,2
+2024-09-28,NEC,Feyenoord Rotterdam,1915,675,1,1
+2024-09-28,Sparta Rotterdam,Fortuna Sittard,6806,1920,1,1
+2024-09-29,PEC Zwolle,Almere City FC,684,1911,1,0
+2024-09-29,FC Twente '65,NAC Breda,666,681,1,0
+2024-09-29,FC Groningen,Go Ahead Eagles,677,718,0,1
+2024-09-29,RKC Waalwijk,AFC Ajax,683,678,0,2
+2024-09-29,AZ,FC Utrecht,682,676,1,2
+2024-10-04,Almere City FC,Willem II Tilburg,1911,672,0,1
+2024-10-05,NAC Breda,NEC,681,1915,1,0
+2024-10-05,PSV,Sparta Rotterdam,674,6806,2,1
+2024-10-05,FC Utrecht,RKC Waalwijk,676,683,3,2
+2024-10-06,Go Ahead Eagles,Heracles Almelo,718,671,4,1
+2024-10-06,SC Heerenveen,PEC Zwolle,673,684,1,1
+2024-10-06,Feyenoord Rotterdam,FC Twente '65,675,666,2,1
+2024-10-06,AFC Ajax,FC Groningen,678,677,3,1
+2024-10-06,Fortuna Sittard,AZ,1920,682,1,0
+2024-10-19,Sparta Rotterdam,Almere City FC,6806,1911,2,2
+2024-10-19,AZ,PSV,682,674,1,2
+2024-10-19,NEC,SC Heerenveen,1915,673,3,0
+2024-10-19,RKC Waalwijk,FC Twente '65,683,666,2,2
+2024-10-19,Go Ahead Eagles,Feyenoord Rotterdam,718,675,1,5
+2024-10-20,Willem II Tilburg,Fortuna Sittard,672,1920,0,0
+2024-10-20,FC Groningen,FC Utrecht,677,676,0,1
+2024-10-20,Heracles Almelo,AFC Ajax,671,678,3,4
+2024-10-20,PEC Zwolle,NAC Breda,684,681,1,2
+2024-10-25,Almere City FC,NEC,1911,1915,1,0
+2024-10-26,Fortuna Sittard,FC Groningen,1920,677,1,0
+2024-10-26,PSV,PEC Zwolle,674,684,6,0
+2024-10-26,NAC Breda,RKC Waalwijk,681,683,4,1
+2024-10-26,SC Heerenveen,Sparta Rotterdam,673,6806,2,0
+2024-10-27,FC Utrecht,Feyenoord Rotterdam,676,675,0,2
+2024-10-27,FC Twente '65,Heracles Almelo,666,671,5,0
+2024-10-27,AFC Ajax,Willem II Tilburg,678,672,1,0
+2024-10-27,AZ,Go Ahead Eagles,682,718,2,2
+2024-10-30,Feyenoord Rotterdam,AFC Ajax,675,678,0,2
+2024-11-02,Willem II Tilburg,FC Twente '65,672,666,0,1
+2024-11-02,Heracles Almelo,NAC Breda,671,681,2,0
+2024-11-02,AFC Ajax,PSV,678,674,3,2
+2024-11-02,Feyenoord Rotterdam,AZ,675,682,3,2
+2024-11-02,Fortuna Sittard,SC Heerenveen,1920,673,3,0
+2024-11-03,Go Ahead Eagles,PEC Zwolle,718,684,2,2
+2024-11-03,NEC,FC Groningen,1915,677,6,0
+2024-11-03,Sparta Rotterdam,FC Utrecht,6806,676,1,4
+2024-11-03,RKC Waalwijk,Almere City FC,683,1911,2,0
+2024-11-08,FC Utrecht,Heracles Almelo,676,671,1,0
+2024-11-09,FC Groningen,Sparta Rotterdam,677,6806,1,0
+2024-11-09,PEC Zwolle,Fortuna Sittard,684,1920,3,1
+2024-11-09,NAC Breda,PSV,681,674,0,3
+2024-11-09,RKC Waalwijk,NEC,683,1915,0,3
+2024-11-10,Almere City FC,Feyenoord Rotterdam,1911,675,1,4
+2024-11-10,SC Heerenveen,Go Ahead Eagles,673,718,1,0
+2024-11-10,FC Twente '65,AFC Ajax,666,678,2,2
+2024-11-10,AZ,Willem II Tilburg,682,672,1,2
+2024-11-23,Go Ahead Eagles,Almere City FC,718,1911,3,0
+2024-11-23,Feyenoord Rotterdam,SC Heerenveen,675,673,3,0
+2024-11-23,Heracles Almelo,RKC Waalwijk,671,683,2,2
+2024-11-23,PSV,FC Groningen,674,677,5,0
+2024-11-23,Fortuna Sittard,FC Twente '65,1920,666,1,2
+2024-11-24,NEC,FC Utrecht,1915,676,1,2
+2024-11-24,Sparta Rotterdam,AZ,6806,682,1,2
+2024-11-24,Willem II Tilburg,NAC Breda,672,681,2,2
+2024-11-24,AFC Ajax,PEC Zwolle,678,684,2,0
+2024-11-29,SC Heerenveen,RKC Waalwijk,673,683,1,1
+2024-11-30,NAC Breda,Almere City FC,681,1911,1,0
+2024-11-30,FC Groningen,Willem II Tilburg,677,672,2,0
+2024-11-30,Feyenoord Rotterdam,Fortuna Sittard,675,1920,1,1
+2024-11-30,PEC Zwolle,Sparta Rotterdam,684,6806,1,0
+2024-12-01,FC Utrecht,PSV,676,674,2,5
+2024-12-01,AZ,Heracles Almelo,682,671,1,0
+2024-12-01,FC Twente '65,Go Ahead Eagles,666,718,3,2
+2024-12-01,NEC,AFC Ajax,1915,678,1,2
+2024-12-04,AFC Ajax,FC Utrecht,678,676,2,2
+2024-12-06,PSV,FC Twente '65,674,666,6,1
+2024-12-07,Go Ahead Eagles,NEC,718,1915,5,0
+2024-12-07,Sparta Rotterdam,NAC Breda,6806,681,0,2
+2024-12-07,RKC Waalwijk,Feyenoord Rotterdam,683,675,2,3
+2024-12-07,Heracles Almelo,Fortuna Sittard,671,1920,2,2
+2024-12-08,FC Groningen,PEC Zwolle,677,684,0,0
+2024-12-08,AZ,AFC Ajax,682,678,2,1
+2024-12-08,Willem II Tilburg,SC Heerenveen,672,673,1,2
+2024-12-08,Almere City FC,FC Utrecht,1911,676,1,3
+2024-12-13,PEC Zwolle,Willem II Tilburg,684,672,0,1
+2024-12-14,SC Heerenveen,PSV,673,674,1,0
+2024-12-14,Fortuna Sittard,RKC Waalwijk,1920,683,3,2
+2024-12-14,Feyenoord Rotterdam,Heracles Almelo,675,671,5,2
+2024-12-15,FC Utrecht,Go Ahead Eagles,676,718,3,3
+2024-12-15,NEC,Sparta Rotterdam,1915,6806,1,1
+2024-12-15,FC Twente '65,FC Groningen,666,677,2,0
+2024-12-15,AFC Ajax,Almere City FC,678,1911,3,0
+2024-12-15,NAC Breda,AZ,681,682,1,2
+2024-12-20,RKC Waalwijk,PEC Zwolle,683,684,1,1
+2024-12-21,Go Ahead Eagles,NAC Breda,718,681,2,1
+2024-12-21,Almere City FC,SC Heerenveen,1911,673,3,0
+2024-12-21,AZ,FC Twente '65,682,666,1,0
+2024-12-22,Sparta Rotterdam,AFC Ajax,6806,678,0,2
+2024-12-22,FC Utrecht,Fortuna Sittard,676,1920,2,5
+2024-12-22,PSV,Feyenoord Rotterdam,674,675,3,0
+2024-12-22,Willem II Tilburg,NEC,672,1915,4,1
+2025-01-10,Fortuna Sittard,Go Ahead Eagles,1920,718,0,3
+2025-01-11,Heracles Almelo,Sparta Rotterdam,671,6806,1,1
+2025-01-11,AFC Ajax,RKC Waalwijk,678,683,2,1
+2025-01-11,PEC Zwolle,NEC,684,1915,0,1
+2025-01-11,PSV,AZ,674,682,2,2
+2025-01-12,FC Twente '65,Willem II Tilburg,666,672,6,2
+2025-01-12,FC Groningen,Almere City FC,677,1911,0,0
+2025-01-12,Feyenoord Rotterdam,FC Utrecht,675,676,1,2
+2025-01-12,NAC Breda,SC Heerenveen,681,673,2,4
+2025-01-18,PEC Zwolle,PSV,684,674,3,1
+2025-01-18,FC Utrecht,AZ,676,682,0,0
+2025-01-18,Willem II Tilburg,Feyenoord Rotterdam,672,675,1,1
+2025-01-18,Go Ahead Eagles,FC Groningen,718,677,2,1
+2025-01-19,NAC Breda,FC Twente '65,681,666,2,1
+2025-01-19,Almere City FC,Heracles Almelo,1911,671,0,2
+2025-01-19,SC Heerenveen,AFC Ajax,673,678,0,2
+2025-01-19,NEC,Fortuna Sittard,1915,1920,4,1
+2025-01-19,Sparta Rotterdam,RKC Waalwijk,6806,683,1,1
+2025-01-24,Heracles Almelo,FC Utrecht,671,676,1,1
+2025-01-25,PSV,NAC Breda,674,681,3,2
+2025-01-25,FC Groningen,SC Heerenveen,677,673,1,0
+2025-01-26,Fortuna Sittard,PEC Zwolle,1920,684,1,4
+2025-01-26,RKC Waalwijk,Willem II Tilburg,683,672,2,0
+2025-01-26,AZ,Sparta Rotterdam,682,6806,1,2
+2025-01-28,Heracles Almelo,FC Groningen,671,677,1,1
+2025-01-31,NAC Breda,Heracles Almelo,681,671,1,1
+2025-02-01,PEC Zwolle,FC Utrecht,684,676,3,3
+2025-02-01,SC Heerenveen,Fortuna Sittard,673,1920,2,2
+2025-02-01,NEC,PSV,1915,674,3,3
+2025-02-02,Almere City FC,RKC Waalwijk,1911,683,1,4
+2025-02-02,AFC Ajax,Feyenoord Rotterdam,678,675,2,1
+2025-02-02,Go Ahead Eagles,FC Twente '65,718,666,2,2
+2025-02-02,Sparta Rotterdam,FC Groningen,6806,677,1,0
+2025-02-02,Willem II Tilburg,AZ,672,682,0,2
+2025-02-08,Heracles Almelo,Go Ahead Eagles,671,718,4,2
+2025-02-08,PSV,Willem II Tilburg,674,672,1,1
+2025-02-08,FC Groningen,NEC,677,1915,2,1
+2025-02-08,Feyenoord Rotterdam,Sparta Rotterdam,675,6806,3,0
+2025-02-09,FC Utrecht,Almere City FC,676,1911,0,1
+2025-02-09,Fortuna Sittard,AFC Ajax,1920,678,0,2
+2025-02-09,RKC Waalwijk,NAC Breda,683,681,5,0
+2025-02-09,AZ,PEC Zwolle,682,684,2,0
+2025-02-09,SC Heerenveen,FC Twente '65,673,666,3,3
+2025-02-14,Go Ahead Eagles,Sparta Rotterdam,718,6806,1,0
+2025-02-15,PSV,FC Utrecht,674,676,2,2
+2025-02-15,NAC Breda,Feyenoord Rotterdam,681,675,0,0
+2025-02-15,Willem II Tilburg,FC Groningen,672,677,1,3
+2025-02-16,NEC,Almere City FC,1915,1911,2,2
+2025-02-16,PEC Zwolle,SC Heerenveen,684,673,1,1
+2025-02-16,FC Twente '65,RKC Waalwijk,666,683,2,0
+2025-02-16,AFC Ajax,Heracles Almelo,678,671,4,0
+2025-02-22,Feyenoord Rotterdam,Almere City FC,675,1911,2,1
+2025-02-23,AFC Ajax,Go Ahead Eagles,678,718,2,0
+2025-02-23,FC Twente '65,NEC,666,1915,2,0
+2025-02-23,AZ,Fortuna Sittard,682,1920,1,0
+2025-02-28,RKC Waalwijk,Fortuna Sittard,683,1920,1,2
+2025-03-01,FC Utrecht,NAC Breda,676,681,1,0
+2025-03-01,Go Ahead Eagles,PSV,718,674,3,2
+2025-03-01,FC Groningen,FC Twente '65,677,666,1,1
+2025-03-01,Feyenoord Rotterdam,NEC,675,1915,0,0
+2025-03-02,SC Heerenveen,AZ,673,682,3,1
+2025-03-02,Almere City FC,AFC Ajax,1911,678,0,1
+2025-03-02,Heracles Almelo,PEC Zwolle,671,684,4,2
+2025-03-02,Sparta Rotterdam,Willem II Tilburg,6806,672,4,0
+2025-03-07,NAC Breda,Sparta Rotterdam,681,6806,1,1
+2025-03-08,Fortuna Sittard,Heracles Almelo,1920,671,1,0
+2025-03-08,PSV,SC Heerenveen,674,673,2,1
+2025-03-09,Willem II Tilburg,FC Utrecht,672,676,2,3
+2025-03-09,NEC,Go Ahead Eagles,1915,718,2,3
+2025-03-09,PEC Zwolle,AFC Ajax,684,678,0,1
+2025-03-09,FC Twente '65,Almere City FC,666,1911,1,0
+2025-03-14,Almere City FC,NAC Breda,1911,681,1,1
+2025-03-15,FC Utrecht,NEC,676,1915,0,1
+2025-03-15,Sparta Rotterdam,PEC Zwolle,6806,684,1,1
+2025-03-15,RKC Waalwijk,PSV,683,674,0,3
+2025-03-15,SC Heerenveen,Heracles Almelo,673,671,1,1
+2025-03-16,Go Ahead Eagles,Willem II Tilburg,718,672,1,0
+2025-03-16,FC Groningen,Fortuna Sittard,677,1920,1,0
+2025-03-16,FC Twente '65,Feyenoord Rotterdam,666,675,2,6
+2025-03-16,AFC Ajax,AZ,678,682,2,2
+2025-03-29,NAC Breda,FC Groningen,681,677,1,1
+2025-03-29,Fortuna Sittard,Sparta Rotterdam,1920,6806,0,3
+2025-03-29,Willem II Tilburg,Almere City FC,672,1911,0,2
+2025-03-29,NEC,AZ,1915,682,3,3
+2025-03-29,PEC Zwolle,RKC Waalwijk,684,683,2,0
+2025-03-30,FC Utrecht,SC Heerenveen,676,673,2,0
+2025-03-30,Heracles Almelo,FC Twente '65,671,666,2,1
+2025-03-30,PSV,AFC Ajax,674,678,0,2
+2025-03-30,Feyenoord Rotterdam,Go Ahead Eagles,675,718,3,2
+2025-04-01,AZ,RKC Waalwijk,682,683,2,2
+2025-04-02,Feyenoord Rotterdam,FC Groningen,675,677,4,1
+2025-04-04,SC Heerenveen,Willem II Tilburg,673,672,3,1
+2025-04-05,AZ,Feyenoord Rotterdam,682,675,0,1
+2025-04-05,FC Twente '65,Fortuna Sittard,666,1920,1,1
+2025-04-05,FC Groningen,PSV,677,674,1,3
+2025-04-05,Almere City FC,PEC Zwolle,1911,684,2,2
+2025-04-06,RKC Waalwijk,Heracles Almelo,683,671,0,0
+2025-04-06,Go Ahead Eagles,FC Utrecht,718,676,2,2
+2025-04-06,Sparta Rotterdam,NEC,6806,1915,2,0
+2025-04-06,AFC Ajax,NAC Breda,678,681,3,1
+2025-04-11,NEC,RKC Waalwijk,1915,683,2,1
+2025-04-12,Fortuna Sittard,Feyenoord Rotterdam,1920,675,0,2
+2025-04-12,Sparta Rotterdam,SC Heerenveen,6806,673,3,1
+2025-04-12,PSV,Almere City FC,674,1911,5,0
+2025-04-12,NAC Breda,Go Ahead Eagles,681,718,1,1
+2025-04-13,FC Utrecht,FC Groningen,676,677,3,1
+2025-04-13,Heracles Almelo,AZ,671,682,1,0
+2025-04-13,PEC Zwolle,FC Twente '65,684,666,1,1
+2025-04-13,Willem II Tilburg,AFC Ajax,672,678,1,2
+2025-04-19,SC Heerenveen,Almere City FC,673,1911,2,1
+2025-04-20,FC Utrecht,AFC Ajax,676,678,4,0
+2025-04-23,FC Groningen,Heracles Almelo,677,671,4,1
+2025-04-24,AZ,NAC Breda,682,681,1,1
+2025-04-24,FC Twente '65,PSV,666,674,1,3
+2025-04-25,RKC Waalwijk,FC Utrecht,683,676,0,4
+2025-04-25,Feyenoord Rotterdam,PEC Zwolle,675,684,4,0
+2025-04-27,Fortuna Sittard,Willem II Tilburg,1920,672,1,0
+2025-04-27,AFC Ajax,Sparta Rotterdam,678,6806,1,1
+2025-04-27,SC Heerenveen,NEC,673,1915,1,0
+2025-04-27,Almere City FC,Go Ahead Eagles,1911,718,0,0
+2025-05-03,NEC,Willem II Tilburg,1915,672,1,1
+2025-05-03,Heracles Almelo,Feyenoord Rotterdam,671,675,1,4
+2025-05-03,FC Groningen,RKC Waalwijk,677,683,6,1
+2025-05-03,PSV,Fortuna Sittard,674,1920,4,1
+2025-05-04,NAC Breda,PEC Zwolle,681,684,1,3
+2025-05-04,Go Ahead Eagles,AZ,718,682,0,3
+2025-05-04,Sparta Rotterdam,FC Twente '65,6806,666,0,2
+2025-05-09,Willem II Tilburg,Heracles Almelo,672,671,1,2
+2025-05-10,RKC Waalwijk,SC Heerenveen,683,673,3,1
+2025-05-10,Fortuna Sittard,NAC Breda,1920,681,1,0
+2025-05-10,Almere City FC,Sparta Rotterdam,1911,6806,0,3
+2025-05-11,PEC Zwolle,Go Ahead Eagles,684,718,1,1
+2025-05-11,Feyenoord Rotterdam,PSV,675,674,2,3
+2025-05-11,FC Twente '65,FC Utrecht,666,676,2,0
+2025-05-11,AFC Ajax,NEC,678,1915,0,3
+2025-05-11,AZ,FC Groningen,682,677,3,0
+2025-05-14,Almere City FC,Fortuna Sittard,1911,1920,1,1
+2025-05-14,FC Groningen,AFC Ajax,677,678,2,2
+2025-05-14,FC Utrecht,Sparta Rotterdam,676,6806,1,1
+2025-05-14,Feyenoord Rotterdam,RKC Waalwijk,675,683,2,0
+2025-05-14,Go Ahead Eagles,SC Heerenveen,718,673,1,0
+2025-05-14,NEC,NAC Breda,1915,681,3,0
+2025-05-14,PSV,Heracles Almelo,674,671,4,1
+2025-05-14,FC Twente '65,AZ,666,682,2,3
+2025-05-14,Willem II Tilburg,PEC Zwolle,672,684,1,2
+2025-05-18,AFC Ajax,FC Twente '65,678,666,2,0
+2025-05-18,AZ,Almere City FC,682,1911,1,1
+2025-05-18,Fortuna Sittard,FC Utrecht,1920,676,0,0
+2025-05-18,Heracles Almelo,NEC,671,1915,1,2
+2025-05-18,NAC Breda,Willem II Tilburg,681,672,1,1
+2025-05-18,PEC Zwolle,FC Groningen,684,677,2,0
+2025-05-18,RKC Waalwijk,Go Ahead Eagles,683,718,5,3
+2025-05-18,SC Heerenveen,Feyenoord Rotterdam,673,675,2,0
+2025-05-18,Sparta Rotterdam,PSV,6806,674,1,3

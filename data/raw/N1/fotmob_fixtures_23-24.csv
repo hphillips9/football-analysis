@@ -1,0 +1,307 @@
+day,home,away,home_id,away_id,hg,ag
+2023-08-11,FC Volendam,Vitesse,6601,8277,1,2
+2023-08-12,PSV Eindhoven,FC Utrecht,8640,9908,2,0
+2023-08-12,SC Heerenveen,RKC Waalwijk,10228,10219,3,1
+2023-08-12,Ajax,Heracles,8593,9791,4,1
+2023-08-12,PEC Zwolle,Sparta Rotterdam,6413,8614,1,2
+2023-08-13,NEC Nijmegen,Excelsior,8464,10218,3,4
+2023-08-13,AZ Alkmaar,Go Ahead Eagles,10229,6433,5,1
+2023-08-13,Feyenoord,Fortuna Sittard,10235,6422,0,0
+2023-08-13,Almere City FC,FC Twente,4116,8611,1,4
+2023-08-18,Heracles,NEC Nijmegen,9791,8464,2,1
+2023-08-19,Excelsior,Ajax,10218,8593,2,2
+2023-08-19,Vitesse,PSV Eindhoven,8277,8640,1,3
+2023-08-19,Fortuna Sittard,Almere City FC,6422,4116,2,1
+2023-08-19,Go Ahead Eagles,FC Volendam,6433,6601,4,1
+2023-08-20,FC Utrecht,SC Heerenveen,9908,10228,0,2
+2023-08-20,FC Twente,PEC Zwolle,8611,6413,3,1
+2023-08-20,Sparta Rotterdam,Feyenoord,8614,10235,2,2
+2023-08-20,RKC Waalwijk,AZ Alkmaar,10219,10229,1,3
+2023-08-26,NEC Nijmegen,RKC Waalwijk,8464,10219,3,0
+2023-08-26,Excelsior,Fortuna Sittard,10218,6422,2,2
+2023-08-27,PEC Zwolle,FC Utrecht,6413,9908,1,0
+2023-08-27,Feyenoord,Almere City FC,10235,4116,6,1
+2023-08-27,SC Heerenveen,Sparta Rotterdam,10228,8614,1,3
+2023-09-01,Sparta Rotterdam,NEC Nijmegen,8614,8464,1,1
+2023-09-02,Almere City FC,PEC Zwolle,4116,6413,1,2
+2023-09-02,Go Ahead Eagles,SC Heerenveen,6433,10228,3,2
+2023-09-02,RKC Waalwijk,PSV Eindhoven,10219,8640,0,4
+2023-09-02,Heracles,Excelsior,9791,10218,3,1
+2023-09-03,FC Utrecht,Feyenoord,9908,10235,1,5
+2023-09-03,FC Volendam,FC Twente,6601,8611,0,2
+2023-09-03,Fortuna Sittard,Ajax,6422,8593,0,0
+2023-09-03,Vitesse,AZ Alkmaar,8277,10229,0,2
+2023-09-16,Feyenoord,SC Heerenveen,10235,10228,6,1
+2023-09-16,Vitesse,RKC Waalwijk,8277,10219,0,2
+2023-09-16,Fortuna Sittard,FC Volendam,6422,6601,3,1
+2023-09-16,PSV Eindhoven,NEC Nijmegen,8640,8464,4,0
+2023-09-16,Heracles,FC Utrecht,9791,9908,1,3
+2023-09-17,PEC Zwolle,Go Ahead Eagles,6413,6433,1,1
+2023-09-17,Excelsior,Almere City FC,10218,4116,0,0
+2023-09-17,FC Twente,Ajax,8611,8593,3,1
+2023-09-17,AZ Alkmaar,Sparta Rotterdam,10229,8614,2,0
+2023-09-22,Go Ahead Eagles,Fortuna Sittard,6433,6422,3,0
+2023-09-23,FC Volendam,Heracles,6601,9791,2,2
+2023-09-23,NEC Nijmegen,FC Utrecht,8464,9908,3,0
+2023-09-23,Almere City FC,PSV Eindhoven,4116,8640,0,4
+2023-09-23,SC Heerenveen,Excelsior,10228,10218,0,3
+2023-09-24,Sparta Rotterdam,Vitesse,8614,8277,1,0
+2023-09-24,PEC Zwolle,AZ Alkmaar,6413,10229,0,3
+2023-09-24,RKC Waalwijk,FC Twente,10219,8611,1,0
+2023-09-27,Ajax,Feyenoord,8593,10235,0,4
+2023-09-27,PSV Eindhoven,Go Ahead Eagles,8640,6433,3,0
+2023-09-27,FC Twente,Vitesse,8611,8277,1,0
+2023-09-28,AZ Alkmaar,Heracles,10229,9791,1,1
+2023-09-30,Feyenoord,Go Ahead Eagles,10235,6433,3,1
+2023-09-30,FC Utrecht,Almere City FC,9908,4116,0,2
+2023-09-30,PSV Eindhoven,FC Volendam,8640,6601,3,1
+2023-09-30,FC Twente,SC Heerenveen,8611,10228,1,0
+2023-10-01,NEC Nijmegen,Vitesse,8464,8277,1,3
+2023-10-01,Excelsior,Sparta Rotterdam,10218,8614,2,1
+2023-10-01,Heracles,PEC Zwolle,9791,6413,2,1
+2023-10-01,AZ Alkmaar,Fortuna Sittard,10229,6422,4,0
+2023-10-06,FC Volendam,FC Utrecht,6601,9908,1,0
+2023-10-07,SC Heerenveen,NEC Nijmegen,10228,8464,1,1
+2023-10-07,Almere City FC,RKC Waalwijk,4116,10219,1,0
+2023-10-07,Go Ahead Eagles,Heracles,6433,9791,4,0
+2023-10-07,Vitesse,Excelsior,8277,10218,0,0
+2023-10-08,PEC Zwolle,Feyenoord,6413,10235,0,2
+2023-10-08,Ajax,AZ Alkmaar,8593,10229,1,2
+2023-10-08,Fortuna Sittard,FC Twente,6422,8611,0,3
+2023-10-08,Sparta Rotterdam,PSV Eindhoven,8614,8640,0,4
+2023-10-21,PSV Eindhoven,Fortuna Sittard,8640,6422,3,1
+2023-10-21,RKC Waalwijk,FC Volendam,10219,6601,2,1
+2023-10-21,NEC Nijmegen,Almere City FC,8464,4116,1,1
+2023-10-21,AZ Alkmaar,SC Heerenveen,10229,10228,3,0
+2023-10-21,Feyenoord,Vitesse,10235,8277,4,0
+2023-10-22,FC Utrecht,Ajax,9908,8593,4,3
+2023-10-22,Excelsior,PEC Zwolle,10218,6413,2,4
+2023-10-22,Heracles,FC Twente,9791,8611,2,2
+2023-10-22,Go Ahead Eagles,Sparta Rotterdam,6433,8614,0,0
+2023-10-27,Vitesse,PEC Zwolle,8277,6413,1,1
+2023-10-28,SC Heerenveen,Heracles,10228,9791,3,0
+2023-10-28,Almere City FC,Go Ahead Eagles,4116,6433,0,0
+2023-10-28,Sparta Rotterdam,RKC Waalwijk,8614,10219,2,0
+2023-10-28,Fortuna Sittard,FC Utrecht,6422,9908,0,0
+2023-10-29,FC Twente,Feyenoord,8611,10235,2,1
+2023-10-29,FC Volendam,Excelsior,6601,10218,3,1
+2023-10-29,PSV Eindhoven,Ajax,8640,8593,5,2
+2023-11-02,Ajax,FC Volendam,8593,6601,2,0
+2023-11-04,Heracles,PSV Eindhoven,9791,8640,0,6
+2023-11-04,Excelsior,AZ Alkmaar,10218,10229,1,1
+2023-11-04,RKC Waalwijk,Feyenoord,10219,10235,1,2
+2023-11-04,Go Ahead Eagles,Vitesse,6433,8277,5,1
+2023-11-05,FC Utrecht,FC Twente,9908,8611,1,1
+2023-11-05,NEC Nijmegen,FC Volendam,8464,6601,3,3
+2023-11-05,PEC Zwolle,Fortuna Sittard,6413,6422,2,0
+2023-11-05,Ajax,SC Heerenveen,8593,10228,4,1
+2023-11-05,Sparta Rotterdam,Almere City FC,8614,4116,1,2
+2023-11-10,Fortuna Sittard,Heracles,6422,9791,4,1
+2023-11-11,RKC Waalwijk,Go Ahead Eagles,10219,6433,0,1
+2023-11-11,FC Twente,NEC Nijmegen,8611,8464,3,3
+2023-11-11,Vitesse,SC Heerenveen,8277,10228,1,3
+2023-11-12,PSV Eindhoven,PEC Zwolle,8640,6413,4,0
+2023-11-12,Almere City FC,Ajax,4116,8593,2,2
+2023-11-12,FC Volendam,Sparta Rotterdam,6601,8614,1,4
+2023-11-12,Feyenoord,AZ Alkmaar,10235,10229,1,0
+2023-11-12,FC Utrecht,Excelsior,9908,10218,2,2
+2023-11-25,Excelsior,Feyenoord,10218,10235,2,4
+2023-11-25,FC Twente,PSV Eindhoven,8611,8640,0,3
+2023-11-25,SC Heerenveen,Fortuna Sittard,10228,6422,3,0
+2023-11-25,Ajax,Vitesse,8593,8277,5,0
+2023-11-25,PEC Zwolle,RKC Waalwijk,6413,10219,1,2
+2023-11-26,Almere City FC,Heracles,4116,9791,0,5
+2023-11-26,AZ Alkmaar,FC Volendam,10229,6601,3,0
+2023-11-26,NEC Nijmegen,Go Ahead Eagles,8464,6433,1,1
+2023-11-26,Sparta Rotterdam,FC Utrecht,8614,9908,1,2
+2023-12-01,SC Heerenveen,Almere City FC,10228,4116,3,0
+2023-12-02,FC Volendam,PEC Zwolle,6601,6413,0,5
+2023-12-02,Fortuna Sittard,Vitesse,6422,8277,3,1
+2023-12-02,RKC Waalwijk,Excelsior,10219,10218,2,2
+2023-12-02,Heracles,Sparta Rotterdam,9791,8614,0,1
+2023-12-03,Feyenoord,PSV Eindhoven,10235,8640,1,2
+2023-12-03,Go Ahead Eagles,FC Twente,6433,8611,1,3
+2023-12-03,NEC Nijmegen,Ajax,8464,8593,1,2
+2023-12-03,FC Utrecht,AZ Alkmaar,9908,10229,1,1
+2023-12-06,AZ Alkmaar,NEC Nijmegen,10229,8464,1,2
+2023-12-06,RKC Waalwijk,Ajax,10219,8593,2,3
+2023-12-07,PSV Eindhoven,SC Heerenveen,8640,10228,2,0
+2023-12-07,Feyenoord,FC Volendam,10235,6601,3,1
+2023-12-08,FC Twente,Excelsior,8611,10218,4,2
+2023-12-09,Ajax,Sparta Rotterdam,8593,8614,2,1
+2023-12-09,PEC Zwolle,NEC Nijmegen,6413,8464,1,3
+2023-12-09,AZ Alkmaar,Almere City FC,10229,4116,4,1
+2023-12-10,Go Ahead Eagles,FC Utrecht,6433,9908,0,2
+2023-12-10,Fortuna Sittard,RKC Waalwijk,6422,10219,1,0
+2023-12-10,Vitesse,Heracles,8277,9791,2,0
+2023-12-15,NEC Nijmegen,Fortuna Sittard,8464,6422,4,1
+2023-12-16,FC Utrecht,RKC Waalwijk,9908,10219,1,1
+2023-12-16,Excelsior,Go Ahead Eagles,10218,6433,1,1
+2023-12-16,SC Heerenveen,FC Volendam,10228,6601,1,2
+2023-12-17,Almere City FC,Vitesse,4116,8277,5,0
+2023-12-17,Heracles,Feyenoord,9791,10235,0,4
+2023-12-17,Sparta Rotterdam,FC Twente,8614,8611,2,2
+2023-12-17,Ajax,PEC Zwolle,8593,6413,2,2
+2023-12-17,AZ Alkmaar,PSV Eindhoven,10229,8640,0,4
+2024-01-12,RKC Waalwijk,Heracles,10219,9791,1,2
+2024-01-13,Fortuna Sittard,Sparta Rotterdam,6422,8614,0,2
+2024-01-13,FC Twente,AZ Alkmaar,8611,10229,2,1
+2024-01-13,PEC Zwolle,SC Heerenveen,6413,10228,2,2
+2024-01-13,PSV Eindhoven,Excelsior,8640,10218,3,1
+2024-01-14,FC Volendam,Almere City FC,6601,4116,0,1
+2024-01-14,Go Ahead Eagles,Ajax,6433,8593,2,3
+2024-01-14,Vitesse,FC Utrecht,8277,9908,0,0
+2024-01-14,Feyenoord,NEC Nijmegen,10235,8464,2,2
+2024-01-19,Excelsior,SC Heerenveen,10218,10228,3,0
+2024-01-20,NEC Nijmegen,FC Twente,8464,8611,1,0
+2024-01-20,Heracles,FC Volendam,9791,6601,1,1
+2024-01-20,AZ Alkmaar,PEC Zwolle,10229,6413,2,2
+2024-01-21,FC Utrecht,PSV Eindhoven,9908,8640,1,1
+2024-01-21,Sparta Rotterdam,Go Ahead Eagles,8614,6433,0,2
+2024-01-21,Vitesse,Feyenoord,8277,10235,1,2
+2024-01-21,Ajax,RKC Waalwijk,8593,10219,4,1
+2024-01-24,Almere City FC,Fortuna Sittard,4116,6422,0,0
+2024-01-26,PEC Zwolle,Vitesse,6413,8277,1,0
+2024-01-27,PSV Eindhoven,Almere City FC,8640,4116,2,0
+2024-01-27,RKC Waalwijk,Sparta Rotterdam,10219,8614,1,1
+2024-01-27,Excelsior,FC Utrecht,10218,9908,1,1
+2024-01-27,Heracles,Ajax,9791,8593,2,4
+2024-01-28,SC Heerenveen,AZ Alkmaar,10228,10229,2,2
+2024-01-28,Feyenoord,FC Twente,10235,8611,0,0
+2024-01-28,Go Ahead Eagles,NEC Nijmegen,6433,8464,2,2
+2024-01-28,FC Volendam,Fortuna Sittard,6601,6422,0,1
+2024-02-02,Almere City FC,Excelsior,4116,10218,2,1
+2024-02-03,FC Twente,RKC Waalwijk,8611,10219,3,0
+2024-02-03,Fortuna Sittard,SC Heerenveen,6422,10228,3,3
+2024-02-03,Ajax,PSV Eindhoven,8593,8640,1,1
+2024-02-03,NEC Nijmegen,Heracles,8464,9791,3,1
+2024-02-04,Vitesse,Go Ahead Eagles,8277,6433,0,2
+2024-02-04,AZ Alkmaar,Feyenoord,10229,10235,0,1
+2024-02-04,FC Utrecht,FC Volendam,9908,6601,4,2
+2024-02-04,Sparta Rotterdam,PEC Zwolle,8614,6413,0,2
+2024-02-09,RKC Waalwijk,NEC Nijmegen,10219,8464,2,0
+2024-02-10,Excelsior,FC Twente,10218,8611,0,3
+2024-02-10,Almere City FC,AZ Alkmaar,4116,10229,0,0
+2024-02-10,Heracles,Vitesse,9791,8277,3,2
+2024-02-11,Go Ahead Eagles,PEC Zwolle,6433,6413,1,1
+2024-02-11,FC Utrecht,Fortuna Sittard,9908,6422,4,0
+2024-02-11,SC Heerenveen,Ajax,10228,8593,3,2
+2024-02-11,FC Volendam,PSV Eindhoven,6601,8640,1,5
+2024-02-11,Feyenoord,Sparta Rotterdam,10235,8614,2,0
+2024-02-16,PSV Eindhoven,Heracles,8640,9791,2,0
+2024-02-17,Fortuna Sittard,AZ Alkmaar,6422,10229,1,2
+2024-02-17,Sparta Rotterdam,Excelsior,8614,10218,4,2
+2024-02-17,PEC Zwolle,Almere City FC,6413,4116,0,1
+2024-02-17,SC Heerenveen,Go Ahead Eagles,10228,6433,0,2
+2024-02-18,FC Twente,FC Utrecht,8611,9908,0,1
+2024-02-18,Ajax,NEC Nijmegen,8593,8464,2,2
+2024-02-18,Vitesse,FC Volendam,8277,6601,1,1
+2024-02-18,Feyenoord,RKC Waalwijk,10235,10219,1,0
+2024-02-23,FC Utrecht,Heracles,9908,9791,1,0
+2024-02-24,RKC Waalwijk,Fortuna Sittard,10219,6422,0,1
+2024-02-24,PEC Zwolle,PSV Eindhoven,6413,8640,1,7
+2024-02-24,NEC Nijmegen,Sparta Rotterdam,8464,8614,2,0
+2024-02-25,Excelsior,Vitesse,10218,8277,1,2
+2024-02-25,Almere City FC,Feyenoord,4116,10235,0,2
+2024-02-25,FC Twente,Go Ahead Eagles,8611,6433,3,0
+2024-02-25,AZ Alkmaar,Ajax,10229,8593,2,0
+2024-02-25,FC Volendam,SC Heerenveen,6601,10228,0,4
+2024-03-01,FC Volendam,NEC Nijmegen,6601,8464,2,5
+2024-03-02,Go Ahead Eagles,RKC Waalwijk,6433,10219,1,0
+2024-03-02,Vitesse,FC Twente,8277,8611,1,2
+2024-03-02,Sparta Rotterdam,AZ Alkmaar,8614,10229,1,1
+2024-03-03,Ajax,FC Utrecht,8593,9908,2,0
+2024-03-03,PSV Eindhoven,Feyenoord,8640,10235,2,2
+2024-03-03,SC Heerenveen,PEC Zwolle,10228,6413,2,0
+2024-03-03,Fortuna Sittard,Excelsior,6422,10218,5,2
+2024-03-03,Heracles,Almere City FC,9791,4116,2,2
+2024-03-08,Go Ahead Eagles,PSV Eindhoven,6433,8640,0,1
+2024-03-09,FC Twente,Sparta Rotterdam,8611,8614,2,1
+2024-03-09,Almere City FC,FC Utrecht,4116,9908,1,1
+2024-03-09,RKC Waalwijk,Vitesse,10219,8277,3,1
+2024-03-10,AZ Alkmaar,Excelsior,10229,10218,4,0
+2024-03-10,Ajax,Fortuna Sittard,8593,6422,2,2
+2024-03-10,PEC Zwolle,FC Volendam,6413,6601,1,1
+2024-03-10,NEC Nijmegen,SC Heerenveen,8464,10228,2,0
+2024-03-10,Feyenoord,Heracles,10235,9791,3,0
+2024-03-15,Heracles,Go Ahead Eagles,9791,6433,2,0
+2024-03-16,Fortuna Sittard,PEC Zwolle,6422,6413,3,1
+2024-03-16,Excelsior,RKC Waalwijk,10218,10219,1,1
+2024-03-16,Vitesse,Almere City FC,8277,4116,1,1
+2024-03-17,FC Volendam,AZ Alkmaar,6601,10229,0,4
+2024-03-17,FC Utrecht,NEC Nijmegen,9908,8464,1,0
+2024-03-17,SC Heerenveen,Feyenoord,10228,10235,2,3
+2024-03-17,Sparta Rotterdam,Ajax,8614,8593,2,2
+2024-03-17,PSV Eindhoven,FC Twente,8640,8611,1,0
+2024-03-30,NEC Nijmegen,PSV Eindhoven,8464,8640,3,1
+2024-03-30,Sparta Rotterdam,Fortuna Sittard,8614,6422,4,0
+2024-03-30,Go Ahead Eagles,Excelsior,6433,10218,3,0
+2024-03-30,RKC Waalwijk,SC Heerenveen,10219,10228,1,1
+2024-03-30,AZ Alkmaar,Vitesse,10229,8277,2,0
+2024-03-31,PEC Zwolle,Ajax,6413,8593,1,3
+2024-03-31,FC Twente,Heracles,8611,9791,1,0
+2024-03-31,Feyenoord,FC Utrecht,10235,9908,4,2
+2024-03-31,Almere City FC,FC Volendam,4116,6601,1,1
+2024-04-02,Vitesse,Sparta Rotterdam,8277,8614,1,4
+2024-04-02,Excelsior,PSV Eindhoven,10218,8640,0,2
+2024-04-02,Fortuna Sittard,NEC Nijmegen,6422,8464,1,1
+2024-04-03,Heracles,AZ Alkmaar,9791,10229,5,0
+2024-04-03,FC Utrecht,PEC Zwolle,9908,6413,5,1
+2024-04-03,SC Heerenveen,FC Twente,10228,8611,3,3
+2024-04-04,FC Volendam,Feyenoord,6601,10235,0,0
+2024-04-04,RKC Waalwijk,Almere City FC,10219,4116,0,0
+2024-04-04,Ajax,Go Ahead Eagles,8593,6433,1,1
+2024-04-06,Sparta Rotterdam,Heracles,8614,9791,1,2
+2024-04-06,PSV Eindhoven,AZ Alkmaar,8640,10229,5,1
+2024-04-06,PEC Zwolle,Excelsior,6413,10218,2,1
+2024-04-06,FC Twente,Fortuna Sittard,8611,6422,2,0
+2024-04-07,Vitesse,NEC Nijmegen,8277,8464,0,3
+2024-04-07,Feyenoord,Ajax,10235,8593,6,0
+2024-04-07,Go Ahead Eagles,Almere City FC,6433,4116,1,1
+2024-04-07,FC Volendam,RKC Waalwijk,6601,10219,3,2
+2024-04-07,SC Heerenveen,FC Utrecht,10228,9908,2,3
+2024-04-12,Excelsior,FC Volendam,10218,6601,4,0
+2024-04-13,PSV Eindhoven,Vitesse,8640,8277,6,0
+2024-04-13,AZ Alkmaar,RKC Waalwijk,10229,10219,3,2
+2024-04-13,Almere City FC,Sparta Rotterdam,4116,8614,2,3
+2024-04-14,Heracles,SC Heerenveen,9791,10228,0,2
+2024-04-14,FC Utrecht,Go Ahead Eagles,9908,6433,2,1
+2024-04-14,Fortuna Sittard,Feyenoord,6422,10235,0,1
+2024-04-14,Ajax,FC Twente,8593,8611,2,1
+2024-04-14,NEC Nijmegen,PEC Zwolle,8464,6413,2,2
+2024-04-24,FC Twente,Almere City FC,8611,4116,3,1
+2024-04-24,Ajax,Excelsior,8593,10218,2,2
+2024-04-25,SC Heerenveen,PSV Eindhoven,10228,8640,0,8
+2024-04-25,Go Ahead Eagles,Feyenoord,6433,10235,1,3
+2024-04-28,NEC Nijmegen,AZ Alkmaar,8464,10229,0,3
+2024-04-28,PEC Zwolle,Heracles,6413,9791,3,1
+2024-04-28,RKC Waalwijk,FC Utrecht,10219,9908,2,2
+2024-04-28,Sparta Rotterdam,FC Volendam,8614,6601,1,0
+2024-04-28,Vitesse,Fortuna Sittard,8277,6422,3,2
+2024-05-03,Almere City FC,SC Heerenveen,4116,10228,1,1
+2024-05-03,Fortuna Sittard,Go Ahead Eagles,6422,6433,0,0
+2024-05-05,Heracles,RKC Waalwijk,9791,10219,0,5
+2024-05-05,PSV Eindhoven,Sparta Rotterdam,8640,8614,4,2
+2024-05-05,FC Utrecht,Vitesse,9908,8277,1,0
+2024-05-05,FC Volendam,Ajax,6601,8593,1,4
+2024-05-05,AZ Alkmaar,FC Twente,10229,8611,2,1
+2024-05-05,Feyenoord,PEC Zwolle,10235,6413,5,0
+2024-05-06,Excelsior,NEC Nijmegen,10218,8464,0,3
+2024-05-12,Ajax,Almere City FC,8593,4116,3,0
+2024-05-12,Excelsior,Heracles,10218,9791,4,0
+2024-05-12,FC Twente,FC Volendam,8611,6601,7,2
+2024-05-12,FC Utrecht,Sparta Rotterdam,9908,8614,0,1
+2024-05-12,Fortuna Sittard,PSV Eindhoven,6422,8640,1,1
+2024-05-12,Go Ahead Eagles,AZ Alkmaar,6433,10229,0,3
+2024-05-12,NEC Nijmegen,Feyenoord,8464,10235,2,3
+2024-05-12,RKC Waalwijk,PEC Zwolle,10219,6413,1,1
+2024-05-12,SC Heerenveen,Vitesse,10228,8277,1,3
+2024-05-19,Almere City FC,NEC Nijmegen,4116,8464,1,4
+2024-05-19,AZ Alkmaar,FC Utrecht,10229,9908,3,3
+2024-05-19,FC Volendam,Go Ahead Eagles,6601,6433,1,2
+2024-05-19,Feyenoord,Excelsior,10235,10218,4,0
+2024-05-19,Heracles,Fortuna Sittard,9791,6422,0,0
+2024-05-19,PEC Zwolle,FC Twente,6413,8611,1,2
+2024-05-19,PSV Eindhoven,RKC Waalwijk,8640,10219,3,1
+2024-05-19,Sparta Rotterdam,SC Heerenveen,8614,10228,2,1
+2024-05-19,Vitesse,Ajax,8277,8593,2,2

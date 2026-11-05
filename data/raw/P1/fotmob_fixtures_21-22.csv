@@ -1,0 +1,307 @@
+day,home,away,home_id,away_id,hg,ag
+2021-08-06,Sporting CP,Vizela,9768,4531,3,0
+2021-08-07,Arouca,Estoril,158085,7842,0,2
+2021-08-07,Moreirense,Benfica,8348,9772,1,2
+2021-08-07,Marítimo,Braga,10212,10264,0,2
+2021-08-08,Tondela,Santa Clara,188163,1567,3,0
+2021-08-08,Vitória de Guimarães,Portimonense,7844,9765,0,1
+2021-08-08,FC Porto,Cova da Piedade SAD,9773,9807,2,0
+2021-08-08,Paços de Ferreira,Famalicão,6403,1634,2,0
+2021-08-09,Gil Vicente,Boavista,9764,8613,3,0
+2021-08-13,Estoril,Vitória de Guimarães,7842,7844,0,0
+2021-08-14,Vizela,Tondela,4531,188163,2,1
+2021-08-14,Benfica,Arouca,9772,158085,2,0
+2021-08-14,Braga,Sporting CP,10264,9768,1,2
+2021-08-15,Portimonense,Gil Vicente,9765,9764,0,1
+2021-08-15,Famalicão,FC Porto,1634,9773,1,2
+2021-08-15,Santa Clara,Moreirense,1567,8348,2,2
+2021-08-16,Boavista,Paços de Ferreira,8613,6403,3,0
+2021-08-16,Cova da Piedade SAD,Marítimo,9807,10212,1,2
+2021-08-20,Arouca,Famalicão,158085,1634,2,1
+2021-08-20,Moreirense,Braga,8348,10264,2,3
+2021-08-21,Gil Vicente,Benfica,9764,9772,0,2
+2021-08-21,Sporting CP,Cova da Piedade SAD,9768,9807,2,0
+2021-08-22,Tondela,Portimonense,188163,9765,0,3
+2021-08-22,Marítimo,FC Porto,10212,9773,1,1
+2021-08-22,Vitória de Guimarães,Vizela,7844,4531,4,0
+2021-08-23,Paços de Ferreira,Estoril,6403,7842,1,3
+2021-08-23,Boavista,Santa Clara,8613,1567,2,0
+2021-08-27,Cova da Piedade SAD,Moreirense,9807,8348,1,1
+2021-08-27,Estoril,Marítimo,7842,10212,2,1
+2021-08-28,Vizela,Boavista,4531,8613,1,1
+2021-08-28,FC Porto,Arouca,9773,158085,3,0
+2021-08-28,Famalicão,Sporting CP,1634,9768,1,1
+2021-08-29,Benfica,Tondela,9772,188163,2,1
+2021-08-29,Braga,Vitória de Guimarães,10264,7844,0,0
+2021-08-29,Portimonense,Paços de Ferreira,9765,6403,0,1
+2021-08-29,Santa Clara,Gil Vicente,1567,9764,1,0
+2021-09-11,Paços de Ferreira,Braga,6403,10264,0,0
+2021-09-11,Santa Clara,Benfica,1567,9772,0,5
+2021-09-11,Sporting CP,FC Porto,9768,9773,1,1
+2021-09-12,Moreirense,Famalicão,8348,1634,2,2
+2021-09-12,Boavista,Portimonense,8613,9765,1,1
+2021-09-12,Gil Vicente,Vizela,9764,4531,2,2
+2021-09-12,Vitória de Guimarães,Cova da Piedade SAD,7844,9807,0,0
+2021-09-13,Marítimo,Arouca,10212,158085,2,2
+2021-09-13,Tondela,Estoril,188163,7842,1,2
+2021-09-17,Portimonense,Santa Clara,9765,1567,2,1
+2021-09-18,Famalicão,Marítimo,1634,10212,0,0
+2021-09-18,Cova da Piedade SAD,Gil Vicente,9807,9764,1,1
+2021-09-18,Arouca,Vitória de Guimarães,158085,7844,2,2
+2021-09-19,Vizela,Paços de Ferreira,4531,6403,1,1
+2021-09-19,FC Porto,Moreirense,9773,8348,5,0
+2021-09-19,Estoril,Sporting CP,7842,9768,0,1
+2021-09-20,Benfica,Boavista,9772,8613,3,1
+2021-09-20,Braga,Tondela,10264,188163,3,1
+2021-09-24,Sporting CP,Marítimo,9768,10212,1,0
+2021-09-24,Gil Vicente,FC Porto,9764,9773,1,2
+2021-09-25,Moreirense,Arouca,8348,158085,2,1
+2021-09-25,Vitória de Guimarães,Benfica,7844,9772,1,3
+2021-09-25,Tondela,Famalicão,188163,1634,3,2
+2021-09-26,Santa Clara,Braga,1567,10264,1,1
+2021-09-26,Portimonense,Vizela,9765,4531,0,0
+2021-09-27,Paços de Ferreira,Cova da Piedade SAD,6403,9807,2,2
+2021-09-27,Boavista,Estoril,8613,7842,1,1
+2021-10-01,Marítimo,Moreirense,10212,8348,0,0
+2021-10-01,Famalicão,Vitória de Guimarães,1634,7844,1,2
+2021-10-02,Vizela,Santa Clara,4531,1567,1,1
+2021-10-02,FC Porto,Paços de Ferreira,9773,6403,2,1
+2021-10-02,Arouca,Sporting CP,158085,9768,1,2
+2021-10-03,Cova da Piedade SAD,Tondela,9807,188163,0,2
+2021-10-03,Benfica,Portimonense,9772,9765,0,1
+2021-10-03,Estoril,Gil Vicente,7842,9764,2,2
+2021-10-03,Braga,Boavista,10264,8613,2,2
+2021-10-22,Vitória de Guimarães,Marítimo,7844,10212,2,1
+2021-10-23,Santa Clara,Famalicão,1567,1634,0,2
+2021-10-23,Tondela,FC Porto,188163,9773,1,3
+2021-10-23,Sporting CP,Moreirense,9768,8348,1,0
+2021-10-24,Paços de Ferreira,Arouca,6403,158085,0,0
+2021-10-24,Vizela,Benfica,4531,9772,0,1
+2021-10-24,Portimonense,Estoril,9765,7842,0,2
+2021-10-25,Gil Vicente,Braga,9764,10264,0,1
+2021-10-25,Boavista,Cova da Piedade SAD,8613,9807,0,0
+2021-10-29,Arouca,Tondela,158085,188163,2,0
+2021-10-30,FC Porto,Boavista,9773,8613,4,1
+2021-10-30,Estoril,Benfica,7842,9772,1,1
+2021-10-30,Sporting CP,Vitória de Guimarães,9768,7844,1,0
+2021-10-31,Marítimo,Gil Vicente,10212,9764,1,2
+2021-10-31,Cova da Piedade SAD,Santa Clara,9807,1567,2,1
+2021-10-31,Famalicão,Vizela,1634,4531,1,1
+2021-11-01,Braga,Portimonense,10264,9765,3,0
+2021-11-01,Moreirense,Paços de Ferreira,8348,6403,1,1
+2021-11-05,Gil Vicente,Arouca,9764,158085,1,1
+2021-11-05,Boavista,Famalicão,8613,1634,2,5
+2021-11-06,Vizela,Estoril,4531,7842,1,1
+2021-11-06,Portimonense,Cova da Piedade SAD,9765,9807,2,0
+2021-11-06,Vitória de Guimarães,Moreirense,7844,8348,2,1
+2021-11-07,Tondela,Marítimo,188163,10212,4,2
+2021-11-07,Santa Clara,FC Porto,1567,9773,0,3
+2021-11-07,Paços de Ferreira,Sporting CP,6403,9768,0,2
+2021-11-07,Benfica,Braga,9772,10264,6,1
+2021-11-26,Moreirense,Gil Vicente,8348,9764,2,2
+2021-11-27,Famalicão,Portimonense,1634,9765,0,3
+2021-11-27,Arouca,Boavista,158085,8613,2,1
+2021-11-27,Cova da Piedade SAD,Benfica,9807,9772,0,7
+2021-11-28,Marítimo,Paços de Ferreira,10212,6403,2,0
+2021-11-28,Sporting CP,Tondela,9768,188163,2,0
+2021-11-28,FC Porto,Vitória de Guimarães,9773,7844,2,1
+2021-11-29,Estoril,Santa Clara,7842,1567,2,2
+2021-11-30,Braga,Vizela,10264,4531,4,1
+2021-12-03,Portimonense,FC Porto,9765,9773,0,3
+2021-12-03,Benfica,Sporting CP,9772,9768,1,3
+2021-12-04,Boavista,Marítimo,8613,10212,1,1
+2021-12-04,Paços de Ferreira,Vitória de Guimarães,6403,7844,1,2
+2021-12-05,Santa Clara,Arouca,1567,158085,2,1
+2021-12-05,Gil Vicente,Famalicão,9764,1634,4,0
+2021-12-05,Braga,Estoril,10264,7842,2,0
+2021-12-10,Paços de Ferreira,Gil Vicente,6403,9764,0,1
+2021-12-11,Marítimo,Santa Clara,10212,1567,4,1
+2021-12-11,Vitória de Guimarães,Tondela,7844,188163,5,2
+2021-12-11,Sporting CP,Boavista,9768,8613,2,0
+2021-12-12,Cova da Piedade SAD,Estoril,9807,7842,0,1
+2021-12-12,Moreirense,Portimonense,8348,9765,0,1
+2021-12-12,Famalicão,Benfica,1634,9772,1,4
+2021-12-12,FC Porto,Braga,9773,10264,1,0
+2021-12-13,Arouca,Vizela,158085,4531,1,4
+2021-12-17,Santa Clara,Vitória de Guimarães,1567,7844,1,0
+2021-12-17,Estoril,Famalicão,7842,1634,2,2
+2021-12-18,Portimonense,Arouca,9765,158085,1,1
+2021-12-18,Tondela,Paços de Ferreira,188163,6403,0,1
+2021-12-18,Gil Vicente,Sporting CP,9764,9768,0,3
+2021-12-19,Benfica,Marítimo,9772,10212,7,1
+2021-12-19,Boavista,Moreirense,8613,8348,1,0
+2021-12-19,Vizela,FC Porto,4531,9773,0,4
+2021-12-19,Braga,Cova da Piedade SAD,10264,9807,1,0
+2021-12-28,Tondela,Gil Vicente,188163,9764,0,3
+2021-12-28,Marítimo,Vizela,10212,4531,2,0
+2021-12-28,Moreirense,Estoril,8348,7842,1,0
+2021-12-29,Vitória de Guimarães,Boavista,7844,8613,1,1
+2021-12-29,Sporting CP,Portimonense,9768,9765,3,2
+2021-12-30,Paços de Ferreira,Santa Clara,6403,1567,2,1
+2021-12-30,Arouca,Braga,158085,10264,0,6
+2021-12-30,FC Porto,Benfica,9773,9772,3,1
+2022-01-02,Vizela,Cova da Piedade SAD,4531,9807,2,0
+2022-01-03,Tondela,Moreirense,188163,8348,2,1
+2022-01-07,Santa Clara,Sporting CP,1567,9768,3,2
+2022-01-08,Vizela,Moreirense,4531,8348,0,1
+2022-01-08,Estoril,FC Porto,7842,9773,2,3
+2022-01-08,Boavista,Tondela,8613,188163,1,1
+2022-01-09,Portimonense,Marítimo,9765,10212,1,2
+2022-01-09,Benfica,Paços de Ferreira,9772,6403,2,0
+2022-01-09,Braga,Famalicão,10264,1634,2,2
+2022-01-09,Cova da Piedade SAD,Arouca,9807,158085,2,1
+2022-01-10,Gil Vicente,Vitória de Guimarães,9764,7844,3,2
+2022-01-13,Famalicão,Cova da Piedade SAD,1634,9807,1,0
+2022-01-15,Boavista,Gil Vicente,8613,9764,1,1
+2022-01-15,Benfica,Moreirense,9772,8348,1,1
+2022-01-15,Braga,Marítimo,10264,10212,0,1
+2022-01-16,Santa Clara,Tondela,1567,188163,2,2
+2022-01-16,Vizela,Sporting CP,4531,9768,0,2
+2022-01-16,Famalicão,Paços de Ferreira,1634,6403,0,0
+2022-01-16,Cova da Piedade SAD,FC Porto,9807,9773,1,4
+2022-01-17,Portimonense,Vitória de Guimarães,9765,7844,1,1
+2022-01-21,Arouca,Benfica,158085,9772,0,2
+2022-01-21,Paços de Ferreira,Boavista,6403,8613,1,1
+2022-01-22,Moreirense,Santa Clara,8348,1567,0,2
+2022-01-22,Tondela,Vizela,188163,4531,2,3
+2022-01-22,Sporting CP,Braga,9768,10264,1,2
+2022-01-23,Marítimo,Cova da Piedade SAD,10212,9807,1,1
+2022-01-23,Vitória de Guimarães,Estoril,7844,7842,3,1
+2022-01-23,Gil Vicente,Portimonense,9764,9765,1,0
+2022-01-23,FC Porto,Famalicão,9773,1634,3,1
+2022-01-27,Estoril,Arouca,7842,158085,1,2
+2022-01-30,Portimonense,Tondela,9765,188163,1,2
+2022-01-30,Vizela,Vitória de Guimarães,4531,7844,3,2
+2022-01-30,Braga,Moreirense,10264,8348,2,0
+2022-01-30,FC Porto,Marítimo,9773,10212,2,1
+2022-01-31,Estoril,Paços de Ferreira,7842,6403,0,0
+2022-01-31,Famalicão,Arouca,1634,158085,0,0
+2022-02-01,Santa Clara,Boavista,1567,8613,2,1
+2022-02-02,Benfica,Gil Vicente,9772,9764,1,2
+2022-02-02,Cova da Piedade SAD,Sporting CP,9807,9768,1,4
+2022-02-05,Marítimo,Estoril,10212,7842,0,0
+2022-02-05,Paços de Ferreira,Portimonense,6403,9765,1,1
+2022-02-05,Vitória de Guimarães,Braga,7844,10264,2,1
+2022-02-06,Boavista,Vizela,8613,4531,2,2
+2022-02-06,Gil Vicente,Santa Clara,9764,1567,2,2
+2022-02-06,Arouca,FC Porto,158085,9773,0,2
+2022-02-06,Sporting CP,Famalicão,9768,1634,2,0
+2022-02-07,Tondela,Benfica,188163,9772,1,3
+2022-02-07,Moreirense,Cova da Piedade SAD,8348,9807,4,1
+2022-02-11,FC Porto,Sporting CP,9773,9768,2,2
+2022-02-12,Braga,Paços de Ferreira,10264,6403,2,1
+2022-02-12,Benfica,Santa Clara,9772,1567,2,1
+2022-02-12,Portimonense,Boavista,9765,8613,1,1
+2022-02-12,Estoril,Tondela,7842,188163,1,0
+2022-02-13,Famalicão,Moreirense,1634,8348,5,0
+2022-02-13,Cova da Piedade SAD,Vitória de Guimarães,9807,7844,1,0
+2022-02-13,Vizela,Gil Vicente,4531,9764,0,1
+2022-02-14,Arouca,Marítimo,158085,10212,0,3
+2022-02-18,Boavista,Benfica,8613,9772,2,2
+2022-02-19,Gil Vicente,Cova da Piedade SAD,9764,9807,2,0
+2022-02-19,Paços de Ferreira,Vizela,6403,4531,2,1
+2022-02-19,Vitória de Guimarães,Arouca,7844,158085,1,3
+2022-02-20,Marítimo,Famalicão,10212,1634,0,1
+2022-02-20,Sporting CP,Estoril,9768,7842,3,0
+2022-02-20,Moreirense,FC Porto,8348,9773,0,1
+2022-02-20,Tondela,Braga,188163,10264,0,1
+2022-02-21,Santa Clara,Portimonense,1567,9765,1,1
+2022-02-25,Cova da Piedade SAD,Paços de Ferreira,9807,6403,0,2
+2022-02-26,Famalicão,Tondela,1634,188163,2,1
+2022-02-26,Marítimo,Sporting CP,10212,9768,1,1
+2022-02-26,Arouca,Moreirense,158085,8348,1,1
+2022-02-27,Vizela,Portimonense,4531,9765,1,1
+2022-02-27,Benfica,Vitória de Guimarães,9772,7844,3,0
+2022-02-27,Estoril,Boavista,7842,8613,2,3
+2022-02-27,FC Porto,Gil Vicente,9773,9764,1,1
+2022-02-28,Braga,Santa Clara,10264,1567,0,0
+2022-03-04,Gil Vicente,Estoril,9764,7842,0,0
+2022-03-05,Boavista,Braga,8613,10264,1,1
+2022-03-05,Portimonense,Benfica,9765,9772,1,2
+2022-03-05,Sporting CP,Arouca,9768,158085,2,0
+2022-03-06,Moreirense,Marítimo,8348,10212,0,1
+2022-03-06,Paços de Ferreira,FC Porto,6403,9773,2,4
+2022-03-06,Santa Clara,Vizela,1567,4531,3,1
+2022-03-06,Vitória de Guimarães,Famalicão,7844,1634,2,1
+2022-03-07,Tondela,Cova da Piedade SAD,188163,9807,1,1
+2022-03-11,Benfica,Vizela,9772,4531,1,1
+2022-03-12,Estoril,Portimonense,7842,9765,2,0
+2022-03-12,Famalicão,Santa Clara,1634,1567,0,0
+2022-03-12,Arouca,Paços de Ferreira,158085,6403,0,1
+2022-03-12,Cova da Piedade SAD,Boavista,9807,8613,0,0
+2022-03-13,Marítimo,Vitória de Guimarães,10212,7844,0,1
+2022-03-13,FC Porto,Tondela,9773,188163,4,0
+2022-03-13,Braga,Gil Vicente,10264,9764,0,1
+2022-03-14,Moreirense,Sporting CP,8348,9768,0,2
+2022-03-18,Vizela,Famalicão,4531,1634,1,1
+2022-03-19,Tondela,Arouca,188163,158085,2,2
+2022-03-19,Santa Clara,Cova da Piedade SAD,1567,9807,0,0
+2022-03-19,Vitória de Guimarães,Sporting CP,7844,9768,1,3
+2022-03-20,Gil Vicente,Marítimo,9764,10212,1,1
+2022-03-20,Paços de Ferreira,Moreirense,6403,8348,2,1
+2022-03-20,Benfica,Estoril,9772,7842,2,1
+2022-03-20,Portimonense,Braga,9765,10264,1,2
+2022-03-20,Boavista,FC Porto,8613,9773,0,1
+2022-04-01,Braga,Benfica,10264,9772,3,2
+2022-04-02,Cova da Piedade SAD,Portimonense,9807,9765,2,0
+2022-04-02,Arouca,Gil Vicente,158085,9764,2,1
+2022-04-02,Estoril,Vizela,7842,4531,1,2
+2022-04-02,Famalicão,Boavista,1634,8613,1,2
+2022-04-03,Marítimo,Tondela,10212,188163,1,3
+2022-04-03,Moreirense,Vitória de Guimarães,8348,7844,0,1
+2022-04-03,Sporting CP,Paços de Ferreira,9768,6403,2,0
+2022-04-04,FC Porto,Santa Clara,9773,1567,3,0
+2022-04-08,Gil Vicente,Moreirense,9764,8348,1,2
+2022-04-09,Paços de Ferreira,Marítimo,6403,10212,2,0
+2022-04-09,Benfica,Cova da Piedade SAD,9772,9807,3,1
+2022-04-09,Boavista,Arouca,8613,158085,1,0
+2022-04-09,Tondela,Sporting CP,188163,9768,1,3
+2022-04-10,Portimonense,Famalicão,9765,1634,1,0
+2022-04-10,Santa Clara,Estoril,1567,7842,2,0
+2022-04-10,Vitória de Guimarães,FC Porto,7844,9773,0,1
+2022-04-10,Vizela,Braga,4531,10264,0,1
+2022-04-15,Arouca,Santa Clara,158085,1567,1,1
+2022-04-15,Famalicão,Gil Vicente,1634,9764,2,2
+2022-04-15,Vitória de Guimarães,Paços de Ferreira,7844,6403,4,0
+2022-04-16,Moreirense,Tondela,8348,188163,2,0
+2022-04-16,Cova da Piedade SAD,Vizela,9807,4531,1,0
+2022-04-16,Marítimo,Boavista,10212,8613,4,0
+2022-04-16,FC Porto,Portimonense,9773,9765,7,0
+2022-04-17,Sporting CP,Benfica,9768,9772,0,2
+2022-04-18,Estoril,Braga,7842,10264,0,0
+2022-04-22,Vizela,Arouca,4531,158085,2,1
+2022-04-23,Portimonense,Moreirense,9765,8348,1,0
+2022-04-23,Benfica,Famalicão,9772,1634,0,0
+2022-04-23,Santa Clara,Marítimo,1567,10212,2,2
+2022-04-23,Gil Vicente,Paços de Ferreira,9764,6403,1,1
+2022-04-24,Estoril,Cova da Piedade SAD,7842,9807,2,2
+2022-04-24,Tondela,Vitória de Guimarães,188163,7844,1,1
+2022-04-25,Braga,FC Porto,10264,9773,1,0
+2022-04-25,Boavista,Sporting CP,8613,9768,0,3
+2022-04-29,Famalicão,Estoril,1634,7842,3,1
+2022-04-30,Arouca,Portimonense,158085,9765,1,0
+2022-04-30,Marítimo,Benfica,10212,9772,0,1
+2022-04-30,FC Porto,Vizela,9773,4531,4,2
+2022-04-30,Cova da Piedade SAD,Braga,9807,10264,0,1
+2022-05-01,Vitória de Guimarães,Santa Clara,7844,1567,1,1
+2022-05-01,Moreirense,Boavista,8348,8613,1,2
+2022-05-01,Sporting CP,Gil Vicente,9768,9764,4,1
+2022-05-02,Paços de Ferreira,Tondela,6403,188163,1,1
+2022-05-06,Boavista,Vitória de Guimarães,8613,7844,1,1
+2022-05-07,Estoril,Moreirense,7842,8348,1,0
+2022-05-07,Benfica,FC Porto,9772,9773,0,1
+2022-05-07,Portimonense,Sporting CP,9765,9768,2,3
+2022-05-08,Gil Vicente,Tondela,9764,188163,3,0
+2022-05-08,Vizela,Marítimo,4531,10212,1,1
+2022-05-08,Braga,Arouca,10264,158085,1,0
+2022-05-08,Santa Clara,Paços de Ferreira,1567,6403,2,0
+2022-05-09,Cova da Piedade SAD,Famalicão,9807,1634,2,3
+2022-05-13,Paços de Ferreira,Benfica,6403,9772,0,2
+2022-05-14,Arouca,Cova da Piedade SAD,158085,9807,0,0
+2022-05-14,Moreirense,Vizela,8348,4531,4,1
+2022-05-14,Tondela,Boavista,188163,8613,2,2
+2022-05-14,FC Porto,Estoril,9773,7842,2,0
+2022-05-14,Marítimo,Portimonense,10212,9765,0,1
+2022-05-14,Sporting CP,Santa Clara,9768,1567,4,0
+2022-05-15,Famalicão,Braga,1634,10264,3,2
+2022-05-15,Vitória de Guimarães,Gil Vicente,7844,9764,5,0

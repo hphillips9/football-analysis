@@ -1,0 +1,307 @@
+day,home,away,home_id,away_id,hg,ag
+2025-08-08,Casa Pia AC,Sporting CP,212821,9768,0,2
+2025-08-09,Nacional,Gil Vicente,10214,9764,0,2
+2025-08-09,Arouca,AVS Futebol SAD,158085,1889,3,1
+2025-08-10,Famalicão,Santa Clara,1634,1567,3,0
+2025-08-10,Braga,Tondela,10264,188163,3,0
+2025-08-10,Moreirense,Alverca,8348,9780,2,1
+2025-08-11,Estoril,Estrela da Amadora,7842,1074320,1,1
+2025-08-11,FC Porto,Vitória de Guimarães,9773,7844,3,0
+2025-08-15,AVS Futebol SAD,Casa Pia AC,1889,212821,0,2
+2025-08-16,Tondela,Famalicão,188163,1634,0,1
+2025-08-16,Vitória de Guimarães,Estoril,7844,7842,3,2
+2025-08-16,Estrela da Amadora,Benfica,1074320,9772,0,1
+2025-08-17,Rio Ave,Nacional,7841,10214,1,1
+2025-08-17,Alverca,Braga,9780,10264,0,3
+2025-08-17,Santa Clara,Moreirense,1567,8348,0,1
+2025-08-17,Sporting CP,Arouca,9768,158085,6,0
+2025-08-18,Gil Vicente,FC Porto,9764,9773,0,2
+2025-08-23,Moreirense,Vitória de Guimarães,8348,7844,2,0
+2025-08-23,Nacional,Sporting CP,10214,9768,1,4
+2025-08-23,Arouca,Rio Ave,158085,7841,3,3
+2025-08-23,Benfica,Tondela,9772,188163,3,0
+2025-08-24,Famalicão,Gil Vicente,1634,9764,0,0
+2025-08-24,FC Porto,Casa Pia AC,9773,212821,4,0
+2025-08-24,Braga,AVS Futebol SAD,10264,1889,2,2
+2025-08-25,Estrela da Amadora,Alverca,1074320,9780,2,2
+2025-08-29,Gil Vicente,Moreirense,9764,8348,2,0
+2025-08-30,Casa Pia AC,Nacional,212821,10214,0,2
+2025-08-30,AVS Futebol SAD,Famalicão,1889,1634,0,1
+2025-08-30,Vitória de Guimarães,Arouca,7844,158085,1,1
+2025-08-30,Sporting CP,FC Porto,9768,9773,1,2
+2025-08-31,Tondela,Estoril,188163,7842,2,2
+2025-08-31,Alverca,Benfica,9780,9772,1,2
+2025-08-31,Rio Ave,Braga,7841,10264,2,2
+2025-08-31,Santa Clara,Estrela da Amadora,1567,1074320,0,0
+2025-09-06,Estoril,Santa Clara,7842,1567,0,1
+2025-09-12,Alverca,Tondela,9780,188163,1,0
+2025-09-12,Benfica,Santa Clara,9772,1567,1,1
+2025-09-13,Estoril,AVS Futebol SAD,7842,1889,3,1
+2025-09-13,Moreirense,Rio Ave,8348,7841,3,1
+2025-09-13,FC Porto,Nacional,9773,10214,1,0
+2025-09-13,Famalicão,Sporting CP,1634,9768,1,2
+2025-09-14,Estrela da Amadora,Vitória de Guimarães,1074320,7844,0,2
+2025-09-14,Arouca,Casa Pia AC,158085,212821,0,2
+2025-09-14,Braga,Gil Vicente,10264,9764,0,1
+2025-09-19,Rio Ave,FC Porto,7841,9773,0,3
+2025-09-20,Nacional,Arouca,10214,158085,1,2
+2025-09-20,Santa Clara,Alverca,1567,9780,2,1
+2025-09-20,AVS Futebol SAD,Benfica,1889,9772,0,3
+2025-09-20,Vitória de Guimarães,Braga,7844,10264,1,1
+2025-09-21,Tondela,Estrela da Amadora,188163,1074320,0,0
+2025-09-21,Gil Vicente,Estoril,9764,7842,2,0
+2025-09-21,Casa Pia AC,Famalicão,212821,1634,1,1
+2025-09-22,Sporting CP,Moreirense,9768,8348,3,0
+2025-09-23,Benfica,Rio Ave,9772,7841,1,1
+2025-09-26,Benfica,Gil Vicente,9772,9764,2,1
+2025-09-27,Moreirense,Casa Pia AC,8348,212821,2,1
+2025-09-27,Santa Clara,Tondela,1567,188163,1,2
+2025-09-27,Estrela da Amadora,AVS Futebol SAD,1074320,1889,3,0
+2025-09-27,Estoril,Sporting CP,7842,9768,0,1
+2025-09-28,Alverca,Vitória de Guimarães,9780,7844,2,0
+2025-09-28,Braga,Nacional,10264,10214,0,1
+2025-09-28,Famalicão,Rio Ave,1634,7841,0,0
+2025-09-29,Arouca,FC Porto,158085,9773,0,4
+2025-10-03,Casa Pia AC,Estoril,212821,7842,2,2
+2025-10-04,Gil Vicente,Estrela da Amadora,9764,1074320,2,0
+2025-10-04,Nacional,Moreirense,10214,8348,3,2
+2025-10-04,AVS Futebol SAD,Alverca,1889,9780,1,3
+2025-10-04,Vitória de Guimarães,Santa Clara,7844,1567,2,1
+2025-10-05,Arouca,Famalicão,158085,1634,1,1
+2025-10-05,Rio Ave,Tondela,7841,188163,3,0
+2025-10-05,Sporting CP,Braga,9768,10264,1,1
+2025-10-05,FC Porto,Benfica,9773,9772,0,0
+2025-10-24,Alverca,Gil Vicente,9780,9764,0,4
+2025-10-25,Santa Clara,AVS Futebol SAD,1567,1889,2,0
+2025-10-25,Benfica,Arouca,9772,158085,5,0
+2025-10-25,Estrela da Amadora,Rio Ave,1074320,7841,1,2
+2025-10-26,Estoril,Nacional,7842,10214,1,1
+2025-10-26,Famalicão,Vitória de Guimarães,1634,7844,2,0
+2025-10-26,Tondela,Sporting CP,188163,9768,0,3
+2025-10-26,Braga,Casa Pia AC,10264,212821,4,0
+2025-10-27,Moreirense,FC Porto,8348,9773,1,2
+2025-10-31,Sporting CP,Alverca,9768,9780,2,0
+2025-11-01,Nacional,Famalicão,10214,1634,0,1
+2025-11-01,Casa Pia AC,Estrela da Amadora,212821,1074320,3,5
+2025-11-01,Rio Ave,Estoril,7841,7842,0,4
+2025-11-01,Vitória de Guimarães,Benfica,7844,9772,0,3
+2025-11-02,AVS Futebol SAD,Tondela,1889,188163,2,2
+2025-11-02,Arouca,Moreirense,158085,8348,0,2
+2025-11-02,FC Porto,Braga,9773,10264,2,1
+2025-11-03,Gil Vicente,Santa Clara,9764,1567,1,0
+2025-11-07,Estoril,Arouca,7842,158085,4,3
+2025-11-08,Alverca,Rio Ave,9780,7841,1,1
+2025-11-08,Tondela,Vitória de Guimarães,188163,7844,0,1
+2025-11-08,Santa Clara,Sporting CP,1567,9768,1,2
+2025-11-09,AVS Futebol SAD,Gil Vicente,1889,9764,1,1
+2025-11-09,Estrela da Amadora,Nacional,1074320,10214,1,1
+2025-11-09,Famalicão,FC Porto,1634,9773,0,1
+2025-11-09,Benfica,Casa Pia AC,9772,212821,2,2
+2025-11-09,Braga,Moreirense,10264,8348,2,1
+2025-11-28,Vitória de Guimarães,AVS Futebol SAD,7844,1889,4,0
+2025-11-29,Casa Pia AC,Alverca,212821,9780,0,2
+2025-11-29,Moreirense,Famalicão,8348,1634,2,2
+2025-11-29,Nacional,Benfica,10214,9772,1,2
+2025-11-29,Gil Vicente,Tondela,9764,188163,0,1
+2025-11-30,Rio Ave,Santa Clara,7841,1567,1,1
+2025-11-30,Sporting CP,Estrela da Amadora,9768,1074320,4,0
+2025-11-30,FC Porto,Estoril,9773,7842,1,0
+2025-12-01,Arouca,Braga,158085,10264,0,4
+2025-12-05,Benfica,Sporting CP,9772,9768,1,1
+2025-12-06,Santa Clara,Casa Pia AC,1567,212821,1,0
+2025-12-06,AVS Futebol SAD,Rio Ave,1889,7841,1,2
+2025-12-06,Famalicão,Braga,1634,10264,1,2
+2025-12-07,Estoril,Moreirense,7842,8348,3,3
+2025-12-07,Alverca,Nacional,9780,10214,1,0
+2025-12-07,Estrela da Amadora,Arouca,1074320,158085,3,1
+2025-12-07,Tondela,FC Porto,188163,9773,0,2
+2025-12-08,Vitória de Guimarães,Gil Vicente,7844,9764,0,0
+2025-12-13,Casa Pia AC,Gil Vicente,212821,9764,1,1
+2025-12-13,Rio Ave,Vitória de Guimarães,7841,7844,0,1
+2025-12-13,Sporting CP,AVS Futebol SAD,9768,1889,6,0
+2025-12-14,Famalicão,Estoril,1634,7842,4,0
+2025-12-14,Moreirense,Benfica,8348,9772,0,4
+2025-12-14,Arouca,Alverca,158085,9780,1,0
+2025-12-15,Nacional,Tondela,10214,188163,3,1
+2025-12-15,Braga,Santa Clara,10264,1567,1,0
+2025-12-15,FC Porto,Estrela da Amadora,9773,1074320,3,1
+2025-12-19,Estoril,Braga,7842,10264,1,0
+2025-12-20,Gil Vicente,Rio Ave,9764,7841,2,2
+2025-12-20,Estrela da Amadora,Moreirense,1074320,8348,0,0
+2025-12-21,AVS Futebol SAD,Nacional,1889,10214,2,2
+2025-12-21,Tondela,Casa Pia AC,188163,212821,1,2
+2025-12-21,Santa Clara,Arouca,1567,158085,0,0
+2025-12-22,Alverca,FC Porto,9780,9773,0,3
+2025-12-22,Benfica,Famalicão,9772,1634,1,0
+2025-12-23,Vitória de Guimarães,Sporting CP,7844,9768,1,4
+2025-12-27,Famalicão,Estrela da Amadora,1634,1074320,2,3
+2025-12-27,Estoril,Alverca,7842,9780,4,1
+2025-12-28,Arouca,Gil Vicente,158085,9764,2,2
+2025-12-28,Casa Pia AC,Vitória de Guimarães,212821,7844,0,0
+2025-12-28,Braga,Benfica,10264,9772,2,2
+2025-12-28,Sporting CP,Rio Ave,9768,7841,4,0
+2025-12-29,FC Porto,AVS Futebol SAD,9773,1889,2,0
+2026-01-02,Gil Vicente,Sporting CP,9764,9768,1,1
+2026-01-02,Vitória de Guimarães,Nacional,7844,10214,2,1
+2026-01-03,Tondela,Arouca,188163,158085,3,1
+2026-01-03,Benfica,Estoril,9772,7842,3,1
+2026-01-03,Estrela da Amadora,Braga,1074320,10264,3,3
+2026-01-03,AVS Futebol SAD,Moreirense,1889,8348,0,2
+2026-01-04,Rio Ave,Casa Pia AC,7841,212821,3,1
+2026-01-04,Santa Clara,FC Porto,1567,9773,0,1
+2026-01-04,Alverca,Famalicão,9780,1634,1,0
+2026-01-11,Nacional,Santa Clara,10214,1567,3,3
+2026-01-11,Moreirense,Tondela,8348,188163,1,0
+2026-01-16,Sporting CP,Casa Pia AC,9768,212821,3,0
+2026-01-17,Gil Vicente,Nacional,9764,10214,2,1
+2026-01-17,Alverca,Moreirense,9780,8348,2,1
+2026-01-17,AVS Futebol SAD,Arouca,1889,158085,0,1
+2026-01-17,Rio Ave,Benfica,7841,9772,0,2
+2026-01-18,Santa Clara,Famalicão,1567,1634,0,1
+2026-01-18,Tondela,Braga,188163,10264,0,1
+2026-01-18,Vitória de Guimarães,FC Porto,7844,9773,0,1
+2026-01-19,Estrela da Amadora,Estoril,1074320,7842,0,5
+2026-01-23,Casa Pia AC,AVS Futebol SAD,212821,1889,3,3
+2026-01-24,Moreirense,Santa Clara,8348,1567,1,0
+2026-01-24,Arouca,Sporting CP,158085,9768,1,2
+2026-01-24,Estoril,Vitória de Guimarães,7842,7844,4,2
+2026-01-25,Nacional,Rio Ave,10214,7841,4,0
+2026-01-25,Benfica,Estrela da Amadora,9772,1074320,4,0
+2026-01-25,Famalicão,Tondela,1634,188163,3,0
+2026-01-25,Braga,Alverca,10264,9780,5,0
+2026-01-26,FC Porto,Gil Vicente,9773,9764,3,0
+2026-01-30,Vitória de Guimarães,Moreirense,7844,8348,1,0
+2026-01-31,Santa Clara,Estoril,1567,7842,2,4
+2026-01-31,Rio Ave,Arouca,7841,158085,0,3
+2026-01-31,Alverca,Estrela da Amadora,9780,1074320,1,1
+2026-02-01,Gil Vicente,Famalicão,9764,1634,5,0
+2026-02-01,Sporting CP,Nacional,9768,10214,2,1
+2026-02-01,Tondela,Benfica,188163,9772,0,0
+2026-02-02,AVS Futebol SAD,Braga,1889,10264,0,4
+2026-02-02,Casa Pia AC,FC Porto,212821,9773,2,1
+2026-02-07,Estrela da Amadora,Santa Clara,1074320,1567,1,0
+2026-02-07,Moreirense,Gil Vicente,8348,9764,1,2
+2026-02-07,Estoril,Tondela,7842,188163,2,2
+2026-02-07,Arouca,Vitória de Guimarães,158085,7844,3,2
+2026-02-08,Nacional,Casa Pia AC,10214,212821,0,0
+2026-02-08,Braga,Rio Ave,10264,7841,3,0
+2026-02-08,Benfica,Alverca,9772,9780,2,1
+2026-02-09,Famalicão,AVS Futebol SAD,1634,1889,3,1
+2026-02-09,FC Porto,Sporting CP,9773,9768,1,1
+2026-02-13,Santa Clara,Benfica,1567,9772,1,2
+2026-02-13,Tondela,Alverca,188163,9780,1,1
+2026-02-14,Casa Pia AC,Arouca,212821,158085,3,2
+2026-02-14,Vitória de Guimarães,Estrela da Amadora,7844,1074320,2,1
+2026-02-14,Gil Vicente,Braga,9764,10264,2,1
+2026-02-15,Nacional,FC Porto,10214,9773,0,1
+2026-02-15,AVS Futebol SAD,Estoril,1889,7842,3,0
+2026-02-15,Sporting CP,Famalicão,9768,1634,1,0
+2026-02-16,Rio Ave,Moreirense,7841,8348,1,2
+2026-02-20,Estrela da Amadora,Tondela,1074320,188163,0,2
+2026-02-21,Alverca,Santa Clara,9780,1567,1,1
+2026-02-21,Arouca,Nacional,158085,10214,3,0
+2026-02-21,Benfica,AVS Futebol SAD,9772,1889,3,0
+2026-02-21,Moreirense,Sporting CP,8348,9768,0,3
+2026-02-21,Braga,Vitória de Guimarães,10264,7844,3,2
+2026-02-22,Estoril,Gil Vicente,7842,9764,3,1
+2026-02-22,FC Porto,Rio Ave,9773,7841,1,0
+2026-02-23,Famalicão,Casa Pia AC,1634,212821,2,0
+2026-02-27,FC Porto,Arouca,9773,158085,3,1
+2026-02-27,Sporting CP,Estoril,9768,7842,3,0
+2026-02-28,AVS Futebol SAD,Estrela da Amadora,1889,1074320,0,0
+2026-02-28,Nacional,Braga,10214,10264,1,2
+2026-02-28,Vitória de Guimarães,Alverca,7844,9780,1,1
+2026-03-01,Tondela,Santa Clara,188163,1567,2,2
+2026-03-01,Casa Pia AC,Moreirense,212821,8348,1,1
+2026-03-01,Rio Ave,Famalicão,7841,1634,0,0
+2026-03-02,Gil Vicente,Benfica,9764,9772,1,2
+2026-03-06,Famalicão,Arouca,1634,158085,1,0
+2026-03-07,Alverca,AVS Futebol SAD,9780,1889,0,0
+2026-03-07,Moreirense,Nacional,8348,10214,1,1
+2026-03-07,Braga,Sporting CP,10264,9768,2,2
+2026-03-07,Estoril,Casa Pia AC,7842,212821,0,0
+2026-03-08,Estrela da Amadora,Gil Vicente,1074320,9764,2,2
+2026-03-08,Benfica,FC Porto,9772,9773,2,2
+2026-03-08,Santa Clara,Vitória de Guimarães,1567,7844,2,0
+2026-03-09,Tondela,Rio Ave,188163,7841,0,1
+2026-03-14,Vitória de Guimarães,Famalicão,7844,1634,1,2
+2026-03-14,Gil Vicente,Alverca,9764,9780,2,2
+2026-03-14,Arouca,Benfica,158085,9772,1,2
+2026-03-15,AVS Futebol SAD,Santa Clara,1889,1567,0,1
+2026-03-15,Nacional,Estoril,10214,7842,0,1
+2026-03-15,Rio Ave,Estrela da Amadora,7841,1074320,2,1
+2026-03-15,FC Porto,Moreirense,9773,8348,3,0
+2026-03-20,Estrela da Amadora,Casa Pia AC,1074320,212821,4,0
+2026-03-21,Famalicão,Nacional,1634,10214,1,0
+2026-03-21,Moreirense,Arouca,8348,158085,0,1
+2026-03-21,Benfica,Vitória de Guimarães,9772,7844,3,0
+2026-03-21,Santa Clara,Gil Vicente,1567,9764,1,0
+2026-03-21,Tondela,AVS Futebol SAD,188163,1889,0,0
+2026-03-22,Estoril,Rio Ave,7842,7841,1,2
+2026-03-22,Alverca,Sporting CP,9780,9768,1,4
+2026-03-22,Braga,FC Porto,10264,9773,1,2
+2026-04-03,Gil Vicente,AVS Futebol SAD,9764,1889,3,0
+2026-04-03,Vitória de Guimarães,Tondela,7844,188163,5,0
+2026-04-03,Sporting CP,Santa Clara,9768,1567,4,2
+2026-04-04,Nacional,Estrela da Amadora,10214,1074320,2,0
+2026-04-04,Moreirense,Braga,8348,10264,0,1
+2026-04-04,Rio Ave,Alverca,7841,9780,1,2
+2026-04-04,FC Porto,Famalicão,9773,1634,2,2
+2026-04-06,Arouca,Estoril,158085,7842,3,2
+2026-04-06,Casa Pia AC,Benfica,212821,9772,1,1
+2026-04-10,Famalicão,Moreirense,1634,8348,1,1
+2026-04-11,AVS Futebol SAD,Vitória de Guimarães,1889,7844,1,1
+2026-04-11,Santa Clara,Rio Ave,1567,7841,0,2
+2026-04-11,Estrela da Amadora,Sporting CP,1074320,9768,0,1
+2026-04-12,Alverca,Casa Pia AC,9780,212821,3,1
+2026-04-12,Benfica,Nacional,9772,10214,2,0
+2026-04-12,Braga,Arouca,10264,158085,1,0
+2026-04-12,Estoril,FC Porto,7842,9773,1,3
+2026-04-13,Tondela,Gil Vicente,188163,9764,2,2
+2026-04-17,Rio Ave,AVS Futebol SAD,7841,1889,2,2
+2026-04-18,Nacional,Alverca,10214,9780,1,0
+2026-04-18,Casa Pia AC,Santa Clara,212821,1567,0,0
+2026-04-18,Gil Vicente,Vitória de Guimarães,9764,7844,0,1
+2026-04-19,Arouca,Estrela da Amadora,158085,1074320,1,0
+2026-04-19,Sporting CP,Benfica,9768,9772,1,2
+2026-04-19,Braga,Famalicão,10264,1634,2,2
+2026-04-19,FC Porto,Tondela,9773,188163,2,0
+2026-04-20,Moreirense,Estoril,8348,7842,1,0
+2026-04-23,Casa Pia AC,Braga,212821,10264,0,1
+2026-04-24,Alverca,Arouca,9780,158085,2,1
+2026-04-25,Tondela,Nacional,188163,10214,0,2
+2026-04-25,Benfica,Moreirense,9772,8348,4,1
+2026-04-25,Vitória de Guimarães,Rio Ave,7844,7841,2,0
+2026-04-26,Estoril,Famalicão,7842,1634,0,1
+2026-04-26,Estrela da Amadora,FC Porto,1074320,9773,1,2
+2026-04-26,Santa Clara,Braga,1567,10264,2,1
+2026-04-26,AVS Futebol SAD,Sporting CP,1889,9768,1,1
+2026-04-27,Gil Vicente,Casa Pia AC,9764,212821,2,1
+2026-04-29,Sporting CP,Tondela,9768,188163,2,2
+2026-05-02,Arouca,Santa Clara,158085,1567,2,2
+2026-05-02,Moreirense,Estrela da Amadora,8348,1074320,3,2
+2026-05-02,Nacional,AVS Futebol SAD,10214,1889,1,2
+2026-05-02,Famalicão,Benfica,1634,9772,2,2
+2026-05-02,FC Porto,Alverca,9773,9780,1,0
+2026-05-03,Casa Pia AC,Tondela,212821,188163,0,1
+2026-05-03,Braga,Estoril,10264,7842,1,1
+2026-05-03,Rio Ave,Gil Vicente,7841,9764,0,0
+2026-05-04,Sporting CP,Vitória de Guimarães,9768,7844,5,1
+2026-05-10,AVS Futebol SAD,FC Porto,1889,9773,3,1
+2026-05-10,Alverca,Estoril,9780,7842,1,1
+2026-05-11,Benfica,Braga,9772,10264,2,2
+2026-05-11,Estrela da Amadora,Famalicão,1074320,1634,0,0
+2026-05-11,Gil Vicente,Arouca,9764,158085,1,3
+2026-05-11,Rio Ave,Sporting CP,7841,9768,1,4
+2026-05-11,Santa Clara,Nacional,1567,10214,2,0
+2026-05-11,Tondela,Moreirense,188163,8348,2,0
+2026-05-11,Vitória de Guimarães,Casa Pia AC,7844,212821,0,1
+2026-05-16,FC Porto,Santa Clara,9773,1567,1,0
+2026-05-16,Moreirense,AVS Futebol SAD,8348,1889,0,0
+2026-05-16,Arouca,Tondela,158085,188163,3,1
+2026-05-16,Braga,Estrela da Amadora,10264,1074320,2,2
+2026-05-16,Casa Pia AC,Rio Ave,212821,7841,1,1
+2026-05-16,Nacional,Vitória de Guimarães,10214,7844,2,0
+2026-05-16,Estoril,Benfica,7842,9772,1,3
+2026-05-16,Famalicão,Alverca,1634,9780,1,0
+2026-05-16,Sporting CP,Gil Vicente,9768,9764,3,0

@@ -1,0 +1,307 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+4233261,2023-08-11,Braga,Famalicão,1.08,0.73
+4233284,2023-08-12,Gil Vicente,Portimonense,1.54,0.98
+4233289,2023-08-12,Farense,Casa Pia AC,0.34,1.59
+4233282,2023-08-12,Sporting CP,Vizela,2.09,1.44
+4233288,2023-08-13,Rio Ave,Chaves,3.3,0.34
+4233285,2023-08-13,Estrela da Amadora,Vitória de Guimarães,0.39,0.69
+4233283,2023-08-13,Arouca,Estoril,0.54,0.61
+4233286,2023-08-14,Moreirense,FC Porto,0.49,0.78
+4233287,2023-08-14,Boavista,Benfica,2.2,1.97
+4233293,2023-08-18,Casa Pia AC,Sporting CP,0.83,1.18
+4233291,2023-08-19,Vitória de Guimarães,Gil Vicente,0.93,1.07
+4233295,2023-08-19,Chaves,Braga,1.43,1.31
+4233290,2023-08-19,Benfica,Estrela da Amadora,3.27,0.39
+4233297,2023-08-19,Portimonense,Boavista,1.21,1.81
+4233294,2023-08-20,Estoril,Rio Ave,2.26,0.64
+4233298,2023-08-20,FC Porto,Farense,2.61,0.42
+4233296,2023-08-20,Vizela,Arouca,1.64,0.73
+4233292,2023-08-21,Famalicão,Moreirense,0.29,0.87
+4233262,2023-08-25,Estrela da Amadora,Estoril,1.47,1.04
+4233281,2023-08-26,Arouca,Portimonense,2.23,0.15
+4233266,2023-08-26,Farense,Chaves,3.27,1.31
+4233263,2023-08-26,Gil Vicente,Benfica,1.1,2.63
+4233279,2023-08-27,Boavista,Casa Pia AC,1.66,0.76
+4233280,2023-08-27,Vitória de Guimarães,Vizela,1.16,0.41
+4233267,2023-08-27,Sporting CP,Famalicão,2.27,0.35
+4233264,2023-08-28,Rio Ave,FC Porto,1.28,2.45
+4233275,2023-09-01,Vizela,Gil Vicente,1.47,0.56
+4233272,2023-09-02,Casa Pia AC,Rio Ave,0.48,0.7
+4233271,2023-09-02,Famalicão,Farense,0.9,0.2
+4233276,2023-09-02,Portimonense,Estrela da Amadora,0.85,1.45
+4233268,2023-09-02,Benfica,Vitória de Guimarães,2.76,1.29
+4233274,2023-09-03,Estoril,Boavista,0.53,1.21
+4233270,2023-09-03,Chaves,Moreirense,0.74,0.91
+4233273,2023-09-03,FC Porto,Arouca,2.57,0.56
+4233269,2023-09-03,Braga,Sporting CP,0.42,0.38
+4233265,2023-09-09,Moreirense,Braga,1.05,1.3
+4233300,2023-09-15,Estrela da Amadora,FC Porto,1.17,0.38
+4233323,2023-09-16,Rio Ave,Famalicão,0.21,0.96
+4233322,2023-09-16,Farense,Braga,3.77,1.54
+4233321,2023-09-16,Vizela,Benfica,1.69,1.96
+4233277,2023-09-17,Arouca,Casa Pia AC,0.44,0.88
+4233324,2023-09-17,Gil Vicente,Estoril,2.21,3.76
+4233278,2023-09-17,Vitória de Guimarães,Portimonense,0.76,1.21
+4233325,2023-09-17,Sporting CP,Moreirense,1.93,0.37
+4233299,2023-09-18,Boavista,Chaves,2.25,2.05
+4233330,2023-09-22,Famalicão,Arouca,0.14,2.22
+4233328,2023-09-23,Estoril,Vizela,0.74,0.52
+4233334,2023-09-23,Moreirense,Farense,1.3,0.36
+4233327,2023-09-23,Casa Pia AC,Vitória de Guimarães,0.83,1.17
+4233333,2023-09-23,FC Porto,Gil Vicente,2.18,0.84
+4233326,2023-09-24,Chaves,Estrela da Amadora,1.7,1.57
+4233329,2023-09-24,Portimonense,Benfica,1.41,1.81
+4233331,2023-09-24,Braga,Boavista,4.67,1.04
+4233332,2023-09-25,Sporting CP,Rio Ave,1.76,0.36
+4233319,2023-09-28,Estrela da Amadora,Braga,1.85,3.37
+4233335,2023-09-29,Benfica,FC Porto,1.31,0.28
+4233302,2023-09-30,Vizela,Portimonense,0.9,1.41
+4233337,2023-09-30,Boavista,Famalicão,0.89,1.37
+4233320,2023-09-30,Farense,Sporting CP,0.41,3.51
+4233336,2023-10-01,Arouca,Chaves,0.63,1.01
+4233301,2023-10-01,Vitória de Guimarães,Estoril,3.16,0.9
+4233303,2023-10-01,Rio Ave,Moreirense,1.18,2.31
+4233318,2023-10-02,Gil Vicente,Casa Pia AC,1.04,0.33
+4233312,2023-10-06,Moreirense,Boavista,0.88,0.59
+4233306,2023-10-07,Chaves,Gil Vicente,2.34,1.98
+4233309,2023-10-07,Farense,Vizela,1.07,1.24
+4233305,2023-10-07,Braga,Rio Ave,2.8,2.3
+4233310,2023-10-07,Estoril,Benfica,0.8,2.75
+4233308,2023-10-08,Casa Pia AC,Estrela da Amadora,0.18,1.44
+4233307,2023-10-08,Famalicão,Vitória de Guimarães,2.1,1.33
+4233304,2023-10-08,FC Porto,Portimonense,1.49,0.49
+4233311,2023-10-08,Sporting CP,Arouca,1.78,0.61
+4233314,2023-10-27,Arouca,Moreirense,1.59,0.66
+4233347,2023-10-28,Portimonense,Estoril,1.37,1.14
+4233313,2023-10-28,Benfica,Casa Pia AC,1.16,1.33
+4233339,2023-10-28,Vitória de Guimarães,Chaves,1.78,0.12
+4233338,2023-10-28,Gil Vicente,Braga,2.44,1.29
+4233346,2023-10-29,Rio Ave,Farense,1.79,1.29
+4233316,2023-10-29,Estrela da Amadora,Famalicão,1.61,0.72
+4233317,2023-10-29,Vizela,FC Porto,0.82,1.57
+4233315,2023-10-30,Boavista,Sporting CP,0.61,2.46
+4233349,2023-11-03,FC Porto,Estoril,3.0,0.44
+4233342,2023-11-04,Chaves,Benfica,0.12,2.27
+4233344,2023-11-04,Famalicão,Gil Vicente,0.59,1.02
+4233345,2023-11-04,Braga,Portimonense,3.71,1.1
+4233343,2023-11-05,Casa Pia AC,Vizela,0.85,1.54
+4233340,2023-11-05,Moreirense,Vitória de Guimarães,1.13,0.55
+4233348,2023-11-05,Rio Ave,Boavista,1.2,0.69
+4233364,2023-11-05,Sporting CP,Estrela da Amadora,2.29,1.62
+4233341,2023-11-06,Farense,Arouca,2.09,1.39
+4233373,2023-11-10,Estoril,Casa Pia AC,1.69,0.44
+4233371,2023-11-11,Portimonense,Chaves,1.25,1.18
+4233370,2023-11-11,Estrela da Amadora,Moreirense,0.4,0.95
+4233372,2023-11-11,Vizela,Famalicão,2.05,0.74
+4233367,2023-11-11,Vitória de Guimarães,FC Porto,2.34,1.17
+4233368,2023-11-12,Boavista,Farense,0.93,1.97
+4233369,2023-11-12,Gil Vicente,Rio Ave,0.35,2.31
+4233366,2023-11-12,Arouca,Braga,1.01,1.29
+4233365,2023-11-12,Benfica,Sporting CP,1.4,0.73
+4233375,2023-12-01,Chaves,Vizela,1.68,0.71
+4233350,2023-12-02,Farense,Vitória de Guimarães,1.54,1.26
+4233354,2023-12-02,Rio Ave,Estrela da Amadora,1.08,0.42
+4233363,2023-12-02,Famalicão,FC Porto,1.22,0.97
+4233362,2023-12-02,Casa Pia AC,Portimonense,0.74,0.9
+4233374,2023-12-03,Braga,Estoril,3.35,0.59
+4233351,2023-12-03,Moreirense,Benfica,0.46,1.48
+4233352,2023-12-03,Boavista,Arouca,1.0,1.88
+4233353,2023-12-04,Sporting CP,Gil Vicente,1.75,0.24
+4233359,2023-12-08,Vizela,Braga,1.33,2.84
+4233355,2023-12-08,Benfica,Farense,5.74,0.45
+4233361,2023-12-09,Portimonense,Famalicão,0.59,1.12
+4233357,2023-12-09,Vitória de Guimarães,Sporting CP,2.23,1.89
+4233377,2023-12-09,FC Porto,Casa Pia AC,2.81,1.2
+4233376,2023-12-10,Estrela da Amadora,Boavista,0.65,0.79
+4233356,2023-12-10,Arouca,Rio Ave,1.29,2.47
+4233360,2023-12-10,Estoril,Chaves,2.66,0.67
+4233358,2023-12-11,Gil Vicente,Moreirense,1.38,1.41
+4233388,2023-12-15,Farense,Estrela da Amadora,0.68,1.25
+4233392,2023-12-16,Rio Ave,Vizela,0.93,0.48
+4233389,2023-12-16,Arouca,Gil Vicente,1.34,1.43
+4233391,2023-12-16,Boavista,Vitória de Guimarães,1.78,0.91
+4233390,2023-12-17,Chaves,Casa Pia AC,1.07,1.13
+4233393,2023-12-17,Moreirense,Portimonense,2.27,1.29
+4233396,2023-12-17,Famalicão,Estoril,1.29,1.24
+4233394,2023-12-17,Braga,Benfica,1.83,1.48
+4233395,2023-12-18,Sporting CP,FC Porto,1.37,0.69
+4233386,2023-12-23,Vitória de Guimarães,Rio Ave,0.97,0.57
+4233384,2023-12-23,Vizela,Moreirense,0.25,0.48
+4233381,2023-12-28,Estrela da Amadora,Arouca,0.94,4.05
+4233387,2023-12-29,Benfica,Famalicão,1.75,0.82
+4233382,2023-12-29,FC Porto,Chaves,1.41,0.52
+4233378,2023-12-30,Estoril,Farense,1.42,2.34
+4233383,2023-12-30,Gil Vicente,Boavista,1.35,0.58
+4233380,2023-12-30,Casa Pia AC,Braga,1.0,1.42
+4233379,2023-12-30,Portimonense,Sporting CP,0.63,2.84
+4233414,2024-01-05,Sporting CP,Estoril,4.29,1.22
+4233398,2024-01-05,Boavista,FC Porto,0.43,2.1
+4233410,2024-01-06,Estrela da Amadora,Vizela,1.75,0.97
+4233411,2024-01-06,Farense,Gil Vicente,2.21,1.27
+4233397,2024-01-06,Arouca,Benfica,0.79,2.24
+4233385,2024-01-06,Braga,Vitória de Guimarães,1.65,0.91
+4233415,2024-01-07,Rio Ave,Portimonense,1.23,0.51
+4233412,2024-01-07,Famalicão,Chaves,1.8,2.13
+4233413,2024-01-08,Moreirense,Casa Pia AC,1.22,1.35
+4233402,2024-01-12,Portimonense,Farense,1.39,0.59
+4233409,2024-01-13,Casa Pia AC,Famalicão,0.44,0.57
+4233417,2024-01-13,Chaves,Sporting CP,0.4,2.78
+4233408,2024-01-13,Estoril,Moreirense,0.68,1.44
+4233401,2024-01-14,Gil Vicente,Estrela da Amadora,0.59,1.58
+4233416,2024-01-14,Benfica,Rio Ave,2.76,1.81
+4233400,2024-01-14,Vizela,Boavista,2.73,1.8
+4233407,2024-01-14,FC Porto,Braga,1.74,1.42
+4233399,2024-01-15,Vitória de Guimarães,Arouca,2.35,1.23
+4233403,2024-01-18,Famalicão,Braga,1.92,1.34
+4233404,2024-01-18,Vizela,Sporting CP,0.93,2.74
+4233434,2024-01-19,Benfica,Boavista,2.82,0.44
+4233405,2024-01-20,Estoril,Arouca,2.4,1.53
+4233436,2024-01-20,Casa Pia AC,Farense,0.95,1.36
+4233419,2024-01-20,FC Porto,Moreirense,2.36,0.22
+4233406,2024-01-21,Portimonense,Gil Vicente,0.17,1.53
+4233435,2024-01-21,Chaves,Rio Ave,1.88,0.76
+4233418,2024-01-21,Vitória de Guimarães,Estrela da Amadora,1.71,0.4
+4233444,2024-01-28,Boavista,Portimonense,2.2,0.68
+4233439,2024-01-28,Moreirense,Famalicão,1.26,0.91
+4233445,2024-01-28,Farense,FC Porto,1.99,1.82
+4233443,2024-01-28,Arouca,Vizela,2.45,1.08
+4233438,2024-01-28,Gil Vicente,Vitória de Guimarães,1.24,0.88
+4233437,2024-01-29,Estrela da Amadora,Benfica,0.57,3.28
+4233440,2024-01-29,Sporting CP,Casa Pia AC,4.53,0.27
+4233441,2024-01-31,Rio Ave,Estoril,0.88,0.82
+4233442,2024-01-31,Braga,Chaves,3.32,0.55
+4233433,2024-02-03,Portimonense,Arouca,2.43,1.9
+4233423,2024-02-03,FC Porto,Rio Ave,1.7,0.24
+4233425,2024-02-04,Chaves,Farense,0.85,2.57
+4233432,2024-02-04,Vizela,Vitória de Guimarães,0.36,1.75
+4233422,2024-02-04,Benfica,Gil Vicente,1.58,0.14
+4233421,2024-02-04,Estoril,Estrela da Amadora,0.61,1.08
+4233424,2024-02-04,Braga,Moreirense,0.78,0.55
+4233420,2024-02-05,Casa Pia AC,Boavista,0.4,0.13
+4233456,2024-02-09,Estrela da Amadora,Portimonense,1.39,0.53
+4233430,2024-02-10,Farense,Famalicão,1.55,1.03
+4233429,2024-02-10,Moreirense,Chaves,1.68,0.89
+4233447,2024-02-10,Boavista,Estoril,1.12,1.97
+4233431,2024-02-11,Rio Ave,Casa Pia AC,0.54,0.18
+4233428,2024-02-11,Sporting CP,Braga,2.36,0.5
+4233427,2024-02-11,Vitória de Guimarães,Benfica,2.16,0.87
+4233446,2024-02-12,Arouca,FC Porto,1.83,2.11
+4233457,2024-02-13,Gil Vicente,Vizela,0.87,0.35
+4233449,2024-02-16,Famalicão,Rio Ave,1.09,2.08
+4233453,2024-02-17,Chaves,Boavista,0.9,2.19
+4233454,2024-02-17,Portimonense,Vitória de Guimarães,1.28,1.83
+4233452,2024-02-17,FC Porto,Estrela da Amadora,2.19,0.23
+4233455,2024-02-18,Casa Pia AC,Arouca,1.18,0.95
+4233451,2024-02-18,Benfica,Vizela,3.66,1.59
+4233448,2024-02-18,Estoril,Gil Vicente,0.8,2.28
+4233450,2024-02-18,Braga,Farense,3.17,0.47
+4233458,2024-02-19,Moreirense,Sporting CP,0.3,2.45
+4233482,2024-02-23,Arouca,Famalicão,1.73,1.05
+4233486,2024-02-24,Farense,Moreirense,0.29,1.1
+4233459,2024-02-24,Estrela da Amadora,Chaves,0.49,1.02
+4233479,2024-02-24,Vitória de Guimarães,Casa Pia AC,1.39,1.54
+4233480,2024-02-25,Vizela,Estoril,1.98,1.14
+4233481,2024-02-25,Benfica,Portimonense,3.49,0.37
+4233485,2024-02-25,Gil Vicente,FC Porto,0.46,3.19
+4233484,2024-02-25,Rio Ave,Sporting CP,2.13,0.97
+4233483,2024-02-26,Boavista,Braga,0.83,1.61
+4233488,2024-03-01,Chaves,Arouca,1.03,2.09
+4233478,2024-03-02,Moreirense,Rio Ave,1.33,0.08
+4233493,2024-03-02,Estoril,Vitória de Guimarães,2.09,0.39
+4233491,2024-03-02,Braga,Estrela da Amadora,2.54,0.7
+4233492,2024-03-03,Casa Pia AC,Gil Vicente,1.11,0.57
+4233494,2024-03-03,Portimonense,Vizela,1.32,0.88
+4233490,2024-03-03,Sporting CP,Farense,2.11,0.62
+4233487,2024-03-03,FC Porto,Benfica,2.81,0.46
+4233489,2024-03-04,Famalicão,Boavista,0.74,0.6
+4233477,2024-03-08,Portimonense,FC Porto,0.21,2.27
+4233462,2024-03-08,Estrela da Amadora,Casa Pia AC,2.84,0.5
+4233463,2024-03-09,Vizela,Farense,1.51,0.98
+4233466,2024-03-09,Boavista,Moreirense,0.36,0.25
+4233476,2024-03-09,Rio Ave,Braga,0.44,0.79
+4233461,2024-03-09,Vitória de Guimarães,Famalicão,2.68,1.22
+4233465,2024-03-10,Arouca,Sporting CP,0.54,2.27
+4233464,2024-03-10,Benfica,Estoril,1.75,0.62
+4233460,2024-03-11,Gil Vicente,Chaves,1.58,0.23
+4233474,2024-03-15,Estoril,Portimonense,1.29,1.33
+4233470,2024-03-16,Famalicão,Estrela da Amadora,0.9,0.75
+4233472,2024-03-16,Braga,Gil Vicente,1.15,2.0
+4233475,2024-03-16,Farense,Rio Ave,1.3,1.17
+4233471,2024-03-16,FC Porto,Vizela,3.06,0.3
+4233473,2024-03-17,Chaves,Vitória de Guimarães,0.79,1.72
+4233468,2024-03-17,Moreirense,Arouca,0.84,0.34
+4233467,2024-03-17,Casa Pia AC,Benfica,0.47,1.68
+4233469,2024-03-17,Sporting CP,Boavista,3.79,0.19
+4233496,2024-03-29,Gil Vicente,Famalicão,2.03,2.5
+4233544,2024-03-29,Benfica,Chaves,3.67,0.56
+4233527,2024-03-29,Estrela da Amadora,Sporting CP,1.2,2.22
+4233531,2024-03-30,Arouca,Farense,1.49,2.02
+4233530,2024-03-30,Vitória de Guimarães,Moreirense,0.73,0.33
+4233529,2024-03-30,Boavista,Rio Ave,0.63,0.43
+4233528,2024-03-30,Estoril,FC Porto,1.18,1.18
+4233497,2024-03-31,Vizela,Casa Pia AC,1.16,0.79
+4233495,2024-04-01,Portimonense,Braga,2.02,3.76
+4233523,2024-04-05,Farense,Boavista,2.15,1.28
+4233543,2024-04-06,Famalicão,Vizela,1.28,1.83
+4233532,2024-04-06,Rio Ave,Gil Vicente,2.71,0.21
+4233525,2024-04-06,Braga,Arouca,1.23,1.94
+4233526,2024-04-06,Sporting CP,Benfica,0.96,1.32
+4233534,2024-04-07,Chaves,Portimonense,1.33,1.11
+4233533,2024-04-07,Moreirense,Estrela da Amadora,1.08,1.67
+4233524,2024-04-07,FC Porto,Vitória de Guimarães,1.17,0.24
+4233542,2024-04-08,Casa Pia AC,Estoril,0.59,0.49
+4233522,2024-04-12,Gil Vicente,Sporting CP,1.03,2.14
+4233537,2024-04-13,Vitória de Guimarães,Farense,1.27,0.91
+4233539,2024-04-13,FC Porto,Famalicão,3.53,2.09
+4233541,2024-04-13,Estoril,Braga,0.27,1.27
+4233521,2024-04-14,Estrela da Amadora,Rio Ave,2.6,0.46
+4233535,2024-04-14,Arouca,Boavista,3.27,0.84
+4233538,2024-04-14,Portimonense,Casa Pia AC,0.77,1.92
+4233536,2024-04-14,Benfica,Moreirense,1.71,0.25
+4233540,2024-04-15,Vizela,Chaves,1.27,1.02
+4233426,2024-04-16,Famalicão,Sporting CP,0.3,0.76
+4233507,2024-04-19,Rio Ave,Arouca,0.63,1.11
+4233505,2024-04-20,Moreirense,Gil Vicente,0.61,0.6
+4233501,2024-04-20,Boavista,Estrela da Amadora,1.85,1.06
+4233504,2024-04-20,Braga,Vizela,2.8,0.78
+4233503,2024-04-21,Chaves,Estoril,1.14,0.98
+4233502,2024-04-21,Famalicão,Portimonense,1.86,2.49
+4233500,2024-04-21,Casa Pia AC,FC Porto,0.95,1.67
+4233506,2024-04-21,Sporting CP,Vitória de Guimarães,2.29,0.26
+4233520,2024-04-22,Farense,Benfica,0.6,1.84
+4233499,2024-04-26,Gil Vicente,Arouca,1.15,2.06
+4233498,2024-04-27,Casa Pia AC,Chaves,0.81,1.64
+4233509,2024-04-27,Vizela,Rio Ave,1.37,0.91
+4233518,2024-04-27,Benfica,Braga,2.49,1.14
+4233508,2024-04-27,Vitória de Guimarães,Boavista,0.52,0.29
+4233519,2024-04-28,Portimonense,Moreirense,0.68,0.75
+4233516,2024-04-28,Estoril,Famalicão,0.32,1.29
+4233517,2024-04-28,FC Porto,Sporting CP,1.49,1.57
+4233515,2024-04-29,Estrela da Amadora,Farense,2.18,2.39
+4233576,2024-05-03,Moreirense,Vizela,1.96,0.97
+4233577,2024-05-04,Boavista,Gil Vicente,1.2,1.66
+4233513,2024-05-04,Rio Ave,Vitória de Guimarães,0.31,0.91
+4233511,2024-05-04,Sporting CP,Portimonense,3.64,0.05
+4233578,2024-05-04,Chaves,FC Porto,0.31,2.59
+4233512,2024-05-05,Farense,Estoril,1.31,0.93
+4233579,2024-05-05,Arouca,Estrela da Amadora,0.78,0.31
+4233510,2024-05-05,Braga,Casa Pia AC,1.71,1.87
+4233514,2024-05-05,Famalicão,Benfica,0.8,1.76
+4233570,2024-05-10,Chaves,Famalicão,0.36,1.31
+4233591,2024-05-11,Portimonense,Rio Ave,2.19,0.87
+4233572,2024-05-11,Vizela,Estrela da Amadora,2.8,0.73
+4233581,2024-05-11,Estoril,Sporting CP,0.27,1.44
+4233575,2024-05-11,Vitória de Guimarães,Braga,2.81,2.32
+4233571,2024-05-12,Gil Vicente,Farense,1.89,0.69
+4233574,2024-05-12,Benfica,Arouca,5.4,0.32
+4233580,2024-05-12,Casa Pia AC,Moreirense,0.59,1.15
+4233573,2024-05-12,FC Porto,Boavista,2.43,0.24
+4233588,2024-05-17,Famalicão,Casa Pia AC,0.52,1.22
+4233590,2024-05-17,Rio Ave,Benfica,1.5,1.59
+4233585,2024-05-18,Arouca,Vitória de Guimarães,1.49,1.06
+4233584,2024-05-18,Boavista,Vizela,2.21,1.49
+4233583,2024-05-18,Estrela da Amadora,Gil Vicente,1.19,1.31
+4233582,2024-05-18,Farense,Portimonense,0.61,1.54
+4233587,2024-05-18,Moreirense,Estoril,1.45,1.77
+4233589,2024-05-18,Sporting CP,Chaves,2.72,1.39
+4233586,2024-05-18,Braga,FC Porto,0.36,2.17

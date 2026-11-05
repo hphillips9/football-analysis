@@ -1,0 +1,91 @@
+day,home,away,home_id,away_id,hg,ag
+2026-08-07,Estoril,Famalicão,7842,1634,1,1
+2026-08-08,Marítimo,Casa Pia AC,10212,212821,1,0
+2026-08-08,Vitória de Guimarães,Arouca,7844,158085,0,1
+2026-08-08,Estrela da Amadora,Sporting CP,1074320,9768,2,2
+2026-08-09,FC Porto,Alverca,9773,9780,2,0
+2026-08-09,Benfica,Académico Viseu,9772,1786,2,2
+2026-08-09,Gil Vicente,Rio Ave,9764,7841,1,0
+2026-08-09,Moreirense,Braga,8348,10264,2,2
+2026-08-10,Santa Clara,Nacional,1567,10214,2,2
+2026-08-14,Sporting CP,Vitória de Guimarães,9768,7844,3,2
+2026-08-15,Alverca,Estrela da Amadora,9780,1074320,2,2
+2026-08-15,Académico Viseu,Santa Clara,1786,1567,0,1
+2026-08-15,Rio Ave,FC Porto,7841,9773,0,2
+2026-08-16,Nacional,Estoril,10214,7842,2,0
+2026-08-16,Arouca,Moreirense,158085,8348,4,0
+2026-08-16,Famalicão,Marítimo,1634,10212,1,2
+2026-08-17,Casa Pia AC,Benfica,212821,9772,0,7
+2026-08-22,Marítimo,Académico Viseu,10212,1786,2,2
+2026-08-22,Estoril,Rio Ave,7842,7841,0,2
+2026-08-22,Sporting CP,Alverca,9768,9780,3,1
+2026-08-23,Vitória de Guimarães,Nacional,7844,10214,1,0
+2026-08-23,Santa Clara,Famalicão,1567,1634,1,0
+2026-08-23,FC Porto,Arouca,9773,158085,2,0
+2026-08-24,Gil Vicente,Casa Pia AC,9764,212821,2,0
+2026-08-28,Rio Ave,Sporting CP,7841,9768,0,4
+2026-08-29,Alverca,Santa Clara,9780,1567,1,1
+2026-08-29,Arouca,Marítimo,158085,10212,2,1
+2026-08-29,Académico Viseu,FC Porto,1786,9773,0,3
+2026-08-30,Nacional,Estrela da Amadora,10214,1074320,2,3
+2026-08-30,Casa Pia AC,Moreirense,212821,8348,0,1
+2026-08-30,Famalicão,Gil Vicente,1634,9764,0,0
+2026-08-31,Benfica,Estoril,9772,7842,2,1
+2026-08-31,Braga,Vitória de Guimarães,10264,7844,1,0
+2026-09-04,FC Porto,Moreirense,9773,8348,2,1
+2026-09-05,Estrela da Amadora,Famalicão,1074320,1634,2,2
+2026-09-05,Alverca,Braga,9780,10264,1,2
+2026-09-05,Marítimo,Benfica,10212,9772,0,3
+2026-09-05,Sporting CP,Nacional,9768,10214,2,0
+2026-09-06,Santa Clara,Rio Ave,1567,7841,4,0
+2026-09-06,Vitória de Guimarães,Casa Pia AC,7844,212821,0,0
+2026-09-06,Gil Vicente,Académico Viseu,9764,1786,0,1
+2026-09-07,Estoril,Arouca,7842,158085,0,0
+2026-09-09,Moreirense,Benfica,8348,9772,0,4
+2026-09-10,Estrela da Amadora,Braga,1074320,10264,2,1
+2026-09-12,Nacional,Alverca,10214,9780,1,3
+2026-09-12,Casa Pia AC,FC Porto,212821,9773,1,4
+2026-09-12,Académico Viseu,Vitória de Guimarães,1786,7844,2,1
+2026-09-13,Arouca,Santa Clara,158085,1567,1,2
+2026-09-13,Benfica,Gil Vicente,9772,9764,3,1
+2026-09-13,Famalicão,Sporting CP,1634,9768,1,1
+2026-09-14,Rio Ave,Estrela da Amadora,7841,1074320,3,3
+2026-09-14,Moreirense,Marítimo,8348,10212,3,1
+2026-09-14,Braga,Estoril,10264,7842,1,0
+2026-09-19,Gil Vicente,Marítimo,9764,10212,1,1
+2026-09-19,Nacional,Famalicão,10214,1634,0,4
+2026-09-19,Alverca,Rio Ave,9780,7841,1,0
+2026-09-19,Sporting CP,Arouca,9768,158085,2,2
+2026-09-20,Estrela da Amadora,Académico Viseu,1074320,1786,0,2
+2026-09-20,Vitória de Guimarães,Moreirense,7844,8348,1,1
+2026-09-20,Estoril,Casa Pia AC,7842,212821,1,2
+2026-09-20,Santa Clara,Braga,1567,10264,0,0
+2026-09-20,FC Porto,Benfica,9773,9772,3,1
+2026-10-09,Moreirense,Gil Vicente,8348,9764,0,1
+2026-10-09,Braga,Sporting CP,10264,9768,1,3
+2026-10-10,Marítimo,FC Porto,10212,9773,1,2
+2026-10-10,Académico Viseu,Estoril,1786,7842,2,1
+2026-10-10,Casa Pia AC,Santa Clara,212821,1567,0,1
+2026-10-11,Rio Ave,Nacional,7841,10214,3,2
+2026-10-11,Benfica,Vitória de Guimarães,9772,7844,2,0
+2026-10-11,Arouca,Estrela da Amadora,158085,1074320,1,0
+2026-10-12,Famalicão,Alverca,1634,9780,1,4
+2026-10-19,Braga,Gil Vicente,10264,9764,1,2
+2026-10-23,Vitória de Guimarães,Marítimo,7844,10212,5,0
+2026-10-24,Estrela da Amadora,Casa Pia AC,1074320,212821,0,2
+2026-10-24,Alverca,Arouca,9780,158085,0,1
+2026-10-24,Gil Vicente,FC Porto,9764,9773,0,1
+2026-10-25,Estoril,Moreirense,7842,8348,1,3
+2026-10-25,Nacional,Braga,10214,10264,1,0
+2026-10-25,Rio Ave,Famalicão,7841,1634,0,4
+2026-10-25,Sporting CP,Académico Viseu,9768,1786,1,2
+2026-10-26,Santa Clara,Benfica,1567,9772,1,2
+2026-10-30,Casa Pia AC,Sporting CP,212821,9768,0,2
+2026-10-31,Moreirense,Estrela da Amadora,8348,1074320,2,1
+2026-10-31,FC Porto,Estoril,9773,7842,4,0
+2026-11-01,Arouca,Nacional,158085,10214,1,0
+2026-11-01,Académico Viseu,Rio Ave,1786,7841,2,1
+2026-11-01,Marítimo,Santa Clara,10212,1567,0,2
+2026-11-01,Braga,Famalicão,10264,1634,3,0
+2026-11-02,Benfica,Alverca,9772,9780,1,0
+2026-11-02,Gil Vicente,Vitória de Guimarães,9764,7844,0,0

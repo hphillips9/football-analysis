@@ -1,0 +1,307 @@
+day,home,away,home_id,away_id,hg,ag
+2023-08-11,Braga,Famalicão,10264,1634,1,2
+2023-08-12,Gil Vicente,Portimonense,9764,9765,5,0
+2023-08-12,Farense,Casa Pia AC,6004,212821,0,3
+2023-08-12,Sporting CP,Vizela,9768,4531,3,2
+2023-08-13,Rio Ave,Chaves,7841,9774,2,0
+2023-08-13,Estrela da Amadora,Vitória de Guimarães,1074320,7844,0,1
+2023-08-13,Arouca,Estoril,158085,7842,4,3
+2023-08-14,Moreirense,FC Porto,8348,9773,1,2
+2023-08-14,Boavista,Benfica,8613,9772,3,2
+2023-08-18,Casa Pia AC,Sporting CP,212821,9768,1,2
+2023-08-19,Vitória de Guimarães,Gil Vicente,7844,9764,2,1
+2023-08-19,Chaves,Braga,9774,10264,2,4
+2023-08-19,Benfica,Estrela da Amadora,9772,1074320,2,0
+2023-08-19,Portimonense,Boavista,9765,8613,1,4
+2023-08-20,Estoril,Rio Ave,7842,7841,2,0
+2023-08-20,FC Porto,Farense,9773,6004,2,1
+2023-08-20,Vizela,Arouca,4531,158085,2,2
+2023-08-21,Famalicão,Moreirense,1634,8348,0,0
+2023-08-25,Estrela da Amadora,Estoril,1074320,7842,2,1
+2023-08-26,Arouca,Portimonense,158085,9765,1,1
+2023-08-26,Farense,Chaves,6004,9774,5,0
+2023-08-26,Gil Vicente,Benfica,9764,9772,2,3
+2023-08-27,Boavista,Casa Pia AC,8613,212821,1,1
+2023-08-27,Vitória de Guimarães,Vizela,7844,4531,2,0
+2023-08-27,Sporting CP,Famalicão,9768,1634,1,0
+2023-08-28,Rio Ave,FC Porto,7841,9773,1,2
+2023-09-01,Vizela,Gil Vicente,4531,9764,1,0
+2023-09-02,Casa Pia AC,Rio Ave,212821,7841,1,1
+2023-09-02,Famalicão,Farense,1634,6004,1,0
+2023-09-02,Portimonense,Estrela da Amadora,9765,1074320,1,1
+2023-09-02,Benfica,Vitória de Guimarães,9772,7844,4,0
+2023-09-03,Estoril,Boavista,7842,8613,1,2
+2023-09-03,Chaves,Moreirense,9774,8348,1,2
+2023-09-03,FC Porto,Arouca,9773,158085,1,1
+2023-09-03,Braga,Sporting CP,10264,9768,1,1
+2023-09-09,Moreirense,Braga,8348,10264,2,3
+2023-09-15,Estrela da Amadora,FC Porto,1074320,9773,0,1
+2023-09-16,Rio Ave,Famalicão,7841,1634,1,1
+2023-09-16,Farense,Braga,6004,10264,3,1
+2023-09-16,Vizela,Benfica,4531,9772,1,2
+2023-09-17,Arouca,Casa Pia AC,158085,212821,0,1
+2023-09-17,Gil Vicente,Estoril,9764,7842,5,3
+2023-09-17,Vitória de Guimarães,Portimonense,7844,9765,1,2
+2023-09-17,Sporting CP,Moreirense,9768,8348,3,0
+2023-09-18,Boavista,Chaves,8613,9774,4,1
+2023-09-22,Famalicão,Arouca,1634,158085,1,0
+2023-09-23,Estoril,Vizela,7842,4531,2,2
+2023-09-23,Moreirense,Farense,8348,6004,1,0
+2023-09-23,Casa Pia AC,Vitória de Guimarães,212821,7844,0,0
+2023-09-23,FC Porto,Gil Vicente,9773,9764,2,1
+2023-09-24,Chaves,Estrela da Amadora,9774,1074320,2,2
+2023-09-24,Portimonense,Benfica,9765,9772,1,3
+2023-09-24,Braga,Boavista,10264,8613,4,1
+2023-09-25,Sporting CP,Rio Ave,9768,7841,2,0
+2023-09-28,Estrela da Amadora,Braga,1074320,10264,2,4
+2023-09-29,Benfica,FC Porto,9772,9773,1,0
+2023-09-30,Vizela,Portimonense,4531,9765,2,3
+2023-09-30,Boavista,Famalicão,8613,1634,2,2
+2023-09-30,Farense,Sporting CP,6004,9768,2,3
+2023-10-01,Arouca,Chaves,158085,9774,0,2
+2023-10-01,Vitória de Guimarães,Estoril,7844,7842,3,2
+2023-10-01,Rio Ave,Moreirense,7841,8348,0,4
+2023-10-02,Gil Vicente,Casa Pia AC,9764,212821,2,0
+2023-10-06,Moreirense,Boavista,8348,8613,1,1
+2023-10-07,Chaves,Gil Vicente,9774,9764,4,2
+2023-10-07,Farense,Vizela,6004,4531,0,0
+2023-10-07,Braga,Rio Ave,10264,7841,2,1
+2023-10-07,Estoril,Benfica,7842,9772,0,1
+2023-10-08,Casa Pia AC,Estrela da Amadora,212821,1074320,0,1
+2023-10-08,Famalicão,Vitória de Guimarães,1634,7844,1,3
+2023-10-08,FC Porto,Portimonense,9773,9765,1,0
+2023-10-08,Sporting CP,Arouca,9768,158085,2,1
+2023-10-27,Arouca,Moreirense,158085,8348,0,1
+2023-10-28,Portimonense,Estoril,9765,7842,1,0
+2023-10-28,Benfica,Casa Pia AC,9772,212821,1,1
+2023-10-28,Vitória de Guimarães,Chaves,7844,9774,5,0
+2023-10-28,Gil Vicente,Braga,9764,10264,3,3
+2023-10-29,Rio Ave,Farense,7841,6004,3,4
+2023-10-29,Estrela da Amadora,Famalicão,1074320,1634,1,0
+2023-10-29,Vizela,FC Porto,4531,9773,0,2
+2023-10-30,Boavista,Sporting CP,8613,9768,0,2
+2023-11-03,FC Porto,Estoril,9773,7842,0,1
+2023-11-04,Chaves,Benfica,9774,9772,0,2
+2023-11-04,Famalicão,Gil Vicente,1634,9764,3,1
+2023-11-04,Braga,Portimonense,10264,9765,6,1
+2023-11-05,Casa Pia AC,Vizela,212821,4531,0,1
+2023-11-05,Moreirense,Vitória de Guimarães,8348,7844,1,0
+2023-11-05,Rio Ave,Boavista,7841,8613,2,0
+2023-11-05,Sporting CP,Estrela da Amadora,9768,1074320,3,2
+2023-11-06,Farense,Arouca,6004,158085,2,0
+2023-11-10,Estoril,Casa Pia AC,7842,212821,4,0
+2023-11-11,Portimonense,Chaves,9765,9774,2,1
+2023-11-11,Estrela da Amadora,Moreirense,1074320,8348,0,1
+2023-11-11,Vizela,Famalicão,4531,1634,0,0
+2023-11-11,Vitória de Guimarães,FC Porto,7844,9773,1,2
+2023-11-12,Boavista,Farense,8613,6004,1,3
+2023-11-12,Gil Vicente,Rio Ave,9764,7841,1,1
+2023-11-12,Arouca,Braga,158085,10264,0,1
+2023-11-12,Benfica,Sporting CP,9772,9768,2,1
+2023-12-01,Chaves,Vizela,9774,4531,2,1
+2023-12-02,Farense,Vitória de Guimarães,6004,7844,1,2
+2023-12-02,Rio Ave,Estrela da Amadora,7841,1074320,1,1
+2023-12-02,Famalicão,FC Porto,1634,9773,0,3
+2023-12-02,Casa Pia AC,Portimonense,212821,9765,1,0
+2023-12-03,Braga,Estoril,10264,7842,3,1
+2023-12-03,Moreirense,Benfica,8348,9772,0,0
+2023-12-03,Boavista,Arouca,8613,158085,0,4
+2023-12-04,Sporting CP,Gil Vicente,9768,9764,3,1
+2023-12-08,Vizela,Braga,4531,10264,1,3
+2023-12-08,Benfica,Farense,9772,6004,1,1
+2023-12-09,Portimonense,Famalicão,9765,1634,1,1
+2023-12-09,Vitória de Guimarães,Sporting CP,7844,9768,3,2
+2023-12-09,FC Porto,Casa Pia AC,9773,212821,3,1
+2023-12-10,Estrela da Amadora,Boavista,1074320,8613,3,1
+2023-12-10,Arouca,Rio Ave,158085,7841,2,2
+2023-12-10,Estoril,Chaves,7842,9774,4,0
+2023-12-11,Gil Vicente,Moreirense,9764,8348,1,1
+2023-12-15,Farense,Estrela da Amadora,6004,1074320,0,0
+2023-12-16,Rio Ave,Vizela,7841,4531,1,1
+2023-12-16,Arouca,Gil Vicente,158085,9764,3,0
+2023-12-16,Boavista,Vitória de Guimarães,8613,7844,1,1
+2023-12-17,Chaves,Casa Pia AC,9774,212821,1,3
+2023-12-17,Moreirense,Portimonense,8348,9765,5,2
+2023-12-17,Famalicão,Estoril,1634,7842,1,1
+2023-12-17,Braga,Benfica,10264,9772,0,1
+2023-12-18,Sporting CP,FC Porto,9768,9773,2,0
+2023-12-23,Vitória de Guimarães,Rio Ave,7844,7841,1,0
+2023-12-23,Vizela,Moreirense,4531,8348,0,0
+2023-12-28,Estrela da Amadora,Arouca,1074320,158085,1,4
+2023-12-29,Benfica,Famalicão,9772,1634,3,0
+2023-12-29,FC Porto,Chaves,9773,9774,1,0
+2023-12-30,Estoril,Farense,7842,6004,4,0
+2023-12-30,Gil Vicente,Boavista,9764,8613,1,0
+2023-12-30,Casa Pia AC,Braga,212821,10264,1,3
+2023-12-30,Portimonense,Sporting CP,9765,9768,1,2
+2024-01-05,Sporting CP,Estoril,9768,7842,5,1
+2024-01-05,Boavista,FC Porto,8613,9773,1,1
+2024-01-06,Estrela da Amadora,Vizela,1074320,4531,1,1
+2024-01-06,Farense,Gil Vicente,6004,9764,1,0
+2024-01-06,Arouca,Benfica,158085,9772,0,3
+2024-01-06,Braga,Vitória de Guimarães,10264,7844,1,1
+2024-01-07,Rio Ave,Portimonense,7841,9765,2,0
+2024-01-07,Famalicão,Chaves,1634,9774,2,2
+2024-01-08,Moreirense,Casa Pia AC,8348,212821,1,4
+2024-01-12,Portimonense,Farense,9765,6004,1,0
+2024-01-13,Casa Pia AC,Famalicão,212821,1634,0,2
+2024-01-13,Chaves,Sporting CP,9774,9768,0,3
+2024-01-13,Estoril,Moreirense,7842,8348,1,3
+2024-01-14,Gil Vicente,Estrela da Amadora,9764,1074320,1,1
+2024-01-14,Benfica,Rio Ave,9772,7841,4,1
+2024-01-14,Vizela,Boavista,4531,8613,1,4
+2024-01-14,FC Porto,Braga,9773,10264,2,0
+2024-01-15,Vitória de Guimarães,Arouca,7844,158085,2,1
+2024-01-18,Famalicão,Braga,1634,10264,1,2
+2024-01-18,Vizela,Sporting CP,4531,9768,2,5
+2024-01-19,Benfica,Boavista,9772,8613,2,0
+2024-01-20,Estoril,Arouca,7842,158085,1,2
+2024-01-20,Casa Pia AC,Farense,212821,6004,1,3
+2024-01-20,FC Porto,Moreirense,9773,8348,5,0
+2024-01-21,Portimonense,Gil Vicente,9765,9764,0,2
+2024-01-21,Chaves,Rio Ave,9774,7841,0,0
+2024-01-21,Vitória de Guimarães,Estrela da Amadora,7844,1074320,3,0
+2024-01-28,Boavista,Portimonense,8613,9765,1,4
+2024-01-28,Moreirense,Famalicão,8348,1634,1,0
+2024-01-28,Farense,FC Porto,6004,9773,1,3
+2024-01-28,Arouca,Vizela,158085,4531,5,0
+2024-01-28,Gil Vicente,Vitória de Guimarães,9764,7844,1,0
+2024-01-29,Estrela da Amadora,Benfica,1074320,9772,1,4
+2024-01-29,Sporting CP,Casa Pia AC,9768,212821,8,0
+2024-01-31,Rio Ave,Estoril,7841,7842,1,1
+2024-01-31,Braga,Chaves,10264,9774,1,1
+2024-02-03,Portimonense,Arouca,9765,158085,1,2
+2024-02-03,FC Porto,Rio Ave,9773,7841,0,0
+2024-02-04,Chaves,Farense,9774,6004,1,1
+2024-02-04,Vizela,Vitória de Guimarães,4531,7844,0,1
+2024-02-04,Benfica,Gil Vicente,9772,9764,3,0
+2024-02-04,Estoril,Estrela da Amadora,7842,1074320,1,0
+2024-02-04,Braga,Moreirense,10264,8348,1,0
+2024-02-05,Casa Pia AC,Boavista,212821,8613,0,0
+2024-02-09,Estrela da Amadora,Portimonense,1074320,9765,3,0
+2024-02-10,Farense,Famalicão,6004,1634,1,1
+2024-02-10,Moreirense,Chaves,8348,9774,1,0
+2024-02-10,Boavista,Estoril,8613,7842,2,1
+2024-02-11,Rio Ave,Casa Pia AC,7841,212821,1,0
+2024-02-11,Sporting CP,Braga,9768,10264,5,0
+2024-02-11,Vitória de Guimarães,Benfica,7844,9772,2,2
+2024-02-12,Arouca,FC Porto,158085,9773,3,2
+2024-02-13,Gil Vicente,Vizela,9764,4531,0,1
+2024-02-16,Famalicão,Rio Ave,1634,7841,2,1
+2024-02-17,Chaves,Boavista,9774,8613,2,1
+2024-02-17,Portimonense,Vitória de Guimarães,9765,7844,1,1
+2024-02-17,FC Porto,Estrela da Amadora,9773,1074320,2,0
+2024-02-18,Casa Pia AC,Arouca,212821,158085,1,0
+2024-02-18,Benfica,Vizela,9772,4531,6,1
+2024-02-18,Estoril,Gil Vicente,7842,9764,1,3
+2024-02-18,Braga,Farense,10264,6004,2,1
+2024-02-19,Moreirense,Sporting CP,8348,9768,0,2
+2024-02-23,Arouca,Famalicão,158085,1634,3,2
+2024-02-24,Farense,Moreirense,6004,8348,0,1
+2024-02-24,Estrela da Amadora,Chaves,1074320,9774,1,1
+2024-02-24,Vitória de Guimarães,Casa Pia AC,7844,212821,0,2
+2024-02-25,Vizela,Estoril,4531,7842,3,3
+2024-02-25,Benfica,Portimonense,9772,9765,4,0
+2024-02-25,Gil Vicente,FC Porto,9764,9773,1,1
+2024-02-25,Rio Ave,Sporting CP,7841,9768,3,3
+2024-02-26,Boavista,Braga,8613,10264,0,4
+2024-03-01,Chaves,Arouca,9774,158085,1,5
+2024-03-02,Moreirense,Rio Ave,8348,7841,0,0
+2024-03-02,Estoril,Vitória de Guimarães,7842,7844,1,3
+2024-03-02,Braga,Estrela da Amadora,10264,1074320,3,0
+2024-03-03,Casa Pia AC,Gil Vicente,212821,9764,0,0
+2024-03-03,Portimonense,Vizela,9765,4531,0,0
+2024-03-03,Sporting CP,Farense,9768,6004,3,2
+2024-03-03,FC Porto,Benfica,9773,9772,5,0
+2024-03-04,Famalicão,Boavista,1634,8613,1,1
+2024-03-08,Portimonense,FC Porto,9765,9773,0,3
+2024-03-08,Estrela da Amadora,Casa Pia AC,1074320,212821,3,1
+2024-03-09,Vizela,Farense,4531,6004,2,1
+2024-03-09,Boavista,Moreirense,8613,8348,1,0
+2024-03-09,Rio Ave,Braga,7841,10264,0,0
+2024-03-09,Vitória de Guimarães,Famalicão,7844,1634,1,0
+2024-03-10,Arouca,Sporting CP,158085,9768,0,3
+2024-03-10,Benfica,Estoril,9772,7842,3,1
+2024-03-11,Gil Vicente,Chaves,9764,9774,0,0
+2024-03-15,Estoril,Portimonense,7842,9765,1,0
+2024-03-16,Famalicão,Estrela da Amadora,1634,1074320,0,0
+2024-03-16,Braga,Gil Vicente,10264,9764,2,1
+2024-03-16,Farense,Rio Ave,6004,7841,1,1
+2024-03-16,FC Porto,Vizela,9773,4531,4,1
+2024-03-17,Chaves,Vitória de Guimarães,9774,7844,1,2
+2024-03-17,Moreirense,Arouca,8348,158085,1,0
+2024-03-17,Casa Pia AC,Benfica,212821,9772,0,1
+2024-03-17,Sporting CP,Boavista,9768,8613,6,1
+2024-03-29,Gil Vicente,Famalicão,9764,1634,1,2
+2024-03-29,Benfica,Chaves,9772,9774,1,0
+2024-03-29,Estrela da Amadora,Sporting CP,1074320,9768,1,2
+2024-03-30,Arouca,Farense,158085,6004,2,1
+2024-03-30,Vitória de Guimarães,Moreirense,7844,8348,1,0
+2024-03-30,Boavista,Rio Ave,8613,7841,0,0
+2024-03-30,Estoril,FC Porto,7842,9773,1,0
+2024-03-31,Vizela,Casa Pia AC,4531,212821,0,4
+2024-04-01,Portimonense,Braga,9765,10264,3,5
+2024-04-05,Farense,Boavista,6004,8613,2,0
+2024-04-06,Famalicão,Vizela,1634,4531,3,2
+2024-04-06,Rio Ave,Gil Vicente,7841,9764,3,0
+2024-04-06,Braga,Arouca,10264,158085,0,3
+2024-04-06,Sporting CP,Benfica,9768,9772,2,1
+2024-04-07,Chaves,Portimonense,9774,9765,2,3
+2024-04-07,Moreirense,Estrela da Amadora,8348,1074320,2,2
+2024-04-07,FC Porto,Vitória de Guimarães,9773,7844,1,2
+2024-04-08,Casa Pia AC,Estoril,212821,7842,0,0
+2024-04-12,Gil Vicente,Sporting CP,9764,9768,0,4
+2024-04-13,Vitória de Guimarães,Farense,7844,6004,1,1
+2024-04-13,FC Porto,Famalicão,9773,1634,2,2
+2024-04-13,Estoril,Braga,7842,10264,0,1
+2024-04-14,Estrela da Amadora,Rio Ave,1074320,7841,2,2
+2024-04-14,Arouca,Boavista,158085,8613,2,1
+2024-04-14,Portimonense,Casa Pia AC,9765,212821,2,2
+2024-04-14,Benfica,Moreirense,9772,8348,3,0
+2024-04-15,Vizela,Chaves,4531,9774,0,1
+2024-04-16,Famalicão,Sporting CP,1634,9768,0,1
+2024-04-19,Rio Ave,Arouca,7841,158085,1,1
+2024-04-20,Moreirense,Gil Vicente,8348,9764,0,1
+2024-04-20,Boavista,Estrela da Amadora,8613,1074320,1,1
+2024-04-20,Braga,Vizela,10264,4531,2,1
+2024-04-21,Chaves,Estoril,9774,7842,2,2
+2024-04-21,Famalicão,Portimonense,1634,9765,2,2
+2024-04-21,Casa Pia AC,FC Porto,212821,9773,1,2
+2024-04-21,Sporting CP,Vitória de Guimarães,9768,7844,3,0
+2024-04-22,Farense,Benfica,6004,9772,1,3
+2024-04-26,Gil Vicente,Arouca,9764,158085,2,2
+2024-04-27,Casa Pia AC,Chaves,212821,9774,3,1
+2024-04-27,Vizela,Rio Ave,4531,7841,1,1
+2024-04-27,Benfica,Braga,9772,10264,3,1
+2024-04-27,Vitória de Guimarães,Boavista,7844,8613,1,0
+2024-04-28,Portimonense,Moreirense,9765,8348,0,2
+2024-04-28,Estoril,Famalicão,7842,1634,1,0
+2024-04-28,FC Porto,Sporting CP,9773,9768,2,2
+2024-04-29,Estrela da Amadora,Farense,1074320,6004,0,3
+2024-05-03,Moreirense,Vizela,8348,4531,1,0
+2024-05-04,Boavista,Gil Vicente,8613,9764,1,1
+2024-05-04,Rio Ave,Vitória de Guimarães,7841,7844,2,1
+2024-05-04,Sporting CP,Portimonense,9768,9765,3,0
+2024-05-04,Chaves,FC Porto,9774,9773,0,3
+2024-05-05,Farense,Estoril,6004,7842,3,2
+2024-05-05,Arouca,Estrela da Amadora,158085,1074320,0,0
+2024-05-05,Braga,Casa Pia AC,10264,212821,4,3
+2024-05-05,Famalicão,Benfica,1634,9772,2,0
+2024-05-10,Chaves,Famalicão,9774,1634,0,1
+2024-05-11,Portimonense,Rio Ave,9765,7841,2,2
+2024-05-11,Vizela,Estrela da Amadora,4531,1074320,4,0
+2024-05-11,Estoril,Sporting CP,7842,9768,0,1
+2024-05-11,Vitória de Guimarães,Braga,7844,10264,2,3
+2024-05-12,Gil Vicente,Farense,9764,6004,2,0
+2024-05-12,Benfica,Arouca,9772,158085,5,0
+2024-05-12,Casa Pia AC,Moreirense,212821,8348,0,1
+2024-05-12,FC Porto,Boavista,9773,8613,2,1
+2024-05-17,Famalicão,Casa Pia AC,1634,212821,1,2
+2024-05-17,Rio Ave,Benfica,7841,9772,1,1
+2024-05-18,Arouca,Vitória de Guimarães,158085,7844,1,3
+2024-05-18,Boavista,Vizela,8613,4531,2,2
+2024-05-18,Estrela da Amadora,Gil Vicente,1074320,9764,1,0
+2024-05-18,Farense,Portimonense,6004,9765,1,3
+2024-05-18,Moreirense,Estoril,8348,7842,2,1
+2024-05-18,Sporting CP,Chaves,9768,9774,3,0
+2024-05-18,Braga,FC Porto,10264,9773,0,1

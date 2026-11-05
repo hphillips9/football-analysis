@@ -1,0 +1,91 @@
+day,home,away,home_id,away_id,hg,ag
+2026-08-07,GD Estoril Praia,FC Famalicão,582,5531,1,1
+2026-08-08,CS Marítimo,Casa Pia AC,5575,6618,1,0
+2026-08-08,Vitória SC,FC Arouca,5543,712,0,1
+2026-08-08,CF Estrela da Amadora,Sporting Clube de Portugal,9136,498,2,2
+2026-08-09,FC Porto,FC Alverca,503,7822,2,0
+2026-08-09,Moreirense FC,Sporting Clube de Braga,583,5613,2,2
+2026-08-09,Gil Vicente FC,Rio Ave FC,5533,496,1,0
+2026-08-09,Sport Lisboa e Benfica,Académico de Viseu FC,1903,5527,2,2
+2026-08-10,CD Santa Clara,CD Nacional,5530,5529,2,2
+2026-08-14,Sporting Clube de Portugal,Vitória SC,498,5543,3,2
+2026-08-15,FC Alverca,CF Estrela da Amadora,7822,9136,2,2
+2026-08-15,Académico de Viseu FC,CD Santa Clara,5527,5530,0,1
+2026-08-15,Rio Ave FC,FC Porto,496,503,0,2
+2026-08-16,CD Nacional,GD Estoril Praia,5529,582,2,0
+2026-08-16,FC Arouca,Moreirense FC,712,583,4,0
+2026-08-16,FC Famalicão,CS Marítimo,5531,5575,1,2
+2026-08-17,Casa Pia AC,Sport Lisboa e Benfica,6618,1903,0,7
+2026-08-22,CS Marítimo,Académico de Viseu FC,5575,5527,2,2
+2026-08-22,GD Estoril Praia,Rio Ave FC,582,496,0,2
+2026-08-22,Sporting Clube de Portugal,FC Alverca,498,7822,3,1
+2026-08-23,Vitória SC,CD Nacional,5543,5529,1,0
+2026-08-23,CD Santa Clara,FC Famalicão,5530,5531,1,0
+2026-08-23,FC Porto,FC Arouca,503,712,2,0
+2026-08-24,Gil Vicente FC,Casa Pia AC,5533,6618,2,0
+2026-08-28,Rio Ave FC,Sporting Clube de Portugal,496,498,0,4
+2026-08-29,FC Alverca,CD Santa Clara,7822,5530,1,1
+2026-08-29,FC Arouca,CS Marítimo,712,5575,2,1
+2026-08-29,Académico de Viseu FC,FC Porto,5527,503,0,3
+2026-08-30,CD Nacional,CF Estrela da Amadora,5529,9136,2,3
+2026-08-30,Casa Pia AC,Moreirense FC,6618,583,0,1
+2026-08-30,FC Famalicão,Gil Vicente FC,5531,5533,0,0
+2026-08-31,Sport Lisboa e Benfica,GD Estoril Praia,1903,582,2,1
+2026-08-31,Sporting Clube de Braga,Vitória SC,5613,5543,1,0
+2026-09-04,FC Porto,Moreirense FC,503,583,2,1
+2026-09-05,CF Estrela da Amadora,FC Famalicão,9136,5531,2,2
+2026-09-05,FC Alverca,Sporting Clube de Braga,7822,5613,1,2
+2026-09-05,CS Marítimo,Sport Lisboa e Benfica,5575,1903,0,3
+2026-09-05,Sporting Clube de Portugal,CD Nacional,498,5529,2,0
+2026-09-06,CD Santa Clara,Rio Ave FC,5530,496,4,0
+2026-09-06,Vitória SC,Casa Pia AC,5543,6618,0,0
+2026-09-06,Gil Vicente FC,Académico de Viseu FC,5533,5527,0,1
+2026-09-07,GD Estoril Praia,FC Arouca,582,712,0,0
+2026-09-09,Moreirense FC,Sport Lisboa e Benfica,583,1903,0,4
+2026-09-10,CF Estrela da Amadora,Sporting Clube de Braga,9136,5613,2,1
+2026-09-12,CD Nacional,FC Alverca,5529,7822,1,3
+2026-09-12,Casa Pia AC,FC Porto,6618,503,1,4
+2026-09-12,Académico de Viseu FC,Vitória SC,5527,5543,2,1
+2026-09-13,Sport Lisboa e Benfica,Gil Vicente FC,1903,5533,3,1
+2026-09-13,FC Arouca,CD Santa Clara,712,5530,1,2
+2026-09-13,FC Famalicão,Sporting Clube de Portugal,5531,498,1,1
+2026-09-14,Rio Ave FC,CF Estrela da Amadora,496,9136,3,3
+2026-09-14,Moreirense FC,CS Marítimo,583,5575,3,1
+2026-09-14,Sporting Clube de Braga,GD Estoril Praia,5613,582,1,0
+2026-09-19,CD Nacional,FC Famalicão,5529,5531,0,4
+2026-09-19,Gil Vicente FC,CS Marítimo,5533,5575,1,1
+2026-09-19,FC Alverca,Rio Ave FC,7822,496,1,0
+2026-09-19,Sporting Clube de Portugal,FC Arouca,498,712,2,2
+2026-09-20,Vitória SC,Moreirense FC,5543,583,1,1
+2026-09-20,CF Estrela da Amadora,Académico de Viseu FC,9136,5527,0,2
+2026-09-20,CD Santa Clara,Sporting Clube de Braga,5530,5613,0,0
+2026-09-20,GD Estoril Praia,Casa Pia AC,582,6618,1,2
+2026-09-20,FC Porto,Sport Lisboa e Benfica,503,1903,3,1
+2026-10-09,Moreirense FC,Gil Vicente FC,583,5533,0,1
+2026-10-09,Sporting Clube de Braga,Sporting Clube de Portugal,5613,498,1,3
+2026-10-10,CS Marítimo,FC Porto,5575,503,1,2
+2026-10-10,Casa Pia AC,CD Santa Clara,6618,5530,0,1
+2026-10-10,Académico de Viseu FC,GD Estoril Praia,5527,582,2,1
+2026-10-11,Rio Ave FC,CD Nacional,496,5529,3,2
+2026-10-11,Sport Lisboa e Benfica,Vitória SC,1903,5543,2,0
+2026-10-11,FC Arouca,CF Estrela da Amadora,712,9136,1,0
+2026-10-12,FC Famalicão,FC Alverca,5531,7822,1,4
+2026-10-19,Sporting Clube de Braga,Gil Vicente FC,5613,5533,1,2
+2026-10-23,Vitória SC,CS Marítimo,5543,5575,5,0
+2026-10-24,CF Estrela da Amadora,Casa Pia AC,9136,6618,0,2
+2026-10-24,FC Alverca,FC Arouca,7822,712,0,1
+2026-10-24,Gil Vicente FC,FC Porto,5533,503,0,1
+2026-10-25,GD Estoril Praia,Moreirense FC,582,583,1,3
+2026-10-25,Rio Ave FC,FC Famalicão,496,5531,0,4
+2026-10-25,CD Nacional,Sporting Clube de Braga,5529,5613,1,0
+2026-10-25,Sporting Clube de Portugal,Académico de Viseu FC,498,5527,1,2
+2026-10-26,CD Santa Clara,Sport Lisboa e Benfica,5530,1903,1,2
+2026-10-30,Casa Pia AC,Sporting Clube de Portugal,6618,498,0,2
+2026-10-31,Moreirense FC,CF Estrela da Amadora,583,9136,2,1
+2026-10-31,FC Porto,GD Estoril Praia,503,582,4,0
+2026-11-01,FC Arouca,CD Nacional,712,5529,1,0
+2026-11-01,CS Marítimo,CD Santa Clara,5575,5530,0,2
+2026-11-01,Académico de Viseu FC,Rio Ave FC,5527,496,2,1
+2026-11-01,Sporting Clube de Braga,FC Famalicão,5613,5531,3,0
+2026-11-02,Sport Lisboa e Benfica,FC Alverca,1903,7822,1,0
+2026-11-02,Gil Vicente FC,Vitória SC,5533,5543,0,0

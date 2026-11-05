@@ -1,15 +1,15 @@
 {
-  "generated": "2026-11-04T15:52:30+00:00",
+  "generated": "2026-11-05T10:35:36+00:00",
   "overall": {
     "asOf": "2026-11-02",
-    "totalBets": 500,
+    "totalBets": 518,
     "backfilledBets": 362,
     "backfilledGameweeks": [
       1,
       11
     ],
     "settledBets": 452,
-    "pendingBets": 48,
+    "pendingBets": 66,
     "wins": 243,
     "losses": 209,
     "hitRate": 53.8,
@@ -8658,6 +8658,36 @@
           "profit": -1.0
         }
       ]
+    },
+    "P1": {
+      "name": "Primeira Liga",
+      "asOf": null,
+      "totalBets": 9,
+      "backfilledBets": 0,
+      "backfilledGameweeks": null,
+      "settledBets": 0,
+      "pendingBets": 9,
+      "calibration": [],
+      "byGameweek": [],
+      "byPick": [],
+      "bankroll": [],
+      "bestBets": [],
+      "worstBets": []
+    },
+    "N1": {
+      "name": "Eredivisie",
+      "asOf": null,
+      "totalBets": 9,
+      "backfilledBets": 0,
+      "backfilledGameweeks": null,
+      "settledBets": 0,
+      "pendingBets": 9,
+      "calibration": [],
+      "byGameweek": [],
+      "byPick": [],
+      "bankroll": [],
+      "bestBets": [],
+      "worstBets": []
     }
   }
 }

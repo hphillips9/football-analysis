@@ -1,0 +1,100 @@
+day,home,away,home_id,away_id,hg,ag
+2026-08-07,SC Cambuur-Leeuwarden,SBV Excelsior,1909,670,0,4
+2026-08-08,NEC,Telstar 1963,1915,1912,1,2
+2026-08-08,Go Ahead Eagles,Willem II Tilburg,718,672,4,1
+2026-08-08,PSV,Fortuna Sittard,674,1920,2,2
+2026-08-08,AZ,ADO Den Haag,682,680,2,0
+2026-08-09,Sparta Rotterdam,Feyenoord Rotterdam,6806,675,0,1
+2026-08-09,FC Groningen,FC Utrecht,677,676,2,1
+2026-08-09,PEC Zwolle,AFC Ajax,684,678,0,2
+2026-08-09,SC Heerenveen,FC Twente '65,673,666,1,0
+2026-08-14,Telstar 1963,Sparta Rotterdam,1912,6806,1,3
+2026-08-15,Willem II Tilburg,NEC,672,1915,1,4
+2026-08-15,FC Utrecht,AZ,676,682,1,4
+2026-08-15,SBV Excelsior,PSV,670,674,1,2
+2026-08-15,Fortuna Sittard,SC Cambuur-Leeuwarden,1920,1909,3,1
+2026-08-16,ADO Den Haag,FC Groningen,680,677,1,4
+2026-08-16,Feyenoord Rotterdam,Go Ahead Eagles,675,718,2,2
+2026-08-16,FC Twente '65,PEC Zwolle,666,684,3,1
+2026-08-16,AFC Ajax,SC Heerenveen,678,673,2,2
+2026-08-22,Fortuna Sittard,AZ,1920,682,0,2
+2026-08-22,Sparta Rotterdam,FC Utrecht,6806,676,3,3
+2026-08-22,SC Heerenveen,PEC Zwolle,673,684,0,2
+2026-08-23,Go Ahead Eagles,ADO Den Haag,718,680,3,1
+2026-08-23,PSV,FC Groningen,674,677,5,1
+2026-08-23,SC Cambuur-Leeuwarden,Feyenoord Rotterdam,1909,675,2,5
+2026-08-28,FC Groningen,Fortuna Sittard,677,1920,2,3
+2026-08-29,SBV Excelsior,Sparta Rotterdam,670,6806,2,1
+2026-08-29,AZ,Go Ahead Eagles,682,718,5,2
+2026-08-29,PEC Zwolle,NEC,684,1915,1,3
+2026-08-30,FC Utrecht,PSV,676,674,1,6
+2026-08-30,Willem II Tilburg,SC Heerenveen,672,673,2,2
+2026-08-30,Feyenoord Rotterdam,ADO Den Haag,675,680,2,2
+2026-08-30,Telstar 1963,AFC Ajax,1912,678,0,4
+2026-08-30,SC Cambuur-Leeuwarden,FC Twente '65,1909,666,1,4
+2026-09-04,Sparta Rotterdam,PEC Zwolle,6806,684,2,2
+2026-09-05,NEC,Feyenoord Rotterdam,1915,675,1,3
+2026-09-05,AFC Ajax,PSV,678,674,1,3
+2026-09-05,Willem II Tilburg,SBV Excelsior,672,670,0,3
+2026-09-06,FC Groningen,FC Twente '65,677,666,2,2
+2026-09-06,SC Heerenveen,AZ,673,682,2,3
+2026-09-06,Telstar 1963,SC Cambuur-Leeuwarden,1912,1909,2,2
+2026-09-06,ADO Den Haag,Fortuna Sittard,680,1920,2,3
+2026-09-08,FC Utrecht,Go Ahead Eagles,676,718,3,3
+2026-09-08,NEC,SBV Excelsior,1915,670,2,2
+2026-09-09,FC Twente '65,Telstar 1963,666,1912,1,0
+2026-09-11,AZ,Willem II Tilburg,682,672,1,1
+2026-09-12,FC Twente '65,ADO Den Haag,666,680,2,0
+2026-09-12,Go Ahead Eagles,FC Groningen,718,677,1,1
+2026-09-12,Fortuna Sittard,AFC Ajax,1920,678,1,5
+2026-09-12,SC Cambuur-Leeuwarden,NEC,1909,1915,3,0
+2026-09-13,SBV Excelsior,FC Utrecht,670,676,1,2
+2026-09-13,SC Heerenveen,Telstar 1963,673,1912,0,0
+2026-09-13,PEC Zwolle,Feyenoord Rotterdam,684,675,0,7
+2026-09-13,PSV,Sparta Rotterdam,674,6806,4,1
+2026-09-15,AFC Ajax,Willem II Tilburg,678,672,5,1
+2026-09-18,FC Groningen,PEC Zwolle,677,684,3,0
+2026-09-19,ADO Den Haag,SC Cambuur-Leeuwarden,680,1909,1,1
+2026-09-19,Sparta Rotterdam,SC Heerenveen,6806,673,0,4
+2026-09-19,AFC Ajax,SBV Excelsior,678,670,2,2
+2026-09-19,Willem II Tilburg,Fortuna Sittard,672,1920,0,1
+2026-09-20,Feyenoord Rotterdam,FC Utrecht,675,676,5,0
+2026-09-20,FC Twente '65,PSV,666,674,3,2
+2026-09-20,AZ,Telstar 1963,682,1912,1,0
+2026-09-20,NEC,Go Ahead Eagles,1915,718,1,1
+2026-10-09,PSV,SC Heerenveen,674,673,2,0
+2026-10-10,Go Ahead Eagles,Sparta Rotterdam,718,6806,3,3
+2026-10-10,Feyenoord Rotterdam,AZ,675,682,2,0
+2026-10-10,Fortuna Sittard,FC Twente '65,1920,666,1,1
+2026-10-10,AFC Ajax,NEC,678,1915,1,1
+2026-10-11,FC Utrecht,Willem II Tilburg,676,672,3,1
+2026-10-11,PEC Zwolle,SC Cambuur-Leeuwarden,684,1909,0,1
+2026-10-11,Telstar 1963,ADO Den Haag,1912,680,2,2
+2026-10-11,SBV Excelsior,FC Groningen,670,677,1,5
+2026-10-16,SC Heerenveen,SBV Excelsior,673,670,4,0
+2026-10-17,ADO Den Haag,PSV,680,674,2,1
+2026-10-17,Telstar 1963,Feyenoord Rotterdam,1912,675,3,4
+2026-10-17,Sparta Rotterdam,Willem II Tilburg,6806,672,3,2
+2026-10-18,PEC Zwolle,Go Ahead Eagles,684,718,4,1
+2026-10-18,SC Cambuur-Leeuwarden,AZ,1909,682,2,2
+2026-10-18,FC Groningen,AFC Ajax,677,678,2,5
+2026-10-18,FC Twente '65,FC Utrecht,666,676,1,2
+2026-10-18,NEC,Fortuna Sittard,1915,1920,2,2
+2026-10-23,Go Ahead Eagles,Telstar 1963,718,1912,3,2
+2026-10-24,FC Utrecht,PEC Zwolle,676,684,1,1
+2026-10-24,Willem II Tilburg,SC Cambuur-Leeuwarden,672,1909,1,6
+2026-10-24,ADO Den Haag,SC Heerenveen,680,673,2,3
+2026-10-25,Fortuna Sittard,SBV Excelsior,1920,670,1,0
+2026-10-25,NEC,FC Groningen,1915,677,2,2
+2026-10-25,PSV,Feyenoord Rotterdam,674,675,1,1
+2026-10-25,Sparta Rotterdam,AFC Ajax,6806,678,1,2
+2026-10-25,AZ,FC Twente '65,682,666,0,2
+2026-10-31,Feyenoord Rotterdam,Fortuna Sittard,675,1920,1,1
+2026-10-31,SC Heerenveen,NEC,673,1915,1,0
+2026-10-31,PSV,Willem II Tilburg,674,672,7,0
+2026-10-31,SC Cambuur-Leeuwarden,Go Ahead Eagles,1909,718,4,0
+2026-10-31,AFC Ajax,AZ,678,682,1,0
+2026-11-01,PEC Zwolle,ADO Den Haag,684,680,1,0
+2026-11-01,Telstar 1963,FC Utrecht,1912,676,4,2
+2026-11-01,SBV Excelsior,FC Twente '65,670,666,0,9
+2026-11-01,FC Groningen,Sparta Rotterdam,677,6806,2,3
