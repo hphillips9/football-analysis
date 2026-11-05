@@ -406,9 +406,13 @@ def _fetch_fotmob_season(season, cache_path, league_id):
         {"id": league_id, "season": season.replace("-", "/")}
     )
 
+    # The Eredivisie lists its end-of-season European play-offs as rounds
+    # "1/2" and "final"; football-data.co.uk doesn't, so skip non-numeric
+    # rounds rather than spend requests on matches that never join
     finished = [
         m for m in league["fixtures"]["allMatches"]
         if m["status"].get("finished") and not m["status"].get("cancelled")
+        and str(m.get("round", "")).isdigit()
     ]
 
     rows = []

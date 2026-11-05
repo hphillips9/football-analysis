@@ -1,0 +1,307 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+3937378,2022-08-05,Benfica,Arouca,2.65,0.37
+3937377,2022-08-06,Rio Ave,Vizela,0.22,1.43
+3937375,2022-08-06,Estoril,Famalicão,1.83,1.53
+3937380,2022-08-06,FC Porto,Marítimo,3.22,1.58
+3937360,2022-08-07,Santa Clara,Casa Pia AC,0.26,1.3
+3937373,2022-08-07,Braga,Sporting CP,1.44,1.81
+3937374,2022-08-07,Chaves,Vitória de Guimarães,0.88,1.04
+3937379,2022-08-07,Portimonense,Boavista,1.37,0.74
+3937376,2022-08-08,Gil Vicente,Paços de Ferreira,1.38,0.93
+3937361,2022-08-12,Famalicão,Braga,1.01,2.31
+3937371,2022-08-13,Casa Pia AC,Benfica,0.21,1.69
+3937365,2022-08-13,Sporting CP,Rio Ave,2.19,0.12
+3937382,2022-08-14,Boavista,Santa Clara,2.07,0.4
+3937364,2022-08-14,Vizela,FC Porto,0.16,0.9
+3937363,2022-08-14,Vitória de Guimarães,Estoril,1.13,0.53
+3937362,2022-08-15,Marítimo,Chaves,1.05,2.44
+3937381,2022-08-15,Arouca,Gil Vicente,0.78,0.97
+3937372,2022-08-15,Paços de Ferreira,Portimonense,0.52,1.03
+3937370,2022-08-19,Estoril,Rio Ave,1.04,0.75
+3937366,2022-08-20,Santa Clara,Arouca,1.42,1.32
+3937369,2022-08-20,Chaves,Vizela,0.65,1.01
+3937383,2022-08-20,FC Porto,Sporting CP,3.72,0.82
+3937384,2022-08-21,Casa Pia AC,Boavista,1.41,0.84
+3937368,2022-08-21,Braga,Marítimo,1.82,0.28
+3937393,2022-08-21,Portimonense,Vitória de Guimarães,1.87,1.17
+3937394,2022-08-22,Gil Vicente,Famalicão,1.17,0.61
+3937389,2022-08-26,Paços de Ferreira,Estoril,0.74,2.12
+3937395,2022-08-27,Marítimo,Portimonense,0.88,1.27
+3937385,2022-08-27,Boavista,Benfica,0.1,2.96
+3937387,2022-08-27,Sporting CP,Chaves,1.71,0.65
+3937392,2022-08-28,Famalicão,Santa Clara,1.5,0.95
+3937391,2022-08-28,Arouca,Braga,0.8,2.65
+3937390,2022-08-28,Rio Ave,FC Porto,0.68,2.45
+3937388,2022-08-29,Vitória de Guimarães,Casa Pia AC,1.13,0.72
+3937386,2022-08-29,Vizela,Gil Vicente,1.42,1.51
+3937367,2022-08-30,Benfica,Paços de Ferreira,3.48,0.68
+3937426,2022-09-02,Benfica,Vizela,2.6,0.61
+3937439,2022-09-02,Estoril,Sporting CP,0.83,1.84
+3937424,2022-09-03,Braga,Vitória de Guimarães,2.24,0.68
+3937425,2022-09-03,Gil Vicente,FC Porto,0.66,2.3
+3937420,2022-09-04,Casa Pia AC,Arouca,0.32,0.23
+3937422,2022-09-04,Santa Clara,Marítimo,1.61,1.6
+3937423,2022-09-04,Portimonense,Famalicão,0.7,0.74
+3937427,2022-09-05,Boavista,Paços de Ferreira,1.02,0.8
+3937421,2022-09-05,Chaves,Rio Ave,2.5,0.88
+3937437,2022-09-09,Vitória de Guimarães,Santa Clara,0.87,0.65
+3937419,2022-09-10,Famalicão,Benfica,0.27,1.41
+3937434,2022-09-10,Sporting CP,Portimonense,1.18,0.43
+3937436,2022-09-10,FC Porto,Chaves,2.79,0.49
+3937438,2022-09-11,Paços de Ferreira,Casa Pia AC,1.6,1.43
+3937428,2022-09-11,Arouca,Boavista,0.82,1.5
+3937433,2022-09-11,Marítimo,Gil Vicente,1.75,2.41
+3937429,2022-09-11,Rio Ave,Braga,1.06,2.85
+3937435,2022-09-12,Vizela,Estoril,3.22,0.37
+3937405,2022-09-16,Portimonense,Chaves,1.93,1.14
+3937418,2022-09-17,Gil Vicente,Rio Ave,1.91,0.64
+3937403,2022-09-17,Santa Clara,Paços de Ferreira,1.0,0.47
+3937432,2022-09-17,Estoril,FC Porto,0.73,1.66
+3937430,2022-09-17,Boavista,Sporting CP,1.49,0.86
+3937404,2022-09-18,Arouca,Vitória de Guimarães,0.79,1.36
+3937431,2022-09-18,Benfica,Marítimo,3.47,0.16
+3937402,2022-09-18,Casa Pia AC,Famalicão,0.85,0.49
+3937417,2022-09-18,Braga,Vizela,1.85,0.86
+3937407,2022-09-30,Sporting CP,Gil Vicente,2.62,1.55
+3937397,2022-09-30,FC Porto,Braga,4.34,0.4
+3937416,2022-10-01,Vizela,Portimonense,0.87,1.13
+3937400,2022-10-01,Chaves,Estoril,0.73,1.61
+3937406,2022-10-01,Vitória de Guimarães,Benfica,0.25,0.39
+3937399,2022-10-02,Rio Ave,Santa Clara,0.31,0.26
+3937398,2022-10-02,Paços de Ferreira,Arouca,0.42,1.07
+3937401,2022-10-02,Famalicão,Boavista,0.98,0.36
+3937415,2022-10-03,Marítimo,Casa Pia AC,2.33,2.52
+3937412,2022-10-07,Gil Vicente,Estoril,1.06,0.98
+3937408,2022-10-08,Santa Clara,Sporting CP,0.82,1.45
+3937413,2022-10-08,Benfica,Rio Ave,3.81,0.75
+3937409,2022-10-08,Portimonense,FC Porto,1.41,1.08
+3937411,2022-10-08,Paços de Ferreira,Vitória de Guimarães,2.26,0.55
+3937414,2022-10-09,Boavista,Marítimo,1.5,1.77
+3937474,2022-10-09,Casa Pia AC,Vizela,0.75,0.49
+3937410,2022-10-09,Braga,Chaves,1.76,0.3
+3937396,2022-10-10,Arouca,Famalicão,1.24,0.88
+3937451,2022-10-21,FC Porto,Benfica,0.92,1.9
+3937472,2022-10-22,Famalicão,Paços de Ferreira,0.59,0.78
+3937449,2022-10-22,Estoril,Braga,0.23,0.88
+3937452,2022-10-22,Sporting CP,Casa Pia AC,3.44,0.76
+3937450,2022-10-23,Marítimo,Arouca,0.81,1.5
+3937453,2022-10-23,Vizela,Santa Clara,0.96,0.64
+3937473,2022-10-23,Chaves,Gil Vicente,2.52,0.94
+3937470,2022-10-23,Vitória de Guimarães,Boavista,2.16,0.81
+3937471,2022-10-24,Rio Ave,Portimonense,1.01,1.0
+3937443,2022-10-28,Paços de Ferreira,Marítimo,0.63,2.03
+3937441,2022-10-29,Santa Clara,FC Porto,0.43,2.03
+3937448,2022-10-29,Benfica,Chaves,3.68,0.87
+3937442,2022-10-29,Arouca,Sporting CP,0.93,2.13
+3937447,2022-10-30,Boavista,Vizela,2.05,1.22
+3937444,2022-10-30,Portimonense,Estoril,2.94,0.76
+3937454,2022-10-30,Casa Pia AC,Rio Ave,0.69,0.52
+3937445,2022-10-30,Gil Vicente,Braga,0.35,1.71
+3937446,2022-10-31,Vitória de Guimarães,Famalicão,0.98,1.08
+3937468,2022-11-04,Gil Vicente,Portimonense,1.15,2.54
+3937465,2022-11-05,Vizela,Arouca,1.52,0.47
+3937467,2022-11-05,FC Porto,Paços de Ferreira,2.99,0.24
+3937466,2022-11-05,Sporting CP,Vitória de Guimarães,2.02,0.07
+3937469,2022-11-06,Rio Ave,Boavista,1.35,0.38
+3937456,2022-11-06,Braga,Casa Pia AC,2.61,1.07
+3937463,2022-11-06,Marítimo,Famalicão,1.01,1.96
+3937464,2022-11-06,Estoril,Benfica,0.91,3.16
+3937455,2022-11-07,Chaves,Santa Clara,0.73,0.7
+3937482,2022-11-12,Arouca,Rio Ave,0.64,2.17
+3937462,2022-11-12,Boavista,FC Porto,0.3,2.91
+3937458,2022-11-13,Paços de Ferreira,Vizela,1.93,2.12
+3937460,2022-11-13,Vitória de Guimarães,Marítimo,0.65,0.32
+3937461,2022-11-13,Benfica,Gil Vicente,2.91,1.05
+3937481,2022-11-13,Casa Pia AC,Chaves,0.91,1.6
+3937459,2022-11-13,Portimonense,Braga,2.25,3.53
+3937457,2022-11-13,Famalicão,Sporting CP,0.8,2.82
+3937440,2022-11-14,Santa Clara,Estoril,2.28,0.93
+3937480,2022-12-23,Rio Ave,Marítimo,1.67,0.35
+3937477,2022-12-28,Portimonense,Casa Pia AC,1.25,1.64
+3937485,2022-12-28,FC Porto,Arouca,3.67,0.34
+3937476,2022-12-29,Gil Vicente,Santa Clara,2.0,0.39
+3937484,2022-12-29,Sporting CP,Paços de Ferreira,2.28,0.29
+3937479,2022-12-30,Chaves,Famalicão,1.43,0.9
+3937483,2022-12-30,Vizela,Vitória de Guimarães,1.87,1.3
+3937478,2022-12-30,Braga,Benfica,1.58,0.91
+3937488,2023-01-05,Santa Clara,Braga,0.14,2.68
+3937493,2023-01-06,Benfica,Portimonense,5.23,0.27
+3937489,2023-01-06,Famalicão,Vizela,0.62,0.48
+3937487,2023-01-07,Arouca,Estoril,3.31,0.68
+3937491,2023-01-07,Vitória de Guimarães,Rio Ave,0.8,0.41
+3937486,2023-01-07,Casa Pia AC,FC Porto,0.13,2.87
+3937490,2023-01-08,Paços de Ferreira,Chaves,1.55,0.88
+3937494,2023-01-08,Marítimo,Sporting CP,1.14,1.03
+3937492,2023-01-08,Boavista,Gil Vicente,1.58,1.58
+3937511,2023-01-13,Portimonense,Santa Clara,1.39,0.45
+3937507,2023-01-14,Vizela,Marítimo,3.16,0.4
+3937510,2023-01-14,Rio Ave,Paços de Ferreira,0.79,0.2
+3937496,2023-01-14,Braga,Boavista,0.92,0.61
+3937475,2023-01-15,Chaves,Arouca,1.52,1.6
+3937506,2023-01-15,Benfica,Sporting CP,2.58,1.86
+3937508,2023-01-15,FC Porto,Famalicão,2.26,0.34
+3937505,2023-01-16,Estoril,Casa Pia AC,1.17,0.09
+3937509,2023-01-16,Gil Vicente,Vitória de Guimarães,1.6,1.1
+3937498,2023-01-20,Arouca,Portimonense,3.34,0.4
+3937500,2023-01-20,Sporting CP,Vizela,2.94,0.65
+3937501,2023-01-21,Paços de Ferreira,Braga,0.58,1.01
+3937497,2023-01-21,Santa Clara,Benfica,0.53,2.96
+3937502,2023-01-21,Vitória de Guimarães,FC Porto,0.83,1.1
+3937504,2023-01-22,Marítimo,Estoril,0.71,0.69
+3937512,2023-01-22,Casa Pia AC,Gil Vicente,1.76,2.03
+3937499,2023-01-22,Famalicão,Rio Ave,2.5,0.9
+3937503,2023-01-23,Boavista,Chaves,1.67,0.64
+3937518,2023-01-26,Paços de Ferreira,Benfica,0.65,1.67
+3937538,2023-01-29,Casa Pia AC,Santa Clara,1.63,0.98
+3937544,2023-01-29,Vizela,Rio Ave,1.74,1.64
+3937545,2023-01-29,Boavista,Portimonense,2.07,0.44
+3937540,2023-01-29,Famalicão,Estoril,1.26,0.65
+3937543,2023-01-30,Vitória de Guimarães,Chaves,2.08,1.26
+3937542,2023-01-31,Paços de Ferreira,Gil Vicente,1.82,0.73
+3937539,2023-01-31,Arouca,Benfica,0.26,1.17
+3937551,2023-02-01,Marítimo,FC Porto,0.57,0.68
+3937541,2023-02-01,Sporting CP,Braga,2.69,0.13
+3937522,2023-02-04,Santa Clara,Boavista,0.52,0.65
+3937549,2023-02-04,Benfica,Casa Pia AC,3.53,0.24
+3937550,2023-02-04,Estoril,Vitória de Guimarães,1.1,1.08
+3937546,2023-02-05,Braga,Famalicão,1.78,0.69
+3937534,2023-02-05,Chaves,Marítimo,1.02,1.03
+3937548,2023-02-05,FC Porto,Vizela,2.29,0.52
+3937547,2023-02-05,Gil Vicente,Arouca,1.65,1.39
+3937535,2023-02-06,Portimonense,Paços de Ferreira,1.69,0.88
+3937536,2023-02-06,Rio Ave,Sporting CP,0.4,0.37
+3937495,2023-02-09,Estoril,Boavista,2.58,0.87
+3937516,2023-02-10,Vizela,Chaves,1.71,1.16
+3937521,2023-02-11,Arouca,Santa Clara,0.7,0.31
+3937517,2023-02-11,Vitória de Guimarães,Portimonense,2.19,0.48
+3937520,2023-02-12,Famalicão,Gil Vicente,1.22,0.98
+3937515,2023-02-12,Sporting CP,FC Porto,2.1,1.9
+3937523,2023-02-12,Marítimo,Braga,1.35,1.71
+3937519,2023-02-13,Rio Ave,Estoril,1.75,0.79
+3937514,2023-02-13,Boavista,Casa Pia AC,1.35,0.51
+3937531,2023-02-17,Gil Vicente,Vizela,1.78,1.91
+3937524,2023-02-18,Estoril,Paços de Ferreira,1.0,1.14
+3937529,2023-02-18,Portimonense,Marítimo,0.8,0.91
+3937532,2023-02-18,FC Porto,Rio Ave,1.5,0.47
+3937528,2023-02-19,Santa Clara,Famalicão,2.44,1.17
+3937530,2023-02-19,Braga,Arouca,1.15,1.23
+3937527,2023-02-19,Casa Pia AC,Vitória de Guimarães,1.3,0.44
+3937537,2023-02-20,Chaves,Sporting CP,0.84,4.01
+3937533,2023-02-20,Benfica,Boavista,3.67,0.27
+3937525,2023-02-24,Famalicão,Portimonense,1.27,1.24
+3937526,2023-02-25,Arouca,Casa Pia AC,1.44,1.28
+3937578,2023-02-25,Marítimo,Santa Clara,2.76,1.25
+3937579,2023-02-25,Vizela,Benfica,1.52,1.75
+3937513,2023-02-26,Rio Ave,Chaves,0.86,0.35
+3937583,2023-02-26,Paços de Ferreira,Boavista,1.01,2.34
+3937580,2023-02-26,FC Porto,Gil Vicente,1.76,2.39
+3937582,2023-02-27,Sporting CP,Estoril,2.18,0.12
+3937581,2023-02-27,Vitória de Guimarães,Braga,1.18,0.36
+3937575,2023-03-03,Boavista,Arouca,0.81,0.92
+3937576,2023-03-03,Benfica,Famalicão,1.83,0.37
+3937577,2023-03-04,Estoril,Vizela,0.79,1.17
+3937586,2023-03-04,Portimonense,Sporting CP,0.44,3.93
+3937595,2023-03-04,Chaves,FC Porto,1.92,1.45
+3937584,2023-03-05,Gil Vicente,Marítimo,0.41,2.11
+3937594,2023-03-05,Santa Clara,Vitória de Guimarães,1.07,1.43
+3937585,2023-03-05,Braga,Rio Ave,2.96,0.86
+3937593,2023-03-06,Casa Pia AC,Paços de Ferreira,1.26,0.52
+3937573,2023-03-10,FC Porto,Estoril,2.08,1.64
+3937592,2023-03-11,Chaves,Portimonense,1.59,2.75
+3937588,2023-03-11,Paços de Ferreira,Santa Clara,1.68,0.7
+3937587,2023-03-11,Vitória de Guimarães,Arouca,1.53,1.38
+3937574,2023-03-11,Vizela,Braga,1.12,0.84
+3937590,2023-03-12,Rio Ave,Gil Vicente,2.19,1.72
+3937561,2023-03-12,Marítimo,Benfica,0.42,4.52
+3937589,2023-03-12,Sporting CP,Boavista,2.61,0.15
+3937591,2023-03-13,Famalicão,Casa Pia AC,1.2,1.13
+3937553,2023-03-17,Santa Clara,Rio Ave,1.66,2.42
+3937555,2023-03-18,Portimonense,Vizela,1.19,1.18
+3937554,2023-03-18,Arouca,Paços de Ferreira,2.78,1.63
+3937558,2023-03-18,Benfica,Vitória de Guimarães,3.45,0.37
+3937560,2023-03-18,Estoril,Chaves,0.48,2.32
+3937562,2023-03-19,Casa Pia AC,Marítimo,1.95,1.14
+3937556,2023-03-19,Braga,FC Porto,0.89,1.07
+3937559,2023-03-19,Boavista,Famalicão,1.29,1.02
+3937566,2023-03-31,Estoril,Gil Vicente,0.92,1.52
+3937568,2023-04-01,Vizela,Casa Pia AC,0.91,0.66
+3937569,2023-04-01,Vitória de Guimarães,Paços de Ferreira,0.88,0.84
+3937570,2023-04-01,Sporting CP,Santa Clara,2.21,0.61
+3937572,2023-04-02,Chaves,Braga,2.1,1.56
+3937565,2023-04-02,Marítimo,Boavista,3.18,0.84
+3937571,2023-04-02,Rio Ave,Benfica,1.53,0.93
+3937567,2023-04-02,FC Porto,Portimonense,1.21,0.2
+3937563,2023-04-03,Famalicão,Arouca,1.56,1.54
+3937557,2023-04-05,Gil Vicente,Sporting CP,0.78,1.43
+3937602,2023-04-07,Santa Clara,Vizela,0.68,0.76
+3937564,2023-04-07,Benfica,FC Porto,0.48,0.55
+3937552,2023-04-07,Boavista,Vitória de Guimarães,0.92,1.68
+3937601,2023-04-08,Arouca,Marítimo,1.06,0.8
+3937605,2023-04-08,Paços de Ferreira,Famalicão,1.61,1.01
+3937604,2023-04-08,Portimonense,Rio Ave,2.2,2.03
+3937603,2023-04-08,Braga,Estoril,3.36,0.33
+3937600,2023-04-09,Casa Pia AC,Sporting CP,0.86,2.08
+3937606,2023-04-10,Gil Vicente,Chaves,1.66,1.61
+3937598,2023-04-14,Famalicão,Vitória de Guimarães,0.9,0.65
+3937624,2023-04-15,Estoril,Portimonense,1.15,1.23
+3937623,2023-04-15,Marítimo,Paços de Ferreira,1.68,1.03
+3937599,2023-04-15,Chaves,Benfica,0.84,2.3
+3937608,2023-04-15,FC Porto,Santa Clara,2.62,0.35
+3937597,2023-04-16,Rio Ave,Casa Pia AC,0.65,0.77
+3937607,2023-04-16,Braga,Gil Vicente,1.57,0.67
+3937596,2023-04-16,Sporting CP,Arouca,3.06,0.98
+3937622,2023-04-17,Vizela,Boavista,0.98,0.95
+3937621,2023-04-21,Casa Pia AC,Braga,0.28,1.73
+3937620,2023-04-22,Famalicão,Marítimo,3.09,1.42
+3937625,2023-04-22,Boavista,Rio Ave,3.08,0.65
+3937628,2023-04-22,Paços de Ferreira,FC Porto,0.68,3.17
+3937629,2023-04-23,Portimonense,Gil Vicente,0.99,1.93
+3937626,2023-04-23,Benfica,Estoril,3.26,0.18
+3937631,2023-04-23,Santa Clara,Chaves,1.62,0.94
+3937630,2023-04-23,Arouca,Vizela,1.54,1.95
+3937627,2023-04-24,Vitória de Guimarães,Sporting CP,0.22,1.48
+3937619,2023-04-28,Rio Ave,Arouca,1.64,0.48
+3937610,2023-04-29,Braga,Portimonense,1.86,0.59
+3937616,2023-04-29,Marítimo,Vitória de Guimarães,1.83,1.58
+3937609,2023-04-29,Chaves,Casa Pia AC,1.69,1.42
+3937613,2023-04-29,Vizela,Paços de Ferreira,2.34,1.14
+3937612,2023-04-29,Gil Vicente,Benfica,0.41,3.15
+3937615,2023-04-30,Estoril,Santa Clara,1.77,0.96
+3937614,2023-04-30,FC Porto,Boavista,1.57,0.79
+3937611,2023-04-30,Sporting CP,Famalicão,1.41,0.62
+3937653,2023-05-05,Casa Pia AC,Portimonense,1.8,0.82
+3937652,2023-05-06,Santa Clara,Gil Vicente,2.92,1.72
+3937663,2023-05-06,Boavista,Estoril,2.11,0.61
+3937618,2023-05-06,Benfica,Braga,3.16,0.65
+3937617,2023-05-07,Marítimo,Rio Ave,1.96,0.66
+3937649,2023-05-07,Vitória de Guimarães,Vizela,1.09,1.4
+3937650,2023-05-07,Paços de Ferreira,Sporting CP,0.31,3.1
+3937654,2023-05-08,Famalicão,Chaves,1.28,2.1
+3937651,2023-05-08,Arouca,FC Porto,0.47,2.3
+3937660,2023-05-12,Gil Vicente,Boavista,2.37,2.15
+3937655,2023-05-13,Chaves,Paços de Ferreira,1.88,0.87
+3937662,2023-05-13,Vizela,Famalicão,0.78,1.7
+3937657,2023-05-13,Portimonense,Benfica,0.27,3.66
+3937656,2023-05-13,Sporting CP,Marítimo,2.13,0.18
+3937659,2023-05-14,Rio Ave,Vitória de Guimarães,1.08,0.87
+3937658,2023-05-14,Braga,Santa Clara,2.85,3.56
+3937661,2023-05-14,FC Porto,Casa Pia AC,3.26,1.11
+3937648,2023-05-15,Estoril,Arouca,1.29,1.04
+3937647,2023-05-19,Marítimo,Vizela,2.75,0.44
+3937633,2023-05-20,Arouca,Chaves,1.85,2.17
+3937638,2023-05-20,Santa Clara,Portimonense,2.83,0.21
+3937637,2023-05-20,Boavista,Braga,1.28,1.31
+3937632,2023-05-20,Famalicão,FC Porto,1.18,4.67
+3937636,2023-05-21,Vitória de Guimarães,Gil Vicente,1.39,0.73
+3937639,2023-05-21,Casa Pia AC,Estoril,4.25,1.42
+3937634,2023-05-21,Paços de Ferreira,Rio Ave,2.34,1.75
+3937635,2023-05-21,Sporting CP,Benfica,2.4,2.15
+3937643,2023-05-26,Rio Ave,Famalicão,1.64,1.59
+3937646,2023-05-26,Vizela,Sporting CP,0.47,1.06
+3937644,2023-05-27,Gil Vicente,Casa Pia AC,1.44,0.83
+3937640,2023-05-27,Chaves,Boavista,0.93,2.24
+3937665,2023-05-27,Estoril,Marítimo,1.76,1.82
+3937664,2023-05-27,Benfica,Santa Clara,2.41,0.97
+3937645,2023-05-27,FC Porto,Vitória de Guimarães,2.38,0.74
+3937642,2023-05-27,Portimonense,Arouca,1.6,1.5
+3937641,2023-05-27,Braga,Paços de Ferreira,2.05,0.68

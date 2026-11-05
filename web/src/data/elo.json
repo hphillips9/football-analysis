@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-03T17:22:05+00:00",
+  "generated": "2026-11-05T10:35:36+00:00",
   "teams": [
     {
       "div": "E0",
@@ -480,6 +480,186 @@
       "div": "F1",
       "team": "Troyes",
       "elo": 1342
+    },
+    {
+      "div": "P1",
+      "team": "FC Porto",
+      "elo": 1895
+    },
+    {
+      "div": "P1",
+      "team": "Benfica",
+      "elo": 1878
+    },
+    {
+      "div": "P1",
+      "team": "Sporting CP",
+      "elo": 1834
+    },
+    {
+      "div": "P1",
+      "team": "Braga",
+      "elo": 1617
+    },
+    {
+      "div": "P1",
+      "team": "Santa Clara",
+      "elo": 1595
+    },
+    {
+      "div": "P1",
+      "team": "Arouca",
+      "elo": 1590
+    },
+    {
+      "div": "P1",
+      "team": "Acad\u00e9mico Viseu",
+      "elo": 1589
+    },
+    {
+      "div": "P1",
+      "team": "Famalic\u00e3o",
+      "elo": 1579
+    },
+    {
+      "div": "P1",
+      "team": "Gil Vicente",
+      "elo": 1529
+    },
+    {
+      "div": "P1",
+      "team": "Moreirense",
+      "elo": 1504
+    },
+    {
+      "div": "P1",
+      "team": "Alverca",
+      "elo": 1501
+    },
+    {
+      "div": "P1",
+      "team": "Vit\u00f3ria de Guimar\u00e3es",
+      "elo": 1476
+    },
+    {
+      "div": "P1",
+      "team": "Rio Ave",
+      "elo": 1431
+    },
+    {
+      "div": "P1",
+      "team": "Casa Pia AC",
+      "elo": 1424
+    },
+    {
+      "div": "P1",
+      "team": "Estrela da Amadora",
+      "elo": 1420
+    },
+    {
+      "div": "P1",
+      "team": "Estoril",
+      "elo": 1395
+    },
+    {
+      "div": "P1",
+      "team": "Nacional",
+      "elo": 1393
+    },
+    {
+      "div": "P1",
+      "team": "Mar\u00edtimo",
+      "elo": 1376
+    },
+    {
+      "div": "N1",
+      "team": "PSV Eindhoven",
+      "elo": 1815
+    },
+    {
+      "div": "N1",
+      "team": "Feyenoord",
+      "elo": 1747
+    },
+    {
+      "div": "N1",
+      "team": "Ajax",
+      "elo": 1698
+    },
+    {
+      "div": "N1",
+      "team": "FC Twente",
+      "elo": 1697
+    },
+    {
+      "div": "N1",
+      "team": "AZ Alkmaar",
+      "elo": 1612
+    },
+    {
+      "div": "N1",
+      "team": "SC Heerenveen",
+      "elo": 1592
+    },
+    {
+      "div": "N1",
+      "team": "FC Utrecht",
+      "elo": 1587
+    },
+    {
+      "div": "N1",
+      "team": "Fortuna Sittard",
+      "elo": 1548
+    },
+    {
+      "div": "N1",
+      "team": "NEC Nijmegen",
+      "elo": 1545
+    },
+    {
+      "div": "N1",
+      "team": "FC Groningen",
+      "elo": 1522
+    },
+    {
+      "div": "N1",
+      "team": "Go Ahead Eagles",
+      "elo": 1500
+    },
+    {
+      "div": "N1",
+      "team": "Sparta Rotterdam",
+      "elo": 1480
+    },
+    {
+      "div": "N1",
+      "team": "Telstar",
+      "elo": 1477
+    },
+    {
+      "div": "N1",
+      "team": "PEC Zwolle",
+      "elo": 1453
+    },
+    {
+      "div": "N1",
+      "team": "Excelsior",
+      "elo": 1451
+    },
+    {
+      "div": "N1",
+      "team": "ADO Den Haag",
+      "elo": 1443
+    },
+    {
+      "div": "N1",
+      "team": "Cambuur",
+      "elo": 1388
+    },
+    {
+      "div": "N1",
+      "team": "Willem II",
+      "elo": 1274
     }
   ]
 }

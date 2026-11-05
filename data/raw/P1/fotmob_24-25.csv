@@ -1,0 +1,307 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+4539021,2024-08-09,Sporting CP,Rio Ave,3.0,0.46
+4539018,2024-08-10,AVS Futebol SAD,Nacional,1.01,0.52
+4539020,2024-08-10,Casa Pia AC,Boavista,0.92,1.15
+4539022,2024-08-10,FC Porto,Gil Vicente,3.47,0.1
+4539023,2024-08-11,Estoril,Santa Clara,0.15,2.72
+4539019,2024-08-11,Famalicão,Benfica,1.47,0.78
+4539017,2024-08-11,Farense,Moreirense,1.4,2.2
+4539015,2024-08-11,Braga,Estrela da Amadora,1.41,0.69
+4539016,2024-08-12,Arouca,Vitória de Guimarães,0.21,0.83
+4539206,2024-08-16,Santa Clara,FC Porto,0.75,1.11
+4539210,2024-08-16,Gil Vicente,AVS Futebol SAD,2.38,1.42
+4539208,2024-08-17,Rio Ave,Farense,1.36,0.54
+4539205,2024-08-17,Nacional,Sporting CP,1.23,3.14
+4539202,2024-08-17,Benfica,Casa Pia AC,2.5,0.29
+4539207,2024-08-18,Moreirense,Arouca,2.5,1.01
+4539209,2024-08-18,Vitória de Guimarães,Estoril,1.79,0.2
+4539203,2024-08-18,Boavista,Braga,0.63,1.07
+4539204,2024-08-19,Estrela da Amadora,Famalicão,0.69,1.9
+4539216,2024-08-23,Farense,Sporting CP,0.26,3.95
+4539219,2024-08-24,Casa Pia AC,Santa Clara,0.84,0.62
+4539212,2024-08-24,FC Porto,Rio Ave,3.5,0.0
+4539211,2024-08-24,Benfica,Estrela da Amadora,1.35,0.16
+4539218,2024-08-24,Famalicão,Boavista,0.73,0.3
+4539214,2024-08-25,Arouca,Nacional,1.25,1.14
+4539215,2024-08-25,Estoril,Gil Vicente,0.53,2.04
+4539217,2024-08-25,AVS Futebol SAD,Vitória de Guimarães,0.71,1.42
+4539213,2024-08-25,Braga,Moreirense,1.68,2.43
+4539221,2024-08-30,Moreirense,Benfica,0.23,1.5
+4539228,2024-08-31,Santa Clara,AVS Futebol SAD,1.84,0.68
+4539220,2024-08-31,Boavista,Estoril,1.6,0.28
+4539225,2024-08-31,Estrela da Amadora,Casa Pia AC,0.46,0.6
+4539222,2024-08-31,Sporting CP,FC Porto,2.94,0.49
+4539226,2024-09-01,Nacional,Farense,2.03,0.34
+4539224,2024-09-01,Rio Ave,Arouca,1.68,0.92
+4539223,2024-09-01,Gil Vicente,Braga,1.27,0.62
+4539227,2024-09-01,Vitória de Guimarães,Famalicão,1.41,0.27
+4539231,2024-09-13,Arouca,Sporting CP,0.23,3.21
+4539232,2024-09-14,Casa Pia AC,Moreirense,1.63,0.63
+4539235,2024-09-14,AVS Futebol SAD,Rio Ave,0.59,1.04
+4539229,2024-09-14,Benfica,Santa Clara,2.6,0.7
+4539234,2024-09-14,Famalicão,Gil Vicente,1.06,0.69
+4539237,2024-09-15,FC Porto,Farense,4.5,0.91
+4539233,2024-09-15,Estoril,Nacional,1.03,2.38
+4539230,2024-09-15,Braga,Vitória de Guimarães,0.45,1.01
+4539236,2024-09-16,Estrela da Amadora,Boavista,1.05,1.92
+4539277,2024-09-20,Nacional,Braga,1.2,2.39
+4539280,2024-09-21,Rio Ave,Estoril,2.5,1.39
+4539275,2024-09-21,Santa Clara,Estrela da Amadora,1.73,0.4
+4539274,2024-09-21,Vitória de Guimarães,FC Porto,0.23,1.79
+4539281,2024-09-21,Moreirense,Famalicão,0.63,0.14
+4539279,2024-09-22,Gil Vicente,Casa Pia AC,1.22,1.51
+4539278,2024-09-22,Farense,Arouca,1.24,0.64
+4539282,2024-09-22,Sporting CP,AVS Futebol SAD,1.76,0.07
+4539276,2024-09-23,Boavista,Benfica,0.33,2.0
+4539440,2024-09-27,Estoril,Sporting CP,0.13,1.89
+4539441,2024-09-28,Estrela da Amadora,Moreirense,0.97,1.58
+4539439,2024-09-28,Casa Pia AC,Vitória de Guimarães,1.98,0.6
+4539437,2024-09-28,Benfica,Gil Vicente,3.59,1.09
+4539442,2024-09-29,Famalicão,Nacional,0.92,0.62
+4539444,2024-09-29,FC Porto,Arouca,3.09,0.22
+4539438,2024-09-29,Braga,Rio Ave,3.22,0.89
+4539445,2024-09-29,Santa Clara,Boavista,2.17,0.12
+4539443,2024-09-30,AVS Futebol SAD,Farense,0.54,0.47
+4539290,2024-10-04,Rio Ave,Famalicão,2.29,0.41
+4539289,2024-10-05,Gil Vicente,Estrela da Amadora,1.59,0.7
+4539291,2024-10-05,Moreirense,Santa Clara,0.46,1.35
+4539283,2024-10-05,Arouca,AVS Futebol SAD,1.03,2.1
+4539287,2024-10-05,Sporting CP,Casa Pia AC,2.64,0.6
+4539288,2024-10-06,Farense,Estoril,1.59,1.14
+4539286,2024-10-06,Vitória de Guimarães,Boavista,2.23,2.36
+4539285,2024-10-06,FC Porto,Braga,1.22,0.92
+4539295,2024-10-25,Casa Pia AC,Nacional,0.86,1.1
+4539299,2024-10-25,Santa Clara,Gil Vicente,1.5,0.79
+4539300,2024-10-26,Estoril,Arouca,2.23,1.69
+4539294,2024-10-26,Boavista,Moreirense,0.23,2.0
+4539297,2024-10-26,Famalicão,Sporting CP,0.2,3.6
+4539293,2024-10-27,Braga,Farense,2.9,0.18
+4539292,2024-10-27,Benfica,Rio Ave,2.38,0.19
+4539296,2024-10-27,Estrela da Amadora,Vitória de Guimarães,1.24,1.51
+4539298,2024-10-28,AVS Futebol SAD,FC Porto,0.18,2.45
+4539308,2024-11-01,Sporting CP,Estrela da Amadora,3.33,1.95
+4539306,2024-11-02,Rio Ave,Casa Pia AC,0.96,1.33
+4539304,2024-11-02,Farense,Benfica,0.86,1.53
+4539305,2024-11-02,Gil Vicente,Boavista,0.93,1.79
+4539303,2024-11-03,AVS Futebol SAD,Famalicão,1.83,2.17
+4539301,2024-11-03,Arouca,Braga,1.56,1.99
+4539302,2024-11-03,Vitória de Guimarães,Moreirense,0.44,0.31
+4539307,2024-11-03,FC Porto,Estoril,3.16,0.98
+4539309,2024-11-04,Nacional,Santa Clara,1.72,1.14
+4539381,2024-11-08,Moreirense,Gil Vicente,1.1,0.8
+4539377,2024-11-09,Casa Pia AC,Farense,1.23,0.85
+4539382,2024-11-09,Estoril,AVS Futebol SAD,0.33,0.92
+4539380,2024-11-09,Famalicão,Arouca,0.22,0.43
+4539376,2024-11-09,Boavista,Rio Ave,1.45,0.44
+4539378,2024-11-10,Estrela da Amadora,Nacional,2.06,0.34
+4539379,2024-11-10,Santa Clara,Vitória de Guimarães,3.25,0.53
+4539375,2024-11-10,Braga,Sporting CP,0.76,0.85
+4539374,2024-11-10,Benfica,FC Porto,2.21,1.08
+4539389,2024-11-29,Farense,Estrela da Amadora,1.01,0.37
+4539390,2024-11-30,Rio Ave,Moreirense,2.18,1.78
+4539387,2024-11-30,Nacional,Boavista,1.03,0.79
+4539391,2024-11-30,Sporting CP,Santa Clara,1.51,0.37
+4539385,2024-12-01,Estoril,Famalicão,1.48,1.05
+4539383,2024-12-01,Arouca,Benfica,0.52,2.05
+4539386,2024-12-01,AVS Futebol SAD,Braga,0.92,3.46
+4539384,2024-12-02,Vitória de Guimarães,Gil Vicente,1.73,0.09
+4539388,2024-12-02,FC Porto,Casa Pia AC,2.03,0.46
+4539396,2024-12-05,Moreirense,Sporting CP,0.3,1.83
+4539393,2024-12-06,Braga,Estoril,3.62,1.53
+4539395,2024-12-07,Gil Vicente,Nacional,0.98,1.62
+4539392,2024-12-07,Benfica,Vitória de Guimarães,0.76,0.5
+4539398,2024-12-07,Santa Clara,Rio Ave,0.96,0.46
+4539397,2024-12-07,Famalicão,FC Porto,1.1,0.88
+4539394,2024-12-08,Boavista,Farense,1.48,1.28
+4539400,2024-12-08,Casa Pia AC,AVS Futebol SAD,1.43,0.97
+4539399,2024-12-09,Estrela da Amadora,Arouca,1.07,1.11
+4539403,2024-12-14,Farense,Gil Vicente,0.73,0.74
+4539409,2024-12-14,Nacional,Moreirense,0.69,0.37
+4539406,2024-12-14,Sporting CP,Boavista,2.06,0.64
+4539402,2024-12-15,Arouca,Santa Clara,0.78,0.3
+4539404,2024-12-15,AVS Futebol SAD,Benfica,0.77,0.73
+4539407,2024-12-15,Estoril,Casa Pia AC,0.94,1.63
+4539401,2024-12-16,Braga,Famalicão,2.99,0.83
+4539408,2024-12-16,FC Porto,Estrela da Amadora,1.05,0.15
+4539405,2024-12-16,Rio Ave,Vitória de Guimarães,0.18,2.59
+4539284,2024-12-19,Nacional,Benfica,0.15,1.99
+4539417,2024-12-20,Casa Pia AC,Arouca,0.83,0.68
+4539415,2024-12-21,Famalicão,Farense,1.37,0.28
+4539418,2024-12-21,Boavista,AVS Futebol SAD,0.86,1.08
+4539414,2024-12-21,Moreirense,FC Porto,0.31,0.91
+4539416,2024-12-22,Santa Clara,Braga,1.41,1.58
+4539412,2024-12-22,Gil Vicente,Sporting CP,0.08,1.18
+4539410,2024-12-23,Benfica,Estoril,2.48,0.45
+4539411,2024-12-23,Vitória de Guimarães,Nacional,2.43,0.56
+4539413,2024-12-23,Estrela da Amadora,Rio Ave,0.7,1.28
+4539420,2024-12-27,Arouca,Gil Vicente,0.5,1.27
+4539423,2024-12-28,AVS Futebol SAD,Estrela da Amadora,1.27,2.2
+4539421,2024-12-28,Estoril,Moreirense,2.07,0.81
+4539425,2024-12-28,FC Porto,Boavista,2.0,0.19
+4539422,2024-12-29,Farense,Vitória de Guimarães,0.26,2.29
+4539426,2024-12-29,Rio Ave,Nacional,2.05,0.63
+4539419,2024-12-29,Braga,Casa Pia AC,1.05,0.87
+4539424,2024-12-29,Sporting CP,Benfica,1.2,0.78
+4539427,2024-12-30,Famalicão,Santa Clara,1.14,1.38
+4539429,2025-01-03,Vitória de Guimarães,Sporting CP,1.75,1.16
+4539436,2025-01-04,Moreirense,AVS Futebol SAD,1.59,1.72
+4539428,2025-01-04,Benfica,Braga,1.65,0.57
+4539435,2025-01-04,Boavista,Arouca,0.67,3.36
+4539434,2025-01-05,Santa Clara,Farense,0.63,0.09
+4539430,2025-01-05,Casa Pia AC,Famalicão,0.73,1.46
+4539432,2025-01-05,Estrela da Amadora,Estoril,0.92,2.28
+4539431,2025-01-06,Gil Vicente,Rio Ave,1.93,0.56
+4539433,2025-01-12,Nacional,FC Porto,0.93,1.14
+4539153,2025-01-17,Benfica,Famalicão,4.11,0.16
+4539148,2025-01-18,Santa Clara,Estoril,2.02,0.78
+4539155,2025-01-18,Rio Ave,Sporting CP,0.06,4.1
+4539150,2025-01-18,Vitória de Guimarães,Arouca,1.47,1.54
+4539151,2025-01-19,Moreirense,Farense,0.61,0.31
+4539152,2025-01-19,Nacional,AVS Futebol SAD,2.39,1.67
+4539149,2025-01-19,Estrela da Amadora,Braga,0.28,1.32
+4539156,2025-01-19,Gil Vicente,FC Porto,1.9,0.92
+4539154,2025-01-20,Boavista,Casa Pia AC,1.16,1.35
+4539162,2025-01-24,Arouca,Moreirense,0.59,0.56
+4539159,2025-01-25,Famalicão,Estrela da Amadora,0.72,0.13
+4539164,2025-01-25,Farense,Rio Ave,2.07,1.38
+4539157,2025-01-25,Casa Pia AC,Benfica,1.29,2.12
+4539160,2025-01-25,Sporting CP,Nacional,1.25,0.42
+4539163,2025-01-26,Estoril,Vitória de Guimarães,1.07,0.55
+4539161,2025-01-26,FC Porto,Santa Clara,3.21,0.04
+4539158,2025-01-26,Braga,Boavista,2.59,0.51
+4539165,2025-01-27,AVS Futebol SAD,Gil Vicente,1.45,0.42
+4539174,2025-01-31,Boavista,Famalicão,0.08,1.72
+4539170,2025-02-01,Nacional,Arouca,1.39,1.75
+4539166,2025-02-01,Santa Clara,Casa Pia AC,1.93,0.25
+4539171,2025-02-01,Gil Vicente,Estoril,2.09,1.56
+4539173,2025-02-01,Vitória de Guimarães,AVS Futebol SAD,1.27,0.21
+4539172,2025-02-02,Sporting CP,Farense,1.47,0.97
+4539167,2025-02-02,Estrela da Amadora,Benfica,1.17,2.5
+4539169,2025-02-03,Moreirense,Braga,0.86,1.05
+4539168,2025-02-03,Rio Ave,FC Porto,1.38,1.52
+4539177,2025-02-07,FC Porto,Sporting CP,1.4,1.1
+4539183,2025-02-08,AVS Futebol SAD,Santa Clara,0.85,1.4
+4539176,2025-02-08,Benfica,Moreirense,1.63,1.12
+4539182,2025-02-08,Famalicão,Vitória de Guimarães,0.38,0.55
+4539175,2025-02-09,Estoril,Boavista,2.01,1.14
+4539181,2025-02-09,Farense,Nacional,1.08,0.47
+4539178,2025-02-09,Braga,Gil Vicente,1.53,0.28
+4539180,2025-02-09,Casa Pia AC,Estrela da Amadora,1.51,0.25
+4539179,2025-02-10,Arouca,Rio Ave,1.93,0.65
+4539191,2025-02-14,Boavista,Estrela da Amadora,0.52,0.47
+4539187,2025-02-15,Moreirense,Casa Pia AC,2.34,1.08
+4539188,2025-02-15,Nacional,Estoril,2.39,1.48
+4539184,2025-02-15,Santa Clara,Benfica,0.81,2.6
+4539186,2025-02-15,Sporting CP,Arouca,2.13,2.09
+4539190,2025-02-16,Rio Ave,AVS Futebol SAD,1.8,0.65
+4539192,2025-02-16,Farense,FC Porto,0.41,1.22
+4539185,2025-02-16,Vitória de Guimarães,Braga,1.44,0.15
+4539189,2025-02-17,Gil Vicente,Famalicão,1.71,1.97
+4539196,2025-02-21,Braga,Nacional,1.3,0.25
+4539198,2025-02-22,Casa Pia AC,Gil Vicente,0.79,0.13
+4539195,2025-02-22,Benfica,Boavista,5.49,0.17
+4539199,2025-02-22,Estoril,Rio Ave,1.27,1.37
+4539197,2025-02-23,Arouca,Farense,1.66,0.91
+4539194,2025-02-23,Estrela da Amadora,Santa Clara,0.99,0.5
+4539201,2025-02-23,AVS Futebol SAD,Sporting CP,1.14,1.54
+4539200,2025-02-23,Famalicão,Moreirense,1.0,0.55
+4539193,2025-02-24,FC Porto,Vitória de Guimarães,1.0,1.38
+4539243,2025-03-01,Nacional,Famalicão,0.91,1.19
+4539245,2025-03-01,Arouca,FC Porto,0.34,1.55
+4539240,2025-03-01,Vitória de Guimarães,Casa Pia AC,1.88,0.57
+4539246,2025-03-02,Boavista,Santa Clara,0.64,0.53
+4539242,2025-03-02,Moreirense,Estrela da Amadora,0.46,1.08
+4539244,2025-03-02,Farense,AVS Futebol SAD,1.07,1.09
+4539239,2025-03-02,Rio Ave,Braga,2.1,0.98
+4539241,2025-03-03,Sporting CP,Estoril,2.63,0.36
+4539254,2025-03-07,Estrela da Amadora,Gil Vicente,0.52,0.62
+4539248,2025-03-08,AVS Futebol SAD,Arouca,0.85,2.6
+4539249,2025-03-08,Benfica,Nacional,4.16,2.45
+4539253,2025-03-08,Estoril,Farense,2.43,1.19
+4539250,2025-03-08,Braga,FC Porto,0.2,0.91
+4539247,2025-03-09,Santa Clara,Moreirense,1.89,0.39
+4539252,2025-03-09,Casa Pia AC,Sporting CP,0.58,2.31
+4539251,2025-03-09,Boavista,Vitória de Guimarães,1.43,2.21
+4539255,2025-03-10,Famalicão,Rio Ave,1.5,0.81
+4539257,2025-03-15,Farense,Braga,0.41,1.42
+4539263,2025-03-15,Gil Vicente,Santa Clara,0.68,0.66
+4539262,2025-03-15,FC Porto,AVS Futebol SAD,1.82,1.07
+4539261,2025-03-15,Sporting CP,Famalicão,3.87,1.05
+4539264,2025-03-16,Arouca,Estoril,0.82,2.23
+4539259,2025-03-16,Nacional,Casa Pia AC,1.18,1.06
+4539256,2025-03-16,Rio Ave,Benfica,1.31,4.79
+4539258,2025-03-16,Moreirense,Boavista,1.85,0.68
+4539260,2025-03-16,Vitória de Guimarães,Estrela da Amadora,1.2,0.26
+4539238,2025-03-28,Gil Vicente,Benfica,0.23,2.8
+4539271,2025-03-29,Casa Pia AC,Rio Ave,1.16,2.27
+4539273,2025-03-29,Estrela da Amadora,Sporting CP,0.35,2.26
+4539266,2025-03-29,Braga,Arouca,0.69,0.63
+4539268,2025-03-30,Famalicão,AVS Futebol SAD,2.36,0.53
+4539265,2025-03-30,Santa Clara,Nacional,0.88,0.52
+4539272,2025-03-30,Estoril,FC Porto,0.87,1.96
+4539267,2025-03-30,Moreirense,Vitória de Guimarães,0.89,1.17
+4539270,2025-04-01,Boavista,Gil Vicente,1.19,1.29
+4539269,2025-04-02,Benfica,Farense,2.36,1.66
+4539318,2025-04-04,AVS Futebol SAD,Estoril,0.45,2.59
+4539316,2025-04-05,Arouca,Famalicão,3.27,0.95
+4539315,2025-04-05,Vitória de Guimarães,Santa Clara,0.52,1.23
+4539317,2025-04-06,Gil Vicente,Moreirense,0.91,0.77
+4539314,2025-04-06,Nacional,Estrela da Amadora,0.53,0.96
+4539310,2025-04-06,FC Porto,Benfica,1.17,2.71
+4539313,2025-04-07,Farense,Casa Pia AC,0.78,0.03
+4539312,2025-04-07,Rio Ave,Boavista,0.88,1.07
+4539311,2025-04-07,Sporting CP,Braga,1.21,0.73
+4539321,2025-04-11,Gil Vicente,Vitória de Guimarães,0.41,0.71
+4539324,2025-04-12,Boavista,Nacional,1.7,1.71
+4539322,2025-04-12,Famalicão,Estoril,2.2,0.25
+4539319,2025-04-12,Santa Clara,Sporting CP,0.69,0.82
+4539325,2025-04-12,Casa Pia AC,FC Porto,0.54,0.76
+4539326,2025-04-13,Estrela da Amadora,Farense,1.37,1.06
+4539320,2025-04-13,Benfica,Arouca,2.88,1.36
+4539323,2025-04-13,Braga,AVS Futebol SAD,2.06,0.52
+4539327,2025-04-13,Moreirense,Rio Ave,0.36,1.44
+4539330,2025-04-18,Farense,Boavista,1.05,0.52
+4539334,2025-04-18,Rio Ave,Santa Clara,0.68,1.58
+4539333,2025-04-18,FC Porto,Famalicão,0.72,0.39
+4539332,2025-04-18,Sporting CP,Moreirense,2.51,0.32
+4539336,2025-04-19,AVS Futebol SAD,Casa Pia AC,0.72,1.22
+4539331,2025-04-19,Nacional,Gil Vicente,0.79,1.62
+4539335,2025-04-19,Arouca,Estrela da Amadora,1.95,0.62
+4539329,2025-04-19,Estoril,Braga,0.54,0.82
+4539328,2025-04-19,Vitória de Guimarães,Benfica,1.59,1.99
+4539338,2025-04-25,Famalicão,Braga,2.03,0.85
+4539337,2025-04-26,Santa Clara,Arouca,0.84,0.99
+4539339,2025-04-26,Gil Vicente,Farense,1.58,0.15
+4539344,2025-04-26,Estrela da Amadora,FC Porto,2.53,0.54
+4539345,2025-04-27,Moreirense,Nacional,0.49,0.52
+4539340,2025-04-27,Benfica,AVS Futebol SAD,4.02,0.58
+4539341,2025-04-27,Vitória de Guimarães,Rio Ave,1.78,0.48
+4539342,2025-04-27,Boavista,Sporting CP,0.42,4.06
+4539343,2025-04-29,Casa Pia AC,Estoril,2.01,1.68
+4539351,2025-05-02,FC Porto,Moreirense,1.63,0.34
+4539352,2025-05-03,Farense,Famalicão,1.78,0.94
+4539348,2025-05-03,Nacional,Vitória de Guimarães,1.19,0.91
+4539353,2025-05-03,Braga,Santa Clara,1.3,0.6
+4539347,2025-05-03,Estoril,Benfica,1.03,2.06
+4539354,2025-05-04,Arouca,Casa Pia AC,1.0,0.27
+4539349,2025-05-04,Sporting CP,Gil Vicente,0.75,0.79
+4539350,2025-05-05,Rio Ave,Estrela da Amadora,2.41,0.22
+4539355,2025-05-05,AVS Futebol SAD,Boavista,1.22,0.83
+4539364,2025-05-10,Nacional,Rio Ave,1.75,1.17
+4539356,2025-05-10,Santa Clara,Famalicão,3.05,1.34
+4539362,2025-05-10,Benfica,Sporting CP,1.6,0.32
+4539357,2025-05-10,Casa Pia AC,Braga,0.81,1.95
+4539358,2025-05-10,Gil Vicente,Arouca,1.4,0.83
+4539361,2025-05-11,Estrela da Amadora,AVS Futebol SAD,0.89,1.44
+4539359,2025-05-11,Moreirense,Estoril,1.52,1.53
+4539360,2025-05-11,Vitória de Guimarães,Farense,2.48,1.57
+4539363,2025-05-11,Boavista,FC Porto,1.62,1.52
+4539367,2025-05-16,Famalicão,Casa Pia AC,3.32,0.26
+4539368,2025-05-16,Rio Ave,Gil Vicente,0.99,0.9
+4539372,2025-05-17,Arouca,Boavista,1.54,1.71
+4539373,2025-05-17,AVS Futebol SAD,Moreirense,0.38,1.19
+4539365,2025-05-17,Braga,Benfica,1.95,1.35
+4539369,2025-05-17,Estoril,Estrela da Amadora,2.57,0.58
+4539371,2025-05-17,Farense,Santa Clara,1.54,1.22
+4539370,2025-05-17,FC Porto,Nacional,2.05,1.21
+4539366,2025-05-17,Sporting CP,Vitória de Guimarães,2.46,0.05

@@ -1,0 +1,91 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+5887559,2026-08-07,Estoril,Famalicão,1.06,1.47
+5887561,2026-08-08,Marítimo,Casa Pia AC,1.39,0.67
+5887566,2026-08-08,Vitória de Guimarães,Arouca,2.28,0.43
+5887558,2026-08-08,Estrela da Amadora,Sporting CP,1.1,2.69
+5887563,2026-08-09,FC Porto,Alverca,2.57,1.32
+5887565,2026-08-09,Benfica,Académico Viseu,3.44,1.07
+5887560,2026-08-09,Gil Vicente,Rio Ave,1.66,0.19
+5887562,2026-08-09,Moreirense,Braga,0.22,1.32
+5887564,2026-08-10,Santa Clara,Nacional,1.74,1.23
+5887599,2026-08-14,Sporting CP,Vitória de Guimarães,1.14,1.24
+5887592,2026-08-15,Alverca,Estrela da Amadora,1.94,1.36
+5887591,2026-08-15,Académico Viseu,Santa Clara,0.58,1.27
+5887598,2026-08-15,Rio Ave,FC Porto,0.67,2.0
+5887597,2026-08-16,Nacional,Estoril,2.03,0.86
+5887593,2026-08-16,Arouca,Moreirense,2.24,0.5
+5887596,2026-08-16,Famalicão,Marítimo,0.71,1.64
+5887595,2026-08-17,Casa Pia AC,Benfica,0.17,2.84
+5887603,2026-08-22,Marítimo,Académico Viseu,1.31,1.73
+5887601,2026-08-22,Estoril,Rio Ave,0.88,0.73
+5887607,2026-08-22,Sporting CP,Alverca,2.32,0.49
+5887608,2026-08-23,Vitória de Guimarães,Nacional,2.84,0.44
+5887606,2026-08-23,Santa Clara,Famalicão,1.45,1.15
+5887605,2026-08-23,FC Porto,Arouca,2.92,0.54
+5887602,2026-08-24,Gil Vicente,Casa Pia AC,1.75,0.89
+5887616,2026-08-28,Rio Ave,Sporting CP,0.32,1.61
+5887610,2026-08-29,Alverca,Santa Clara,0.61,1.49
+5887611,2026-08-29,Arouca,Marítimo,1.55,0.7
+5887609,2026-08-29,Académico Viseu,FC Porto,0.79,1.47
+5887615,2026-08-30,Nacional,Estrela da Amadora,0.92,2.34
+5887613,2026-08-30,Casa Pia AC,Moreirense,0.82,0.42
+5887614,2026-08-30,Famalicão,Gil Vicente,0.27,0.27
+5887617,2026-08-31,Benfica,Estoril,2.01,0.28
+5887612,2026-08-31,Braga,Vitória de Guimarães,0.93,0.47
+5887623,2026-09-04,FC Porto,Moreirense,3.39,1.05
+5887619,2026-09-05,Estrela da Amadora,Famalicão,0.81,1.88
+5887618,2026-09-05,Alverca,Braga,1.19,2.54
+5887622,2026-09-05,Marítimo,Benfica,0.59,1.05
+5887625,2026-09-05,Sporting CP,Nacional,3.14,0.08
+5887624,2026-09-06,Santa Clara,Rio Ave,2.26,0.32
+5887626,2026-09-06,Vitória de Guimarães,Casa Pia AC,2.43,0.19
+5887621,2026-09-06,Gil Vicente,Académico Viseu,1.88,0.33
+5887620,2026-09-07,Estoril,Arouca,1.08,1.19
+5887604,2026-09-09,Moreirense,Benfica,0.33,3.31
+5887600,2026-09-10,Estrela da Amadora,Braga,0.49,0.47
+5887633,2026-09-12,Nacional,Alverca,2.24,1.15
+5887630,2026-09-12,Casa Pia AC,FC Porto,1.52,2.7
+5887627,2026-09-12,Académico Viseu,Vitória de Guimarães,1.86,2.23
+5887628,2026-09-13,Arouca,Santa Clara,0.86,1.67
+5887635,2026-09-13,Benfica,Gil Vicente,3.32,1.24
+5887631,2026-09-13,Famalicão,Sporting CP,0.33,2.29
+5887634,2026-09-14,Rio Ave,Estrela da Amadora,1.32,1.95
+5887632,2026-09-14,Moreirense,Marítimo,2.11,0.87
+5887629,2026-09-14,Braga,Estoril,1.77,0.78
+5887639,2026-09-19,Gil Vicente,Marítimo,1.32,0.76
+5887640,2026-09-19,Nacional,Famalicão,1.58,1.22
+5887636,2026-09-19,Alverca,Rio Ave,3.24,0.31
+5887643,2026-09-19,Sporting CP,Arouca,1.3,2.15
+5887637,2026-09-20,Estrela da Amadora,Académico Viseu,0.95,2.51
+5887644,2026-09-20,Vitória de Guimarães,Moreirense,1.16,0.49
+5887638,2026-09-20,Estoril,Casa Pia AC,1.1,2.49
+5887642,2026-09-20,Santa Clara,Braga,1.24,0.74
+5887641,2026-09-20,FC Porto,Benfica,1.5,0.99
+5887651,2026-10-09,Moreirense,Gil Vicente,1.62,1.75
+5887647,2026-10-09,Braga,Sporting CP,1.74,0.85
+5887650,2026-10-10,Marítimo,FC Porto,0.19,1.93
+5887645,2026-10-10,Académico Viseu,Estoril,0.82,1.63
+5887648,2026-10-10,Casa Pia AC,Santa Clara,0.45,0.63
+5887652,2026-10-11,Rio Ave,Nacional,1.71,1.36
+5887653,2026-10-11,Benfica,Vitória de Guimarães,2.42,0.43
+5887646,2026-10-11,Arouca,Estrela da Amadora,0.78,1.43
+5887649,2026-10-12,Famalicão,Alverca,0.33,2.86
+5887594,2026-10-19,Braga,Gil Vicente,1.55,1.62
+5887662,2026-10-23,Vitória de Guimarães,Marítimo,1.97,0.65
+5887655,2026-10-24,Estrela da Amadora,Casa Pia AC,1.57,1.25
+5887654,2026-10-24,Alverca,Arouca,0.48,2.04
+5887657,2026-10-24,Gil Vicente,FC Porto,0.37,0.95
+5887656,2026-10-25,Estoril,Moreirense,1.93,1.75
+5887658,2026-10-25,Nacional,Braga,0.48,1.67
+5887659,2026-10-25,Rio Ave,Famalicão,0.6,1.77
+5887661,2026-10-25,Sporting CP,Académico Viseu,2.22,0.77
+5887660,2026-10-26,Santa Clara,Benfica,1.57,1.42
+5887666,2026-10-30,Casa Pia AC,Sporting CP,0.34,2.86
+5887669,2026-10-31,Moreirense,Estrela da Amadora,0.61,0.77
+5887670,2026-10-31,FC Porto,Estoril,3.32,0.55
+5887664,2026-11-01,Arouca,Nacional,0.75,0.39
+5887663,2026-11-01,Académico Viseu,Rio Ave,0.86,1.08
+5887668,2026-11-01,Marítimo,Santa Clara,2.1,0.77
+5887665,2026-11-01,Braga,Famalicão,1.71,0.16
+5887671,2026-11-02,Benfica,Alverca,1.7,0.64
+5887667,2026-11-02,Gil Vicente,Vitória de Guimarães,0.65,0.38
