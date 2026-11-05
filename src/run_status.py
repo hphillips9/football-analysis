@@ -31,7 +31,9 @@ class RunStatus:
 
     def set(self, div, **fields):
 
-        self.competitions[div].update(fields)
+        self.competitions.setdefault(
+            div, {"results": None, "xg": None, "predicted": 0, "error": None}
+        ).update(fields)
 
     def fail(self, div, exc, **fields):
         """Record ``exc`` against ``div`` (and any outcome fields), and

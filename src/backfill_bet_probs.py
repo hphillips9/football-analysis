@@ -24,7 +24,10 @@ from pathlib import Path
 
 import pandas as pd
 
-from bet_schema import COLUMN_ORDER, add_missing_columns, round_for
+import competitions
+from bet_schema import COLUMN_ORDER, add_missing_columns, clean_match_ids, round_for
+from european import results_for_elo
+from load_data import read_matches
 from team_names import load_alias_map, normalize_team_names
 from predict_next_matches import (
     build_history,
@@ -43,10 +46,7 @@ PROB_COLS = list(PROB_COLUMNS.values())
 
 def load_matches(matches_path=MATCHES_PATH):
 
-    matches = pd.read_csv(matches_path)
-    matches["MatchDateTime"] = pd.to_datetime(matches["MatchDateTime"])
-
-    return matches
+    return read_matches(matches_path)
 
 
 def assign_rounds(kickoffs, gap_days, divs=None):
@@ -120,12 +120,16 @@ def backfill(
         bets["Date"] + " " + bets["Time"], dayfirst=True
     )
 
+    # Cup bets (the CL) have a Round instead of a gameweek, and are only
+    # ever scored live - their history and model aren't rebuilt here
+    league = bets["Div"].map(competitions.is_league)
+
     if force:
-        prob_todo = bets.index
-        gw_todo = bets.index
+        prob_todo = bets.index[league]
+        gw_todo = bets.index[league]
     else:
-        prob_todo = bets.index[bets[PROB_COLS].isna().any(axis=1)]
-        gw_todo = bets.index[bets["Gameweek"].isna()]
+        prob_todo = bets.index[league & bets[PROB_COLS].isna().any(axis=1)]
+        gw_todo = bets.index[league & bets["Gameweek"].isna()]
 
     if len(prob_todo) == 0 and len(gw_todo) == 0:
         print("Every bet already has a gameweek and probabilities - nothing to do.")
@@ -135,7 +139,9 @@ def backfill(
     alias_map = load_alias_map()
 
     if len(gw_todo):
-        bets["Gameweek"] = attach_gameweeks(bets, matches, alias_map, gap_days)
+        gameweeks = attach_gameweeks(bets[league], matches, alias_map, gap_days)
+        bets["Gameweek"] = bets["Gameweek"].astype("Int64")
+        bets.loc[league, "Gameweek"] = gameweeks
         if "Round" in bets.columns:
             bets["Round"] = bets["Round"].where(
                 bets["Round"].notna(), round_for(bets["Gameweek"])
@@ -145,8 +151,13 @@ def backfill(
     if len(prob_todo) == 0:
         return _write(bets, bets_path)
 
-    bets["_round"] = assign_rounds(bets["_kickoff"], gap_days, bets["Div"])
+    bets["_round"] = pd.Series(pd.NA, index=bets.index, dtype=object)
+    bets.loc[league, "_round"] = assign_rounds(
+        bets.loc[league, "_kickoff"], gap_days, bets.loc[league, "Div"]
+    )
     todo = prob_todo
+
+    european = results_for_elo(matches)
 
     filled = 0
 
@@ -159,7 +170,12 @@ def backfill(
             print(f"Round starting {cutoff.date()}: no prior matches, skipped.")
             continue
 
-        history, elos, team_history = build_history(history)
+        # European results too, cut off at the same kick-off
+        prior_european = (
+            None if european is None
+            else european[european["Date"] < cutoff.normalize()]
+        )
+        history, elos, team_history = build_history(history, european=prior_european)
         models = train_models(history)
 
         fixtures = group[["Div", "Date", "Time", "HomeTeam", "AwayTeam"]].copy()
@@ -192,8 +208,11 @@ def format_bets(bets):
     """Bets in the current schema and column order, ready to write."""
 
     bets = add_missing_columns(bets)[COLUMN_ORDER]
-    # Whole units, written as complete_bets writes them ("1", not "1.0")
-    bets["Bet"] = bets["Bet"].astype("Int64")
+    # Whole numbers, written "1" not "1.0" - a CL bet's empty gameweek
+    # would otherwise turn the whole column float
+    for column in ("Gameweek", "Bet", "Backfilled"):
+        bets[column] = pd.to_numeric(bets[column]).round().astype("Int64")
+    bets["MatchId"] = clean_match_ids(bets["MatchId"]).to_numpy()
 
     return bets
 

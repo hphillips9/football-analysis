@@ -1,0 +1,307 @@
+{
+ "general": {
+  "matchId": "4723905",
+  "matchRound": "1/16",
+  "parentLeagueId": 42,
+  "homeTeam": {
+   "name": "PSV Eindhoven",
+   "id": 8640
+  },
+  "awayTeam": {
+   "name": "Juventus",
+   "id": 9885
+  },
+  "coverageLevel": "xG"
+ },
+ "header": {
+  "teams": [
+   {
+    "name": "PSV Eindhoven",
+    "id": 8640,
+    "score": 3
+   },
+   {
+    "name": "Juventus",
+    "id": 9885,
+    "score": 1
+   }
+  ],
+  "status": {
+   "utcTime": "2025-02-19T20:00:00.000Z",
+   "numberOfHomeRedCards": 0,
+   "numberOfAwayRedCards": 0,
+   "halfs": {
+    "firstHalfStarted": "19.02.2025 21:00:11",
+    "firstHalfEnded": "19.02.2025 21:47:23",
+    "secondHalfStarted": "19.02.2025 22:03:07",
+    "secondHalfEnded": "19.02.2025 22:55:22",
+    "firstExtraHalfStarted": "19.02.2025 23:00:15",
+    "secondExtraHalfStarted": "19.02.2025 23:20:28",
+    "gameEnded": "19.02.2025 23:38:37"
+   },
+   "finished": true,
+   "started": true,
+   "cancelled": false,
+   "awarded": false,
+   "scoreStr": "3 - 1",
+   "reason": {
+    "short": "AET",
+    "shortKey": "afterextratime_short",
+    "long": "After extra time",
+    "longKey": "afterextra"
+   },
+   "aggregatedStr": "4 - 3",
+   "whoLostOnPenalties": null,
+   "whoLostOnAggregated": "Juventus"
+  }
+ },
+ "content": {
+  "matchFacts": {
+   "events": {
+    "events": [
+     {
+      "type": "Half",
+      "time": 45,
+      "overloadTime": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "halfStrShort": "HT",
+      "isHome": null,
+      "newScore": null
+     },
+     {
+      "type": "Goal",
+      "time": 53,
+      "overloadTime": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "halfStrShort": null,
+      "isHome": true,
+      "newScore": [
+       1,
+       0
+      ]
+     },
+     {
+      "type": "Goal",
+      "time": 63,
+      "overloadTime": null,
+      "homeScore": 1,
+      "awayScore": 0,
+      "halfStrShort": null,
+      "isHome": false,
+      "newScore": [
+       1,
+       1
+      ]
+     },
+     {
+      "type": "Goal",
+      "time": 74,
+      "overloadTime": null,
+      "homeScore": 1,
+      "awayScore": 1,
+      "halfStrShort": null,
+      "isHome": true,
+      "newScore": [
+       2,
+       1
+      ]
+     },
+     {
+      "type": "Half",
+      "time": 90,
+      "overloadTime": null,
+      "homeScore": 2,
+      "awayScore": 1,
+      "halfStrShort": "FT",
+      "isHome": null,
+      "newScore": null
+     },
+     {
+      "type": "Goal",
+      "time": 98,
+      "overloadTime": null,
+      "homeScore": 2,
+      "awayScore": 1,
+      "halfStrShort": null,
+      "isHome": true,
+      "newScore": [
+       3,
+       1
+      ]
+     },
+     {
+      "type": "Half",
+      "time": 120,
+      "overloadTime": null,
+      "homeScore": 3,
+      "awayScore": 1,
+      "halfStrShort": "AET",
+      "isHome": null,
+      "newScore": null
+     }
+    ]
+   },
+   "infoBox": {
+    "legInfo": {
+     "bestOf": 2,
+     "bestOfNum": 2,
+     "localizedString": {
+      "key": "second_leg",
+      "fallback": "2nd leg"
+     },
+     "linkToOtherLeg": "/matches/psv-eindhoven-vs-juventus/2u64s0#4723904"
+    },
+    "Stadium": {
+     "name": "Philips Stadion",
+     "city": "Eindhoven",
+     "country": "",
+     "lat": 51.44163,
+     "long": 5.467452,
+     "capacity": 36500,
+     "surface": "grass"
+    }
+   }
+  },
+  "stats": {
+   "Periods": {
+    "All": {
+     "stats": [
+      {
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "3.40",
+          "1.76"
+         ],
+         "rawStats": [
+          {
+           "value": 3.4
+          },
+          {
+           "value": 1.76
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "home"
+        }
+       ]
+      }
+     ]
+    },
+    "FirstHalf": {
+     "stats": [
+      {
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "0.22",
+          "0.65"
+         ],
+         "rawStats": [
+          {
+           "value": 0.22
+          },
+          {
+           "value": 0.65
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "away"
+        }
+       ]
+      }
+     ]
+    },
+    "SecondHalf": {
+     "stats": [
+      {
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "1.43",
+          "0.31"
+         ],
+         "rawStats": [
+          {
+           "value": 1.43
+          },
+          {
+           "value": 0.31
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "home"
+        }
+       ]
+      }
+     ]
+    },
+    "FirstExtraHalf": {
+     "stats": [
+      {
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "1.17",
+          "0.62"
+         ],
+         "rawStats": [
+          {
+           "value": 1.17
+          },
+          {
+           "value": 0.62
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "home"
+        }
+       ]
+      }
+     ]
+    },
+    "SecondExtraHalf": {
+     "stats": [
+      {
+       "stats": [
+        {
+         "title": "Expected goals (xG)",
+         "key": "expected_goals",
+         "stats": [
+          "0.58",
+          "0.19"
+         ],
+         "rawStats": [
+          {
+           "value": 0.58
+          },
+          {
+           "value": 0.19
+          }
+         ],
+         "format": "double",
+         "type": "text",
+         "highlighted": "home"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  }
+ }
+}

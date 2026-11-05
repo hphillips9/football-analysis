@@ -52,8 +52,8 @@ Plot.plot({
 ```
 
 Bars run from a 1500-rated team; blue is above, red below. Each league's ratings
-are on their own scale for now, so a 1700 in one league isn't directly
-comparable with a 1700 in another.
+are on their own scale, so a 1700 in one league isn't directly comparable with a
+1700 in another - [Ratings Across Leagues](../ratings) puts every club on one scale.
 
 ```js
 Inputs.table(elo, {

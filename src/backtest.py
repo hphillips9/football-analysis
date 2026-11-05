@@ -32,6 +32,8 @@ from sklearn.metrics import accuracy_score, log_loss
 warnings.simplefilter("ignore", pd.errors.PerformanceWarning)
 
 import competitions
+from european import results_for_elo
+from load_data import read_matches
 from predict_next_matches import (
     build_elo_feature,
     build_goals_per_game_feature,
@@ -177,8 +179,7 @@ def score(matches, all_proba, seasons, test_seasons):
 
 def run_backtest(matches_path=MATCHES_PATH, out_path=OUT_PATH):
 
-    matches = pd.read_csv(matches_path)
-    matches["MatchDateTime"] = pd.to_datetime(matches["MatchDateTime"])
+    matches = read_matches(matches_path)
     # Tie-break same kick-offs so row order (and so the calibration CV
     # folds) doesn't shift when new matches are added
     matches = matches.sort_values(
@@ -188,7 +189,7 @@ def run_backtest(matches_path=MATCHES_PATH, out_path=OUT_PATH):
     if "Div" not in matches.columns:
         matches.insert(0, "Div", BASELINE_LEAGUE)
 
-    build_elo_feature(matches)
+    build_elo_feature(matches, european=results_for_elo(matches))
     build_goals_per_game_feature(matches)
     build_xgd_last5_feature(matches)
 

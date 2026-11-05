@@ -39,6 +39,15 @@ class _Fakes:
             else:
                 status.set(div, results="ok")
 
+    def fetch_european_results(self, status):
+        # FotMob down for the CL: its cache is used, the run carries on
+        try:
+            raise ConnectionError("fotmob.com unreachable")
+        except ConnectionError as exc:
+            status.fail("CL", exc, results="stale")
+        status.set("EL", results="ok")
+        status.set("ECL", results="ok")
+
     def complete_bets(self, divs):
         self.calls.append("complete_bets")
 
@@ -95,7 +104,7 @@ def _run(fakes, **kwargs):
     """
 
     names = [
-        "fetch_all_new_results", "complete_bets", "build_dataset", "backfill",
+        "fetch_all_new_results", "fetch_european_results", "complete_bets", "build_dataset", "backfill",
         "api_key", "fetch_next_fixtures", "load_model", "predict_round",
         "add_bets", "print_predictions", "export_web",
     ]
@@ -139,6 +148,10 @@ def test_one_league_failing_leaves_the_others_completing():
 
     assert fakes.bets_added == {"E0": 2}
     assert fakes.calls == ["complete_bets", "backfill", "export_web"]
+
+    # A European outage is recorded, not fatal
+    assert status["CL"]["results"] == "stale" and "unreachable" in status["CL"]["error"]
+    assert status["EL"]["results"] == "ok"
 
 
 def test_status_is_written_even_when_a_shared_step_fails():

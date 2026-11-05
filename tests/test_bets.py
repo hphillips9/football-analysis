@@ -166,6 +166,45 @@ def test_match_id_beats_names_and_dates():
     assert out.at[0, "ActualResult"] == "A"
 
 
+def test_cl_bet_settles_on_match_id_at_90_minutes_unpriced():
+    # The CL's results come from the FotMob cache: MatchId + 90-minute FTR, no odds.
+    # A league result that happens to share the id must not be used.
+    results = _results([
+        {"MatchId": "6106339", "Div": "CL", "Date": "24/11/2026", "HomeTeam": "Galatasaray",
+         "AwayTeam": "Aston Villa", "FTR": "D"},
+        {"MatchId": "6106339", "Div": "E0", "Date": "24/11/2026", "HomeTeam": "Galatasaray",
+         "AwayTeam": "Aston Villa", "FTR": "H", "AvgH": 2.0, "AvgD": 3.0, "AvgA": 4.0},
+    ])
+    bet = _bet(Div="CL", Gameweek=np.nan, Round="MD5", MatchId=6106339.0, Date="24/11/2026",
+               HomeTeam="Galatasaray", AwayTeam="Aston Villa", PredictedResult="A")
+
+    out = _settle([bet], results)
+
+    assert out.at[0, "ActualResult"] == "D"
+    assert out.at[0, "Bet"] == 0 and pd.isna(out.at[0, "Profit"])
+    assert out.at[0, "Round"] == "MD5"
+
+
+def test_cup_results_come_from_the_fotmob_cache():
+    import european
+
+    rows = pd.DataFrame({
+        "Div": ["CL", "CL"], "Season": ["25-26", "26-27"],
+        "Date": pd.to_datetime(["2026-05-30", "2026-11-25"]), "MatchId": ["1", "2"],
+        "HomeTeam": ["Paris Saint-Germain", "Inter"], "AwayTeam": ["Arsenal", "VfB Stuttgart"],
+        "FTR": ["D", "H"],
+    })
+    original = european.load_european
+    european.load_european = lambda divs=None, **kwargs: rows
+    try:
+        results = fetch_results._cup_results("CL")
+    finally:
+        european.load_european = original
+
+    # This season only, dated as the results files are
+    assert results[["MatchId", "Date", "FTR"]].values.tolist() == [["2", "25/11/2026", "H"]]
+
+
 if __name__ == "__main__":
     for name, test in list(globals().items()):
         if name.startswith("test_"):

@@ -1,9 +1,17 @@
 """
 Elo ratings: the update rule, the pre-match Elo feature for a match
 history, and a team's Elo going into an upcoming fixture.
+
+Given European results (CL, EL, ECL from european.py), every club is
+also rated on one scale across leagues (notebook 21, variant E2a+E2b):
+see the SHARED SCALE section.
 """
 
+import math
 from collections import defaultdict
+from pathlib import Path
+
+import pandas as pd
 
 import competitions
 
@@ -75,6 +83,20 @@ def promoted_start(div, promoted_elo=FROM_REGISTRY):
     return promoted_elo
 
 
+class Ratings(dict):
+    """
+    End-of-history Elo, one rating per team (what build_elo_feature
+    returns). ``shared`` holds every club's rating on the shared scale
+    across leagues - set when European results were used, else empty -
+    which is what a cup fixture is rated on (fixture_elo) - and
+    ``european``, shared_scale's pre-match ratings for each European
+    match (None without European results).
+    """
+
+    shared = {}
+    european = None
+
+
 def _ratings_by_team(ratings, scope):
     """
     One rating per team from ratings kept by scope key. Under
@@ -83,9 +105,9 @@ def _ratings_by_team(ratings, scope):
     """
 
     if scope == "all":
-        return dict(ratings)
+        return Ratings(ratings)
 
-    by_team = {}
+    by_team = Ratings()
 
     for (div, team), rating in ratings.items():
 
@@ -118,13 +140,18 @@ def new_rating(old_rating, actual_score, expected_score):
     )
 
 
-def build_elo_feature(matches, promoted_elo=FROM_REGISTRY, scope=DEFAULT_SCOPE):
+def build_elo_feature(matches, promoted_elo=FROM_REGISTRY, scope=DEFAULT_SCOPE,
+                      european=None):
     """
     Pre-match Elo for every row of ``matches`` (chronological). Returns
     the end-of-history ratings, one per team.
 
     Under ``scope="competition"`` each competition (Div) is rated on its
     own; ``"all"`` pools every match.
+
+    With ``european`` (european.load_european rows), European results
+    move the ratings too - see shared_scale(). Without it, or with none
+    on record, the ratings are the domestic ones alone.
 
     A team's first match of a season resets it to its competition's
     promoted start (see promoted_start) if it didn't play the season
@@ -134,6 +161,16 @@ def build_elo_feature(matches, promoted_elo=FROM_REGISTRY, scope=DEFAULT_SCOPE):
     ``promoted_elo=None`` turns this off everywhere (the original
     behaviour).
     """
+
+    if european is not None and len(european) and scope == "competition":
+        result = shared_scale(matches, european, promoted_elo=promoted_elo)
+        matches["HomeElo"] = result["home_elo"]
+        matches["AwayElo"] = result["away_elo"]
+        matches["EloDiff"] = matches["HomeElo"] - matches["AwayElo"]
+        ratings = _ratings_by_team(result["domestic"], scope)
+        ratings.shared = latest_shared(result["ratings"])
+        ratings.european = result["european"]
+        return ratings
 
     elos = {}  # scope key -> rating
 
@@ -219,14 +256,44 @@ def build_elo_feature(matches, promoted_elo=FROM_REGISTRY, scope=DEFAULT_SCOPE):
     return _ratings_by_team(elos, scope)
 
 
-def fixture_elo(team, season, elos, team_matches, seasons_on_record, div=""):
+def is_cup(div):
+    """True for a cup competition (the CL, EL, ECL) in the registry."""
+
+    return competitions.COMPETITIONS.get(div, {}).get("kind") == "cup"
+
+
+def entrant_rating(country, season, coefficients=None):
+    """
+    Where a club new to European football starts on the shared scale:
+    its country's baseline (shared_scale's rule for an outsider).
+    """
+
+    coefficients = coefficients or load_coefficients()
+
+    return LEAGUE_BASE_ELO + uefa_offset(country, season, coefficients) + ENTRANT_BONUS
+
+
+def fixture_elo(team, season, elos, team_matches, seasons_on_record, div="",
+                league=None):
     """
     A team's Elo going into a fixture in ``season`` of competition
     ``div``, given the matches it has played (in the fixture's scope) and
     the seasons on record there. Applies the same promoted-team reset as
     build_elo_feature to a team yet to play this season - e.g. a promoted
     side before its first game of a new season.
+
+    A cup fixture is rated on the shared scale (``elos.shared``). A club
+    with no shared rating yet starts at its country's baseline when
+    ``league`` is "X:<country>", else at LEAGUE_BASE_ELO.
     """
+
+    if is_cup(div):
+        shared = getattr(elos, "shared", {})
+        if team in shared:
+            return shared[team]
+        if isinstance(league, str) and league.startswith("X:"):
+            return entrant_rating(league[2:], season)
+        return LEAGUE_BASE_ELO
 
     played_in = {m["Season"] for m in team_matches}
     earlier = [s for s in seasons_on_record if s < season]
@@ -239,3 +306,312 @@ def fixture_elo(team, season, elos, team_matches, seasons_on_record, div=""):
         return start
 
     return elos.get(team, LEAGUE_BASE_ELO)
+
+
+# ============================================================
+# SHARED SCALE (notebook 21: E2a+E2b, option A offsets)
+# ============================================================
+#
+# Every league L sits at B_L = 1500 + O_L on one scale, with
+# O_L = A_L + D_L:
+#   A_L  OFFSET_SCALE * ln(C_L / C_ENG), C = UEFA's 5-year country
+#        coefficient at the start of the season (O_E0 = 0 anchors it)
+#   D_L  learned from European results between two modelled leagues
+#        (E2b), +- OFFSET_UPDATE_SIZE * (S - E); E0's stays 0
+#
+# A modelled club's domestic rating r is today's Elo, except that its
+# European results also move it (E2a), by EUROPE_UPDATE_SIZE * (S - E).
+# On the shared scale it is r - delta + O_L, where delta re-centres the
+# league: mean(r - t) - 1500 over the season's clubs, t being a club's
+# European transfers so far. That removes the drift from promotion and
+# relegation but keeps what a league has won in Europe. Domestic updates
+# are zero-sum, so delta is one constant per league and season (exactly,
+# when no league resets promoted clubs).
+#
+# A club from outside the modelled leagues ("X:<country>") holds a
+# shared-scale rating directly: it starts at 1500 + A_country +
+# ENTRANT_BONUS, is pulled towards its country's baseline between
+# seasons by OUTSIDER_CARRY, and moves with every European result.
+#
+# European expected score:
+#   1 / (1 + 10^(-(R_home + HA (1 - Neutral) - R_away) / 400)),
+# HA = EUROPE_HOME_ADVANTAGE. All chosen on 22-23/23-24 in notebook 21.
+
+OFFSET_SCALE = 150
+EUROPE_HOME_ADVANTAGE = 80
+EUROPE_UPDATE_SIZE = 35
+OFFSET_UPDATE_SIZE = 4
+ENTRANT_BONUS = 0
+OUTSIDER_CARRY = 0.5
+
+# The league that anchors the scale (O = 0, never learned)
+ANCHOR_LEAGUE = "E0"
+ANCHOR_COUNTRY = "ENG"
+
+COEFFICIENTS_PATH = (
+    Path(__file__).resolve().parents[1] / "data" / "reference" / "uefa_country_coefficients.csv"
+)
+
+SCORES = {"H": 1.0, "D": 0.5, "A": 0.0}
+
+
+def load_coefficients(path=COEFFICIENTS_PATH):
+    """{(country, season): coefficient} from data/reference (P4-02)."""
+
+    table = pd.read_csv(path)
+
+    return {
+        (country, season): coefficient
+        for country, season, coefficient in zip(
+            table["country"], table["season"], table["coefficient"]
+        )
+    }
+
+
+def uefa_offset(country, season, coefficients, scale=OFFSET_SCALE):
+    """
+    Option A's offset for ``country`` in ``season``. A season without a
+    snapshot yet uses the latest earlier one; a country UEFA doesn't list
+    gets that season's lowest coefficient.
+    """
+
+    seasons = sorted({s for _, s in coefficients})
+    snapshot = max([s for s in seasons if s <= season] or seasons[:1])
+
+    coefficient = coefficients.get((country, snapshot))
+    if coefficient is None:
+        coefficient = min(c for (_, s), c in coefficients.items() if s == snapshot)
+
+    return scale * math.log(coefficient / coefficients[(ANCHOR_COUNTRY, snapshot)])
+
+
+def shared_scale(matches, european, promoted_elo=FROM_REGISTRY, coefficients=None,
+                 history_from=None):
+    """
+    Rate ``matches`` (domestic, chronological, with Div, Season and
+    MatchDateTime) and ``european`` (european.load_european rows) in one
+    pass. A European match on day d counts after every domestic match up
+    to d.
+
+    Returns a dict:
+        home_elo, away_elo  pre-match domestic ratings, one per matches row
+        domestic            {(Div, club): rating} at the end
+        ratings             DataFrame Club, League (Div or X:<country>),
+                            Country, Modelled, Season, Rating - every club's
+                            shared-scale rating at the end
+        offsets             DataFrame Date, Season, Div, Offset - each
+                            league's O_L after every European matchday
+        history             DataFrame Date, Club, League, Rating - shared
+                            rating after each match from ``history_from`` on
+        european            DataFrame Div, MatchId, HomeElo, AwayElo - both
+                            sides' shared rating going into each European
+                            match (no home advantage, like EloDiff)
+    """
+
+    coefficients = coefficients or load_coefficients()
+    country_of = {div: entry["country"] for div, entry in competitions.COMPETITIONS.items()}
+
+    r = {}                         # (Div, club) -> domestic rating
+    transfer = defaultdict(float)  # (Div, club) -> European transfers so far
+    learned = defaultdict(float)   # Div -> D_L
+    delta, a_cache = {}, {}
+    outsiders = {}                 # club -> [rating, season, baseline, country]
+    last_season = {}               # (Div, club) -> latest season it played
+
+    participants = {
+        key: set(group["HomeTeam"]) | set(group["AwayTeam"])
+        for key, group in matches.groupby(["Div", "Season"])
+    }
+    leagues = sorted({div for div, _ in participants})
+
+    def a_offset(country, season):
+        key = (country, season)
+        if key not in a_cache:
+            a_cache[key] = uefa_offset(country, season, coefficients)
+        return a_cache[key]
+
+    def offset(div, season):
+        if div == ANCHOR_LEAGUE:
+            return 0.0
+        return a_offset(country_of[div], season) + learned[div]
+
+    def recentre(div, season):
+        key = (div, season)
+        if key not in delta:
+            # The season's clubs, or (a history cut off before its first
+            # domestic match) every club rated in the league so far
+            clubs = participants.get(key) or {c for (d, c) in r if d == div}
+            delta[key] = sum(
+                r.get((div, club), LEAGUE_BASE_ELO) - transfer[(div, club)] for club in clubs
+            ) / len(clubs) - LEAGUE_BASE_ELO
+        return delta[key]
+
+    def shared(div, club, season):
+        return r.get((div, club), LEAGUE_BASE_ELO) - recentre(div, season) + offset(div, season)
+
+    def outsider(club, country, season):
+        base = LEAGUE_BASE_ELO + a_offset(country, season)
+        state = outsiders.get(club)
+        if state is None:
+            state = outsiders[club] = [base + ENTRANT_BONUS, season, base, country]
+        elif state[1] != season:
+            state[0] = base + OUTSIDER_CARRY * (state[0] - state[2])
+            state[1], state[2], state[3] = season, base, country
+        return state
+
+    # The domestic rules, exactly as build_elo_feature's (scope "competition")
+    previous_season = {}
+    for div, frame in matches.groupby("Div"):
+        seasons = sorted(frame["Season"].unique())
+        previous_season[div] = dict(zip(seasons[1:], seasons[:-1]))
+    seen = defaultdict(set)
+
+    def domestic_elo(club, div, season):
+        key = (div, club)
+        if key not in seen[(div, season)]:
+            seen[(div, season)].add(key)
+            previous = previous_season.get(div, {})
+            promoted = season in previous and key not in seen[(div, previous[season])]
+            start = promoted_start(div, promoted_elo) if promoted else None
+            if start is not None:
+                r[key] = start
+        if key not in r:
+            r[key] = LEAGUE_BASE_ELO
+        last_season[key] = season
+        return r[key]
+
+    history_from = pd.Timestamp(history_from) if history_from is not None else None
+    history, offset_rows, european_elos = [], [], []
+
+    def record(day, club, league, rating):
+        if history_from is not None and day >= history_from:
+            history.append((day, club, league, rating))
+
+    def european_match(day, season, home, away, home_league, away_league, ftr, neutral):
+
+        sides = []
+        for club, league in ((home, home_league), (away, away_league)):
+            if league.startswith("X:"):
+                state = outsider(club, league[2:], season)
+                sides.append((club, league, state, state[0]))
+            else:
+                sides.append((club, league, None, shared(league, club, season)))
+
+        (_, _, _, rating_home), (_, _, _, rating_away) = sides
+        european_elos.append((rating_home, rating_away))
+        expected = 1 / (1 + 10 ** (
+            -(rating_home + EUROPE_HOME_ADVANTAGE * (1 - neutral) - rating_away) / 400
+        ))
+        change = SCORES[ftr] - expected
+
+        for (club, league, state, _), sign in zip(sides, (1, -1)):
+            move = sign * EUROPE_UPDATE_SIZE * change
+            if state is None:
+                key = (league, club)
+                r[key] = r.get(key, LEAGUE_BASE_ELO) + move
+                transfer[key] += move
+            else:
+                state[0] += move
+
+        both_modelled = all(state is None for _, _, state, _ in sides)
+        if both_modelled and home_league != away_league:
+            if home_league != ANCHOR_LEAGUE:
+                learned[home_league] += OFFSET_UPDATE_SIZE * change
+            if away_league != ANCHOR_LEAGUE:
+                learned[away_league] -= OFFSET_UPDATE_SIZE * change
+
+        for club, league, state, _ in sides:
+            record(day, club, league, state[0] if state else shared(league, club, season))
+
+    # Within a day, load_european's order (Div, then MatchId) - as notebook 21
+    european = european.sort_values("Date", kind="stable").reset_index(drop=True)
+    euro_days = pd.to_datetime(european["Date"]).dt.normalize().tolist()
+    euro_rows = list(zip(
+        european["Season"], european["HomeTeam"], european["AwayTeam"],
+        european["HomeLeague"], european["AwayLeague"], european["FTR"], european["Neutral"],
+    ))
+    position = 0
+
+    def play_european_before(day):
+        # every European match dated before ``day`` (None: all that are left)
+        nonlocal position
+        while position < len(euro_rows) and (day is None or euro_days[position] < day):
+            match_day, season = euro_days[position], euro_rows[position][0]
+            while position < len(euro_rows) and euro_days[position] == match_day:
+                european_match(match_day, *euro_rows[position])
+                position += 1
+            for div in leagues:
+                if (div, season) in participants:
+                    offset_rows.append((match_day, season, div, offset(div, season)))
+
+    home_elos, away_elos = [], []
+    days = pd.to_datetime(matches["MatchDateTime"]).dt.normalize().tolist()
+
+    for day, div, season, home, away, ftr in zip(
+        days, matches["Div"], matches["Season"], matches["HomeTeam"],
+        matches["AwayTeam"], matches["FTR"],
+    ):
+        play_european_before(day)
+
+        rating_home = domestic_elo(home, div, season)
+        rating_away = domestic_elo(away, div, season)
+        home_elos.append(rating_home)
+        away_elos.append(rating_away)
+
+        expected = expected_result(rating_home, rating_away)
+        score = SCORES[ftr]
+        r[(div, home)] = new_rating(rating_home, score, expected)
+        r[(div, away)] = new_rating(rating_away, 1 - score, 1 - expected)
+
+        if history_from is not None and day >= history_from:
+            record(day, home, div, shared(div, home, season))
+            record(day, away, div, shared(div, away, season))
+
+    play_european_before(None)
+
+    rows = [
+        {"Club": club, "League": div, "Country": country_of.get(div), "Modelled": True,
+         "Season": season, "Rating": shared(div, club, season)}
+        for (div, club), season in last_season.items()
+    ]
+    rows += [
+        {"Club": club, "League": f"X:{state[3]}", "Country": state[3], "Modelled": False,
+         "Season": state[1], "Rating": state[0]}
+        for club, state in outsiders.items()
+    ]
+
+    return {
+        "home_elo": home_elos,
+        "away_elo": away_elos,
+        "domestic": dict(r),
+        "ratings": (
+            pd.DataFrame(rows, columns=["Club", "League", "Country", "Modelled", "Season", "Rating"])
+            .sort_values("Rating", ascending=False)
+            .reset_index(drop=True)
+        ),
+        "offsets": pd.DataFrame(offset_rows, columns=["Date", "Season", "Div", "Offset"]),
+        "history": pd.DataFrame(history, columns=["Date", "Club", "League", "Rating"]),
+        "european": pd.DataFrame({
+            "Div": european["Div"] if "Div" in european.columns else None,
+            "MatchId": european["MatchId"] if "MatchId" in european.columns else None,
+            "HomeElo": [home for home, _ in european_elos],
+            "AwayElo": [away for _, away in european_elos],
+        }),
+    }
+
+
+def latest_shared(ratings):
+    """
+    {club: shared-scale rating} from shared_scale's ``ratings``: each
+    club's row from the latest season it played (its league rating if it
+    was also an outsider that season).
+    """
+
+    if ratings.empty:
+        return {}
+
+    latest = ratings.sort_values(["Season", "Modelled"], kind="stable").drop_duplicates(
+        "Club", keep="last"
+    )
+
+    return dict(zip(latest["Club"], latest["Rating"]))

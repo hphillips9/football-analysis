@@ -11,6 +11,9 @@ model.py. Their public names are re-exported here so existing imports
 import pandas as pd
 
 from bet_schema import BET_KEY, round_for, season_for
+from elo import is_cup
+from european import results_for_elo
+from load_data import read_matches
 from team_names import load_alias_map, normalize_team_names
 
 from elo import (  # noqa: F401 - re-exported
@@ -106,45 +109,74 @@ def load_model(matches_path="data/processed/all_matches.csv"):
     Build the features over the whole match history and train on it.
     Returns ``(matches, models, elos, team_history)`` for predict_round
     (models as model.train_models gives them).
+
+    The history includes the European rows (CL, EL, ECL), so a CL
+    fixture has its clubs' CL form (scope S3, notebook 23) and
+    shared-scale Elo. The league models train on league matches only;
+    the CL's European model on the European rows (notebook 22, setup
+    (c)). ``matches`` is the league rows, as before.
     """
 
-    matches = pd.read_csv(matches_path)
-    matches["MatchDateTime"] = pd.to_datetime(matches["MatchDateTime"])
+    history = read_matches(matches_path, cups=True)
 
-    matches, elos, team_history = build_history(matches)
+    history, elos, team_history = build_history(
+        history, european=results_for_elo(history)
+    )
 
-    models = train_models(matches)
+    models = train_models(history)
+
+    matches = history
+    if "Div" in history.columns and history["Div"].map(is_cup).any():
+        matches = history[~history["Div"].map(is_cup)].reset_index(drop=True)
+        if matches["Gameweek"].notna().all():
+            matches["Gameweek"] = matches["Gameweek"].astype(int)
 
     return matches, models, elos, team_history
 
 
 def predict_round(future, trained, source_name="Future_Fixtures.csv"):
     """
-    Score upcoming fixtures with load_model's output. Names are
-    normalised and a missing Gameweek inferred; the Div is carried
-    through when the fixtures have one.
+    Score upcoming fixtures with load_model's output. League fixtures'
+    names are normalised and a missing Gameweek inferred; the Div is
+    carried through when the fixtures have one.
+
+    Cup fixtures (fetch_fixtures' CL path) arrive with their clubs'
+    names already resolved through FotMob ids - clubs from outside the
+    modelled leagues aren't in team_names.csv - and have a Round
+    (MD5, R16, ...) rather than a gameweek.
     """
 
     matches, models, elos, team_history = trained
 
     future = future.copy()
 
+    league = (
+        ~future["Div"].map(is_cup) if "Div" in future.columns
+        else pd.Series(True, index=future.index)
+    )
+
     alias_map = load_alias_map()
 
-    future["HomeTeam"] = normalize_team_names(
-        future["HomeTeam"], alias_map, source_name=source_name
-    )
-    future["AwayTeam"] = normalize_team_names(
-        future["AwayTeam"], alias_map, source_name=source_name
-    )
+    for side in ("HomeTeam", "AwayTeam"):
+        future.loc[league, side] = normalize_team_names(
+            future.loc[league, side], alias_map, source_name=source_name
+        )
 
-    if "Gameweek" not in future.columns or future["Gameweek"].isna().any():
-        future["Gameweek"] = infer_gameweek(future, matches)
+    if "Gameweek" not in future.columns:
+        future["Gameweek"] = pd.NA
+    needs_gameweek = league & future["Gameweek"].isna()
+    if needs_gameweek.any():
+        future.loc[needs_gameweek, "Gameweek"] = infer_gameweek(future[needs_gameweek], matches)
 
     results = predict_fixtures(future, models, elos, team_history)
 
     if "Div" in future.columns:
         results.insert(0, "Div", future["Div"].to_numpy())
+
+    # A cup fixture's round label and FotMob id go on its bet
+    for column in ("Round", "MatchId"):
+        if column in future.columns:
+            results[column] = future[column].to_numpy()
 
     return results
 
@@ -173,8 +205,12 @@ def add_bets(predictions, bets_path=BETS_PATH):
 
     if "Season" not in predictions.columns:
         predictions["Season"] = season_for(predictions["Date"])
+    # A league's round is its gameweek; a cup fixture brings its own (MD5, R16)
+    from_gameweek = round_for(predictions["Gameweek"]).to_numpy()
     if "Round" not in predictions.columns:
-        predictions["Round"] = round_for(predictions["Gameweek"])
+        predictions["Round"] = from_gameweek
+    else:
+        predictions["Round"] = predictions["Round"].where(predictions["Round"].notna(), from_gameweek)
 
     key = BET_KEY
 
