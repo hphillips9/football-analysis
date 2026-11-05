@@ -6,7 +6,7 @@ import urllib.request
 import pandas as pd
 
 import competitions
-from bet_schema import ODDS_COLUMNS, add_missing_columns
+from bet_schema import ODDS_COLUMNS, add_missing_columns, clean_match_ids, match_id
 from team_names import load_alias_map
 
 SEASON_URL = "https://www.football-data.co.uk/mmz4281/{code}/{fd_uk}.csv"
@@ -163,12 +163,44 @@ def settle_profit(predicted, actual, odds):
     return float(-STAKE)
 
 
+def _cup_results(div):
+    """
+    This season's results of cup ``div`` from the FotMob cache: MatchId
+    and the 90-minute result (what CL bets settle on), with no odds.
+    """
+
+    import european  # european imports load_data, which imports this module's peers
+
+    rows = european.load_european([div])
+    rows = rows[rows["Season"] == competitions.CURRENT_SEASON]
+
+    return pd.DataFrame({
+        "Div": div,
+        "Season": rows["Season"],
+        "MatchId": rows["MatchId"].astype(str),
+        "Date": pd.to_datetime(rows["Date"]).dt.strftime("%d/%m/%Y"),
+        "HomeTeam": rows["HomeTeam"],
+        "AwayTeam": rows["AwayTeam"],
+        "FTR": rows["FTR"],
+    })
+
+
 def _load_current_results(divs=None):
-    """This season's results for every enabled competition that has a file."""
+    """
+    This season's results for every enabled competition: a league's
+    results file (with its odds), a cup's FotMob cache (by MatchId).
+    """
 
     frames = []
 
     for div in divs or competitions.enabled():
+
+        if not competitions.is_league(div):
+            try:
+                frames.append(_cup_results(div))
+            except (OSError, ValueError) as exc:
+                print(f"WARNING: no {div} results to settle with ({exc})")
+            continue
 
         try:
             frame = pd.read_csv(results_path(div))
@@ -206,7 +238,9 @@ def find_result(bet, results, alias_map):
     """
 
     if pd.notna(bet.get("MatchId")) and "MatchId" in results.columns:
-        found = results[results["MatchId"].astype(str) == str(bet["MatchId"])]
+        found = results[
+            (results["Div"] == bet["Div"]) & (results["MatchId"].astype(str) == match_id(bet["MatchId"]))
+        ]
         return found.iloc[0] if len(found) else None
 
     home = alias_map.get(bet["HomeTeam"], bet["HomeTeam"])
@@ -283,8 +317,10 @@ def complete_bets(bets_path=BETS_PATH, divs=None):
         print("No pending bets have results yet.")
         return bets
 
-    bets["Bet"] = bets["Bet"].astype("Int64")
-    bets["Backfilled"] = bets["Backfilled"].astype("Int64")
+    # Whole numbers ("1", not "1.0"): CL bets leave Gameweek empty
+    for column in ("Gameweek", "Bet", "Backfilled"):
+        bets[column] = pd.to_numeric(bets[column]).round().astype("Int64")
+    bets["MatchId"] = clean_match_ids(bets["MatchId"]).to_numpy()
     bets.to_csv(bets_path, index=False)
 
     total = bets.loc[settled, "Profit"].astype(float).sum()

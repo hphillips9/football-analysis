@@ -33,6 +33,7 @@ warnings.simplefilter("ignore", pd.errors.PerformanceWarning)
 
 import competitions
 from european import results_for_elo
+from load_data import read_matches
 from predict_next_matches import (
     build_elo_feature,
     build_goals_per_game_feature,
@@ -178,8 +179,7 @@ def score(matches, all_proba, seasons, test_seasons):
 
 def run_backtest(matches_path=MATCHES_PATH, out_path=OUT_PATH):
 
-    matches = pd.read_csv(matches_path)
-    matches["MatchDateTime"] = pd.to_datetime(matches["MatchDateTime"])
+    matches = read_matches(matches_path)
     # Tie-break same kick-offs so row order (and so the calibration CV
     # folds) doesn't shift when new matches are added
     matches = matches.sort_values(

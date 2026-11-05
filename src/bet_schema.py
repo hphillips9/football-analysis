@@ -57,6 +57,21 @@ def round_for(gameweeks):
     )
 
 
+def match_id(value):
+    """A MatchId as text: "6106339" whether it was read as 6106339 or 6106339.0."""
+
+    try:
+        return str(int(float(value)))
+    except (TypeError, ValueError):
+        return str(value)
+
+
+def clean_match_ids(ids):
+    """A MatchId column as text ids, empty where there's none."""
+
+    return pd.Series(ids).map(lambda v: match_id(v) if pd.notna(v) else pd.NA).astype(object)
+
+
 def add_missing_columns(bets):
     """
     Bring a Bets.csv frame up to the current schema: add any missing

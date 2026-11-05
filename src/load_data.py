@@ -121,7 +121,7 @@ def load_result_files(divs=None, raw_dir=RAW_DIR):
 
     frames = []
 
-    for div in divs or competitions.enabled():
+    for div in divs or competitions.leagues():
 
         for path in sorted(glob.glob(str(competition_dir(div, raw_dir) / "results_*.csv"))):
 
@@ -142,7 +142,7 @@ def load_result_files(divs=None, raw_dir=RAW_DIR):
 
     if not frames:
         raise FileNotFoundError(
-            f"No results_*.csv files found under {raw_dir} for {divs or competitions.enabled()}"
+            f"No results_*.csv files found under {raw_dir} for {divs or competitions.leagues()}"
         )
 
     matches = pd.concat(frames, ignore_index=True)
@@ -670,8 +670,151 @@ def report(matches):
 
 
 # ============================================================
+# CUP ROWS (the Champions League, plan §3.1)
+# ============================================================
+
+# Columns every row carries since P5-01 (plan §3.1). For a league match:
+# Stage "LEAGUE", Round = its gameweek, Leg empty, Neutral 0 and both
+# sides' league = its Div. MatchId is only filled for cup rows so far.
+MATCH_INFO_COLUMNS = [
+    "Stage", "Round", "Leg", "Neutral", "MatchId", "HomeLeague", "AwayLeague",
+]
+# Extra-time / tie outcome columns, empty for league matches
+CUP_COLUMNS = ["AETHG", "AETAG", "PenWinner", "TieWinner", "AggHome", "AggAway"]
+
+# The European caches have the date but not the kick-off time. Put cup
+# matches after the day's league games, as the shared-scale Elo orders
+# them (elo.shared_scale).
+CUP_KICKOFF = "22:00"
+
+
+def cup_divs():
+    """
+    The cup competitions with rows in all_matches: the CL (predicted) and
+    the EL and ECL, which the CL's European model also trains on.
+    """
+
+    return [
+        div for div, entry in competitions.COMPETITIONS.items() if entry["kind"] == "cup"
+    ]
+
+
+def add_match_info(matches):
+    """League matches with the MATCH_INFO_COLUMNS filled in for a league."""
+
+    matches = matches.copy()
+
+    matches["Stage"] = "LEAGUE"
+    matches["Round"] = matches["Gameweek"].astype("Int64").astype("string")
+    matches["Leg"] = pd.NA
+    matches["Neutral"] = 0
+    matches["MatchId"] = pd.NA
+    matches["HomeLeague"] = matches["Div"]
+    matches["AwayLeague"] = matches["Div"]
+
+    return matches
+
+
+def build_cup_rows(domestic, divs=None, raw_dir=RAW_DIR, **sources):
+    """
+    all_matches rows for the cup competitions in ``divs`` (default:
+    cup_divs()) from the FotMob caches (european.load_european,
+    which takes any ``sources`` paths): 90-minute FTHG/FTAG/FTR and xG,
+    Stage/Round/Leg/Neutral, each club's league that season (from
+    ``domestic``). Gameweek and Time are empty.
+    """
+
+    import european  # european imports this module
+
+    rows = european.load_european(
+        divs=divs or cup_divs(), domestic=domestic, raw_dir=raw_dir, **sources
+    )
+
+    if rows.empty:
+        return pd.DataFrame(columns=["Season", "Gameweek", "Div"])
+
+    dates = pd.to_datetime(rows["Date"])
+
+    return rows.assign(
+        Gameweek=pd.NA,
+        Date=dates.dt.strftime("%d/%m/%Y"),
+        Time=pd.NA,
+        MatchDateTime=pd.to_datetime(dates.dt.strftime("%Y-%m-%d") + " " + CUP_KICKOFF),
+        MatchId=rows["MatchId"].astype("string"),
+    )
+
+
+def read_matches(path=OUTPUT_PATH, cups=False):
+    """
+    all_matches.csv with MatchDateTime parsed: league matches only
+    (the rows the file held before cup rows were added, in the same
+    order), unless ``cups`` is True, when the cup rows (Div "CL",
+    "EL", "ECL") come too.
+    """
+
+    matches = pd.read_csv(path, dtype={"MatchId": "string", "Round": "string"})
+    matches["MatchDateTime"] = pd.to_datetime(matches["MatchDateTime"])
+
+    if cups or "Div" not in matches.columns:
+        return matches
+
+    is_cup = matches["Div"].map(
+        lambda d: competitions.COMPETITIONS.get(d, {}).get("kind") == "cup"
+    )
+
+    if not is_cup.any():
+        return matches
+
+    matches = matches[~is_cup].reset_index(drop=True)
+
+    # Cup rows have no gameweek, which made the column float
+    if matches["Gameweek"].notna().all():
+        matches["Gameweek"] = matches["Gameweek"].astype(int)
+
+    return matches
+
+
+# ============================================================
 # BUILD
 # ============================================================
+
+def _with_cups(matches, raw_dir, status):
+    """``matches`` (league rows) followed by the cup rows, where they build."""
+
+    divs = cup_divs()
+
+    try:
+        cup_rows = build_cup_rows(matches, divs, raw_dir)
+    except Exception as exc:
+        for div in divs:
+            if status is None:
+                print(f"{div}: FAILED - {type(exc).__name__}: {exc}; left out of the dataset.")
+            else:
+                status.fail(div, exc, xg="failed")
+        return matches
+
+    for div in divs:
+        rows = cup_rows[cup_rows["Div"] == div]
+        complete = bool(len(rows)) and (rows["HomeXG"].notna() & rows["AwayXG"].notna()).all()
+        if status is not None:
+            status.set(div, xg="ok" if complete else "partial")
+        print(f"{div}: {len(rows)} matches added ({rows['Season'].nunique()} seasons)")
+
+    columns = list(matches.columns) + [c for c in CUP_COLUMNS if c not in matches.columns]
+
+    combined = pd.concat(
+        [matches.reindex(columns=columns), cup_rows.reindex(columns=columns)],
+        ignore_index=True,
+    )
+    # Written as "12", not "12.0", now cup rows leave gaps
+    for column in ("Gameweek", "Leg", "AETHG", "AETAG", "AggHome", "AggAway"):
+        combined[column] = combined[column].astype("Int64")
+
+    # A stable sort, so the league rows keep their order
+    return combined.sort_values(
+        ["MatchDateTime", "HomeTeam", "AwayTeam"], kind="stable"
+    ).reset_index(drop=True)
+
 
 def _build_competition(div, alias_map, raw_dir, refresh_current, verbose):
     """One competition's results with xG merged on (see build_dataset)."""
@@ -718,7 +861,8 @@ def build_dataset(
     output_path=OUTPUT_PATH,
     refresh_current=True,
     verbose=False,
-    status=None
+    status=None,
+    cups=True,
 ):
     """
     Rebuild ``data/processed/all_matches.csv`` from the raw result
@@ -726,13 +870,20 @@ def build_dataset(
     plus xG from FotMob (Opta), football-data.co.uk or Understat, in
     that order of preference. Returns the resulting DataFrame.
 
+    With ``cups`` the European rows follow - CL, EL and ECL
+    (build_cup_rows, from the FotMob caches - no network). If they can't
+    be built the leagues are still saved and the cups are marked failed
+    in ``status``.
+    read_matches() leaves cup rows out unless asked for them.
+
     Each competition is built on its own: one that fails (an unknown
     team name, a missing results file) is left out and the rest still
     build. Each one's xG outcome goes to ``status`` (a
     run_status.RunStatus) when given. Raises RuntimeError if none built.
     """
 
-    divs = divs or competitions.enabled()
+    # Cups come from the FotMob caches (cups=True), not results files
+    divs = competitions.leagues(divs)
 
     alias_map = load_alias_map()
 
@@ -775,7 +926,12 @@ def build_dataset(
             f"{backup} from football-data/Understat backup)"
         )
 
-    matches = matches.drop(columns=["OriginalHomeTeam", "OriginalAwayTeam"])
+    matches = add_match_info(
+        matches.drop(columns=["OriginalHomeTeam", "OriginalAwayTeam"])
+    )
+
+    if cups:
+        matches = _with_cups(matches, raw_dir, status)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     matches.to_csv(output_path, index=False)

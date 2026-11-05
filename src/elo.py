@@ -83,6 +83,20 @@ def promoted_start(div, promoted_elo=FROM_REGISTRY):
     return promoted_elo
 
 
+class Ratings(dict):
+    """
+    End-of-history Elo, one rating per team (what build_elo_feature
+    returns). ``shared`` holds every club's rating on the shared scale
+    across leagues - set when European results were used, else empty -
+    which is what a cup fixture is rated on (fixture_elo) - and
+    ``european``, shared_scale's pre-match ratings for each European
+    match (None without European results).
+    """
+
+    shared = {}
+    european = None
+
+
 def _ratings_by_team(ratings, scope):
     """
     One rating per team from ratings kept by scope key. Under
@@ -91,9 +105,9 @@ def _ratings_by_team(ratings, scope):
     """
 
     if scope == "all":
-        return dict(ratings)
+        return Ratings(ratings)
 
-    by_team = {}
+    by_team = Ratings()
 
     for (div, team), rating in ratings.items():
 
@@ -153,7 +167,10 @@ def build_elo_feature(matches, promoted_elo=FROM_REGISTRY, scope=DEFAULT_SCOPE,
         matches["HomeElo"] = result["home_elo"]
         matches["AwayElo"] = result["away_elo"]
         matches["EloDiff"] = matches["HomeElo"] - matches["AwayElo"]
-        return _ratings_by_team(result["domestic"], scope)
+        ratings = _ratings_by_team(result["domestic"], scope)
+        ratings.shared = latest_shared(result["ratings"])
+        ratings.european = result["european"]
+        return ratings
 
     elos = {}  # scope key -> rating
 
@@ -239,14 +256,44 @@ def build_elo_feature(matches, promoted_elo=FROM_REGISTRY, scope=DEFAULT_SCOPE,
     return _ratings_by_team(elos, scope)
 
 
-def fixture_elo(team, season, elos, team_matches, seasons_on_record, div=""):
+def is_cup(div):
+    """True for a cup competition (the CL, EL, ECL) in the registry."""
+
+    return competitions.COMPETITIONS.get(div, {}).get("kind") == "cup"
+
+
+def entrant_rating(country, season, coefficients=None):
+    """
+    Where a club new to European football starts on the shared scale:
+    its country's baseline (shared_scale's rule for an outsider).
+    """
+
+    coefficients = coefficients or load_coefficients()
+
+    return LEAGUE_BASE_ELO + uefa_offset(country, season, coefficients) + ENTRANT_BONUS
+
+
+def fixture_elo(team, season, elos, team_matches, seasons_on_record, div="",
+                league=None):
     """
     A team's Elo going into a fixture in ``season`` of competition
     ``div``, given the matches it has played (in the fixture's scope) and
     the seasons on record there. Applies the same promoted-team reset as
     build_elo_feature to a team yet to play this season - e.g. a promoted
     side before its first game of a new season.
+
+    A cup fixture is rated on the shared scale (``elos.shared``). A club
+    with no shared rating yet starts at its country's baseline when
+    ``league`` is "X:<country>", else at LEAGUE_BASE_ELO.
     """
+
+    if is_cup(div):
+        shared = getattr(elos, "shared", {})
+        if team in shared:
+            return shared[team]
+        if isinstance(league, str) and league.startswith("X:"):
+            return entrant_rating(league[2:], season)
+        return LEAGUE_BASE_ELO
 
     played_in = {m["Season"] for m in team_matches}
     earlier = [s for s in seasons_on_record if s < season]
@@ -356,6 +403,9 @@ def shared_scale(matches, european, promoted_elo=FROM_REGISTRY, coefficients=Non
                             league's O_L after every European matchday
         history             DataFrame Date, Club, League, Rating - shared
                             rating after each match from ``history_from`` on
+        european            DataFrame Div, MatchId, HomeElo, AwayElo - both
+                            sides' shared rating going into each European
+                            match (no home advantage, like EloDiff)
     """
 
     coefficients = coefficients or load_coefficients()
@@ -431,7 +481,7 @@ def shared_scale(matches, european, promoted_elo=FROM_REGISTRY, coefficients=Non
         return r[key]
 
     history_from = pd.Timestamp(history_from) if history_from is not None else None
-    history, offset_rows = [], []
+    history, offset_rows, european_elos = [], [], []
 
     def record(day, club, league, rating):
         if history_from is not None and day >= history_from:
@@ -448,6 +498,7 @@ def shared_scale(matches, european, promoted_elo=FROM_REGISTRY, coefficients=Non
                 sides.append((club, league, None, shared(league, club, season)))
 
         (_, _, _, rating_home), (_, _, _, rating_away) = sides
+        european_elos.append((rating_home, rating_away))
         expected = 1 / (1 + 10 ** (
             -(rating_home + EUROPE_HOME_ADVANTAGE * (1 - neutral) - rating_away) / 400
         ))
@@ -540,4 +591,27 @@ def shared_scale(matches, european, promoted_elo=FROM_REGISTRY, coefficients=Non
         ),
         "offsets": pd.DataFrame(offset_rows, columns=["Date", "Season", "Div", "Offset"]),
         "history": pd.DataFrame(history, columns=["Date", "Club", "League", "Rating"]),
+        "european": pd.DataFrame({
+            "Div": european["Div"] if "Div" in european.columns else None,
+            "MatchId": european["MatchId"] if "MatchId" in european.columns else None,
+            "HomeElo": [home for home, _ in european_elos],
+            "AwayElo": [away for _, away in european_elos],
+        }),
     }
+
+
+def latest_shared(ratings):
+    """
+    {club: shared-scale rating} from shared_scale's ``ratings``: each
+    club's row from the latest season it played (its league rating if it
+    was also an outsider that season).
+    """
+
+    if ratings.empty:
+        return {}
+
+    latest = ratings.sort_values(["Season", "Modelled"], kind="stable").drop_duplicates(
+        "Club", keep="last"
+    )
+
+    return dict(zip(latest["Club"], latest["Rating"]))

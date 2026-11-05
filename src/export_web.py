@@ -46,6 +46,7 @@ from predict_next_matches import (
 from dixon_coles import fit_dixon_coles, expected_goals
 from elo import shared_scale
 from european import results_for_elo
+from load_data import read_matches
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -71,8 +72,7 @@ HISTORY_DAYS = 365
 
 def load_matches():
 
-    matches = pd.read_csv(MATCHES_PATH)
-    matches["MatchDateTime"] = pd.to_datetime(matches["MatchDateTime"])
+    matches = read_matches(MATCHES_PATH)
 
     return matches.sort_values(
         ["MatchDateTime", "HomeTeam", "AwayTeam"]
@@ -668,7 +668,8 @@ def build_leagues():
                 "kind": competitions.get(div)["kind"],
                 "promotedElo": competitions.get(div)["promoted_elo"],
             }
-            for div in competitions.enabled()
+            # League pages only; the CL gets its own page in P6-01
+            for div in competitions.leagues()
         ],
     }
 
@@ -742,7 +743,8 @@ def export_web():
     fixtures, bet_records, elo_rows = [], [], []
     by_competition, tables, all_bets = {}, {}, []
 
-    for div in competitions.enabled():
+    # CL predictions are recorded in Bets.csv but not shown until P6-01
+    for div in competitions.leagues():
 
         name = competitions.get(div)["name"]
         matches = history[history["Div"] == div].reset_index(drop=True)

@@ -155,7 +155,8 @@ def score(todo, matches):
 
 def backfill_season(divs=None, redo=False, bets_path=BETS_PATH, matches_path=MATCHES_PATH):
 
-    divs = divs or competitions.enabled()
+    # Leagues only: the CL has src/tools/backfill_cl.py
+    divs = competitions.leagues(divs)
 
     key = api_key()
     if not key:

@@ -7,6 +7,12 @@ Every builder takes a ``scope`` (see elo.SCOPES). The default,
 "competition", keeps each Div's history separate, so pooling several
 leagues in one frame leaves each league's features as they would be
 on its own.
+
+Cup rows (Div "CL") can sit in the same frame. Their form features are
+scoped like any competition's (so they never reach a league match's),
+and their Elo is the shared-scale rating across leagues; they are kept
+out of the league Elo, which European results move through
+``european`` instead (elo.shared_scale).
 """
 
 import pandas as pd
@@ -18,8 +24,10 @@ from elo import (
     DEFAULT_SCOPE,
     build_elo_feature,
     fixture_elo,
+    is_cup,
     match_div,
     scope_key,
+    shared_scale,
 )
 
 
@@ -214,11 +222,95 @@ def build_history(matches, scope=DEFAULT_SCOPE, european=None):
         .copy()
     )
 
-    elos = build_elo_feature(matches, scope=scope, european=european)
+    cup = (
+        matches["Div"].map(is_cup) if "Div" in matches.columns
+        else pd.Series(False, index=matches.index)
+    )
+
+    if cup.any():
+        elos = _elo_with_cups(matches, cup, scope, european)
+    else:
+        elos = build_elo_feature(matches, scope=scope, european=european)
+
     build_goals_per_game_feature(matches, scope=scope)
     team_history = build_xgd_last5_feature(matches, scope=scope)
 
     return matches, elos, team_history
+
+
+def _as_european(cup_rows):
+    """all_matches cup rows in the shape of european.load_european's."""
+
+    return cup_rows.assign(
+        Date=pd.to_datetime(cup_rows["MatchDateTime"]).dt.normalize()
+    ).sort_values(["Date", "Div", "MatchId"], kind="stable").reset_index(drop=True)
+
+
+def _european_with(european, cup_rows):
+    """
+    The European results to rate with: ``european`` plus any of
+    ``cup_rows`` it lacks (all of them when there's no ``european``), so
+    every cup row gets a pre-match rating.
+    """
+
+    if european is None or not len(european):
+        return cup_rows
+
+    have = set(zip(european["Div"], european["MatchId"].astype(str)))
+    extra = cup_rows[[
+        key not in have for key in zip(cup_rows["Div"], cup_rows["MatchId"].astype(str))
+    ]]
+
+    if extra.empty:
+        return european
+
+    return (
+        pd.concat([european, extra[european.columns.intersection(extra.columns)]], ignore_index=True)
+        .sort_values(["Date", "Div", "MatchId"], kind="stable")
+        .reset_index(drop=True)
+    )
+
+
+def _elo_with_cups(matches, cup, scope, european):
+    """
+    build_history's Elo when ``matches`` has cup rows: the league rows
+    are rated exactly as without them (moved by ``european``, or by the
+    cup rows themselves when no European results are given), and each
+    cup row takes both clubs' shared-scale rating going into it.
+    """
+
+    european = _european_with(european, _as_european(matches[cup]))
+
+    domestic = matches[~cup].copy()
+    elos = build_elo_feature(domestic, scope=scope, european=european)
+
+    pre_match = elos.european
+    if pre_match is None:
+        # scope "all" rates the leagues without the shared scale
+        pre_match = shared_scale(domestic, european)["european"]
+
+    by_id = {
+        (div, str(match_id)): (home, away)
+        for div, match_id, home, away in zip(
+            pre_match["Div"], pre_match["MatchId"], pre_match["HomeElo"], pre_match["AwayElo"]
+        )
+    }
+
+    cup_rows = matches[cup]
+    keys = list(zip(cup_rows["Div"], cup_rows["MatchId"].astype(str)))
+
+    columns = ["HomeElo", "AwayElo", "EloDiff"]
+    for column in columns:
+        matches[column] = float("nan")
+
+    matches.loc[domestic.index, columns] = domestic[columns].to_numpy()
+    matches.loc[cup_rows.index, "HomeElo"] = [by_id[key][0] for key in keys]
+    matches.loc[cup_rows.index, "AwayElo"] = [by_id[key][1] for key in keys]
+    matches.loc[cup_rows.index, "EloDiff"] = (
+        matches.loc[cup_rows.index, "HomeElo"] - matches.loc[cup_rows.index, "AwayElo"]
+    )
+
+    return elos
 
 
 # ============================================================
@@ -269,7 +361,9 @@ def build_future_features(future, elos, team_history, scope=DEFAULT_SCOPE):
     """
     EloDiff, XGDDiffLast5 and GoalsPerGameDiff for upcoming fixtures,
     from build_history's ratings and team history (built with the same
-    ``scope``), plus each fixture's Div.
+    ``scope``), plus each fixture's Div. A cup fixture's EloDiff is on
+    the shared scale; HomeLeague/AwayLeague ("X:<country>"), when given,
+    place a club new to Europe.
     """
 
     future_features = []
@@ -298,8 +392,14 @@ def build_future_features(future, elos, team_history, scope=DEFAULT_SCOPE):
 
         season = _season_label_for(match.get("Date", ""), latest_season)
 
-        home_elo = fixture_elo(home_team, season, elos, home_matches, seasons_on_record, div)
-        away_elo = fixture_elo(away_team, season, elos, away_matches, seasons_on_record, div)
+        home_elo = fixture_elo(
+            home_team, season, elos, home_matches, seasons_on_record, div,
+            league=match.get("HomeLeague"),
+        )
+        away_elo = fixture_elo(
+            away_team, season, elos, away_matches, seasons_on_record, div,
+            league=match.get("AwayLeague"),
+        )
 
         elo_diff = home_elo - away_elo
 

@@ -11,10 +11,15 @@ Always:
        Europa League and Conference League results from FotMob (they
        move the Elo ratings - see elo.py's shared scale)
     2. Settle any pending bets in data/raw/Bets.csv
-    3. Rebuild data/processed/all_matches.csv (results + FotMob xG, Understat backup)
+    3. Rebuild data/processed/all_matches.csv (results + FotMob xG, Understat backup),
+       plus the Champions League rows (Div "CL", 90-minute results) from
+       the FotMob caches
     4. Backfill gameweek / probabilities on any Bets.csv rows missing them
     5. Pull each competition's next round from football-data.org, predict
-       them and append the new bets to Bets.csv (skipped by --no-predict)
+       them and append the new bets to Bets.csv (skipped by --no-predict).
+       The Champions League is predicted by its own European model and its
+       bets carry Round + MatchId; they settle on the 90-minute result from
+       the FotMob cache, unpriced (Bet = 0) until CL odds are captured
     6. Export web/src/data/*.json for the website
 
 Step 5 only predicts fixtures that aren't already in Bets.csv, and waits
@@ -70,7 +75,7 @@ def run_week(refresh_current=True, verbose=False, predict=True, divs=None):
     os.chdir(ROOT)
 
     divs = divs or competitions.enabled()
-    status = RunStatus(divs + european.EUROPEAN)
+    status = RunStatus(list(dict.fromkeys(divs + european.EUROPEAN)))
 
     try:
         step(1, "Fetch new results")
@@ -156,10 +161,13 @@ def _predict_next_round(divs, status):
 
         try:
             results = predict_round(fixtures, trained)
+            # Cup bets also carry Round and MatchId; Bet stays empty until
+            # settled, then 0 (unpriced) until CL odds are captured (P6-03)
+            extra = [c for c in ("Round", "MatchId") if c in results.columns]
             added = add_bets(
                 results[
                     ["Div", "Gameweek", "Date", "Time", "HomeTeam", "AwayTeam", "Prediction"]
-                    + list(PROB_COLUMNS.values())
+                    + list(PROB_COLUMNS.values()) + extra
                 ]
             )
             print_predictions(results)

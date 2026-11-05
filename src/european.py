@@ -329,7 +329,8 @@ def read_cache(cache_path):
 def fetch_season(div, season, raw_dir=RAW_DIR, session=None):
     """
     Bring one competition season's cache up to date and return
-    (cache, number of finished matches FotMob lists).
+    (cache, number of finished matches FotMob lists). FotMob's whole
+    fixture list for the season goes to fixtures_<season>.csv alongside.
 
     Matches already cached are kept, except those from the last
     FOTMOB_REFETCH_DAYS (Opta still revises their xG), so a re-run only
@@ -355,6 +356,14 @@ def fetch_season(div, season, raw_dir=RAW_DIR, session=None):
         {"id": competitions.get(div)["fotmob"], "season": fotmob_season(season)},
     )
     fixtures = parse_fixtures(league, season)
+
+    # The whole fixture list too, played or not: CL fixtures from
+    # football-data.org are matched to FotMob's clubs through it
+    import champions_league  # it imports this module
+
+    champions_league.parse_fixture_list(league).to_csv(
+        champions_league.fixture_list_path(div, season, raw_dir), index=False
+    )
 
     rows = []
 

@@ -3,6 +3,11 @@ Pull the next round of every enabled competition from the
 football-data.org API and write them to data/raw/Future_Fixtures.csv
 for predict_next_matches.
 
+A cup (the Champions League) goes through champions_league.py: its
+clubs and match ids come from pairing with FotMob's fixture list, its
+results are counted in the FotMob cache, and its fixtures carry Round,
+Stage, Leg, Neutral, MatchId and HomeLeague/AwayLeague (no Gameweek).
+
 The API key is read from the FOOTBALL_DATA_API_KEY environment variable
 (a GitHub Actions secret in CI). Locally it can live in a .env file at
 the repo root, which is git-ignored:
@@ -19,8 +24,11 @@ from pathlib import Path
 
 import pandas as pd
 
+import champions_league
 import competitions
+import european
 from fetch_results import results_path
+from load_data import RAW_DIR, competition_dir
 from team_names import load_alias_map, normalize_team_names
 
 API_URL = "https://api.football-data.org/v4/competitions/{fd_org}/matches"
@@ -46,6 +54,12 @@ REQUEST_GAP = 6.5  # seconds between competitions
 
 FRAME_COLUMNS = [
     "Gameweek", "Status", "Kickoff", "Div", "Date", "Time", "HomeTeam", "AwayTeam",
+]
+
+OUTPUT_COLUMNS = ["Gameweek", "Div", "Date", "Time", "HomeTeam", "AwayTeam"]
+# Written only when a cup fixture is in the batch
+CUP_OUTPUT_COLUMNS = [
+    "Round", "Stage", "Leg", "Neutral", "MatchId", "HomeLeague", "AwayLeague",
 ]
 
 
@@ -133,7 +147,7 @@ def _already_bet(fixtures, bets_path):
     )
 
 
-def select_next_round(upcoming):
+def select_next_round(upcoming, min_round_size=MIN_ROUND_SIZE):
     """
     The earliest matchday with a full-ish round still to predict, plus
     any rearranged stragglers from earlier matchdays that kick off before
@@ -141,7 +155,7 @@ def select_next_round(upcoming):
     """
 
     sizes = upcoming["Gameweek"].value_counts()
-    rounds = sorted(sizes[sizes >= MIN_ROUND_SIZE].index)
+    rounds = sorted(sizes[sizes >= min_round_size].index)
 
     if not rounds:
         return upcoming
@@ -155,7 +169,8 @@ def select_next_round(upcoming):
     ]
 
 
-def next_round(fixtures, bets_path=BETS_PATH):
+def next_round(fixtures, bets_path=BETS_PATH, on_file=None, source=None,
+               min_round_size=MIN_ROUND_SIZE):
     """
     One competition's next round of unpredicted fixtures, or None when
     there's nothing to predict yet - either a round we've already bet on
@@ -164,19 +179,23 @@ def next_round(fixtures, bets_path=BETS_PATH):
     (predicting then would use stale Elo / form).
 
     ``fixtures`` is the whole season for one Div, with normalised names.
-    Each competition waits only on its own rounds.
+    Each competition waits only on its own rounds. ``on_file`` is how
+    many results are on file (default: the rows of its results file),
+    ``source`` where they are.
     """
 
     div = fixtures["Div"].iloc[0]
-    path = results_path(div)
+
+    if on_file is None:
+        source = results_path(div)
+        on_file = len(pd.read_csv(source))
 
     finished = (fixtures["Status"] == "FINISHED").sum()
-    on_file = len(pd.read_csv(path))
 
     if on_file < finished:
         print(
             f"{div}: football-data.org lists {finished} finished match(es) but "
-            f"{path} only has {on_file} - waiting for the results "
+            f"{source} only has {on_file} - waiting for the results "
             f"before predicting."
         )
         return None
@@ -202,11 +221,56 @@ def next_round(fixtures, bets_path=BETS_PATH):
         print(f"{div}: every upcoming fixture already has a bet - nothing to predict.")
         return None
 
-    return select_next_round(upcoming)
+    return select_next_round(upcoming, min_round_size)
+
+
+def _cup_round(key, div, bets_path, raw_dir=RAW_DIR):
+    """
+    A cup's next round (see next_round), or None. Its rounds are the
+    league-phase matchdays and each knockout leg, however few matches
+    (one final); results are counted in the FotMob cache.
+    """
+
+    season = competitions.CURRENT_SEASON
+    fd = champions_league.fd_org_frame(_get_matches(key, div), div)
+
+    if fd.empty:
+        print(f"{div}: football-data.org returned no matches.")
+        return None
+
+    fixtures = champions_league.resolve_fixtures(
+        fd,
+        champions_league.read_fixture_list(div, season, raw_dir),
+        season,
+        european_rows=european.load_european([div], raw_dir=raw_dir),
+    )
+
+    kickoff = fixtures["KickoffUTC"].dt.tz_convert(UK_TIMEZONE)
+    fixtures = fixtures.assign(
+        Kickoff=kickoff,
+        Date=kickoff.dt.strftime("%d/%m/%Y"),
+        Time=kickoff.dt.strftime("%H:%M"),
+        # next_round's round number; a cup fixture has no gameweek
+        Gameweek=fixtures["RoundOrder"],
+    )
+
+    cache = competition_dir(div, raw_dir) / f"fotmob_{season}.csv"
+    upcoming = next_round(
+        fixtures, bets_path, on_file=len(european.read_cache(cache)), source=cache,
+        min_round_size=1,
+    )
+
+    if upcoming is None:
+        return None
+
+    return upcoming.assign(Gameweek=pd.NA)
 
 
 def _competition_round(key, div, alias_map, bets_path):
     """One competition's next round (see next_round), or None."""
+
+    if competitions.get(div)["kind"] == "cup":
+        return _cup_round(key, div, bets_path)
 
     fixtures = _to_frame(_get_matches(key, div), div)
 
@@ -259,10 +323,14 @@ def fetch_next_fixtures(output_path=OUTPUT_PATH, bets_path=BETS_PATH, divs=None,
     if not rounds:
         return None
 
+    columns = OUTPUT_COLUMNS
+    if any(competitions.get(div)["kind"] == "cup" for div in pd.concat(rounds)["Div"].unique()):
+        columns = OUTPUT_COLUMNS + CUP_OUTPUT_COLUMNS
+
     future = (
         pd.concat(rounds)
         .sort_values(["Kickoff", "HomeTeam"])
-        [["Gameweek", "Div", "Date", "Time", "HomeTeam", "AwayTeam"]]
+        .reindex(columns=columns)
     )
 
     future.to_csv(output_path, index=False)

@@ -15,9 +15,10 @@ One entry per competition, keyed by its football-data.co.uk division code
                   None for a competition that's never predicted
     promoted_elo  starting Elo for a promoted club, or None to carry its
                   old rating over (see notebooks 19 and 20)
-    model         "pooled" (the model shared across competitions) or "own"
-                  (one trained on this competition alone) - see model.py;
-                  None for a competition that's never predicted
+    model         "pooled" (the model shared across competitions), "own"
+                  (one trained on this competition alone) or "european" (one
+                  trained on CL + EL + ECL matches, notebook 22) - see
+                  model.py; None for a competition that's never predicted
 
 Adding a league means one entry here plus its rows in
 data/reference/team_names.csv. Only codes in ENABLED are run.
@@ -63,7 +64,7 @@ COMPETITIONS = {
     "CL": dict(
         name="Champions League", kind="cup", country=None,
         fd_uk=None, fd_org="CL", fotmob=42, understat=None,
-        features="full", promoted_elo=None, model="pooled",
+        features="full", promoted_elo=None, model="european",
     ),
     # Results and xG only (D10): they feed the league-strength Elo and
     # its evaluation, and are never predicted or bet on
@@ -80,7 +81,7 @@ COMPETITIONS = {
 }
 
 # Grows phase by phase (docs/multi-league-plan.md)
-ENABLED = ["E0", "SP1", "D1", "I1", "F1", "P1", "N1"]
+ENABLED = ["E0", "SP1", "D1", "I1", "F1", "P1", "N1", "CL"]
 
 # The season live results and fixtures are fetched for. Bump it when a
 # new season starts.
@@ -102,3 +103,15 @@ def enabled():
     """Division codes the pipeline runs, in ENABLED order."""
 
     return list(ENABLED)
+
+
+def is_league(div):
+    """True for a domestic league (football-data.co.uk results, tables)."""
+
+    return COMPETITIONS.get(div, {}).get("kind", "league") == "league"
+
+
+def leagues(divs=None):
+    """The leagues among ``divs`` (default: the enabled ones), in order."""
+
+    return [div for div in (enabled() if divs is None else divs) if is_league(div)]
