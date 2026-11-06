@@ -1,0 +1,47 @@
+{
+  "generated": "2026-11-05T11:47:35+00:00",
+  "competitions": {
+    "E0": {
+      "results": "ok",
+      "xg": "ok",
+      "predicted": 0,
+      "error": null
+    },
+    "SP1": {
+      "results": "ok",
+      "xg": "ok",
+      "predicted": 0,
+      "error": null
+    },
+    "D1": {
+      "results": "ok",
+      "xg": "ok",
+      "predicted": 0,
+      "error": null
+    },
+    "I1": {
+      "results": "ok",
+      "xg": "ok",
+      "predicted": 0,
+      "error": null
+    },
+    "F1": {
+      "results": "ok",
+      "xg": "ok",
+      "predicted": 0,
+      "error": null
+    },
+    "P1": {
+      "results": "ok",
+      "xg": "ok",
+      "predicted": 9,
+      "error": null
+    },
+    "N1": {
+      "results": "ok",
+      "xg": "ok",
+      "predicted": 9,
+      "error": null
+    }
+  }
+}

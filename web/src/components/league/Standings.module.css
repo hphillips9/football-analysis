@@ -1,0 +1,77 @@
+.team {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.pos {
+  min-width: 1.4em;
+  color: var(--muted);
+  font-weight: 700;
+  text-align: right;
+}
+
+/* Δ: mini bar + "▲ 3"; the bar grows right for up, left for down */
+.move {
+  display: inline-grid;
+  grid-template-columns: 44px 3.2em;
+  align-items: center;
+  gap: 6px;
+}
+
+.track {
+  position: relative;
+  height: 8px;
+}
+
+/* Up: from the centre rightwards; down: from the centre leftwards */
+.bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  max-width: 50%;
+  border-radius: 2px;
+}
+
+.move[data-dir="up"] .bar {
+  left: 50%;
+  background: var(--pos);
+}
+
+.move[data-dir="down"] .bar {
+  right: 50%;
+  background: var(--neg);
+}
+
+.track::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  bottom: -2px;
+  width: 1px;
+  background: var(--line);
+}
+
+.moveText {
+  font-weight: 700;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.move[data-dir="up"] .moveText {
+  color: var(--pos);
+}
+
+.move[data-dir="down"] .moveText {
+  color: var(--neg);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

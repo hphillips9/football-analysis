@@ -1,0 +1,73 @@
+.carousel {
+  container-type: inline-size;
+  min-width: 0;
+}
+
+.track {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.slide {
+  min-width: 0;
+}
+
+.dots {
+  display: none;
+}
+
+/* Narrow: one slide per view, swipe between them */
+@container (max-width: 599.98px) {
+  .track {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 12px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slide {
+    scroll-snap-align: start;
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 6px;
+  }
+}
+
+/* Each dot is a 24 px target around an 8 px mark */
+.dots button {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.dots button::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1.5px solid var(--muted);
+}
+
+.dots button[aria-current]::before {
+  background: var(--text);
+  border-color: var(--text);
+}
+

@@ -1,0 +1,224 @@
+---
+/**
+ * /{c}/: the league's Fixtures section (P7-01 mockup, plan §3/§4).
+ *
+ *   main   this gameweek's fixtures by day, as probability-strip cards
+ *          (V1; the cards carry what the Observable table had: pick,
+ *          H/D/A %, Elo gap, result)
+ *   aside  top rated (V3) and simulated stakes (V2 + profit, ROI, staked)
+ *
+ * The band above (Shell) already shows picks right / if always home /
+ * points better / won-lost and the gameweek with its dates.
+ */
+import { signed } from "../../lib/format";
+import type { LeagueData } from "../../lib/data";
+import { leagueHref, sectionByKey, type SectionKey } from "../../lib/routes";
+import { hasResults } from "../../lib/schema";
+import FixtureDays from "../fixtures/FixtureDays.astro";
+import HowToRead from "../fixtures/HowToRead.astro";
+import ProfitSpark from "./ProfitSpark";
+import TopRated from "./TopRated.astro";
+
+interface Props {
+  data: LeagueData;
+}
+
+const { data } = Astro.props;
+const { competition: comp, fixtures, stats } = data;
+const settledStats = stats && hasResults(stats) ? stats : undefined;
+const played = fixtures.filter((f) => f.settled).length;
+
+// A cup has no Ratings section (lib/routes.ts): its link and the top-rated list are left out
+const section = (key: SectionKey) => {
+  const found = sectionByKey(comp.kind, key);
+  return found && leagueHref(comp.slug, found);
+};
+const ratingsHref = section("ratings");
+const recordHref = section("record");
+const tone = (v: number) => (v > 0.005 ? "pos" : v < -0.005 ? "neg" : undefined);
+---
+
+<div class="hub">
+  <div class="fixtures">
+    <h2 class="sr-only">Fixtures</h2>
+    {
+      fixtures.length ? (
+        <>
+          <HowToRead />
+          <FixtureDays fixtures={fixtures} label={comp.name} />
+          {played > 0 && (
+            <p class="note">
+              {played} of {fixtures.length} played so far; the rest are still to come.
+            </p>
+          )}
+        </>
+      ) : (
+        <p class="empty">
+          No {comp.name} fixtures this week yet. They appear once the next {comp.kind === "cup" ? "matchday" : "gameweek"} is scheduled.
+        </p>
+      )
+    }
+  </div>
+
+  <aside aria-label={`${comp.name} at a glance`}>
+    {
+      ratingsHref && (
+        <section>
+          <h2>Top rated</h2>
+          <TopRated ratings={data.ratings} />
+          <a class="more" href={ratingsHref}>
+            All ratings
+          </a>
+        </section>
+      )
+    }
+
+    <section class="stake">
+      <h2>Simulated stakes</h2>
+      <p>One unit on every pick, settled at bookmaker odds. A check on the model, not betting advice.</p>
+      {
+        settledStats ? (
+          <>
+            <p class="big" data-tone={tone(settledStats.profit)}>
+              {signed(settledStats.profit)}u
+            </p>
+            {settledStats.bankroll.length > 0 && (
+              <ProfitSpark
+                client:visible
+                points={settledStats.bankroll}
+                leagueName={comp.name}
+                league={comp.slug}
+              />
+            )}
+            <dl class="facts">
+              <div>
+                <dt>Return on stakes</dt>
+                <dd data-tone={tone(settledStats.roi)}>{signed(settledStats.roi, 1)}%</dd>
+              </div>
+              <div>
+                <dt>Staked</dt>
+                <dd>{settledStats.staked}u</dd>
+              </div>
+              <div>
+                <dt>Still to settle</dt>
+                <dd>{settledStats.pendingBets}</dd>
+              </div>
+            </dl>
+          </>
+        ) : (
+          <p class="empty">Nothing settled yet{stats ? `: ${stats.pendingBets} picks pending` : ""}.</p>
+        )
+      }
+      {
+        recordHref && (
+          <a class="more" href={recordHref}>
+            Full track record
+          </a>
+        )
+      }
+    </section>
+  </aside>
+</div>
+
+<style>
+  .hub {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .note,
+  .empty {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .note {
+    margin: 16px 0 0;
+  }
+
+  aside {
+    display: grid;
+    gap: 32px;
+  }
+
+  aside h2 {
+    margin: 0 0 10px;
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 19px;
+  }
+
+  .stake p {
+    margin: 0 0 6px;
+  }
+
+  .stake > p:first-of-type {
+    max-width: 40ch;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .big {
+    font-weight: 800;
+    font-stretch: 70%;
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  [data-tone="pos"] {
+    color: var(--pos);
+  }
+
+  [data-tone="neg"] {
+    color: var(--neg);
+  }
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    gap: 4px 20px;
+    margin: 10px 0 0;
+    font-size: 14px;
+  }
+
+  .facts div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .facts dt {
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .facts dd {
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .more {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+    text-underline-offset: 3px;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 900px) {
+    .hub {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 36px;
+    }
+  }
+</style>

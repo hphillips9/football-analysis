@@ -1,0 +1,80 @@
+---
+/**
+ * The outcome legend plus the "How to read these bars" disclosure (plan §4:
+ * explanations behind a disclosure), above a list of fixtures.
+ */
+---
+
+<div class="head">
+  <ul class="legend" aria-label="Colours">
+    <li><i style="background: var(--home)"></i>Home win</li>
+    <li><i style="background: var(--draw)"></i>Draw</li>
+    <li><i style="background: var(--away)"></i>Away win</li>
+  </ul>
+  <details class="how">
+    <summary>How to read these bars</summary>
+    <p>
+      Each bar splits 100% between a home win, a draw and an away win. The solid segment is the model's pick: the most
+      likely of the three. Once a match is played, the outcome that happened is outlined. Tap a match for the team
+      ratings behind it.
+    </p>
+    <p>
+      The ratings are Elo ratings built from results and recent expected goals (xG). The gap includes home advantage.
+    </p>
+  </details>
+</div>
+
+<style>
+  .head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px 16px;
+    margin-bottom: 16px;
+  }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .legend li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .legend i {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+  }
+
+  .how {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .how summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .how p {
+    max-width: 60ch;
+    margin: 6px 0 0;
+  }
+
+  .how[open] {
+    flex-basis: 100%;
+  }
+</style>

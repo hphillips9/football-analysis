@@ -1,0 +1,143 @@
+.explorer {
+  display: grid;
+  gap: 44px;
+  min-width: 0;
+}
+
+.block {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+}
+
+.h2 {
+  margin: 0;
+  font-weight: 800;
+  font-stretch: 80%;
+  font-size: 24px;
+}
+
+.prose {
+  max-width: 68ch;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.note {
+  max-width: 68ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+}
+
+.filters label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.filters select {
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-weight: 700;
+}
+
+.count {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.money {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.money[data-tone="pos"] {
+  color: var(--pos);
+}
+
+.money[data-tone="neg"] {
+  color: var(--neg);
+}
+
+/* One season's small multiple */
+.season {
+  display: grid;
+  gap: 4px;
+  padding: 12px 14px 8px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  min-width: 0;
+}
+
+.season h3 {
+  margin: 0;
+  font-weight: 800;
+  font-stretch: 80%;
+  font-size: 19px;
+}
+
+.season p {
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.plain {
+  width: 100%;
+  max-width: 560px;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  font-size: 15px;
+}
+
+.plain th,
+.plain td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+.plain thead th {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.plain .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .plain th,
+  .plain td {
+    padding: 8px;
+  }
+}

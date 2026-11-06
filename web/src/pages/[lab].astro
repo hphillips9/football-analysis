@@ -1,0 +1,171 @@
+---
+/**
+ * /_lab/ (P7-06): every shared building block with real data, for checking
+ * at phone and desktop widths. Not linked from anywhere and kept out of
+ * search results.
+ *
+ * A dynamic route only because Astro skips files starting with "_": this
+ * builds exactly one page, /_lab/.
+ */
+import FixtureCard, { FixtureList } from "../components/fixtures/FixtureCard";
+import ProbabilityStrip from "../components/fixtures/ProbabilityStrip";
+import ScoreStrip, { recordItems } from "../components/kpi/ScoreStrip";
+import LabCharts from "../components/lab/LabCharts";
+import LabTables from "../components/lab/LabTables";
+import Shell from "../layouts/Shell.astro";
+import { forLeague, leagues, stats } from "../lib/data";
+import { formatKickoff, signed } from "../lib/format";
+
+export function getStaticPaths() {
+  return [{ params: { lab: "_lab" } }];
+}
+
+const data = forLeague(leagues.default);
+const { competition: comp } = data;
+
+// This week's fixtures, and the last few settled picks (bets carry the result)
+const fixtures = data.fixtures.slice(0, 6);
+const settled = data.bets.filter((b) => b.settled).slice(-4);
+const strongest = [...data.fixtures].sort(
+  (a, b) => Math.max(b.homeProb, b.drawProb, b.awayProb) - Math.max(a.homeProb, a.drawProb, a.awayProb),
+)[0];
+
+const record = recordItems(data.stats);
+const overall = recordItems(stats.overall);
+
+const ratings = data.ratings.map((r) => ({ team: r.team, elo: r.elo ?? r.rating }));
+const standings = data.table?.current ?? [];
+const recentBets = data.bets.filter((b) => b.settled).slice(-30);
+---
+
+<Shell
+  title="Component lab"
+  site="none"
+  heading="Component lab"
+  noindex
+  intro={`The shared building blocks (P7-06) with real ${comp.name} data. Resize to below 480 px to see each one's compact layout.`}
+>
+  <div class="lab" data-league={comp.slug}>
+    <section>
+      <h2>ScoreStrip</h2>
+      <ScoreStrip label={`${comp.name} season record`} items={record} />
+      <ScoreStrip label="Every league" items={overall} />
+    </section>
+
+    <section>
+      <h2>ProbabilityStrip</h2>
+      {
+        strongest && (
+          <div class="example">
+            <p>
+              Large · {strongest.home} v {strongest.away}, {formatKickoff(strongest.kickoff, "long")}
+            </p>
+            <ProbabilityStrip
+              size="large"
+              home={strongest.homeProb}
+              draw={strongest.drawProb}
+              away={strongest.awayProb}
+              pick={strongest.prediction}
+              homeTeam={strongest.home}
+              awayTeam={strongest.away}
+            />
+          </div>
+        )
+      }
+      <div class="example">
+        <p>Each pick (solid) and a settled one per result (outlined)</p>
+        <div class="grid">
+          <ProbabilityStrip home={52} draw={26} away={22} pick="H" />
+          <ProbabilityStrip home={31} draw={36} away={33} pick="D" />
+          <ProbabilityStrip home={18} draw={24} away={58} pick="A" />
+          <ProbabilityStrip home={52} draw={26} away={22} pick="H" result="H" />
+          <ProbabilityStrip home={31} draw={36} away={33} pick="D" result="A" />
+          <ProbabilityStrip home={6} draw={14} away={80} pick="A" result="D" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>FixtureCard</h2>
+      <h3>This week</h3>
+      <FixtureList label={`${comp.name} fixtures`}>
+        {fixtures.map((f, i) => <FixtureCard fixture={f} index={i} when="day" />)}
+      </FixtureList>
+      <h3>Settled</h3>
+      <FixtureList label={`${comp.name} recent results`}>
+        {
+          settled.map((b, i) => (
+            <FixtureCard fixture={b} index={i} when="date">
+              <p>Simulated stake: {b.profit == null ? "unpriced" : `${signed(b.profit)}u`}</p>
+            </FixtureCard>
+          ))
+        }
+      </FixtureList>
+    </section>
+
+    <section>
+      <h2>PlotFigure</h2>
+      <LabCharts
+        client:visible
+        league={comp.slug}
+        leagueName={comp.name}
+        bankroll={data.stats?.bankroll ?? []}
+        gameweeks={data.stats?.byGameweek ?? []}
+        ratings={ratings}
+      />
+    </section>
+
+    <section>
+      <h2>DataTable</h2>
+      <LabTables client:visible leagueName={comp.name} standings={standings} bets={recentBets} />
+    </section>
+  </div>
+</Shell>
+
+<style>
+  .lab {
+    display: grid;
+    gap: 48px;
+  }
+
+  .lab section {
+    display: grid;
+    gap: 16px;
+    min-width: 0;
+  }
+
+  h2 {
+    margin: 0;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--lg-accent-text);
+    font-weight: 850;
+    font-stretch: 70%;
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  h3 {
+    margin: 8px 0 -6px;
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 17px;
+  }
+
+  .example p {
+    margin: 0 0 8px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  @media (max-width: 760px) {
+    .grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

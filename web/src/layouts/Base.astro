@@ -1,0 +1,61 @@
+---
+/**
+ * The document shell every page uses: fonts, the generated theme CSS and
+ * <html data-league>, set at build time so a league page paints in its
+ * colours from the first frame (Shell.astro adds the header, rail and
+ * tabs). <ClientRouter /> turns same-site links into view transitions; it
+ * falls back to a plain page load where unsupported, and skips the
+ * animation under prefers-reduced-motion.
+ */
+import "@fontsource-variable/archivo/wdth.css";
+import "../styles/base.css";
+
+import { ClientRouter } from "astro:transitions";
+// The Latin subset every page paints with, preloaded so it arrives with the
+// CSS rather than after it (P7-11: the swap from the fallback reflowed the
+// heading and shifted the page, CLS 0.26 on the home page)
+import archivoLatin from "@fontsource-variable/archivo/files/archivo-latin-wdth-normal.woff2?url";
+
+import { href } from "../lib/href";
+import { leagueAttr, themeCss } from "../theme/themes";
+
+interface Props {
+  title: string;
+  /** The page's competition (Div or slug); none for site-wide pages. */
+  league?: string;
+  /** Keep the page out of search results (the /_lab/ page). */
+  noindex?: boolean;
+}
+
+const { title, league, noindex = false } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" data-league={leagueAttr(league)}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    {noindex && <meta name="robots" content="noindex" />}
+    <title>{title}</title>
+    <link rel="preload" href={archivoLatin} as="font" type="font/woff2" crossorigin />
+    <link rel="icon" type="image/svg+xml" href={`${href()}favicon.svg`} />
+    <style is:global set:html={themeCss()}></style>
+    <ClientRouter />
+    <script is:inline>
+      // "/" remembers the last league viewed (R8). Runs on the first load
+      // and after every client-side navigation.
+      document.addEventListener("astro:page-load", () => {
+        const league = document.documentElement.dataset.league;
+        if (league && league !== "fallback") {
+          try {
+            localStorage.setItem("fp-league", league);
+          } catch {}
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

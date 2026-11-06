@@ -1,0 +1,92 @@
+/*
+ * Base styles on top of the generated theme (src/theme/themes.ts). Colours
+ * come only from its custom properties: --bg, --surface, --text, --muted,
+ * --home/--draw/--away, --pos/--neg, --site, and --lg-* for the league.
+ */
+
+@layer reset, base;
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+  }
+}
+
+@layer base {
+  :root {
+    /* Height of the phone bottom tab bar */
+    --tabbar: 64px;
+  }
+
+  .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  @media (max-width: 760px) {
+    .wrap {
+      padding: 0 16px;
+    }
+  }
+
+  /* A league's two-colour swatch (R2: abstract, no logos). Colours come from
+     the nearest data-league, so a chip for another league shows its own. */
+  .swatch {
+    display: block;
+    flex: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    background: linear-gradient(135deg, var(--lg-band) 50%, var(--lg-accent) 50%);
+    box-shadow: inset 0 0 0 1px rgb(127 127 127 / 0.25);
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    /* One variable family with a width axis (62-125%): condensed headings, normal UI */
+    font-family: "Archivo Variable", "Archivo", system-ui, sans-serif;
+    font-stretch: 100%;
+    font-size: 16px;
+    line-height: 1.45;
+    font-variant-numeric: tabular-nums;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  /* Floodlight yellow outline around a graphite inner ring: visible on light
+     and dark surfaces alike (theme.contrast.test.ts) */
+  :focus-visible {
+    outline: 3px solid var(--site);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px var(--focus-inner);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

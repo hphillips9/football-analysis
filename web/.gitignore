@@ -1,4 +1,5 @@
-.DS_Store
-/dist/
 node_modules/
-yarn-error.log
+.astro/
+/dist/
+# The repo root ignores every lib/ (Python packaging); this one is source
+!/src/lib/

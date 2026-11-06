@@ -1,4 +1,4 @@
-# Premier League Football Predictor
+# Football Predictor
 
 A self-updating model that predicts Premier League results. Every gameweek it
 rates the two teams, gives a Home / Draw / Away probability for each match,
@@ -99,7 +99,9 @@ carry on. Every run writes `data/processed/run_status.json`:
 
 `results` is `ok`, `stale` (download failed; the results on file were used) or
 `failed`. `xg` is `ok`, `partial` (some matches missing xG) or `failed`.
-`predicted` is the number of new bets added.
+`predicted` is the number of new bets added. The export copies it to
+`web/src/data/run_status.json`, and the site shows a "Not updated" badge on any
+competition whose results were `stale` or `failed`, or that hit an error.
 
 Step 5 predicts **one round at a time per competition**: it waits until
 every fixture already in `Bets.csv` has been played and the results are on
@@ -137,20 +139,31 @@ It commits the refreshed data back to the repo, then builds and deploys the site
 
 ## The website
 
-An [Observable Framework](https://observablehq.com/framework/) static site in
-[`web/`](web/), five pages:
+An [Astro](https://astro.build/) static site with React islands in
+[`web/`](web/), published at `/football-analysis/` on GitHub Pages. Charts are
+[Observable Plot](https://observablehq.com/plot/). Pages:
 
-- **This Gameweek** — the upcoming predictions, probability bars, fixture table
-- **Gameweeks** — pick any gameweek, see its predictions and how they did
-- **Track Record** — profit/loss per gameweek, bankroll curve, full bet log
-- **Ratings** — current Elo table
-- **About** — full methodology, the season backtest, calibration
+- **Home** (`/`) — what the site does, the season's numbers, every league
+- **Matchday** (`/matchday/`) — this week's predictions across all leagues
+- **Ratings** (`/ratings/`) — Elo ratings on one scale across leagues
+- **Method** (`/about/`) — full methodology, the season backtest, calibration
+- Per league (`/e0/`, `/sp1/`, …): **Fixtures**, **Results** (`gameweeks/`),
+  **Table**, **Record** (`track-record/`), **Ratings**
+- Per cup (`kind: "cup"` in `leagues.json`, e.g. `/cl/`): **Fixtures**,
+  **League phase**, **Knockouts**, **Record** (the middle two are placeholders
+  for now)
+
+Pages are generated from `leagues.json`, so a competition the export adds
+gets its pages with no site changes.
+
+The data is the pipeline's JSON in `web/src/data/`, validated against a schema
+at build time, so a change in the export's shape fails the build.
 
 ```bash
 cd web
-npm install
+npm ci
 npm run dev      # local preview
-npm run build    # static build → web/dist/
+npm run build    # type check, tests, static build → web/dist/, link check
 ```
 
 ---
@@ -187,7 +200,7 @@ data/
   processed/              all_matches.csv, run_status.json, feature snapshots
   reference/team_names.csv  one row per club: canonical name, country, FotMob + football-data.org ids, each source's name
 tests/                    unit tests (python tests/test_<name>.py, or pytest tests/)
-web/                      Observable Framework site
+web/                      the website (Astro + React)
 notebooks/                the original research (01–15)
 ```
 
@@ -208,3 +221,18 @@ Data sources: match results and odds from
 match FotMob is missing takes football-data.co.uk's own xG columns (2026-27 on;
 also Opta, but not updated after Opta's revisions), then
 [Understat](https://understat.com/) (via `penaltyblog`).
+
+## Credits and disclaimer
+
+- Results and odds: [football-data.co.uk](https://www.football-data.co.uk/)
+- Fixtures: [football-data.org](https://www.football-data.org/)
+- Expected goals: [FotMob](https://www.fotmob.com/) (Opta), with
+  [Understat](https://understat.com/) as a backup
+- UEFA country coefficients: [kassiesa.net](https://kassiesa.net/uefa/)
+
+Independent fan-made statistics project. Not affiliated with, endorsed by or
+sponsored by the Premier League, LaLiga, DFL, Lega Serie A, LFP, Eredivisie CV,
+Liga Portugal, UEFA or any club. Competition and club names are trade marks of
+their owners and are used only to identify them. The site uses no official logos
+or crests. Predictions and simulated bets are a hobby model's record, not
+betting advice.

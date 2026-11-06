@@ -1,0 +1,195 @@
+---
+/**
+ * Matchday (R9, plan §4): every competition's fixtures this week on one
+ * page, grouped by league. Each league is a disclosure with a one-line
+ * summary; the last league viewed is open (the default league on a first
+ * visit) and listed first.
+ *
+ * Parity: the Observable home page's "This week" section (a select per
+ * competition or "All competitions", bars + table per league).
+ */
+import FixtureDays from "../components/fixtures/FixtureDays.astro";
+import HowToRead from "../components/fixtures/HowToRead.astro";
+import Shell from "../layouts/Shell.astro";
+import { competitions, forLeague, leagues, predictions } from "../lib/data";
+import { kickoffRange } from "../lib/format";
+import { leagueHref, roundName } from "../lib/routes";
+
+const groups = competitions.map((c) => {
+  const fixtures = forLeague(c.div).fixtures;
+  const played = fixtures.filter((f) => f.settled).length;
+  return {
+    comp: c,
+    fixtures,
+    summary: fixtures.length
+      ? [
+          `${roundName(c.kind)} ${fixtures[0]!.gameweek}`,
+          kickoffRange(fixtures.map((f) => f.kickoff)),
+          `${fixtures.length} ${fixtures.length === 1 ? "match" : "matches"}`,
+          played ? `${played} played` : "",
+        ]
+          .filter(Boolean)
+          .join(" · ")
+      : "No matches this week",
+  };
+});
+
+const range = kickoffRange(predictions.fixtures.map((f) => f.kickoff));
+---
+
+<Shell
+  title="Matchday"
+  site="matchday"
+  heading="Matchday"
+  intro="Every match this week, league by league, with the model's chance of a home win, a draw or an away win."
+  tab={range ? `This week: ${range}` : "No matches this week"}
+>
+  <HowToRead />
+  <div class="leagues" id="matchday">
+    {
+      groups.map(({ comp, fixtures, summary }) => (
+        <details class="league" data-slug={comp.slug} data-league={comp.slug} open={comp.div === leagues.default}>
+          <summary>
+            <span class="swatch" aria-hidden="true" />
+            <h2 class="name">{comp.name}</h2>
+            <span class="summary">{summary}</span>
+            <svg class="chev" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true">
+              <path d="M2 4.5 6 8.5 10 4.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+            </svg>
+          </summary>
+          <div class="body">
+            {fixtures.length ? (
+              <FixtureDays fixtures={fixtures} level={3} label={comp.name} />
+            ) : (
+              <p class="empty">No fixtures yet. They appear once the next gameweek is scheduled.</p>
+            )}
+            <a class="more" href={leagueHref(comp.slug)}>
+              {comp.name}: table, record and ratings
+            </a>
+          </div>
+        </details>
+      ))
+    }
+  </div>
+  <script is:inline data-astro-rerun>
+    // Open the last league viewed and put it first (R8); the default league
+    // stays open on a first visit. Runs as the page parses: no jump.
+    // (data-astro-rerun: the router skips inline scripts it has run before.)
+    (() => {
+      let last = null;
+      try {
+        last = localStorage.getItem("fp-league");
+      } catch {}
+      const list = document.getElementById("matchday");
+      const item = last && list && [...list.children].find((d) => d.dataset.slug === last);
+      if (!item) return;
+      for (const d of list.children) d.open = d === item;
+      list.prepend(item);
+    })();
+  </script>
+</Shell>
+
+<style>
+  .leagues {
+    display: grid;
+    gap: 10px;
+  }
+
+  .league {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
+  summary {
+    display: grid;
+    grid-template-columns: 14px auto minmax(0, 1fr) 14px;
+    gap: 4px 12px;
+    align-items: center;
+    padding: 14px 16px;
+    cursor: pointer;
+    list-style: none;
+    border-radius: 3px;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary:hover {
+    background: var(--tint);
+  }
+
+  .league[open] summary {
+    box-shadow: inset 0 -3px 0 var(--lg-accent-text);
+    border-radius: 3px 3px 0 0;
+  }
+
+  /* An h2, so the day headings (h3) under it keep the outline in order */
+  .name {
+    margin: 0;
+    line-height: inherit;
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 20px;
+  }
+
+  .summary {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .chev {
+    color: var(--muted);
+    transition: transform 0.15s;
+  }
+
+  .league[open] .chev {
+    transform: rotate(180deg);
+  }
+
+  .body {
+    padding: 16px;
+    background: var(--bg);
+    border-radius: 0 0 4px 4px;
+  }
+
+  .empty {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .more {
+    display: inline-block;
+    margin-top: 14px;
+    font-weight: 600;
+    text-underline-offset: 3px;
+  }
+
+  @media (max-width: 760px) {
+    summary {
+      grid-template-columns: 14px minmax(0, 1fr) 14px;
+      padding: 12px;
+    }
+
+    .summary {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .chev {
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+    .body {
+      padding: 12px 8px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .chev {
+      transition: none;
+    }
+  }
+</style>

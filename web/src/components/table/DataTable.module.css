@@ -1,0 +1,245 @@
+/* The table container is the size container: below 480 px "extra" columns
+   move into each row's expandable part (DataTable.tsx). */
+.root {
+  container-type: inline-size;
+  min-width: 0;
+}
+
+.scroll {
+  overflow-x: auto;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 15px;
+}
+
+.table th,
+.table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  white-space: nowrap;
+  background: var(--surface);
+}
+
+.table tbody tr:last-child > *,
+.table tbody tr:nth-last-child(2):has(+ .detail:not([data-open])) > * {
+  border-bottom: 0;
+}
+
+.table thead th {
+  position: relative;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  vertical-align: bottom;
+}
+
+.table tbody th {
+  font-weight: 700;
+}
+
+.table tbody tr:hover > * {
+  background: var(--tint);
+}
+
+.table abbr {
+  text-decoration: none;
+  cursor: help;
+}
+
+/* Numbers right-aligned (tabular numerals come from body) */
+.num {
+  text-align: right !important;
+}
+
+/* The row-header column stays put on horizontal scroll */
+.sticky {
+  position: sticky !important;
+  left: 0;
+  z-index: 1;
+  box-shadow: inset -1px 0 0 var(--line);
+}
+
+/* Sort buttons */
+.sort {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.num .sort {
+  flex-direction: row-reverse;
+}
+
+.sort:hover {
+  color: var(--text);
+}
+
+.sort:focus-visible {
+  outline: 3px solid var(--site);
+  outline-offset: 2px;
+}
+
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  opacity: 0.25;
+}
+
+.arrow[data-dir] {
+  opacity: 1;
+  color: var(--text);
+}
+
+.arrow[data-dir="asc"] {
+  transform: rotate(180deg);
+}
+
+th[aria-sort] {
+  color: var(--text) !important;
+}
+
+/* Row toggle + detail: only on a narrow table */
+.toggleCell {
+  display: none;
+  width: 36px;
+  padding-left: 0 !important;
+  padding-right: 8px !important;
+  text-align: right;
+}
+
+.toggle {
+  all: unset;
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 3px;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.toggle:focus-visible {
+  outline: 3px solid var(--site);
+  outline-offset: -1px;
+}
+
+.toggle svg {
+  transition: transform 0.15s;
+}
+
+.toggle[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+.detail {
+  display: none;
+}
+
+.detail td {
+  white-space: normal;
+  padding-top: 0;
+  background: var(--surface) !important;
+}
+
+.detail dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.detail dl div {
+  display: flex;
+  gap: 6px;
+}
+
+.detail dt {
+  color: var(--muted);
+}
+
+.detail dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+@container (max-width: 479.98px) {
+  .table {
+    font-size: 14px;
+  }
+
+  .table th,
+  .table td {
+    padding: 8px 8px;
+  }
+
+  .extra {
+    display: none;
+  }
+
+  /* Long names wrap rather than push the key columns off screen */
+  .sticky {
+    white-space: normal !important;
+    min-width: 7.5em;
+  }
+
+  .toggleCell {
+    display: table-cell;
+  }
+
+  /* An open row's own cells lose their border; the detail row carries it */
+  tr[data-open] > * {
+    border-bottom: 0;
+  }
+
+  .detail[data-open] {
+    display: table-row;
+  }
+
+  .table tbody tr:nth-last-child(2):has(+ .detail:not([data-open])) > * {
+    border-bottom: 0;
+  }
+}
+
+.caption {
+  caption-side: top;
+  text-align: left;
+  padding: 0 0 8px;
+  font-weight: 800;
+  font-stretch: 80%;
+  font-size: 17px;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.empty {
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toggle svg {
+    transition: none;
+  }
+}

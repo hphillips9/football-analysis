@@ -1,0 +1,74 @@
+/* One row of equal cells; 1px gaps over the line colour draw the dividers.
+   In a narrow container the cells wrap into two columns (a sideways-
+   scrolling strip hid the last number on a phone). */
+.wrap {
+  container-type: inline-size;
+}
+
+.strip {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 1px;
+  margin: 0;
+  overflow: hidden;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  padding: 12px 20px;
+  background: var(--surface);
+}
+
+.item dd {
+  margin: 0;
+  font-weight: 800;
+  font-stretch: 70%;
+  font-size: 32px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.item dt {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.item dd[data-tone="pos"] {
+  color: var(--pos);
+}
+
+.item dd[data-tone="neg"] {
+  color: var(--neg);
+}
+
+@container (max-width: 479.98px) {
+  .strip {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* An odd count: the last cell spans the row */
+  .item:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+
+  .item {
+    padding: 10px 12px;
+  }
+
+  .item dd {
+    font-size: 26px;
+  }
+
+  .item dt {
+    font-size: 12px;
+  }
+}

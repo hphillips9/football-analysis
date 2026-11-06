@@ -1,0 +1,65 @@
+---
+/**
+ * A cup section that isn't built yet: /{c}/league-phase/ and /{c}/knockouts/
+ * (P7-14). The routes, tabs and theme exist so a cup in leagues.json builds
+ * with no code changes; P6-01 replaces this with the league-phase table and
+ * the knockout bracket.
+ */
+import type { LeagueData } from "../../lib/data";
+import { leagueHref, sectionByKey, type Section } from "../../lib/routes";
+
+interface Props {
+  data: LeagueData;
+  section: Section;
+}
+
+const { data, section } = Astro.props;
+const comp = data.competition;
+
+const WHAT: Partial<Record<Section["key"], string>> = {
+  "league-phase": "the league-phase table: every club's points so far and where the model expects them to finish",
+  knockouts: "the knockout bracket: each tie's legs, the aggregate score and the model's call on who goes through",
+};
+
+const fixtures = sectionByKey(comp.kind, "fixtures");
+const record = sectionByKey(comp.kind, "record");
+---
+
+<section class="placeholder" aria-labelledby="placeholder-heading">
+  <h2 id="placeholder-heading">{section.label}: coming soon</h2>
+  <p>
+    This page will show {WHAT[section.key] ?? `the ${comp.name} ${section.label.toLowerCase()}`}. Until then, the
+    predictions are on {fixtures && <a href={leagueHref(comp.slug, fixtures)}>Fixtures</a>}
+    {record && (
+      <>
+        {" "}
+        and how they've done is on <a href={leagueHref(comp.slug, record)}>Record</a>
+      </>
+    )}.
+  </p>
+</section>
+
+<style>
+  .placeholder {
+    max-width: 62ch;
+    padding: 24px;
+    border: 1px dashed var(--line);
+    border-radius: 4px;
+    background: var(--surface);
+  }
+  h2 {
+    margin: 0 0 8px;
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 22px;
+  }
+  p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  a {
+    color: var(--lg-accent-text);
+    font-weight: 600;
+  }
+</style>

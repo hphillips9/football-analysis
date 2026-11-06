@@ -93,7 +93,7 @@ class _Fakes:
     def print_predictions(self, results):
         pass
 
-    def export_web(self):
+    def export_web(self, status=None):
         self.calls.append("export_web")
 
 
@@ -157,7 +157,7 @@ def test_one_league_failing_leaves_the_others_completing():
 def test_status_is_written_even_when_a_shared_step_fails():
     fakes = _Fakes()
 
-    def broken_export():
+    def broken_export(status=None):
         raise OSError("disk full")
 
     fakes.export_web = broken_export

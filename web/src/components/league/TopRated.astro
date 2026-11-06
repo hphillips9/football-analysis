@@ -1,0 +1,91 @@
+---
+/**
+ * V3 (plan §3): the league's top-rated clubs as a ranked list with inline
+ * CSS bars in the league colour. Static HTML; same on phone and desktop.
+ */
+import type { RatedClub } from "../../lib/schema";
+
+interface Props {
+  /** The league's clubs, highest league Elo first (forLeague().ratings). */
+  ratings: RatedClub[];
+  count?: number;
+}
+
+const { ratings, count = 6 } = Astro.props;
+const elo = (c: RatedClub) => Math.round(c.elo ?? c.rating);
+const top = ratings.slice(0, count);
+const all = ratings.map(elo);
+
+// Bars run from the league's lowest rating, so the differences show
+const floor = Math.min(...all) - 40;
+const span = Math.max(...all) - floor;
+const width = (c: RatedClub) => `${Math.max(8, ((elo(c) - floor) / span) * 100).toFixed(1)}%`;
+---
+
+{
+  top.length ? (
+    <ol class="rated">
+      {top.map((c, i) => (
+        <li>
+          <span class="pos">{i + 1}</span>
+          <span class="name" style={`--w: ${width(c)}`}>
+            {c.team}
+          </span>
+          <b>{elo(c)}</b>
+        </li>
+      ))}
+    </ol>
+  ) : (
+    <p class="empty">No ratings yet.</p>
+  )
+}
+
+<style>
+  .rated {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .rated li {
+    display: grid;
+    grid-template-columns: 18px minmax(0, 1fr) auto;
+    gap: 10px;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .pos {
+    color: var(--muted);
+    font-weight: 700;
+  }
+
+  .name {
+    position: relative;
+    z-index: 0;
+    padding: 2px 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  /* The bar: a light wash of the league's chart colour behind the name */
+  .name::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: var(--w);
+    border-radius: 2px;
+    background: color-mix(in srgb, var(--lg-chart) 22%, transparent);
+  }
+
+  b {
+    font-weight: 700;
+  }
+
+  .empty {
+    color: var(--muted);
+  }
+</style>
