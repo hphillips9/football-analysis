@@ -10,11 +10,17 @@
  *   by pick           home / draw / away picks: count, right, profit
  *   every bet         grouped by gameweek, collapsed, with a filter
  *
+ * A competition with no priced bets (the Champions League until odds
+ * capture, P6-03) has no profit: its scoreboard is hit rate and log loss,
+ * the profit charts and biggest wins give way to a by-matchday table, and
+ * the tables drop their profit columns.
+ *
  * Static HTML except the charts and the every-bet table (islands that
  * hydrate when they scroll into view).
  */
 import type { LeagueData } from "../../lib/data";
-import { formatMatchDate, gameweekSpan, resultName, signed } from "../../lib/format";
+import { formatMatchDate, resultName, signed } from "../../lib/format";
+import { roundLabel, roundName, roundSpan } from "../../lib/routes";
 import { hasResults } from "../../lib/schema";
 import ScoreStrip, { toneOf, type ScoreItem } from "../kpi/ScoreStrip";
 import EveryBet from "./EveryBet";
@@ -29,7 +35,18 @@ const { data } = Astro.props;
 const { competition: comp, stats } = data;
 const s = stats && hasResults(stats) ? stats : undefined;
 
-const score: ScoreItem[] = stats
+// No odds yet: accuracy and log loss only
+const unpriced = s !== undefined && s.pricedBets === 0;
+const roundNoun = roundName(comp.kind).toLowerCase();
+
+const score: ScoreItem[] = unpriced
+  ? [
+      { label: `settled picks, ${s.pendingBets} pending`, value: String(s.settledBets) },
+      { label: "won, lost", value: `${s.wins}–${s.losses}` },
+      { label: `right (${s.baselineHitRate}% if always home)`, value: `${s.hitRate}%` },
+      { label: "log loss (lower is better)", value: s.logLoss.toFixed(3) },
+    ]
+  : stats
   ? [
       { label: `settled bets, ${stats.pendingBets} pending`, value: String(stats.settledBets) },
       { label: s ? `won, lost (${s.hitRate}% right)` : "won, lost", value: s ? `${s.wins}–${s.losses}` : "—" },
@@ -38,24 +55,35 @@ const score: ScoreItem[] = stats
     ]
   : [];
 
-const leagueProps = { league: comp.slug, leagueName: comp.name };
-// Short round label: GW12 in a league, MD4 in a cup
-const round = comp.kind === "cup" ? "MD" : "GW";
+const leagueProps = { league: comp.slug, leagueName: comp.name, roundKind: comp.kind };
+// Short round label: GW12 in a league, MD4 or R16-1 in a cup
+const round = (n: number) => roundLabel(comp.kind, n, true);
+const roundRows = s ? s.byGameweek.filter((g) => g.settled > 0) : [];
 ---
 
 <div class="record">
   <section class="intro">
-    <p>
-      Every prediction is treated as a <b>1-unit flat-stake bet</b> at the best price on offer (Sky Bet, or the market
-      average when that's missing). Profit is in units. It's a check on the model, not betting advice.
-    </p>
+    {
+      unpriced ? (
+        <p>
+          There are no {comp.name} odds on record yet, so its predictions are <b>unpriced</b>: they count towards how
+          often the model is right and its log loss, but not towards profit. Log loss is the average penalty for the
+          probability the model gave the actual result; guessing a third each way scores 1.099, and lower is better.
+        </p>
+      ) : (
+        <p>
+          Every prediction is treated as a <b>1-unit flat-stake bet</b> at the best price on offer (Sky Bet, or the
+          market average when that's missing). Profit is in units. It's a check on the model, not betting advice.
+        </p>
+      )
+    }
     {
       stats && stats.backfilledBets > 0 && stats.backfilledGameweeks && (
         <p class="note">
-          <span class="chip">Backfilled</span> This league joined the model mid-season, so its predictions for{" "}
-          {gameweekSpan(stats.backfilledGameweeks as [number, number])} ({stats.backfilledBets} matches) were made
-          afterwards. Each gameweek was scored by a model trained only on the matches before it kicked off, exactly as a
-          live prediction would have been, and settled at the same odds.
+          <span class="chip">Backfilled</span> The {comp.name} joined the model mid-season, so its predictions for{" "}
+          {roundSpan(comp.kind, stats.backfilledGameweeks as [number, number])} ({stats.backfilledBets} matches) were
+          made afterwards. Each {roundNoun} was scored by a model trained only on the matches before it kicked off,
+          exactly as a live prediction would have been{unpriced ? "" : ", and settled at the same odds"}.
         </p>
       )
     }
@@ -64,9 +92,37 @@ const round = comp.kind === "cup" ? "MD" : "GW";
 
   {
     !s ? (
-      <p class="note">No {comp.name} bet has settled yet. The record starts once the first gameweek is played.</p>
+      <p class="note">No {comp.name} bet has settled yet. The record starts once the first {roundNoun} is played.</p>
     ) : (
       <>
+        {unpriced ? (
+          <section aria-labelledby="byround">
+            <h2 id="byround">By {roundNoun}</h2>
+            <p class="lede">How many of each {roundNoun}'s picks came off.</p>
+            <table class="bypick">
+              <caption class="sr-only">{comp.name}: record by {roundNoun}</caption>
+              <thead>
+                <tr>
+                  <th scope="col">{roundName(comp.kind)}</th>
+                  <th scope="col" class="num">Picks</th>
+                  <th scope="col" class="num">Right</th>
+                  <th scope="col" class="num">Hit rate</th>
+                </tr>
+              </thead>
+              <tbody>
+                {roundRows.map((g) => (
+                  <tr>
+                    <th scope="row">{roundLabel(comp.kind, g.gameweek)}</th>
+                    <td class="num">{g.settled}</td>
+                    <td class="num">{g.hits}</td>
+                    <td class="num">{g.hitRate == null ? "—" : `${g.hitRate}%`}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </section>
+        ) : (
+          <>
         <section aria-labelledby="pl">
           <h2 id="pl">Profit and loss</h2>
           <p class="lede">Bars are each gameweek's result; the line is the running total.</p>
@@ -81,8 +137,11 @@ const round = comp.kind === "cup" ? "MD" : "GW";
           </p>
           <RecordChart client:visible kind="bets" bankroll={s.bankroll} {...leagueProps} />
         </section>
+          </>
+        )}
 
         <div class="pair">
+          {s.bestBets.length > 0 && (
           <section aria-labelledby="best">
             <h2 id="best">Biggest wins</h2>
             <ol class="notable">
@@ -90,7 +149,7 @@ const round = comp.kind === "cup" ? "MD" : "GW";
                 <li>
                   <span class="match">{b.match}</span>
                   <span class="detail">
-                    {resultName[b.pick]} at {b.pickProb}% · {round}{b.gameweek}, {formatMatchDate(b.date)}
+                    {resultName[b.pick]} at {b.pickProb}% · {round(b.gameweek)}, {formatMatchDate(b.date)}
                   </span>
                   {b.profit == null ? (
                     <b class="money">unpriced</b>
@@ -103,6 +162,7 @@ const round = comp.kind === "cup" ? "MD" : "GW";
               ))}
             </ol>
           </section>
+          )}
           <section aria-labelledby="worst">
             <h2 id="worst">Most confident misses</h2>
             <ol class="notable">
@@ -111,10 +171,9 @@ const round = comp.kind === "cup" ? "MD" : "GW";
                   <span class="match">{b.match}</span>
                   <span class="detail">
                     {resultName[b.pick]} at {b.pickProb}%, finished {resultName[b.result] === "Draw" ? "a draw" : `${resultName[b.result]} win`} ·{" "}
-                    {round}
-                    {b.gameweek}, {formatMatchDate(b.date)}
+                    {round(b.gameweek)}, {formatMatchDate(b.date)}
                   </span>
-                  {b.profit == null ? (
+                  {unpriced ? null : b.profit == null ? (
                     <b class="money">unpriced</b>
                   ) : (
                     <b class="money" data-tone={toneOf(b.profit)}>
@@ -148,7 +207,7 @@ const round = comp.kind === "cup" ? "MD" : "GW";
                   <th scope="col" class="num">Picks</th>
                   <th scope="col" class="num">Right</th>
                   <th scope="col" class="num">Hit rate</th>
-                  <th scope="col" class="num">Profit</th>
+                  {!unpriced && <th scope="col" class="num">Profit</th>}
                 </tr>
               </thead>
               <tbody>
@@ -158,15 +217,17 @@ const round = comp.kind === "cup" ? "MD" : "GW";
                     <td class="num">{p.bets}</td>
                     <td class="num">{p.bets ? p.hits : "—"}</td>
                     <td class="num">{p.hitRate == null ? "—" : `${p.hitRate}%`}</td>
-                    <td class="num">
-                      {p.bets ? (
-                        <span class="money" data-tone={toneOf(p.profit)}>
-                          {signed(p.profit)}u
-                        </span>
-                      ) : (
-                        "—"
-                      )}
-                    </td>
+                    {!unpriced && (
+                      <td class="num">
+                        {p.bets ? (
+                          <span class="money" data-tone={toneOf(p.profit)}>
+                            {signed(p.profit)}u
+                          </span>
+                        ) : (
+                          "—"
+                        )}
+                      </td>
+                    )}
                   </tr>
                 ))}
               </tbody>
@@ -184,6 +245,8 @@ const round = comp.kind === "cup" ? "MD" : "GW";
         <EveryBet
           client:visible
           leagueName={comp.name}
+          roundKind={comp.kind}
+          priced={!unpriced}
           bets={toResultBets(data.bets)}
           gameweeks={stats?.byGameweek ?? []}
         />

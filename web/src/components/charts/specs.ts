@@ -72,8 +72,12 @@ type SettledGameweek = GameweekSummary & { profit: number; cumulativeProfit: num
 const settledGameweeks = (gameweeks: readonly GameweekSummary[]) =>
   gameweeks.filter((g): g is SettledGameweek => g.profit != null && g.cumulativeProfit != null);
 
-const gameweekTip = (d: SettledGameweek) =>
-  `Gameweek ${d.gameweek}\n${d.hits} of ${d.settled} right\n${signed(d.profit)}u (season ${signed(d.cumulativeProfit)}u)`;
+/** A round's name for tooltips: "Gameweek 9" by default; a cup passes lib/routes roundLabel. */
+export type RoundOf = (round: number) => string;
+const gameweekOf: RoundOf = (n) => `Gameweek ${n}`;
+
+const gameweekTip = (roundOf: RoundOf) => (d: SettledGameweek) =>
+  `${roundOf(d.gameweek)}\n${d.hits} of ${d.settled} right\n${signed(d.profit)}u (season ${signed(d.cumulativeProfit)}u)`;
 
 /** x and y for a chart with a column per gameweek (numbers, not "GW9", so 38 of them fit). */
 function gameweekScales(rows: readonly SettledGameweek[], compact: boolean) {
@@ -88,7 +92,7 @@ function gameweekScales(rows: readonly SettledGameweek[], compact: boolean) {
  * with its value. `highlight` dims the others (the selected gameweek on the
  * Results page). On a phone it sits in a ScrollChart at ~40 px a gameweek.
  */
-export function gameweekProfit(gameweeks: readonly GameweekSummary[], highlight?: number): ChartSpec {
+export function gameweekProfit(gameweeks: readonly GameweekSummary[], highlight?: number, roundOf: RoundOf = gameweekOf): ChartSpec {
   const rows = settledGameweeks(gameweeks);
   const dims = highlight != null && rows.some((r) => r.gameweek === highlight);
 
@@ -119,7 +123,7 @@ export function gameweekProfit(gameweeks: readonly GameweekSummary[], highlight?
           rows.filter((r) => r.profit < 0),
           { x: "gameweek", y: "profit", text: label, dy: 9, fill: colors.text, fillOpacity: opacity },
         ),
-        Plot.tip(rows, Plot.pointerX({ x: "gameweek", y: "profit", title: gameweekTip })),
+        Plot.tip(rows, Plot.pointerX({ x: "gameweek", y: "profit", title: gameweekTip(roundOf) })),
       ],
     });
   };
@@ -129,7 +133,7 @@ export function gameweekProfit(gameweeks: readonly GameweekSummary[], highlight?
  * V5: each gameweek's profit (light bars) under the season's running total
  * (a line in the league colour, labelled at each gameweek).
  */
-export function seasonProfit(gameweeks: readonly GameweekSummary[]): ChartSpec {
+export function seasonProfit(gameweeks: readonly GameweekSummary[], roundOf: RoundOf = gameweekOf): ChartSpec {
   const rows = settledGameweeks(gameweeks);
 
   return ({ Plot, width, height, compact, colors, style }) =>
@@ -165,7 +169,7 @@ export function seasonProfit(gameweeks: readonly GameweekSummary[]): ChartSpec {
           strokeWidth: 3,
           paintOrder: "stroke",
         }),
-        Plot.tip(rows, Plot.pointerX({ x: "gameweek", y: "cumulativeProfit", title: gameweekTip })),
+        Plot.tip(rows, Plot.pointerX({ x: "gameweek", y: "cumulativeProfit", title: gameweekTip(roundOf) })),
       ],
     });
 }
@@ -179,7 +183,7 @@ export function seasonProfit(gameweeks: readonly GameweekSummary[]): ChartSpec {
  * marks each bet as a win or loss dot; compact drops the dots and labels
  * the first, lowest, highest and latest points instead (plan §3).
  */
-export function betByBet(points: readonly BankrollPoint[]): ChartSpec {
+export function betByBet(points: readonly BankrollPoint[], roundOf: RoundOf = gameweekOf): ChartSpec {
   const rows = points.map((p, i) => ({ ...p, n: i + 1 }));
   type Row = (typeof rows)[number];
 
@@ -225,7 +229,7 @@ export function betByBet(points: readonly BankrollPoint[]): ChartSpec {
           Plot.pointerX({
             x: "n",
             y: "cumulative",
-            title: (d: Row) => `Bet ${d.n}: ${d.match}\nGameweek ${d.gameweek}\n${signed(d.profit)}u → ${signed(d.cumulative)}u`,
+            title: (d: Row) => `Bet ${d.n}: ${d.match}\n${roundOf(d.gameweek)}\n${signed(d.profit)}u → ${signed(d.cumulative)}u`,
           }),
         ),
       ],

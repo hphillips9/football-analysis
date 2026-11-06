@@ -15,7 +15,7 @@ import Shell from "../layouts/Shell.astro";
 import { competitions, domesticLeagues, forLeague, predictions, stats } from "../lib/data";
 import { mostConfident, numberWord, pickProb } from "../lib/fixtures";
 import { formatKickoff, gameweekSpan, signed } from "../lib/format";
-import { SITE_LINKS, leagueHref, roundName, siteHref } from "../lib/routes";
+import { SITE_LINKS, leagueHref, roundLabel, siteHref } from "../lib/routes";
 import { hasResults } from "../lib/schema";
 
 const divsThisWeek = new Set(predictions.fixtures.map((f) => f.div));
@@ -46,9 +46,14 @@ const leagueRows = competitions.map((c) => {
     name: c.name,
     href: leagueHref(c.slug),
     week: d.fixtures.length
-      ? `${roundName(c.kind)} ${gameweek}, ${d.fixtures.length} ${d.fixtures.length === 1 ? "match" : "matches"}`
+      ? `${roundLabel(c.kind, gameweek!)}, ${d.fixtures.length} ${d.fixtures.length === 1 ? "match" : "matches"}`
       : "No matches this week",
-    record: s ? `${s.wins}–${s.losses} · ${signed(s.profit)}u · ROI ${signed(s.roi, 1)}%` : undefined,
+    // An unpriced competition (the Champions League until odds capture) has no profit to show
+    record: s
+      ? s.pricedBets
+        ? `${s.wins}–${s.losses} · ${signed(s.profit)}u · ROI ${signed(s.roi, 1)}%`
+        : `${s.wins}–${s.losses} · ${s.hitRate.toFixed(1)}% right · unpriced`
+      : undefined,
     pending: d.stats?.pendingBets ?? 0,
     hitRate: s?.hitRate,
   };

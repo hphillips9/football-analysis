@@ -202,6 +202,10 @@ const statsResults = {
   hitRate: Percent,
   baselineHitRate: Percent,
   edge: z.number(),
+  /** Mean negative log of the probability given to the actual result (lower is better). */
+  logLoss: z.number().nonnegative(),
+  /** Settled bets with odds: profit, staked and ROI count only these (0 for an unpriced cup). */
+  pricedBets: Count,
   profit: z.number(),
   staked: z.number(),
   roi: z.number(),
@@ -331,6 +335,110 @@ export const TableFile = z.strictObject({
 });
 
 // ============================================================
+// cups.json
+// ============================================================
+
+/** A club's league that season: a Div, or "X:<country>" outside the modelled leagues; null if unknown. */
+const ClubLeague = z.string().nullable();
+
+export const CupStanding = z.strictObject({
+  ...standingBase,
+  gf: Count,
+  ga: Count,
+  gd: z.number().int(),
+  league: ClubLeague,
+});
+
+/** Expected points for the remaining matchdays added on (no goal model). */
+export const CupProjectedStanding = z.strictObject({
+  ...standingBase,
+  league: ClubLeague,
+  currentPosition: z.number().int().positive(),
+  movement: z.number().int(),
+});
+
+export const LeaguePhase = z.strictObject({
+  season: Season,
+  matchdays: Count,
+  playedFixtures: Count,
+  remainingFixtures: Count,
+  /** Last place that goes straight to the round of 16 (8), and the last into the play-off (24). */
+  zones: z.strictObject({ direct: Count, playoff: Count }),
+  current: z.array(CupStanding),
+  projected: z.array(CupProjectedStanding),
+});
+
+const Score = z.tuple([Count, Count]);
+
+export const KnockoutStage = z.enum(["KO_PLAYOFF", "R16", "QF", "SF", "FINAL"]);
+
+export const TieLeg = z.strictObject({
+  /** 1 or 2; null for the one-off final. */
+  leg: z.number().int().min(1).max(2).nullable(),
+  date: IsoDate,
+  home: z.string(),
+  away: z.string(),
+  /** The 90-minute score; null until played. */
+  score: Score.nullable(),
+  /** The score after extra time, when there was some. */
+  extraTime: Score.nullable(),
+  penaltyWinner: z.string().nullable(),
+  /** The model's call, when it made one for this leg. */
+  prediction: z
+    .strictObject({ pick: Outcome, homeProb: Percent, drawProb: Percent, awayProb: Percent })
+    .nullable(),
+});
+
+const Probability = z.number().min(0).max(1);
+
+export const Tie = z.strictObject({
+  /** First-leg home side first. */
+  teams: z.tuple([z.string(), z.string()]),
+  /**
+   * P(teams[0] goes through), display only, never a bet (P6-02). `before`: before the first leg (out of
+   * sample once it's played); `afterFirstLeg`: given its score (two-legged ties). Null when it can't be worked out.
+   */
+  progression: z.strictObject({ before: Probability, afterFirstLeg: Probability.nullable() }).nullable(),
+  legs: z.array(TieLeg).min(1),
+  /** Goals over the legs played, extra time included, in `teams` order. */
+  aggregate: Score.nullable(),
+  winner: z.string().nullable(),
+  decidedBy: z.enum(["aggregate", "90 minutes", "extra time", "penalties"]).nullable(),
+});
+
+export const Knockouts = z.strictObject({
+  season: Season,
+  /** False when this season's draw isn't made yet and these are last season's ties. */
+  current: z.boolean(),
+  /** Brier score of `progression.before` over completed ties, walk-forward (coin flip = 0.25). */
+  progressionScore: z
+    .strictObject({
+      ties: Count,
+      from: Season,
+      to: Season,
+      brier: z.number().min(0).max(1),
+      brierCi: z.tuple([z.number(), z.number()]),
+      tiesAfterFirstLeg: Count,
+      brierAfterFirstLeg: z.number().min(0).max(1).nullable(),
+    })
+    .nullable(),
+  /** In bracket order: tie i of a round is fed by ties 2i and 2i+1 of the one before. */
+  rounds: z.array(z.strictObject({ stage: KnockoutStage, ties: z.array(Tie) })),
+});
+
+export const CupData = z.strictObject({
+  name: z.string(),
+  season: Season,
+  leaguePhase: LeaguePhase.nullable(),
+  knockouts: Knockouts.nullable(),
+});
+
+export const CupsFile = z.strictObject({
+  generated: Generated,
+  byCompetition: z.record(Div, CupData),
+});
+
+// ============================================================
 // backtest.json
 // ============================================================
 
@@ -430,6 +538,14 @@ export type BacktestSeason = z.infer<typeof BacktestSeason>;
 export type Backtest = z.infer<typeof BacktestFile>;
 export type CompetitionRun = z.infer<typeof CompetitionRun>;
 export type RunStatus = z.infer<typeof RunStatusFile>;
+export type LeaguePhase = z.infer<typeof LeaguePhase>;
+export type CupStanding = z.infer<typeof CupStanding>;
+export type CupProjectedStanding = z.infer<typeof CupProjectedStanding>;
+export type KnockoutStage = z.infer<typeof KnockoutStage>;
+export type Tie = z.infer<typeof Tie>;
+export type TieLeg = z.infer<typeof TieLeg>;
+export type Knockouts = z.infer<typeof Knockouts>;
+export type CupData = z.infer<typeof CupData>;
 
 /**
  * True when the last run couldn't bring a competition up to date: its

@@ -96,3 +96,14 @@ def add_missing_columns(bets):
     extra = [c for c in bets.columns if c not in COLUMN_ORDER]
 
     return bets[COLUMN_ORDER + extra]
+
+
+def write_bets(bets, bets_path):
+    """Write the whole of Bets.csv, with whole numbers kept whole ("1", not "1.0")."""
+
+    bets = bets.copy()
+    # CL bets leave Gameweek empty, which makes the column float on read
+    for column in ("Gameweek", "Bet", "Backfilled"):
+        bets[column] = pd.to_numeric(bets[column]).round().astype("Int64")
+    bets["MatchId"] = clean_match_ids(bets["MatchId"]).to_numpy()
+    bets.to_csv(bets_path, index=False)

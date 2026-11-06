@@ -20,11 +20,21 @@ Reads data/processed/all_matches.csv, data/raw/Bets.csv and produces:
     web/src/data/leagues.json      - the competitions the pipeline runs
     web/src/data/run_status.json   - how each competition fared in the run
                                      (run_status.py), for the stale badge
+    web/src/data/cups.json         - each cup's league-phase table (current +
+                                     projected) and knockout ties (with each
+                                     tie's progression probability and its
+                                     walk-forward Brier score, P6-02), as
+                                     {byCompetition: {CL: ...}}
 
 Every competition in competitions.ENABLED is exported, and each
 prediction, bet and rating carries its ``div``. The model behind the
 projected tables is trained on every competition, as the live
 predictions are.
+
+A cup (the Champions League) has no Gameweek: its bets' Round (MD1..MD8,
+KO_PLAYOFF, R16...) becomes a round number, so it sorts and charts like
+one - league-phase matchdays 1-8, then one number per knockout leg
+(CUP_ROUND_START; web/src/lib/routes.ts roundLabel names them).
 
 Runs as part of run_week.py so CI keeps the site's data current.
 """
@@ -33,6 +43,7 @@ import json
 from pathlib import Path
 from datetime import datetime, timezone
 
+import numpy as np
 import pandas as pd
 
 import competitions
@@ -46,9 +57,17 @@ from predict_next_matches import (
     HOME_ADVANTAGE,
 )
 from dixon_coles import fit_dixon_coles, expected_goals
-from elo import shared_scale
-from european import results_for_elo
+from elo import EUROPE_HOME_ADVANTAGE, is_cup, shared_scale
+from european import KNOCKOUT_STAGES, _club_names, read_teams, results_for_elo
+from champions_league import (
+    KNOCKOUT, STAGE_ORDER, TWO_LEGGED, club_leagues, fixture_list_path,
+)
 from load_data import read_matches
+from team_names import load_id_map
+from tie_progression import (
+    advance_probability, backtest_ties, bootstrap_against_coin, brier,
+    leg_probabilities, season_models,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -68,22 +87,63 @@ DEFAULT_DIV = "E0"
 # How far back elo_history.json goes
 HISTORY_DAYS = 365
 
+# A cup's round numbers: league-phase matchday N is N; each knockout leg
+# follows on (play-off legs 9-10, round of 16 11-12, ... final 17)
+CUP_ROUND_START = {"KO_PLAYOFF": 9, "R16": 11, "QF": 13, "SF": 15, "FINAL": 17}
+
+# League-phase places: 1-8 go to the round of 16, 9-24 to the play-off
+LEAGUE_PHASE_ZONES = {"direct": 8, "playoff": 24}
+
 
 # ============================================================
 # LOADERS
 # ============================================================
 
-def load_matches():
+def load_matches(cups=False):
+    """all_matches.csv: the league rows, plus the cup rows with ``cups``."""
 
-    matches = read_matches(MATCHES_PATH)
+    matches = read_matches(MATCHES_PATH, cups=cups)
 
     return matches.sort_values(
         ["MatchDateTime", "HomeTeam", "AwayTeam"]
     ).reset_index(drop=True)
 
 
+def cup_rounds(bets):
+    """
+    Each cup bet's round number from its Round: "MD5" -> 5, a knockout
+    leg CUP_ROUND_START + leg - 1 ("R16" second leg -> 12), the leg being
+    the tie's kick-off order (same season, round and pair of clubs).
+    """
+
+    rounds = bets["Round"].astype("string")
+    numbers = pd.Series(pd.NA, index=bets.index, dtype="Int64")
+
+    matchday = rounds.str.fullmatch(r"MD\d+").fillna(False)
+    numbers[matchday] = rounds[matchday].str[2:].astype(int)
+
+    knockout = rounds.isin(CUP_ROUND_START).fillna(False)
+    if knockout.any():
+        ko = bets[knockout]
+        pair = ko.apply(lambda r: "|".join(sorted((r["HomeTeam"], r["AwayTeam"]))), axis=1)
+        leg = ko.groupby([ko["Season"], rounds[knockout], pair])["Kickoff"].rank(method="first")
+        numbers[knockout] = rounds[knockout].map(CUP_ROUND_START).astype(int) + leg.astype(int) - 1
+
+    unknown = numbers.isna()
+    if unknown.any():
+        raise ValueError(
+            f"Cup bet round(s) {sorted(rounds[unknown].fillna('<empty>').unique())} have no "
+            f"round number; add them to CUP_ROUND_START"
+        )
+
+    return numbers.astype(int)
+
+
 def load_bets(div=None):
-    """Bets.csv, of competition ``div`` only when given, in kickoff order."""
+    """
+    Bets.csv, of competition ``div`` only when given, in kickoff order.
+    A cup's bets get their round number as Gameweek (cup_rounds).
+    """
 
     bets = add_missing_columns(pd.read_csv(BETS_PATH))
 
@@ -101,6 +161,9 @@ def load_bets(div=None):
     )
     bets["Won"] = bets["PredictedResult"] == bets["ActualResult"]
     bets["PickProb"] = bets[PROB_COLS].max(axis=1)
+
+    if div is not None and is_cup(div) and len(bets):
+        bets["Gameweek"] = cup_rounds(bets)
 
     return bets.sort_values("Kickoff").reset_index(drop=True)
 
@@ -133,9 +196,10 @@ def current_elos(matches, div=None, ratings=None):
 # PREDICTIONS
 # ============================================================
 
-def build_predictions(bets, elos):
+def build_predictions(bets, elos, home_advantage=HOME_ADVANTAGE):
     """One competition's fixtures for the gameweek to feature: the earliest
-    one with unsettled bets, or failing that the most recent on record."""
+    one with unsettled bets, or failing that the most recent on record.
+    ``home_advantage`` goes into eloGap (none for a cup final)."""
 
     if bets.empty:
         return []
@@ -155,6 +219,7 @@ def build_predictions(bets, elos):
 
         home_elo = elos.get(row["HomeTeam"], 1500)
         away_elo = elos.get(row["AwayTeam"], 1500)
+        advantage = 0 if row.get("Round") == "FINAL" else home_advantage
 
         fixtures.append({
             "div": row["Div"],
@@ -170,7 +235,7 @@ def build_predictions(bets, elos):
             "awayProb": _num(row["AwayProb"]),
             "homeElo": home_elo,
             "awayElo": away_elo,
-            "eloGap": round(home_elo + HOME_ADVANTAGE - away_elo),
+            "eloGap": round(home_elo + advantage - away_elo),
             "result": _str(row["ActualResult"]),
             "settled": bool(pd.notna(row["ActualResult"])),
         })
@@ -246,6 +311,18 @@ def build_stats(bets):
 
     baseline_hit = float((settled["ActualResult"] == "H").mean())
     hit_rate = wins / len(settled)
+
+    # Mean negative log of the probability given to what happened
+    outcome_prob = pd.Series(
+        [
+            row[col] for row, col in zip(
+                settled[PROB_COLS].to_dict("records"),
+                settled["ActualResult"].map(dict(zip("HDA", PROB_COLS))),
+            )
+        ],
+        dtype=float,
+    )
+    log_loss = float(-np.log((outcome_prob / 100).clip(1e-15, 1)).mean())
 
     # Cumulative profit, one point per settled bet in kickoff order
     running = 0.0
@@ -357,6 +434,9 @@ def build_stats(bets):
         "hitRate": round(hit_rate * 100, 1),
         "baselineHitRate": round(baseline_hit * 100, 1),
         "edge": round((hit_rate - baseline_hit) * 100, 1),
+        "logLoss": round(log_loss, 3),
+        # Bets with odds: profit, staked and ROI count only these
+        "pricedBets": int(len(priced)),
         "profit": round(profit, 2),
         "staked": round(staked, 2),
         "roi": round(profit / staked * 100, 1) if staked else 0.0,
@@ -613,6 +693,497 @@ def build_table(matches, bets, history=None, trained=None):
 
 
 # ============================================================
+# CUPS: LEAGUE PHASE AND KNOCKOUTS
+# ============================================================
+
+KNOCKOUT_ROUNDS = [stage for stage in STAGE_ORDER if stage in KNOCKOUT]
+
+
+def cup_fixture_list(div, season):
+    """
+    FotMob's whole-season fixture list for a cup (played or not), with
+    canonical club names, UTC kick-offs and each match's Stage; None if
+    there's no list on file.
+    """
+
+    path = fixture_list_path(div, season)
+    if not path.exists():
+        return None
+
+    fixtures = pd.read_csv(path, dtype={"MatchId": str, "Round": str})
+    if fixtures.empty:
+        return None
+
+    names = _club_names(fixtures, load_id_map(), read_teams())
+    for side in ("Home", "Away"):
+        fixtures[f"{side}Id"] = fixtures[f"{side}Id"].astype(int)
+        fixtures[f"{side}Team"] = fixtures[f"{side}Id"].map(names)
+
+    fixtures["KickoffUTC"] = pd.to_datetime(fixtures["Kickoff"], utc=True)
+    fixtures["Stage"] = [
+        "LEAGUE_PHASE" if r.isdigit() else KNOCKOUT_STAGES.get(r) for r in fixtures["Round"]
+    ]
+
+    return fixtures
+
+
+def _plays_abroad(cup_matches):
+    """Clubs whose latest home European tie was at a neutral venue (champions_league.resolve_fixtures)."""
+
+    home_ties = cup_matches[cup_matches["Stage"] != "FINAL"]
+    latest = home_ties.sort_values("MatchDateTime").drop_duplicates("HomeTeam", keep="last")
+
+    return set(latest.loc[latest["Neutral"] == 1, "HomeTeam"])
+
+
+def _rank_league_phase(rows):
+    """UEFA's league-phase order: points, goal difference, goals, away goals, wins, away wins."""
+
+    ordered = sorted(
+        rows,
+        key=lambda r: (
+            -r["points"], -(r["gf"] - r["ga"]), -r["gf"],
+            -r["awayGf"], -r["won"], -r["awayWon"], r["team"],
+        ),
+    )
+
+    for position, row in enumerate(ordered, start=1):
+        row["position"] = position
+        row["gd"] = row["gf"] - row["ga"]
+        row.pop("awayGf")
+        row.pop("awayWon")
+
+    return ordered
+
+
+def build_league_phase(div, cup_matches, fixtures, season, trained, domestic):
+    """
+    A cup's league-phase table: the standings so far, and projected to
+    the last matchday by adding each remaining fixture's expected points
+    (3 x P(win) + P(draw)) from the cup's model, as projected_table does
+    for a league (no goal model, so no projected goal difference). None
+    when the season has no league phase on record.
+    """
+
+    played = cup_matches[
+        (cup_matches["Div"] == div)
+        & (cup_matches["Season"] == season)
+        & (cup_matches["Stage"] == "LEAGUE_PHASE")
+    ]
+    planned = (
+        fixtures[fixtures["Stage"] == "LEAGUE_PHASE"]
+        if fixtures is not None else pd.DataFrame(columns=["MatchId", "HomeTeam", "AwayTeam", "Round"])
+    )
+
+    if played.empty and planned.empty:
+        return None
+
+    teams = sorted(
+        set(played["HomeTeam"]) | set(played["AwayTeam"])
+        | set(planned["HomeTeam"]) | set(planned["AwayTeam"])
+    )
+
+    # Each club's league that season ("X:<country>" outside the modelled ones)
+    league_of = {}
+    if not planned.empty:
+        by_id = club_leagues(
+            set(planned["HomeId"]) | set(planned["AwayId"]), season, domestic=domestic
+        )
+        for side in ("Home", "Away"):
+            league_of.update(zip(planned[f"{side}Team"], planned[f"{side}Id"].map(by_id)))
+    for side in ("Home", "Away"):
+        league_of.update(zip(played[f"{side}Team"], played[f"{side}League"]))
+
+    def blank(team):
+        return {**_blank_row(team), "awayGf": 0, "awayWon": 0}
+
+    rows = {team: blank(team) for team in teams}
+    for match in played.itertuples():
+        _award(rows, match.HomeTeam, match.AwayTeam, match.FTR, int(match.FTHG), int(match.FTAG))
+        rows[match.AwayTeam]["awayGf"] += int(match.FTAG)
+        rows[match.AwayTeam]["awayWon"] += int(match.FTR == "A")
+
+    current = _rank_league_phase([dict(r) for r in rows.values()])
+    current_position = {row["team"]: row["position"] for row in current}
+
+    remaining = planned[~planned["MatchId"].isin(set(played["MatchId"].astype(str)))]
+
+    projected = {
+        row["team"]: {
+            key: float(row[key]) for key in ("played", "won", "drawn", "lost", "points")
+        }
+        for row in current
+    }
+
+    if not remaining.empty:
+        models, elos, team_history = trained
+        abroad = _plays_abroad(cup_matches)
+        local = remaining["KickoffUTC"].dt.tz_convert("Europe/London")
+        frame = pd.DataFrame({
+            "Div": div,
+            "Date": local.dt.strftime("%d/%m/%Y").to_numpy(),
+            "Time": local.dt.strftime("%H:%M").to_numpy(),
+            "HomeTeam": remaining["HomeTeam"].to_numpy(),
+            "AwayTeam": remaining["AwayTeam"].to_numpy(),
+            "HomeLeague": remaining["HomeTeam"].map(league_of).to_numpy(),
+            "AwayLeague": remaining["AwayTeam"].map(league_of).to_numpy(),
+            "Neutral": remaining["HomeTeam"].isin(abroad).astype(int).to_numpy(),
+            "Stage": "LEAGUE_PHASE",
+        })
+        scored = predict_fixtures(frame, models, elos, team_history)
+
+        for fixture in scored.itertuples():
+            p_home, p_draw, p_away = (
+                fixture.HomeProb / 100, fixture.DrawProb / 100, fixture.AwayProb / 100
+            )
+            home, away = projected[fixture.HomeTeam], projected[fixture.AwayTeam]
+            home["played"] += 1
+            away["played"] += 1
+            home["points"] += 3 * p_home + p_draw
+            away["points"] += 3 * p_away + p_draw
+            home["won"] += p_home
+            away["won"] += p_away
+            home["drawn"] += p_draw
+            away["drawn"] += p_draw
+            home["lost"] += p_away
+            away["lost"] += p_home
+
+    # Exact expected points, ties on today's order
+    ranked = sorted(projected, key=lambda team: (-projected[team]["points"], current_position[team]))
+    projected_rows = [
+        {
+            "team": team,
+            "league": league_of.get(team),
+            **{key: round(value) for key, value in projected[team].items()},
+            "position": position,
+            "currentPosition": current_position[team],
+            "movement": current_position[team] - position,
+        }
+        for position, team in enumerate(ranked, start=1)
+    ]
+
+    for row in current:
+        row["league"] = league_of.get(row["team"])
+
+    rounds = pd.to_numeric(planned["Round"], errors="coerce").dropna()
+    matchdays = int(rounds.max()) if len(rounds) else int(
+        played["Round"].str[2:].astype(int).max()
+    )
+
+    return {
+        "season": season,
+        "matchdays": matchdays,
+        "playedFixtures": int(len(played)),
+        "remainingFixtures": int(len(remaining)),
+        "zones": LEAGUE_PHASE_ZONES,
+        "current": current,
+        "projected": projected_rows,
+    }
+
+
+def _score(home, away):
+    return None if pd.isna(home) or pd.isna(away) else [int(home), int(away)]
+
+
+def _bracket_order(rounds):
+    """
+    Order each round's ties so tie i of a round is fed by ties 2i and 2i+1
+    of the round before (one tie for the play-off -> round of 16), working
+    back from the latest round; ties no later tie claims go last, by date.
+    """
+
+    stages = [stage for stage in KNOCKOUT_ROUNDS if rounds.get(stage)]
+
+    for later, earlier in zip(reversed(stages), list(reversed(stages))[1:]):
+
+        unplaced = list(rounds[earlier])
+        ordered = []
+
+        for tie in rounds[later]:
+            for team in tie["teams"]:
+                feeder = next((t for t in unplaced if team in t["teams"]), None)
+                if feeder is not None:
+                    ordered.append(feeder)
+                    unplaced.remove(feeder)
+
+        rounds[earlier] = ordered + unplaced
+
+    return rounds
+
+
+def build_knockouts(div, cup_matches, fixtures, bets, season, progression=None):
+    """
+    A cup's knockout ties: each tie's legs (90-minute score, extra time,
+    the penalty winner), aggregate and winner, plus the model's
+    prediction where a bet was made. ``season``'s ties once its draw is
+    made; until then the latest season that has some (last season's
+    bracket), so the page has something to show - ``current`` says which.
+    None when no season has any.
+
+    ``progression`` (a TieProgression) adds each tie's chance of going
+    through and the Brier score; without it they're None.
+    """
+
+    cup = cup_matches[cup_matches["Div"] == div]
+    played = cup[cup["Stage"].isin(KNOCKOUT)]
+    planned = (
+        fixtures[fixtures["Stage"].isin(KNOCKOUT)] if fixtures is not None else None
+    )
+
+    has_current = (played["Season"] == season).any() or (
+        planned is not None and not planned.empty
+    )
+    if has_current:
+        shown = season
+    elif not played.empty:
+        shown = played["Season"].max()
+    else:
+        return None
+
+    played = played[played["Season"] == shown]
+
+    predictions = {}
+    for bet in bets.itertuples():
+        if pd.notna(bet.MatchId):
+            predictions[str(bet.MatchId).split(".")[0]] = {
+                "pick": bet.PredictedResult,
+                "homeProb": _num(bet.HomeProb),
+                "drawProb": _num(bet.DrawProb),
+                "awayProb": _num(bet.AwayProb),
+            }
+
+    legs = [
+        {
+            "stage": match.Stage,
+            "matchId": str(match.MatchId),
+            "date": match.MatchDateTime.strftime("%Y-%m-%d"),
+            "home": match.HomeTeam,
+            "away": match.AwayTeam,
+            "score": _score(match.FTHG, match.FTAG),
+            "extraTime": _score(match.AETHG, match.AETAG),
+            "penaltyWinner": _str(match.PenWinner),
+            "tieWinner": _str(match.TieWinner),
+        }
+        for match in played.itertuples()
+    ]
+
+    if shown == season and planned is not None:
+        seen = {leg["matchId"] for leg in legs}
+        local = planned["KickoffUTC"].dt.tz_convert("Europe/London")
+        for match, kickoff in zip(planned.itertuples(), local):
+            if match.MatchId not in seen:
+                legs.append({
+                    "stage": match.Stage, "matchId": match.MatchId,
+                    "date": kickoff.strftime("%Y-%m-%d"),
+                    "home": match.HomeTeam, "away": match.AwayTeam,
+                    "score": None, "extraTime": None,
+                    "penaltyWinner": None, "tieWinner": None,
+                })
+
+    ties = {}
+    for leg in sorted(legs, key=lambda l: (l["date"], l["matchId"])):
+        key = (leg["stage"], frozenset((leg["home"], leg["away"])))
+        ties.setdefault(key, []).append(leg)
+
+    rounds = {}
+    for (stage, _), tie_legs in ties.items():
+
+        first = tie_legs[0]
+        teams = [first["home"], first["away"]]
+        done = [leg for leg in tie_legs if leg["score"] is not None]
+
+        aggregate = None
+        if done:
+            aggregate = [0, 0]
+            for leg in done:
+                goals = leg["extraTime"] or leg["score"]
+                side = 0 if leg["home"] == teams[0] else 1
+                aggregate[side] += goals[0]
+                aggregate[1 - side] += goals[1]
+
+        winner = next((leg["tieWinner"] for leg in reversed(done) if leg["tieWinner"]), None)
+        decider = done[-1] if done and winner else None
+
+        rounds.setdefault(stage, []).append({
+            "teams": teams,
+            "progression": progression.tie(stage, tie_legs) if progression else None,
+            "legs": [
+                {
+                    "leg": (number if stage in TWO_LEGGED else None),
+                    "date": leg["date"],
+                    "home": leg["home"],
+                    "away": leg["away"],
+                    "score": leg["score"],
+                    "extraTime": leg["extraTime"],
+                    "penaltyWinner": leg["penaltyWinner"],
+                    "prediction": predictions.get(leg["matchId"]),
+                }
+                for number, leg in enumerate(tie_legs, start=1)
+            ],
+            "aggregate": aggregate,
+            "winner": winner,
+            "decidedBy": (
+                None if decider is None
+                else "penalties" if decider["penaltyWinner"]
+                else "extra time" if decider["extraTime"]
+                else "aggregate" if stage in TWO_LEGGED
+                else "90 minutes"
+            ),
+        })
+
+    rounds = _bracket_order(rounds)
+
+    return {
+        "season": shown,
+        "current": bool(shown == season),
+        "progressionScore": progression.score() if progression else None,
+        "rounds": [
+            {"stage": stage, "ties": rounds[stage]}
+            for stage in KNOCKOUT_ROUNDS if stage in rounds
+        ],
+    }
+
+
+def build_cup(div, cup_matches, bets, season, trained, domestic, rows=None):
+    """cups.json's entry for one cup. ``rows``: build_history's feature
+    rows behind ``trained``, for the ties' progression probabilities."""
+
+    fixtures = cup_fixture_list(div, season)
+    progression = (
+        TieProgression(div, rows, trained, cup_matches) if rows is not None else None
+    )
+
+    return {
+        "name": competitions.get(div)["name"],
+        "season": season,
+        "leaguePhase": build_league_phase(div, cup_matches, fixtures, season, trained, domestic),
+        "knockouts": build_knockouts(div, cup_matches, fixtures, bets, season, progression),
+    }
+
+
+class TieProgression:
+    """
+    Each knockout tie's chance of going through (plan §4B.9, display
+    only; tie_progression.py has the method), for build_knockouts:
+
+    - ``before``: P(teams[0] goes through) before the first leg. Once the
+      first leg is played it's out of sample: scored by the European model
+      trained on the seasons before the tie's, on the first leg's
+      pre-match features (the second leg = the first, sides swapped).
+      Until then both legs are scored by the live model.
+    - ``afterFirstLeg``: given the first leg's score, with the second leg
+      scored out of sample if played, else by the live model. Two-legged
+      ties only.
+
+    ``score()``: the Brier score of ``before`` (and ``afterFirstLeg``)
+    over every completed tie with a season before it on record, and the
+    bootstrap 95% CI of ``before``'s.
+    """
+
+    def __init__(self, div, rows, trained, cup_matches):
+        self.div = div
+        self.rows = rows
+        self.trained = trained
+        self.cup_matches = cup_matches
+        self._models = {}
+        cup = rows[rows["Div"] == div]
+        self.by_id = cup.set_index(cup["MatchId"].astype(str))
+
+    def _model(self, season):
+        if season not in self._models:
+            self._models[season] = season_models(self.rows, [season]).get(season)
+        return self._models[season]
+
+    def _live(self, stage, legs):
+        """The live model's H/D/A for unplayed ``legs`` (build_knockouts' leg dicts)."""
+
+        models, elos, team_history = self.trained
+
+        cup = self.cup_matches[self.cup_matches["Div"] == self.div]
+        latest = cup[cup["Season"] == cup["Season"].max()]
+        league_of = {}
+        for side in ("Home", "Away"):
+            league_of.update(zip(latest[f"{side}Team"], latest[f"{side}League"]))
+        abroad = _plays_abroad(self.cup_matches)
+
+        frame = pd.DataFrame({
+            "Div": self.div,
+            "Date": [pd.Timestamp(leg["date"]).strftime("%d/%m/%Y") for leg in legs],
+            "Time": "20:00",
+            "HomeTeam": [leg["home"] for leg in legs],
+            "AwayTeam": [leg["away"] for leg in legs],
+            "HomeLeague": [league_of.get(leg["home"]) for leg in legs],
+            "AwayLeague": [league_of.get(leg["away"]) for leg in legs],
+            "Neutral": [int(stage == "FINAL" or leg["home"] in abroad) for leg in legs],
+            "Stage": stage,
+        })
+        scored = predict_fixtures(frame, models, elos, team_history)
+
+        return (scored[PROB_COLS].to_numpy() / 100).tolist()
+
+    def tie(self, stage, legs):
+        """``{before, afterFirstLeg}`` for one tie (build_knockouts' legs, kick-off order)."""
+
+        two_legged = stage in TWO_LEGGED
+        if len(legs) != (2 if two_legged else 1):
+            return None
+        if any(pd.isna(leg["home"]) or pd.isna(leg["away"]) for leg in legs):
+            return None
+
+        first_played = legs[0]["score"] is not None and legs[0]["matchId"] in self.by_id.index
+
+        first = model = None
+        if first_played:
+            first_row = self.by_id.loc[[legs[0]["matchId"]]]
+            model = self._model(first_row["Season"].iloc[0])
+            if model is None:
+                return None  # no earlier season to train on
+
+            first = leg_probabilities(model, first_row)[0]
+            if two_legged:
+                swapped = leg_probabilities(model, first_row, swap=True)[0]
+                before = advance_probability([first, swapped])
+            else:
+                before = advance_probability([first])
+        else:
+            before = advance_probability(self._live(stage, legs))
+
+        after = None
+        if two_legged and first_played:
+            second_id = legs[1]["matchId"]
+            if legs[1]["score"] is not None and second_id in self.by_id.index:
+                second = leg_probabilities(model, self.by_id.loc[[second_id]])[0]
+            else:
+                second = self._live(stage, legs[1:])[0]
+            after = advance_probability([first, second], first_leg_score=legs[0]["score"])
+
+        return {
+            "before": round(before, 3),
+            "afterFirstLeg": None if after is None else round(after, 3),
+        }
+
+    def score(self):
+        ties = backtest_ties(self.rows, self.div)
+        if ties.empty:
+            return None
+
+        after = ties.dropna(subset=["AfterFirstLeg"])
+        _, low, high = bootstrap_against_coin(ties["Before"], ties["HomeWent"])
+
+        return {
+            "ties": int(len(ties)),
+            "from": ties["Season"].min(),
+            "to": ties["Season"].max(),
+            "brier": round(brier(ties["Before"], ties["HomeWent"]), 3),
+            "brierCi": [round(0.25 + low, 3), round(0.25 + high, 3)],
+            "tiesAfterFirstLeg": int(len(after)),
+            "brierAfterFirstLeg": (
+                round(brier(after["AfterFirstLeg"], after["HomeWent"]), 3) if len(after) else None
+            ),
+        }
+
+
+# ============================================================
 # HELPERS
 # ============================================================
 
@@ -671,10 +1242,19 @@ def build_leagues():
                 "kind": competitions.get(div)["kind"],
                 "promotedElo": competitions.get(div)["promoted_elo"],
             }
-            # League pages only; the CL gets its own page in P6-01
-            for div in competitions.leagues()
+            for div in exported()
         ],
     }
+
+
+def exported():
+    """The competitions the site shows: every enabled one that's predicted
+    (the Europa / Conference League rows only feed the Elo)."""
+
+    return [
+        div for div in competitions.enabled()
+        if competitions.get(div)["model"] is not None
+    ]
 
 
 def build_shared_ratings(history, european, days=HISTORY_DAYS):
@@ -759,28 +1339,54 @@ def export_web(status=None):
     """``status``: this run's RunStatus.competitions, so the site's stale
     badges describe this run (run_week writes the file only at the end)."""
 
-    history = load_matches()
-    if "Div" not in history.columns:
-        history.insert(0, "Div", DEFAULT_DIV)
+    everything = load_matches(cups=True)
+    if "Div" not in everything.columns:
+        everything.insert(0, "Div", DEFAULT_DIV)
+
+    cup = everything["Div"].map(is_cup)
+    history = everything[~cup].reset_index(drop=True)
+    cup_matches = everything[cup].reset_index(drop=True)
+
+    # Cup rows have no gameweek, which made the column float (read_matches)
+    if cup.any() and history["Gameweek"].notna().all():
+        history["Gameweek"] = history["Gameweek"].astype(int)
 
     european = results_for_elo(history)
 
-    # Fitted once on every competition, then scored per league
+    # Fitted once on every competition (the cup rows train the CL's
+    # European model, as in predict_next_matches.load_model), then scored
+    # per competition
     ratings = build_elo_feature(history.copy(), european=european)
-    trained = train_history(history, european)
+    # Kept: the cup ties' progression scores played legs on these rows' features
+    rows, elos, team_history = build_history(
+        everything if cup.any() else history, european=european
+    )
+    trained = (train_models(rows), elos, team_history)
     shared, outsiders, elo_history = build_shared_ratings(history, european)
 
-    fixtures, bet_records, elo_rows = [], [], []
-    by_competition, tables, all_bets = {}, {}, []
+    # A cup's clubs come from several leagues, so its fixtures show the
+    # shared-scale rating
+    shared_by_club = {club: rating for (_, club), rating in shared.items()}
 
-    # CL predictions are recorded in Bets.csv but not shown until P6-01
-    for div in competitions.leagues():
+    fixtures, bet_records, elo_rows = [], [], []
+    by_competition, tables, cups, all_bets = {}, {}, {}, []
+
+    for div in exported():
 
         name = competitions.get(div)["name"]
-        matches = history[history["Div"] == div].reset_index(drop=True)
         bets = load_bets(div)
         all_bets.append(bets)
 
+        if is_cup(div):
+            fixtures += build_predictions(bets, shared_by_club, EUROPE_HOME_ADVANTAGE)
+            bet_records += build_bets(bets)
+            by_competition[div] = {"name": name, **build_stats(bets)}
+            cups[div] = build_cup(
+                div, cup_matches, bets, competitions.CURRENT_SEASON, trained, history, rows
+            )
+            continue
+
+        matches = history[history["Div"] == div].reset_index(drop=True)
         elos = current_elos(history, div, ratings)
 
         fixtures += build_predictions(bets, elos)
@@ -858,6 +1464,11 @@ def export_web(status=None):
     _write("run_status.json", {
         "generated": generated,
         "competitions": build_run_status(status),
+    })
+
+    _write("cups.json", {
+        "generated": generated,
+        "byCompetition": cups,
     })
 
 

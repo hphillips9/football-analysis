@@ -5,12 +5,13 @@
  * /e0/track-record/, /e0/ratings/; a cup gets /cl/, /cl/league-phase/,
  * /cl/knockouts/, /cl/track-record/.
  * Fixtures (P7-07), Results and Record (P7-08), Table and Ratings (P7-09),
- * cup placeholders (P7-14; P6-01 fills them in).
+ * cup League phase and Knockouts (P6-01).
  */
 import type { GetStaticPaths } from "astro";
 
-import CupPlaceholder from "../../components/league/CupPlaceholder.astro";
+import Knockouts from "../../components/league/Knockouts.astro";
 import LeagueFixtures from "../../components/league/LeagueFixtures.astro";
+import LeaguePhase from "../../components/league/LeaguePhase.astro";
 import LeagueRatings from "../../components/league/LeagueRatings.astro";
 import LeagueTableSection from "../../components/league/LeagueTableSection.astro";
 import LeagueRecord from "../../components/league/LeagueRecord.astro";
@@ -46,8 +47,10 @@ const title = section.key === "fixtures" ? data.competition.name : `${data.compe
       <LeagueTableSection data={data} />
     ) : section.key === "ratings" ? (
       <LeagueRatings data={data} />
+    ) : section.key === "league-phase" ? (
+      <LeaguePhase data={data} />
     ) : (
-      <CupPlaceholder data={data} section={section} />
+      <Knockouts data={data} />
     )
   }
 </Shell>

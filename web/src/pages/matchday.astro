@@ -13,7 +13,7 @@ import HowToRead from "../components/fixtures/HowToRead.astro";
 import Shell from "../layouts/Shell.astro";
 import { competitions, forLeague, leagues, predictions } from "../lib/data";
 import { kickoffRange } from "../lib/format";
-import { leagueHref, roundName } from "../lib/routes";
+import { leagueHref, roundLabel } from "../lib/routes";
 
 const groups = competitions.map((c) => {
   const fixtures = forLeague(c.div).fixtures;
@@ -23,7 +23,7 @@ const groups = competitions.map((c) => {
     fixtures,
     summary: fixtures.length
       ? [
-          `${roundName(c.kind)} ${fixtures[0]!.gameweek}`,
+          roundLabel(c.kind, fixtures[0]!.gameweek),
           kickoffRange(fixtures.map((f) => f.kickoff)),
           `${fixtures.length} ${fixtures.length === 1 ? "match" : "matches"}`,
           played ? `${played} played` : "",

@@ -19,7 +19,9 @@ Always:
        them and append the new bets to Bets.csv (skipped by --no-predict).
        The Champions League is predicted by its own European model and its
        bets carry Round + MatchId; they settle on the 90-minute result from
-       the FotMob cache, unpriced (Bet = 0) until CL odds are captured
+       the FotMob cache. Then any upcoming CL bet without odds is priced
+       from The Odds API (odds_api.py; needs ODDS_API_KEY) - without a
+       price it settles unpriced (Bet = 0)
     6. Export web/src/data/*.json for the website
 
 Step 5 only predicts fixtures that aren't already in Bets.csv, and waits
@@ -55,6 +57,7 @@ from predict_next_matches import (
     PROB_COLUMNS,
 )
 from backfill_bet_probs import backfill
+from odds_api import price_bets
 from export_web import export_web
 from run_status import RunStatus
 
@@ -93,6 +96,7 @@ def run_week(refresh_current=True, verbose=False, predict=True, divs=None):
 
         if predict:
             _predict_next_round(divs, status)
+            _price_cup_bets(divs)
         else:
             print("\n--no-predict: skipping the next-round predictions.")
 
@@ -161,8 +165,8 @@ def _predict_next_round(divs, status):
 
         try:
             results = predict_round(fixtures, trained)
-            # Cup bets also carry Round and MatchId; Bet stays empty until
-            # settled, then 0 (unpriced) until CL odds are captured (P6-03)
+            # Cup bets also carry Round and MatchId; their odds are
+            # captured just after (_price_cup_bets)
             extra = [c for c in ("Round", "MatchId") if c in results.columns]
             added = add_bets(
                 results[
@@ -176,6 +180,16 @@ def _predict_next_round(divs, status):
             continue
 
         status.set(div, predicted=added)
+
+
+def _price_cup_bets(divs):
+    """CL odds onto the upcoming bets. An outage only leaves them unpriced."""
+
+    print()
+    try:
+        price_bets(divs=divs)
+    except Exception as exc:
+        print(f"WARNING: couldn't capture cup odds ({exc}) - those bets stay unpriced for now")
 
 
 def main():

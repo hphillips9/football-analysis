@@ -1,68 +1,70 @@
 {
-  "generated": "2026-11-06T15:30:32+00:00",
+  "generated": "2026-11-06T17:19:27+00:00",
   "overall": {
-    "asOf": "2026-11-02",
-    "totalBets": 707,
-    "backfilledBets": 551,
+    "asOf": "2026-11-04",
+    "totalBets": 797,
+    "backfilledBets": 623,
     "backfilledGameweeks": [
       1,
       11
     ],
-    "settledBets": 641,
-    "pendingBets": 66,
-    "wins": 347,
-    "losses": 294,
-    "hitRate": 54.1,
-    "baselineHitRate": 43.2,
-    "edge": 10.9,
+    "settledBets": 713,
+    "pendingBets": 84,
+    "wins": 397,
+    "losses": 316,
+    "hitRate": 55.7,
+    "baselineHitRate": 44.5,
+    "edge": 11.2,
+    "logLoss": 0.964,
+    "pricedBets": 641,
     "profit": -25.65,
     "staked": 641.0,
     "roi": -4.0,
     "calibration": [
       {
         "label": "0-40%",
-        "bets": 75,
-        "avgProb": 38.2,
-        "hitRate": 38.7
+        "bets": 77,
+        "avgProb": 38.3,
+        "hitRate": 40.3
       },
       {
         "label": "40-45%",
-        "bets": 114,
+        "bets": 120,
         "avgProb": 42.5,
-        "hitRate": 43.0
+        "hitRate": 44.2
       },
       {
         "label": "45-50%",
-        "bets": 112,
+        "bets": 124,
         "avgProb": 47.6,
-        "hitRate": 42.9
+        "hitRate": 43.5
       },
       {
         "label": "50-55%",
-        "bets": 96,
+        "bets": 107,
         "avgProb": 52.7,
-        "hitRate": 52.1
+        "hitRate": 51.4
       },
       {
         "label": "55-60%",
-        "bets": 73,
+        "bets": 81,
         "avgProb": 57.4,
-        "hitRate": 64.4
+        "hitRate": 65.4
       },
       {
         "label": "60-100%",
-        "bets": 171,
-        "avgProb": 67.0,
-        "hitRate": 72.5
+        "bets": 204,
+        "avgProb": 67.2,
+        "hitRate": 74.0
       }
     ],
     "byPick": [
       {
         "pick": "H",
         "label": "Home",
-        "bets": 423,
-        "hits": 226,
-        "hitRate": 53.4,
+        "bets": 469,
+        "hits": 259,
+        "hitRate": 55.2,
         "profit": -27.74
       },
       {
@@ -76,9 +78,9 @@
       {
         "pick": "A",
         "label": "Away",
-        "bets": 218,
-        "hits": 121,
-        "hitRate": 55.5,
+        "bets": 244,
+        "hits": 138,
+        "hitRate": 56.6,
         "profit": 2.09
       }
     ],
@@ -5246,6 +5248,16 @@
     ],
     "worstBets": [
       {
+        "div": "CL",
+        "gameweek": 3,
+        "date": "21/10/2026",
+        "match": "Sporting CP v LASK",
+        "pick": "H",
+        "result": "A",
+        "pickProb": 77.3,
+        "profit": null
+      },
+      {
         "div": "D1",
         "gameweek": 2,
         "date": "05/09/2026",
@@ -5264,16 +5276,6 @@
         "result": "D",
         "pickProb": 75.3,
         "profit": -1.0
-      },
-      {
-        "div": "N1",
-        "gameweek": 1,
-        "date": "08/08/2026",
-        "match": "PSV Eindhoven v Fortuna Sittard",
-        "pick": "H",
-        "result": "D",
-        "pickProb": 74.7,
-        "profit": -1.0
       }
     ]
   },
@@ -5291,6 +5293,8 @@
       "hitRate": 45.6,
       "baselineHitRate": 40.0,
       "edge": 5.6,
+      "logLoss": 1.055,
+      "pricedBets": 90,
       "profit": -12.38,
       "staked": 90.0,
       "roi": -13.8,
@@ -6263,6 +6267,8 @@
       "hitRate": 54.1,
       "baselineHitRate": 45.9,
       "edge": 8.3,
+      "logLoss": 0.981,
+      "pricedBets": 109,
       "profit": -5.44,
       "staked": 109.0,
       "roi": -5.0,
@@ -7407,6 +7413,8 @@
       "hitRate": 54.2,
       "baselineHitRate": 48.6,
       "edge": 5.6,
+      "logLoss": 1.006,
+      "pricedBets": 72,
       "profit": -0.46,
       "staked": 72.0,
       "roi": -0.6,
@@ -8225,6 +8233,8 @@
       "hitRate": 60.0,
       "baselineHitRate": 47.0,
       "edge": 13.0,
+      "logLoss": 0.898,
+      "pricedBets": 100,
       "profit": 6.28,
       "staked": 100.0,
       "roi": 6.3,
@@ -9287,6 +9297,8 @@
       "hitRate": 54.3,
       "baselineHitRate": 48.1,
       "edge": 6.2,
+      "logLoss": 1.0,
+      "pricedBets": 81,
       "profit": 0.69,
       "staked": 81.0,
       "roi": 0.9,
@@ -10187,6 +10199,8 @@
       "hitRate": 58.9,
       "baselineHitRate": 40.0,
       "edge": 18.9,
+      "logLoss": 0.917,
+      "pricedBets": 90,
       "profit": 3.18,
       "staked": 90.0,
       "roi": 3.5,
@@ -11169,6 +11183,8 @@
       "hitRate": 51.5,
       "baselineHitRate": 34.3,
       "edge": 17.2,
+      "logLoss": 1.004,
+      "pricedBets": 99,
       "profit": -17.52,
       "staked": 99.0,
       "roi": -17.7,
@@ -12214,6 +12230,178 @@
           "result": "D",
           "pickProb": 74.1,
           "profit": -1.0
+        }
+      ]
+    },
+    "CL": {
+      "name": "Champions League",
+      "asOf": "2026-11-04",
+      "totalBets": 90,
+      "backfilledBets": 72,
+      "backfilledGameweeks": [
+        1,
+        4
+      ],
+      "settledBets": 72,
+      "pendingBets": 18,
+      "wins": 50,
+      "losses": 22,
+      "hitRate": 69.4,
+      "baselineHitRate": 55.6,
+      "edge": 13.9,
+      "logLoss": 0.839,
+      "pricedBets": 0,
+      "profit": 0.0,
+      "staked": 0.0,
+      "roi": 0.0,
+      "calibration": [
+        {
+          "label": "0-40%",
+          "bets": 2,
+          "avgProb": 39.4,
+          "hitRate": 100.0
+        },
+        {
+          "label": "40-45%",
+          "bets": 6,
+          "avgProb": 43.2,
+          "hitRate": 66.7
+        },
+        {
+          "label": "45-50%",
+          "bets": 12,
+          "avgProb": 48.0,
+          "hitRate": 50.0
+        },
+        {
+          "label": "50-55%",
+          "bets": 11,
+          "avgProb": 52.1,
+          "hitRate": 45.5
+        },
+        {
+          "label": "55-60%",
+          "bets": 8,
+          "avgProb": 57.4,
+          "hitRate": 75.0
+        },
+        {
+          "label": "60-100%",
+          "bets": 33,
+          "avgProb": 68.3,
+          "hitRate": 81.8
+        }
+      ],
+      "byGameweek": [
+        {
+          "gameweek": 1,
+          "bets": 18,
+          "settled": 18,
+          "hits": 14,
+          "hitRate": 77.8,
+          "profit": 0.0,
+          "cumulativeProfit": 0.0,
+          "status": "complete"
+        },
+        {
+          "gameweek": 2,
+          "bets": 18,
+          "settled": 18,
+          "hits": 11,
+          "hitRate": 61.1,
+          "profit": 0.0,
+          "cumulativeProfit": 0.0,
+          "status": "complete"
+        },
+        {
+          "gameweek": 3,
+          "bets": 18,
+          "settled": 18,
+          "hits": 12,
+          "hitRate": 66.7,
+          "profit": 0.0,
+          "cumulativeProfit": 0.0,
+          "status": "complete"
+        },
+        {
+          "gameweek": 4,
+          "bets": 18,
+          "settled": 18,
+          "hits": 13,
+          "hitRate": 72.2,
+          "profit": 0.0,
+          "cumulativeProfit": 0.0,
+          "status": "complete"
+        },
+        {
+          "gameweek": 5,
+          "bets": 18,
+          "settled": 0,
+          "hits": 0,
+          "hitRate": null,
+          "profit": null,
+          "cumulativeProfit": null,
+          "status": "pending"
+        }
+      ],
+      "byPick": [
+        {
+          "pick": "H",
+          "label": "Home",
+          "bets": 46,
+          "hits": 33,
+          "hitRate": 71.7,
+          "profit": 0.0
+        },
+        {
+          "pick": "D",
+          "label": "Draw",
+          "bets": 0,
+          "hits": 0,
+          "hitRate": null,
+          "profit": 0.0
+        },
+        {
+          "pick": "A",
+          "label": "Away",
+          "bets": 26,
+          "hits": 17,
+          "hitRate": 65.4,
+          "profit": 0.0
+        }
+      ],
+      "bankroll": [],
+      "bestBets": [],
+      "worstBets": [
+        {
+          "div": "CL",
+          "gameweek": 3,
+          "date": "21/10/2026",
+          "match": "Sporting CP v LASK",
+          "pick": "H",
+          "result": "A",
+          "pickProb": 77.3,
+          "profit": null
+        },
+        {
+          "div": "CL",
+          "gameweek": 2,
+          "date": "13/10/2026",
+          "match": "Viking v Bayern M\u00fcnchen",
+          "pick": "A",
+          "result": "D",
+          "pickProb": 72.1,
+          "profit": null
+        },
+        {
+          "div": "CL",
+          "gameweek": 1,
+          "date": "10/09/2026",
+          "match": "PSV Eindhoven v Shakhtar Donetsk",
+          "pick": "H",
+          "result": "D",
+          "pickProb": 68.0,
+          "profit": null
         }
       ]
     }
