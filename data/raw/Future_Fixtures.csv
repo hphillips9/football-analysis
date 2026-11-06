@@ -1,19 +1,19 @@
-Gameweek,Div,Date,Time,HomeTeam,AwayTeam
-12,N1,06/11/2026,19:00,Willem II,PEC Zwolle
-11,P1,06/11/2026,20:45,Famalicão,Arouca
-12,N1,07/11/2026,15:30,Fortuna Sittard,Telstar
-11,P1,07/11/2026,15:30,Nacional,Académico Viseu
-12,N1,07/11/2026,17:45,ADO Den Haag,Sparta Rotterdam
-11,P1,07/11/2026,18:00,Alverca,Casa Pia AC
-12,N1,07/11/2026,20:00,Excelsior,Go Ahead Eagles
-11,P1,07/11/2026,20:30,Sporting CP,Moreirense
-12,N1,08/11/2026,11:15,SC Heerenveen,Feyenoord
-12,N1,08/11/2026,13:30,FC Twente,Ajax
-11,P1,08/11/2026,15:30,Estoril,Marítimo
-11,P1,08/11/2026,15:30,Santa Clara,Gil Vicente
-12,N1,08/11/2026,15:45,AZ Alkmaar,FC Groningen
-12,N1,08/11/2026,15:45,Cambuur,PSV Eindhoven
-11,P1,08/11/2026,18:00,Vitória de Guimarães,FC Porto
-12,N1,08/11/2026,19:00,FC Utrecht,NEC Nijmegen
-11,P1,08/11/2026,20:30,Estrela da Amadora,Benfica
-11,P1,08/11/2026,20:30,Rio Ave,Braga
+Gameweek,Div,Date,Time,HomeTeam,AwayTeam,Round,Stage,Leg,Neutral,MatchId,HomeLeague,AwayLeague
+,CL,24/11/2026,17:45,Bodø/Glimt,LASK,MD5,LEAGUE_PHASE,,0,6106317,X:NOR,X:AUT
+,CL,24/11/2026,17:45,Galatasaray,Aston Villa,MD5,LEAGUE_PHASE,,0,6106339,X:TUR,E0
+,CL,24/11/2026,20:00,Arsenal,Borussia Dortmund,MD5,LEAGUE_PHASE,,0,6106259,E0,D1
+,CL,24/11/2026,20:00,Como,AEK Athens,MD5,LEAGUE_PHASE,,0,6106412,I1,X:GRE
+,CL,24/11/2026,20:00,Feyenoord,FC Porto,MD5,LEAGUE_PHASE,,0,6106307,N1,P1
+,CL,24/11/2026,20:00,Manchester City,Napoli,MD5,LEAGUE_PHASE,,0,6106256,E0,I1
+,CL,24/11/2026,20:00,RB Leipzig,Lens,MD5,LEAGUE_PHASE,,0,6106325,D1,F1
+,CL,24/11/2026,20:00,Real Madrid,PSV Eindhoven,MD5,LEAGUE_PHASE,,0,6106243,SP1,N1
+,CL,24/11/2026,20:00,Slovan Bratislava,Real Betis,MD5,LEAGUE_PHASE,,0,6106394,X:SVK,SP1
+,CL,25/11/2026,17:45,Sabah FK,Barcelona,MD5,LEAGUE_PHASE,,0,6106421,X:AZE,SP1
+,CL,25/11/2026,17:45,Slavia Prague,Villarreal,MD5,LEAGUE_PHASE,,0,6106391,X:CZE,SP1
+,CL,25/11/2026,20:00,Atlético Madrid,Viking,MD5,LEAGUE_PHASE,,0,6106269,SP1,X:NOR
+,CL,25/11/2026,20:00,Club Brugge,Liverpool,MD5,LEAGUE_PHASE,,0,6106294,X:BEL,E0
+,CL,25/11/2026,20:00,Inter,VfB Stuttgart,MD5,LEAGUE_PHASE,,0,6106253,I1,D1
+,CL,25/11/2026,20:00,Lille,Bayern München,MD5,LEAGUE_PHASE,,0,6106310,F1,D1
+,CL,25/11/2026,20:00,Paris Saint-Germain,Roma,MD5,LEAGUE_PHASE,,0,6106235,F1,I1
+,CL,25/11/2026,20:00,Shakhtar Donetsk,Fenerbahçe,MD5,LEAGUE_PHASE,,1,6106336,X:UKR,X:TUR
+,CL,25/11/2026,20:00,Sporting CP,Manchester United,MD5,LEAGUE_PHASE,,0,6106279,P1,E0
