@@ -19,6 +19,7 @@ import type { z } from "zod";
 
 import backtestJson from "@data/backtest.json";
 import betsJson from "@data/bets.json";
+import cupsJson from "@data/cups.json";
 import eloJson from "@data/elo.json";
 import eloHistoryJson from "@data/elo_history.json";
 import leaguesJson from "@data/leagues.json";
@@ -30,6 +31,7 @@ import tableJson from "@data/table.json";
 import {
   BacktestFile,
   BetsFile,
+  CupsFile,
   EloFile,
   EloHistoryFile,
   LeaguesFile,
@@ -42,6 +44,7 @@ import {
   type Competition,
   type CompetitionRun,
   type CompetitionStats,
+  type CupData,
   type Fixture,
   type LeagueTable,
   type RatedClub,
@@ -103,6 +106,7 @@ export const eloHistory = parseFile("elo_history.json", EloHistoryFile, eloHisto
 export const table = parseFile("table.json", TableFile, tableJson as unknown);
 export const backtest = parseFile("backtest.json", BacktestFile, backtestJson as unknown);
 export const runStatus = parseFile("run_status.json", RunStatusFile, runStatusJson as unknown);
+export const cups = parseFile("cups.json", CupsFile, cupsJson as unknown);
 
 // ============================================================
 // CROSS-FILE CHECKS
@@ -123,6 +127,7 @@ function checkDivs(): void {
   bets.bets.forEach((b, i) => expect("bets.json", `bets.${i}.div`, b.div));
   Object.keys(stats.byCompetition).forEach((div) => expect("stats.json", `byCompetition.${div}`, div));
   Object.keys(table.byCompetition).forEach((div) => expect("table.json", `byCompetition.${div}`, div));
+  Object.keys(cups.byCompetition).forEach((div) => expect("cups.json", `byCompetition.${div}`, div));
   elo.teams.forEach((t, i) => {
     if (!t.div.startsWith("X:")) expect("elo.json", `teams.${i}.div`, t.div);
   });
@@ -149,6 +154,8 @@ export interface LeagueData {
   stats: CompetitionStats | undefined;
   /** Undefined for a competition with no table (a cup, or no matches yet). */
   table: LeagueTable | undefined;
+  /** A cup's league phase and knockouts; undefined for a league. */
+  cup: CupData | undefined;
   /** Undefined for a competition the backtest doesn't cover yet. */
   backtest: (BacktestSection & { name: string }) | undefined;
   /** Clubs rated in this league, highest league Elo first. */
@@ -195,6 +202,7 @@ export function forLeague(divOrSlug: string): LeagueData {
     bets: bets.bets.filter((b) => b.div === div).sort(byKickoff),
     stats: stats.byCompetition[div],
     table: table.byCompetition[div],
+    cup: cups.byCompetition[div],
     backtest: backtest.competitions[div],
     ratings: elo.teams
       .filter((t) => t.div === div)

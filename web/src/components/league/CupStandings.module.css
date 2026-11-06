@@ -1,0 +1,47 @@
+/* Zone marker: solid = straight to the round of 16, outline = play-off,
+   nothing = out. Shape as well as colour, so it reads without colour. */
+.zone {
+  flex: none;
+  align-self: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.zone[data-zone="direct"] {
+  background: var(--lg-accent);
+}
+
+.zone[data-zone="playoff"] {
+  border: 2px solid var(--lg-accent);
+}
+
+.country {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.move {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.move[data-dir="up"] {
+  color: var(--pos);
+}
+
+.move[data-dir="down"] {
+  color: var(--neg);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

@@ -1,0 +1,1974 @@
+{
+  "generated": "2026-11-06T17:19:27+00:00",
+  "byCompetition": {
+    "CL": {
+      "name": "Champions League",
+      "season": "26-27",
+      "leaguePhase": {
+        "season": "26-27",
+        "matchdays": 8,
+        "playedFixtures": 72,
+        "remainingFixtures": 72,
+        "zones": {
+          "direct": 8,
+          "playoff": 24
+        },
+        "current": [
+          {
+            "team": "Paris Saint-Germain",
+            "played": 4,
+            "won": 4,
+            "drawn": 0,
+            "lost": 0,
+            "gf": 20,
+            "ga": 5,
+            "points": 12,
+            "position": 1,
+            "gd": 15,
+            "league": "F1"
+          },
+          {
+            "team": "Real Madrid",
+            "played": 4,
+            "won": 4,
+            "drawn": 0,
+            "lost": 0,
+            "gf": 13,
+            "ga": 7,
+            "points": 12,
+            "position": 2,
+            "gd": 6,
+            "league": "SP1"
+          },
+          {
+            "team": "Arsenal",
+            "played": 4,
+            "won": 3,
+            "drawn": 1,
+            "lost": 0,
+            "gf": 8,
+            "ga": 3,
+            "points": 10,
+            "position": 3,
+            "gd": 5,
+            "league": "E0"
+          },
+          {
+            "team": "Como",
+            "played": 4,
+            "won": 3,
+            "drawn": 0,
+            "lost": 1,
+            "gf": 19,
+            "ga": 6,
+            "points": 9,
+            "position": 4,
+            "gd": 13,
+            "league": "I1"
+          },
+          {
+            "team": "Barcelona",
+            "played": 4,
+            "won": 3,
+            "drawn": 0,
+            "lost": 1,
+            "gf": 14,
+            "ga": 6,
+            "points": 9,
+            "position": 5,
+            "gd": 8,
+            "league": "SP1"
+          },
+          {
+            "team": "Aston Villa",
+            "played": 4,
+            "won": 3,
+            "drawn": 0,
+            "lost": 1,
+            "gf": 12,
+            "ga": 6,
+            "points": 9,
+            "position": 6,
+            "gd": 6,
+            "league": "E0"
+          },
+          {
+            "team": "Manchester City",
+            "played": 4,
+            "won": 3,
+            "drawn": 0,
+            "lost": 1,
+            "gf": 12,
+            "ga": 7,
+            "points": 9,
+            "position": 7,
+            "gd": 5,
+            "league": "E0"
+          },
+          {
+            "team": "Liverpool",
+            "played": 4,
+            "won": 3,
+            "drawn": 0,
+            "lost": 1,
+            "gf": 14,
+            "ga": 10,
+            "points": 9,
+            "position": 8,
+            "gd": 4,
+            "league": "E0"
+          },
+          {
+            "team": "Club Brugge",
+            "played": 4,
+            "won": 3,
+            "drawn": 0,
+            "lost": 1,
+            "gf": 11,
+            "ga": 7,
+            "points": 9,
+            "position": 9,
+            "gd": 4,
+            "league": "X:BEL"
+          },
+          {
+            "team": "Sporting CP",
+            "played": 4,
+            "won": 3,
+            "drawn": 0,
+            "lost": 1,
+            "gf": 8,
+            "ga": 4,
+            "points": 9,
+            "position": 10,
+            "gd": 4,
+            "league": "P1"
+          },
+          {
+            "team": "Real Betis",
+            "played": 4,
+            "won": 3,
+            "drawn": 0,
+            "lost": 1,
+            "gf": 8,
+            "ga": 6,
+            "points": 9,
+            "position": 11,
+            "gd": 2,
+            "league": "SP1"
+          },
+          {
+            "team": "Borussia Dortmund",
+            "played": 4,
+            "won": 3,
+            "drawn": 0,
+            "lost": 1,
+            "gf": 7,
+            "ga": 5,
+            "points": 9,
+            "position": 12,
+            "gd": 2,
+            "league": "D1"
+          },
+          {
+            "team": "Bayern M\u00fcnchen",
+            "played": 4,
+            "won": 2,
+            "drawn": 2,
+            "lost": 0,
+            "gf": 12,
+            "ga": 5,
+            "points": 8,
+            "position": 13,
+            "gd": 7,
+            "league": "D1"
+          },
+          {
+            "team": "VfB Stuttgart",
+            "played": 4,
+            "won": 2,
+            "drawn": 1,
+            "lost": 1,
+            "gf": 7,
+            "ga": 4,
+            "points": 7,
+            "position": 14,
+            "gd": 3,
+            "league": "D1"
+          },
+          {
+            "team": "Inter",
+            "played": 4,
+            "won": 2,
+            "drawn": 0,
+            "lost": 2,
+            "gf": 8,
+            "ga": 6,
+            "points": 6,
+            "position": 15,
+            "gd": 2,
+            "league": "I1"
+          },
+          {
+            "team": "LASK",
+            "played": 4,
+            "won": 2,
+            "drawn": 0,
+            "lost": 2,
+            "gf": 10,
+            "ga": 9,
+            "points": 6,
+            "position": 16,
+            "gd": 1,
+            "league": "X:AUT"
+          },
+          {
+            "team": "Manchester United",
+            "played": 4,
+            "won": 2,
+            "drawn": 0,
+            "lost": 2,
+            "gf": 8,
+            "ga": 8,
+            "points": 6,
+            "position": 17,
+            "gd": 0,
+            "league": "E0"
+          },
+          {
+            "team": "Galatasaray",
+            "played": 4,
+            "won": 2,
+            "drawn": 0,
+            "lost": 2,
+            "gf": 8,
+            "ga": 9,
+            "points": 6,
+            "position": 18,
+            "gd": -1,
+            "league": "X:TUR"
+          },
+          {
+            "team": "Fenerbah\u00e7e",
+            "played": 4,
+            "won": 1,
+            "drawn": 2,
+            "lost": 1,
+            "gf": 6,
+            "ga": 11,
+            "points": 5,
+            "position": 19,
+            "gd": -5,
+            "league": "X:TUR"
+          },
+          {
+            "team": "Roma",
+            "played": 4,
+            "won": 1,
+            "drawn": 1,
+            "lost": 2,
+            "gf": 10,
+            "ga": 8,
+            "points": 4,
+            "position": 20,
+            "gd": 2,
+            "league": "I1"
+          },
+          {
+            "team": "Shakhtar Donetsk",
+            "played": 4,
+            "won": 1,
+            "drawn": 1,
+            "lost": 2,
+            "gf": 4,
+            "ga": 4,
+            "points": 4,
+            "position": 21,
+            "gd": 0,
+            "league": "X:UKR"
+          },
+          {
+            "team": "Viking",
+            "played": 4,
+            "won": 1,
+            "drawn": 1,
+            "lost": 2,
+            "gf": 9,
+            "ga": 10,
+            "points": 4,
+            "position": 22,
+            "gd": -1,
+            "league": "X:NOR"
+          },
+          {
+            "team": "Atl\u00e9tico Madrid",
+            "played": 4,
+            "won": 1,
+            "drawn": 1,
+            "lost": 2,
+            "gf": 4,
+            "ga": 5,
+            "points": 4,
+            "position": 23,
+            "gd": -1,
+            "league": "SP1"
+          },
+          {
+            "team": "PSV Eindhoven",
+            "played": 4,
+            "won": 1,
+            "drawn": 1,
+            "lost": 2,
+            "gf": 3,
+            "ga": 4,
+            "points": 4,
+            "position": 24,
+            "gd": -1,
+            "league": "N1"
+          },
+          {
+            "team": "Bod\u00f8/Glimt",
+            "played": 4,
+            "won": 1,
+            "drawn": 1,
+            "lost": 2,
+            "gf": 4,
+            "ga": 9,
+            "points": 4,
+            "position": 25,
+            "gd": -5,
+            "league": "X:NOR"
+          },
+          {
+            "team": "FC Porto",
+            "played": 4,
+            "won": 1,
+            "drawn": 0,
+            "lost": 3,
+            "gf": 6,
+            "ga": 7,
+            "points": 3,
+            "position": 26,
+            "gd": -1,
+            "league": "P1"
+          },
+          {
+            "team": "Napoli",
+            "played": 4,
+            "won": 1,
+            "drawn": 0,
+            "lost": 3,
+            "gf": 6,
+            "ga": 11,
+            "points": 3,
+            "position": 27,
+            "gd": -5,
+            "league": "I1"
+          },
+          {
+            "team": "Villarreal",
+            "played": 4,
+            "won": 1,
+            "drawn": 0,
+            "lost": 3,
+            "gf": 8,
+            "ga": 14,
+            "points": 3,
+            "position": 28,
+            "gd": -6,
+            "league": "SP1"
+          },
+          {
+            "team": "AEK Athens",
+            "played": 4,
+            "won": 1,
+            "drawn": 0,
+            "lost": 3,
+            "gf": 5,
+            "ga": 11,
+            "points": 3,
+            "position": 29,
+            "gd": -6,
+            "league": "X:GRE"
+          },
+          {
+            "team": "RB Leipzig",
+            "played": 4,
+            "won": 1,
+            "drawn": 0,
+            "lost": 3,
+            "gf": 5,
+            "ga": 11,
+            "points": 3,
+            "position": 30,
+            "gd": -6,
+            "league": "D1"
+          },
+          {
+            "team": "Sabah FK",
+            "played": 4,
+            "won": 1,
+            "drawn": 0,
+            "lost": 3,
+            "gf": 4,
+            "ga": 10,
+            "points": 3,
+            "position": 31,
+            "gd": -6,
+            "league": "X:AZE"
+          },
+          {
+            "team": "Feyenoord",
+            "played": 4,
+            "won": 1,
+            "drawn": 0,
+            "lost": 3,
+            "gf": 4,
+            "ga": 11,
+            "points": 3,
+            "position": 32,
+            "gd": -7,
+            "league": "N1"
+          },
+          {
+            "team": "Lens",
+            "played": 4,
+            "won": 1,
+            "drawn": 0,
+            "lost": 3,
+            "gf": 4,
+            "ga": 16,
+            "points": 3,
+            "position": 33,
+            "gd": -12,
+            "league": "F1"
+          },
+          {
+            "team": "Slavia Prague",
+            "played": 4,
+            "won": 0,
+            "drawn": 1,
+            "lost": 3,
+            "gf": 5,
+            "ga": 9,
+            "points": 1,
+            "position": 34,
+            "gd": -4,
+            "league": "X:CZE"
+          },
+          {
+            "team": "Lille",
+            "played": 4,
+            "won": 0,
+            "drawn": 1,
+            "lost": 3,
+            "gf": 4,
+            "ga": 10,
+            "points": 1,
+            "position": 35,
+            "gd": -6,
+            "league": "F1"
+          },
+          {
+            "team": "Slovan Bratislava",
+            "played": 4,
+            "won": 0,
+            "drawn": 0,
+            "lost": 4,
+            "gf": 1,
+            "ga": 17,
+            "points": 0,
+            "position": 36,
+            "gd": -16,
+            "league": "X:SVK"
+          }
+        ],
+        "projected": [
+          {
+            "team": "Real Madrid",
+            "league": "SP1",
+            "played": 8,
+            "won": 6,
+            "drawn": 1,
+            "lost": 1,
+            "points": 20,
+            "position": 1,
+            "currentPosition": 2,
+            "movement": 1
+          },
+          {
+            "team": "Paris Saint-Germain",
+            "league": "F1",
+            "played": 8,
+            "won": 6,
+            "drawn": 1,
+            "lost": 1,
+            "points": 20,
+            "position": 2,
+            "currentPosition": 1,
+            "movement": -1
+          },
+          {
+            "team": "Arsenal",
+            "league": "E0",
+            "played": 8,
+            "won": 6,
+            "drawn": 2,
+            "lost": 1,
+            "points": 18,
+            "position": 3,
+            "currentPosition": 3,
+            "movement": 0
+          },
+          {
+            "team": "Bayern M\u00fcnchen",
+            "league": "D1",
+            "played": 8,
+            "won": 5,
+            "drawn": 3,
+            "lost": 1,
+            "points": 17,
+            "position": 4,
+            "currentPosition": 13,
+            "movement": 9
+          },
+          {
+            "team": "Barcelona",
+            "league": "SP1",
+            "played": 8,
+            "won": 5,
+            "drawn": 1,
+            "lost": 2,
+            "points": 17,
+            "position": 5,
+            "currentPosition": 5,
+            "movement": 0
+          },
+          {
+            "team": "Manchester City",
+            "league": "E0",
+            "played": 8,
+            "won": 5,
+            "drawn": 1,
+            "lost": 2,
+            "points": 16,
+            "position": 6,
+            "currentPosition": 7,
+            "movement": 1
+          },
+          {
+            "team": "Aston Villa",
+            "league": "E0",
+            "played": 8,
+            "won": 5,
+            "drawn": 1,
+            "lost": 2,
+            "points": 16,
+            "position": 7,
+            "currentPosition": 6,
+            "movement": -1
+          },
+          {
+            "team": "Liverpool",
+            "league": "E0",
+            "played": 8,
+            "won": 5,
+            "drawn": 1,
+            "lost": 2,
+            "points": 15,
+            "position": 8,
+            "currentPosition": 8,
+            "movement": 0
+          },
+          {
+            "team": "Como",
+            "league": "I1",
+            "played": 8,
+            "won": 5,
+            "drawn": 1,
+            "lost": 2,
+            "points": 15,
+            "position": 9,
+            "currentPosition": 4,
+            "movement": -5
+          },
+          {
+            "team": "Borussia Dortmund",
+            "league": "D1",
+            "played": 8,
+            "won": 5,
+            "drawn": 1,
+            "lost": 3,
+            "points": 15,
+            "position": 10,
+            "currentPosition": 12,
+            "movement": 2
+          },
+          {
+            "team": "Club Brugge",
+            "league": "X:BEL",
+            "played": 8,
+            "won": 5,
+            "drawn": 1,
+            "lost": 3,
+            "points": 14,
+            "position": 11,
+            "currentPosition": 9,
+            "movement": -2
+          },
+          {
+            "team": "Real Betis",
+            "league": "SP1",
+            "played": 8,
+            "won": 4,
+            "drawn": 1,
+            "lost": 3,
+            "points": 14,
+            "position": 12,
+            "currentPosition": 11,
+            "movement": -1
+          },
+          {
+            "team": "Sporting CP",
+            "league": "P1",
+            "played": 8,
+            "won": 4,
+            "drawn": 1,
+            "lost": 3,
+            "points": 14,
+            "position": 13,
+            "currentPosition": 10,
+            "movement": -3
+          },
+          {
+            "team": "Inter",
+            "league": "I1",
+            "played": 8,
+            "won": 4,
+            "drawn": 1,
+            "lost": 3,
+            "points": 13,
+            "position": 14,
+            "currentPosition": 15,
+            "movement": 1
+          },
+          {
+            "team": "VfB Stuttgart",
+            "league": "D1",
+            "played": 8,
+            "won": 4,
+            "drawn": 2,
+            "lost": 3,
+            "points": 13,
+            "position": 15,
+            "currentPosition": 14,
+            "movement": -1
+          },
+          {
+            "team": "Manchester United",
+            "league": "E0",
+            "played": 8,
+            "won": 4,
+            "drawn": 1,
+            "lost": 4,
+            "points": 11,
+            "position": 16,
+            "currentPosition": 17,
+            "movement": 1
+          },
+          {
+            "team": "Atl\u00e9tico Madrid",
+            "league": "SP1",
+            "played": 8,
+            "won": 3,
+            "drawn": 2,
+            "lost": 3,
+            "points": 11,
+            "position": 17,
+            "currentPosition": 23,
+            "movement": 6
+          },
+          {
+            "team": "Fenerbah\u00e7e",
+            "league": "X:TUR",
+            "played": 8,
+            "won": 3,
+            "drawn": 3,
+            "lost": 3,
+            "points": 11,
+            "position": 18,
+            "currentPosition": 19,
+            "movement": 1
+          },
+          {
+            "team": "Roma",
+            "league": "I1",
+            "played": 8,
+            "won": 3,
+            "drawn": 2,
+            "lost": 3,
+            "points": 10,
+            "position": 19,
+            "currentPosition": 20,
+            "movement": 1
+          },
+          {
+            "team": "Galatasaray",
+            "league": "X:TUR",
+            "played": 8,
+            "won": 3,
+            "drawn": 1,
+            "lost": 4,
+            "points": 10,
+            "position": 20,
+            "currentPosition": 18,
+            "movement": -2
+          },
+          {
+            "team": "FC Porto",
+            "league": "P1",
+            "played": 8,
+            "won": 3,
+            "drawn": 1,
+            "lost": 4,
+            "points": 10,
+            "position": 21,
+            "currentPosition": 26,
+            "movement": 5
+          },
+          {
+            "team": "LASK",
+            "league": "X:AUT",
+            "played": 8,
+            "won": 3,
+            "drawn": 1,
+            "lost": 4,
+            "points": 10,
+            "position": 22,
+            "currentPosition": 16,
+            "movement": -6
+          },
+          {
+            "team": "PSV Eindhoven",
+            "league": "N1",
+            "played": 8,
+            "won": 3,
+            "drawn": 2,
+            "lost": 4,
+            "points": 10,
+            "position": 23,
+            "currentPosition": 24,
+            "movement": 1
+          },
+          {
+            "team": "RB Leipzig",
+            "league": "D1",
+            "played": 8,
+            "won": 3,
+            "drawn": 1,
+            "lost": 4,
+            "points": 9,
+            "position": 24,
+            "currentPosition": 30,
+            "movement": 6
+          },
+          {
+            "team": "Napoli",
+            "league": "I1",
+            "played": 8,
+            "won": 3,
+            "drawn": 1,
+            "lost": 5,
+            "points": 9,
+            "position": 25,
+            "currentPosition": 27,
+            "movement": 2
+          },
+          {
+            "team": "Bod\u00f8/Glimt",
+            "league": "X:NOR",
+            "played": 8,
+            "won": 2,
+            "drawn": 2,
+            "lost": 4,
+            "points": 9,
+            "position": 26,
+            "currentPosition": 25,
+            "movement": -1
+          },
+          {
+            "team": "Villarreal",
+            "league": "SP1",
+            "played": 8,
+            "won": 3,
+            "drawn": 1,
+            "lost": 5,
+            "points": 9,
+            "position": 27,
+            "currentPosition": 28,
+            "movement": 1
+          },
+          {
+            "team": "Feyenoord",
+            "league": "N1",
+            "played": 8,
+            "won": 3,
+            "drawn": 1,
+            "lost": 5,
+            "points": 9,
+            "position": 28,
+            "currentPosition": 32,
+            "movement": 4
+          },
+          {
+            "team": "Shakhtar Donetsk",
+            "league": "X:UKR",
+            "played": 8,
+            "won": 2,
+            "drawn": 2,
+            "lost": 4,
+            "points": 8,
+            "position": 29,
+            "currentPosition": 21,
+            "movement": -8
+          },
+          {
+            "team": "Viking",
+            "league": "X:NOR",
+            "played": 8,
+            "won": 2,
+            "drawn": 2,
+            "lost": 4,
+            "points": 8,
+            "position": 30,
+            "currentPosition": 22,
+            "movement": -8
+          },
+          {
+            "team": "Lens",
+            "league": "F1",
+            "played": 8,
+            "won": 2,
+            "drawn": 1,
+            "lost": 5,
+            "points": 7,
+            "position": 31,
+            "currentPosition": 33,
+            "movement": 2
+          },
+          {
+            "team": "AEK Athens",
+            "league": "X:GRE",
+            "played": 8,
+            "won": 2,
+            "drawn": 1,
+            "lost": 5,
+            "points": 6,
+            "position": 32,
+            "currentPosition": 29,
+            "movement": -3
+          },
+          {
+            "team": "Lille",
+            "league": "F1",
+            "played": 8,
+            "won": 1,
+            "drawn": 2,
+            "lost": 5,
+            "points": 6,
+            "position": 33,
+            "currentPosition": 35,
+            "movement": 2
+          },
+          {
+            "team": "Sabah FK",
+            "league": "X:AZE",
+            "played": 8,
+            "won": 1,
+            "drawn": 1,
+            "lost": 6,
+            "points": 5,
+            "position": 34,
+            "currentPosition": 31,
+            "movement": -3
+          },
+          {
+            "team": "Slavia Prague",
+            "league": "X:CZE",
+            "played": 8,
+            "won": 1,
+            "drawn": 2,
+            "lost": 5,
+            "points": 4,
+            "position": 35,
+            "currentPosition": 34,
+            "movement": -1
+          },
+          {
+            "team": "Slovan Bratislava",
+            "league": "X:SVK",
+            "played": 8,
+            "won": 1,
+            "drawn": 1,
+            "lost": 7,
+            "points": 2,
+            "position": 36,
+            "currentPosition": 36,
+            "movement": 0
+          }
+        ]
+      },
+      "knockouts": {
+        "season": "25-26",
+        "current": false,
+        "progressionScore": {
+          "ties": 76,
+          "from": "22-23",
+          "to": "25-26",
+          "brier": 0.209,
+          "brierCi": [
+            0.17,
+            0.251
+          ],
+          "tiesAfterFirstLeg": 72,
+          "brierAfterFirstLeg": 0.134
+        },
+        "rounds": [
+          {
+            "stage": "KO_PLAYOFF",
+            "ties": [
+              {
+                "teams": [
+                  "Monaco",
+                  "Paris Saint-Germain"
+                ],
+                "progression": {
+                  "before": 0.162,
+                  "afterFirstLeg": 0.045
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-02-17",
+                    "home": "Monaco",
+                    "away": "Paris Saint-Germain",
+                    "score": [
+                      2,
+                      3
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-02-25",
+                    "home": "Paris Saint-Germain",
+                    "away": "Monaco",
+                    "score": [
+                      2,
+                      2
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  4,
+                  5
+                ],
+                "winner": "Paris Saint-Germain",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Galatasaray",
+                  "Juventus"
+                ],
+                "progression": {
+                  "before": 0.153,
+                  "afterFirstLeg": 0.842
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-02-17",
+                    "home": "Galatasaray",
+                    "away": "Juventus",
+                    "score": [
+                      5,
+                      2
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-02-25",
+                    "home": "Juventus",
+                    "away": "Galatasaray",
+                    "score": [
+                      3,
+                      0
+                    ],
+                    "extraTime": [
+                      3,
+                      2
+                    ],
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  7,
+                  5
+                ],
+                "winner": "Galatasaray",
+                "decidedBy": "extra time"
+              },
+              {
+                "teams": [
+                  "Benfica",
+                  "Real Madrid"
+                ],
+                "progression": {
+                  "before": 0.499,
+                  "afterFirstLeg": 0.171
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-02-17",
+                    "home": "Benfica",
+                    "away": "Real Madrid",
+                    "score": [
+                      0,
+                      1
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-02-25",
+                    "home": "Real Madrid",
+                    "away": "Benfica",
+                    "score": [
+                      2,
+                      1
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  1,
+                  3
+                ],
+                "winner": "Real Madrid",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Borussia Dortmund",
+                  "Atalanta"
+                ],
+                "progression": {
+                  "before": 0.585,
+                  "afterFirstLeg": 0.877
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-02-17",
+                    "home": "Borussia Dortmund",
+                    "away": "Atalanta",
+                    "score": [
+                      2,
+                      0
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-02-25",
+                    "home": "Atalanta",
+                    "away": "Borussia Dortmund",
+                    "score": [
+                      4,
+                      1
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  3,
+                  4
+                ],
+                "winner": "Atalanta",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Qaraba\u011f FK",
+                  "Newcastle United"
+                ],
+                "progression": {
+                  "before": 0.104,
+                  "afterFirstLeg": 0.0
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-02-18",
+                    "home": "Qaraba\u011f FK",
+                    "away": "Newcastle United",
+                    "score": [
+                      1,
+                      6
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-02-24",
+                    "home": "Newcastle United",
+                    "away": "Qaraba\u011f FK",
+                    "score": [
+                      3,
+                      2
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  3,
+                  9
+                ],
+                "winner": "Newcastle United",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Club Brugge",
+                  "Atl\u00e9tico Madrid"
+                ],
+                "progression": {
+                  "before": 0.331,
+                  "afterFirstLeg": 0.302
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-02-18",
+                    "home": "Club Brugge",
+                    "away": "Atl\u00e9tico Madrid",
+                    "score": [
+                      3,
+                      3
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-02-24",
+                    "home": "Atl\u00e9tico Madrid",
+                    "away": "Club Brugge",
+                    "score": [
+                      4,
+                      1
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  4,
+                  7
+                ],
+                "winner": "Atl\u00e9tico Madrid",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Bod\u00f8/Glimt",
+                  "Inter"
+                ],
+                "progression": {
+                  "before": 0.119,
+                  "afterFirstLeg": 0.633
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-02-18",
+                    "home": "Bod\u00f8/Glimt",
+                    "away": "Inter",
+                    "score": [
+                      3,
+                      1
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-02-24",
+                    "home": "Inter",
+                    "away": "Bod\u00f8/Glimt",
+                    "score": [
+                      1,
+                      2
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  5,
+                  2
+                ],
+                "winner": "Bod\u00f8/Glimt",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Olympiacos",
+                  "Bayer Leverkusen"
+                ],
+                "progression": {
+                  "before": 0.29,
+                  "afterFirstLeg": 0.023
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-02-18",
+                    "home": "Olympiacos",
+                    "away": "Bayer Leverkusen",
+                    "score": [
+                      0,
+                      2
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-02-24",
+                    "home": "Bayer Leverkusen",
+                    "away": "Olympiacos",
+                    "score": [
+                      0,
+                      0
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  0,
+                  2
+                ],
+                "winner": "Bayer Leverkusen",
+                "decidedBy": "aggregate"
+              }
+            ]
+          },
+          {
+            "stage": "R16",
+            "ties": [
+              {
+                "teams": [
+                  "Paris Saint-Germain",
+                  "Chelsea"
+                ],
+                "progression": {
+                  "before": 0.622,
+                  "afterFirstLeg": 0.939
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-03-11",
+                    "home": "Paris Saint-Germain",
+                    "away": "Chelsea",
+                    "score": [
+                      5,
+                      2
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-03-17",
+                    "home": "Chelsea",
+                    "away": "Paris Saint-Germain",
+                    "score": [
+                      0,
+                      3
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  8,
+                  2
+                ],
+                "winner": "Paris Saint-Germain",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Galatasaray",
+                  "Liverpool"
+                ],
+                "progression": {
+                  "before": 0.088,
+                  "afterFirstLeg": 0.378
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-03-10",
+                    "home": "Galatasaray",
+                    "away": "Liverpool",
+                    "score": [
+                      1,
+                      0
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-03-18",
+                    "home": "Liverpool",
+                    "away": "Galatasaray",
+                    "score": [
+                      4,
+                      0
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  1,
+                  4
+                ],
+                "winner": "Liverpool",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Real Madrid",
+                  "Manchester City"
+                ],
+                "progression": {
+                  "before": 0.388,
+                  "afterFirstLeg": 0.921
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-03-11",
+                    "home": "Real Madrid",
+                    "away": "Manchester City",
+                    "score": [
+                      3,
+                      0
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-03-17",
+                    "home": "Manchester City",
+                    "away": "Real Madrid",
+                    "score": [
+                      1,
+                      2
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  5,
+                  1
+                ],
+                "winner": "Real Madrid",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Atalanta",
+                  "Bayern M\u00fcnchen"
+                ],
+                "progression": {
+                  "before": 0.195,
+                  "afterFirstLeg": 0.0
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-03-10",
+                    "home": "Atalanta",
+                    "away": "Bayern M\u00fcnchen",
+                    "score": [
+                      1,
+                      6
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-03-18",
+                    "home": "Bayern M\u00fcnchen",
+                    "away": "Atalanta",
+                    "score": [
+                      4,
+                      1
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  2,
+                  10
+                ],
+                "winner": "Bayern M\u00fcnchen",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Newcastle United",
+                  "Barcelona"
+                ],
+                "progression": {
+                  "before": 0.368,
+                  "afterFirstLeg": 0.331
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-03-10",
+                    "home": "Newcastle United",
+                    "away": "Barcelona",
+                    "score": [
+                      1,
+                      1
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-03-18",
+                    "home": "Barcelona",
+                    "away": "Newcastle United",
+                    "score": [
+                      7,
+                      2
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  3,
+                  8
+                ],
+                "winner": "Barcelona",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Atl\u00e9tico Madrid",
+                  "Tottenham Hotspur"
+                ],
+                "progression": {
+                  "before": 0.612,
+                  "afterFirstLeg": 0.958
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-03-10",
+                    "home": "Atl\u00e9tico Madrid",
+                    "away": "Tottenham Hotspur",
+                    "score": [
+                      5,
+                      2
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-03-18",
+                    "home": "Tottenham Hotspur",
+                    "away": "Atl\u00e9tico Madrid",
+                    "score": [
+                      3,
+                      2
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  7,
+                  5
+                ],
+                "winner": "Atl\u00e9tico Madrid",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Bod\u00f8/Glimt",
+                  "Sporting CP"
+                ],
+                "progression": {
+                  "before": 0.22,
+                  "afterFirstLeg": 0.866
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-03-11",
+                    "home": "Bod\u00f8/Glimt",
+                    "away": "Sporting CP",
+                    "score": [
+                      3,
+                      0
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-03-17",
+                    "home": "Sporting CP",
+                    "away": "Bod\u00f8/Glimt",
+                    "score": [
+                      3,
+                      0
+                    ],
+                    "extraTime": [
+                      5,
+                      0
+                    ],
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  3,
+                  5
+                ],
+                "winner": "Sporting CP",
+                "decidedBy": "extra time"
+              },
+              {
+                "teams": [
+                  "Bayer Leverkusen",
+                  "Arsenal"
+                ],
+                "progression": {
+                  "before": 0.176,
+                  "afterFirstLeg": 0.193
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-03-11",
+                    "home": "Bayer Leverkusen",
+                    "away": "Arsenal",
+                    "score": [
+                      1,
+                      1
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-03-17",
+                    "home": "Arsenal",
+                    "away": "Bayer Leverkusen",
+                    "score": [
+                      2,
+                      0
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  1,
+                  3
+                ],
+                "winner": "Arsenal",
+                "decidedBy": "aggregate"
+              }
+            ]
+          },
+          {
+            "stage": "QF",
+            "ties": [
+              {
+                "teams": [
+                  "Paris Saint-Germain",
+                  "Liverpool"
+                ],
+                "progression": {
+                  "before": 0.505,
+                  "afterFirstLeg": 0.837
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-04-08",
+                    "home": "Paris Saint-Germain",
+                    "away": "Liverpool",
+                    "score": [
+                      2,
+                      0
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-04-14",
+                    "home": "Liverpool",
+                    "away": "Paris Saint-Germain",
+                    "score": [
+                      0,
+                      2
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  4,
+                  0
+                ],
+                "winner": "Paris Saint-Germain",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Real Madrid",
+                  "Bayern M\u00fcnchen"
+                ],
+                "progression": {
+                  "before": 0.217,
+                  "afterFirstLeg": 0.065
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-04-07",
+                    "home": "Real Madrid",
+                    "away": "Bayern M\u00fcnchen",
+                    "score": [
+                      1,
+                      2
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-04-15",
+                    "home": "Bayern M\u00fcnchen",
+                    "away": "Real Madrid",
+                    "score": [
+                      4,
+                      3
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  4,
+                  6
+                ],
+                "winner": "Bayern M\u00fcnchen",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Barcelona",
+                  "Atl\u00e9tico Madrid"
+                ],
+                "progression": {
+                  "before": 0.806,
+                  "afterFirstLeg": 0.251
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-04-08",
+                    "home": "Barcelona",
+                    "away": "Atl\u00e9tico Madrid",
+                    "score": [
+                      0,
+                      2
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-04-14",
+                    "home": "Atl\u00e9tico Madrid",
+                    "away": "Barcelona",
+                    "score": [
+                      1,
+                      2
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  2,
+                  3
+                ],
+                "winner": "Atl\u00e9tico Madrid",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Sporting CP",
+                  "Arsenal"
+                ],
+                "progression": {
+                  "before": 0.231,
+                  "afterFirstLeg": 0.097
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-04-07",
+                    "home": "Sporting CP",
+                    "away": "Arsenal",
+                    "score": [
+                      0,
+                      1
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-04-15",
+                    "home": "Arsenal",
+                    "away": "Sporting CP",
+                    "score": [
+                      0,
+                      0
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  0,
+                  1
+                ],
+                "winner": "Arsenal",
+                "decidedBy": "aggregate"
+              }
+            ]
+          },
+          {
+            "stage": "SF",
+            "ties": [
+              {
+                "teams": [
+                  "Paris Saint-Germain",
+                  "Bayern M\u00fcnchen"
+                ],
+                "progression": {
+                  "before": 0.241,
+                  "afterFirstLeg": 0.459
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-04-28",
+                    "home": "Paris Saint-Germain",
+                    "away": "Bayern M\u00fcnchen",
+                    "score": [
+                      5,
+                      4
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-05-06",
+                    "home": "Bayern M\u00fcnchen",
+                    "away": "Paris Saint-Germain",
+                    "score": [
+                      1,
+                      1
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  6,
+                  5
+                ],
+                "winner": "Paris Saint-Germain",
+                "decidedBy": "aggregate"
+              },
+              {
+                "teams": [
+                  "Atl\u00e9tico Madrid",
+                  "Arsenal"
+                ],
+                "progression": {
+                  "before": 0.155,
+                  "afterFirstLeg": 0.212
+                },
+                "legs": [
+                  {
+                    "leg": 1,
+                    "date": "2026-04-29",
+                    "home": "Atl\u00e9tico Madrid",
+                    "away": "Arsenal",
+                    "score": [
+                      1,
+                      1
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  },
+                  {
+                    "leg": 2,
+                    "date": "2026-05-05",
+                    "home": "Arsenal",
+                    "away": "Atl\u00e9tico Madrid",
+                    "score": [
+                      1,
+                      0
+                    ],
+                    "extraTime": null,
+                    "penaltyWinner": null,
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  1,
+                  2
+                ],
+                "winner": "Arsenal",
+                "decidedBy": "aggregate"
+              }
+            ]
+          },
+          {
+            "stage": "FINAL",
+            "ties": [
+              {
+                "teams": [
+                  "Paris Saint-Germain",
+                  "Arsenal"
+                ],
+                "progression": {
+                  "before": 0.415,
+                  "afterFirstLeg": null
+                },
+                "legs": [
+                  {
+                    "leg": null,
+                    "date": "2026-05-30",
+                    "home": "Paris Saint-Germain",
+                    "away": "Arsenal",
+                    "score": [
+                      1,
+                      1
+                    ],
+                    "extraTime": [
+                      1,
+                      1
+                    ],
+                    "penaltyWinner": "Paris Saint-Germain",
+                    "prediction": null
+                  }
+                ],
+                "aggregate": [
+                  1,
+                  1
+                ],
+                "winner": "Paris Saint-Germain",
+                "decidedBy": "penalties"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

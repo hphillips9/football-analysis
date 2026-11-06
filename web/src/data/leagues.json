@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06T15:30:32+00:00",
+  "generated": "2026-11-06T17:19:27+00:00",
   "default": "E0",
   "competitions": [
     {
@@ -56,6 +56,14 @@
       "name": "Eredivisie",
       "country": "NED",
       "kind": "league",
+      "promotedElo": null
+    },
+    {
+      "div": "CL",
+      "slug": "cl",
+      "name": "Champions League",
+      "country": null,
+      "kind": "cup",
       "promotedElo": null
     }
   ]

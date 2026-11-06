@@ -6,7 +6,7 @@ import urllib.request
 import pandas as pd
 
 import competitions
-from bet_schema import ODDS_COLUMNS, add_missing_columns, clean_match_ids, match_id
+from bet_schema import ODDS_COLUMNS, add_missing_columns, match_id, write_bets
 from team_names import load_alias_map
 
 SEASON_URL = "https://www.football-data.co.uk/mmz4281/{code}/{fd_uk}.csv"
@@ -317,11 +317,7 @@ def complete_bets(bets_path=BETS_PATH, divs=None):
         print("No pending bets have results yet.")
         return bets
 
-    # Whole numbers ("1", not "1.0"): CL bets leave Gameweek empty
-    for column in ("Gameweek", "Bet", "Backfilled"):
-        bets[column] = pd.to_numeric(bets[column]).round().astype("Int64")
-    bets["MatchId"] = clean_match_ids(bets["MatchId"]).to_numpy()
-    bets.to_csv(bets_path, index=False)
+    write_bets(bets, bets_path)
 
     total = bets.loc[settled, "Profit"].astype(float).sum()
     unpriced = int((bets.loc[settled, "Bet"] == 0).sum())

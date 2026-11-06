@@ -11,6 +11,7 @@ import type { ColumnDef } from "@tanstack/react-table";
 import { useId, useMemo, useState } from "react";
 
 import { formatKickoff, resultName, signed } from "../../lib/format";
+import { roundLabel, roundName, type CompetitionKind } from "../../lib/routes";
 import type { GameweekSummary } from "../../lib/schema";
 import { toneOf } from "../kpi/ScoreStrip";
 import DataTable from "../table/DataTable";
@@ -63,11 +64,17 @@ const columns: ColumnDef<ResultBet, any>[] = [
 
 interface Props {
   leagueName: string;
+  /** "Gameweek 9" in a league, "Matchday 4" / "Round of 16, first leg" in a cup. */
+  roundKind?: CompetitionKind;
+  /** False when no bet has odds (an unpriced cup): no P/L column or profit in the summaries. */
+  priced?: boolean;
   bets: ResultBet[];
   gameweeks: GameweekSummary[];
 }
 
-export default function EveryBet({ leagueName, bets, gameweeks }: Props) {
+export default function EveryBet({ leagueName, roundKind = "league", priced = true, bets, gameweeks }: Props) {
+  const label = (n: number) => roundLabel(roundKind, n);
+  const shown = useMemo(() => (priced ? columns : columns.filter((c) => c.id !== "profit")), [priced]);
   const all = useMemo(() => [...new Set(bets.map((b) => b.gameweek))].sort((a, b) => b - a), [bets]);
   const [filter, setFilter] = useState<number | "all">("all");
   const id = useId();
@@ -87,10 +94,10 @@ export default function EveryBet({ leagueName, bets, gameweeks }: Props) {
           onChange={(e) => setFilter(e.target.value === "all" ? "all" : Number(e.target.value))}
           aria-controls={id}
         >
-          <option value="all">Every gameweek</option>
+          <option value="all">Every {roundName(roundKind).toLowerCase()}</option>
           {all.map((n) => (
             <option key={n} value={n}>
-              Gameweek {n}
+              {label(n)}
             </option>
           ))}
         </select>
@@ -101,12 +108,12 @@ export default function EveryBet({ leagueName, bets, gameweeks }: Props) {
           return (
             <details key={`${filter}-${gw}`} className={styles.group} open={filter !== "all" || undefined}>
               <summary>
-                <span className={styles.gw}>Gameweek {gw}</span>
+                <span className={styles.gw}>{label(gw)}</span>
                 <span className={styles.sum}>
                   {summary && summary.settled
                     ? `${summary.hits}/${summary.settled} right`
                     : `${rows.length} ${rows.length === 1 ? "pick" : "picks"}, not settled`}
-                  {summary?.profit != null && (
+                  {priced && summary?.profit != null && (
                     <>
                       {" · "}
                       <b className={styles.money} data-tone={toneOf(summary.profit)}>
@@ -123,8 +130,8 @@ export default function EveryBet({ leagueName, bets, gameweeks }: Props) {
               <div className={styles.body}>
                 <DataTable
                   data={rows}
-                  columns={columns}
-                  caption={`${leagueName}, gameweek ${gw}: every bet`}
+                  columns={shown}
+                  caption={`${leagueName}, ${label(gw).toLowerCase()}: every bet`}
                   getRowId={(b) => `${b.kickoff}-${b.home}`}
                 />
               </div>

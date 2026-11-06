@@ -49,6 +49,7 @@ jobs:
       - name: Run pipeline
         env:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: |
           if [ "${{ inputs.predict }}" = "false" ]; then
             python src/run_week.py --no-predict

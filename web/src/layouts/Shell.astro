@@ -20,7 +20,7 @@ import LeagueSheet, { type SheetItem } from "../components/shell/LeagueSheet.ast
 import { competition, competitions, forLeague, leagues, runStatus } from "../lib/data";
 import { formatUpdated, kickoffRange, signed } from "../lib/format";
 import { href } from "../lib/href";
-import { SITE_LINKS, leagueHref, roundName, sectionsFor, siteHref, type SectionKey, type SiteKey } from "../lib/routes";
+import { SITE_LINKS, leagueHref, roundLabel, sectionsFor, siteHref, type SectionKey, type SiteKey } from "../lib/routes";
 import { hasResults, isStale } from "../lib/schema";
 import Base from "./Base.astro";
 
@@ -46,7 +46,6 @@ const score =
     : [];
 
 // The gameweek tab: this week's round, or the last one with bets ("Matchday" in a cup)
-const roundLabel = roundName(comp?.kind ?? "league");
 const gameweek = data?.fixtures[0]?.gameweek ?? data?.bets.at(-1)?.gameweek;
 const gameweekDates = data ? kickoffRange(data.fixtures.map((f) => f.kickoff)) : "";
 
@@ -130,7 +129,7 @@ const current = (key: string, active: string | undefined) => (key === active ? "
       {
         comp && gameweek != null && (
           <p class="gw">
-            {roundLabel} {gameweek} {gameweekDates && <small>{gameweekDates}</small>}
+            {roundLabel(comp.kind, gameweek)} {gameweekDates && <small>{gameweekDates}</small>}
           </p>
         )
       }

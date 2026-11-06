@@ -63,15 +63,15 @@ CUP_OUTPUT_COLUMNS = [
 ]
 
 
-def api_key():
-    """The football-data.org key from the environment or .env, else None."""
+def api_key(var=API_KEY_VAR):
+    """An API key (football-data.org's by default) from the environment or .env, else None."""
 
-    key = os.environ.get(API_KEY_VAR)
+    key = os.environ.get(var)
 
     if not key and ENV_FILE.exists():
         for line in ENV_FILE.read_text(encoding="utf-8").splitlines():
             name, _, value = line.partition("=")
-            if name.strip() == API_KEY_VAR:
+            if name.strip() == var:
                 key = value.strip().strip("\"'")
 
     return key or None

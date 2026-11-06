@@ -10,6 +10,7 @@
 import { useMemo } from "react";
 
 import { signed } from "../../lib/format";
+import { roundLabel, roundName, type CompetitionKind } from "../../lib/routes";
 import type { BankrollPoint, CalibrationBin, GameweekSummary } from "../../lib/schema";
 import Legend from "../charts/Legend";
 import PlotFigure from "../charts/PlotFigure";
@@ -17,21 +18,23 @@ import ScrollChart from "../charts/ScrollChart";
 import { betByBet, calibration, seasonProfit } from "../charts/specs";
 import styles from "./RecordChart.module.css";
 
-type Props = { league: string; leagueName: string } & (
+type Props = { league: string; leagueName: string; roundKind?: CompetitionKind } & (
   | { kind: "season"; gameweeks: GameweekSummary[] }
   | { kind: "bets"; bankroll: BankrollPoint[] }
   | { kind: "calibration"; bins: CalibrationBin[] }
 );
 
 export default function RecordChart(props: Props) {
-  const { league, leagueName } = props;
+  const { league, leagueName, roundKind = "league" } = props;
+  const roundOf = (n: number) => roundLabel(roundKind, n);
+  const noun = roundName(roundKind).toLowerCase();
 
   const spec = useMemo(
     () =>
       props.kind === "season"
-        ? seasonProfit(props.gameweeks)
+        ? seasonProfit(props.gameweeks, roundOf)
         : props.kind === "bets"
-          ? betByBet(props.bankroll)
+          ? betByBet(props.bankroll, roundOf)
           : calibration(props.bins),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [props.kind === "season" ? props.gameweeks : props.kind === "bets" ? props.bankroll : props.bins],
@@ -43,11 +46,11 @@ export default function RecordChart(props: Props) {
     // The legend sits outside the scroller, so it stays in view on a phone
     return (
       <>
-        <ScrollChart count={settled.length} label="Profit and loss by gameweek">
+        <ScrollChart count={settled.length} label={`Profit and loss by ${noun}`}>
           {(compact) => (
             <PlotFigure
               spec={spec}
-              label={`${leagueName}: simulated profit in each of ${settled.length} gameweeks, with the running total${last?.cumulativeProfit != null ? `, now ${signed(last.cumulativeProfit)} units` : ""}`}
+              label={`${leagueName}: simulated profit in each of ${settled.length} ${noun}s, with the running total${last?.cumulativeProfit != null ? `, now ${signed(last.cumulativeProfit)} units` : ""}`}
               height={320}
               league={league}
               compact={compact || undefined}
@@ -58,8 +61,8 @@ export default function RecordChart(props: Props) {
         <div className={styles.legend}>
           <Legend
             items={[
-              { label: "Gameweek profit", color: "var(--pos)" },
-              { label: "Gameweek loss", color: "var(--neg)" },
+              { label: `${roundName(roundKind)} profit`, color: "var(--pos)" },
+              { label: `${roundName(roundKind)} loss`, color: "var(--neg)" },
               { label: "Running total", color: "var(--lg-chart)", shape: "line" },
             ]}
           />

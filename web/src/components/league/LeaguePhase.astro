@@ -1,0 +1,182 @@
+---
+/**
+ * /{c}/league-phase/: a cup's league-phase table (P6-01, plan §7).
+ *
+ *   current     the standings so far, zones marked
+ *   projected   every remaining league-phase fixture scored by expected
+ *               points (3 × P(win) + P(draw)) from the cup's model, added on
+ *
+ * Data: cups.json leaguePhase (src/export_web.py build_league_phase).
+ */
+import type { LeagueData } from "../../lib/data";
+import { competitions } from "../../lib/data";
+import { leagueHref, sectionByKey } from "../../lib/routes";
+import CupStandings from "./CupStandings";
+
+interface Props {
+  data: LeagueData;
+}
+
+const { data } = Astro.props;
+const comp = data.competition;
+const phase = data.cup?.leaguePhase ?? undefined;
+
+// A club's country: its league's, or the code after "X:" for a club outside the modelled leagues
+const countryOf = (league: string | null) =>
+  league == null ? "" : league.startsWith("X:") ? league.slice(2) : (competitions.find((c) => c.div === league)?.country ?? "");
+
+const current = phase?.current.map((r) => ({ ...r, country: countryOf(r.league) })) ?? [];
+const projected = phase?.projected.map((r) => ({ ...r, country: countryOf(r.league) })) ?? [];
+
+const seasonName = (s: string) => `20${s.slice(0, 2)}/${s.slice(3)}`;
+const total = phase ? phase.playedFixtures + phase.remainingFixtures : 0;
+const clubs = current.length;
+const knockouts = sectionByKey(comp.kind, "knockouts");
+
+// Where the projection puts the clubs on the edge of each zone
+const edge = (position: number) => projected.find((r) => r.position === position);
+const lastDirect = phase ? edge(phase.zones.direct) : undefined;
+const firstOut = phase ? edge(phase.zones.playoff + 1) : undefined;
+---
+
+{
+  !phase ? (
+    <p class="lede">No {comp.name} league phase on record yet. The table appears once the fixtures are out.</p>
+  ) : (
+    <div class="tables">
+      <div class="intro">
+        <p class="lede">
+          {seasonName(phase.season)}: {clubs} clubs, {phase.matchdays} matches each, one table. Places 1–{phase.zones.direct}{" "}
+          go straight to the round of 16, {phase.zones.direct + 1}–{phase.zones.playoff} play off for the other{" "}
+          {phase.zones.direct} places{knockouts && <> (<a href={leagueHref(comp.slug, knockouts)}>Knockouts</a>)</>}, and{" "}
+          {phase.zones.playoff + 1}–{clubs} are out.
+          <span class="count">
+            {phase.playedFixtures} of {total} matches played · {phase.remainingFixtures} still to play.
+          </span>
+        </p>
+        <ul class="key" aria-label="Key">
+          <li><span class="zone" data-zone="direct"></span>Round of 16</li>
+          <li><span class="zone" data-zone="playoff"></span>Play-off</li>
+          <li><span class="zone" data-zone="out"></span>Out</li>
+        </ul>
+      </div>
+
+      <section aria-labelledby="current">
+        <h2 id="current">Current standings</h2>
+        <CupStandings
+          client:visible
+          kind="current"
+          rows={current}
+          zones={phase.zones}
+          caption={`${comp.name} league phase: current standings`}
+        />
+      </section>
+
+      {
+        phase.remainingFixtures > 0 && (
+          <section aria-labelledby="projected">
+            <h2 id="projected">Projected final table</h2>
+            <p class="lede">
+              Every league-phase match still to play, scored by <b>expected points</b> (3 × P(win) + 1 × P(draw)) from
+              the model's probabilities, added to today's points. A projection, not a forecast of exact results: points
+              are rounded, and real tables spread out more than expected points do.
+              {lastDirect && firstOut && (
+                <>
+                  {" "}
+                  On these numbers the last automatic place goes to {lastDirect.team} ({lastDirect.points} pts) and{" "}
+                  {firstOut.team} ({firstOut.points} pts) would just miss the play-off.
+                </>
+              )}
+            </p>
+            <CupStandings
+              client:visible
+              kind="projected"
+              rows={projected}
+              zones={phase.zones}
+              caption={`${comp.name} league phase: projected final table`}
+            />
+          </section>
+        )
+      }
+    </div>
+  )
+}
+
+<style>
+  .tables {
+    display: grid;
+    gap: 36px;
+    max-width: 980px;
+  }
+
+  .tables section,
+  .intro {
+    display: grid;
+    gap: 10px;
+    min-width: 0;
+  }
+
+  h2 {
+    margin: 0;
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 22px;
+  }
+
+  .lede {
+    max-width: 70ch;
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .lede b {
+    color: var(--text);
+  }
+
+  .lede a {
+    color: var(--lg-accent-text);
+    font-weight: 600;
+  }
+
+  .count {
+    display: block;
+    margin-top: 6px;
+    font-size: 14px;
+  }
+
+  .key {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .key li {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .zone {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+
+  .zone[data-zone="direct"] {
+    background: var(--lg-accent);
+  }
+
+  .zone[data-zone="playoff"] {
+    border: 2px solid var(--lg-accent);
+  }
+
+  .zone[data-zone="out"] {
+    border: 1px dashed var(--line);
+  }
+</style>

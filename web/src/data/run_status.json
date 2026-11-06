@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T11:47:35+00:00",
+  "generated": "2026-11-06T17:19:27+00:00",
   "competitions": {
     "E0": {
       "results": "ok",
@@ -34,13 +34,31 @@
     "P1": {
       "results": "ok",
       "xg": "ok",
-      "predicted": 9,
+      "predicted": 0,
       "error": null
     },
     "N1": {
       "results": "ok",
       "xg": "ok",
-      "predicted": 9,
+      "predicted": 0,
+      "error": null
+    },
+    "CL": {
+      "results": "ok",
+      "xg": "partial",
+      "predicted": 0,
+      "error": null
+    },
+    "EL": {
+      "results": "ok",
+      "xg": "partial",
+      "predicted": 0,
+      "error": null
+    },
+    "ECL": {
+      "results": "ok",
+      "xg": "partial",
+      "predicted": 0,
       "error": null
     }
   }

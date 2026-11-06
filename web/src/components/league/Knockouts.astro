@@ -1,0 +1,621 @@
+---
+/**
+ * /{c}/knockouts/: a cup's knockout bracket (P6-01, plan §3 + §7).
+ *
+ *   bracket    play-off → round of 16 → quarter-finals → semi-finals → final,
+ *              legs and aggregate per tie; slots not drawn yet show "To be
+ *              drawn". Scrolls sideways on a phone (plan §3). A visual
+ *              summary only: the round lists below carry the same facts as
+ *              text, so the bracket is hidden from screen readers.
+ *   rounds     one disclosure per round (latest open): each tie's legs with
+ *              dates, extra time and penalties, and the model's call on each
+ *              leg it predicted
+ *   chances    each tie's chance of going through (P6-02, display only):
+ *              before the first leg and after it, in the round lists; the
+ *              current chance on undecided ties in the bracket; the
+ *              walk-forward Brier score at the foot
+ *
+ * Until this season's draw is made, cups.json carries last season's bracket
+ * (knockouts.current = false) and the intro says so, with the clubs the
+ * projected league-phase table sends through.
+ *
+ * Geometry: every column is the same height and splits it into equal rows,
+ * one per tie, so a tie sits exactly between the two it's fed by. The
+ * connectors are CSS borders on each tie's cell (data-out / data-in).
+ */
+import type { LeagueData } from "../../lib/data";
+import { formatKickoff, resultName } from "../../lib/format";
+import { leagueHref, sectionByKey } from "../../lib/routes";
+import type { KnockoutStage, Tie, TieLeg } from "../../lib/schema";
+
+interface Props {
+  data: LeagueData;
+}
+
+const { data } = Astro.props;
+const comp = data.competition;
+const ko = data.cup?.knockouts ?? undefined;
+const phase = data.cup?.leaguePhase ?? undefined;
+
+const STAGES: { stage: KnockoutStage; label: string; ties: number }[] = [
+  { stage: "KO_PLAYOFF", label: "Play-off", ties: 8 },
+  { stage: "R16", label: "Round of 16", ties: 8 },
+  { stage: "QF", label: "Quarter-finals", ties: 4 },
+  { stage: "SF", label: "Semi-finals", ties: 2 },
+  { stage: "FINAL", label: "Final", ties: 1 },
+];
+
+const seasonName = (s: string) => `20${s.slice(0, 2)}/${s.slice(3)}`;
+const day = (iso: string) => formatKickoff(`${iso}T00:00:00`, "day");
+
+const columns = STAGES.map((s, i) => {
+  const ties: (Tie | null)[] = [...(ko?.rounds.find((r) => r.stage === s.stage)?.ties ?? [])];
+  while (ties.length < s.ties) ties.push(null);
+  const next = STAGES[i + 1];
+  const prev = STAGES[i - 1];
+  return {
+    ...s,
+    ties,
+    // How the connectors run: two ties into one, or one into one (play-off → round of 16)
+    out: !next ? undefined : next.ties * 2 === s.ties ? "pair" : "straight",
+    in: prev && prev.ties === s.ties * 2 ? "pair" : undefined,
+  };
+});
+
+/** The goals a team scored in one leg, extra time included. */
+const goals = (leg: TieLeg, team: string) => {
+  const s = leg.extraTime ?? leg.score;
+  if (!s) return undefined;
+  return leg.home === team ? s[0] : s[1];
+};
+
+const twoLegged = (tie: Tie) => tie.legs.some((l) => l.leg !== null);
+
+/** "Atlético Madrid won 7–4 on aggregate" / "Paris Saint-Germain won on penalties after 1–1" ... */
+function verdict(tie: Tie): string {
+  const [a, b] = tie.teams;
+  const agg = tie.aggregate;
+  if (!agg) return "Not played yet";
+  if (!tie.winner) return twoLegged(tie) ? `First leg played: ${a} ${agg[0]}–${agg[1]} ${b}` : "In progress";
+
+  const loser = tie.winner === a ? b : a;
+  const [w, l] = tie.winner === a ? agg : [agg[1], agg[0]];
+  const how = twoLegged(tie) ? "on aggregate" : "";
+
+  if (tie.decidedBy === "penalties") return `${tie.winner} beat ${loser} on penalties after ${w}–${l}${how ? ` ${how}` : ""}`;
+  if (tie.decidedBy === "extra time") return `${tie.winner} beat ${loser} ${w}–${l}${how ? ` ${how}` : ""}, after extra time`;
+  return `${tie.winner} beat ${loser} ${w}–${l}${how ? ` ${how}` : ""}`;
+}
+
+/** The leg's 90-minute result as H/D/A, to check the model's pick against. */
+const outcome90 = (leg: TieLeg) =>
+  leg.score ? (leg.score[0] > leg.score[1] ? "H" : leg.score[0] < leg.score[1] ? "A" : "D") : undefined;
+
+const pickTeam = (leg: TieLeg, pick: "H" | "D" | "A") => (pick === "H" ? leg.home : pick === "A" ? leg.away : "a draw");
+
+/** A chance of going through as a whole percentage, never a flat 0% or 100% (P6-02). */
+const pct = (p: number) => (p < 0.005 ? "<1%" : p > 0.995 ? ">99%" : `${Math.round(p * 100)}%`);
+
+/** teams[0]'s chance now: after the first leg once it's played, else before the tie. */
+const chanceNow = (tie: Tie) => tie.progression?.afterFirstLeg ?? tie.progression?.before;
+
+/** "Benfica 50% · Real Madrid 50%" */
+const split = (tie: Tie, p: number) => `${tie.teams[0]} ${pct(p)} · ${tie.teams[1]} ${pct(1 - p)}`;
+
+const score = ko?.progressionScore;
+
+// The round to open: the latest with a tie played or drawn
+const latest = [...STAGES].reverse().find((s) => ko?.rounds.some((r) => r.stage === s.stage && r.ties.length))?.stage;
+
+// Before this season's draw: who the projected table sends where
+const projectedDirect = phase && !ko?.current ? phase.projected.filter((r) => r.position <= phase.zones.direct) : [];
+const leaguePhase = sectionByKey(comp.kind, "league-phase");
+---
+
+{
+  !ko ? (
+    <p class="lede">No {comp.name} knockout ties on record yet. The bracket appears once the play-off draw is made.</p>
+  ) : (
+    <div class="knockouts">
+      <section class="intro">
+        {ko.current ? (
+          <p class="lede">
+            {seasonName(ko.season)}. Each tie is over two legs, the side listed first at home in the first leg; away
+            goals don't count, and a level aggregate goes to extra time and penalties. The final is one match at a neutral
+            ground. Slots fill in as the draws are made.
+          </p>
+        ) : (
+          <>
+            <p class="lede">
+              This season's knockouts start once the league phase ends: the play-off draw follows the last matchday.
+              Until then, this is how <b>{seasonName(ko.season)}</b> went.
+            </p>
+            {projectedDirect.length > 0 && (
+              <p class="lede">
+                On the{" "}
+                {leaguePhase ? <a href={leagueHref(comp.slug, leaguePhase)}>projected league-phase table</a> : "projected league-phase table"},{" "}
+                {projectedDirect.map((r) => r.team).join(", ")} would go straight to the round of 16.
+              </p>
+            )}
+          </>
+        )}
+      </section>
+
+      <div class="scroller">
+        <div class="bracket" aria-hidden="true">
+          {columns.map((col) => (
+            <div class="column">
+              <h3>{col.label}</h3>
+              <ol style={`grid-template-rows: repeat(${col.ties.length}, minmax(0, 1fr))`}>
+                {col.ties.map((tie, i) => (
+                  <li data-out={col.out} data-in={col.in} data-side={i % 2 === 0 ? "top" : "bottom"}>
+                    {tie ? (
+                      <div class="tie" data-done={tie.winner ? "" : undefined}>
+                        {tie.teams.map((team) => (
+                          <div class="side" data-winner={tie.winner === team ? "" : undefined}>
+                            <span class="name">{team}</span>
+                            {tie.legs.map((leg) => (
+                              <span class="goals">{goals(leg, team) ?? "–"}</span>
+                            ))}
+                            {twoLegged(tie) && (
+                              <span class="agg">
+                                {tie.aggregate ? tie.aggregate[tie.teams.indexOf(team)] : ""}
+                              </span>
+                            )}
+                            <span class="mark">
+                              {tie.winner
+                                ? tie.winner === team && tie.decidedBy === "penalties" ? "p" : tie.winner === team && tie.decidedBy === "extra time" ? "aet" : ""
+                                : chanceNow(tie) !== undefined
+                                  ? pct(team === tie.teams[0] ? chanceNow(tie)! : 1 - chanceNow(tie)!)
+                                  : ""}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <div class="tie" data-empty="">
+                        <div class="side"><span class="name">To be drawn</span></div>
+                        <div class="side"><span class="name"></span></div>
+                      </div>
+                    )}
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ))}
+        </div>
+      </div>
+      <p class="hint">
+        Scores are per leg, extra time included, then the aggregate. <b>p</b> won on penalties, <b>aet</b> after extra time.
+        Ties still to be decided show each side's chance of going through.
+      </p>
+
+      <section aria-labelledby="by-round" class="rounds">
+        <h2 id="by-round">Round by round</h2>
+        {STAGES.map((s) => {
+          const ties = ko.rounds.find((r) => r.stage === s.stage)?.ties ?? [];
+          if (!ties.length) return null;
+          return (
+            <details class="round" open={s.stage === latest || undefined}>
+              <summary>
+                <span>
+                  <b>{s.label}</b>
+                  <small>
+                    {ties.length} {ties.length === 1 ? "match" : "ties"} · {day(ties[0]!.legs[0]!.date)}
+                    {ties.flatMap((t) => t.legs).length > 1 && ` – ${day(ties.flatMap((t) => t.legs).map((l) => l.date).sort().at(-1)!)}`}
+                  </small>
+                </span>
+                <svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true">
+                  <path d="M2 4.5 6 8.5 10 4.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+                </svg>
+              </summary>
+              <ul class="ties">
+                {ties.map((tie) => (
+                  <li>
+                    <p class="verdict">{verdict(tie)}</p>
+                    {tie.progression && (
+                      <p class="chance">
+                        Chance of going through, before the {twoLegged(tie) ? "first leg" : "match"}: {split(tie, tie.progression.before)}
+                        {tie.progression.afterFirstLeg !== null && (
+                          <>
+                            <br />
+                            After the first leg: {split(tie, tie.progression.afterFirstLeg)}
+                          </>
+                        )}
+                      </p>
+                    )}
+                    <ul class="legs">
+                      {tie.legs.map((leg) => {
+                        const pick = leg.prediction;
+                        const actual = outcome90(leg);
+                        return (
+                          <li>
+                            <span class="when">
+                              {leg.leg ? `Leg ${leg.leg}` : "Final"} · {day(leg.date)}
+                            </span>
+                            <span class="score">
+                              {leg.home} {leg.score ? `${leg.score[0]}–${leg.score[1]}` : "v"} {leg.away}
+                              {leg.extraTime && ` (${leg.extraTime[0]}–${leg.extraTime[1]} after extra time)`}
+                              {leg.penaltyWinner && `, ${leg.penaltyWinner} won on penalties`}
+                            </span>
+                            {pick && (
+                              <span class="model">
+                                Model: {pickTeam(leg, pick.pick)} ({resultName.H} {pick.homeProb}% · {resultName.D}{" "}
+                                {pick.drawProb}% · {resultName.A} {pick.awayProb}%)
+                                {actual && (actual === pick.pick ? ", right" : ", wrong")}
+                              </span>
+                            )}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          );
+        })}
+      </section>
+
+      <section aria-labelledby="chances" class="method">
+        <h2 id="chances">Chances of going through</h2>
+        <p class="lede">
+          Each leg's home, draw and away chances from the model are turned into expected goals for both sides, then every
+          scoreline is added up: both legs, extra time at a third of the rate if the aggregate is level, then penalties as a
+          coin toss. A display only: never a bet. Ties already played are scored as the model would have seen them, trained
+          only on earlier seasons.
+        </p>
+        {score && (
+          <p class="lede">
+            Over <b>{score.ties}</b> ties from {seasonName(score.from)} to {seasonName(score.to)} the Brier score before the
+            first leg was <b>{score.brier.toFixed(3)}</b> (95% CI {score.brierCi[0].toFixed(3)} to{" "}
+            {score.brierCi[1].toFixed(3)}), against 0.250 for calling every tie 50/50; lower is better.
+            {score.brierAfterFirstLeg !== null && (
+              <>
+                {" "}After the first leg it was <b>{score.brierAfterFirstLeg.toFixed(3)}</b> over {score.tiesAfterFirstLeg} ties.
+              </>
+            )}
+          </p>
+        )}
+      </section>
+    </div>
+  )
+}
+
+<style>
+  .knockouts {
+    display: grid;
+    /* minmax(0, ...) so the bracket scrolls inside its box instead of widening the page */
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    min-width: 0;
+  }
+
+  .intro {
+    display: grid;
+    gap: 8px;
+  }
+
+  h2 {
+    margin: 0 0 6px;
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 22px;
+  }
+
+  .lede,
+  .hint {
+    max-width: 70ch;
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .lede b,
+  .hint b {
+    color: var(--text);
+  }
+
+  .lede a {
+    color: var(--lg-accent-text);
+    font-weight: 600;
+  }
+
+  .hint {
+    margin-top: -12px;
+    font-size: 13px;
+  }
+
+  /* ---------- bracket ---------- */
+
+  .scroller {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding-bottom: 6px;
+  }
+
+  .bracket {
+    --gap: 24px;
+    --tie-w: 200px;
+    display: flex;
+    gap: var(--gap);
+    min-width: max-content;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: var(--tie-w);
+  }
+
+  .column h3 {
+    margin: 0 0 8px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .column ol {
+    flex: 1;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .column li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+  }
+
+  /* Out of a pair: "]" from this tie's middle to the boundary with its partner */
+  .column li[data-out]::after,
+  .column li[data-in]::before {
+    content: "";
+    position: absolute;
+    border-color: var(--line);
+    border-style: solid;
+    border-width: 0;
+  }
+
+  .column li[data-out="pair"]::after {
+    left: 100%;
+    width: calc(var(--gap) / 2);
+    border-right-width: 1.5px;
+  }
+
+  .column li[data-out="pair"][data-side="top"]::after {
+    top: 50%;
+    bottom: 0;
+    border-top-width: 1.5px;
+  }
+
+  .column li[data-out="pair"][data-side="bottom"]::after {
+    top: 0;
+    bottom: 50%;
+    border-bottom-width: 1.5px;
+  }
+
+  .column li[data-out="straight"]::after {
+    left: 100%;
+    top: 50%;
+    width: var(--gap);
+    border-top-width: 1.5px;
+  }
+
+  .column li[data-in="pair"]::before {
+    right: 100%;
+    top: 50%;
+    width: calc(var(--gap) / 2);
+    border-top-width: 1.5px;
+  }
+
+  .tie {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tie[data-empty] {
+    border-style: dashed;
+    background: transparent;
+  }
+
+  .side {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    min-height: 24px;
+    padding: 3px 8px;
+    color: var(--muted);
+  }
+
+  .side + .side {
+    border-top: 1px solid var(--line);
+  }
+
+  .tie:not([data-done]) .side,
+  .side[data-winner] {
+    color: var(--text);
+  }
+
+  .side[data-winner] {
+    font-weight: 700;
+    box-shadow: inset 3px 0 0 var(--lg-accent);
+  }
+
+  .name {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .tie[data-empty] .name {
+    font-style: italic;
+  }
+
+  .goals {
+    flex: none;
+    width: 1.2em;
+    text-align: right;
+  }
+
+  .agg {
+    flex: none;
+    width: 1.6em;
+    text-align: right;
+    font-weight: 800;
+  }
+
+  .mark {
+    flex: none;
+    width: 26px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  /* ---------- round by round ---------- */
+
+  .rounds {
+    display: grid;
+    gap: 10px;
+  }
+
+  .round {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
+  .round summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 16px;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .round summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .round summary:hover {
+    background: var(--tint);
+  }
+
+  .round summary span {
+    display: grid;
+  }
+
+  .round summary b {
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 19px;
+  }
+
+  .round summary small {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .round svg {
+    flex: none;
+    color: var(--muted);
+    transition: transform 0.15s;
+  }
+
+  .round[open] svg {
+    transform: rotate(180deg);
+  }
+
+  .ties {
+    display: grid;
+    margin: 0;
+    padding: 0 16px 8px;
+    list-style: none;
+  }
+
+  .ties > li {
+    padding: 10px 0;
+  }
+
+  .ties > li + li {
+    border-top: 1px solid var(--line);
+  }
+
+  .verdict {
+    margin: 0 0 4px;
+    font-weight: 700;
+  }
+
+  .chance {
+    margin: 0 0 6px;
+    color: var(--muted);
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .method {
+    display: grid;
+    gap: 8px;
+  }
+
+  .legs {
+    display: grid;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+  }
+
+  .legs li {
+    display: grid;
+    grid-template-columns: 10.5em minmax(0, 1fr);
+    gap: 0 10px;
+  }
+
+  .when {
+    color: var(--muted);
+  }
+
+  .model {
+    grid-column: 2;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  @media (max-width: 560px) {
+    .legs li {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .model {
+      grid-column: 1;
+    }
+
+    .round summary,
+    .ties {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .round svg {
+      transition: none;
+    }
+  }
+</style>

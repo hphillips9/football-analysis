@@ -80,7 +80,7 @@ One command, [`src/run_week.py`](src/run_week.py), runs the whole cycle:
 | 2 | Settle any pending bets in `data/raw/Bets.csv` (result, the odds used, profit; no odds = unpriced, counted for accuracy only) |
 | 3 | Rebuild `data/processed/all_matches.csv` (results + FotMob/Opta xG, with football-data.co.uk's xG then Understat as backup, cached per season) |
 | 4 | Backfill gameweek / probabilities on any `Bets.csv` rows missing them |
-| 5 | Pull each competition's next round from football-data.org, predict them, append the bets |
+| 5 | Pull each competition's next round from football-data.org, predict them, append the bets; then capture Champions League odds onto upcoming CL bets from The Odds API |
 | 6 | Export `web/src/data/*.json` for the website |
 
 ```bash
@@ -115,6 +115,16 @@ first line `GW7` sets the number explicitly, otherwise it's inferred).
 Bets are recorded as **1-unit flat stakes** at the best available price
 (Sky Bet, or the market average when missing).
 
+football-data.co.uk has no Champions League odds, so CL bets are priced
+from [The Odds API](https://the-odds-api.com) (`src/odds_api.py`): each run,
+if any CL bet is pending, unpriced and not yet kicked off, one call (1 of
+the free tier's 500 monthly credits) takes Sky Bet's price, or else the
+median of the UK bookmakers (exchanges excluded), and writes it onto the bet
+(`OddsSource` `SKB` / `UKMed`). That price is kept and settled against.
+Captured prices are logged with their time to `data/raw/CL/odds_<season>.csv`,
+credit usage to `data/raw/odds_api_usage.csv`. It needs an `ODDS_API_KEY`
+(environment or `.env`); without one, CL bets settle unpriced.
+
 `src/backtest.py` is separate — re-run it by hand when a season finishes.
 
 ---
@@ -129,7 +139,7 @@ Bets are recorded as **1-unit flat stakes** at the best available price
 
 Running daily is safe — fixtures already bet on are never re-predicted, and
 nothing new is predicted while a bet round is still being played. Needs the
-repo secret `FOOTBALL_DATA_API_KEY`.
+repo secrets `FOOTBALL_DATA_API_KEY` and `ODDS_API_KEY` (optional: CL odds).
 
 It commits the refreshed data back to the repo, then builds and deploys the site.
 [`deploy-site.yml`](.github/workflows/deploy-site.yml) redeploys on any change to
@@ -150,8 +160,10 @@ An [Astro](https://astro.build/) static site with React islands in
 - Per league (`/e0/`, `/sp1/`, …): **Fixtures**, **Results** (`gameweeks/`),
   **Table**, **Record** (`track-record/`), **Ratings**
 - Per cup (`kind: "cup"` in `leagues.json`, e.g. `/cl/`): **Fixtures**,
-  **League phase**, **Knockouts**, **Record** (the middle two are placeholders
-  for now)
+  **League phase** (table so far + projected, from `cups.json`), **Knockouts**
+  (the bracket; last season's until this season's draw), **Record** (hit rate
+  and log loss; profit only once bets are priced). A cup's rounds are numbered
+  like gameweeks: matchdays 1-8, then one number per knockout leg (9-17)
 
 Pages are generated from `leagues.json`, so a competition the export adds
 gets its pages with no site changes.
@@ -183,7 +195,7 @@ src/
   features.py             goals per game, last-5 xG difference, build_history (per competition)
   model.py                FEATURES, calibrated logistic regression; E0's own model + the pooled one (train_models)
   backfill_bet_probs.py   fill gameweek / probabilities on older bets
-  export_web.py           write the site's JSON feed (Premier League only for now) + leagues.json
+  export_web.py           write the site's JSON feed (every enabled competition, CL incl.) + leagues.json, cups.json
   backtest.py             season-by-season evaluation, pooled and per competition
   evaluate.py             walk-forward, per-match log loss, paired bootstrap (shared with notebooks)
   team_names.py           name normalisation across data sources; lookups by FotMob / football-data.org id
