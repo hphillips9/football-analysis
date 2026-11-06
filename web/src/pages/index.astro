@@ -1,0 +1,516 @@
+---
+/**
+ * Home (R9, P7-01 home.html): what the site is, a worked example (the
+ * week's most confident pick), this season's numbers across every league,
+ * the leagues (last viewed first) and links to the site-wide pages.
+ *
+ * Parity with the Observable home page: its overall cards (won-lost, % right,
+ * vs always home, profit, ROI, pending) are the season numbers plus the
+ * stakes line; its "By competition" cards are the league list; its "This
+ * week" fixtures moved to /matchday/.
+ */
+import ProbabilityStrip from "../components/fixtures/ProbabilityStrip";
+import { wholePercents } from "../components/fixtures/probabilities";
+import Shell from "../layouts/Shell.astro";
+import { competitions, domesticLeagues, forLeague, predictions, stats } from "../lib/data";
+import { mostConfident, numberWord, pickProb } from "../lib/fixtures";
+import { formatKickoff, gameweekSpan, signed } from "../lib/format";
+import { SITE_LINKS, leagueHref, roundName, siteHref } from "../lib/routes";
+import { hasResults } from "../lib/schema";
+
+const divsThisWeek = new Set(predictions.fixtures.map((f) => f.div));
+const leaguesThisWeek = divsThisWeek.size;
+// "competitions" once a cup is among them
+const weekNoun = competitions.some((c) => c.kind === "cup" && divsThisWeek.has(c.div)) ? "competitions" : "leagues";
+const overall = hasResults(stats.overall) ? stats.overall : undefined;
+
+// The worked example: this week's most confident pick in any league
+const example = mostConfident(predictions.fixtures);
+const exampleLeague = example ? competitions.find((c) => c.div === example.div) : undefined;
+const examplePct = example ? wholePercents({ H: example.homeProb, D: example.drawProb, A: example.awayProb }) : undefined;
+const pickName = (f: NonNullable<typeof example>) =>
+  f.prediction === "H" ? f.home : f.prediction === "A" ? f.away : "a draw";
+
+// Cups (the Champions League) are named after the leagues in the intro
+const cupNames = competitions
+  .filter((c) => c.kind === "cup")
+  .map((c) => c.name)
+  .join(" and the ");
+
+const leagueRows = competitions.map((c) => {
+  const d = forLeague(c.div);
+  const s = d.stats && hasResults(d.stats) ? d.stats : undefined;
+  const gameweek = d.fixtures[0]?.gameweek;
+  return {
+    slug: c.slug,
+    name: c.name,
+    href: leagueHref(c.slug),
+    week: d.fixtures.length
+      ? `${roundName(c.kind)} ${gameweek}, ${d.fixtures.length} ${d.fixtures.length === 1 ? "match" : "matches"}`
+      : "No matches this week",
+    record: s ? `${s.wins}–${s.losses} · ${signed(s.profit)}u · ROI ${signed(s.roi, 1)}%` : undefined,
+    pending: d.stats?.pendingBets ?? 0,
+    hitRate: s?.hitRate,
+  };
+});
+
+const tone = (v: number) => (v > 0.005 ? "pos" : v < -0.005 ? "neg" : undefined);
+const more = {
+  matchday: "Every match this week across all the leagues, on one page.",
+  ratings: "Every team's Elo rating, league by league and on one shared scale.",
+  method: "How the model works, and how it did over past seasons.",
+} as const;
+---
+
+<Shell
+  title="Football Predictor"
+  site="home"
+  heading="Football Predictor"
+  intro={`A model's call on every match in ${numberWord(domesticLeagues.length)} of Europe's leagues${cupNames ? ` and the ${cupNames}` : ""}: the chance of a home win, a draw or an away win, updated every day. It keeps an honest record of how often it's right.`}
+  tab={`This week: ${predictions.fixtures.length} matches in ${leaguesThisWeek} ${weekNoun}`}
+>
+  <div class="home">
+    <section class="block" aria-labelledby="reads">
+      <h2 id="reads">How a prediction reads</h2>
+      <p class="lede">
+        Each team gets a rating from its results and its recent expected goals (xG). The model turns the gap between two
+        teams into three probabilities that add up to 100%.
+      </p>
+      <div class="example">
+        {
+          example && exampleLeague && examplePct ? (
+            <div class="card" data-league={exampleLeague.slug}>
+              <p class="when">
+                <a href={leagueHref(exampleLeague.slug)}>{exampleLeague.name}</a>,{" "}
+                {formatKickoff(example.kickoff, "dayLong")}, {formatKickoff(example.kickoff, "time")}
+              </p>
+              <p class="match">
+                <span data-picked={example.prediction === "H" || undefined}>{example.home}</span>
+                <span data-picked={example.prediction === "A" || undefined}>{example.away}</span>
+              </p>
+              <ProbabilityStrip
+                size="large"
+                home={example.homeProb}
+                draw={example.drawProb}
+                away={example.awayProb}
+                pick={example.prediction}
+                homeTeam={example.home}
+                awayTeam={example.away}
+              />
+              <ul class="seg-labels">
+                <li>
+                  <i style="background: var(--home)" />
+                  Home win <b>{examplePct.H}%</b>
+                </li>
+                <li>
+                  <i style="background: var(--draw)" />
+                  Draw <b>{examplePct.D}%</b>
+                </li>
+                <li>
+                  <i style="background: var(--away)" />
+                  Away win <b>{examplePct.A}%</b>
+                </li>
+              </ul>
+              <p class="explain">
+                The model gives {pickName(example)} a {Math.round(pickProb(example))}% chance, its most confident call this
+                week. The solid segment is its pick.
+              </p>
+            </div>
+          ) : (
+            <p class="card">No matches this week. The example returns with the next round of fixtures.</p>
+          )
+        }
+
+        <div>
+          {
+            overall ? (
+              <>
+                <dl class="season" aria-label="This season, every league">
+                  <div>
+                    <dt>of picks right this season</dt>
+                    <dd>{overall.hitRate.toFixed(1)}%</dd>
+                  </div>
+                  <div>
+                    <dt>if you always backed the home side</dt>
+                    <dd>{overall.baselineHitRate.toFixed(1)}%</dd>
+                  </div>
+                  <div>
+                    <dt>points better than that</dt>
+                    <dd>{signed(overall.edge, 1)}</dd>
+                  </div>
+                  <div>
+                    <dt>picks won and lost</dt>
+                    <dd>
+                      {overall.wins}–{overall.losses}
+                    </dd>
+                  </div>
+                </dl>
+                <p class="stakes">
+                  Simulated stakes, one unit a pick:{" "}
+                  <b data-tone={tone(overall.profit)}>{signed(overall.profit)}u</b> from {overall.staked} staked (return{" "}
+                  <b data-tone={tone(overall.roi)}>{signed(overall.roi, 1)}%</b>), {overall.pendingBets} still to settle.
+                </p>
+                <details class="how">
+                  <summary>How these numbers are counted</summary>
+                  <p>
+                    Every settled pick counts towards the hit rate. The simulated profit counts only picks with a recorded
+                    bookmaker price.
+                  </p>
+                  {overall.backfilledBets > 0 && (
+                    <p>
+                      The {overall.backfilledBets} predictions for{" "}
+                      {overall.backfilledGameweeks ? gameweekSpan(overall.backfilledGameweeks as [number, number]) : "gameweeks"}{" "}
+                      played before a league joined the model were made afterwards, each by a model trained only on the
+                      matches before it, so they're included too.
+                    </p>
+                  )}
+                </details>
+              </>
+            ) : (
+              <p class="lede">No picks settled yet this season.</p>
+            )
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="leagues">
+      <h2 id="leagues">Leagues</h2>
+      <p class="lede">This week's predictions, the table, the track record and team ratings for each league.</p>
+      <ul class="leagues" id="league-list">
+        {
+          leagueRows.map((l) => (
+            <li data-slug={l.slug} data-league={l.slug}>
+              <a class="lg" href={l.href}>
+                <span class="flag" aria-hidden="true" />
+                <span class="name">{l.name}</span>
+                <span class="meta">
+                  <span class="last" hidden>
+                    Last viewed ·{" "}
+                  </span>
+                  {l.week}
+                </span>
+                <span class="meta">{l.record ?? `First ${l.pending} picks pending`}</span>
+                <span class="stat">
+                  <b>{l.hitRate == null ? "—" : `${l.hitRate.toFixed(1)}%`}</b>right
+                </span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <script is:inline data-astro-rerun>
+        // Last league viewed first (R8). Runs as the page parses, so the
+        // list doesn't jump; the view-transition router re-runs it too.
+        // (data-astro-rerun: the router skips inline scripts it has run before.)
+        (() => {
+          let last = null;
+          try {
+            last = localStorage.getItem("fp-league");
+          } catch {}
+          const list = document.getElementById("league-list");
+          const item = last && list && [...list.children].find((li) => li.dataset.slug === last);
+          if (!item) return;
+          list.prepend(item);
+          item.querySelector(".last")?.removeAttribute("hidden");
+        })();
+      </script>
+    </section>
+
+    <section class="block" aria-labelledby="more">
+      <h2 id="more">More on the site</h2>
+      <ul class="more-links">
+        {
+          SITE_LINKS.filter((l) => l.key !== "home").map((l) => (
+            <li>
+              <a href={siteHref(l)}>
+                <b>{l.label}</b>
+                <span>{more[l.key as keyof typeof more]}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </div>
+</Shell>
+
+<style>
+  .home {
+    display: grid;
+    gap: 44px;
+    padding-top: 4px;
+  }
+
+  h2 {
+    margin: 0 0 6px;
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 24px;
+  }
+
+  .lede {
+    max-width: 60ch;
+    margin: 0 0 16px;
+    color: var(--muted);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* Worked example */
+  .example {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: 40px;
+    align-items: start;
+  }
+
+  .card {
+    margin: 0;
+    padding: 18px 20px 20px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
+  .when {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .when a {
+    color: var(--lg-accent-text);
+  }
+
+  .match {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 4px 0 12px;
+    font-size: 20px;
+  }
+
+  .match [data-picked] {
+    font-weight: 800;
+  }
+
+  .match span:last-child {
+    text-align: right;
+  }
+
+  .seg-labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 18px;
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .seg-labels li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .seg-labels i {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+  }
+
+  .seg-labels b {
+    color: var(--text);
+  }
+
+  .explain {
+    max-width: 52ch;
+    margin: 14px 0 0;
+  }
+
+  /* Season numbers */
+  .season {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 24px;
+    margin: 0;
+  }
+
+  .season div {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-top: 8px;
+    border-top: 3px solid var(--text);
+  }
+
+  .season dd {
+    margin: 0;
+    font-weight: 800;
+    font-stretch: 70%;
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .season dt {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .stakes {
+    margin: 20px 0 0;
+    font-size: 15px;
+  }
+
+  [data-tone="pos"] {
+    color: var(--pos);
+  }
+
+  [data-tone="neg"] {
+    color: var(--neg);
+  }
+
+  .how {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .how summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .how p {
+    max-width: 60ch;
+    margin: 6px 0 0;
+  }
+
+  /* League list */
+  .leagues {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 24px;
+  }
+
+  .lg {
+    display: grid;
+    grid-template-columns: 8px minmax(0, 1fr) auto;
+    gap: 2px 14px;
+    align-items: center;
+    padding: 12px 16px 12px 0;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .lg:hover {
+    background: var(--tint);
+  }
+
+  /* The league's two colours as a stripe (R2: abstract, no logos) */
+  .flag {
+    grid-row: 1 / 4;
+    align-self: stretch;
+    margin: -12px 0;
+    background: linear-gradient(var(--lg-band) 62%, var(--lg-accent) 62%);
+  }
+
+  .name {
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 20px;
+    line-height: 1.15;
+  }
+
+  .meta {
+    grid-column: 2;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .stat {
+    grid-column: 3;
+    grid-row: 1 / 4;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: right;
+  }
+
+  .stat b {
+    display: block;
+    color: var(--text);
+    font-weight: 800;
+    font-stretch: 75%;
+    font-size: 22px;
+    line-height: 1.1;
+  }
+
+  .last {
+    color: var(--site-text);
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  /* More links */
+  .more-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .more-links a {
+    display: block;
+    padding-top: 10px;
+    border-top: 3px solid var(--site);
+    text-decoration: none;
+  }
+
+  .more-links b {
+    display: block;
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 20px;
+    text-decoration: underline 2px transparent;
+    text-underline-offset: 4px;
+  }
+
+  .more-links a:hover b {
+    text-decoration-color: currentColor;
+  }
+
+  .more-links span {
+    color: var(--muted);
+  }
+
+  @media (max-width: 760px) {
+    .home {
+      gap: 36px;
+    }
+
+    .example,
+    .leagues,
+    .more-links {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .leagues {
+      gap: 8px;
+    }
+
+    .season dd {
+      font-size: 32px;
+    }
+  }
+</style>

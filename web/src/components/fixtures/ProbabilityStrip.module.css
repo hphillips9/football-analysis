@@ -1,0 +1,72 @@
+.strip {
+  display: flex;
+  height: 30px;
+  min-width: 0;
+  border-radius: 3px;
+  overflow: hidden;
+  /* Fills left to right; a list staggers by --i */
+  animation: fill 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: calc(min(var(--i, 0), 12) * 45ms);
+}
+
+.strip[data-size="large"] {
+  height: 44px;
+  border-radius: 4px;
+}
+
+@keyframes fill {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.seg {
+  display: flex;
+  flex: 0 1 0;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  overflow: hidden;
+  font-weight: 600;
+  font-stretch: 75%;
+  font-size: 15px;
+  color: var(--text);
+}
+
+.strip[data-size="large"] .seg {
+  font-size: 20px;
+}
+
+/* 2px gap between segments, in the surface colour */
+.seg + .seg {
+  box-shadow: inset 2px 0 0 var(--surface);
+}
+
+/* Off-pick: tinted (themes.ts precomputes the tints) */
+.seg[data-outcome="H"] { background: var(--home-tint); }
+.seg[data-outcome="D"] { background: var(--draw-tint); }
+.seg[data-outcome="A"] { background: var(--away-tint); }
+
+/* The pick: solid */
+.seg[data-pick] {
+  font-weight: 800;
+}
+.seg[data-outcome="H"][data-pick] { background: var(--home); color: var(--on-home); }
+.seg[data-outcome="D"][data-pick] { background: var(--draw); color: var(--on-draw); }
+.seg[data-outcome="A"][data-pick] { background: var(--away); color: var(--on-away); }
+
+/* What happened: an outline in the text colour (not colour alone) */
+.seg[data-result] {
+  box-shadow:
+    inset 0 0 0 2px var(--surface),
+    inset 0 0 0 4px var(--text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .strip {
+    animation: none;
+  }
+}

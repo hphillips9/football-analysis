@@ -1,0 +1,12 @@
+---
+/**
+ * Not found. GitHub Pages serves the site root's 404.html for any miss under
+ * /football-analysis/.
+ */
+import Shell from "../layouts/Shell.astro";
+import { href } from "../lib/href";
+---
+
+<Shell title="Page not found" site="none" heading="Not found">
+  <p>There's no page at this address. <a href={href()}>Go to the home page</a>, or pick a league above.</p>
+</Shell>

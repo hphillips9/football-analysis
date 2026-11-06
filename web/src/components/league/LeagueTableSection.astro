@@ -1,0 +1,237 @@
+---
+/**
+ * /{c}/table/: Table (plan §3 V8 + tables).
+ *
+ *   current     the real standings
+ *   predicted   "if every prediction had come true", collapsed by default
+ *   projected   expected points for every remaining fixture added on; V8
+ *               (places gained / lost) as a chart on wide screens and as
+ *               the table's Δ column on a phone
+ *
+ * The tables are DataTable islands (sorting, folding columns on a phone);
+ * the server HTML is already the full table.
+ */
+import type { LeagueData } from "../../lib/data";
+import LeagueChart from "./LeagueChart";
+import Standings from "./Standings";
+
+interface Props {
+  data: LeagueData;
+}
+
+const { data } = Astro.props;
+const { competition: comp, table } = data;
+
+const pickedGames = table ? table.predicted.reduce((n, r) => n + r.played, 0) / 2 : 0;
+const predictedDraws = table ? table.predicted.reduce((n, r) => n + r.drawn, 0) / 2 : 0;
+---
+
+{
+  !table ? (
+    <p class="lede">No {comp.name} table yet. It appears once the season's first matches are played.</p>
+  ) : (
+    <div class="tables">
+      <p class="lede">
+        Where the table stands now, where it would be if every prediction so far had come true, and where the model
+        expects it to finish.
+        <span class="count">
+          {table.playedFixtures} of {table.playedFixtures + table.remainingFixtures} fixtures played ·{" "}
+          {table.remainingFixtures} still to play.
+        </span>
+      </p>
+
+      <section aria-labelledby="current">
+        <h2 id="current">Current standings</h2>
+        <Standings client:visible kind="current" rows={table.current} caption={`${comp.name}: current standings`} />
+      </section>
+
+      <details class="what-if">
+        <summary>
+          <span>
+            <b>If every prediction had come true</b>
+            <small>The same games, with the model's pick as the result</small>
+          </span>
+          <svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true">
+            <path d="M2 4.5 6 8.5 10 4.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+          </svg>
+        </summary>
+        <div class="body">
+          <p class="lede">
+            Movement is versus the real table above. Only games the model made a pick for count, so in a league it started
+            on mid-season teams show fewer played than in the real table.
+          </p>
+          {
+            pickedGames === 0 ? (
+              <p class="lede">None of the {comp.name} games the model has picked have been played yet.</p>
+            ) : (
+              <>
+                <Standings
+                  client:visible
+                  kind="predicted"
+                  rows={table.predicted}
+                  caption={`${comp.name}: the table if every prediction had come true`}
+                />
+                {predictedDraws === 0 && (
+                  <p class="lede">
+                    Note the <b>D</b> column: the model hasn't predicted a single draw this season, so this table has none.
+                  </p>
+                )}
+                <p class="lede">
+                  Big movers show where its picks were most wrong: teams it overrated climb here, and teams it wrote off
+                  fall.
+                </p>
+              </>
+            )
+          }
+        </div>
+      </details>
+
+      <section aria-labelledby="projected">
+        <h2 id="projected">Projected final table</h2>
+        <p class="lede">
+          Every fixture not yet played, scored by <b>expected points</b> (3 × P(win) + 1 × P(draw)), added to the current
+          standings. Goal difference projects forward too, using a separate Dixon-Coles goal model's expected scorelines
+          rather than freezing at today's value.
+        </p>
+        <Standings
+          client:visible
+          kind="projected"
+          rows={table.projected}
+          caption={`${comp.name}: projected final table`}
+        />
+        <div class="wide-only">
+          <h3>Places gained and lost</h3>
+          <LeagueChart
+            client:media="(min-width: 761px)"
+            kind="places"
+            rows={table.projected.map((r) => ({
+              team: r.team,
+              position: r.position,
+              currentPosition: r.currentPosition,
+              movement: r.movement,
+            }))}
+            league={comp.slug}
+            leagueName={comp.name}
+          />
+        </div>
+      </section>
+    </div>
+  )
+}
+
+<style>
+  .tables {
+    display: grid;
+    gap: 36px;
+    max-width: 980px;
+  }
+
+  .tables section {
+    display: grid;
+    gap: 10px;
+    min-width: 0;
+  }
+
+  h2 {
+    margin: 0;
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 22px;
+  }
+
+  h3 {
+    margin: 18px 0 6px;
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 17px;
+  }
+
+  .lede {
+    max-width: 70ch;
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .lede b {
+    color: var(--text);
+  }
+
+  .count {
+    display: block;
+    margin-top: 6px;
+    font-size: 14px;
+  }
+
+  .what-if {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
+  .what-if summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 16px;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .what-if summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .what-if summary:hover {
+    background: var(--tint);
+  }
+
+  .what-if summary span {
+    display: grid;
+  }
+
+  .what-if summary b {
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 19px;
+  }
+
+  .what-if summary small {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .what-if svg {
+    flex: none;
+    color: var(--muted);
+    transition: transform 0.15s;
+  }
+
+  .what-if[open] svg {
+    transform: rotate(180deg);
+  }
+
+  .what-if .body {
+    display: grid;
+    gap: 12px;
+    padding: 0 16px 16px;
+  }
+
+  /* V8 as a chart only on wide screens; the Δ column covers phones */
+  @media (max-width: 760px) {
+    .wide-only {
+      display: none;
+    }
+
+    .what-if .body {
+      padding: 0 8px 12px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .what-if svg {
+      transition: none;
+    }
+  }
+</style>

@@ -1,0 +1,53 @@
+---
+/**
+ * Every competition page: one per competition in leagues.json x its
+ * sections (lib/routes.ts). A league gets /e0/, /e0/gameweeks/, /e0/table/,
+ * /e0/track-record/, /e0/ratings/; a cup gets /cl/, /cl/league-phase/,
+ * /cl/knockouts/, /cl/track-record/.
+ * Fixtures (P7-07), Results and Record (P7-08), Table and Ratings (P7-09),
+ * cup placeholders (P7-14; P6-01 fills them in).
+ */
+import type { GetStaticPaths } from "astro";
+
+import CupPlaceholder from "../../components/league/CupPlaceholder.astro";
+import LeagueFixtures from "../../components/league/LeagueFixtures.astro";
+import LeagueRatings from "../../components/league/LeagueRatings.astro";
+import LeagueTableSection from "../../components/league/LeagueTableSection.astro";
+import LeagueRecord from "../../components/league/LeagueRecord.astro";
+import LeagueResults from "../../components/league/LeagueResults.astro";
+import Shell from "../../layouts/Shell.astro";
+import { competitions, forLeague } from "../../lib/data";
+import { sectionByPath, sectionsFor } from "../../lib/routes";
+
+export const getStaticPaths = (() =>
+  competitions.flatMap((c) =>
+    sectionsFor(c.kind).map((s) => ({
+      // A rest parameter: undefined is the competition's front page (/e0/)
+      params: { league: c.slug, section: s.path || undefined },
+    })),
+  )) satisfies GetStaticPaths;
+
+const { league, section: path } = Astro.params;
+const data = forLeague(league);
+const section = sectionByPath(path, data.competition.kind);
+
+const title = section.key === "fixtures" ? data.competition.name : `${data.competition.name} ${section.label.toLowerCase()}`;
+---
+
+<Shell title={title} league={league} section={section.key}>
+  {
+    section.key === "fixtures" ? (
+      <LeagueFixtures data={data} />
+    ) : section.key === "results" ? (
+      <LeagueResults data={data} />
+    ) : section.key === "record" ? (
+      <LeagueRecord data={data} />
+    ) : section.key === "table" ? (
+      <LeagueTableSection data={data} />
+    ) : section.key === "ratings" ? (
+      <LeagueRatings data={data} />
+    ) : (
+      <CupPlaceholder data={data} section={section} />
+    )
+  }
+</Shell>

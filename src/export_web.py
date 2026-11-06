@@ -18,6 +18,8 @@ Reads data/processed/all_matches.csv, data/raw/Bets.csv and produces:
     web/src/data/table.json       - current standings + projected final table,
                                      as {byCompetition: {E0: ...}}
     web/src/data/leagues.json      - the competitions the pipeline runs
+    web/src/data/run_status.json   - how each competition fared in the run
+                                     (run_status.py), for the stale badge
 
 Every competition in competitions.ENABLED is exported, and each
 prediction, bet and rating carries its ``div``. The model behind the
@@ -51,6 +53,7 @@ from load_data import read_matches
 ROOT = Path(__file__).resolve().parents[1]
 
 MATCHES_PATH = ROOT / "data" / "processed" / "all_matches.csv"
+STATUS_PATH = ROOT / "data" / "processed" / "run_status.json"
 BETS_PATH = ROOT / "data" / "raw" / "Bets.csv"
 OUT_DIR = ROOT / "web" / "src" / "data"
 
@@ -727,7 +730,34 @@ def build_shared_ratings(history, european, days=HISTORY_DAYS):
     return lookup, outsider_rows, payload
 
 
-def export_web():
+def build_run_status(status=None):
+    """
+    Each competition's outcome in the pipeline run, as run_status.py
+    records it: ``status`` (RunStatus.competitions) during a run, else the
+    last run's file. Empty when there's neither - the site then shows no
+    stale badges.
+    """
+
+    if status is None:
+        try:
+            status = json.loads(STATUS_PATH.read_text(encoding="utf-8"))
+        except (FileNotFoundError, json.JSONDecodeError):
+            status = {}
+
+    return {
+        div: {
+            "results": s.get("results"),
+            "xg": s.get("xg"),
+            "predicted": int(s.get("predicted") or 0),
+            "error": s.get("error"),
+        }
+        for div, s in status.items()
+    }
+
+
+def export_web(status=None):
+    """``status``: this run's RunStatus.competitions, so the site's stale
+    badges describe this run (run_week writes the file only at the end)."""
 
     history = load_matches()
     if "Div" not in history.columns:
@@ -823,6 +853,11 @@ def export_web():
     _write("leagues.json", {
         "generated": generated,
         **build_leagues(),
+    })
+
+    _write("run_status.json", {
+        "generated": generated,
+        "competitions": build_run_status(status),
     })
 
 

@@ -1,0 +1,250 @@
+---
+/**
+ * Ratings across leagues (P4-04's /ratings, rebuilt in P7-09): every club
+ * on one Elo scale, a club's rating over the last year, and the league
+ * offsets over time.
+ *
+ * Colours: the dataviz categorical slots (themes.ts SERIES), slot 1 / 2
+ * for modelled / outside clubs; clubs on the history chart keep a slot
+ * each; leagues take slots in registry order. Light mode's slots 2-5 are
+ * under 3:1 on the page, so every chart has direct labels or a table.
+ */
+import OffsetsChart from "../components/ratings/OffsetsChart";
+import RatingHistory from "../components/ratings/RatingHistory";
+import SharedRatings, { type Club } from "../components/ratings/SharedRatings";
+import Shell from "../layouts/Shell.astro";
+import { competitions, domesticLeagues, elo, eloHistory } from "../lib/data";
+import { numberWord } from "../lib/fixtures";
+import { formatUpdated, signed } from "../lib/format";
+import { daysSince, pageJson } from "../lib/pageData";
+import { leagueHref } from "../lib/routes";
+import { themeFor } from "../theme/themes";
+
+const leagueName = new Map(competitions.map((c) => [c.div, c.name]));
+// Clubs are rated in their domestic league; a cup has no clubs of its own
+const outside = `Outside the ${numberWord(domesticLeagues.length)}`;
+const slot = new Map(competitions.map((c, i) => [c.div, i]));
+
+const clubs: Club[] = [...elo.teams]
+  .sort((a, b) => b.rating - a.rating)
+  .map((t, i) => ({
+    rank: i + 1,
+    team: t.team,
+    div: t.div,
+    rating: Math.round(t.rating),
+    elo: t.elo == null ? null : Math.round(t.elo),
+    modelled: t.modelled,
+    league: t.modelled ? (leagueName.get(t.div) ?? t.div) : `${outside} (${t.country})`,
+    tag: t.modelled ? themeFor(t.div).mark : `${t.country}*`,
+  }));
+
+const groups = [
+  ...domesticLeagues.map((c) => ({ name: c.name, clubs: clubs.filter((t) => t.div === c.div).map((t) => t.team) })),
+  { name: outside, clubs: clubs.filter((t) => !t.modelled).map((t) => t.team) },
+].filter((g) => g.clubs.length);
+
+// The two history charts' data go in JSON blocks, compact (lib/pageData.ts)
+const historyData = {
+  from: eloHistory.from,
+  series: Object.fromEntries(
+    eloHistory.series.map((s) => [s.team, s.points.flatMap(([date, rating]) => [daysSince(eloHistory.from, date), rating])]),
+  ),
+};
+const offsetBase = eloHistory.offsets.reduce((min, o) => (o.date < min ? o.date : min), eloHistory.offsets[0]?.date ?? eloHistory.from);
+const offsetLines = new Map<string, { div: string; season: string; points: number[] }>();
+for (const o of eloHistory.offsets) {
+  const key = `${o.div} ${o.season}`;
+  if (!offsetLines.has(key)) offsetLines.set(key, { div: o.div, season: o.season, points: [] });
+  offsetLines.get(key)!.points.push(daysSince(offsetBase, o.date), o.offset);
+}
+const offsetsData = { base: offsetBase, lines: [...offsetLines.values()] };
+const offsetLeagues = competitions
+  .filter((c) => eloHistory.offsets.some((o) => o.div === c.div))
+  .map((c) => ({ div: c.div, name: c.name, slot: slot.get(c.div)! }));
+const currentOffsets = competitions
+  .filter((c) => elo.offsets[c.div] != null)
+  .map((c) => ({ ...c, offset: elo.offsets[c.div]! }))
+  .sort((a, b) => b.offset - a.offset);
+---
+
+<Shell
+  title="Ratings across leagues"
+  site="ratings"
+  heading="Ratings"
+  intro="Every club on one Elo scale, so clubs from different leagues can be compared directly: is Benfica better than Brighton?"
+  tab={`${clubs.length} clubs on one scale`}
+>
+  <div class="ratings">
+    <section class="intro">
+      <p>
+        Each league sits at its own baseline, 1500 + offset, with the Premier League at 1500. The offsets start from UEFA's
+        country coefficients and learn from every European match between two leagues, and a club's own European results
+        move its rating too (<a
+          href="https://github.com/hphillips9/football-analysis/blob/main/notebooks/21_league_strength_elo.ipynb"
+          >notebook 21</a
+        >).
+      </p>
+      <p class="note">
+        Clubs from outside the {numberWord(domesticLeagues.length)} modelled leagues (Celtic, Club Brugge, Red Star…) are rated from their Champions
+        League, Europa League and Conference League matches alone, so their ratings are <b>less certain</b>. They're marked
+        with a *.
+      </p>
+    </section>
+
+    <section aria-labelledby="scale">
+      <h2 id="scale">Every club on one scale</h2>
+      <SharedRatings
+        client:visible
+        clubs={clubs}
+        leagues={domesticLeagues.map((c) => ({ div: c.div, name: c.name }))}
+        outsideLabel={outside}
+      />
+      <p class="note">
+        "League Elo" is the rating within the club's own league, the one the match predictions use (a 1500 average). Each
+        league's page has its own ratings: {
+          domesticLeagues.map((c, i) => (
+            <>
+              {i > 0 && ", "}
+              <a href={leagueHref(c.slug, { key: "ratings", label: "Ratings", path: "ratings" })}>{c.name}</a>
+            </>
+          ))
+        }.
+      </p>
+    </section>
+
+    <section aria-labelledby="history">
+      <h2 id="history">A club's rating over the last year</h2>
+      <script type="application/json" id="history-data" set:html={pageJson(historyData)} />
+      <RatingHistory
+        client:visible
+        dataId="history-data"
+        groups={groups}
+        initial={clubs.slice(0, 3).map((c) => c.team)}
+        from={eloHistory.from}
+      />
+    </section>
+
+    <section aria-labelledby="offsets">
+      <h2 id="offsets">League offsets over time</h2>
+      <p class="note">
+        How far each league's baseline sits below the Premier League's. They move when the UEFA coefficients update at the
+        start of a season and with every European match between two of the leagues. Each season is drawn separately: the
+        coefficient-based part steps at the start of a season.
+      </p>
+      <script type="application/json" id="offsets-data" set:html={pageJson(offsetsData)} />
+      <OffsetsChart client:visible dataId="offsets-data" leagues={offsetLeagues} />
+      <table class="offsets">
+        <caption>Offsets now</caption>
+        <thead>
+          <tr>
+            <th scope="col">League</th>
+            <th scope="col" class="num">Offset</th>
+            <th scope="col" class="num">Baseline</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            currentOffsets.map((o) => (
+              <tr>
+                <th scope="row">
+                  <span class="lg">
+                    <i style={`background: var(--series-${slot.get(o.div)! + 1})`} aria-hidden="true" />
+                    {o.name}
+                  </span>
+                </th>
+                <td class="num">{signed(o.offset, 1)}</td>
+                <td class="num">{Math.round(1500 + o.offset)}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+      <p class="note">Updated {formatUpdated(elo.generated)}.</p>
+    </section>
+  </div>
+</Shell>
+
+<style>
+  .ratings {
+    display: grid;
+    gap: 44px;
+    max-width: 1040px;
+  }
+
+  section {
+    display: grid;
+    gap: 12px;
+    min-width: 0;
+  }
+
+  .intro p {
+    max-width: 70ch;
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0;
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 22px;
+  }
+
+  .note {
+    max-width: 70ch;
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .note b,
+  .note a,
+  .intro a {
+    color: var(--text);
+  }
+
+  .offsets {
+    max-width: 420px;
+    border-collapse: collapse;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    font-size: 15px;
+  }
+
+  .offsets caption {
+    padding-bottom: 6px;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .offsets th,
+  .offsets td {
+    padding: 7px 12px;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+  }
+
+  .offsets thead th {
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .offsets tbody th {
+    font-weight: 600;
+  }
+
+  .offsets .lg {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .offsets i {
+    display: block;
+    width: 14px;
+    height: 3px;
+  }
+
+  .offsets .num {
+    text-align: right;
+  }
+</style>

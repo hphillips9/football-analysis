@@ -1,0 +1,48 @@
+.charts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px 40px;
+}
+
+.charts section:last-child {
+  grid-column: 1 / -1;
+}
+
+.charts h3 {
+  margin: 0 0 8px;
+  font-weight: 800;
+  font-stretch: 80%;
+  font-size: 17px;
+}
+
+.big {
+  margin: 0 0 6px;
+  font-weight: 800;
+  font-stretch: 70%;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.big[data-tone="pos"],
+.money[data-tone="pos"] {
+  color: var(--pos);
+}
+
+.big[data-tone="neg"],
+.money[data-tone="neg"] {
+  color: var(--neg);
+}
+
+.tables {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 32px 40px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .charts,
+  .tables {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

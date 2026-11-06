@@ -1,0 +1,82 @@
+---
+/**
+ * Phone navigation between competitions: a header button opening a bottom
+ * sheet. A native modal <dialog> (P7-11; it replaced a React Aria island
+ * that cost ~27 KB gz plus React on every phone page): showModal() makes the
+ * page behind it inert, Escape closes it, and focus returns to the button.
+ * A tap on the backdrop or the Close button closes it too.
+ *
+ * The script is bundled once and listens on `document`, so it keeps working
+ * after <ClientRouter /> swaps the page.
+ */
+import styles from "./LeagueSheet.module.css";
+
+export interface SheetItem {
+  slug: string;
+  name: string;
+  href: string;
+  /** One-line record, e.g. "54.1% right". */
+  note: string;
+}
+
+interface Props {
+  /** Button text: the current league's name, or "Leagues" off league pages. */
+  label: string;
+  /** The current league's slug (its button gets a swatch), if any. */
+  current?: string;
+  items: SheetItem[];
+  homeHref: string;
+}
+
+const { label, current, items, homeHref } = Astro.props;
+---
+
+<button type="button" class={styles.button} data-league={current} data-sheet-open aria-haspopup="dialog">
+  {current && <span class="swatch" aria-hidden="true" />}
+  <span>{label}</span>
+  <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
+    <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"></path>
+  </svg>
+</button>
+<dialog class={styles.sheet} aria-labelledby="sheet-title" data-sheet>
+  <div class={styles.body}>
+    <div class={styles.grab} aria-hidden="true"></div>
+    <div class={styles.head}>
+      <h2 id="sheet-title" class={styles.title}>Competitions</h2>
+      <button type="button" class={styles.close} data-sheet-close>Close</button>
+    </div>
+    <ul class={styles.grid}>
+      {
+        items.map((item) => (
+          <li>
+            <a class={styles.item} href={item.href} data-league={item.slug} aria-current={item.slug === current ? "page" : undefined}>
+              <span class="swatch" aria-hidden="true" />
+              <b>{item.name}</b>
+              <small>{item.note}</small>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <a class={styles.home} href={homeHref}>Home: about the site and every league</a>
+  </div>
+</dialog>
+
+<script>
+  document.addEventListener("click", (event) => {
+    const target = event.target as Element;
+    const sheet = document.querySelector<HTMLDialogElement>("dialog[data-sheet]");
+    if (!sheet) return;
+    if (target.closest("[data-sheet-open]")) {
+      sheet.showModal();
+    } else if (target === sheet || target.closest("[data-sheet-close]")) {
+      // The dialog element itself is only the target on a backdrop tap:
+      // .body fills the whole sheet
+      sheet.close();
+    }
+  });
+  // Don't carry an open sheet into the next page's snapshot
+  document.addEventListener("astro:before-swap", () => {
+    document.querySelector<HTMLDialogElement>("dialog[data-sheet]")?.close();
+  });
+</script>

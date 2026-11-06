@@ -1,0 +1,39 @@
+---
+/**
+ * /{c}/gameweeks/: Results. The page is one island (GameweekResults),
+ * server-rendered at the latest gameweek.
+ */
+import type { LeagueData } from "../../lib/data";
+import GameweekResults from "./GameweekResults";
+import { toResultBets } from "./resultBets";
+
+interface Props {
+  data: LeagueData;
+}
+
+const { data } = Astro.props;
+const { competition: comp } = data;
+---
+
+<p class="lede">Every gameweek's predictions and how they turned out.</p>
+{
+  data.bets.length ? (
+    <GameweekResults
+      client:load
+      league={comp.slug}
+      leagueName={comp.name}
+      bets={toResultBets(data.bets)}
+      gameweeks={data.stats?.byGameweek ?? []}
+    />
+  ) : (
+    <p class="lede">No {comp.name} predictions yet.</p>
+  )
+}
+
+<style>
+  .lede {
+    max-width: 60ch;
+    margin: 0 0 18px;
+    color: var(--muted);
+  }
+</style>

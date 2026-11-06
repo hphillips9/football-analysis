@@ -1,0 +1,62 @@
+---
+/**
+ * A set of fixtures as day headings ("Friday 6 November") with a card list
+ * under each (plan §3 V1). Static HTML: the cards expand natively.
+ */
+import { byDay } from "../../lib/fixtures";
+import { formatKickoff } from "../../lib/format";
+import type { Fixture } from "../../lib/schema";
+import FixtureCard, { FixtureList } from "./FixtureCard";
+
+interface Props {
+  fixtures: Fixture[];
+  /** Heading level for the days (default 3). */
+  level?: 2 | 3 | 4;
+  /** Prefix for each list's accessible name, e.g. "Premier League". */
+  label?: string;
+}
+
+const { fixtures, level = 3, label } = Astro.props;
+const days = byDay(fixtures);
+const Heading = `h${level}` as const;
+
+// The fill animation staggers across the whole page, not per day
+let index = 0;
+const groups = days.map((d) => {
+  const start = index;
+  index += d.fixtures.length;
+  return { ...d, start };
+});
+---
+
+<div class="days">
+  {
+    groups.map((day) => {
+      const name = formatKickoff(day.fixtures[0]!.kickoff, "dayLong");
+      return (
+        <section class="day">
+          <Heading class="day-name">{name}</Heading>
+          <FixtureList label={label ? `${label}, ${name}` : name}>
+            {day.fixtures.map((f, i) => (
+              <FixtureCard fixture={f} index={day.start + i} />
+            ))}
+          </FixtureList>
+        </section>
+      );
+    })
+  }
+</div>
+
+<style>
+  .days {
+    display: grid;
+    gap: 22px;
+  }
+
+  .day-name {
+    margin: 0 0 8px;
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 17px;
+  }
+</style>

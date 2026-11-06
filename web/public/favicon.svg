@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <title>Football Predictor</title>
+  <!-- The brand mark: home / draw / away bars, as in the header -->
+  <rect width="32" height="32" rx="6" fill="#16181D"/>
+  <rect x="4" y="11" width="11" height="10" fill="#5A8EEA"/>
+  <rect x="15" y="11" width="6" height="10" fill="#8F959F"/>
+  <rect x="21" y="11" width="7" height="10" fill="#D8791C"/>
+</svg>

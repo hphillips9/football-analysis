@@ -1,0 +1,341 @@
+---
+/**
+ * /{c}/track-record/: Record (plan §3 V5, V6, V7 + tables).
+ *
+ *   scoreboard        settled bets, won-lost, profit, ROI
+ *   V5                profit and loss by gameweek + running total
+ *   V6                bet by bet
+ *   best / worst      biggest wins, most confident misses
+ *   V7                calibration
+ *   by pick           home / draw / away picks: count, right, profit
+ *   every bet         grouped by gameweek, collapsed, with a filter
+ *
+ * Static HTML except the charts and the every-bet table (islands that
+ * hydrate when they scroll into view).
+ */
+import type { LeagueData } from "../../lib/data";
+import { formatMatchDate, gameweekSpan, resultName, signed } from "../../lib/format";
+import { hasResults } from "../../lib/schema";
+import ScoreStrip, { toneOf, type ScoreItem } from "../kpi/ScoreStrip";
+import EveryBet from "./EveryBet";
+import RecordChart from "./RecordChart";
+import { toResultBets } from "./resultBets";
+
+interface Props {
+  data: LeagueData;
+}
+
+const { data } = Astro.props;
+const { competition: comp, stats } = data;
+const s = stats && hasResults(stats) ? stats : undefined;
+
+const score: ScoreItem[] = stats
+  ? [
+      { label: `settled bets, ${stats.pendingBets} pending`, value: String(stats.settledBets) },
+      { label: s ? `won, lost (${s.hitRate}% right)` : "won, lost", value: s ? `${s.wins}–${s.losses}` : "—" },
+      { label: s ? `profit on ${s.staked} staked` : "profit", value: s ? `${signed(s.profit)}u` : "—", tone: s ? toneOf(s.profit) : undefined },
+      { label: "return on stakes", value: s ? `${signed(s.roi, 1)}%` : "—", tone: s ? toneOf(s.roi) : undefined },
+    ]
+  : [];
+
+const leagueProps = { league: comp.slug, leagueName: comp.name };
+// Short round label: GW12 in a league, MD4 in a cup
+const round = comp.kind === "cup" ? "MD" : "GW";
+---
+
+<div class="record">
+  <section class="intro">
+    <p>
+      Every prediction is treated as a <b>1-unit flat-stake bet</b> at the best price on offer (Sky Bet, or the market
+      average when that's missing). Profit is in units. It's a check on the model, not betting advice.
+    </p>
+    {
+      stats && stats.backfilledBets > 0 && stats.backfilledGameweeks && (
+        <p class="note">
+          <span class="chip">Backfilled</span> This league joined the model mid-season, so its predictions for{" "}
+          {gameweekSpan(stats.backfilledGameweeks as [number, number])} ({stats.backfilledBets} matches) were made
+          afterwards. Each gameweek was scored by a model trained only on the matches before it kicked off, exactly as a
+          live prediction would have been, and settled at the same odds.
+        </p>
+      )
+    }
+    {score.length > 0 && <ScoreStrip label={`${comp.name} simulated stakes`} items={score} />}
+  </section>
+
+  {
+    !s ? (
+      <p class="note">No {comp.name} bet has settled yet. The record starts once the first gameweek is played.</p>
+    ) : (
+      <>
+        <section aria-labelledby="pl">
+          <h2 id="pl">Profit and loss</h2>
+          <p class="lede">Bars are each gameweek's result; the line is the running total.</p>
+          <RecordChart client:visible kind="season" gameweeks={s.byGameweek} {...leagueProps} />
+        </section>
+
+        <section aria-labelledby="bets">
+          <h2 id="bets">Bet by bet</h2>
+          <p class="lede">
+            The running total after every settled bet. On a wide screen each dot is a bet, green if it won and red if it
+            lost.
+          </p>
+          <RecordChart client:visible kind="bets" bankroll={s.bankroll} {...leagueProps} />
+        </section>
+
+        <div class="pair">
+          <section aria-labelledby="best">
+            <h2 id="best">Biggest wins</h2>
+            <ol class="notable">
+              {s.bestBets.map((b) => (
+                <li>
+                  <span class="match">{b.match}</span>
+                  <span class="detail">
+                    {resultName[b.pick]} at {b.pickProb}% · {round}{b.gameweek}, {formatMatchDate(b.date)}
+                  </span>
+                  {b.profit == null ? (
+                    <b class="money">unpriced</b>
+                  ) : (
+                    <b class="money" data-tone={toneOf(b.profit)}>
+                      {signed(b.profit)}u
+                    </b>
+                  )}
+                </li>
+              ))}
+            </ol>
+          </section>
+          <section aria-labelledby="worst">
+            <h2 id="worst">Most confident misses</h2>
+            <ol class="notable">
+              {s.worstBets.map((b) => (
+                <li>
+                  <span class="match">{b.match}</span>
+                  <span class="detail">
+                    {resultName[b.pick]} at {b.pickProb}%, finished {resultName[b.result] === "Draw" ? "a draw" : `${resultName[b.result]} win`} ·{" "}
+                    {round}
+                    {b.gameweek}, {formatMatchDate(b.date)}
+                  </span>
+                  {b.profit == null ? (
+                    <b class="money">unpriced</b>
+                  ) : (
+                    <b class="money" data-tone={toneOf(b.profit)}>
+                      {signed(b.profit)}u
+                    </b>
+                  )}
+                </li>
+              ))}
+            </ol>
+          </section>
+        </div>
+
+        <div class="pair">
+          <section aria-labelledby="cal">
+            <h2 id="cal">Is it well calibrated?</h2>
+            <p class="lede">
+              When the model gives its pick a 55% chance, does it come up about 55% of the time? Points on the dashed line
+              are perfectly calibrated. Dot size is the number of bets in that band, so small dots are mostly noise.
+            </p>
+            <RecordChart client:visible kind="calibration" bins={s.calibration} {...leagueProps} />
+          </section>
+
+          <section aria-labelledby="bypick">
+            <h2 id="bypick">By pick</h2>
+            <p class="lede">How each kind of pick has done.</p>
+            <table class="bypick">
+              <caption class="sr-only">{comp.name}: record by pick</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Pick</th>
+                  <th scope="col" class="num">Picks</th>
+                  <th scope="col" class="num">Right</th>
+                  <th scope="col" class="num">Hit rate</th>
+                  <th scope="col" class="num">Profit</th>
+                </tr>
+              </thead>
+              <tbody>
+                {s.byPick.map((p) => (
+                  <tr>
+                    <th scope="row">{p.label}</th>
+                    <td class="num">{p.bets}</td>
+                    <td class="num">{p.bets ? p.hits : "—"}</td>
+                    <td class="num">{p.hitRate == null ? "—" : `${p.hitRate}%`}</td>
+                    <td class="num">
+                      {p.bets ? (
+                        <span class="money" data-tone={toneOf(p.profit)}>
+                          {signed(p.profit)}u
+                        </span>
+                      ) : (
+                        "—"
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </>
+    )
+  }
+
+  {
+    data.bets.length > 0 && (
+      <section aria-labelledby="every">
+        <h2 id="every">Every bet</h2>
+        <EveryBet
+          client:visible
+          leagueName={comp.name}
+          bets={toResultBets(data.bets)}
+          gameweeks={stats?.byGameweek ?? []}
+        />
+      </section>
+    )
+  }
+</div>
+
+<style>
+  .record {
+    display: grid;
+    gap: 40px;
+    max-width: 1100px;
+  }
+
+  .intro {
+    display: grid;
+    gap: 12px;
+  }
+
+  .intro p {
+    max-width: 70ch;
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0 0 6px;
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 22px;
+  }
+
+  .lede,
+  .note {
+    max-width: 70ch;
+    margin: 0 0 12px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .chip {
+    padding: 1px 6px;
+    margin-right: 4px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: var(--tint);
+    color: var(--text);
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    align-items: start;
+  }
+
+  .notable {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
+  .notable li {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 2px 12px;
+    align-items: center;
+    padding: 10px 14px;
+  }
+
+  .notable li + li {
+    border-top: 1px solid var(--line);
+  }
+
+  .match {
+    font-weight: 700;
+  }
+
+  .detail {
+    grid-column: 1;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .notable .money {
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+
+  .money[data-tone="pos"] {
+    color: var(--pos);
+  }
+
+  .money[data-tone="neg"] {
+    color: var(--neg);
+  }
+
+  .bypick {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    font-size: 15px;
+  }
+
+  .bypick th,
+  .bypick td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+  }
+
+  .bypick thead th {
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .bypick .num {
+    text-align: right;
+  }
+
+  .bypick .money {
+    font-weight: 700;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 900px) {
+    .pair {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 40px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .bypick th,
+    .bypick td {
+      padding: 8px 8px;
+    }
+  }
+</style>

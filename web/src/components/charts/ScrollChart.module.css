@@ -1,0 +1,21 @@
+/* Its width never depends on its content (contain: inline-size): otherwise
+   a grid or flex parent grows to fit the widened chart, the scroller
+   measures as wide, the chart narrows again, and the two oscillate. */
+.outer {
+  min-width: 0;
+  max-width: 100%;
+  contain: inline-size;
+  overflow-x: auto;
+}
+
+.outer[data-scrolls] {
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  /* Fade the edges so it reads as scrollable */
+  mask-image: linear-gradient(to right, transparent, #000 16px, #000 calc(100% - 16px), transparent);
+  padding-bottom: 4px;
+}
+
+.outer[data-scrolls]:focus-visible {
+  outline-offset: 2px;
+}

@@ -1,0 +1,577 @@
+---
+/**
+ * The app shell (P7-05, from the P7-01 mockups): header, league rail,
+ * scoreboard band, section tabs, footer, and on phones the league sheet and
+ * a bottom tab bar. Every page renders inside it.
+ *
+ *   league pages   <Shell league="e0" section="fixtures">
+ *   site pages     <Shell site="matchday" heading="Matchday">
+ *
+ * Links between pages are plain <a>s; <ClientRouter /> (in Base) turns them
+ * into view transitions where the browser supports them.
+ *
+ * Stale data (P7-14): a competition the last pipeline run couldn't update
+ * (run_status.json, isStale) gets a badge in its band and a line in the
+ * footer; site pages list every stale competition in the footer. A small
+ * script also flags the whole site once the export is over two days old
+ * (the daily job stopped deploying), which a build-time check can't see.
+ */
+import LeagueSheet, { type SheetItem } from "../components/shell/LeagueSheet.astro";
+import { competition, competitions, forLeague, leagues, runStatus } from "../lib/data";
+import { formatUpdated, kickoffRange, signed } from "../lib/format";
+import { href } from "../lib/href";
+import { SITE_LINKS, leagueHref, roundName, sectionsFor, siteHref, type SectionKey, type SiteKey } from "../lib/routes";
+import { hasResults, isStale } from "../lib/schema";
+import Base from "./Base.astro";
+
+type Props =
+  | { title: string; league: string; section: SectionKey; site?: never; heading?: never; intro?: never; tab?: never; noindex?: boolean }
+  | { title: string; site: SiteKey | "none"; heading: string; intro?: string; tab?: string; league?: never; section?: never; noindex?: boolean };
+
+const props = Astro.props;
+const comp = props.league ? competition(props.league) : undefined;
+const data = comp ? forLeague(comp.div) : undefined;
+const sections = comp ? sectionsFor(comp.kind) : [];
+
+// The band's numbers: the season's record against always backing the home side
+const stats = data?.stats;
+const score =
+  stats && hasResults(stats)
+    ? [
+        { value: `${stats.hitRate.toFixed(1)}%`, label: "picks right" },
+        { value: `${stats.baselineHitRate.toFixed(1)}%`, label: "if always home" },
+        { value: signed(stats.edge, 1), label: "points better" },
+        { value: `${stats.wins}–${stats.losses}`, label: "won, lost" },
+      ]
+    : [];
+
+// The gameweek tab: this week's round, or the last one with bets ("Matchday" in a cup)
+const roundLabel = roundName(comp?.kind ?? "league");
+const gameweek = data?.fixtures[0]?.gameweek ?? data?.bets.at(-1)?.gameweek;
+const gameweekDates = data ? kickoffRange(data.fixtures.map((f) => f.kickoff)) : "";
+
+const sheetItems: SheetItem[] = competitions.map((c) => {
+  const s = forLeague(c.div).stats;
+  return {
+    slug: c.slug,
+    name: c.name,
+    href: leagueHref(c.slug),
+    note: s && hasResults(s) ? `${s.hitRate.toFixed(1)}% right` : "No settled picks yet",
+  };
+});
+
+// Stale: this competition on its pages, every one (that has pages) elsewhere
+const staleHere = comp ? isStale(data?.run) : false;
+const staleNames = comp ? [] : competitions.filter((c) => isStale(runStatus.competitions[c.div])).map((c) => c.name);
+
+const pageTitle = `${props.title} | Football Predictor`;
+const current = (key: string, active: string | undefined) => (key === active ? "page" : undefined);
+---
+
+<Base title={pageTitle} league={comp?.slug} noindex={props.noindex}>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href={href()} aria-current={current("home", props.site)}>
+        <span class="brand-mark" aria-hidden="true"><i class="h"></i><i class="d"></i><i class="a"></i></span>
+        <span class="brand-name">Football Predictor</span>
+      </a>
+      <nav class="sitenav" aria-label="Site">
+        {
+          SITE_LINKS.filter((l) => l.key !== "home").map((l) => (
+            <a href={siteHref(l)} aria-current={current(l.key, props.site)}>
+              {l.label}
+            </a>
+          ))
+        }
+      </nav>
+      <div class="sheet-slot">
+        <LeagueSheet
+          label={comp?.name ?? "Leagues"}
+          current={comp?.slug}
+          items={sheetItems}
+          homeHref={href()}
+        />
+      </div>
+    </div>
+  </header>
+
+  <nav class="rail" aria-label="Competitions">
+    <div class="wrap">
+      {
+        competitions.map((c) => (
+          <a class="chip" href={leagueHref(c.slug)} data-league={c.slug} aria-current={current(c.slug, comp?.slug)}>
+            <span class="swatch" aria-hidden="true" />
+            {c.name}
+          </a>
+        ))
+      }
+    </div>
+  </nav>
+
+  <section class="band" aria-labelledby="page-heading">
+    <div class="wrap">
+      <h1 id="page-heading">{comp?.name ?? props.heading}</h1>
+      {props.intro && <p class="intro">{props.intro}</p>}
+      {
+        score.length > 0 && (
+          <dl class="score">
+            {score.map((s) => (
+              <div>
+                <dt>{s.label}</dt>
+                <dd>{s.value}</dd>
+              </div>
+            ))}
+          </dl>
+        )
+      }
+      {comp && !score.length && <p class="score-empty">No settled picks yet this season.</p>}
+      {
+        comp && gameweek != null && (
+          <p class="gw">
+            {roundLabel} {gameweek} {gameweekDates && <small>{gameweekDates}</small>}
+          </p>
+        )
+      }
+      {props.tab && <p class="gw">{props.tab}</p>}
+      {
+        staleHere && (
+          <p class="stale">
+            <span class="stale-badge">Not updated</span> The last daily run couldn't fetch new {comp?.name} results, so
+            this page may be behind.
+          </p>
+        )
+      }
+    </div>
+  </section>
+
+  {
+    comp && (
+      <nav class="tabs" aria-label="Sections">
+        <div class="wrap">
+          {sections.map((s) => (
+            <a href={leagueHref(comp.slug, s)} aria-current={current(s.key, props.section)}>
+              {s.label}
+            </a>
+          ))}
+        </div>
+      </nav>
+    )
+  }
+
+  <main id="content" class="wrap content" tabindex="-1">
+    <slot />
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>
+        Independent fan-made statistics project. Not affiliated with, endorsed by or sponsored by the Premier League,
+        LaLiga, DFL, Lega Serie A, LFP, Eredivisie CV, Liga Portugal, UEFA or any club. Competition and club names are trade
+        marks of their owners and are used only to identify them.
+      </p>
+      <p>
+        Predictions and simulated stakes are a hobby model's record, not betting advice. Updated {
+          formatUpdated(leagues.generated)
+        }.
+        <span class="stale-badge" data-age-badge data-generated={leagues.generated} hidden>
+          Not updated for over two days
+        </span>
+      </p>
+      {
+        staleNames.length > 0 && (
+          <p class="stale-note">
+            <span class="stale-badge">Not updated</span> The last daily run couldn't fetch new results for{" "}
+            {staleNames.join(", ")}; their pages show the latest data we have.
+          </p>
+        )
+      }
+    </div>
+  </footer>
+
+  <nav class="tabbar" aria-label={comp ? "Sections" : "Site"}>
+    {
+      comp
+        ? sections.map((s) => (
+            <a href={leagueHref(comp.slug, s)} aria-current={current(s.key, props.section)}>
+              {s.label}
+            </a>
+          ))
+        : SITE_LINKS.map((l) => (
+            <a href={siteHref(l)} aria-current={current(l.key, props.site)}>
+              {l.label}
+            </a>
+          ))
+    }
+  </nav>
+</Base>
+
+<script>
+  // The export's age, checked in the browser: if the daily job stops
+  // deploying, the built pages can't know they're old. Runs on every page,
+  // including after a <ClientRouter /> swap.
+  const STALE_AFTER_MS = 2 * 86_400_000;
+
+  document.addEventListener("astro:page-load", () => {
+    for (const badge of document.querySelectorAll<HTMLElement>("[data-age-badge]")) {
+      const generated = Date.parse(badge.dataset.generated ?? "");
+      badge.hidden = !(Date.now() - generated > STALE_AFTER_MS);
+    }
+  });
+</script>
+
+<style>
+  .skip {
+    position: absolute;
+    left: 8px;
+    top: -48px;
+    z-index: 30;
+    padding: 8px 12px;
+    background: var(--surface);
+    border-radius: 4px;
+    font-weight: 700;
+  }
+  .skip:focus {
+    top: 8px;
+  }
+
+  /* Header */
+  .top {
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+  }
+  .top .wrap {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    height: 56px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    font-stretch: 75%;
+    font-size: 21px;
+    letter-spacing: -0.01em;
+  }
+  .brand-mark {
+    display: flex;
+    width: 26px;
+    height: 12px;
+  }
+  .brand-mark i {
+    display: block;
+    height: 100%;
+  }
+  .brand-mark .h { width: 46%; background: var(--home); }
+  .brand-mark .d { width: 24%; background: var(--draw); }
+  .brand-mark .a { width: 30%; background: var(--away); }
+  .sitenav {
+    margin-left: auto;
+    display: flex;
+    gap: 22px;
+    font-weight: 600;
+  }
+  .sitenav a {
+    text-decoration: none;
+    color: var(--muted);
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+  }
+  .sitenav a:hover,
+  .sitenav a[aria-current="page"] {
+    color: var(--text);
+  }
+  .sitenav a[aria-current="page"] {
+    border-bottom-color: var(--site);
+  }
+  .sheet-slot {
+    display: none;
+  }
+
+  /* League rail */
+  .rail {
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+  }
+  .rail .wrap {
+    display: flex;
+    gap: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    overflow-x: auto;
+  }
+  .chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px 6px 8px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 700;
+    font-stretch: 80%;
+    font-size: 15px;
+    white-space: nowrap;
+    color: var(--muted);
+  }
+  .chip:hover {
+    background: var(--tint);
+    color: var(--text);
+  }
+  /* Band fill plus an accent underline: in dark mode the band alone barely
+     separates from the surface (P7-04), so the underline carries the state */
+  .chip[aria-current="page"] {
+    background: var(--lg-band);
+    color: var(--lg-on-band);
+    box-shadow: inset 0 -3px 0 var(--lg-accent);
+  }
+
+  /* Scoreboard band */
+  .band {
+    background: var(--lg-band);
+    color: var(--lg-on-band);
+    overflow: hidden;
+  }
+  .band .wrap {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 0 24px;
+    padding-top: 28px;
+  }
+  .band h1 {
+    margin: 0;
+    font-weight: 850;
+    font-stretch: 62%;
+    font-size: clamp(48px, 8.5vw, 112px);
+    line-height: 0.82;
+    letter-spacing: -0.015em;
+    padding-bottom: 22px;
+  }
+  .intro {
+    grid-column: 1 / -1;
+    max-width: 58ch;
+    margin: 0;
+    padding-bottom: 18px;
+    font-size: 18px;
+    line-height: 1.5;
+    opacity: 0.88;
+  }
+  .score {
+    display: flex;
+    gap: 28px;
+    margin: 0;
+    padding-bottom: 22px;
+  }
+  .score div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .score dd {
+    margin: 0;
+    font-weight: 800;
+    font-stretch: 70%;
+    font-size: 34px;
+    line-height: 1;
+  }
+  .score dt {
+    font-size: 13px;
+    opacity: 0.8;
+    margin-top: 4px;
+  }
+  .score-empty {
+    margin: 0;
+    padding-bottom: 22px;
+    opacity: 0.85;
+  }
+  .gw {
+    grid-column: 1 / -1;
+    justify-self: start;
+    margin: 0 0 0 -24px;
+    background: var(--lg-accent);
+    color: var(--lg-on-accent);
+    padding: 8px 40px 8px 24px;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 22px) 100%, 0 100%);
+    font-weight: 800;
+    font-stretch: 80%;
+    display: flex;
+    gap: 14px;
+    align-items: baseline;
+  }
+  .gw small {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  /* Section tabs: page navigation, so links with aria-current, not an ARIA tablist */
+  .tabs {
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+  }
+  .tabs .wrap {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+  }
+  .tabs a {
+    padding: 14px 14px 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-stretch: 85%;
+    color: var(--muted);
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+  }
+  .tabs a:hover {
+    color: var(--text);
+  }
+  .tabs a[aria-current="page"] {
+    color: var(--text);
+    border-bottom-color: var(--lg-accent-text);
+  }
+
+  .content {
+    padding-top: 28px;
+    padding-bottom: 48px;
+    min-height: 40vh;
+  }
+  .content:focus {
+    outline: none;
+  }
+
+  .foot {
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+    padding: 20px 0 32px;
+  }
+  .foot p {
+    max-width: 90ch;
+    margin: 0 0 6px;
+  }
+
+  /* Stale data: site yellow, the same in both modes and on any band */
+  .stale-badge {
+    display: inline-block;
+    margin-right: 6px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    background: var(--site);
+    color: #1a1d23;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+  .stale-badge[hidden] {
+    display: none;
+  }
+  .foot .stale-badge {
+    margin: 0 0 0 6px;
+  }
+  .foot .stale-note .stale-badge {
+    margin: 0 6px 0 0;
+  }
+  .stale {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 0 0 16px;
+    font-size: 14px;
+  }
+
+  .tabbar {
+    display: none;
+  }
+
+  @media (max-width: 760px) {
+    .sitenav,
+    .rail,
+    .tabs {
+      display: none;
+    }
+    .sheet-slot {
+      display: block;
+      margin-left: auto;
+    }
+    .top .wrap {
+      height: 52px;
+      gap: 12px;
+    }
+    .brand-name {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+    .brand-mark {
+      width: 30px;
+      height: 14px;
+    }
+    .band .wrap {
+      grid-template-columns: 1fr;
+      padding-top: 20px;
+    }
+    .band h1 {
+      padding-bottom: 14px;
+    }
+    .intro {
+      font-size: 16px;
+    }
+    .score {
+      gap: 0;
+      justify-content: space-between;
+      padding-bottom: 16px;
+    }
+    .score dd {
+      font-size: 26px;
+    }
+    .score dt {
+      font-size: 12px;
+    }
+    .gw {
+      margin-left: -16px;
+      padding-left: 16px;
+    }
+    .content {
+      padding-top: 18px;
+      padding-bottom: calc(var(--tabbar) + 32px);
+    }
+    .foot {
+      padding-bottom: calc(var(--tabbar) + 24px);
+    }
+    .tabbar {
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-auto-flow: column;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: calc(var(--tabbar) + env(safe-area-inset-bottom));
+      padding-bottom: env(safe-area-inset-bottom);
+      z-index: 10;
+      background: var(--surface);
+      border-top: 1px solid var(--line);
+    }
+    .tabbar a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-weight: 700;
+      font-stretch: 80%;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 3px solid transparent;
+    }
+    .tabbar a[aria-current="page"] {
+      color: var(--text);
+      border-top-color: var(--lg-accent-text);
+    }
+  }
+</style>

@@ -1,0 +1,69 @@
+/* The figure is a size container: its children switch to the compact
+   height below 480 px of chart width, matching ChartContext.compact. */
+.figure {
+  container-type: inline-size;
+  margin: 0;
+  min-width: 0;
+}
+
+.box {
+  position: relative;
+  height: var(--h);
+}
+
+@container (max-width: 479.98px) {
+  .box {
+    height: var(--h-compact);
+  }
+}
+
+.frame {
+  height: 100%;
+  color: var(--text);
+}
+
+/* A horizontal drag moves the tip; a vertical one scrolls the page */
+.frame[data-scrub] {
+  touch-action: pan-y;
+}
+
+/* Plot's own stylesheet makes the tip background white; follow the theme.
+   (.frame svg outranks Plot's single-class rule.) */
+.frame svg {
+  --plot-background: var(--surface);
+  display: block;
+  max-width: none;
+}
+
+.skeleton {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 3px;
+  background: var(--tint);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.skeleton[data-status="loading"] {
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.55;
+  }
+}
+
+.caption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton[data-status="loading"] {
+    animation: none;
+  }
+}

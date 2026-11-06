@@ -97,7 +97,7 @@ def run_week(refresh_current=True, verbose=False, predict=True, divs=None):
             print("\n--no-predict: skipping the next-round predictions.")
 
         step(6, "Export website data")
-        export_web()
+        export_web(status=status.competitions)
 
     finally:
         print()

@@ -1,0 +1,346 @@
+---
+/**
+ * Method (/about/, P7-10): how a prediction is made and how the model did,
+ * with the Observable about page's content and numbers.
+ *
+ *   How a prediction is made     long-form copy + the features table
+ *   How it scored                summary table (every competition + all together),
+ *                                then per competition: strip, V10, season table
+ *   Would it have made money?    strip + V11 (swipe carousel on a phone)
+ *   Is it well calibrated?       V7 for all competitions or one, this season
+ *   Which outcomes it backs      by pick, same choice
+ *   How it stays up to date
+ *
+ * League counts and names come from the data: the Observable copy still
+ * said "top five" after Portugal and the Netherlands joined (P2-02).
+ */
+import BacktestExplorer, { type BacktestCompetition, type GameweekData } from "../components/method/BacktestExplorer";
+import BacktestSummary, { type SummaryRow } from "../components/method/BacktestSummary";
+import CalibrationExplorer, { type CalibrationChoice } from "../components/method/CalibrationExplorer";
+import Shell from "../layouts/Shell.astro";
+import { backtest, competitions, domesticLeagues, leagues, stats, table } from "../lib/data";
+import { numberWord } from "../lib/fixtures";
+import { formatUpdated } from "../lib/format";
+import { pageJson } from "../lib/pageData";
+
+const nameOf = new Map(competitions.map((c) => [c.div, c.name]));
+const listOf = (names: string[]) => names.join(", ").replace(/, ([^,]*)$/, " and $1");
+
+const ownModelDivs = backtest.model.ownModel;
+const ownModel = listOf(ownModelDivs.map((div) => nameOf.get(div) ?? div));
+const pooledDivs = Object.keys(backtest.competitions).filter((div) => !ownModelDivs.includes(div));
+const pooledLeagues = listOf(pooledDivs.map((div) => nameOf.get(div) ?? div));
+const leagueCount = numberWord(domesticLeagues.length);
+
+// A floor for "over N matches": the test seasons plus this season so far
+// (the first training season isn't in the web data, so the real total is higher)
+const playedThisSeason = Object.values(table.byCompetition).reduce((sum, t) => sum + t.playedFixtures, 0);
+const matchesFloor = Math.floor(((backtest.pooled.overall?.matches ?? 0) + playedThisSeason) / 1000) * 1000;
+const seasonCount = backtest.pooled.seasons.length;
+const testSeasons = backtest.pooled.seasons.map((s) => s.season);
+const testSpan = testSeasons.length ? `${testSeasons[0]}–${testSeasons.at(-1)}` : "";
+
+// Backtest: summary rows, then each competition's seasons (props) and gameweeks (JSON block)
+const btCompetitions = Object.entries(backtest.competitions).map(([div, c]) => ({ div, ...c }));
+const summary: SummaryRow[] = [
+  ...btCompetitions.filter((c) => c.overall).map((c) => ({ key: c.div, competition: c.name, ...c.overall! })),
+  ...(backtest.pooled.overall
+    ? [{ key: "all", competition: `All ${leagueCount} leagues`, ...backtest.pooled.overall }]
+    : []),
+];
+
+const explorer: BacktestCompetition[] = btCompetitions.map((c) => ({
+  div: c.div,
+  name: c.name,
+  overall: c.overall,
+  seasons: c.seasons.map(({ byGameweek: _, trainSeasons: __, ...s }) => s),
+}));
+const gameweekData: GameweekData = Object.fromEntries(
+  btCompetitions.map((c) => [
+    c.div,
+    Object.fromEntries(
+      c.seasons.map((s) => [
+        s.season,
+        s.byGameweek.flatMap((g) => [g.gameweek, g.bets, g.hits, g.profit, g.cumulativeProfit]),
+      ]),
+    ),
+  ]),
+);
+const initial = backtest.competitions[leagues.default] ? leagues.default : (btCompetitions[0]?.div ?? "");
+
+// Calibration and by pick: all competitions, then each
+const calibrationChoices: CalibrationChoice[] = [
+  { key: "all", name: "All competitions", ...pick(stats.overall) },
+  ...Object.entries(stats.byCompetition).map(([div, s]) => ({ key: div, name: s.name, ...pick(s) })),
+];
+function pick(s: typeof stats.overall) {
+  return { settledBets: s.settledBets, calibration: s.calibration, byPick: s.byPick };
+}
+---
+
+<Shell
+  title="Method"
+  site="method"
+  heading="Method"
+  intro={`A model that predicts results in ${leagueCount} European leagues, updated automatically every day. This page is how it works and how well it has done.`}
+  tab={testSpan ? `Backtest ${testSpan}` : undefined}
+>
+  <div class="method">
+    <section class="prose" aria-labelledby="how">
+      <h2 id="how">How a prediction is made</h2>
+
+      <p>
+        <b>The data.</b> Match results and bookmaker odds come from{" "}
+        <a href="https://www.football-data.co.uk/">football-data.co.uk</a>; expected-goals (xG) figures for every match
+        come from <a href="https://www.fotmob.com/">FotMob</a>, which uses Opta's model (the xG shown on BBC and Sky),
+        with <a href="https://understat.com/">Understat</a> as a backup. Upcoming fixtures come from{" "}
+        <a href="https://www.football-data.org/">football-data.org</a>. Five past seasons plus the current one, over{" "}
+        {matchesFloor.toLocaleString("en-GB")} matches across the {listOf(domesticLeagues.map((c) => c.name))}.
+      </p>
+
+      <p>
+        <b>The rating.</b> Each team has an <b>Elo rating</b>, starting at 1500. After a match the winner takes points
+        from the loser (up to 35, scaled by how surprising the result was) and a draw nudges the higher-rated team down.
+        Ratings carry across seasons, including for promoted teams, which come back on the rating they last had (a team
+        new to the data starts at 1500). Restarting promoted teams lower was tested in every league, but the gain was too
+        small to keep. When ratings are updated, the home team gets a flat <b>+130</b> for home advantage. Teams from
+        different leagues never play each other here, so each league's ratings are on their own scale.
+      </p>
+
+      <p><b>The features.</b> Three numbers go into the model for each match:</p>
+
+      <table class="features">
+        <caption class="sr-only">The model's three features</caption>
+        <thead>
+          <tr><th scope="col">Feature</th><th scope="col">What it is</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Elo gap</th><td>home Elo − away Elo</td></tr>
+          <tr>
+            <th scope="row">xG difference, last 5</th>
+            <td>each team's (xG for − xG against) over its last five games, home minus away</td>
+          </tr>
+          <tr><th scope="row">Goals per game difference</th><td>same idea, season-to-date actual goals</td></tr>
+        </tbody>
+      </table>
+
+      <p>
+        The model learns home advantage for itself, so it isn't added to this feature. The "Elo gap" shown next to each
+        prediction does include the +130, so it reads as how far ahead the home side is once home advantage is counted.
+      </p>
+
+      <p>
+        <b>The model.</b> A logistic regression maps those three features to Home / Draw / Away probabilities, wrapped in
+        probability calibration so a stated 60% really means 60%. It is retrained on all available history each run, in
+        two versions:
+      </p>
+      <ul>
+        <li>
+          The <b>{ownModel}</b> has its own model, trained on its matches alone. Pooling the leagues didn't make its
+          predictions any better or worse, so it stays on the model it started with.
+        </li>
+        <li>
+          The <b>{pooledLeagues}</b> share one <b>pooled model</b>, trained on every league's matches together, with a
+          0/1 indicator for each league so it can learn each one's own home/draw/away balance. Learning from
+          {` ${numberWord(Object.keys(backtest.competitions).length)}`} leagues at once made their predictions measurably
+          better than one model per league.
+        </li>
+      </ul>
+
+      <p>
+        <b>Each gameweek.</b> Upcoming fixtures are fetched automatically, the model scores them, and every pick is
+        recorded as a 1-unit flat-stake bet at the best available price (Sky Bet, or the market average if that's
+        missing). Results and profit are filled in automatically once the games are played.
+      </p>
+
+      <p>
+        <b>The projected table</b> on each league's Table tab scores every fixture not yet played by expected points (3
+        × P(win) + 1 × P(draw)) and adds them to the current standings. Its projected goal difference comes from a
+        separate Dixon-Coles goal model (team attack/defence ratings fit on match results, predicting expected goals
+        rather than win/draw/loss): a display-only addition for those tables, no part of the H/D/A prediction model
+        above.
+      </p>
+    </section>
+
+    <section class="wide" aria-labelledby="scored">
+      <h2 id="scored">How it scored on past seasons</h2>
+      <p class="lede">
+        Each season was predicted by a model trained <b>only on the seasons before it</b>, with each league predicted by
+        the model it uses live. "Always home" (Base) is the accuracy of just predicting a home win every time; edge is
+        how many percentage points better the model did.
+      </p>
+      <BacktestSummary client:visible rows={summary} caption={`Backtest over ${numberWord(seasonCount)} seasons, by competition`} />
+      <p class="lede">Pick a competition to see it season by season.</p>
+      <script type="application/json" id="backtest-gameweeks" set:html={pageJson(gameweekData)} />
+      <BacktestExplorer client:visible competitions={explorer} initial={initial} dataId="backtest-gameweeks" />
+    </section>
+
+    <section class="wide" aria-labelledby="calibrated">
+      <h2 id="calibrated">Is it well calibrated?</h2>
+      <p class="lede">
+        When the model says its pick has a 55% chance, does it come up about 55% of the time? This is this season's bets
+        so far: the live ones, plus the earlier gameweeks of leagues that joined mid-season, which were predicted
+        afterwards using only the matches before each one. Points on the dashed line are perfectly calibrated. Dot size
+        is the number of bets in that band, so small dots are just noise.
+      </p>
+      <CalibrationExplorer client:visible choices={calibrationChoices} />
+      <p class="lede">
+        The model <b>almost never predicts a draw</b>, a well-known weakness of three-way football models and the main
+        thing left to improve. Venue-specific form and a few other features were tried and didn't help.
+      </p>
+    </section>
+
+    <section class="prose" aria-labelledby="uptodate">
+      <h2 id="uptodate">How it stays up to date</h2>
+      <p>
+        A scheduled job runs every morning. It fetches new results and xG, settles the outstanding bets, rebuilds the
+        dataset, predicts any new fixtures and refreshes this site. Each league runs separately, so a problem fetching one
+        doesn't hold up the others. Everything (the model, the data, this page) is in{" "}
+        <a href="https://github.com/hphillips9/football-analysis">one repository</a>.
+      </p>
+      <p class="updated">
+        Site data updated {formatUpdated(leagues.generated)}. Season backtest updated {formatUpdated(backtest.generated)}.
+      </p>
+    </section>
+
+    <section class="prose" aria-labelledby="credits">
+      <h2 id="credits">Credits and disclaimer</h2>
+      <p>
+        Results and odds come from <a href="https://www.football-data.co.uk/">football-data.co.uk</a>, fixtures from{" "}
+        <a href="https://www.football-data.org/">football-data.org</a>, expected goals from{" "}
+        <a href="https://www.fotmob.com/">FotMob</a> (Opta) with <a href="https://understat.com/">Understat</a> as a
+        backup, and UEFA country coefficients from <a href="https://kassiesa.net/uefa/">kassiesa.net</a>.
+      </p>
+      <p>
+        This is an independent fan-made statistics project. It is not affiliated with, endorsed by or sponsored by the
+        Premier League, LaLiga, DFL, Lega Serie A, LFP, Eredivisie CV, Liga Portugal, UEFA or any club. Competition and
+        club names are trade marks of their owners and are used only to identify them. The site uses no official logos
+        or crests; the colours and short marks for each league are its own.
+      </p>
+      <p>
+        Predictions and simulated stakes are a hobby model's record, not betting advice. If you gamble, set limits and
+        only stake what you can afford to lose.
+      </p>
+    </section>
+  </div>
+</Shell>
+
+<style>
+  .method {
+    display: grid;
+    gap: 56px;
+    max-width: 1040px;
+  }
+
+  section {
+    display: grid;
+    gap: 14px;
+    min-width: 0;
+  }
+
+  h2 {
+    margin: 0;
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 24px;
+  }
+
+  /* Long-form copy: a comfortable measure and line height */
+  .prose {
+    max-width: 68ch;
+    gap: 0;
+  }
+
+  .prose h2 {
+    margin-bottom: 14px;
+  }
+
+  .prose p,
+  .prose ul {
+    margin: 0 0 16px;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .prose ul {
+    padding-left: 22px;
+  }
+
+  .prose li + li {
+    margin-top: 8px;
+  }
+
+  .prose a {
+    text-underline-offset: 2px;
+  }
+
+  .lede {
+    max-width: 68ch;
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .lede b {
+    color: var(--text);
+  }
+
+  .features {
+    width: 100%;
+    margin: 4px 0 18px;
+    border-collapse: collapse;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .features th,
+  .features td {
+    padding: 9px 12px;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .features thead th {
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .features tbody th {
+    width: 34%;
+    font-weight: 700;
+  }
+
+  .updated {
+    color: var(--muted);
+    font-size: 14px !important;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 480px) {
+    .method {
+      gap: 44px;
+    }
+
+    .prose p,
+    .prose ul {
+      font-size: 16px;
+    }
+
+    .features th,
+    .features td {
+      padding: 8px;
+    }
+  }
+</style>
