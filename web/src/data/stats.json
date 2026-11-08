@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-07T14:30:50+00:00",
+  "generated": "2026-11-08T14:41:23+00:00",
   "overall": {
     "asOf": "2026-11-04",
     "totalBets": 797,
@@ -5226,16 +5226,6 @@
         "profit": 2.8
       },
       {
-        "div": "E0",
-        "gameweek": 5,
-        "date": "19/09/2026",
-        "match": "Tottenham Hotspur v Aston Villa",
-        "pick": "A",
-        "result": "A",
-        "pickProb": 41.3,
-        "profit": 2.6
-      },
-      {
         "div": "P1",
         "gameweek": 1,
         "date": "08/08/2026",
@@ -5243,6 +5233,16 @@
         "pick": "A",
         "result": "A",
         "pickProb": 36.4,
+        "profit": 2.6
+      },
+      {
+        "div": "E0",
+        "gameweek": 5,
+        "date": "19/09/2026",
+        "match": "Tottenham Hotspur v Aston Villa",
+        "pick": "A",
+        "result": "A",
+        "pickProb": 41.3,
         "profit": 2.6
       }
     ],

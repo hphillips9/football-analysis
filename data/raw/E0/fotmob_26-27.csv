@@ -90,4 +90,7 @@ MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
 5795501,2026-11-01,Liverpool,Arsenal,1.05,0.98
 5795503,2026-11-02,Newcastle United,Everton,1.29,2.34
 5795508,2026-11-06,Everton,Coventry City,1.43,1.21
-5795511,2026-11-07,Leeds United,Tottenham Hotspur,2.02,0.71
+5795511,2026-11-07,Leeds United,Tottenham Hotspur,1.96,0.72
+5795505,2026-11-07,Arsenal,Hull City,1.26,0.36
+5795509,2026-11-07,Fulham,Newcastle United,0.7,1.14
+5795513,2026-11-07,Nottingham Forest,Manchester City,1.06,1.76
