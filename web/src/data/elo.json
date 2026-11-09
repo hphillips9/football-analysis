@@ -1,233 +1,233 @@
 {
-  "generated": "2026-11-08T14:41:23+00:00",
+  "generated": "2026-11-09T17:57:09+00:00",
   "teams": [
     {
       "div": "E0",
       "team": "Arsenal",
-      "elo": 1905,
-      "rating": 1831,
+      "elo": 1906,
+      "rating": 1833,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "E0",
       "team": "Manchester City",
-      "elo": 1782,
-      "rating": 1709,
-      "country": "ENG",
-      "modelled": true
-    },
-    {
-      "div": "E0",
-      "team": "Aston Villa",
-      "elo": 1699,
-      "rating": 1626,
+      "elo": 1760,
+      "rating": 1686,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "E0",
       "team": "Bournemouth",
-      "elo": 1694,
-      "rating": 1621,
+      "elo": 1705,
+      "rating": 1631,
+      "country": "ENG",
+      "modelled": true
+    },
+    {
+      "div": "E0",
+      "team": "Aston Villa",
+      "elo": 1702,
+      "rating": 1629,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "E0",
       "team": "Brighton and Hove Albion",
-      "elo": 1691,
-      "rating": 1617,
+      "elo": 1699,
+      "rating": 1625,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "E0",
       "team": "Liverpool",
-      "elo": 1662,
-      "rating": 1588,
+      "elo": 1678,
+      "rating": 1604,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "E0",
       "team": "Manchester United",
-      "elo": 1630,
-      "rating": 1557,
+      "elo": 1627,
+      "rating": 1554,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "E0",
       "team": "Brentford",
-      "elo": 1622,
-      "rating": 1549,
-      "country": "ENG",
-      "modelled": true
-    },
-    {
-      "div": "E0",
-      "team": "Chelsea",
-      "elo": 1608,
-      "rating": 1535,
+      "elo": 1614,
+      "rating": 1540,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "E0",
       "team": "Everton",
-      "elo": 1587,
-      "rating": 1514,
+      "elo": 1595,
+      "rating": 1521,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "E0",
       "team": "Leeds United",
-      "elo": 1582,
-      "rating": 1509,
+      "elo": 1593,
+      "rating": 1519,
+      "country": "ENG",
+      "modelled": true
+    },
+    {
+      "div": "E0",
+      "team": "Chelsea",
+      "elo": 1593,
+      "rating": 1519,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "E0",
       "team": "Newcastle United",
-      "elo": 1567,
-      "rating": 1493,
-      "country": "ENG",
-      "modelled": true
-    },
-    {
-      "div": "E0",
-      "team": "Tottenham Hotspur",
-      "elo": 1562,
-      "rating": 1488,
-      "country": "ENG",
-      "modelled": true
-    },
-    {
-      "div": "E0",
-      "team": "Fulham",
-      "elo": 1558,
-      "rating": 1485,
+      "elo": 1572,
+      "rating": 1499,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "E0",
       "team": "Nottingham Forest",
-      "elo": 1548,
-      "rating": 1474,
+      "elo": 1571,
+      "rating": 1497,
+      "country": "ENG",
+      "modelled": true
+    },
+    {
+      "div": "E0",
+      "team": "Fulham",
+      "elo": 1553,
+      "rating": 1479,
+      "country": "ENG",
+      "modelled": true
+    },
+    {
+      "div": "E0",
+      "team": "Tottenham Hotspur",
+      "elo": 1551,
+      "rating": 1478,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "E0",
       "team": "Sunderland",
-      "elo": 1519,
-      "rating": 1445,
+      "elo": 1534,
+      "rating": 1460,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "E0",
       "team": "Hull City",
-      "elo": 1514,
-      "rating": 1440,
+      "elo": 1513,
+      "rating": 1439,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "E0",
       "team": "Crystal Palace",
-      "elo": 1503,
-      "rating": 1429,
+      "elo": 1487,
+      "rating": 1413,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "E0",
       "team": "Coventry",
-      "elo": 1484,
-      "rating": 1410,
+      "elo": 1477,
+      "rating": 1403,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "E0",
       "team": "Ipswich",
-      "elo": 1413,
-      "rating": 1339,
+      "elo": 1403,
+      "rating": 1329,
       "country": "ENG",
       "modelled": true
     },
     {
       "div": "SP1",
       "team": "Barcelona",
-      "elo": 1840,
-      "rating": 1755,
+      "elo": 1857,
+      "rating": 1772,
       "country": "ESP",
       "modelled": true
     },
     {
       "div": "SP1",
       "team": "Real Madrid",
-      "elo": 1839,
-      "rating": 1753,
-      "country": "ESP",
-      "modelled": true
-    },
-    {
-      "div": "SP1",
-      "team": "Atl\u00e9tico Madrid",
-      "elo": 1697,
-      "rating": 1611,
+      "elo": 1846,
+      "rating": 1761,
       "country": "ESP",
       "modelled": true
     },
     {
       "div": "SP1",
       "team": "Real Betis",
-      "elo": 1670,
-      "rating": 1585,
+      "elo": 1684,
+      "rating": 1598,
+      "country": "ESP",
+      "modelled": true
+    },
+    {
+      "div": "SP1",
+      "team": "Atl\u00e9tico Madrid",
+      "elo": 1680,
+      "rating": 1595,
       "country": "ESP",
       "modelled": true
     },
     {
       "div": "SP1",
       "team": "Real Sociedad",
-      "elo": 1541,
-      "rating": 1455,
+      "elo": 1552,
+      "rating": 1466,
       "country": "ESP",
       "modelled": true
     },
     {
       "div": "SP1",
       "team": "Villarreal",
-      "elo": 1537,
-      "rating": 1452,
+      "elo": 1545,
+      "rating": 1459,
       "country": "ESP",
       "modelled": true
     },
     {
       "div": "SP1",
       "team": "Rayo Vallecano",
-      "elo": 1531,
-      "rating": 1445,
-      "country": "ESP",
-      "modelled": true
-    },
-    {
-      "div": "SP1",
-      "team": "Sevilla",
-      "elo": 1504,
-      "rating": 1418,
+      "elo": 1520,
+      "rating": 1435,
       "country": "ESP",
       "modelled": true
     },
     {
       "div": "SP1",
       "team": "Athletic Club",
+      "elo": 1507,
+      "rating": 1421,
+      "country": "ESP",
+      "modelled": true
+    },
+    {
+      "div": "SP1",
+      "team": "Deportivo A Coru\u00f1a",
       "elo": 1504,
       "rating": 1418,
       "country": "ESP",
@@ -235,191 +235,183 @@
     },
     {
       "div": "SP1",
-      "team": "Deportivo A Coru\u00f1a",
-      "elo": 1500,
-      "rating": 1415,
-      "country": "ESP",
-      "modelled": true
-    },
-    {
-      "div": "SP1",
-      "team": "Valencia",
-      "elo": 1489,
-      "rating": 1404,
-      "country": "ESP",
-      "modelled": true
-    },
-    {
-      "div": "SP1",
-      "team": "Celta Vigo",
-      "elo": 1483,
-      "rating": 1397,
-      "country": "ESP",
-      "modelled": true
-    },
-    {
-      "div": "SP1",
-      "team": "Levante",
-      "elo": 1474,
-      "rating": 1388,
+      "team": "Sevilla",
+      "elo": 1496,
+      "rating": 1410,
       "country": "ESP",
       "modelled": true
     },
     {
       "div": "SP1",
       "team": "Racing Santander",
-      "elo": 1467,
-      "rating": 1381,
+      "elo": 1489,
+      "rating": 1403,
       "country": "ESP",
       "modelled": true
     },
     {
       "div": "SP1",
-      "team": "Elche",
-      "elo": 1459,
-      "rating": 1373,
+      "team": "Valencia",
+      "elo": 1482,
+      "rating": 1396,
+      "country": "ESP",
+      "modelled": true
+    },
+    {
+      "div": "SP1",
+      "team": "Levante",
+      "elo": 1481,
+      "rating": 1395,
+      "country": "ESP",
+      "modelled": true
+    },
+    {
+      "div": "SP1",
+      "team": "Celta Vigo",
+      "elo": 1476,
+      "rating": 1390,
       "country": "ESP",
       "modelled": true
     },
     {
       "div": "SP1",
       "team": "Deportivo Alav\u00e9s",
-      "elo": 1458,
-      "rating": 1372,
+      "elo": 1466,
+      "rating": 1380,
+      "country": "ESP",
+      "modelled": true
+    },
+    {
+      "div": "SP1",
+      "team": "Elche",
+      "elo": 1445,
+      "rating": 1359,
       "country": "ESP",
       "modelled": true
     },
     {
       "div": "SP1",
       "team": "Getafe",
-      "elo": 1444,
-      "rating": 1358,
+      "elo": 1437,
+      "rating": 1351,
       "country": "ESP",
       "modelled": true
     },
     {
       "div": "SP1",
       "team": "Espanyol",
-      "elo": 1440,
-      "rating": 1355,
-      "country": "ESP",
-      "modelled": true
-    },
-    {
-      "div": "SP1",
-      "team": "M\u00e1laga",
-      "elo": 1429,
-      "rating": 1344,
+      "elo": 1437,
+      "rating": 1351,
       "country": "ESP",
       "modelled": true
     },
     {
       "div": "SP1",
       "team": "Osasuna",
-      "elo": 1428,
-      "rating": 1342,
+      "elo": 1425,
+      "rating": 1339,
+      "country": "ESP",
+      "modelled": true
+    },
+    {
+      "div": "SP1",
+      "team": "M\u00e1laga",
+      "elo": 1407,
+      "rating": 1321,
       "country": "ESP",
       "modelled": true
     },
     {
       "div": "D1",
       "team": "Bayern M\u00fcnchen",
-      "elo": 1892,
-      "rating": 1801,
+      "elo": 1900,
+      "rating": 1809,
       "country": "GER",
       "modelled": true
     },
     {
       "div": "D1",
       "team": "Borussia Dortmund",
-      "elo": 1739,
-      "rating": 1648,
+      "elo": 1744,
+      "rating": 1653,
       "country": "GER",
       "modelled": true
     },
     {
       "div": "D1",
       "team": "Bayer Leverkusen",
-      "elo": 1634,
-      "rating": 1543,
+      "elo": 1647,
+      "rating": 1556,
       "country": "GER",
       "modelled": true
     },
     {
       "div": "D1",
       "team": "RB Leipzig",
-      "elo": 1630,
-      "rating": 1539,
+      "elo": 1636,
+      "rating": 1545,
       "country": "GER",
       "modelled": true
     },
     {
       "div": "D1",
       "team": "Freiburg",
-      "elo": 1628,
-      "rating": 1537,
+      "elo": 1633,
+      "rating": 1542,
       "country": "GER",
       "modelled": true
     },
     {
       "div": "D1",
       "team": "VfB Stuttgart",
-      "elo": 1582,
-      "rating": 1491,
-      "country": "GER",
-      "modelled": true
-    },
-    {
-      "div": "D1",
-      "team": "Elversberg",
-      "elo": 1538,
-      "rating": 1447,
+      "elo": 1590,
+      "rating": 1499,
       "country": "GER",
       "modelled": true
     },
     {
       "div": "D1",
       "team": "Hoffenheim",
-      "elo": 1534,
-      "rating": 1443,
+      "elo": 1542,
+      "rating": 1451,
+      "country": "GER",
+      "modelled": true
+    },
+    {
+      "div": "D1",
+      "team": "Elversberg",
+      "elo": 1533,
+      "rating": 1442,
       "country": "GER",
       "modelled": true
     },
     {
       "div": "D1",
       "team": "Mainz 05",
-      "elo": 1527,
-      "rating": 1436,
-      "country": "GER",
-      "modelled": true
-    },
-    {
-      "div": "D1",
-      "team": "Werder Bremen",
-      "elo": 1518,
-      "rating": 1427,
-      "country": "GER",
-      "modelled": true
-    },
-    {
-      "div": "D1",
-      "team": "Augsburg",
-      "elo": 1504,
-      "rating": 1413,
+      "elo": 1520,
+      "rating": 1429,
       "country": "GER",
       "modelled": true
     },
     {
       "div": "D1",
       "team": "Eintracht Frankfurt",
-      "elo": 1504,
-      "rating": 1413,
+      "elo": 1510,
+      "rating": 1419,
       "country": "GER",
       "modelled": true
     },
     {
       "div": "D1",
-      "team": "Paderborn",
+      "team": "Werder Bremen",
+      "elo": 1509,
+      "rating": 1418,
+      "country": "GER",
+      "modelled": true
+    },
+    {
+      "div": "D1",
+      "team": "Hamburger SV",
       "elo": 1502,
       "rating": 1411,
       "country": "GER",
@@ -427,201 +419,209 @@
     },
     {
       "div": "D1",
-      "team": "Hamburger SV",
-      "elo": 1493,
-      "rating": 1403,
+      "team": "Augsburg",
+      "elo": 1497,
+      "rating": 1406,
+      "country": "GER",
+      "modelled": true
+    },
+    {
+      "div": "D1",
+      "team": "Paderborn",
+      "elo": 1496,
+      "rating": 1405,
       "country": "GER",
       "modelled": true
     },
     {
       "div": "D1",
       "team": "Union Berlin",
-      "elo": 1456,
-      "rating": 1365,
+      "elo": 1450,
+      "rating": 1359,
       "country": "GER",
       "modelled": true
     },
     {
       "div": "D1",
       "team": "Schalke 04",
-      "elo": 1440,
-      "rating": 1349,
+      "elo": 1433,
+      "rating": 1342,
       "country": "GER",
       "modelled": true
     },
     {
       "div": "D1",
       "team": "Borussia M\u00f6nchengladbach",
-      "elo": 1434,
-      "rating": 1343,
+      "elo": 1425,
+      "rating": 1334,
       "country": "GER",
       "modelled": true
     },
     {
       "div": "D1",
       "team": "1. FC K\u00f6ln",
-      "elo": 1416,
-      "rating": 1325,
+      "elo": 1403,
+      "rating": 1312,
       "country": "GER",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Inter",
-      "elo": 1768,
-      "rating": 1678,
+      "elo": 1777,
+      "rating": 1688,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Como",
-      "elo": 1736,
-      "rating": 1646,
+      "elo": 1726,
+      "rating": 1636,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Roma",
-      "elo": 1709,
-      "rating": 1619,
+      "elo": 1712,
+      "rating": 1622,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Lazio",
-      "elo": 1691,
-      "rating": 1601,
+      "elo": 1693,
+      "rating": 1603,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Juventus",
-      "elo": 1670,
-      "rating": 1581,
+      "elo": 1668,
+      "rating": 1579,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Milan",
-      "elo": 1621,
-      "rating": 1531,
-      "country": "ITA",
-      "modelled": true
-    },
-    {
-      "div": "I1",
-      "team": "Napoli",
-      "elo": 1605,
-      "rating": 1515,
+      "elo": 1639,
+      "rating": 1549,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Bologna",
-      "elo": 1585,
-      "rating": 1496,
+      "elo": 1603,
+      "rating": 1514,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
-      "team": "Frosinone",
-      "elo": 1517,
-      "rating": 1427,
+      "team": "Napoli",
+      "elo": 1603,
+      "rating": 1513,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Atalanta",
-      "elo": 1514,
-      "rating": 1425,
+      "elo": 1528,
+      "rating": 1439,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Cagliari",
-      "elo": 1500,
-      "rating": 1411,
+      "elo": 1512,
+      "rating": 1423,
+      "country": "ITA",
+      "modelled": true
+    },
+    {
+      "div": "I1",
+      "team": "Frosinone",
+      "elo": 1505,
+      "rating": 1415,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Fiorentina",
-      "elo": 1499,
-      "rating": 1410,
+      "elo": 1501,
+      "rating": 1412,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Torino",
-      "elo": 1498,
-      "rating": 1409,
+      "elo": 1489,
+      "rating": 1399,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Genoa",
-      "elo": 1497,
-      "rating": 1407,
+      "elo": 1479,
+      "rating": 1390,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Parma",
-      "elo": 1469,
-      "rating": 1379,
+      "elo": 1451,
+      "rating": 1361,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Sassuolo",
-      "elo": 1441,
-      "rating": 1351,
-      "country": "ITA",
-      "modelled": true
-    },
-    {
-      "div": "I1",
-      "team": "Udinese",
-      "elo": 1427,
-      "rating": 1338,
+      "elo": 1437,
+      "rating": 1348,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Lecce",
-      "elo": 1415,
-      "rating": 1326,
+      "elo": 1425,
+      "rating": 1336,
+      "country": "ITA",
+      "modelled": true
+    },
+    {
+      "div": "I1",
+      "team": "Udinese",
+      "elo": 1412,
+      "rating": 1322,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Venezia",
-      "elo": 1333,
-      "rating": 1244,
+      "elo": 1349,
+      "rating": 1259,
       "country": "ITA",
       "modelled": true
     },
     {
       "div": "I1",
       "team": "Monza",
-      "elo": 1312,
-      "rating": 1223,
+      "elo": 1298,
+      "rating": 1209,
       "country": "ITA",
       "modelled": true
     },
@@ -629,135 +629,135 @@
       "div": "F1",
       "team": "Paris Saint-Germain",
       "elo": 1897,
-      "rating": 1794,
+      "rating": 1795,
       "country": "FRA",
       "modelled": true
     },
     {
       "div": "F1",
       "team": "Monaco",
-      "elo": 1657,
-      "rating": 1555,
-      "country": "FRA",
-      "modelled": true
-    },
-    {
-      "div": "F1",
-      "team": "Lyon",
-      "elo": 1650,
-      "rating": 1547,
-      "country": "FRA",
-      "modelled": true
-    },
-    {
-      "div": "F1",
-      "team": "Rennes",
-      "elo": 1623,
-      "rating": 1521,
+      "elo": 1654,
+      "rating": 1552,
       "country": "FRA",
       "modelled": true
     },
     {
       "div": "F1",
       "team": "Lille",
-      "elo": 1614,
-      "rating": 1511,
+      "elo": 1638,
+      "rating": 1536,
       "country": "FRA",
       "modelled": true
     },
     {
       "div": "F1",
-      "team": "Lens",
-      "elo": 1607,
-      "rating": 1505,
+      "team": "Lyon",
+      "elo": 1632,
+      "rating": 1529,
       "country": "FRA",
       "modelled": true
     },
     {
       "div": "F1",
       "team": "Paris FC",
-      "elo": 1604,
-      "rating": 1501,
+      "elo": 1622,
+      "rating": 1520,
       "country": "FRA",
       "modelled": true
     },
     {
       "div": "F1",
       "team": "Marseille",
-      "elo": 1575,
-      "rating": 1473,
+      "elo": 1600,
+      "rating": 1498,
+      "country": "FRA",
+      "modelled": true
+    },
+    {
+      "div": "F1",
+      "team": "Rennes",
+      "elo": 1599,
+      "rating": 1497,
+      "country": "FRA",
+      "modelled": true
+    },
+    {
+      "div": "F1",
+      "team": "Lens",
+      "elo": 1582,
+      "rating": 1480,
       "country": "FRA",
       "modelled": true
     },
     {
       "div": "F1",
       "team": "Strasbourg",
-      "elo": 1562,
-      "rating": 1460,
+      "elo": 1549,
+      "rating": 1447,
       "country": "FRA",
       "modelled": true
     },
     {
       "div": "F1",
       "team": "Toulouse",
-      "elo": 1533,
-      "rating": 1431,
+      "elo": 1546,
+      "rating": 1444,
       "country": "FRA",
       "modelled": true
     },
     {
       "div": "F1",
       "team": "Brest",
-      "elo": 1513,
-      "rating": 1411,
+      "elo": 1531,
+      "rating": 1428,
       "country": "FRA",
       "modelled": true
     },
     {
       "div": "F1",
       "team": "Lorient",
-      "elo": 1511,
-      "rating": 1409,
+      "elo": 1530,
+      "rating": 1427,
       "country": "FRA",
       "modelled": true
     },
     {
       "div": "F1",
       "team": "Nice",
-      "elo": 1498,
-      "rating": 1396,
+      "elo": 1518,
+      "rating": 1415,
       "country": "FRA",
       "modelled": true
     },
     {
       "div": "F1",
       "team": "Auxerre",
-      "elo": 1490,
-      "rating": 1388,
+      "elo": 1472,
+      "rating": 1370,
       "country": "FRA",
       "modelled": true
     },
     {
       "div": "F1",
       "team": "Le Mans",
-      "elo": 1468,
-      "rating": 1366,
+      "elo": 1471,
+      "rating": 1369,
       "country": "FRA",
       "modelled": true
     },
     {
       "div": "F1",
       "team": "Angers",
-      "elo": 1410,
-      "rating": 1307,
+      "elo": 1390,
+      "rating": 1288,
       "country": "FRA",
       "modelled": true
     },
     {
       "div": "F1",
       "team": "Le Havre",
-      "elo": 1395,
-      "rating": 1293,
+      "elo": 1377,
+      "rating": 1275,
       "country": "FRA",
       "modelled": true
     },
@@ -765,61 +765,45 @@
       "div": "F1",
       "team": "Troyes",
       "elo": 1341,
-      "rating": 1239,
+      "rating": 1238,
       "country": "FRA",
       "modelled": true
     },
     {
       "div": "P1",
       "team": "Benfica",
-      "elo": 1853,
-      "rating": 1678,
+      "elo": 1857,
+      "rating": 1682,
       "country": "POR",
       "modelled": true
     },
     {
       "div": "P1",
       "team": "FC Porto",
-      "elo": 1804,
-      "rating": 1629,
+      "elo": 1812,
+      "rating": 1637,
       "country": "POR",
       "modelled": true
     },
     {
       "div": "P1",
       "team": "Sporting CP",
-      "elo": 1789,
-      "rating": 1614,
+      "elo": 1791,
+      "rating": 1616,
       "country": "POR",
       "modelled": true
     },
     {
       "div": "P1",
       "team": "Braga",
-      "elo": 1597,
-      "rating": 1421,
+      "elo": 1611,
+      "rating": 1436,
       "country": "POR",
       "modelled": true
     },
     {
       "div": "P1",
-      "team": "Acad\u00e9mico Viseu",
-      "elo": 1582,
-      "rating": 1407,
-      "country": "POR",
-      "modelled": true
-    },
-    {
-      "div": "P1",
-      "team": "Santa Clara",
-      "elo": 1576,
-      "rating": 1401,
-      "country": "POR",
-      "modelled": true
-    },
-    {
-      "div": "P1",
-      "team": "Arouca",
+      "team": "Famalic\u00e3o",
       "elo": 1569,
       "rating": 1394,
       "country": "POR",
@@ -827,7 +811,15 @@
     },
     {
       "div": "P1",
-      "team": "Famalic\u00e3o",
+      "team": "Acad\u00e9mico Viseu",
+      "elo": 1561,
+      "rating": 1385,
+      "country": "POR",
+      "modelled": true
+    },
+    {
+      "div": "P1",
+      "team": "Arouca",
       "elo": 1557,
       "rating": 1382,
       "country": "POR",
@@ -835,57 +827,73 @@
     },
     {
       "div": "P1",
-      "team": "Gil Vicente",
-      "elo": 1505,
-      "rating": 1330,
+      "team": "Santa Clara",
+      "elo": 1549,
+      "rating": 1374,
       "country": "POR",
       "modelled": true
     },
     {
       "div": "P1",
-      "team": "Alverca",
-      "elo": 1484,
-      "rating": 1309,
+      "team": "Gil Vicente",
+      "elo": 1532,
+      "rating": 1357,
       "country": "POR",
       "modelled": true
     },
     {
       "div": "P1",
       "team": "Moreirense",
-      "elo": 1483,
-      "rating": 1308,
+      "elo": 1480,
+      "rating": 1305,
+      "country": "POR",
+      "modelled": true
+    },
+    {
+      "div": "P1",
+      "team": "Alverca",
+      "elo": 1474,
+      "rating": 1299,
       "country": "POR",
       "modelled": true
     },
     {
       "div": "P1",
       "team": "Vit\u00f3ria de Guimar\u00e3es",
-      "elo": 1455,
-      "rating": 1280,
-      "country": "POR",
-      "modelled": true
-    },
-    {
-      "div": "P1",
-      "team": "Rio Ave",
-      "elo": 1409,
-      "rating": 1234,
+      "elo": 1448,
+      "rating": 1273,
       "country": "POR",
       "modelled": true
     },
     {
       "div": "P1",
       "team": "Casa Pia AC",
-      "elo": 1401,
-      "rating": 1226,
+      "elo": 1411,
+      "rating": 1236,
+      "country": "POR",
+      "modelled": true
+    },
+    {
+      "div": "P1",
+      "team": "Rio Ave",
+      "elo": 1395,
+      "rating": 1220,
       "country": "POR",
       "modelled": true
     },
     {
       "div": "P1",
       "team": "Estrela da Amadora",
-      "elo": 1400,
-      "rating": 1225,
+      "elo": 1395,
+      "rating": 1220,
+      "country": "POR",
+      "modelled": true
+    },
+    {
+      "div": "P1",
+      "team": "Nacional",
+      "elo": 1395,
+      "rating": 1220,
       "country": "POR",
       "modelled": true
     },
@@ -894,14 +902,6 @@
       "team": "Estoril",
       "elo": 1374,
       "rating": 1199,
-      "country": "POR",
-      "modelled": true
-    },
-    {
-      "div": "P1",
-      "team": "Nacional",
-      "elo": 1374,
-      "rating": 1198,
       "country": "POR",
       "modelled": true
     },
@@ -916,144 +916,144 @@
     {
       "div": "N1",
       "team": "PSV Eindhoven",
-      "elo": 1726,
-      "rating": 1536,
+      "elo": 1734,
+      "rating": 1544,
       "country": "NED",
       "modelled": true
     },
     {
       "div": "N1",
       "team": "FC Twente",
-      "elo": 1680,
-      "rating": 1490,
-      "country": "NED",
-      "modelled": true
-    },
-    {
-      "div": "N1",
-      "team": "Feyenoord",
-      "elo": 1676,
-      "rating": 1486,
+      "elo": 1673,
+      "rating": 1483,
       "country": "NED",
       "modelled": true
     },
     {
       "div": "N1",
       "team": "Ajax",
-      "elo": 1661,
-      "rating": 1471,
+      "elo": 1668,
+      "rating": 1478,
       "country": "NED",
       "modelled": true
     },
     {
       "div": "N1",
-      "team": "AZ Alkmaar",
-      "elo": 1568,
-      "rating": 1378,
+      "team": "Feyenoord",
+      "elo": 1659,
+      "rating": 1469,
       "country": "NED",
       "modelled": true
     },
     {
       "div": "N1",
       "team": "SC Heerenveen",
-      "elo": 1563,
-      "rating": 1373,
+      "elo": 1580,
+      "rating": 1389,
+      "country": "NED",
+      "modelled": true
+    },
+    {
+      "div": "N1",
+      "team": "AZ Alkmaar",
+      "elo": 1576,
+      "rating": 1386,
       "country": "NED",
       "modelled": true
     },
     {
       "div": "N1",
       "team": "NEC Nijmegen",
-      "elo": 1535,
-      "rating": 1345,
-      "country": "NED",
-      "modelled": true
-    },
-    {
-      "div": "N1",
-      "team": "FC Utrecht",
-      "elo": 1531,
-      "rating": 1340,
+      "elo": 1559,
+      "rating": 1368,
       "country": "NED",
       "modelled": true
     },
     {
       "div": "N1",
       "team": "Fortuna Sittard",
-      "elo": 1519,
-      "rating": 1329,
+      "elo": 1510,
+      "rating": 1320,
       "country": "NED",
       "modelled": true
     },
     {
       "div": "N1",
-      "team": "FC Groningen",
-      "elo": 1490,
-      "rating": 1300,
+      "team": "FC Utrecht",
+      "elo": 1507,
+      "rating": 1317,
       "country": "NED",
       "modelled": true
     },
     {
       "div": "N1",
       "team": "Go Ahead Eagles",
-      "elo": 1465,
-      "rating": 1274,
+      "elo": 1486,
+      "rating": 1296,
       "country": "NED",
       "modelled": true
     },
     {
       "div": "N1",
-      "team": "Sparta Rotterdam",
-      "elo": 1447,
-      "rating": 1257,
+      "team": "FC Groningen",
+      "elo": 1482,
+      "rating": 1292,
       "country": "NED",
       "modelled": true
     },
     {
       "div": "N1",
       "team": "Telstar",
-      "elo": 1447,
-      "rating": 1256,
+      "elo": 1456,
+      "rating": 1265,
       "country": "NED",
       "modelled": true
     },
     {
       "div": "N1",
       "team": "ADO Den Haag",
-      "elo": 1430,
-      "rating": 1240,
+      "elo": 1442,
+      "rating": 1252,
       "country": "NED",
       "modelled": true
     },
     {
       "div": "N1",
-      "team": "Excelsior",
-      "elo": 1424,
-      "rating": 1233,
+      "team": "Sparta Rotterdam",
+      "elo": 1435,
+      "rating": 1245,
       "country": "NED",
       "modelled": true
     },
     {
       "div": "N1",
       "team": "PEC Zwolle",
-      "elo": 1422,
-      "rating": 1232,
+      "elo": 1420,
+      "rating": 1230,
+      "country": "NED",
+      "modelled": true
+    },
+    {
+      "div": "N1",
+      "team": "Excelsior",
+      "elo": 1402,
+      "rating": 1212,
       "country": "NED",
       "modelled": true
     },
     {
       "div": "N1",
       "team": "Cambuur",
-      "elo": 1381,
-      "rating": 1190,
+      "elo": 1373,
+      "rating": 1182,
       "country": "NED",
       "modelled": true
     },
     {
       "div": "N1",
       "team": "Willem II",
-      "elo": 1258,
-      "rating": 1067,
+      "elo": 1259,
+      "rating": 1069,
       "country": "NED",
       "modelled": true
     },
