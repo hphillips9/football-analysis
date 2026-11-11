@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10T15:56:51+00:00",
+  "generated": "2026-11-11T15:43:30+00:00",
   "overall": {
     "asOf": "2026-11-08",
     "totalBets": 863,
@@ -5746,16 +5746,6 @@
         "profit": 2.8
       },
       {
-        "div": "P1",
-        "gameweek": 1,
-        "date": "08/08/2026",
-        "match": "Vit\u00f3ria de Guimar\u00e3es v Arouca",
-        "pick": "A",
-        "result": "A",
-        "pickProb": 36.4,
-        "profit": 2.6
-      },
-      {
         "div": "E0",
         "gameweek": 5,
         "date": "19/09/2026",
@@ -5763,6 +5753,16 @@
         "pick": "A",
         "result": "A",
         "pickProb": 41.3,
+        "profit": 2.6
+      },
+      {
+        "div": "P1",
+        "gameweek": 1,
+        "date": "08/08/2026",
+        "match": "Vit\u00f3ria de Guimar\u00e3es v Arouca",
+        "pick": "A",
+        "result": "A",
+        "pickProb": 36.4,
         "profit": 2.6
       }
     ],
