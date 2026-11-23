@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T15:47:54+00:00",
+  "generated": "2026-11-23T19:38:31+00:00",
   "byCompetition": {
     "CL": {
       "name": "Champions League",
@@ -512,7 +512,7 @@
             "team": "Arsenal",
             "league": "E0",
             "played": 8,
-            "won": 6,
+            "won": 5,
             "drawn": 2,
             "lost": 1,
             "points": 18,
@@ -557,18 +557,6 @@
             "movement": 1
           },
           {
-            "team": "Aston Villa",
-            "league": "E0",
-            "played": 8,
-            "won": 5,
-            "drawn": 1,
-            "lost": 2,
-            "points": 16,
-            "position": 7,
-            "currentPosition": 6,
-            "movement": -1
-          },
-          {
             "team": "Liverpool",
             "league": "E0",
             "played": 8,
@@ -576,9 +564,21 @@
             "drawn": 1,
             "lost": 2,
             "points": 16,
-            "position": 8,
+            "position": 7,
             "currentPosition": 8,
-            "movement": 0
+            "movement": 1
+          },
+          {
+            "team": "Aston Villa",
+            "league": "E0",
+            "played": 8,
+            "won": 5,
+            "drawn": 1,
+            "lost": 2,
+            "points": 16,
+            "position": 8,
+            "currentPosition": 6,
+            "movement": -2
           },
           {
             "team": "Como",
@@ -598,23 +598,11 @@
             "played": 8,
             "won": 5,
             "drawn": 1,
-            "lost": 3,
+            "lost": 2,
             "points": 15,
             "position": 10,
             "currentPosition": 12,
             "movement": 2
-          },
-          {
-            "team": "Club Brugge",
-            "league": "X:BEL",
-            "played": 8,
-            "won": 5,
-            "drawn": 1,
-            "lost": 3,
-            "points": 14,
-            "position": 11,
-            "currentPosition": 9,
-            "movement": -2
           },
           {
             "team": "Real Betis",
@@ -624,9 +612,21 @@
             "drawn": 1,
             "lost": 3,
             "points": 14,
-            "position": 12,
+            "position": 11,
             "currentPosition": 11,
-            "movement": -1
+            "movement": 0
+          },
+          {
+            "team": "Club Brugge",
+            "league": "X:BEL",
+            "played": 8,
+            "won": 5,
+            "drawn": 1,
+            "lost": 3,
+            "points": 14,
+            "position": 12,
+            "currentPosition": 9,
+            "movement": -3
           },
           {
             "team": "Sporting CP",
@@ -778,7 +778,7 @@
             "played": 8,
             "won": 3,
             "drawn": 1,
-            "lost": 5,
+            "lost": 4,
             "points": 9,
             "position": 25,
             "currentPosition": 27,
@@ -809,18 +809,6 @@
             "movement": 1
           },
           {
-            "team": "Feyenoord",
-            "league": "N1",
-            "played": 8,
-            "won": 2,
-            "drawn": 1,
-            "lost": 5,
-            "points": 8,
-            "position": 28,
-            "currentPosition": 32,
-            "movement": 4
-          },
-          {
             "team": "Shakhtar Donetsk",
             "league": "X:UKR",
             "played": 8,
@@ -828,9 +816,21 @@
             "drawn": 2,
             "lost": 4,
             "points": 8,
-            "position": 29,
+            "position": 28,
             "currentPosition": 21,
-            "movement": -8
+            "movement": -7
+          },
+          {
+            "team": "Feyenoord",
+            "league": "N1",
+            "played": 8,
+            "won": 2,
+            "drawn": 1,
+            "lost": 5,
+            "points": 8,
+            "position": 29,
+            "currentPosition": 32,
+            "movement": 3
           },
           {
             "team": "Viking",
@@ -908,7 +908,7 @@
             "team": "Slovan Bratislava",
             "league": "X:SVK",
             "played": 8,
-            "won": 0,
+            "won": 1,
             "drawn": 1,
             "lost": 7,
             "points": 2,
@@ -1480,7 +1480,7 @@
                 ],
                 "progression": {
                   "before": 0.368,
-                  "afterFirstLeg": 0.33
+                  "afterFirstLeg": 0.331
                 },
                 "legs": [
                   {
@@ -1614,7 +1614,7 @@
                   "Arsenal"
                 ],
                 "progression": {
-                  "before": 0.175,
+                  "before": 0.176,
                   "afterFirstLeg": 0.193
                 },
                 "legs": [
@@ -1663,7 +1663,7 @@
                   "Liverpool"
                 ],
                 "progression": {
-                  "before": 0.506,
+                  "before": 0.505,
                   "afterFirstLeg": 0.837
                 },
                 "legs": [
