@@ -91,11 +91,11 @@ the table below is the Premier League.
 
 | Season | Trained on | Accuracy | Baseline | Edge | Log loss |
 | --- | --- | --- | --- | --- | --- |
-| 2022/23 | 2021/22 | 56.3% | 48.4% | +7.9 | 0.969 |
-| 2023/24 | 2021/22–2022/23 | 57.6% | 46.1% | +11.6 | 0.938 |
-| 2024/25 | 2021/22–2023/24 | 54.5% | 40.8% | +13.7 | 0.981 |
-| 2025/26 | 2021/22–2024/25 | 50.3% | 42.6% | +7.6 | 1.031 |
-| **Overall** | | **54.7%** | 44.5% | **+10.2** | 0.980 |
+| 2022/23 | 2021/22 | 56.3% | 48.4% | +7.9 | 0.970 |
+| 2023/24 | 2021/22–2022/23 | 57.6% | 46.1% | +11.6 | 0.937 |
+| 2024/25 | 2021/22–2023/24 | 53.9% | 40.8% | +13.2 | 0.983 |
+| 2025/26 | 2021/22–2024/25 | 49.2% | 42.6% | +6.6 | 1.029 |
+| **Overall** | | **54.3%** | 44.5% | **+9.8** | 0.980 |
 
 Beats the home-win baseline in every season, across 1,520 matches.
 
@@ -168,6 +168,10 @@ median of the UK bookmakers (exchanges excluded), and writes it onto the bet
 Captured prices are logged with their time to `data/raw/CL/odds_<season>.csv`,
 credit usage to `data/raw/odds_api_usage.csv`. It needs an `ODDS_API_KEY`
 (environment or `.env`); without one, CL bets settle unpriced.
+Matchdays played before the key existed (MD1-4 of 2026/27) were priced
+afterwards with BetExplorer's average closing odds, pasted by hand into
+`data/raw/CL/closing_odds_<season>.txt` and imported with
+`src/tools/import_cl_odds.py` (`OddsSource` `BEAvg`).
 
 `src/backtest.py` is separate — re-run it by hand when a season finishes.
 
@@ -256,6 +260,7 @@ src/
   tools/backfill_europe.py  one-off: CL / EL / ECL caches from FotMob, 21-22 on
   tools/backfill_season.py  predictions for a competition's games already played this season (switched on mid-season)
   tools/backfill_cl.py    the same for the Champions League
+  tools/import_cl_odds.py  price unpriced CL bets from a pasted BetExplorer results table (closing odds)
   tools/fetch_uefa_coefficients.py  snapshot UEFA country coefficients for the shared Elo scale
   tools/migrate_bets.py   one-off Bets.csv migration to the multi-competition schema
   tools/suggest_aliases.py  offline: suggest team_names.csv rows by date+score voting (run when clubs are promoted)

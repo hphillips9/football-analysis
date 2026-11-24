@@ -1,0 +1,86 @@
+5. Round	1	X	2	 
+Arsenal - Dortmund	1:1	1.49	  4.66  	6.45	Today
+Bodo/Glimt - LASK	1:0	  1.34  	6.18	7.30	Today
+Como - AEK Athens	1:0	  1.27  	6.34	10.11	Today
+Feyenoord - FC Porto	0:1	3.66	3.75	  1.99  	Today
+Galatasaray - Aston Villa	1:0	  3.44  	3.92	2.02	Today
+Manchester City - Napoli	2:2	1.26	  6.80  	10.03	Today
+RB Leipzig - Lens	3:1	  1.39  	5.65	6.79	Today
+Real Madrid - PSV	5:1	  1.14  	9.71	16.45	Today
+Slovan Bratislava - Betis	0:2	7.10	5.50	  1.39  	Today
+4. Round	1	X	2	 
+AEK Athens - Real Madrid	2:3	12.69	7.50	  1.21  	04.11.
+Dortmund - Betis	2:1	  1.54  	4.50	5.96	04.11.
+FC Porto - Napoli	4:1	  2.01  	3.64	3.75	04.11.
+Fenerbahce - Liverpool	3:2	  5.41  	4.67	1.56	04.11.
+Lens - Como	1:9	3.93	3.99	  1.87  	04.11.
+PSV - Club Brugge KV	1:2	1.90	4.40	  3.52  	04.11.
+RB Leipzig - Manchester City	2:3	5.20	4.79	  1.57  	04.11.
+Slavia Prague - Arsenal	1:2	12.84	5.81	  1.26  	04.11.
+Viking - Sabah FC	4:1	  1.57  	4.85	5.12	04.11.
+Atl. Madrid - Bayern Munich	0:2	3.22	3.97	  2.09  	03.11.
+Barcelona - Aston Villa	3:0	  1.30  	6.63	8.39	03.11.
+Bodo/Glimt - Lille	0:0	1.57	  4.73  	5.14	03.11.
+Feyenoord - Inter	0:3	4.10	4.35	  1.77  	03.11.
+Galatasaray - Stuttgart	2:0	  2.01  	4.31	3.22	03.11.
+LASK - Slovan Bratislava	4:0	  1.32  	5.96	8.48	03.11.
+Manchester Utd - AS Roma	3:2	  2.10  	4.17	3.10	03.11.
+Shakhtar Donetsk - Sporting CP	0:1	3.43	3.42	  2.20  	03.11.
+Villarreal - PSG	0:6	4.14	4.26	  1.78  	03.11.
+3. Round	1	X	2	 
+Aston Villa - Viking	3:1	  1.22  	7.59	11.90	21.10.
+Bayern Munich - Arsenal	2:2	2.38	  3.73  	2.85	21.10.
+Betis - Feyenoord	1:0	  1.74  	4.36	4.24	21.10.
+Club Brugge KV - Lens	3:0	  1.74  	4.36	4.28	21.10.
+Como - Manchester Utd	4:1	  2.40  	3.75	2.82	21.10.
+Inter - Shakhtar Donetsk	1:0	  1.28  	6.37	9.84	21.10.
+Lille - Galatasaray	2:4	2.56	3.52	  2.75  	21.10.
+Real Madrid - RB Leipzig	4:1	  1.23  	7.57	10.64	21.10.
+Sporting CP - LASK	2:3	1.37	5.65	  7.45  	21.10.
+AS Roma - Slovan Bratislava	4:0	  1.10  	11.65	27.00	20.10.
+FC Porto - PSV	0:1	1.51	4.75	  5.96  	20.10.
+Fenerbahce - Slavia Prague	2:2	1.41	  5.25  	7.09	20.10.
+Liverpool - Villarreal	4:3	  1.56  	4.44	5.69	20.10.
+Manchester City - AEK Athens	5:1	  1.16  	8.73	17.40	20.10.
+Napoli - Bodo/Glimt	4:3	  1.68  	4.27	4.77	20.10.
+PSG - Barcelona	4:2	  2.42  	4.46	2.50	20.10.
+Sabah FC - Dortmund	1:2	9.88	6.25	  1.28  	20.10.
+Stuttgart - Atl. Madrid	1:1	3.15	  3.94  	2.14	20.10.
+2. Round	1	X	2	 
+AS Roma - Real Madrid	3:4	3.69	3.97	  1.94  	14.10.
+Aston Villa - Fenerbahce	6:0	  1.63  	4.30	5.19	14.10.
+Betis - FC Porto	3:2	  2.13  	3.73	3.33	14.10.
+Bodo/Glimt - Dortmund	1:0	  2.62  	3.85	2.54	14.10.
+Feyenoord - Como	3:2	  3.05  	3.69	2.28	14.10.
+LASK - Liverpool	3:6	6.88	4.81	  1.45  	14.10.
+Manchester City - PSG	2:4	1.92	4.26	  3.54  	14.10.
+Shakhtar Donetsk - AEK Athens	3:1	  2.82  	3.20	2.70	14.10.
+Slovan Bratislava - Stuttgart	0:3	6.79	5.73	  1.39  	14.10.
+Arsenal - Lille	3:0	  1.21  	6.70	15.25	13.10.
+Atl. Madrid - Manchester Utd	2:0	  1.82  	3.87	4.36	13.10.
+Galatasaray - Barcelona	1:4	8.00	6.13	  1.32  	13.10.
+Inter - Club Brugge KV	3:4	1.24	7.12	  10.89  	13.10.
+Lens - Sporting CP	0:2	2.53	3.62	  2.73  	13.10.
+RB Leipzig - PSV	1:0	  1.59  	5.05	4.74	13.10.
+Sabah FC - Slavia Prague	2:0	  4.21  	3.78	1.86	13.10.
+Viking - Bayern Munich	3:3	14.40	  9.37  	1.16	13.10.
+Villarreal - Napoli	3:1	  2.21  	3.49	3.35	13.10.
+1. Round	1	X	2	 
+Bayern Munich - Bodo/Glimt	5:0	  1.08  	15.20	24.70	10.09.
+Como - RB Leipzig	4:1	  1.70  	4.27	4.60	10.09.
+Fenerbahce - AS Roma	1:1	3.95	  3.76  	1.93	10.09.
+Manchester Utd - Sabah FC	4:0	  1.07  	14.10	30.30	10.09.
+PSV - Shakhtar Donetsk	1:1	1.50	  4.83  	6.02	10.09.
+Slavia Prague - Lens	2:3	2.80	3.67	  2.46  	10.09.
+Barcelona - Feyenoord	5:1	  1.08  	13.64	27.50	09.09.
+Liverpool - Atl. Madrid	2:1	  1.75  	3.99	4.59	09.09.
+Napoli - Arsenal	0:1	5.29	3.80	  1.71  	09.09.
+PSG - Slovan Bratislava	6:1	  1.04  	18.40	36.25	09.09.
+Sporting CP - Galatasaray	3:1	  1.61  	4.52	5.04	09.09.
+Stuttgart - Viking	3:1	  1.21  	7.49	12.20	09.09.
+AEK Athens - LASK	1:0	  1.75  	4.08	4.53	08.09.
+Club Brugge KV - Aston Villa	2:3	2.50	3.62	  2.77  	08.09.
+Dortmund - Villarreal	3:2	  1.75  	4.08	4.48	08.09.
+FC Porto - Manchester City	0:2	5.04	4.17	  1.67  	08.09.
+Lille - Betis	2:3	2.12	3.52	  3.54  	08.09.
+Real Madrid - Inter	2:1	  1.60  	4.59	5.13	08.09.
