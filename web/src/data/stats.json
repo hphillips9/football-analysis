@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24T23:25:02+00:00",
+  "generated": "2026-11-24T23:38:32+00:00",
   "overall": {
     "asOf": "2026-11-24",
     "totalBets": 920,
@@ -16,10 +16,10 @@
     "baselineHitRate": 44.3,
     "edge": 11.5,
     "logLoss": 0.96,
-    "pricedBets": 772,
-    "profit": -32.88,
-    "staked": 772.0,
-    "roi": -4.3,
+    "pricedBets": 844,
+    "profit": -22.58,
+    "staked": 844.0,
+    "roi": -2.7,
     "calibration": [
       {
         "label": "0-40%",
@@ -65,7 +65,7 @@
         "bets": 546,
         "hits": 303,
         "hitRate": 55.5,
-        "profit": -33.57
+        "profit": -28.07
       },
       {
         "pick": "D",
@@ -81,7 +81,7 @@
         "bets": 298,
         "hits": 168,
         "hitRate": 56.4,
-        "profit": 0.69
+        "profit": 5.49
       }
     ],
     "bankroll": [
@@ -169,16 +169,16 @@
         "div": "N1",
         "kickoff": "2026-08-09T13:30:00",
         "gameweek": 1,
-        "match": "FC Groningen v FC Utrecht",
-        "profit": -1.0,
-        "cumulative": 2.12
+        "match": "PEC Zwolle v Ajax",
+        "profit": 0.4,
+        "cumulative": 3.52
       },
       {
         "div": "N1",
         "kickoff": "2026-08-09T13:30:00",
         "gameweek": 1,
-        "match": "PEC Zwolle v Ajax",
-        "profit": 0.4,
+        "match": "FC Groningen v FC Utrecht",
+        "profit": -1.0,
         "cumulative": 2.52
       },
       {
@@ -246,19 +246,19 @@
         "cumulative": -1.11
       },
       {
-        "div": "N1",
-        "kickoff": "2026-08-15T15:30:00",
-        "gameweek": 2,
-        "match": "Willem II v NEC Nijmegen",
-        "profit": 0.53,
-        "cumulative": -0.58
-      },
-      {
         "div": "P1",
         "kickoff": "2026-08-15T15:30:00",
         "gameweek": 2,
         "match": "Alverca v Estrela da Amadora",
         "profit": -1.0,
+        "cumulative": -2.11
+      },
+      {
+        "div": "N1",
+        "kickoff": "2026-08-15T15:30:00",
+        "gameweek": 2,
+        "match": "Willem II v NEC Nijmegen",
+        "profit": 0.53,
         "cumulative": -1.58
       },
       {
@@ -366,18 +366,18 @@
         "cumulative": 2.8
       },
       {
-        "div": "P1",
-        "kickoff": "2026-08-16T18:00:00",
-        "gameweek": 2,
-        "match": "Arouca v Moreirense",
-        "profit": 1.05,
-        "cumulative": 3.85
-      },
-      {
         "div": "SP1",
         "kickoff": "2026-08-16T18:00:00",
         "gameweek": 1,
         "match": "Espanyol v Levante",
+        "profit": 1.05,
+        "cumulative": 3.85
+      },
+      {
+        "div": "P1",
+        "kickoff": "2026-08-16T18:00:00",
+        "gameweek": 2,
+        "match": "Arouca v Moreirense",
         "profit": 1.05,
         "cumulative": 4.9
       },
@@ -457,9 +457,9 @@
         "div": "E0",
         "kickoff": "2026-08-22T15:00:00",
         "gameweek": 1,
-        "match": "Nottingham Forest v Leeds United",
-        "profit": -1.0,
-        "cumulative": 2.23
+        "match": "Everton v Crystal Palace",
+        "profit": 1.15,
+        "cumulative": 4.38
       },
       {
         "div": "E0",
@@ -467,14 +467,14 @@
         "gameweek": 1,
         "match": "Ipswich v Sunderland",
         "profit": -1.0,
-        "cumulative": 1.23
+        "cumulative": 3.38
       },
       {
         "div": "E0",
         "kickoff": "2026-08-22T15:00:00",
         "gameweek": 1,
-        "match": "Everton v Crystal Palace",
-        "profit": 1.15,
+        "match": "Nottingham Forest v Leeds United",
+        "profit": -1.0,
         "cumulative": 2.38
       },
       {
@@ -561,17 +561,9 @@
         "div": "F1",
         "kickoff": "2026-08-22T19:45:00",
         "gameweek": 1,
-        "match": "Toulouse v Lyon",
-        "profit": 1.5,
-        "cumulative": 0.52
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-08-22T19:45:00",
-        "gameweek": 1,
         "match": "Nice v Lorient",
         "profit": -1.0,
-        "cumulative": -0.48
+        "cumulative": -1.98
       },
       {
         "div": "F1",
@@ -579,15 +571,15 @@
         "gameweek": 1,
         "match": "Le Mans v Brest",
         "profit": -1.0,
-        "cumulative": -1.48
+        "cumulative": -2.98
       },
       {
-        "div": "I1",
+        "div": "F1",
         "kickoff": "2026-08-22T19:45:00",
         "gameweek": 1,
-        "match": "Parma v Cagliari",
-        "profit": -1.0,
-        "cumulative": -2.48
+        "match": "Toulouse v Lyon",
+        "profit": 1.5,
+        "cumulative": -1.48
       },
       {
         "div": "I1",
@@ -595,6 +587,14 @@
         "gameweek": 1,
         "match": "Genoa v Napoli",
         "profit": 0.85,
+        "cumulative": -0.63
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-08-22T19:45:00",
+        "gameweek": 1,
+        "match": "Parma v Cagliari",
+        "profit": -1.0,
         "cumulative": -1.63
       },
       {
@@ -646,12 +646,12 @@
         "cumulative": -2.07
       },
       {
-        "div": "F1",
+        "div": "E0",
         "kickoff": "2026-08-23T14:00:00",
         "gameweek": 1,
-        "match": "Angers v Lille",
-        "profit": 0.67,
-        "cumulative": -1.4
+        "match": "Brighton and Hove Albion v Aston Villa",
+        "profit": 1.2,
+        "cumulative": -0.87
       },
       {
         "div": "E0",
@@ -659,14 +659,14 @@
         "gameweek": 1,
         "match": "Manchester City v Bournemouth",
         "profit": 0.44,
-        "cumulative": -0.96
+        "cumulative": -0.43
       },
       {
-        "div": "E0",
+        "div": "F1",
         "kickoff": "2026-08-23T14:00:00",
         "gameweek": 1,
-        "match": "Brighton and Hove Albion v Aston Villa",
-        "profit": 1.2,
+        "match": "Angers v Lille",
+        "profit": 0.67,
         "cumulative": 0.24
       },
       {
@@ -742,12 +742,12 @@
         "cumulative": 3.32
       },
       {
-        "div": "F1",
+        "div": "I1",
         "kickoff": "2026-08-23T19:45:00",
         "gameweek": 1,
-        "match": "Rennes v Paris Saint-Germain",
-        "profit": -1.0,
-        "cumulative": 2.32
+        "match": "Atalanta v Sassuolo",
+        "profit": 0.53,
+        "cumulative": 3.85
       },
       {
         "div": "I1",
@@ -755,14 +755,14 @@
         "gameweek": 1,
         "match": "Torino v Milan",
         "profit": 0.75,
-        "cumulative": 3.07
+        "cumulative": 4.6
       },
       {
-        "div": "I1",
+        "div": "F1",
         "kickoff": "2026-08-23T19:45:00",
         "gameweek": 1,
-        "match": "Atalanta v Sassuolo",
-        "profit": 0.53,
+        "match": "Rennes v Paris Saint-Germain",
+        "profit": -1.0,
         "cumulative": 3.6
       },
       {
@@ -937,17 +937,9 @@
         "div": "D1",
         "kickoff": "2026-08-29T14:30:00",
         "gameweek": 1,
-        "match": "RB Leipzig v Borussia M\u00f6nchengladbach",
-        "profit": 0.5,
-        "cumulative": -0.99
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-08-29T14:30:00",
-        "gameweek": 1,
-        "match": "Union Berlin v Eintracht Frankfurt",
+        "match": "Mainz 05 v Paderborn",
         "profit": -1.0,
-        "cumulative": -1.99
+        "cumulative": -2.49
       },
       {
         "div": "D1",
@@ -955,15 +947,7 @@
         "gameweek": 1,
         "match": "1. FC K\u00f6ln v Hoffenheim",
         "profit": -1.0,
-        "cumulative": -2.99
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-08-29T14:30:00",
-        "gameweek": 1,
-        "match": "Mainz 05 v Paderborn",
-        "profit": -1.0,
-        "cumulative": -3.99
+        "cumulative": -3.49
       },
       {
         "div": "D1",
@@ -971,6 +955,22 @@
         "gameweek": 1,
         "match": "Elversberg v Bayer Leverkusen",
         "profit": -1.0,
+        "cumulative": -4.49
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-08-29T14:30:00",
+        "gameweek": 1,
+        "match": "Union Berlin v Eintracht Frankfurt",
+        "profit": -1.0,
+        "cumulative": -5.49
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-08-29T14:30:00",
+        "gameweek": 1,
+        "match": "RB Leipzig v Borussia M\u00f6nchengladbach",
+        "profit": 0.5,
         "cumulative": -4.99
       },
       {
@@ -1030,20 +1030,12 @@
         "cumulative": -7.54
       },
       {
-        "div": "I1",
+        "div": "E0",
         "kickoff": "2026-08-29T17:30:00",
         "gameweek": 2,
-        "match": "Sassuolo v Torino",
-        "profit": 1.25,
-        "cumulative": -6.29
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-08-29T17:30:00",
-        "gameweek": 2,
-        "match": "Monza v Udinese",
-        "profit": 1.38,
-        "cumulative": -4.91
+        "match": "Tottenham Hotspur v Newcastle United",
+        "profit": 1.9,
+        "cumulative": -5.64
       },
       {
         "div": "D1",
@@ -1051,15 +1043,7 @@
         "gameweek": 1,
         "match": "Borussia Dortmund v Hamburger SV",
         "profit": 0.29,
-        "cumulative": -4.62
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-08-29T17:30:00",
-        "gameweek": 2,
-        "match": "Tottenham Hotspur v Newcastle United",
-        "profit": 1.9,
-        "cumulative": -2.72
+        "cumulative": -5.35
       },
       {
         "div": "I1",
@@ -1067,6 +1051,22 @@
         "gameweek": 2,
         "match": "Fiorentina v Frosinone",
         "profit": -1.0,
+        "cumulative": -6.35
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-08-29T17:30:00",
+        "gameweek": 2,
+        "match": "Monza v Udinese",
+        "profit": 1.38,
+        "cumulative": -4.97
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-08-29T17:30:00",
+        "gameweek": 2,
+        "match": "Sassuolo v Torino",
+        "profit": 1.25,
         "cumulative": -3.72
       },
       {
@@ -1097,25 +1097,9 @@
         "div": "F1",
         "kickoff": "2026-08-29T19:45:00",
         "gameweek": 2,
-        "match": "Brest v Toulouse",
+        "match": "Auxerre v Angers",
         "profit": -1.0,
         "cumulative": -3.25
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-08-29T19:45:00",
-        "gameweek": 2,
-        "match": "Juventus v Parma",
-        "profit": 0.22,
-        "cumulative": -3.03
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-08-29T19:45:00",
-        "gameweek": 2,
-        "match": "Lyon v Le Havre",
-        "profit": -1.0,
-        "cumulative": -4.03
       },
       {
         "div": "F1",
@@ -1123,13 +1107,29 @@
         "gameweek": 2,
         "match": "Lorient v Troyes",
         "profit": -1.0,
+        "cumulative": -4.25
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-08-29T19:45:00",
+        "gameweek": 2,
+        "match": "Brest v Toulouse",
+        "profit": -1.0,
+        "cumulative": -5.25
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-08-29T19:45:00",
+        "gameweek": 2,
+        "match": "Juventus v Parma",
+        "profit": 0.22,
         "cumulative": -5.03
       },
       {
         "div": "F1",
         "kickoff": "2026-08-29T19:45:00",
         "gameweek": 2,
-        "match": "Auxerre v Angers",
+        "match": "Lyon v Le Havre",
         "profit": -1.0,
         "cumulative": -6.03
       },
@@ -1318,18 +1318,18 @@
         "cumulative": -3.02
       },
       {
-        "div": "P1",
-        "kickoff": "2026-08-30T20:30:00",
-        "gameweek": 4,
-        "match": "Famalic\u00e3o v Gil Vicente",
-        "profit": -1.0,
-        "cumulative": -4.02
-      },
-      {
         "div": "SP1",
         "kickoff": "2026-08-30T20:30:00",
         "gameweek": 3,
         "match": "Celta Vigo v Athletic Club",
+        "profit": -1.0,
+        "cumulative": -4.02
+      },
+      {
+        "div": "P1",
+        "kickoff": "2026-08-30T20:30:00",
+        "gameweek": 4,
+        "match": "Famalic\u00e3o v Gil Vicente",
         "profit": -1.0,
         "cumulative": -5.02
       },
@@ -1438,19 +1438,19 @@
         "cumulative": -0.4
       },
       {
-        "div": "E0",
-        "kickoff": "2026-09-04T20:00:00",
-        "gameweek": 3,
-        "match": "Ipswich v Liverpool",
-        "profit": 0.44,
-        "cumulative": 0.04
-      },
-      {
         "div": "SP1",
         "kickoff": "2026-09-04T20:00:00",
         "gameweek": 4,
         "match": "Real Betis v Real Madrid",
         "profit": -1.0,
+        "cumulative": -1.4
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-09-04T20:00:00",
+        "gameweek": 3,
+        "match": "Ipswich v Liverpool",
+        "profit": 0.44,
         "cumulative": -0.96
       },
       {
@@ -1489,33 +1489,9 @@
         "div": "D1",
         "kickoff": "2026-09-05T14:30:00",
         "gameweek": 2,
-        "match": "Bayer Leverkusen v Union Berlin",
-        "profit": 0.4,
-        "cumulative": -3.45
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-09-05T14:30:00",
-        "gameweek": 2,
-        "match": "Hoffenheim v Borussia Dortmund",
-        "profit": 1.15,
-        "cumulative": -2.3
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-09-05T14:30:00",
-        "gameweek": 2,
-        "match": "Borussia M\u00f6nchengladbach v Elversberg",
-        "profit": 2.8,
-        "cumulative": 0.5
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-09-05T14:30:00",
-        "gameweek": 2,
         "match": "Werder Bremen v RB Leipzig",
         "profit": -1.0,
-        "cumulative": -0.5
+        "cumulative": -4.85
       },
       {
         "div": "D1",
@@ -1523,13 +1499,37 @@
         "gameweek": 2,
         "match": "Paderborn v Freiburg",
         "profit": 0.95,
+        "cumulative": -3.9
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-09-05T14:30:00",
+        "gameweek": 2,
+        "match": "Hoffenheim v Borussia Dortmund",
+        "profit": 1.15,
+        "cumulative": -2.75
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-09-05T14:30:00",
+        "gameweek": 2,
+        "match": "Bayer Leverkusen v Union Berlin",
+        "profit": 0.4,
+        "cumulative": -2.35
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-09-05T14:30:00",
+        "gameweek": 2,
+        "match": "Borussia M\u00f6nchengladbach v Elversberg",
+        "profit": 2.8,
         "cumulative": 0.45
       },
       {
         "div": "E0",
         "kickoff": "2026-09-05T15:00:00",
         "gameweek": 3,
-        "match": "Brentford v Sunderland",
+        "match": "Nottingham Forest v Tottenham Hotspur",
         "profit": -1.0,
         "cumulative": -0.55
       },
@@ -1537,7 +1537,7 @@
         "div": "E0",
         "kickoff": "2026-09-05T15:00:00",
         "gameweek": 3,
-        "match": "Brighton and Hove Albion v Leeds United",
+        "match": "Fulham v Crystal Palace",
         "profit": -1.0,
         "cumulative": -1.55
       },
@@ -1545,23 +1545,23 @@
         "div": "E0",
         "kickoff": "2026-09-05T15:00:00",
         "gameweek": 3,
-        "match": "Fulham v Crystal Palace",
-        "profit": -1.0,
-        "cumulative": -2.55
+        "match": "Manchester City v Coventry",
+        "profit": 0.14,
+        "cumulative": -1.41
       },
       {
         "div": "E0",
         "kickoff": "2026-09-05T15:00:00",
         "gameweek": 3,
-        "match": "Manchester City v Coventry",
-        "profit": 0.14,
+        "match": "Brentford v Sunderland",
+        "profit": -1.0,
         "cumulative": -2.41
       },
       {
         "div": "E0",
         "kickoff": "2026-09-05T15:00:00",
         "gameweek": 3,
-        "match": "Nottingham Forest v Tottenham Hotspur",
+        "match": "Brighton and Hove Albion v Leeds United",
         "profit": -1.0,
         "cumulative": -3.41
       },
@@ -1606,12 +1606,20 @@
         "cumulative": -4.74
       },
       {
+        "div": "E0",
+        "kickoff": "2026-09-05T17:30:00",
+        "gameweek": 3,
+        "match": "Hull City v Aston Villa",
+        "profit": -1.0,
+        "cumulative": -5.74
+      },
+      {
         "div": "SP1",
         "kickoff": "2026-09-05T17:30:00",
         "gameweek": 4,
         "match": "Rayo Vallecano v Racing Santander",
         "profit": 1.2,
-        "cumulative": -3.54
+        "cumulative": -4.54
       },
       {
         "div": "D1",
@@ -1619,23 +1627,7 @@
         "gameweek": 2,
         "match": "Schalke 04 v Bayern M\u00fcnchen",
         "profit": -1.0,
-        "cumulative": -4.54
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-09-05T17:30:00",
-        "gameweek": 3,
-        "match": "Hull City v Aston Villa",
-        "profit": -1.0,
         "cumulative": -5.54
-      },
-      {
-        "div": "P1",
-        "kickoff": "2026-09-05T18:00:00",
-        "gameweek": 5,
-        "match": "Mar\u00edtimo v Benfica",
-        "profit": 0.25,
-        "cumulative": -5.29
       },
       {
         "div": "P1",
@@ -1643,6 +1635,14 @@
         "gameweek": 5,
         "match": "Alverca v Braga",
         "profit": 0.8,
+        "cumulative": -4.74
+      },
+      {
+        "div": "P1",
+        "kickoff": "2026-09-05T18:00:00",
+        "gameweek": 5,
+        "match": "Mar\u00edtimo v Benfica",
+        "profit": 0.25,
         "cumulative": -4.49
       },
       {
@@ -1654,12 +1654,20 @@
         "cumulative": -3.24
       },
       {
+        "div": "F1",
+        "kickoff": "2026-09-05T19:45:00",
+        "gameweek": 3,
+        "match": "Nice v Le Mans",
+        "profit": -1.0,
+        "cumulative": -4.24
+      },
+      {
         "div": "I1",
         "kickoff": "2026-09-05T19:45:00",
         "gameweek": 3,
         "match": "Roma v Atalanta",
         "profit": 0.7,
-        "cumulative": -2.54
+        "cumulative": -3.54
       },
       {
         "div": "F1",
@@ -1667,14 +1675,6 @@
         "gameweek": 3,
         "match": "Le Havre v Brest",
         "profit": 1.75,
-        "cumulative": -0.79
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-09-05T19:45:00",
-        "gameweek": 3,
-        "match": "Nice v Le Mans",
-        "profit": -1.0,
         "cumulative": -1.79
       },
       {
@@ -1713,33 +1713,17 @@
         "div": "N1",
         "kickoff": "2026-09-06T13:30:00",
         "gameweek": 5,
-        "match": "Telstar v Cambuur",
-        "profit": -1.0,
-        "cumulative": -3.44
+        "match": "SC Heerenveen v AZ Alkmaar",
+        "profit": 0.67,
+        "cumulative": -1.77
       },
       {
         "div": "N1",
         "kickoff": "2026-09-06T13:30:00",
         "gameweek": 5,
-        "match": "SC Heerenveen v AZ Alkmaar",
-        "profit": 0.67,
+        "match": "Telstar v Cambuur",
+        "profit": -1.0,
         "cumulative": -2.77
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-09-06T14:00:00",
-        "gameweek": 3,
-        "match": "Everton v Manchester United",
-        "profit": -1.0,
-        "cumulative": -3.77
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-09-06T14:00:00",
-        "gameweek": 3,
-        "match": "Parma v Monza",
-        "profit": -1.0,
-        "cumulative": -4.77
       },
       {
         "div": "I1",
@@ -1747,7 +1731,7 @@
         "gameweek": 3,
         "match": "Frosinone v Venezia",
         "profit": 1.7,
-        "cumulative": -3.07
+        "cumulative": -1.07
       },
       {
         "div": "F1",
@@ -1755,6 +1739,22 @@
         "gameweek": 3,
         "match": "Troyes v Strasbourg",
         "profit": 1.3,
+        "cumulative": 0.23
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-09-06T14:00:00",
+        "gameweek": 3,
+        "match": "Everton v Manchester United",
+        "profit": -1.0,
+        "cumulative": -0.77
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-09-06T14:00:00",
+        "gameweek": 3,
+        "match": "Parma v Monza",
+        "profit": -1.0,
         "cumulative": -1.77
       },
       {
@@ -1798,19 +1798,19 @@
         "cumulative": -1.92
       },
       {
-        "div": "D1",
-        "kickoff": "2026-09-06T16:30:00",
-        "gameweek": 2,
-        "match": "Eintracht Frankfurt v Augsburg",
-        "profit": -1.0,
-        "cumulative": -2.92
-      },
-      {
         "div": "E0",
         "kickoff": "2026-09-06T16:30:00",
         "gameweek": 3,
         "match": "Arsenal v Chelsea",
         "profit": 0.7,
+        "cumulative": -1.22
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-09-06T16:30:00",
+        "gameweek": 2,
+        "match": "Eintracht Frankfurt v Augsburg",
+        "profit": -1.0,
         "cumulative": -2.22
       },
       {
@@ -1934,12 +1934,108 @@
         "cumulative": -10.42
       },
       {
+        "div": "CL",
+        "kickoff": "2026-09-08T17:45:00",
+        "gameweek": 1,
+        "match": "AEK Athens v LASK",
+        "profit": 0.75,
+        "cumulative": -9.67
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-08T17:45:00",
+        "gameweek": 1,
+        "match": "Club Brugge v Aston Villa",
+        "profit": 1.77,
+        "cumulative": -7.9
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-08T20:00:00",
+        "gameweek": 1,
+        "match": "Real Madrid v Inter",
+        "profit": 0.6,
+        "cumulative": -7.3
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-08T20:00:00",
+        "gameweek": 1,
+        "match": "Lille v Real Betis",
+        "profit": -1.0,
+        "cumulative": -8.3
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-08T20:00:00",
+        "gameweek": 1,
+        "match": "Borussia Dortmund v Villarreal",
+        "profit": 0.75,
+        "cumulative": -7.55
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-08T20:00:00",
+        "gameweek": 1,
+        "match": "FC Porto v Manchester City",
+        "profit": -1.0,
+        "cumulative": -8.55
+      },
+      {
         "div": "N1",
         "kickoff": "2026-09-09T17:45:00",
         "gameweek": 3,
         "match": "FC Twente v Telstar",
         "profit": 0.2,
-        "cumulative": -10.22
+        "cumulative": -8.35
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-09T17:45:00",
+        "gameweek": 1,
+        "match": "VfB Stuttgart v Viking",
+        "profit": 0.21,
+        "cumulative": -8.14
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-09T17:45:00",
+        "gameweek": 1,
+        "match": "Barcelona v Feyenoord",
+        "profit": 0.08,
+        "cumulative": -8.06
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-09T20:00:00",
+        "gameweek": 1,
+        "match": "Liverpool v Atl\u00e9tico Madrid",
+        "profit": 0.75,
+        "cumulative": -7.31
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-09T20:00:00",
+        "gameweek": 1,
+        "match": "Napoli v Arsenal",
+        "profit": 0.71,
+        "cumulative": -6.6
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-09T20:00:00",
+        "gameweek": 1,
+        "match": "Paris Saint-Germain v Slovan Bratislava",
+        "profit": 0.04,
+        "cumulative": -6.56
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-09T20:00:00",
+        "gameweek": 1,
+        "match": "Sporting CP v Galatasaray",
+        "profit": 0.61,
+        "cumulative": -5.95
       },
       {
         "div": "P1",
@@ -1947,7 +2043,55 @@
         "gameweek": 3,
         "match": "Moreirense v Benfica",
         "profit": 0.17,
-        "cumulative": -10.05
+        "cumulative": -5.78
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-10T17:45:00",
+        "gameweek": 1,
+        "match": "PSV Eindhoven v Shakhtar Donetsk",
+        "profit": -1.0,
+        "cumulative": -6.78
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-10T17:45:00",
+        "gameweek": 1,
+        "match": "Fenerbah\u00e7e v Roma",
+        "profit": -1.0,
+        "cumulative": -7.78
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-10T20:00:00",
+        "gameweek": 1,
+        "match": "Slavia Prague v Lens",
+        "profit": 1.46,
+        "cumulative": -6.32
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-10T20:00:00",
+        "gameweek": 1,
+        "match": "Manchester United v Sabah FK",
+        "profit": 0.07,
+        "cumulative": -6.25
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-10T20:00:00",
+        "gameweek": 1,
+        "match": "Bayern M\u00fcnchen v Bod\u00f8/Glimt",
+        "profit": 0.08,
+        "cumulative": -6.17
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-09-10T20:00:00",
+        "gameweek": 1,
+        "match": "Como v RB Leipzig",
+        "profit": 0.7,
+        "cumulative": -5.47
       },
       {
         "div": "P1",
@@ -1955,7 +2099,7 @@
         "gameweek": 3,
         "match": "Estrela da Amadora v Braga",
         "profit": -1.0,
-        "cumulative": -11.05
+        "cumulative": -6.47
       },
       {
         "div": "N1",
@@ -1963,7 +2107,7 @@
         "gameweek": 6,
         "match": "AZ Alkmaar v Willem II",
         "profit": -1.0,
-        "cumulative": -12.05
+        "cumulative": -7.47
       },
       {
         "div": "D1",
@@ -1971,7 +2115,7 @@
         "gameweek": 3,
         "match": "Union Berlin v Schalke 04",
         "profit": -1.0,
-        "cumulative": -13.05
+        "cumulative": -8.47
       },
       {
         "div": "I1",
@@ -1979,7 +2123,7 @@
         "gameweek": 4,
         "match": "Venezia v Fiorentina",
         "profit": 1.45,
-        "cumulative": -11.6
+        "cumulative": -7.02
       },
       {
         "div": "F1",
@@ -1987,7 +2131,7 @@
         "gameweek": 4,
         "match": "Rennes v Marseille",
         "profit": 1.0,
-        "cumulative": -10.6
+        "cumulative": -6.02
       },
       {
         "div": "SP1",
@@ -1995,7 +2139,7 @@
         "gameweek": 5,
         "match": "Sevilla v Valencia",
         "profit": 0.95,
-        "cumulative": -9.65
+        "cumulative": -5.07
       },
       {
         "div": "SP1",
@@ -2003,7 +2147,7 @@
         "gameweek": 5,
         "match": "Racing Santander v Deportivo Alav\u00e9s",
         "profit": 1.4,
-        "cumulative": -8.25
+        "cumulative": -3.67
       },
       {
         "div": "I1",
@@ -2011,31 +2155,7 @@
         "gameweek": 4,
         "match": "Genoa v Frosinone",
         "profit": -1.0,
-        "cumulative": -9.25
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-09-12T14:30:00",
-        "gameweek": 3,
-        "match": "Augsburg v Bayer Leverkusen",
-        "profit": -1.0,
-        "cumulative": -10.25
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-09-12T14:30:00",
-        "gameweek": 3,
-        "match": "Borussia Dortmund v Paderborn",
-        "profit": 0.22,
-        "cumulative": -10.03
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-09-12T14:30:00",
-        "gameweek": 3,
-        "match": "Freiburg v Borussia M\u00f6nchengladbach",
-        "profit": 0.67,
-        "cumulative": -9.36
+        "cumulative": -4.67
       },
       {
         "div": "D1",
@@ -2043,7 +2163,15 @@
         "gameweek": 3,
         "match": "Hoffenheim v VfB Stuttgart",
         "profit": 1.3,
-        "cumulative": -8.06
+        "cumulative": -3.37
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-09-12T14:30:00",
+        "gameweek": 3,
+        "match": "Freiburg v Borussia M\u00f6nchengladbach",
+        "profit": 0.67,
+        "cumulative": -2.7
       },
       {
         "div": "D1",
@@ -2051,7 +2179,23 @@
         "gameweek": 3,
         "match": "Mainz 05 v Eintracht Frankfurt",
         "profit": -1.0,
-        "cumulative": -9.06
+        "cumulative": -3.7
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-09-12T14:30:00",
+        "gameweek": 3,
+        "match": "Augsburg v Bayer Leverkusen",
+        "profit": -1.0,
+        "cumulative": -4.7
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-09-12T14:30:00",
+        "gameweek": 3,
+        "match": "Borussia Dortmund v Paderborn",
+        "profit": 0.22,
+        "cumulative": -4.48
       },
       {
         "div": "E0",
@@ -2059,7 +2203,7 @@
         "gameweek": 4,
         "match": "Aston Villa v Nottingham Forest",
         "profit": -1.0,
-        "cumulative": -10.06
+        "cumulative": -5.48
       },
       {
         "div": "E0",
@@ -2067,7 +2211,7 @@
         "gameweek": 4,
         "match": "Bournemouth v Brentford",
         "profit": -1.0,
-        "cumulative": -11.06
+        "cumulative": -6.48
       },
       {
         "div": "E0",
@@ -2075,7 +2219,7 @@
         "gameweek": 4,
         "match": "Chelsea v Hull City",
         "profit": -1.0,
-        "cumulative": -12.06
+        "cumulative": -7.48
       },
       {
         "div": "E0",
@@ -2083,7 +2227,7 @@
         "gameweek": 4,
         "match": "Crystal Palace v Ipswich",
         "profit": -1.0,
-        "cumulative": -13.06
+        "cumulative": -8.48
       },
       {
         "div": "E0",
@@ -2091,7 +2235,7 @@
         "gameweek": 4,
         "match": "Liverpool v Fulham",
         "profit": -1.0,
-        "cumulative": -14.06
+        "cumulative": -9.48
       },
       {
         "div": "SP1",
@@ -2099,15 +2243,7 @@
         "gameweek": 5,
         "match": "Osasuna v Espanyol",
         "profit": -1.0,
-        "cumulative": -15.06
-      },
-      {
-        "div": "N1",
-        "kickoff": "2026-09-12T15:30:00",
-        "gameweek": 6,
-        "match": "FC Twente v ADO Den Haag",
-        "profit": 0.2,
-        "cumulative": -14.86
+        "cumulative": -10.48
       },
       {
         "div": "P1",
@@ -2115,7 +2251,15 @@
         "gameweek": 6,
         "match": "Nacional v Alverca",
         "profit": -1.0,
-        "cumulative": -15.86
+        "cumulative": -11.48
+      },
+      {
+        "div": "N1",
+        "kickoff": "2026-09-12T15:30:00",
+        "gameweek": 6,
+        "match": "FC Twente v ADO Den Haag",
+        "profit": 0.2,
+        "cumulative": -11.28
       },
       {
         "div": "F1",
@@ -2123,7 +2267,7 @@
         "gameweek": 4,
         "match": "Strasbourg v Monaco",
         "profit": -1.0,
-        "cumulative": -16.86
+        "cumulative": -12.28
       },
       {
         "div": "I1",
@@ -2131,23 +2275,7 @@
         "gameweek": 4,
         "match": "Lazio v Milan",
         "profit": -1.0,
-        "cumulative": -17.86
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-09-12T17:30:00",
-        "gameweek": 4,
-        "match": "Tottenham Hotspur v Everton",
-        "profit": -1.0,
-        "cumulative": -18.86
-      },
-      {
-        "div": "SP1",
-        "kickoff": "2026-09-12T17:30:00",
-        "gameweek": 5,
-        "match": "Athletic Club v Elche",
-        "profit": -1.0,
-        "cumulative": -19.86
+        "cumulative": -13.28
       },
       {
         "div": "D1",
@@ -2155,7 +2283,23 @@
         "gameweek": 3,
         "match": "1. FC K\u00f6ln v Werder Bremen",
         "profit": -1.0,
-        "cumulative": -20.86
+        "cumulative": -14.28
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-09-12T17:30:00",
+        "gameweek": 4,
+        "match": "Tottenham Hotspur v Everton",
+        "profit": -1.0,
+        "cumulative": -15.28
+      },
+      {
+        "div": "SP1",
+        "kickoff": "2026-09-12T17:30:00",
+        "gameweek": 5,
+        "match": "Athletic Club v Elche",
+        "profit": -1.0,
+        "cumulative": -16.28
       },
       {
         "div": "N1",
@@ -2163,7 +2307,7 @@
         "gameweek": 6,
         "match": "Go Ahead Eagles v FC Groningen",
         "profit": -1.0,
-        "cumulative": -21.86
+        "cumulative": -17.28
       },
       {
         "div": "P1",
@@ -2171,7 +2315,7 @@
         "gameweek": 6,
         "match": "Casa Pia AC v FC Porto",
         "profit": 0.25,
-        "cumulative": -21.61
+        "cumulative": -17.03
       },
       {
         "div": "N1",
@@ -2179,39 +2323,7 @@
         "gameweek": 6,
         "match": "Fortuna Sittard v Ajax",
         "profit": 0.4,
-        "cumulative": -21.21
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-09-12T19:45:00",
-        "gameweek": 4,
-        "match": "Lorient v Toulouse",
-        "profit": -1.0,
-        "cumulative": -22.21
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-09-12T19:45:00",
-        "gameweek": 4,
-        "match": "Paris FC v Lyon",
-        "profit": -1.0,
-        "cumulative": -23.21
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-09-12T19:45:00",
-        "gameweek": 4,
-        "match": "Le Havre v Angers",
-        "profit": -1.0,
-        "cumulative": -24.21
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-09-12T19:45:00",
-        "gameweek": 4,
-        "match": "Auxerre v Nice",
-        "profit": 1.6,
-        "cumulative": -22.61
+        "cumulative": -16.63
       },
       {
         "div": "I1",
@@ -2219,15 +2331,39 @@
         "gameweek": 4,
         "match": "Atalanta v Cagliari",
         "profit": -1.0,
-        "cumulative": -23.61
+        "cumulative": -17.63
       },
       {
-        "div": "E0",
-        "kickoff": "2026-09-12T20:00:00",
+        "div": "F1",
+        "kickoff": "2026-09-12T19:45:00",
         "gameweek": 4,
-        "match": "Sunderland v Arsenal",
-        "profit": 0.44,
-        "cumulative": -23.17
+        "match": "Auxerre v Nice",
+        "profit": 1.6,
+        "cumulative": -16.03
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-09-12T19:45:00",
+        "gameweek": 4,
+        "match": "Le Havre v Angers",
+        "profit": -1.0,
+        "cumulative": -17.03
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-09-12T19:45:00",
+        "gameweek": 4,
+        "match": "Paris FC v Lyon",
+        "profit": -1.0,
+        "cumulative": -18.03
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-09-12T19:45:00",
+        "gameweek": 4,
+        "match": "Lorient v Toulouse",
+        "profit": -1.0,
+        "cumulative": -19.03
       },
       {
         "div": "SP1",
@@ -2235,7 +2371,15 @@
         "gameweek": 5,
         "match": "Real Madrid v Rayo Vallecano",
         "profit": 0.09,
-        "cumulative": -23.08
+        "cumulative": -18.94
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-09-12T20:00:00",
+        "gameweek": 4,
+        "match": "Sunderland v Arsenal",
+        "profit": 0.44,
+        "cumulative": -18.5
       },
       {
         "div": "N1",
@@ -2243,7 +2387,7 @@
         "gameweek": 6,
         "match": "Cambuur v NEC Nijmegen",
         "profit": -1.0,
-        "cumulative": -24.08
+        "cumulative": -19.5
       },
       {
         "div": "P1",
@@ -2251,7 +2395,7 @@
         "gameweek": 6,
         "match": "Acad\u00e9mico Viseu v Vit\u00f3ria de Guimar\u00e3es",
         "profit": 2.4,
-        "cumulative": -21.68
+        "cumulative": -17.1
       },
       {
         "div": "N1",
@@ -2259,7 +2403,7 @@
         "gameweek": 6,
         "match": "Excelsior v FC Utrecht",
         "profit": -1.0,
-        "cumulative": -22.68
+        "cumulative": -18.1
       },
       {
         "div": "SP1",
@@ -2267,7 +2411,7 @@
         "gameweek": 5,
         "match": "Celta Vigo v M\u00e1laga",
         "profit": -1.0,
-        "cumulative": -23.68
+        "cumulative": -19.1
       },
       {
         "div": "N1",
@@ -2275,23 +2419,7 @@
         "gameweek": 6,
         "match": "SC Heerenveen v Telstar",
         "profit": -1.0,
-        "cumulative": -24.68
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-09-13T14:00:00",
-        "gameweek": 4,
-        "match": "Lecce v Monza",
-        "profit": 1.7,
-        "cumulative": -22.98
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-09-13T14:00:00",
-        "gameweek": 4,
-        "match": "Lille v Troyes",
-        "profit": 0.4,
-        "cumulative": -22.58
+        "cumulative": -20.1
       },
       {
         "div": "E0",
@@ -2299,7 +2427,23 @@
         "gameweek": 4,
         "match": "Coventry v Brighton and Hove Albion",
         "profit": 0.85,
-        "cumulative": -21.73
+        "cumulative": -19.25
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-09-13T14:00:00",
+        "gameweek": 4,
+        "match": "Lecce v Monza",
+        "profit": 1.7,
+        "cumulative": -17.55
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-09-13T14:00:00",
+        "gameweek": 4,
+        "match": "Lille v Troyes",
+        "profit": 0.4,
+        "cumulative": -17.15
       },
       {
         "div": "D1",
@@ -2307,7 +2451,7 @@
         "gameweek": 3,
         "match": "RB Leipzig v Hamburger SV",
         "profit": 0.36,
-        "cumulative": -21.37
+        "cumulative": -16.79
       },
       {
         "div": "SP1",
@@ -2315,7 +2459,7 @@
         "gameweek": 5,
         "match": "Levante v Barcelona",
         "profit": 0.13,
-        "cumulative": -21.24
+        "cumulative": -16.66
       },
       {
         "div": "N1",
@@ -2323,7 +2467,7 @@
         "gameweek": 6,
         "match": "PEC Zwolle v Feyenoord",
         "profit": 0.36,
-        "cumulative": -20.88
+        "cumulative": -16.3
       },
       {
         "div": "F1",
@@ -2331,7 +2475,7 @@
         "gameweek": 4,
         "match": "Le Mans v Lens",
         "profit": -1.0,
-        "cumulative": -21.88
+        "cumulative": -17.3
       },
       {
         "div": "E0",
@@ -2339,7 +2483,7 @@
         "gameweek": 4,
         "match": "Manchester United v Manchester City",
         "profit": -1.0,
-        "cumulative": -22.88
+        "cumulative": -18.3
       },
       {
         "div": "D1",
@@ -2347,7 +2491,7 @@
         "gameweek": 3,
         "match": "Elversberg v Bayern M\u00fcnchen",
         "profit": 0.14,
-        "cumulative": -22.74
+        "cumulative": -18.16
       },
       {
         "div": "I1",
@@ -2355,7 +2499,7 @@
         "gameweek": 4,
         "match": "Napoli v Bologna",
         "profit": 0.75,
-        "cumulative": -21.99
+        "cumulative": -17.41
       },
       {
         "div": "SP1",
@@ -2363,7 +2507,7 @@
         "gameweek": 5,
         "match": "Getafe v Deportivo A Coru\u00f1a",
         "profit": -1.0,
-        "cumulative": -22.99
+        "cumulative": -18.41
       },
       {
         "div": "P1",
@@ -2371,7 +2515,7 @@
         "gameweek": 6,
         "match": "Arouca v Santa Clara",
         "profit": -1.0,
-        "cumulative": -23.99
+        "cumulative": -19.41
       },
       {
         "div": "P1",
@@ -2379,7 +2523,7 @@
         "gameweek": 6,
         "match": "Benfica v Gil Vicente",
         "profit": 0.14,
-        "cumulative": -23.85
+        "cumulative": -19.27
       },
       {
         "div": "N1",
@@ -2387,15 +2531,7 @@
         "gameweek": 6,
         "match": "PSV Eindhoven v Sparta Rotterdam",
         "profit": 0.14,
-        "cumulative": -23.71
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-09-13T19:45:00",
-        "gameweek": 4,
-        "match": "Brest v Paris Saint-Germain",
-        "profit": 0.22,
-        "cumulative": -23.49
+        "cumulative": -19.13
       },
       {
         "div": "I1",
@@ -2403,7 +2539,15 @@
         "gameweek": 4,
         "match": "Sassuolo v Juventus",
         "profit": -1.0,
-        "cumulative": -24.49
+        "cumulative": -20.13
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-09-13T19:45:00",
+        "gameweek": 4,
+        "match": "Brest v Paris Saint-Germain",
+        "profit": 0.22,
+        "cumulative": -19.91
       },
       {
         "div": "SP1",
@@ -2411,7 +2555,7 @@
         "gameweek": 5,
         "match": "Real Sociedad v Atl\u00e9tico Madrid",
         "profit": 1.4,
-        "cumulative": -23.09
+        "cumulative": -18.51
       },
       {
         "div": "P1",
@@ -2419,7 +2563,7 @@
         "gameweek": 6,
         "match": "Famalic\u00e3o v Sporting CP",
         "profit": -1.0,
-        "cumulative": -24.09
+        "cumulative": -19.51
       },
       {
         "div": "I1",
@@ -2427,7 +2571,7 @@
         "gameweek": 4,
         "match": "Torino v Roma",
         "profit": 0.57,
-        "cumulative": -23.52
+        "cumulative": -18.94
       },
       {
         "div": "I1",
@@ -2435,7 +2579,7 @@
         "gameweek": 4,
         "match": "Como v Parma",
         "profit": 0.2,
-        "cumulative": -23.32
+        "cumulative": -18.74
       },
       {
         "div": "P1",
@@ -2443,7 +2587,7 @@
         "gameweek": 6,
         "match": "Rio Ave v Estrela da Amadora",
         "profit": -1.0,
-        "cumulative": -24.32
+        "cumulative": -19.74
       },
       {
         "div": "I1",
@@ -2451,7 +2595,7 @@
         "gameweek": 4,
         "match": "Inter v Udinese",
         "profit": 0.22,
-        "cumulative": -24.1
+        "cumulative": -19.52
       },
       {
         "div": "E0",
@@ -2459,7 +2603,7 @@
         "gameweek": 4,
         "match": "Leeds United v Newcastle United",
         "profit": 1.38,
-        "cumulative": -22.72
+        "cumulative": -18.14
       },
       {
         "div": "SP1",
@@ -2467,7 +2611,7 @@
         "gameweek": 5,
         "match": "Villarreal v Real Betis",
         "profit": -1.0,
-        "cumulative": -23.72
+        "cumulative": -19.14
       },
       {
         "div": "P1",
@@ -2475,7 +2619,7 @@
         "gameweek": 6,
         "match": "Moreirense v Mar\u00edtimo",
         "profit": 1.3,
-        "cumulative": -22.42
+        "cumulative": -17.84
       },
       {
         "div": "P1",
@@ -2483,7 +2627,7 @@
         "gameweek": 6,
         "match": "Braga v Estoril",
         "profit": 0.4,
-        "cumulative": -22.02
+        "cumulative": -17.44
       },
       {
         "div": "SP1",
@@ -2491,7 +2635,7 @@
         "gameweek": 6,
         "match": "Rayo Vallecano v Espanyol",
         "profit": 1.3,
-        "cumulative": -20.72
+        "cumulative": -16.14
       },
       {
         "div": "SP1",
@@ -2499,7 +2643,7 @@
         "gameweek": 6,
         "match": "Deportivo Alav\u00e9s v Valencia",
         "profit": -1.0,
-        "cumulative": -21.72
+        "cumulative": -17.14
       },
       {
         "div": "N1",
@@ -2507,7 +2651,7 @@
         "gameweek": 3,
         "match": "Ajax v Willem II",
         "profit": 0.08,
-        "cumulative": -21.64
+        "cumulative": -17.06
       },
       {
         "div": "SP1",
@@ -2515,7 +2659,7 @@
         "gameweek": 6,
         "match": "Elche v Real Madrid",
         "profit": 0.17,
-        "cumulative": -21.47
+        "cumulative": -16.89
       },
       {
         "div": "SP1",
@@ -2523,7 +2667,7 @@
         "gameweek": 6,
         "match": "Atl\u00e9tico Madrid v Osasuna",
         "profit": 0.36,
-        "cumulative": -21.11
+        "cumulative": -16.53
       },
       {
         "div": "SP1",
@@ -2531,7 +2675,7 @@
         "gameweek": 6,
         "match": "Deportivo A Coru\u00f1a v Sevilla",
         "profit": -1.0,
-        "cumulative": -22.11
+        "cumulative": -17.53
       },
       {
         "div": "SP1",
@@ -2539,7 +2683,7 @@
         "gameweek": 6,
         "match": "Barcelona v Racing Santander",
         "profit": 0.04,
-        "cumulative": -22.07
+        "cumulative": -17.49
       },
       {
         "div": "SP1",
@@ -2547,7 +2691,7 @@
         "gameweek": 6,
         "match": "Real Betis v Getafe",
         "profit": 0.67,
-        "cumulative": -21.4
+        "cumulative": -16.82
       },
       {
         "div": "SP1",
@@ -2555,7 +2699,7 @@
         "gameweek": 6,
         "match": "M\u00e1laga v Villarreal",
         "profit": 0.95,
-        "cumulative": -20.45
+        "cumulative": -15.87
       },
       {
         "div": "N1",
@@ -2563,7 +2707,7 @@
         "gameweek": 7,
         "match": "FC Groningen v PEC Zwolle",
         "profit": 0.44,
-        "cumulative": -20.01
+        "cumulative": -15.43
       },
       {
         "div": "D1",
@@ -2571,7 +2715,7 @@
         "gameweek": 4,
         "match": "Bayern M\u00fcnchen v Union Berlin",
         "profit": 0.03,
-        "cumulative": -19.98
+        "cumulative": -15.4
       },
       {
         "div": "F1",
@@ -2579,7 +2723,7 @@
         "gameweek": 5,
         "match": "Monaco v Lens",
         "profit": 1.0,
-        "cumulative": -18.98
+        "cumulative": -14.4
       },
       {
         "div": "I1",
@@ -2587,7 +2731,7 @@
         "gameweek": 5,
         "match": "Monza v Sassuolo",
         "profit": -1.0,
-        "cumulative": -19.98
+        "cumulative": -15.4
       },
       {
         "div": "E0",
@@ -2595,7 +2739,7 @@
         "gameweek": 5,
         "match": "Brentford v Chelsea",
         "profit": 1.6,
-        "cumulative": -18.38
+        "cumulative": -13.8
       },
       {
         "div": "SP1",
@@ -2603,7 +2747,7 @@
         "gameweek": 7,
         "match": "Espanyol v Elche",
         "profit": -1.0,
-        "cumulative": -19.38
+        "cumulative": -14.8
       },
       {
         "div": "E0",
@@ -2611,7 +2755,7 @@
         "gameweek": 5,
         "match": "Tottenham Hotspur v Aston Villa",
         "profit": 2.6,
-        "cumulative": -16.78
+        "cumulative": -12.2
       },
       {
         "div": "SP1",
@@ -2619,7 +2763,7 @@
         "gameweek": 7,
         "match": "Osasuna v Rayo Vallecano",
         "profit": -1.0,
-        "cumulative": -17.78
+        "cumulative": -13.2
       },
       {
         "div": "I1",
@@ -2627,7 +2771,7 @@
         "gameweek": 5,
         "match": "Bologna v Torino",
         "profit": -1.0,
-        "cumulative": -18.78
+        "cumulative": -14.2
       },
       {
         "div": "I1",
@@ -2635,15 +2779,7 @@
         "gameweek": 5,
         "match": "Udinese v Cagliari",
         "profit": -1.0,
-        "cumulative": -19.78
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-09-19T14:30:00",
-        "gameweek": 4,
-        "match": "Werder Bremen v Augsburg",
-        "profit": -1.0,
-        "cumulative": -20.78
+        "cumulative": -15.2
       },
       {
         "div": "D1",
@@ -2651,7 +2787,7 @@
         "gameweek": 4,
         "match": "Borussia M\u00f6nchengladbach v Mainz 05",
         "profit": 1.25,
-        "cumulative": -19.53
+        "cumulative": -13.95
       },
       {
         "div": "D1",
@@ -2659,7 +2795,7 @@
         "gameweek": 4,
         "match": "Eintracht Frankfurt v Freiburg",
         "profit": -1.0,
-        "cumulative": -20.53
+        "cumulative": -14.95
       },
       {
         "div": "D1",
@@ -2667,23 +2803,15 @@
         "gameweek": 4,
         "match": "Hamburger SV v 1. FC K\u00f6ln",
         "profit": 1.5,
-        "cumulative": -19.03
+        "cumulative": -13.45
       },
       {
-        "div": "E0",
-        "kickoff": "2026-09-19T15:00:00",
-        "gameweek": 5,
-        "match": "Brighton and Hove Albion v Arsenal",
+        "div": "D1",
+        "kickoff": "2026-09-19T14:30:00",
+        "gameweek": 4,
+        "match": "Werder Bremen v Augsburg",
         "profit": -1.0,
-        "cumulative": -20.03
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-09-19T15:00:00",
-        "gameweek": 5,
-        "match": "Everton v Ipswich",
-        "profit": 0.75,
-        "cumulative": -19.28
+        "cumulative": -14.45
       },
       {
         "div": "E0",
@@ -2691,7 +2819,23 @@
         "gameweek": 5,
         "match": "Newcastle United v Hull City",
         "profit": 0.57,
-        "cumulative": -18.71
+        "cumulative": -13.88
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-09-19T15:00:00",
+        "gameweek": 5,
+        "match": "Everton v Ipswich",
+        "profit": 0.75,
+        "cumulative": -13.13
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-09-19T15:00:00",
+        "gameweek": 5,
+        "match": "Brighton and Hove Albion v Arsenal",
+        "profit": -1.0,
+        "cumulative": -14.13
       },
       {
         "div": "SP1",
@@ -2699,7 +2843,7 @@
         "gameweek": 7,
         "match": "Athletic Club v Deportivo Alav\u00e9s",
         "profit": -1.0,
-        "cumulative": -19.71
+        "cumulative": -15.13
       },
       {
         "div": "P1",
@@ -2707,7 +2851,7 @@
         "gameweek": 7,
         "match": "Gil Vicente v Mar\u00edtimo",
         "profit": -1.0,
-        "cumulative": -20.71
+        "cumulative": -16.13
       },
       {
         "div": "P1",
@@ -2715,7 +2859,7 @@
         "gameweek": 7,
         "match": "Nacional v Famalic\u00e3o",
         "profit": 1.05,
-        "cumulative": -19.66
+        "cumulative": -15.08
       },
       {
         "div": "N1",
@@ -2723,7 +2867,7 @@
         "gameweek": 7,
         "match": "ADO Den Haag v Cambuur",
         "profit": -1.0,
-        "cumulative": -20.66
+        "cumulative": -16.08
       },
       {
         "div": "F1",
@@ -2731,7 +2875,7 @@
         "gameweek": 5,
         "match": "Paris FC v Strasbourg",
         "profit": 1.05,
-        "cumulative": -19.61
+        "cumulative": -15.03
       },
       {
         "div": "I1",
@@ -2739,23 +2883,7 @@
         "gameweek": 5,
         "match": "Roma v Inter",
         "profit": -1.0,
-        "cumulative": -20.61
-      },
-      {
-        "div": "SP1",
-        "kickoff": "2026-09-19T17:30:00",
-        "gameweek": 7,
-        "match": "Celta Vigo v Racing Santander",
-        "profit": 0.8,
-        "cumulative": -19.81
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-09-19T17:30:00",
-        "gameweek": 4,
-        "match": "VfB Stuttgart v Borussia Dortmund",
-        "profit": 1.63,
-        "cumulative": -18.18
+        "cumulative": -16.03
       },
       {
         "div": "E0",
@@ -2763,7 +2891,23 @@
         "gameweek": 5,
         "match": "Nottingham Forest v Coventry",
         "profit": -1.0,
-        "cumulative": -19.18
+        "cumulative": -17.03
+      },
+      {
+        "div": "SP1",
+        "kickoff": "2026-09-19T17:30:00",
+        "gameweek": 7,
+        "match": "Celta Vigo v Racing Santander",
+        "profit": 0.8,
+        "cumulative": -16.23
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-09-19T17:30:00",
+        "gameweek": 4,
+        "match": "VfB Stuttgart v Borussia Dortmund",
+        "profit": 1.63,
+        "cumulative": -14.6
       },
       {
         "div": "N1",
@@ -2771,7 +2915,7 @@
         "gameweek": 7,
         "match": "Sparta Rotterdam v SC Heerenveen",
         "profit": -1.0,
-        "cumulative": -20.18
+        "cumulative": -15.6
       },
       {
         "div": "P1",
@@ -2779,7 +2923,7 @@
         "gameweek": 7,
         "match": "Alverca v Rio Ave",
         "profit": 0.83,
-        "cumulative": -19.35
+        "cumulative": -14.77
       },
       {
         "div": "N1",
@@ -2787,39 +2931,7 @@
         "gameweek": 7,
         "match": "Ajax v Excelsior",
         "profit": -1.0,
-        "cumulative": -20.35
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-09-19T19:45:00",
-        "gameweek": 5,
-        "match": "Venezia v Lazio",
-        "profit": 0.95,
-        "cumulative": -19.4
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-09-19T19:45:00",
-        "gameweek": 5,
-        "match": "Angers v Troyes",
-        "profit": 1.15,
-        "cumulative": -18.25
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-09-19T19:45:00",
-        "gameweek": 5,
-        "match": "Le Mans v Lorient",
-        "profit": 1.7,
-        "cumulative": -16.55
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-09-19T19:45:00",
-        "gameweek": 5,
-        "match": "Lyon v Rennes",
-        "profit": 1.05,
-        "cumulative": -15.5
+        "cumulative": -15.77
       },
       {
         "div": "F1",
@@ -2827,7 +2939,39 @@
         "gameweek": 5,
         "match": "Toulouse v Le Havre",
         "profit": 0.67,
-        "cumulative": -14.83
+        "cumulative": -15.1
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-09-19T19:45:00",
+        "gameweek": 5,
+        "match": "Lyon v Rennes",
+        "profit": 1.05,
+        "cumulative": -14.05
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-09-19T19:45:00",
+        "gameweek": 5,
+        "match": "Le Mans v Lorient",
+        "profit": 1.7,
+        "cumulative": -12.35
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-09-19T19:45:00",
+        "gameweek": 5,
+        "match": "Angers v Troyes",
+        "profit": 1.15,
+        "cumulative": -11.2
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-09-19T19:45:00",
+        "gameweek": 5,
+        "match": "Venezia v Lazio",
+        "profit": 0.95,
+        "cumulative": -10.25
       },
       {
         "div": "SP1",
@@ -2835,7 +2979,7 @@
         "gameweek": 7,
         "match": "Sevilla v Barcelona",
         "profit": 0.2,
-        "cumulative": -14.63
+        "cumulative": -10.05
       },
       {
         "div": "N1",
@@ -2843,7 +2987,7 @@
         "gameweek": 7,
         "match": "Willem II v Fortuna Sittard",
         "profit": 1.38,
-        "cumulative": -13.25
+        "cumulative": -8.67
       },
       {
         "div": "P1",
@@ -2851,7 +2995,7 @@
         "gameweek": 7,
         "match": "Sporting CP v Arouca",
         "profit": -1.0,
-        "cumulative": -14.25
+        "cumulative": -9.67
       },
       {
         "div": "N1",
@@ -2859,7 +3003,7 @@
         "gameweek": 7,
         "match": "Feyenoord v FC Utrecht",
         "profit": 0.22,
-        "cumulative": -14.03
+        "cumulative": -9.45
       },
       {
         "div": "I1",
@@ -2867,7 +3011,7 @@
         "gameweek": 5,
         "match": "Fiorentina v Napoli",
         "profit": -1.0,
-        "cumulative": -15.03
+        "cumulative": -10.45
       },
       {
         "div": "SP1",
@@ -2875,7 +3019,7 @@
         "gameweek": 7,
         "match": "Getafe v M\u00e1laga",
         "profit": 1.0,
-        "cumulative": -14.03
+        "cumulative": -9.45
       },
       {
         "div": "N1",
@@ -2883,7 +3027,7 @@
         "gameweek": 7,
         "match": "FC Twente v PSV Eindhoven",
         "profit": -1.0,
-        "cumulative": -15.03
+        "cumulative": -10.45
       },
       {
         "div": "N1",
@@ -2891,47 +3035,7 @@
         "gameweek": 7,
         "match": "AZ Alkmaar v Telstar",
         "profit": 0.22,
-        "cumulative": -14.81
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-09-20T14:00:00",
-        "gameweek": 5,
-        "match": "Bournemouth v Liverpool",
-        "profit": -1.0,
-        "cumulative": -15.81
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-09-20T14:00:00",
-        "gameweek": 5,
-        "match": "Leeds United v Crystal Palace",
-        "profit": -1.0,
-        "cumulative": -16.81
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-09-20T14:00:00",
-        "gameweek": 5,
-        "match": "Manchester City v Sunderland",
-        "profit": 0.29,
-        "cumulative": -16.52
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-09-20T14:00:00",
-        "gameweek": 5,
-        "match": "Frosinone v Como",
-        "profit": -1.0,
-        "cumulative": -17.52
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-09-20T14:00:00",
-        "gameweek": 5,
-        "match": "Parma v Genoa",
-        "profit": 2.1,
-        "cumulative": -15.42
+        "cumulative": -10.23
       },
       {
         "div": "F1",
@@ -2939,7 +3043,47 @@
         "gameweek": 5,
         "match": "Auxerre v Brest",
         "profit": -1.0,
-        "cumulative": -16.42
+        "cumulative": -11.23
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-09-20T14:00:00",
+        "gameweek": 5,
+        "match": "Parma v Genoa",
+        "profit": 2.1,
+        "cumulative": -9.13
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-09-20T14:00:00",
+        "gameweek": 5,
+        "match": "Frosinone v Como",
+        "profit": -1.0,
+        "cumulative": -10.13
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-09-20T14:00:00",
+        "gameweek": 5,
+        "match": "Bournemouth v Liverpool",
+        "profit": -1.0,
+        "cumulative": -11.13
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-09-20T14:00:00",
+        "gameweek": 5,
+        "match": "Leeds United v Crystal Palace",
+        "profit": -1.0,
+        "cumulative": -12.13
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-09-20T14:00:00",
+        "gameweek": 5,
+        "match": "Manchester City v Sunderland",
+        "profit": 0.29,
+        "cumulative": -11.84
       },
       {
         "div": "D1",
@@ -2947,7 +3091,7 @@
         "gameweek": 4,
         "match": "Bayer Leverkusen v RB Leipzig",
         "profit": 0.91,
-        "cumulative": -15.51
+        "cumulative": -10.93
       },
       {
         "div": "SP1",
@@ -2955,15 +3099,7 @@
         "gameweek": 7,
         "match": "Atl\u00e9tico Madrid v Real Madrid",
         "profit": -1.0,
-        "cumulative": -16.51
-      },
-      {
-        "div": "P1",
-        "kickoff": "2026-09-20T15:30:00",
-        "gameweek": 7,
-        "match": "Vit\u00f3ria de Guimar\u00e3es v Moreirense",
-        "profit": -1.0,
-        "cumulative": -17.51
+        "cumulative": -11.93
       },
       {
         "div": "P1",
@@ -2971,7 +3107,15 @@
         "gameweek": 7,
         "match": "Estrela da Amadora v Acad\u00e9mico Viseu",
         "profit": -1.0,
-        "cumulative": -18.51
+        "cumulative": -12.93
+      },
+      {
+        "div": "P1",
+        "kickoff": "2026-09-20T15:30:00",
+        "gameweek": 7,
+        "match": "Vit\u00f3ria de Guimar\u00e3es v Moreirense",
+        "profit": -1.0,
+        "cumulative": -13.93
       },
       {
         "div": "N1",
@@ -2979,7 +3123,7 @@
         "gameweek": 7,
         "match": "NEC Nijmegen v Go Ahead Eagles",
         "profit": -1.0,
-        "cumulative": -19.51
+        "cumulative": -14.93
       },
       {
         "div": "F1",
@@ -2987,7 +3131,7 @@
         "gameweek": 5,
         "match": "Nice v Lille",
         "profit": -1.0,
-        "cumulative": -20.51
+        "cumulative": -15.93
       },
       {
         "div": "E0",
@@ -2995,7 +3139,7 @@
         "gameweek": 5,
         "match": "Fulham v Manchester United",
         "profit": -1.0,
-        "cumulative": -21.51
+        "cumulative": -16.93
       },
       {
         "div": "D1",
@@ -3003,7 +3147,7 @@
         "gameweek": 4,
         "match": "Schalke 04 v Elversberg",
         "profit": -1.0,
-        "cumulative": -22.51
+        "cumulative": -17.93
       },
       {
         "div": "I1",
@@ -3011,15 +3155,7 @@
         "gameweek": 5,
         "match": "Juventus v Atalanta",
         "profit": 0.67,
-        "cumulative": -21.84
-      },
-      {
-        "div": "SP1",
-        "kickoff": "2026-09-20T17:30:00",
-        "gameweek": 7,
-        "match": "Villarreal v Levante",
-        "profit": 0.5,
-        "cumulative": -21.34
+        "cumulative": -17.26
       },
       {
         "div": "SP1",
@@ -3027,7 +3163,15 @@
         "gameweek": 7,
         "match": "Deportivo A Coru\u00f1a v Real Betis",
         "profit": -1.0,
-        "cumulative": -22.34
+        "cumulative": -18.26
+      },
+      {
+        "div": "SP1",
+        "kickoff": "2026-09-20T17:30:00",
+        "gameweek": 7,
+        "match": "Villarreal v Levante",
+        "profit": 0.5,
+        "cumulative": -17.76
       },
       {
         "div": "P1",
@@ -3035,7 +3179,7 @@
         "gameweek": 7,
         "match": "Santa Clara v Braga",
         "profit": -1.0,
-        "cumulative": -23.34
+        "cumulative": -18.76
       },
       {
         "div": "P1",
@@ -3043,7 +3187,7 @@
         "gameweek": 7,
         "match": "Estoril v Casa Pia AC",
         "profit": -1.0,
-        "cumulative": -24.34
+        "cumulative": -19.76
       },
       {
         "div": "D1",
@@ -3051,15 +3195,7 @@
         "gameweek": 4,
         "match": "Paderborn v Hoffenheim",
         "profit": -1.0,
-        "cumulative": -25.34
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-09-20T19:45:00",
-        "gameweek": 5,
-        "match": "Marseille v Paris Saint-Germain",
-        "profit": 0.36,
-        "cumulative": -24.98
+        "cumulative": -20.76
       },
       {
         "div": "I1",
@@ -3067,7 +3203,15 @@
         "gameweek": 5,
         "match": "Milan v Lecce",
         "profit": 0.25,
-        "cumulative": -24.73
+        "cumulative": -20.51
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-09-20T19:45:00",
+        "gameweek": 5,
+        "match": "Marseille v Paris Saint-Germain",
+        "profit": 0.36,
+        "cumulative": -20.15
       },
       {
         "div": "SP1",
@@ -3075,7 +3219,7 @@
         "gameweek": 7,
         "match": "Valencia v Real Sociedad",
         "profit": -1.0,
-        "cumulative": -25.73
+        "cumulative": -21.15
       },
       {
         "div": "P1",
@@ -3083,7 +3227,7 @@
         "gameweek": 7,
         "match": "FC Porto v Benfica",
         "profit": 1.5,
-        "cumulative": -24.23
+        "cumulative": -19.65
       },
       {
         "div": "P1",
@@ -3091,7 +3235,7 @@
         "gameweek": 8,
         "match": "Moreirense v Gil Vicente",
         "profit": -1.0,
-        "cumulative": -25.23
+        "cumulative": -20.65
       },
       {
         "div": "N1",
@@ -3099,7 +3243,7 @@
         "gameweek": 8,
         "match": "PSV Eindhoven v SC Heerenveen",
         "profit": 0.22,
-        "cumulative": -25.01
+        "cumulative": -20.43
       },
       {
         "div": "D1",
@@ -3107,7 +3251,7 @@
         "gameweek": 5,
         "match": "Borussia Dortmund v Werder Bremen",
         "profit": -1.0,
-        "cumulative": -26.01
+        "cumulative": -21.43
       },
       {
         "div": "F1",
@@ -3115,7 +3259,7 @@
         "gameweek": 6,
         "match": "Lens v Lyon",
         "profit": 1.3,
-        "cumulative": -24.71
+        "cumulative": -20.13
       },
       {
         "div": "SP1",
@@ -3123,7 +3267,7 @@
         "gameweek": 8,
         "match": "M\u00e1laga v Espanyol",
         "profit": -1.0,
-        "cumulative": -25.71
+        "cumulative": -21.13
       },
       {
         "div": "P1",
@@ -3131,7 +3275,7 @@
         "gameweek": 8,
         "match": "Braga v Sporting CP",
         "profit": 1.2,
-        "cumulative": -24.51
+        "cumulative": -19.93
       },
       {
         "div": "E0",
@@ -3139,7 +3283,7 @@
         "gameweek": 6,
         "match": "Arsenal v Leeds United",
         "profit": 0.36,
-        "cumulative": -24.15
+        "cumulative": -19.57
       },
       {
         "div": "I1",
@@ -3147,39 +3291,7 @@
         "gameweek": 6,
         "match": "Genoa v Fiorentina",
         "profit": -1.0,
-        "cumulative": -25.15
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-10-10T14:30:00",
-        "gameweek": 5,
-        "match": "Paderborn v VfB Stuttgart",
-        "profit": 0.57,
-        "cumulative": -24.58
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-10-10T14:30:00",
-        "gameweek": 5,
-        "match": "Union Berlin v Elversberg",
-        "profit": -1.0,
-        "cumulative": -25.58
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-10-10T14:30:00",
-        "gameweek": 5,
-        "match": "Mainz 05 v Bayer Leverkusen",
-        "profit": 1.15,
-        "cumulative": -24.43
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-10-10T14:30:00",
-        "gameweek": 5,
-        "match": "Hoffenheim v Hamburger SV",
-        "profit": -1.0,
-        "cumulative": -25.43
+        "cumulative": -20.57
       },
       {
         "div": "D1",
@@ -3187,23 +3299,39 @@
         "gameweek": 5,
         "match": "Augsburg v Bayern M\u00fcnchen",
         "profit": -1.0,
-        "cumulative": -26.43
+        "cumulative": -21.57
       },
       {
-        "div": "E0",
-        "kickoff": "2026-10-10T15:00:00",
-        "gameweek": 6,
-        "match": "Aston Villa v Brentford",
+        "div": "D1",
+        "kickoff": "2026-10-10T14:30:00",
+        "gameweek": 5,
+        "match": "Hoffenheim v Hamburger SV",
         "profit": -1.0,
-        "cumulative": -27.43
+        "cumulative": -22.57
       },
       {
-        "div": "E0",
-        "kickoff": "2026-10-10T15:00:00",
-        "gameweek": 6,
-        "match": "Chelsea v Bournemouth",
-        "profit": 0.67,
-        "cumulative": -26.76
+        "div": "D1",
+        "kickoff": "2026-10-10T14:30:00",
+        "gameweek": 5,
+        "match": "Mainz 05 v Bayer Leverkusen",
+        "profit": 1.15,
+        "cumulative": -21.42
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-10-10T14:30:00",
+        "gameweek": 5,
+        "match": "Union Berlin v Elversberg",
+        "profit": -1.0,
+        "cumulative": -22.42
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-10-10T14:30:00",
+        "gameweek": 5,
+        "match": "Paderborn v VfB Stuttgart",
+        "profit": 0.57,
+        "cumulative": -21.85
       },
       {
         "div": "E0",
@@ -3211,7 +3339,7 @@
         "gameweek": 6,
         "match": "Ipswich v Fulham",
         "profit": -1.0,
-        "cumulative": -27.76
+        "cumulative": -22.85
       },
       {
         "div": "E0",
@@ -3219,7 +3347,23 @@
         "gameweek": 6,
         "match": "Sunderland v Brighton and Hove Albion",
         "profit": 1.3,
-        "cumulative": -26.46
+        "cumulative": -21.55
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-10T15:00:00",
+        "gameweek": 6,
+        "match": "Aston Villa v Brentford",
+        "profit": -1.0,
+        "cumulative": -22.55
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-10T15:00:00",
+        "gameweek": 6,
+        "match": "Chelsea v Bournemouth",
+        "profit": 0.67,
+        "cumulative": -21.88
       },
       {
         "div": "SP1",
@@ -3227,7 +3371,7 @@
         "gameweek": 8,
         "match": "Deportivo Alav\u00e9s v Atl\u00e9tico Madrid",
         "profit": 0.75,
-        "cumulative": -25.71
+        "cumulative": -21.13
       },
       {
         "div": "N1",
@@ -3235,7 +3379,7 @@
         "gameweek": 8,
         "match": "Go Ahead Eagles v Sparta Rotterdam",
         "profit": -1.0,
-        "cumulative": -26.71
+        "cumulative": -22.13
       },
       {
         "div": "F1",
@@ -3243,7 +3387,7 @@
         "gameweek": 6,
         "match": "Lille v Le Havre",
         "profit": 0.4,
-        "cumulative": -26.31
+        "cumulative": -21.73
       },
       {
         "div": "I1",
@@ -3251,23 +3395,7 @@
         "gameweek": 6,
         "match": "Inter v Parma",
         "profit": 0.11,
-        "cumulative": -26.2
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-10-10T17:30:00",
-        "gameweek": 5,
-        "match": "RB Leipzig v Eintracht Frankfurt",
-        "profit": 0.55,
-        "cumulative": -25.65
-      },
-      {
-        "div": "SP1",
-        "kickoff": "2026-10-10T17:30:00",
-        "gameweek": 8,
-        "match": "Barcelona v Getafe",
-        "profit": 0.06,
-        "cumulative": -25.59
+        "cumulative": -21.62
       },
       {
         "div": "E0",
@@ -3275,7 +3403,23 @@
         "gameweek": 6,
         "match": "Manchester United v Tottenham Hotspur",
         "profit": -1.0,
-        "cumulative": -26.59
+        "cumulative": -22.62
+      },
+      {
+        "div": "SP1",
+        "kickoff": "2026-10-10T17:30:00",
+        "gameweek": 8,
+        "match": "Barcelona v Getafe",
+        "profit": 0.06,
+        "cumulative": -22.56
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-10-10T17:30:00",
+        "gameweek": 5,
+        "match": "RB Leipzig v Eintracht Frankfurt",
+        "profit": 0.55,
+        "cumulative": -22.01
       },
       {
         "div": "N1",
@@ -3283,7 +3427,7 @@
         "gameweek": 8,
         "match": "Feyenoord v AZ Alkmaar",
         "profit": 0.73,
-        "cumulative": -25.86
+        "cumulative": -21.28
       },
       {
         "div": "P1",
@@ -3291,7 +3435,7 @@
         "gameweek": 8,
         "match": "Mar\u00edtimo v FC Porto",
         "profit": 0.29,
-        "cumulative": -25.57
+        "cumulative": -20.99
       },
       {
         "div": "N1",
@@ -3299,39 +3443,7 @@
         "gameweek": 8,
         "match": "Fortuna Sittard v FC Twente",
         "profit": -1.0,
-        "cumulative": -26.57
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-10-10T19:45:00",
-        "gameweek": 6,
-        "match": "Napoli v Frosinone",
-        "profit": 0.44,
-        "cumulative": -26.13
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-10-10T19:45:00",
-        "gameweek": 6,
-        "match": "Lorient v Paris FC",
-        "profit": -1.0,
-        "cumulative": -27.13
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-10-10T19:45:00",
-        "gameweek": 6,
-        "match": "Paris Saint-Germain v Le Mans",
-        "profit": 0.06,
-        "cumulative": -27.07
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-10-10T19:45:00",
-        "gameweek": 6,
-        "match": "Monaco v Toulouse",
-        "profit": -1.0,
-        "cumulative": -28.07
+        "cumulative": -21.99
       },
       {
         "div": "F1",
@@ -3339,7 +3451,39 @@
         "gameweek": 6,
         "match": "Brest v Angers",
         "profit": 1.0,
-        "cumulative": -27.07
+        "cumulative": -20.99
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-10-10T19:45:00",
+        "gameweek": 6,
+        "match": "Monaco v Toulouse",
+        "profit": -1.0,
+        "cumulative": -21.99
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-10-10T19:45:00",
+        "gameweek": 6,
+        "match": "Lorient v Paris FC",
+        "profit": -1.0,
+        "cumulative": -22.99
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-10-10T19:45:00",
+        "gameweek": 6,
+        "match": "Paris Saint-Germain v Le Mans",
+        "profit": 0.06,
+        "cumulative": -22.93
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-10-10T19:45:00",
+        "gameweek": 6,
+        "match": "Napoli v Frosinone",
+        "profit": 0.44,
+        "cumulative": -22.49
       },
       {
         "div": "SP1",
@@ -3347,7 +3491,7 @@
         "gameweek": 8,
         "match": "Real Madrid v Villarreal",
         "profit": 0.33,
-        "cumulative": -26.74
+        "cumulative": -22.16
       },
       {
         "div": "N1",
@@ -3355,15 +3499,7 @@
         "gameweek": 8,
         "match": "Ajax v NEC Nijmegen",
         "profit": -1.0,
-        "cumulative": -27.74
-      },
-      {
-        "div": "P1",
-        "kickoff": "2026-10-10T20:30:00",
-        "gameweek": 8,
-        "match": "Acad\u00e9mico Viseu v Estoril",
-        "profit": 1.2,
-        "cumulative": -26.54
+        "cumulative": -23.16
       },
       {
         "div": "P1",
@@ -3371,7 +3507,15 @@
         "gameweek": 8,
         "match": "Casa Pia AC v Santa Clara",
         "profit": 0.83,
-        "cumulative": -25.71
+        "cumulative": -22.33
+      },
+      {
+        "div": "P1",
+        "kickoff": "2026-10-10T20:30:00",
+        "gameweek": 8,
+        "match": "Acad\u00e9mico Viseu v Estoril",
+        "profit": 1.2,
+        "cumulative": -21.13
       },
       {
         "div": "N1",
@@ -3379,7 +3523,7 @@
         "gameweek": 8,
         "match": "FC Utrecht v Willem II",
         "profit": 0.4,
-        "cumulative": -25.31
+        "cumulative": -20.73
       },
       {
         "div": "I1",
@@ -3387,7 +3531,7 @@
         "gameweek": 6,
         "match": "Como v Roma",
         "profit": -1.0,
-        "cumulative": -26.31
+        "cumulative": -21.73
       },
       {
         "div": "SP1",
@@ -3395,7 +3539,7 @@
         "gameweek": 8,
         "match": "Elche v Celta Vigo",
         "profit": -1.0,
-        "cumulative": -27.31
+        "cumulative": -22.73
       },
       {
         "div": "N1",
@@ -3403,7 +3547,7 @@
         "gameweek": 8,
         "match": "PEC Zwolle v Cambuur",
         "profit": -1.0,
-        "cumulative": -28.31
+        "cumulative": -23.73
       },
       {
         "div": "N1",
@@ -3411,39 +3555,7 @@
         "gameweek": 8,
         "match": "Telstar v ADO Den Haag",
         "profit": -1.0,
-        "cumulative": -29.31
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-10-11T14:00:00",
-        "gameweek": 6,
-        "match": "Hull City v Everton",
-        "profit": -1.0,
-        "cumulative": -30.31
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-10-11T14:00:00",
-        "gameweek": 6,
-        "match": "Crystal Palace v Nottingham Forest",
-        "profit": -1.0,
-        "cumulative": -31.31
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-10-11T14:00:00",
-        "gameweek": 6,
-        "match": "Lecce v Bologna",
-        "profit": 0.85,
-        "cumulative": -30.46
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-10-11T14:00:00",
-        "gameweek": 6,
-        "match": "Lazio v Monza",
-        "profit": 0.57,
-        "cumulative": -29.89
+        "cumulative": -24.73
       },
       {
         "div": "F1",
@@ -3451,7 +3563,39 @@
         "gameweek": 6,
         "match": "Nice v Strasbourg",
         "profit": -1.0,
-        "cumulative": -30.89
+        "cumulative": -25.73
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-10-11T14:00:00",
+        "gameweek": 6,
+        "match": "Lazio v Monza",
+        "profit": 0.57,
+        "cumulative": -25.16
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-11T14:00:00",
+        "gameweek": 6,
+        "match": "Hull City v Everton",
+        "profit": -1.0,
+        "cumulative": -26.16
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-11T14:00:00",
+        "gameweek": 6,
+        "match": "Crystal Palace v Nottingham Forest",
+        "profit": -1.0,
+        "cumulative": -27.16
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-10-11T14:00:00",
+        "gameweek": 6,
+        "match": "Lecce v Bologna",
+        "profit": 0.85,
+        "cumulative": -26.31
       },
       {
         "div": "D1",
@@ -3459,7 +3603,7 @@
         "gameweek": 5,
         "match": "1. FC K\u00f6ln v Borussia M\u00f6nchengladbach",
         "profit": 1.0,
-        "cumulative": -29.89
+        "cumulative": -25.31
       },
       {
         "div": "SP1",
@@ -3467,7 +3611,7 @@
         "gameweek": 8,
         "match": "Real Sociedad v Deportivo A Coru\u00f1a",
         "profit": 0.6,
-        "cumulative": -29.29
+        "cumulative": -24.71
       },
       {
         "div": "P1",
@@ -3475,7 +3619,7 @@
         "gameweek": 8,
         "match": "Rio Ave v Nacional",
         "profit": 1.25,
-        "cumulative": -28.04
+        "cumulative": -23.46
       },
       {
         "div": "N1",
@@ -3483,7 +3627,7 @@
         "gameweek": 8,
         "match": "Excelsior v FC Groningen",
         "profit": -1.0,
-        "cumulative": -29.04
+        "cumulative": -24.46
       },
       {
         "div": "F1",
@@ -3491,15 +3635,7 @@
         "gameweek": 6,
         "match": "Rennes v Auxerre",
         "profit": 0.4,
-        "cumulative": -28.64
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-10-11T16:30:00",
-        "gameweek": 6,
-        "match": "Liverpool v Manchester City",
-        "profit": 1.4,
-        "cumulative": -27.24
+        "cumulative": -24.06
       },
       {
         "div": "D1",
@@ -3507,7 +3643,15 @@
         "gameweek": 5,
         "match": "Freiburg v Schalke 04",
         "profit": 0.6,
-        "cumulative": -26.64
+        "cumulative": -23.46
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-11T16:30:00",
+        "gameweek": 6,
+        "match": "Liverpool v Manchester City",
+        "profit": 1.4,
+        "cumulative": -22.06
       },
       {
         "div": "I1",
@@ -3515,7 +3659,7 @@
         "gameweek": 6,
         "match": "Sassuolo v Milan",
         "profit": -1.0,
-        "cumulative": -27.64
+        "cumulative": -23.06
       },
       {
         "div": "SP1",
@@ -3523,7 +3667,7 @@
         "gameweek": 8,
         "match": "Real Betis v Osasuna",
         "profit": 0.53,
-        "cumulative": -27.11
+        "cumulative": -22.53
       },
       {
         "div": "P1",
@@ -3531,7 +3675,7 @@
         "gameweek": 8,
         "match": "Benfica v Vit\u00f3ria de Guimar\u00e3es",
         "profit": 0.2,
-        "cumulative": -26.91
+        "cumulative": -22.33
       },
       {
         "div": "I1",
@@ -3539,7 +3683,7 @@
         "gameweek": 6,
         "match": "Cagliari v Juventus",
         "profit": -1.0,
-        "cumulative": -27.91
+        "cumulative": -23.33
       },
       {
         "div": "F1",
@@ -3547,7 +3691,7 @@
         "gameweek": 6,
         "match": "Troyes v Marseille",
         "profit": 0.85,
-        "cumulative": -27.06
+        "cumulative": -22.48
       },
       {
         "div": "SP1",
@@ -3555,7 +3699,7 @@
         "gameweek": 8,
         "match": "Racing Santander v Valencia",
         "profit": -1.0,
-        "cumulative": -28.06
+        "cumulative": -23.48
       },
       {
         "div": "P1",
@@ -3563,7 +3707,7 @@
         "gameweek": 8,
         "match": "Arouca v Estrela da Amadora",
         "profit": 1.05,
-        "cumulative": -27.01
+        "cumulative": -22.43
       },
       {
         "div": "I1",
@@ -3571,7 +3715,7 @@
         "gameweek": 6,
         "match": "Atalanta v Venezia",
         "profit": 0.53,
-        "cumulative": -26.48
+        "cumulative": -21.9
       },
       {
         "div": "I1",
@@ -3579,7 +3723,7 @@
         "gameweek": 6,
         "match": "Torino v Udinese",
         "profit": 1.3,
-        "cumulative": -25.18
+        "cumulative": -20.6
       },
       {
         "div": "E0",
@@ -3587,7 +3731,7 @@
         "gameweek": 6,
         "match": "Coventry v Newcastle United",
         "profit": -1.0,
-        "cumulative": -26.18
+        "cumulative": -21.6
       },
       {
         "div": "SP1",
@@ -3595,7 +3739,7 @@
         "gameweek": 8,
         "match": "Levante v Sevilla",
         "profit": -1.0,
-        "cumulative": -27.18
+        "cumulative": -22.6
       },
       {
         "div": "P1",
@@ -3603,7 +3747,151 @@
         "gameweek": 8,
         "match": "Famalic\u00e3o v Alverca",
         "profit": -1.0,
-        "cumulative": -28.18
+        "cumulative": -23.6
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-13T17:45:00",
+        "gameweek": 2,
+        "match": "Lens v Sporting CP",
+        "profit": 1.73,
+        "cumulative": -21.87
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-13T17:45:00",
+        "gameweek": 2,
+        "match": "Sabah FK v Slavia Prague",
+        "profit": -1.0,
+        "cumulative": -22.87
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-13T20:00:00",
+        "gameweek": 2,
+        "match": "RB Leipzig v PSV Eindhoven",
+        "profit": 0.59,
+        "cumulative": -22.28
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-13T20:00:00",
+        "gameweek": 2,
+        "match": "Villarreal v Napoli",
+        "profit": 1.21,
+        "cumulative": -21.07
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-13T20:00:00",
+        "gameweek": 2,
+        "match": "Viking v Bayern M\u00fcnchen",
+        "profit": -1.0,
+        "cumulative": -22.07
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-13T20:00:00",
+        "gameweek": 2,
+        "match": "Atl\u00e9tico Madrid v Manchester United",
+        "profit": 0.82,
+        "cumulative": -21.25
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-13T20:00:00",
+        "gameweek": 2,
+        "match": "Galatasaray v Barcelona",
+        "profit": 0.32,
+        "cumulative": -20.93
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-13T20:00:00",
+        "gameweek": 2,
+        "match": "Arsenal v Lille",
+        "profit": 0.21,
+        "cumulative": -20.72
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-13T20:00:00",
+        "gameweek": 2,
+        "match": "Inter v Club Brugge",
+        "profit": -1.0,
+        "cumulative": -21.72
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-14T17:45:00",
+        "gameweek": 2,
+        "match": "Feyenoord v Como",
+        "profit": -1.0,
+        "cumulative": -22.72
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-14T17:45:00",
+        "gameweek": 2,
+        "match": "LASK v Liverpool",
+        "profit": 0.45,
+        "cumulative": -22.27
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-14T20:00:00",
+        "gameweek": 2,
+        "match": "Roma v Real Madrid",
+        "profit": 0.94,
+        "cumulative": -21.33
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-14T20:00:00",
+        "gameweek": 2,
+        "match": "Slovan Bratislava v VfB Stuttgart",
+        "profit": 0.39,
+        "cumulative": -20.94
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-14T20:00:00",
+        "gameweek": 2,
+        "match": "Real Betis v FC Porto",
+        "profit": 1.13,
+        "cumulative": -19.81
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-14T20:00:00",
+        "gameweek": 2,
+        "match": "Shakhtar Donetsk v AEK Athens",
+        "profit": -1.0,
+        "cumulative": -20.81
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-14T20:00:00",
+        "gameweek": 2,
+        "match": "Bod\u00f8/Glimt v Borussia Dortmund",
+        "profit": -1.0,
+        "cumulative": -21.81
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-14T20:00:00",
+        "gameweek": 2,
+        "match": "Manchester City v Paris Saint-Germain",
+        "profit": -1.0,
+        "cumulative": -22.81
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-14T20:00:00",
+        "gameweek": 2,
+        "match": "Aston Villa v Fenerbah\u00e7e",
+        "profit": 0.63,
+        "cumulative": -22.18
       },
       {
         "div": "N1",
@@ -3611,7 +3899,7 @@
         "gameweek": 9,
         "match": "SC Heerenveen v Excelsior",
         "profit": 0.44,
-        "cumulative": -27.74
+        "cumulative": -21.74
       },
       {
         "div": "D1",
@@ -3619,7 +3907,7 @@
         "gameweek": 6,
         "match": "Eintracht Frankfurt v 1. FC K\u00f6ln",
         "profit": 0.8,
-        "cumulative": -26.94
+        "cumulative": -20.94
       },
       {
         "div": "I1",
@@ -3627,7 +3915,7 @@
         "gameweek": 7,
         "match": "Frosinone v Sassuolo",
         "profit": -1.0,
-        "cumulative": -27.94
+        "cumulative": -21.94
       },
       {
         "div": "F1",
@@ -3635,7 +3923,7 @@
         "gameweek": 7,
         "match": "Le Mans v Toulouse",
         "profit": -1.0,
-        "cumulative": -28.94
+        "cumulative": -22.94
       },
       {
         "div": "SP1",
@@ -3643,7 +3931,7 @@
         "gameweek": 9,
         "match": "Deportivo A Coru\u00f1a v Levante",
         "profit": -1.0,
-        "cumulative": -29.94
+        "cumulative": -23.94
       },
       {
         "div": "E0",
@@ -3651,7 +3939,7 @@
         "gameweek": 7,
         "match": "Everton v Chelsea",
         "profit": -1.0,
-        "cumulative": -30.94
+        "cumulative": -24.94
       },
       {
         "div": "SP1",
@@ -3659,7 +3947,7 @@
         "gameweek": 9,
         "match": "Espanyol v Atl\u00e9tico Madrid",
         "profit": 0.67,
-        "cumulative": -30.27
+        "cumulative": -24.27
       },
       {
         "div": "I1",
@@ -3667,39 +3955,7 @@
         "gameweek": 7,
         "match": "Venezia v Napoli",
         "profit": -1.0,
-        "cumulative": -31.27
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-10-17T14:30:00",
-        "gameweek": 6,
-        "match": "Werder Bremen v Paderborn",
-        "profit": -1.0,
-        "cumulative": -32.27
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-10-17T14:30:00",
-        "gameweek": 6,
-        "match": "Union Berlin v Borussia Dortmund",
-        "profit": -1.0,
-        "cumulative": -33.27
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-10-17T14:30:00",
-        "gameweek": 6,
-        "match": "Schalke 04 v Mainz 05",
-        "profit": 1.15,
-        "cumulative": -32.12
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-10-17T14:30:00",
-        "gameweek": 6,
-        "match": "Elversberg v Augsburg",
-        "profit": 1.4,
-        "cumulative": -30.72
+        "cumulative": -25.27
       },
       {
         "div": "D1",
@@ -3707,7 +3963,39 @@
         "gameweek": 6,
         "match": "Hamburger SV v VfB Stuttgart",
         "profit": -1.0,
-        "cumulative": -31.72
+        "cumulative": -26.27
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-10-17T14:30:00",
+        "gameweek": 6,
+        "match": "Elversberg v Augsburg",
+        "profit": 1.4,
+        "cumulative": -24.87
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-10-17T14:30:00",
+        "gameweek": 6,
+        "match": "Union Berlin v Borussia Dortmund",
+        "profit": -1.0,
+        "cumulative": -25.87
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-10-17T14:30:00",
+        "gameweek": 6,
+        "match": "Werder Bremen v Paderborn",
+        "profit": -1.0,
+        "cumulative": -26.87
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-10-17T14:30:00",
+        "gameweek": 6,
+        "match": "Schalke 04 v Mainz 05",
+        "profit": 1.15,
+        "cumulative": -25.72
       },
       {
         "div": "E0",
@@ -3715,7 +4003,7 @@
         "gameweek": 7,
         "match": "Brentford v Liverpool",
         "profit": -1.0,
-        "cumulative": -32.72
+        "cumulative": -26.72
       },
       {
         "div": "E0",
@@ -3723,7 +4011,7 @@
         "gameweek": 7,
         "match": "Fulham v Hull City",
         "profit": 0.7,
-        "cumulative": -32.02
+        "cumulative": -26.02
       },
       {
         "div": "E0",
@@ -3731,7 +4019,7 @@
         "gameweek": 7,
         "match": "Manchester City v Ipswich",
         "profit": 0.2,
-        "cumulative": -31.82
+        "cumulative": -25.82
       },
       {
         "div": "SP1",
@@ -3739,7 +4027,7 @@
         "gameweek": 9,
         "match": "Villarreal v Elche",
         "profit": -1.0,
-        "cumulative": -32.82
+        "cumulative": -26.82
       },
       {
         "div": "N1",
@@ -3747,7 +4035,7 @@
         "gameweek": 9,
         "match": "ADO Den Haag v PSV Eindhoven",
         "profit": -1.0,
-        "cumulative": -33.82
+        "cumulative": -27.82
       },
       {
         "div": "F1",
@@ -3755,7 +4043,7 @@
         "gameweek": 7,
         "match": "Strasbourg v Paris Saint-Germain",
         "profit": 0.36,
-        "cumulative": -33.46
+        "cumulative": -27.46
       },
       {
         "div": "I1",
@@ -3763,15 +4051,7 @@
         "gameweek": 7,
         "match": "Bologna v Inter",
         "profit": 0.57,
-        "cumulative": -32.89
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-10-17T17:30:00",
-        "gameweek": 7,
-        "match": "Newcastle United v Aston Villa",
-        "profit": -1.0,
-        "cumulative": -33.89
+        "cumulative": -26.89
       },
       {
         "div": "SP1",
@@ -3779,7 +4059,15 @@
         "gameweek": 9,
         "match": "Real Betis v Barcelona",
         "profit": 0.36,
-        "cumulative": -33.53
+        "cumulative": -26.53
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-17T17:30:00",
+        "gameweek": 7,
+        "match": "Newcastle United v Aston Villa",
+        "profit": -1.0,
+        "cumulative": -27.53
       },
       {
         "div": "D1",
@@ -3787,7 +4075,7 @@
         "gameweek": 6,
         "match": "Bayern M\u00fcnchen v RB Leipzig",
         "profit": 0.2,
-        "cumulative": -33.33
+        "cumulative": -27.33
       },
       {
         "div": "N1",
@@ -3795,7 +4083,7 @@
         "gameweek": 9,
         "match": "Telstar v Feyenoord",
         "profit": 0.25,
-        "cumulative": -33.08
+        "cumulative": -27.08
       },
       {
         "div": "I1",
@@ -3803,7 +4091,7 @@
         "gameweek": 7,
         "match": "Roma v Genoa",
         "profit": 0.44,
-        "cumulative": -32.64
+        "cumulative": -26.64
       },
       {
         "div": "F1",
@@ -3811,7 +4099,7 @@
         "gameweek": 7,
         "match": "Troyes v Lens",
         "profit": 0.8,
-        "cumulative": -31.84
+        "cumulative": -25.84
       },
       {
         "div": "F1",
@@ -3819,7 +4107,7 @@
         "gameweek": 7,
         "match": "Lille v Brest",
         "profit": -1.0,
-        "cumulative": -32.84
+        "cumulative": -26.84
       },
       {
         "div": "SP1",
@@ -3827,7 +4115,7 @@
         "gameweek": 9,
         "match": "Valencia v Athletic Club",
         "profit": -1.0,
-        "cumulative": -33.84
+        "cumulative": -27.84
       },
       {
         "div": "N1",
@@ -3835,7 +4123,7 @@
         "gameweek": 9,
         "match": "Sparta Rotterdam v Willem II",
         "profit": 0.53,
-        "cumulative": -33.31
+        "cumulative": -27.31
       },
       {
         "div": "N1",
@@ -3843,7 +4131,7 @@
         "gameweek": 9,
         "match": "PEC Zwolle v Go Ahead Eagles",
         "profit": -1.0,
-        "cumulative": -34.31
+        "cumulative": -28.31
       },
       {
         "div": "I1",
@@ -3851,7 +4139,7 @@
         "gameweek": 7,
         "match": "Udinese v Lecce",
         "profit": -1.0,
-        "cumulative": -35.31
+        "cumulative": -29.31
       },
       {
         "div": "SP1",
@@ -3859,7 +4147,7 @@
         "gameweek": 9,
         "match": "Osasuna v Racing Santander",
         "profit": 1.0,
-        "cumulative": -34.31
+        "cumulative": -28.31
       },
       {
         "div": "N1",
@@ -3867,39 +4155,7 @@
         "gameweek": 9,
         "match": "Cambuur v AZ Alkmaar",
         "profit": -1.0,
-        "cumulative": -35.31
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-10-18T14:00:00",
-        "gameweek": 7,
-        "match": "Bournemouth v Sunderland",
-        "profit": 1.05,
-        "cumulative": -34.26
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-10-18T14:00:00",
-        "gameweek": 7,
-        "match": "Brighton and Hove Albion v Crystal Palace",
-        "profit": 0.5,
-        "cumulative": -33.76
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-10-18T14:00:00",
-        "gameweek": 7,
-        "match": "Leeds United v Manchester United",
-        "profit": -1.0,
-        "cumulative": -34.76
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-10-18T14:00:00",
-        "gameweek": 7,
-        "match": "Fiorentina v Como",
-        "profit": 1.05,
-        "cumulative": -33.71
+        "cumulative": -29.31
       },
       {
         "div": "F1",
@@ -3907,7 +4163,39 @@
         "gameweek": 7,
         "match": "Angers v Marseille",
         "profit": 1.05,
-        "cumulative": -32.66
+        "cumulative": -28.26
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-18T14:00:00",
+        "gameweek": 7,
+        "match": "Leeds United v Manchester United",
+        "profit": -1.0,
+        "cumulative": -29.26
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-10-18T14:00:00",
+        "gameweek": 7,
+        "match": "Fiorentina v Como",
+        "profit": 1.05,
+        "cumulative": -28.21
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-18T14:00:00",
+        "gameweek": 7,
+        "match": "Bournemouth v Sunderland",
+        "profit": 1.05,
+        "cumulative": -27.16
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-18T14:00:00",
+        "gameweek": 7,
+        "match": "Brighton and Hove Albion v Crystal Palace",
+        "profit": 0.5,
+        "cumulative": -26.66
       },
       {
         "div": "D1",
@@ -3915,7 +4203,7 @@
         "gameweek": 6,
         "match": "Bayer Leverkusen v Freiburg",
         "profit": 0.67,
-        "cumulative": -31.99
+        "cumulative": -25.99
       },
       {
         "div": "SP1",
@@ -3923,7 +4211,7 @@
         "gameweek": 9,
         "match": "Celta Vigo v Deportivo Alav\u00e9s",
         "profit": 1.1,
-        "cumulative": -30.89
+        "cumulative": -24.89
       },
       {
         "div": "N1",
@@ -3931,15 +4219,7 @@
         "gameweek": 9,
         "match": "FC Groningen v Ajax",
         "profit": 0.8,
-        "cumulative": -30.09
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-10-18T16:15:00",
-        "gameweek": 7,
-        "match": "Lorient v Monaco",
-        "profit": -1.0,
-        "cumulative": -31.09
+        "cumulative": -24.09
       },
       {
         "div": "F1",
@@ -3947,7 +4227,7 @@
         "gameweek": 7,
         "match": "Paris FC v Rennes",
         "profit": 1.25,
-        "cumulative": -29.84
+        "cumulative": -22.84
       },
       {
         "div": "F1",
@@ -3955,7 +4235,15 @@
         "gameweek": 7,
         "match": "Le Havre v Auxerre",
         "profit": -1.0,
-        "cumulative": -30.84
+        "cumulative": -23.84
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-10-18T16:15:00",
+        "gameweek": 7,
+        "match": "Lorient v Monaco",
+        "profit": -1.0,
+        "cumulative": -24.84
       },
       {
         "div": "E0",
@@ -3963,7 +4251,7 @@
         "gameweek": 7,
         "match": "Nottingham Forest v Arsenal",
         "profit": 0.6,
-        "cumulative": -30.24
+        "cumulative": -24.24
       },
       {
         "div": "D1",
@@ -3971,7 +4259,7 @@
         "gameweek": 6,
         "match": "Borussia M\u00f6nchengladbach v Hoffenheim",
         "profit": 1.05,
-        "cumulative": -29.19
+        "cumulative": -23.19
       },
       {
         "div": "I1",
@@ -3979,7 +4267,7 @@
         "gameweek": 7,
         "match": "Milan v Atalanta",
         "profit": 0.83,
-        "cumulative": -28.36
+        "cumulative": -22.36
       },
       {
         "div": "SP1",
@@ -3987,7 +4275,7 @@
         "gameweek": 9,
         "match": "M\u00e1laga v Real Sociedad",
         "profit": 1.1,
-        "cumulative": -27.26
+        "cumulative": -21.26
       },
       {
         "div": "N1",
@@ -3995,7 +4283,7 @@
         "gameweek": 9,
         "match": "FC Twente v FC Utrecht",
         "profit": -1.0,
-        "cumulative": -28.26
+        "cumulative": -22.26
       },
       {
         "div": "N1",
@@ -4003,15 +4291,7 @@
         "gameweek": 9,
         "match": "NEC Nijmegen v Fortuna Sittard",
         "profit": -1.0,
-        "cumulative": -29.26
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-10-18T19:45:00",
-        "gameweek": 7,
-        "match": "Juventus v Lazio",
-        "profit": -1.0,
-        "cumulative": -30.26
+        "cumulative": -23.26
       },
       {
         "div": "F1",
@@ -4019,7 +4299,15 @@
         "gameweek": 7,
         "match": "Lyon v Nice",
         "profit": 0.62,
-        "cumulative": -29.64
+        "cumulative": -22.64
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-10-18T19:45:00",
+        "gameweek": 7,
+        "match": "Juventus v Lazio",
+        "profit": -1.0,
+        "cumulative": -23.64
       },
       {
         "div": "SP1",
@@ -4027,7 +4315,7 @@
         "gameweek": 9,
         "match": "Real Madrid v Sevilla",
         "profit": 0.22,
-        "cumulative": -29.42
+        "cumulative": -23.42
       },
       {
         "div": "I1",
@@ -4035,7 +4323,7 @@
         "gameweek": 7,
         "match": "Monza v Cagliari",
         "profit": -1.0,
-        "cumulative": -30.42
+        "cumulative": -24.42
       },
       {
         "div": "I1",
@@ -4043,7 +4331,7 @@
         "gameweek": 7,
         "match": "Parma v Torino",
         "profit": 1.5,
-        "cumulative": -28.92
+        "cumulative": -22.92
       },
       {
         "div": "E0",
@@ -4051,7 +4339,7 @@
         "gameweek": 7,
         "match": "Tottenham Hotspur v Coventry",
         "profit": 0.44,
-        "cumulative": -28.48
+        "cumulative": -22.48
       },
       {
         "div": "SP1",
@@ -4059,7 +4347,7 @@
         "gameweek": 9,
         "match": "Getafe v Rayo Vallecano",
         "profit": -1.0,
-        "cumulative": -29.48
+        "cumulative": -23.48
       },
       {
         "div": "P1",
@@ -4067,7 +4355,95 @@
         "gameweek": 2,
         "match": "Braga v Gil Vicente",
         "profit": -1.0,
-        "cumulative": -30.48
+        "cumulative": -24.48
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-20T17:45:00",
+        "gameweek": 3,
+        "match": "Sabah FK v Borussia Dortmund",
+        "profit": 0.28,
+        "cumulative": -24.2
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-20T17:45:00",
+        "gameweek": 3,
+        "match": "Fenerbah\u00e7e v Slavia Prague",
+        "profit": -1.0,
+        "cumulative": -25.2
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-20T20:00:00",
+        "gameweek": 3,
+        "match": "Napoli v Bod\u00f8/Glimt",
+        "profit": 0.68,
+        "cumulative": -24.52
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-20T20:00:00",
+        "gameweek": 3,
+        "match": "FC Porto v PSV Eindhoven",
+        "profit": -1.0,
+        "cumulative": -25.52
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-20T20:00:00",
+        "gameweek": 3,
+        "match": "Liverpool v Villarreal",
+        "profit": 0.56,
+        "cumulative": -24.96
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-20T20:00:00",
+        "gameweek": 3,
+        "match": "Paris Saint-Germain v Barcelona",
+        "profit": 1.42,
+        "cumulative": -23.54
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-20T20:00:00",
+        "gameweek": 3,
+        "match": "VfB Stuttgart v Atl\u00e9tico Madrid",
+        "profit": -1.0,
+        "cumulative": -24.54
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-20T20:00:00",
+        "gameweek": 3,
+        "match": "Roma v Slovan Bratislava",
+        "profit": 0.1,
+        "cumulative": -24.44
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-20T20:00:00",
+        "gameweek": 3,
+        "match": "Manchester City v AEK Athens",
+        "profit": 0.16,
+        "cumulative": -24.28
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-21T17:45:00",
+        "gameweek": 3,
+        "match": "Como v Manchester United",
+        "profit": 1.4,
+        "cumulative": -22.88
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-21T17:45:00",
+        "gameweek": 3,
+        "match": "Lille v Galatasaray",
+        "profit": -1.0,
+        "cumulative": -23.88
       },
       {
         "div": "SP1",
@@ -4075,7 +4451,63 @@
         "gameweek": 6,
         "match": "Levante v Athletic Club",
         "profit": 2.4,
-        "cumulative": -28.08
+        "cumulative": -21.48
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-21T20:00:00",
+        "gameweek": 3,
+        "match": "Club Brugge v Lens",
+        "profit": 0.74,
+        "cumulative": -20.74
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-21T20:00:00",
+        "gameweek": 3,
+        "match": "Aston Villa v Viking",
+        "profit": 0.22,
+        "cumulative": -20.52
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-21T20:00:00",
+        "gameweek": 3,
+        "match": "Inter v Shakhtar Donetsk",
+        "profit": 0.28,
+        "cumulative": -20.24
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-21T20:00:00",
+        "gameweek": 3,
+        "match": "Bayern M\u00fcnchen v Arsenal",
+        "profit": -1.0,
+        "cumulative": -21.24
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-21T20:00:00",
+        "gameweek": 3,
+        "match": "Real Madrid v RB Leipzig",
+        "profit": 0.23,
+        "cumulative": -21.01
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-21T20:00:00",
+        "gameweek": 3,
+        "match": "Sporting CP v LASK",
+        "profit": -1.0,
+        "cumulative": -22.01
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-10-21T20:00:00",
+        "gameweek": 3,
+        "match": "Real Betis v Feyenoord",
+        "profit": 0.74,
+        "cumulative": -21.27
       },
       {
         "div": "N1",
@@ -4083,7 +4515,7 @@
         "gameweek": 10,
         "match": "Go Ahead Eagles v Telstar",
         "profit": 0.5,
-        "cumulative": -27.58
+        "cumulative": -20.77
       },
       {
         "div": "D1",
@@ -4091,7 +4523,7 @@
         "gameweek": 7,
         "match": "VfB Stuttgart v Borussia M\u00f6nchengladbach",
         "profit": -1.0,
-        "cumulative": -28.58
+        "cumulative": -21.77
       },
       {
         "div": "I1",
@@ -4099,7 +4531,7 @@
         "gameweek": 8,
         "match": "Torino v Monza",
         "profit": 1.1,
-        "cumulative": -27.48
+        "cumulative": -20.67
       },
       {
         "div": "F1",
@@ -4107,7 +4539,7 @@
         "gameweek": 8,
         "match": "Brest v Nice",
         "profit": -1.0,
-        "cumulative": -28.48
+        "cumulative": -21.67
       },
       {
         "div": "E0",
@@ -4115,7 +4547,7 @@
         "gameweek": 8,
         "match": "Ipswich v Nottingham Forest",
         "profit": -1.0,
-        "cumulative": -29.48
+        "cumulative": -22.67
       },
       {
         "div": "SP1",
@@ -4123,7 +4555,7 @@
         "gameweek": 10,
         "match": "Deportivo Alav\u00e9s v M\u00e1laga",
         "profit": -1.0,
-        "cumulative": -30.48
+        "cumulative": -23.67
       },
       {
         "div": "P1",
@@ -4131,7 +4563,7 @@
         "gameweek": 9,
         "match": "Vit\u00f3ria de Guimar\u00e3es v Mar\u00edtimo",
         "profit": 0.5,
-        "cumulative": -29.98
+        "cumulative": -23.17
       },
       {
         "div": "E0",
@@ -4139,7 +4571,7 @@
         "gameweek": 8,
         "match": "Aston Villa v Manchester City",
         "profit": -1.0,
-        "cumulative": -30.98
+        "cumulative": -24.17
       },
       {
         "div": "SP1",
@@ -4147,15 +4579,7 @@
         "gameweek": 10,
         "match": "Rayo Vallecano v Elche",
         "profit": -1.0,
-        "cumulative": -31.98
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-10-24T14:00:00",
-        "gameweek": 8,
-        "match": "Como v Sassuolo",
-        "profit": 0.44,
-        "cumulative": -31.54
+        "cumulative": -25.17
       },
       {
         "div": "I1",
@@ -4163,7 +4587,15 @@
         "gameweek": 8,
         "match": "Cagliari v Bologna",
         "profit": -1.0,
-        "cumulative": -32.54
+        "cumulative": -26.17
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-10-24T14:00:00",
+        "gameweek": 8,
+        "match": "Como v Sassuolo",
+        "profit": 0.44,
+        "cumulative": -25.73
       },
       {
         "div": "D1",
@@ -4171,7 +4603,7 @@
         "gameweek": 7,
         "match": "1. FC K\u00f6ln v Schalke 04",
         "profit": -1.0,
-        "cumulative": -33.54
+        "cumulative": -26.73
       },
       {
         "div": "D1",
@@ -4179,7 +4611,7 @@
         "gameweek": 7,
         "match": "Augsburg v Union Berlin",
         "profit": -1.0,
-        "cumulative": -34.54
+        "cumulative": -27.73
       },
       {
         "div": "D1",
@@ -4187,7 +4619,7 @@
         "gameweek": 7,
         "match": "Mainz 05 v Werder Bremen",
         "profit": -1.0,
-        "cumulative": -35.54
+        "cumulative": -28.73
       },
       {
         "div": "D1",
@@ -4195,7 +4627,7 @@
         "gameweek": 7,
         "match": "Paderborn v Hamburger SV",
         "profit": 1.25,
-        "cumulative": -34.29
+        "cumulative": -27.48
       },
       {
         "div": "D1",
@@ -4203,7 +4635,7 @@
         "gameweek": 7,
         "match": "RB Leipzig v Elversberg",
         "profit": 0.4,
-        "cumulative": -33.89
+        "cumulative": -27.08
       },
       {
         "div": "E0",
@@ -4211,7 +4643,7 @@
         "gameweek": 8,
         "match": "Arsenal v Everton",
         "profit": 0.44,
-        "cumulative": -33.45
+        "cumulative": -26.64
       },
       {
         "div": "E0",
@@ -4219,7 +4651,7 @@
         "gameweek": 8,
         "match": "Coventry v Fulham",
         "profit": 1.2,
-        "cumulative": -32.25
+        "cumulative": -25.44
       },
       {
         "div": "SP1",
@@ -4227,7 +4659,7 @@
         "gameweek": 10,
         "match": "Racing Santander v Espanyol",
         "profit": 1.38,
-        "cumulative": -30.87
+        "cumulative": -24.06
       },
       {
         "div": "P1",
@@ -4235,7 +4667,7 @@
         "gameweek": 9,
         "match": "Estrela da Amadora v Casa Pia AC",
         "profit": -1.0,
-        "cumulative": -31.87
+        "cumulative": -25.06
       },
       {
         "div": "N1",
@@ -4243,7 +4675,7 @@
         "gameweek": 10,
         "match": "FC Utrecht v PEC Zwolle",
         "profit": -1.0,
-        "cumulative": -32.87
+        "cumulative": -26.06
       },
       {
         "div": "I1",
@@ -4251,23 +4683,7 @@
         "gameweek": 8,
         "match": "Napoli v Roma",
         "profit": -1.0,
-        "cumulative": -33.87
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-10-24T17:30:00",
-        "gameweek": 8,
-        "match": "Chelsea v Tottenham Hotspur",
-        "profit": -1.0,
-        "cumulative": -34.87
-      },
-      {
-        "div": "SP1",
-        "kickoff": "2026-10-24T17:30:00",
-        "gameweek": 10,
-        "match": "Valencia v Villarreal",
-        "profit": 1.1,
-        "cumulative": -33.77
+        "cumulative": -27.06
       },
       {
         "div": "D1",
@@ -4275,7 +4691,23 @@
         "gameweek": 7,
         "match": "Borussia Dortmund v Eintracht Frankfurt",
         "profit": 0.4,
-        "cumulative": -33.37
+        "cumulative": -26.66
+      },
+      {
+        "div": "SP1",
+        "kickoff": "2026-10-24T17:30:00",
+        "gameweek": 10,
+        "match": "Valencia v Villarreal",
+        "profit": 1.1,
+        "cumulative": -25.56
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-24T17:30:00",
+        "gameweek": 8,
+        "match": "Chelsea v Tottenham Hotspur",
+        "profit": -1.0,
+        "cumulative": -26.56
       },
       {
         "div": "N1",
@@ -4283,7 +4715,7 @@
         "gameweek": 10,
         "match": "Willem II v Cambuur",
         "profit": 1.38,
-        "cumulative": -31.99
+        "cumulative": -25.18
       },
       {
         "div": "P1",
@@ -4291,7 +4723,7 @@
         "gameweek": 9,
         "match": "Alverca v Arouca",
         "profit": -1.0,
-        "cumulative": -32.99
+        "cumulative": -26.18
       },
       {
         "div": "I1",
@@ -4299,7 +4731,7 @@
         "gameweek": 8,
         "match": "Lazio v Parma",
         "profit": 0.36,
-        "cumulative": -32.63
+        "cumulative": -25.82
       },
       {
         "div": "F1",
@@ -4307,7 +4739,7 @@
         "gameweek": 8,
         "match": "Lens v Paris FC",
         "profit": 1.38,
-        "cumulative": -31.25
+        "cumulative": -24.44
       },
       {
         "div": "SP1",
@@ -4315,7 +4747,7 @@
         "gameweek": 10,
         "match": "Atl\u00e9tico Madrid v Deportivo A Coru\u00f1a",
         "profit": 0.25,
-        "cumulative": -31.0
+        "cumulative": -24.19
       },
       {
         "div": "N1",
@@ -4323,7 +4755,7 @@
         "gameweek": 10,
         "match": "ADO Den Haag v SC Heerenveen",
         "profit": 0.91,
-        "cumulative": -30.09
+        "cumulative": -23.28
       },
       {
         "div": "P1",
@@ -4331,7 +4763,7 @@
         "gameweek": 9,
         "match": "Gil Vicente v FC Porto",
         "profit": 0.4,
-        "cumulative": -29.69
+        "cumulative": -22.88
       },
       {
         "div": "N1",
@@ -4339,7 +4771,7 @@
         "gameweek": 10,
         "match": "Fortuna Sittard v Excelsior",
         "profit": 1.2,
-        "cumulative": -28.49
+        "cumulative": -21.68
       },
       {
         "div": "I1",
@@ -4347,7 +4779,7 @@
         "gameweek": 8,
         "match": "Inter v Fiorentina",
         "profit": 0.33,
-        "cumulative": -28.16
+        "cumulative": -21.35
       },
       {
         "div": "SP1",
@@ -4355,15 +4787,7 @@
         "gameweek": 10,
         "match": "Athletic Club v Getafe",
         "profit": 0.55,
-        "cumulative": -27.61
-      },
-      {
-        "div": "N1",
-        "kickoff": "2026-10-25T13:30:00",
-        "gameweek": 10,
-        "match": "PSV Eindhoven v Feyenoord",
-        "profit": -1.0,
-        "cumulative": -28.61
+        "cumulative": -20.8
       },
       {
         "div": "N1",
@@ -4371,47 +4795,15 @@
         "gameweek": 10,
         "match": "NEC Nijmegen v FC Groningen",
         "profit": -1.0,
-        "cumulative": -29.61
+        "cumulative": -21.8
       },
       {
-        "div": "F1",
-        "kickoff": "2026-10-25T14:00:00",
-        "gameweek": 8,
-        "match": "Monaco v Lille",
+        "div": "N1",
+        "kickoff": "2026-10-25T13:30:00",
+        "gameweek": 10,
+        "match": "PSV Eindhoven v Feyenoord",
         "profit": -1.0,
-        "cumulative": -30.61
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-10-25T14:00:00",
-        "gameweek": 8,
-        "match": "Atalanta v Frosinone",
-        "profit": -1.0,
-        "cumulative": -31.61
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-10-25T14:00:00",
-        "gameweek": 8,
-        "match": "Manchester United v Bournemouth",
-        "profit": -1.0,
-        "cumulative": -32.61
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-10-25T14:00:00",
-        "gameweek": 8,
-        "match": "Genoa v Venezia",
-        "profit": 1.1,
-        "cumulative": -31.51
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-10-25T14:00:00",
-        "gameweek": 8,
-        "match": "Hull City v Brentford",
-        "profit": -1.0,
-        "cumulative": -32.51
+        "cumulative": -22.8
       },
       {
         "div": "E0",
@@ -4419,7 +4811,15 @@
         "gameweek": 8,
         "match": "Crystal Palace v Newcastle United",
         "profit": -1.0,
-        "cumulative": -33.51
+        "cumulative": -23.8
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-25T14:00:00",
+        "gameweek": 8,
+        "match": "Hull City v Brentford",
+        "profit": -1.0,
+        "cumulative": -24.8
       },
       {
         "div": "E0",
@@ -4427,7 +4827,39 @@
         "gameweek": 8,
         "match": "Liverpool v Brighton and Hove Albion",
         "profit": 1.05,
-        "cumulative": -32.46
+        "cumulative": -23.75
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-25T14:00:00",
+        "gameweek": 8,
+        "match": "Manchester United v Bournemouth",
+        "profit": -1.0,
+        "cumulative": -24.75
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-10-25T14:00:00",
+        "gameweek": 8,
+        "match": "Atalanta v Frosinone",
+        "profit": -1.0,
+        "cumulative": -25.75
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-10-25T14:00:00",
+        "gameweek": 8,
+        "match": "Genoa v Venezia",
+        "profit": 1.1,
+        "cumulative": -24.65
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-10-25T14:00:00",
+        "gameweek": 8,
+        "match": "Monaco v Lille",
+        "profit": -1.0,
+        "cumulative": -25.65
       },
       {
         "div": "D1",
@@ -4435,7 +4867,7 @@
         "gameweek": 7,
         "match": "Hoffenheim v Bayer Leverkusen",
         "profit": -1.0,
-        "cumulative": -33.46
+        "cumulative": -26.65
       },
       {
         "div": "SP1",
@@ -4443,7 +4875,7 @@
         "gameweek": 10,
         "match": "Celta Vigo v Real Betis",
         "profit": -1.0,
-        "cumulative": -34.46
+        "cumulative": -27.65
       },
       {
         "div": "P1",
@@ -4451,7 +4883,7 @@
         "gameweek": 9,
         "match": "Estoril v Moreirense",
         "profit": -1.0,
-        "cumulative": -35.46
+        "cumulative": -28.65
       },
       {
         "div": "N1",
@@ -4459,7 +4891,7 @@
         "gameweek": 10,
         "match": "Sparta Rotterdam v Ajax",
         "profit": 0.44,
-        "cumulative": -35.02
+        "cumulative": -28.21
       },
       {
         "div": "F1",
@@ -4467,31 +4899,7 @@
         "gameweek": 8,
         "match": "Toulouse v Troyes",
         "profit": -1.0,
-        "cumulative": -36.02
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-10-25T16:15:00",
-        "gameweek": 8,
-        "match": "Marseille v Le Havre",
-        "profit": 0.53,
-        "cumulative": -35.49
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-10-25T16:15:00",
-        "gameweek": 8,
-        "match": "Auxerre v Le Mans",
-        "profit": -1.0,
-        "cumulative": -36.49
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-10-25T16:15:00",
-        "gameweek": 8,
-        "match": "Angers v Lorient",
-        "profit": -1.0,
-        "cumulative": -37.49
+        "cumulative": -29.21
       },
       {
         "div": "F1",
@@ -4499,15 +4907,31 @@
         "gameweek": 8,
         "match": "Rennes v Strasbourg",
         "profit": 0.73,
-        "cumulative": -36.76
+        "cumulative": -28.48
       },
       {
-        "div": "D1",
-        "kickoff": "2026-10-25T16:30:00",
-        "gameweek": 7,
-        "match": "Freiburg v Bayern M\u00fcnchen",
-        "profit": 0.33,
-        "cumulative": -36.43
+        "div": "F1",
+        "kickoff": "2026-10-25T16:15:00",
+        "gameweek": 8,
+        "match": "Marseille v Le Havre",
+        "profit": 0.53,
+        "cumulative": -27.95
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-10-25T16:15:00",
+        "gameweek": 8,
+        "match": "Auxerre v Le Mans",
+        "profit": -1.0,
+        "cumulative": -28.95
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-10-25T16:15:00",
+        "gameweek": 8,
+        "match": "Angers v Lorient",
+        "profit": -1.0,
+        "cumulative": -29.95
       },
       {
         "div": "E0",
@@ -4515,7 +4939,15 @@
         "gameweek": 8,
         "match": "Sunderland v Leeds United",
         "profit": -1.0,
-        "cumulative": -37.43
+        "cumulative": -30.95
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-10-25T16:30:00",
+        "gameweek": 7,
+        "match": "Freiburg v Bayern M\u00fcnchen",
+        "profit": 0.33,
+        "cumulative": -30.62
       },
       {
         "div": "I1",
@@ -4523,7 +4955,7 @@
         "gameweek": 8,
         "match": "Lecce v Juventus",
         "profit": 0.4,
-        "cumulative": -37.03
+        "cumulative": -30.22
       },
       {
         "div": "SP1",
@@ -4531,7 +4963,7 @@
         "gameweek": 10,
         "match": "Real Sociedad v Levante",
         "profit": 0.6,
-        "cumulative": -36.43
+        "cumulative": -29.62
       },
       {
         "div": "P1",
@@ -4539,7 +4971,7 @@
         "gameweek": 9,
         "match": "Rio Ave v Famalic\u00e3o",
         "profit": 1.0,
-        "cumulative": -35.43
+        "cumulative": -28.62
       },
       {
         "div": "P1",
@@ -4547,7 +4979,7 @@
         "gameweek": 9,
         "match": "Nacional v Braga",
         "profit": -1.0,
-        "cumulative": -36.43
+        "cumulative": -29.62
       },
       {
         "div": "N1",
@@ -4555,7 +4987,7 @@
         "gameweek": 10,
         "match": "AZ Alkmaar v FC Twente",
         "profit": -1.0,
-        "cumulative": -37.43
+        "cumulative": -30.62
       },
       {
         "div": "I1",
@@ -4563,7 +4995,7 @@
         "gameweek": 8,
         "match": "Udinese v Milan",
         "profit": 0.62,
-        "cumulative": -36.81
+        "cumulative": -30.0
       },
       {
         "div": "SP1",
@@ -4571,7 +5003,7 @@
         "gameweek": 10,
         "match": "Barcelona v Real Madrid",
         "profit": -1.0,
-        "cumulative": -37.81
+        "cumulative": -31.0
       },
       {
         "div": "P1",
@@ -4579,7 +5011,7 @@
         "gameweek": 9,
         "match": "Sporting CP v Acad\u00e9mico Viseu",
         "profit": -1.0,
-        "cumulative": -38.81
+        "cumulative": -32.0
       },
       {
         "div": "P1",
@@ -4587,7 +5019,7 @@
         "gameweek": 9,
         "match": "Santa Clara v Benfica",
         "profit": 0.3,
-        "cumulative": -38.51
+        "cumulative": -31.7
       },
       {
         "div": "F1",
@@ -4595,7 +5027,7 @@
         "gameweek": 8,
         "match": "Paris Saint-Germain v Lyon",
         "profit": 0.4,
-        "cumulative": -38.11
+        "cumulative": -31.3
       },
       {
         "div": "SP1",
@@ -4603,7 +5035,7 @@
         "gameweek": 10,
         "match": "Sevilla v Osasuna",
         "profit": 0.91,
-        "cumulative": -37.2
+        "cumulative": -30.39
       },
       {
         "div": "I1",
@@ -4611,7 +5043,7 @@
         "gameweek": 9,
         "match": "Sassuolo v Lazio",
         "profit": 1.1,
-        "cumulative": -36.1
+        "cumulative": -29.29
       },
       {
         "div": "I1",
@@ -4619,7 +5051,7 @@
         "gameweek": 9,
         "match": "Torino v Como",
         "profit": 0.7,
-        "cumulative": -35.4
+        "cumulative": -28.59
       },
       {
         "div": "I1",
@@ -4627,7 +5059,7 @@
         "gameweek": 9,
         "match": "Roma v Cagliari",
         "profit": 0.29,
-        "cumulative": -35.11
+        "cumulative": -28.3
       },
       {
         "div": "I1",
@@ -4635,7 +5067,7 @@
         "gameweek": 9,
         "match": "Venezia v Inter",
         "profit": 0.3,
-        "cumulative": -34.81
+        "cumulative": -28.0
       },
       {
         "div": "I1",
@@ -4643,7 +5075,7 @@
         "gameweek": 9,
         "match": "Parma v Udinese",
         "profit": -1.0,
-        "cumulative": -35.81
+        "cumulative": -29.0
       },
       {
         "div": "I1",
@@ -4651,7 +5083,7 @@
         "gameweek": 9,
         "match": "Milan v Bologna",
         "profit": -1.0,
-        "cumulative": -36.81
+        "cumulative": -30.0
       },
       {
         "div": "I1",
@@ -4659,7 +5091,7 @@
         "gameweek": 9,
         "match": "Monza v Napoli",
         "profit": 0.73,
-        "cumulative": -36.08
+        "cumulative": -29.27
       },
       {
         "div": "I1",
@@ -4667,7 +5099,7 @@
         "gameweek": 9,
         "match": "Genoa v Juventus",
         "profit": -1.0,
-        "cumulative": -37.08
+        "cumulative": -30.27
       },
       {
         "div": "I1",
@@ -4675,7 +5107,7 @@
         "gameweek": 9,
         "match": "Frosinone v Lecce",
         "profit": 0.62,
-        "cumulative": -36.46
+        "cumulative": -29.65
       },
       {
         "div": "I1",
@@ -4683,7 +5115,7 @@
         "gameweek": 9,
         "match": "Fiorentina v Atalanta",
         "profit": -1.0,
-        "cumulative": -37.46
+        "cumulative": -30.65
       },
       {
         "div": "F1",
@@ -4691,7 +5123,7 @@
         "gameweek": 9,
         "match": "Nice v Rennes",
         "profit": -1.0,
-        "cumulative": -38.46
+        "cumulative": -31.65
       },
       {
         "div": "F1",
@@ -4699,7 +5131,7 @@
         "gameweek": 9,
         "match": "Le Havre v Paris Saint-Germain",
         "profit": 0.29,
-        "cumulative": -38.17
+        "cumulative": -31.36
       },
       {
         "div": "D1",
@@ -4707,7 +5139,7 @@
         "gameweek": 8,
         "match": "Elversberg v Mainz 05",
         "profit": -1.0,
-        "cumulative": -39.17
+        "cumulative": -32.36
       },
       {
         "div": "SP1",
@@ -4715,7 +5147,7 @@
         "gameweek": 11,
         "match": "Villarreal v Espanyol",
         "profit": -1.0,
-        "cumulative": -40.17
+        "cumulative": -33.36
       },
       {
         "div": "F1",
@@ -4723,7 +5155,7 @@
         "gameweek": 9,
         "match": "Lille v Lens",
         "profit": 1.7,
-        "cumulative": -38.47
+        "cumulative": -31.66
       },
       {
         "div": "P1",
@@ -4731,7 +5163,7 @@
         "gameweek": 10,
         "match": "Casa Pia AC v Sporting CP",
         "profit": 0.25,
-        "cumulative": -38.22
+        "cumulative": -31.41
       },
       {
         "div": "E0",
@@ -4739,7 +5171,7 @@
         "gameweek": 9,
         "match": "Chelsea v Manchester United",
         "profit": 0.8,
-        "cumulative": -37.42
+        "cumulative": -30.61
       },
       {
         "div": "SP1",
@@ -4747,7 +5179,7 @@
         "gameweek": 11,
         "match": "Levante v Atl\u00e9tico Madrid",
         "profit": 0.5,
-        "cumulative": -36.92
+        "cumulative": -30.11
       },
       {
         "div": "I1",
@@ -4755,7 +5187,7 @@
         "gameweek": 10,
         "match": "Bologna v Monza",
         "profit": 0.67,
-        "cumulative": -36.25
+        "cumulative": -29.44
       },
       {
         "div": "D1",
@@ -4763,7 +5195,7 @@
         "gameweek": 8,
         "match": "Werder Bremen v Hoffenheim",
         "profit": 1.75,
-        "cumulative": -34.5
+        "cumulative": -27.69
       },
       {
         "div": "D1",
@@ -4771,7 +5203,7 @@
         "gameweek": 8,
         "match": "Schalke 04 v RB Leipzig",
         "profit": 0.8,
-        "cumulative": -33.7
+        "cumulative": -26.89
       },
       {
         "div": "D1",
@@ -4779,7 +5211,7 @@
         "gameweek": 8,
         "match": "Borussia M\u00f6nchengladbach v Paderborn",
         "profit": -1.0,
-        "cumulative": -34.7
+        "cumulative": -27.89
       },
       {
         "div": "D1",
@@ -4787,7 +5219,7 @@
         "gameweek": 8,
         "match": "Bayer Leverkusen v VfB Stuttgart",
         "profit": -1.0,
-        "cumulative": -35.7
+        "cumulative": -28.89
       },
       {
         "div": "D1",
@@ -4795,15 +5227,7 @@
         "gameweek": 8,
         "match": "Augsburg v Freiburg",
         "profit": 1.1,
-        "cumulative": -34.6
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-10-31T15:00:00",
-        "gameweek": 9,
-        "match": "Manchester City v Brighton and Hove Albion",
-        "profit": -1.0,
-        "cumulative": -35.6
+        "cumulative": -27.79
       },
       {
         "div": "E0",
@@ -4811,23 +5235,7 @@
         "gameweek": 9,
         "match": "Hull City v Ipswich",
         "profit": -1.0,
-        "cumulative": -36.6
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-10-31T15:00:00",
-        "gameweek": 9,
-        "match": "Bournemouth v Leeds United",
-        "profit": 1.1,
-        "cumulative": -35.5
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-10-31T15:00:00",
-        "gameweek": 9,
-        "match": "Brentford v Nottingham Forest",
-        "profit": 1.05,
-        "cumulative": -34.45
+        "cumulative": -28.79
       },
       {
         "div": "E0",
@@ -4835,7 +5243,31 @@
         "gameweek": 9,
         "match": "Coventry v Sunderland",
         "profit": 2.1,
-        "cumulative": -32.35
+        "cumulative": -26.69
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-31T15:00:00",
+        "gameweek": 9,
+        "match": "Manchester City v Brighton and Hove Albion",
+        "profit": -1.0,
+        "cumulative": -27.69
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-31T15:00:00",
+        "gameweek": 9,
+        "match": "Bournemouth v Leeds United",
+        "profit": 1.1,
+        "cumulative": -26.59
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-31T15:00:00",
+        "gameweek": 9,
+        "match": "Brentford v Nottingham Forest",
+        "profit": 1.05,
+        "cumulative": -25.54
       },
       {
         "div": "SP1",
@@ -4843,7 +5275,7 @@
         "gameweek": 11,
         "match": "Rayo Vallecano v Celta Vigo",
         "profit": 1.4,
-        "cumulative": -30.95
+        "cumulative": -24.14
       },
       {
         "div": "P1",
@@ -4851,7 +5283,7 @@
         "gameweek": 10,
         "match": "Moreirense v Estrela da Amadora",
         "profit": 1.75,
-        "cumulative": -29.2
+        "cumulative": -22.39
       },
       {
         "div": "N1",
@@ -4859,7 +5291,7 @@
         "gameweek": 11,
         "match": "Feyenoord v Fortuna Sittard",
         "profit": -1.0,
-        "cumulative": -30.2
+        "cumulative": -23.39
       },
       {
         "div": "I1",
@@ -4867,15 +5299,7 @@
         "gameweek": 10,
         "match": "Udinese v Roma",
         "profit": 0.5,
-        "cumulative": -29.7
-      },
-      {
-        "div": "SP1",
-        "kickoff": "2026-10-31T17:30:00",
-        "gameweek": 11,
-        "match": "Real Betis v M\u00e1laga",
-        "profit": 0.33,
-        "cumulative": -29.37
+        "cumulative": -22.89
       },
       {
         "div": "E0",
@@ -4883,7 +5307,15 @@
         "gameweek": 9,
         "match": "Tottenham Hotspur v Crystal Palace",
         "profit": 0.53,
-        "cumulative": -28.84
+        "cumulative": -22.36
+      },
+      {
+        "div": "SP1",
+        "kickoff": "2026-10-31T17:30:00",
+        "gameweek": 11,
+        "match": "Real Betis v M\u00e1laga",
+        "profit": 0.33,
+        "cumulative": -22.03
       },
       {
         "div": "D1",
@@ -4891,15 +5323,7 @@
         "gameweek": 8,
         "match": "Bayern M\u00fcnchen v Borussia Dortmund",
         "profit": -1.0,
-        "cumulative": -29.84
-      },
-      {
-        "div": "N1",
-        "kickoff": "2026-10-31T17:45:00",
-        "gameweek": 11,
-        "match": "PSV Eindhoven v Willem II",
-        "profit": 0.04,
-        "cumulative": -29.8
+        "cumulative": -23.03
       },
       {
         "div": "N1",
@@ -4907,7 +5331,15 @@
         "gameweek": 11,
         "match": "SC Heerenveen v NEC Nijmegen",
         "profit": 0.95,
-        "cumulative": -28.85
+        "cumulative": -22.08
+      },
+      {
+        "div": "N1",
+        "kickoff": "2026-10-31T17:45:00",
+        "gameweek": 11,
+        "match": "PSV Eindhoven v Willem II",
+        "profit": 0.04,
+        "cumulative": -22.04
       },
       {
         "div": "I1",
@@ -4915,7 +5347,7 @@
         "gameweek": 10,
         "match": "Milan v Inter",
         "profit": -1.0,
-        "cumulative": -29.85
+        "cumulative": -23.04
       },
       {
         "div": "F1",
@@ -4923,31 +5355,7 @@
         "gameweek": 9,
         "match": "Troyes v Le Mans",
         "profit": -1.0,
-        "cumulative": -30.85
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-10-31T20:00:00",
-        "gameweek": 9,
-        "match": "Aston Villa v Fulham",
-        "profit": -1.0,
-        "cumulative": -31.85
-      },
-      {
-        "div": "SP1",
-        "kickoff": "2026-10-31T20:00:00",
-        "gameweek": 11,
-        "match": "Barcelona v Deportivo Alav\u00e9s",
-        "profit": 0.09,
-        "cumulative": -31.76
-      },
-      {
-        "div": "N1",
-        "kickoff": "2026-10-31T20:00:00",
-        "gameweek": 11,
-        "match": "Cambuur v Go Ahead Eagles",
-        "profit": -1.0,
-        "cumulative": -32.76
+        "cumulative": -24.04
       },
       {
         "div": "N1",
@@ -4955,7 +5363,31 @@
         "gameweek": 11,
         "match": "Ajax v AZ Alkmaar",
         "profit": 0.6,
-        "cumulative": -32.16
+        "cumulative": -23.44
+      },
+      {
+        "div": "N1",
+        "kickoff": "2026-10-31T20:00:00",
+        "gameweek": 11,
+        "match": "Cambuur v Go Ahead Eagles",
+        "profit": -1.0,
+        "cumulative": -24.44
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-10-31T20:00:00",
+        "gameweek": 9,
+        "match": "Aston Villa v Fulham",
+        "profit": -1.0,
+        "cumulative": -25.44
+      },
+      {
+        "div": "SP1",
+        "kickoff": "2026-10-31T20:00:00",
+        "gameweek": 11,
+        "match": "Barcelona v Deportivo Alav\u00e9s",
+        "profit": 0.09,
+        "cumulative": -25.35
       },
       {
         "div": "P1",
@@ -4963,7 +5395,7 @@
         "gameweek": 10,
         "match": "FC Porto v Estoril",
         "profit": 0.2,
-        "cumulative": -31.96
+        "cumulative": -25.15
       },
       {
         "div": "N1",
@@ -4971,7 +5403,7 @@
         "gameweek": 11,
         "match": "PEC Zwolle v ADO Den Haag",
         "profit": 1.15,
-        "cumulative": -30.81
+        "cumulative": -24.0
       },
       {
         "div": "I1",
@@ -4979,7 +5411,7 @@
         "gameweek": 10,
         "match": "Como v Venezia",
         "profit": 0.29,
-        "cumulative": -30.52
+        "cumulative": -23.71
       },
       {
         "div": "SP1",
@@ -4987,15 +5419,7 @@
         "gameweek": 11,
         "match": "Getafe v Sevilla",
         "profit": 2.2,
-        "cumulative": -28.32
-      },
-      {
-        "div": "N1",
-        "kickoff": "2026-11-01T13:30:00",
-        "gameweek": 11,
-        "match": "Excelsior v FC Twente",
-        "profit": 0.53,
-        "cumulative": -27.79
+        "cumulative": -21.51
       },
       {
         "div": "N1",
@@ -5003,23 +5427,15 @@
         "gameweek": 11,
         "match": "Telstar v FC Utrecht",
         "profit": -1.0,
-        "cumulative": -28.79
+        "cumulative": -22.51
       },
       {
-        "div": "I1",
-        "kickoff": "2026-11-01T14:00:00",
-        "gameweek": 10,
-        "match": "Lazio v Cagliari",
-        "profit": 0.44,
-        "cumulative": -28.35
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-11-01T14:00:00",
-        "gameweek": 10,
-        "match": "Frosinone v Torino",
-        "profit": 1.15,
-        "cumulative": -27.2
+        "div": "N1",
+        "kickoff": "2026-11-01T13:30:00",
+        "gameweek": 11,
+        "match": "Excelsior v FC Twente",
+        "profit": 0.53,
+        "cumulative": -21.98
       },
       {
         "div": "F1",
@@ -5027,7 +5443,23 @@
         "gameweek": 9,
         "match": "Strasbourg v Auxerre",
         "profit": 0.8,
-        "cumulative": -26.4
+        "cumulative": -21.18
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-11-01T14:00:00",
+        "gameweek": 10,
+        "match": "Lazio v Cagliari",
+        "profit": 0.44,
+        "cumulative": -20.74
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-11-01T14:00:00",
+        "gameweek": 10,
+        "match": "Frosinone v Torino",
+        "profit": 1.15,
+        "cumulative": -19.59
       },
       {
         "div": "D1",
@@ -5035,7 +5467,7 @@
         "gameweek": 8,
         "match": "Union Berlin v 1. FC K\u00f6ln",
         "profit": -1.0,
-        "cumulative": -27.4
+        "cumulative": -20.59
       },
       {
         "div": "SP1",
@@ -5043,7 +5475,7 @@
         "gameweek": 11,
         "match": "Racing Santander v Real Madrid",
         "profit": 0.2,
-        "cumulative": -27.2
+        "cumulative": -20.39
       },
       {
         "div": "P1",
@@ -5051,7 +5483,7 @@
         "gameweek": 10,
         "match": "Arouca v Nacional",
         "profit": 0.8,
-        "cumulative": -26.4
+        "cumulative": -19.59
       },
       {
         "div": "N1",
@@ -5059,7 +5491,7 @@
         "gameweek": 11,
         "match": "FC Groningen v Sparta Rotterdam",
         "profit": -1.0,
-        "cumulative": -27.4
+        "cumulative": -20.59
       },
       {
         "div": "F1",
@@ -5067,7 +5499,7 @@
         "gameweek": 9,
         "match": "Paris FC v Monaco",
         "profit": 1.2,
-        "cumulative": -26.2
+        "cumulative": -19.39
       },
       {
         "div": "F1",
@@ -5075,7 +5507,7 @@
         "gameweek": 9,
         "match": "Lyon v Angers",
         "profit": 0.36,
-        "cumulative": -25.84
+        "cumulative": -19.03
       },
       {
         "div": "E0",
@@ -5083,7 +5515,7 @@
         "gameweek": 9,
         "match": "Liverpool v Arsenal",
         "profit": 1.38,
-        "cumulative": -24.46
+        "cumulative": -17.65
       },
       {
         "div": "D1",
@@ -5091,7 +5523,7 @@
         "gameweek": 8,
         "match": "Eintracht Frankfurt v Hamburger SV",
         "profit": 0.55,
-        "cumulative": -23.91
+        "cumulative": -17.1
       },
       {
         "div": "I1",
@@ -5099,7 +5531,7 @@
         "gameweek": 10,
         "match": "Lecce v Genoa",
         "profit": -1.0,
-        "cumulative": -24.91
+        "cumulative": -18.1
       },
       {
         "div": "SP1",
@@ -5107,15 +5539,7 @@
         "gameweek": 11,
         "match": "Elche v Valencia",
         "profit": -1.0,
-        "cumulative": -25.91
-      },
-      {
-        "div": "P1",
-        "kickoff": "2026-11-01T18:00:00",
-        "gameweek": 10,
-        "match": "Mar\u00edtimo v Santa Clara",
-        "profit": 1.25,
-        "cumulative": -24.66
+        "cumulative": -19.1
       },
       {
         "div": "P1",
@@ -5123,15 +5547,15 @@
         "gameweek": 10,
         "match": "Acad\u00e9mico Viseu v Rio Ave",
         "profit": 0.91,
-        "cumulative": -23.75
+        "cumulative": -18.19
       },
       {
-        "div": "I1",
-        "kickoff": "2026-11-01T19:45:00",
+        "div": "P1",
+        "kickoff": "2026-11-01T18:00:00",
         "gameweek": 10,
-        "match": "Juventus v Napoli",
-        "profit": -1.0,
-        "cumulative": -24.75
+        "match": "Mar\u00edtimo v Santa Clara",
+        "profit": 1.25,
+        "cumulative": -16.94
       },
       {
         "div": "F1",
@@ -5139,7 +5563,15 @@
         "gameweek": 9,
         "match": "Marseille v Toulouse",
         "profit": 0.91,
-        "cumulative": -23.84
+        "cumulative": -16.03
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-11-01T19:45:00",
+        "gameweek": 10,
+        "match": "Juventus v Napoli",
+        "profit": -1.0,
+        "cumulative": -17.03
       },
       {
         "div": "SP1",
@@ -5147,7 +5579,7 @@
         "gameweek": 11,
         "match": "Athletic Club v Real Sociedad",
         "profit": 1.15,
-        "cumulative": -22.69
+        "cumulative": -15.88
       },
       {
         "div": "P1",
@@ -5155,7 +5587,7 @@
         "gameweek": 10,
         "match": "Braga v Famalic\u00e3o",
         "profit": 0.75,
-        "cumulative": -21.94
+        "cumulative": -15.13
       },
       {
         "div": "I1",
@@ -5163,7 +5595,7 @@
         "gameweek": 10,
         "match": "Sassuolo v Fiorentina",
         "profit": -1.0,
-        "cumulative": -22.94
+        "cumulative": -16.13
       },
       {
         "div": "I1",
@@ -5171,7 +5603,7 @@
         "gameweek": 10,
         "match": "Atalanta v Parma",
         "profit": -1.0,
-        "cumulative": -23.94
+        "cumulative": -17.13
       },
       {
         "div": "F1",
@@ -5179,15 +5611,7 @@
         "gameweek": 9,
         "match": "Lorient v Brest",
         "profit": -1.0,
-        "cumulative": -24.94
-      },
-      {
-        "div": "SP1",
-        "kickoff": "2026-11-02T20:00:00",
-        "gameweek": 11,
-        "match": "Deportivo A Coru\u00f1a v Osasuna",
-        "profit": 1.15,
-        "cumulative": -23.79
+        "cumulative": -18.13
       },
       {
         "div": "E0",
@@ -5195,7 +5619,15 @@
         "gameweek": 9,
         "match": "Newcastle United v Everton",
         "profit": -1.0,
-        "cumulative": -24.79
+        "cumulative": -19.13
+      },
+      {
+        "div": "SP1",
+        "kickoff": "2026-11-02T20:00:00",
+        "gameweek": 11,
+        "match": "Deportivo A Coru\u00f1a v Osasuna",
+        "profit": 1.15,
+        "cumulative": -17.98
       },
       {
         "div": "P1",
@@ -5203,7 +5635,7 @@
         "gameweek": 10,
         "match": "Gil Vicente v Vit\u00f3ria de Guimar\u00e3es",
         "profit": -1.0,
-        "cumulative": -25.79
+        "cumulative": -18.98
       },
       {
         "div": "P1",
@@ -5211,7 +5643,151 @@
         "gameweek": 10,
         "match": "Benfica v Alverca",
         "profit": 0.14,
-        "cumulative": -25.65
+        "cumulative": -18.84
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-03T17:45:00",
+        "gameweek": 4,
+        "match": "Shakhtar Donetsk v Sporting CP",
+        "profit": 1.2,
+        "cumulative": -17.64
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-03T17:45:00",
+        "gameweek": 4,
+        "match": "Galatasaray v VfB Stuttgart",
+        "profit": -1.0,
+        "cumulative": -18.64
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-03T20:00:00",
+        "gameweek": 4,
+        "match": "Feyenoord v Inter",
+        "profit": 0.77,
+        "cumulative": -17.87
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-03T20:00:00",
+        "gameweek": 4,
+        "match": "Barcelona v Aston Villa",
+        "profit": 0.3,
+        "cumulative": -17.57
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-03T20:00:00",
+        "gameweek": 4,
+        "match": "Bod\u00f8/Glimt v Lille",
+        "profit": -1.0,
+        "cumulative": -18.57
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-03T20:00:00",
+        "gameweek": 4,
+        "match": "Villarreal v Paris Saint-Germain",
+        "profit": 0.78,
+        "cumulative": -17.79
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-03T20:00:00",
+        "gameweek": 4,
+        "match": "LASK v Slovan Bratislava",
+        "profit": 0.32,
+        "cumulative": -17.47
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-03T20:00:00",
+        "gameweek": 4,
+        "match": "Manchester United v Roma",
+        "profit": -1.0,
+        "cumulative": -18.47
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-03T20:00:00",
+        "gameweek": 4,
+        "match": "Atl\u00e9tico Madrid v Bayern M\u00fcnchen",
+        "profit": 1.09,
+        "cumulative": -17.38
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-04T17:45:00",
+        "gameweek": 4,
+        "match": "Fenerbah\u00e7e v Liverpool",
+        "profit": -1.0,
+        "cumulative": -18.38
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-04T17:45:00",
+        "gameweek": 4,
+        "match": "AEK Athens v Real Madrid",
+        "profit": 0.21,
+        "cumulative": -18.17
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-04T20:00:00",
+        "gameweek": 4,
+        "match": "Borussia Dortmund v Real Betis",
+        "profit": 0.54,
+        "cumulative": -17.63
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-04T20:00:00",
+        "gameweek": 4,
+        "match": "PSV Eindhoven v Club Brugge",
+        "profit": -1.0,
+        "cumulative": -18.63
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-04T20:00:00",
+        "gameweek": 4,
+        "match": "FC Porto v Napoli",
+        "profit": 1.01,
+        "cumulative": -17.62
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-04T20:00:00",
+        "gameweek": 4,
+        "match": "Lens v Como",
+        "profit": 0.87,
+        "cumulative": -16.75
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-04T20:00:00",
+        "gameweek": 4,
+        "match": "Viking v Sabah FK",
+        "profit": 0.57,
+        "cumulative": -16.18
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-04T20:00:00",
+        "gameweek": 4,
+        "match": "Slavia Prague v Arsenal",
+        "profit": 0.26,
+        "cumulative": -15.92
+      },
+      {
+        "div": "CL",
+        "kickoff": "2026-11-04T20:00:00",
+        "gameweek": 4,
+        "match": "RB Leipzig v Manchester City",
+        "profit": 0.57,
+        "cumulative": -15.35
       },
       {
         "div": "N1",
@@ -5219,7 +5795,7 @@
         "gameweek": 12,
         "match": "Willem II v PEC Zwolle",
         "profit": -1.0,
-        "cumulative": -26.65
+        "cumulative": -16.35
       },
       {
         "div": "D1",
@@ -5227,7 +5803,7 @@
         "gameweek": 9,
         "match": "Hamburger SV v Borussia M\u00f6nchengladbach",
         "profit": 1.3,
-        "cumulative": -25.35
+        "cumulative": -15.05
       },
       {
         "div": "I1",
@@ -5235,7 +5811,7 @@
         "gameweek": 11,
         "match": "Venezia v Udinese",
         "profit": 1.25,
-        "cumulative": -24.1
+        "cumulative": -13.8
       },
       {
         "div": "F1",
@@ -5243,7 +5819,7 @@
         "gameweek": 10,
         "match": "Toulouse v Strasbourg",
         "profit": 1.15,
-        "cumulative": -22.95
+        "cumulative": -12.65
       },
       {
         "div": "E0",
@@ -5251,7 +5827,7 @@
         "gameweek": 10,
         "match": "Everton v Coventry",
         "profit": 0.62,
-        "cumulative": -22.33
+        "cumulative": -12.03
       },
       {
         "div": "SP1",
@@ -5259,7 +5835,7 @@
         "gameweek": 12,
         "match": "Sevilla v Deportivo Alav\u00e9s",
         "profit": -1.0,
-        "cumulative": -23.33
+        "cumulative": -13.03
       },
       {
         "div": "P1",
@@ -5267,7 +5843,7 @@
         "gameweek": 11,
         "match": "Famalic\u00e3o v Arouca",
         "profit": -1.0,
-        "cumulative": -24.33
+        "cumulative": -14.03
       },
       {
         "div": "E0",
@@ -5275,7 +5851,7 @@
         "gameweek": 10,
         "match": "Leeds United v Tottenham Hotspur",
         "profit": 1.7,
-        "cumulative": -22.63
+        "cumulative": -12.33
       },
       {
         "div": "SP1",
@@ -5283,7 +5859,7 @@
         "gameweek": 12,
         "match": "M\u00e1laga v Racing Santander",
         "profit": -1.0,
-        "cumulative": -23.63
+        "cumulative": -13.33
       },
       {
         "div": "I1",
@@ -5291,7 +5867,7 @@
         "gameweek": 11,
         "match": "Cagliari v Frosinone",
         "profit": -1.0,
-        "cumulative": -24.63
+        "cumulative": -14.33
       },
       {
         "div": "I1",
@@ -5299,7 +5875,7 @@
         "gameweek": 11,
         "match": "Torino v Lecce",
         "profit": -1.0,
-        "cumulative": -25.63
+        "cumulative": -15.33
       },
       {
         "div": "D1",
@@ -5307,7 +5883,7 @@
         "gameweek": 9,
         "match": "RB Leipzig v Augsburg",
         "profit": 0.44,
-        "cumulative": -25.19
+        "cumulative": -14.89
       },
       {
         "div": "D1",
@@ -5315,7 +5891,7 @@
         "gameweek": 9,
         "match": "Paderborn v Eintracht Frankfurt",
         "profit": -1.0,
-        "cumulative": -26.19
+        "cumulative": -15.89
       },
       {
         "div": "D1",
@@ -5323,7 +5899,7 @@
         "gameweek": 9,
         "match": "Mainz 05 v Bayern M\u00fcnchen",
         "profit": 0.3,
-        "cumulative": -25.89
+        "cumulative": -15.59
       },
       {
         "div": "D1",
@@ -5331,7 +5907,7 @@
         "gameweek": 9,
         "match": "Borussia Dortmund v Elversberg",
         "profit": 0.29,
-        "cumulative": -25.6
+        "cumulative": -15.3
       },
       {
         "div": "E0",
@@ -5339,7 +5915,7 @@
         "gameweek": 10,
         "match": "Arsenal v Hull City",
         "profit": 0.14,
-        "cumulative": -25.46
+        "cumulative": -15.16
       },
       {
         "div": "E0",
@@ -5347,7 +5923,7 @@
         "gameweek": 10,
         "match": "Fulham v Newcastle United",
         "profit": -1.0,
-        "cumulative": -26.46
+        "cumulative": -16.16
       },
       {
         "div": "SP1",
@@ -5355,7 +5931,7 @@
         "gameweek": 12,
         "match": "Espanyol v Deportivo A Coru\u00f1a",
         "profit": -1.0,
-        "cumulative": -27.46
+        "cumulative": -17.16
       },
       {
         "div": "P1",
@@ -5363,7 +5939,7 @@
         "gameweek": 11,
         "match": "Nacional v Acad\u00e9mico Viseu",
         "profit": -1.0,
-        "cumulative": -28.46
+        "cumulative": -18.16
       },
       {
         "div": "N1",
@@ -5371,7 +5947,7 @@
         "gameweek": 12,
         "match": "Fortuna Sittard v Telstar",
         "profit": -1.0,
-        "cumulative": -29.46
+        "cumulative": -19.16
       },
       {
         "div": "F1",
@@ -5379,7 +5955,7 @@
         "gameweek": 10,
         "match": "Auxerre v Paris FC",
         "profit": 0.75,
-        "cumulative": -28.71
+        "cumulative": -18.41
       },
       {
         "div": "I1",
@@ -5387,7 +5963,7 @@
         "gameweek": 11,
         "match": "Parma v Bologna",
         "profit": 0.8,
-        "cumulative": -27.91
+        "cumulative": -17.61
       },
       {
         "div": "D1",
@@ -5395,15 +5971,7 @@
         "gameweek": 9,
         "match": "VfB Stuttgart v Werder Bremen",
         "profit": 0.62,
-        "cumulative": -27.29
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-11-07T17:30:00",
-        "gameweek": 10,
-        "match": "Nottingham Forest v Manchester City",
-        "profit": -1.0,
-        "cumulative": -28.29
+        "cumulative": -16.99
       },
       {
         "div": "SP1",
@@ -5411,7 +5979,15 @@
         "gameweek": 12,
         "match": "Osasuna v Athletic Club",
         "profit": -1.0,
-        "cumulative": -29.29
+        "cumulative": -17.99
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-11-07T17:30:00",
+        "gameweek": 10,
+        "match": "Nottingham Forest v Manchester City",
+        "profit": -1.0,
+        "cumulative": -18.99
       },
       {
         "div": "N1",
@@ -5419,7 +5995,7 @@
         "gameweek": 12,
         "match": "ADO Den Haag v Sparta Rotterdam",
         "profit": -1.0,
-        "cumulative": -30.29
+        "cumulative": -19.99
       },
       {
         "div": "P1",
@@ -5427,7 +6003,7 @@
         "gameweek": 11,
         "match": "Alverca v Casa Pia AC",
         "profit": -1.0,
-        "cumulative": -31.29
+        "cumulative": -20.99
       },
       {
         "div": "I1",
@@ -5435,7 +6011,7 @@
         "gameweek": 11,
         "match": "Roma v Sassuolo",
         "profit": 0.29,
-        "cumulative": -31.0
+        "cumulative": -20.7
       },
       {
         "div": "F1",
@@ -5443,7 +6019,7 @@
         "gameweek": 10,
         "match": "Paris Saint-Germain v Troyes",
         "profit": 0.08,
-        "cumulative": -30.92
+        "cumulative": -20.62
       },
       {
         "div": "SP1",
@@ -5451,7 +6027,7 @@
         "gameweek": 12,
         "match": "Valencia v Real Madrid",
         "profit": 0.25,
-        "cumulative": -30.67
+        "cumulative": -20.37
       },
       {
         "div": "N1",
@@ -5459,7 +6035,7 @@
         "gameweek": 12,
         "match": "Excelsior v Go Ahead Eagles",
         "profit": 1.25,
-        "cumulative": -29.42
+        "cumulative": -19.12
       },
       {
         "div": "P1",
@@ -5467,7 +6043,7 @@
         "gameweek": 11,
         "match": "Sporting CP v Moreirense",
         "profit": 0.17,
-        "cumulative": -29.25
+        "cumulative": -18.95
       },
       {
         "div": "N1",
@@ -5475,7 +6051,7 @@
         "gameweek": 12,
         "match": "SC Heerenveen v Feyenoord",
         "profit": -1.0,
-        "cumulative": -30.25
+        "cumulative": -19.95
       },
       {
         "div": "I1",
@@ -5483,7 +6059,7 @@
         "gameweek": 11,
         "match": "Napoli v Lazio",
         "profit": -1.0,
-        "cumulative": -31.25
+        "cumulative": -20.95
       },
       {
         "div": "SP1",
@@ -5491,7 +6067,7 @@
         "gameweek": 12,
         "match": "Elche v Real Betis",
         "profit": 1.1,
-        "cumulative": -30.15
+        "cumulative": -19.85
       },
       {
         "div": "N1",
@@ -5499,55 +6075,7 @@
         "gameweek": 12,
         "match": "FC Twente v Ajax",
         "profit": -1.0,
-        "cumulative": -31.15
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-11-08T14:00:00",
-        "gameweek": 10,
-        "match": "Brighton and Hove Albion v Brentford",
-        "profit": 0.85,
-        "cumulative": -30.3
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-11-08T14:00:00",
-        "gameweek": 10,
-        "match": "Crystal Palace v Liverpool",
-        "profit": 0.55,
-        "cumulative": -29.75
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-11-08T14:00:00",
-        "gameweek": 10,
-        "match": "Ipswich v Bournemouth",
-        "profit": 0.85,
-        "cumulative": -28.9
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-11-08T14:00:00",
-        "gameweek": 10,
-        "match": "Sunderland v Chelsea",
-        "profit": -1.0,
-        "cumulative": -29.9
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-11-08T14:00:00",
-        "gameweek": 11,
-        "match": "Monza v Atalanta",
-        "profit": 1.0,
-        "cumulative": -28.9
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-11-08T14:00:00",
-        "gameweek": 11,
-        "match": "Genoa v Milan",
-        "profit": 0.8,
-        "cumulative": -28.1
+        "cumulative": -20.85
       },
       {
         "div": "F1",
@@ -5555,7 +6083,55 @@
         "gameweek": 10,
         "match": "Rennes v Lille",
         "profit": -1.0,
-        "cumulative": -29.1
+        "cumulative": -21.85
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-11-08T14:00:00",
+        "gameweek": 11,
+        "match": "Genoa v Milan",
+        "profit": 0.8,
+        "cumulative": -21.05
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-11-08T14:00:00",
+        "gameweek": 11,
+        "match": "Monza v Atalanta",
+        "profit": 1.0,
+        "cumulative": -20.05
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-11-08T14:00:00",
+        "gameweek": 10,
+        "match": "Brighton and Hove Albion v Brentford",
+        "profit": 0.85,
+        "cumulative": -19.2
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-11-08T14:00:00",
+        "gameweek": 10,
+        "match": "Ipswich v Bournemouth",
+        "profit": 0.85,
+        "cumulative": -18.35
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-11-08T14:00:00",
+        "gameweek": 10,
+        "match": "Crystal Palace v Liverpool",
+        "profit": 0.55,
+        "cumulative": -17.8
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-11-08T14:00:00",
+        "gameweek": 10,
+        "match": "Sunderland v Chelsea",
+        "profit": -1.0,
+        "cumulative": -18.8
       },
       {
         "div": "D1",
@@ -5563,7 +6139,7 @@
         "gameweek": 9,
         "match": "1. FC K\u00f6ln v Bayer Leverkusen",
         "profit": 0.83,
-        "cumulative": -28.27
+        "cumulative": -17.97
       },
       {
         "div": "SP1",
@@ -5571,7 +6147,7 @@
         "gameweek": 12,
         "match": "Real Sociedad v Rayo Vallecano",
         "profit": 0.7,
-        "cumulative": -27.57
+        "cumulative": -17.27
       },
       {
         "div": "P1",
@@ -5579,15 +6155,7 @@
         "gameweek": 11,
         "match": "Santa Clara v Gil Vicente",
         "profit": -1.0,
-        "cumulative": -28.57
-      },
-      {
-        "div": "N1",
-        "kickoff": "2026-11-08T15:45:00",
-        "gameweek": 12,
-        "match": "AZ Alkmaar v FC Groningen",
-        "profit": 0.5,
-        "cumulative": -28.07
+        "cumulative": -18.27
       },
       {
         "div": "N1",
@@ -5595,31 +6163,15 @@
         "gameweek": 12,
         "match": "Cambuur v PSV Eindhoven",
         "profit": 0.33,
-        "cumulative": -27.74
+        "cumulative": -17.94
       },
       {
-        "div": "F1",
-        "kickoff": "2026-11-08T16:15:00",
-        "gameweek": 10,
-        "match": "Le Mans v Monaco",
-        "profit": -1.0,
-        "cumulative": -28.74
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-11-08T16:15:00",
-        "gameweek": 10,
-        "match": "Le Havre v Lorient",
-        "profit": 1.5,
-        "cumulative": -27.24
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-11-08T16:15:00",
-        "gameweek": 10,
-        "match": "Brest v Lyon",
-        "profit": -1.0,
-        "cumulative": -28.24
+        "div": "N1",
+        "kickoff": "2026-11-08T15:45:00",
+        "gameweek": 12,
+        "match": "AZ Alkmaar v FC Groningen",
+        "profit": 0.5,
+        "cumulative": -17.44
       },
       {
         "div": "F1",
@@ -5627,7 +6179,31 @@
         "gameweek": 10,
         "match": "Angers v Nice",
         "profit": 1.0,
-        "cumulative": -27.24
+        "cumulative": -16.44
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-11-08T16:15:00",
+        "gameweek": 10,
+        "match": "Brest v Lyon",
+        "profit": -1.0,
+        "cumulative": -17.44
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-11-08T16:15:00",
+        "gameweek": 10,
+        "match": "Le Mans v Monaco",
+        "profit": -1.0,
+        "cumulative": -18.44
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-11-08T16:15:00",
+        "gameweek": 10,
+        "match": "Le Havre v Lorient",
+        "profit": 1.5,
+        "cumulative": -16.94
       },
       {
         "div": "E0",
@@ -5635,7 +6211,7 @@
         "gameweek": 10,
         "match": "Manchester United v Aston Villa",
         "profit": -1.0,
-        "cumulative": -28.24
+        "cumulative": -17.94
       },
       {
         "div": "D1",
@@ -5643,7 +6219,7 @@
         "gameweek": 9,
         "match": "Freiburg v Union Berlin",
         "profit": 0.5,
-        "cumulative": -27.74
+        "cumulative": -17.44
       },
       {
         "div": "I1",
@@ -5651,7 +6227,7 @@
         "gameweek": 11,
         "match": "Inter v Como",
         "profit": 0.85,
-        "cumulative": -26.89
+        "cumulative": -16.59
       },
       {
         "div": "SP1",
@@ -5659,7 +6235,7 @@
         "gameweek": 12,
         "match": "Villarreal v Getafe",
         "profit": 0.4,
-        "cumulative": -26.49
+        "cumulative": -16.19
       },
       {
         "div": "SP1",
@@ -5667,7 +6243,7 @@
         "gameweek": 12,
         "match": "Celta Vigo v Levante",
         "profit": -1.0,
-        "cumulative": -27.49
+        "cumulative": -17.19
       },
       {
         "div": "P1",
@@ -5675,7 +6251,7 @@
         "gameweek": 11,
         "match": "Vit\u00f3ria de Guimar\u00e3es v FC Porto",
         "profit": 0.67,
-        "cumulative": -26.82
+        "cumulative": -16.52
       },
       {
         "div": "D1",
@@ -5683,7 +6259,7 @@
         "gameweek": 9,
         "match": "Hoffenheim v Schalke 04",
         "profit": 0.6,
-        "cumulative": -26.22
+        "cumulative": -15.92
       },
       {
         "div": "N1",
@@ -5691,15 +6267,7 @@
         "gameweek": 12,
         "match": "FC Utrecht v NEC Nijmegen",
         "profit": -1.0,
-        "cumulative": -27.22
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-11-08T19:45:00",
-        "gameweek": 11,
-        "match": "Fiorentina v Juventus",
-        "profit": -1.0,
-        "cumulative": -28.22
+        "cumulative": -16.92
       },
       {
         "div": "F1",
@@ -5707,7 +6275,15 @@
         "gameweek": 10,
         "match": "Lens v Marseille",
         "profit": -1.0,
-        "cumulative": -29.22
+        "cumulative": -17.92
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-11-08T19:45:00",
+        "gameweek": 11,
+        "match": "Fiorentina v Juventus",
+        "profit": -1.0,
+        "cumulative": -18.92
       },
       {
         "div": "SP1",
@@ -5715,7 +6291,7 @@
         "gameweek": 12,
         "match": "Atl\u00e9tico Madrid v Barcelona",
         "profit": 0.75,
-        "cumulative": -28.47
+        "cumulative": -18.17
       },
       {
         "div": "P1",
@@ -5723,7 +6299,7 @@
         "gameweek": 11,
         "match": "Rio Ave v Braga",
         "profit": 0.5,
-        "cumulative": -27.97
+        "cumulative": -17.67
       },
       {
         "div": "P1",
@@ -5731,7 +6307,7 @@
         "gameweek": 11,
         "match": "Estrela da Amadora v Benfica",
         "profit": 0.25,
-        "cumulative": -27.72
+        "cumulative": -17.42
       },
       {
         "div": "D1",
@@ -5739,7 +6315,7 @@
         "gameweek": 10,
         "match": "Bayern M\u00fcnchen v 1. FC K\u00f6ln",
         "profit": -1.0,
-        "cumulative": -28.72
+        "cumulative": -18.42
       },
       {
         "div": "F1",
@@ -5747,7 +6323,7 @@
         "gameweek": 11,
         "match": "Troyes v Le Havre",
         "profit": 1.2,
-        "cumulative": -27.52
+        "cumulative": -17.22
       },
       {
         "div": "SP1",
@@ -5755,7 +6331,7 @@
         "gameweek": 13,
         "match": "Athletic Club v Espanyol",
         "profit": -1.0,
-        "cumulative": -28.52
+        "cumulative": -18.22
       },
       {
         "div": "E0",
@@ -5763,7 +6339,7 @@
         "gameweek": 11,
         "match": "Manchester City v Fulham",
         "profit": -1.0,
-        "cumulative": -29.52
+        "cumulative": -19.22
       },
       {
         "div": "SP1",
@@ -5771,15 +6347,7 @@
         "gameweek": 13,
         "match": "Deportivo Alav\u00e9s v Deportivo A Coru\u00f1a",
         "profit": 1.15,
-        "cumulative": -28.37
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-11-21T14:00:00",
-        "gameweek": 12,
-        "match": "Lazio v Lecce",
-        "profit": 0.36,
-        "cumulative": -28.01
+        "cumulative": -18.07
       },
       {
         "div": "I1",
@@ -5787,39 +6355,15 @@
         "gameweek": 12,
         "match": "Como v Cagliari",
         "profit": 0.29,
-        "cumulative": -27.72
+        "cumulative": -17.78
       },
       {
-        "div": "D1",
-        "kickoff": "2026-11-21T14:30:00",
-        "gameweek": 10,
-        "match": "Union Berlin v RB Leipzig",
-        "profit": 0.44,
-        "cumulative": -27.28
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-11-21T14:30:00",
-        "gameweek": 10,
-        "match": "Eintracht Frankfurt v Hoffenheim",
-        "profit": -1.0,
-        "cumulative": -28.28
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-11-21T14:30:00",
-        "gameweek": 10,
-        "match": "Elversberg v Freiburg",
-        "profit": 0.91,
-        "cumulative": -27.37
-      },
-      {
-        "div": "D1",
-        "kickoff": "2026-11-21T14:30:00",
-        "gameweek": 10,
-        "match": "Bayer Leverkusen v Paderborn",
-        "profit": 0.25,
-        "cumulative": -27.12
+        "div": "I1",
+        "kickoff": "2026-11-21T14:00:00",
+        "gameweek": 12,
+        "match": "Lazio v Lecce",
+        "profit": 0.36,
+        "cumulative": -17.42
       },
       {
         "div": "D1",
@@ -5827,7 +6371,39 @@
         "gameweek": 10,
         "match": "Borussia M\u00f6nchengladbach v Borussia Dortmund",
         "profit": 0.57,
-        "cumulative": -26.55
+        "cumulative": -16.85
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-11-21T14:30:00",
+        "gameweek": 10,
+        "match": "Bayer Leverkusen v Paderborn",
+        "profit": 0.25,
+        "cumulative": -16.6
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-11-21T14:30:00",
+        "gameweek": 10,
+        "match": "Elversberg v Freiburg",
+        "profit": 0.91,
+        "cumulative": -15.69
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-11-21T14:30:00",
+        "gameweek": 10,
+        "match": "Eintracht Frankfurt v Hoffenheim",
+        "profit": -1.0,
+        "cumulative": -16.69
+      },
+      {
+        "div": "D1",
+        "kickoff": "2026-11-21T14:30:00",
+        "gameweek": 10,
+        "match": "Union Berlin v RB Leipzig",
+        "profit": 0.44,
+        "cumulative": -16.25
       },
       {
         "div": "E0",
@@ -5835,7 +6411,7 @@
         "gameweek": 11,
         "match": "Tottenham Hotspur v Ipswich",
         "profit": 0.5,
-        "cumulative": -26.05
+        "cumulative": -15.75
       },
       {
         "div": "E0",
@@ -5843,7 +6419,7 @@
         "gameweek": 11,
         "match": "Chelsea v Leeds United",
         "profit": -1.0,
-        "cumulative": -27.05
+        "cumulative": -16.75
       },
       {
         "div": "E0",
@@ -5851,7 +6427,7 @@
         "gameweek": 11,
         "match": "Coventry v Crystal Palace",
         "profit": 1.4,
-        "cumulative": -25.65
+        "cumulative": -15.35
       },
       {
         "div": "E0",
@@ -5859,7 +6435,7 @@
         "gameweek": 11,
         "match": "Aston Villa v Sunderland",
         "profit": -1.0,
-        "cumulative": -26.65
+        "cumulative": -16.35
       },
       {
         "div": "E0",
@@ -5867,7 +6443,7 @@
         "gameweek": 11,
         "match": "Bournemouth v Nottingham Forest",
         "profit": 0.91,
-        "cumulative": -25.74
+        "cumulative": -15.44
       },
       {
         "div": "SP1",
@@ -5875,7 +6451,7 @@
         "gameweek": 13,
         "match": "Rayo Vallecano v Valencia",
         "profit": -1.0,
-        "cumulative": -26.74
+        "cumulative": -16.44
       },
       {
         "div": "N1",
@@ -5883,7 +6459,7 @@
         "gameweek": 13,
         "match": "NEC Nijmegen v PSV Eindhoven",
         "profit": 0.67,
-        "cumulative": -26.07
+        "cumulative": -15.77
       },
       {
         "div": "F1",
@@ -5891,7 +6467,7 @@
         "gameweek": 11,
         "match": "Nice v Paris Saint-Germain",
         "profit": 0.44,
-        "cumulative": -25.63
+        "cumulative": -15.33
       },
       {
         "div": "I1",
@@ -5899,23 +6475,7 @@
         "gameweek": 12,
         "match": "Parma v Roma",
         "profit": 0.25,
-        "cumulative": -25.38
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-11-21T17:30:00",
-        "gameweek": 11,
-        "match": "Newcastle United v Arsenal",
-        "profit": -1.0,
-        "cumulative": -26.38
-      },
-      {
-        "div": "SP1",
-        "kickoff": "2026-11-21T17:30:00",
-        "gameweek": 13,
-        "match": "Sevilla v Real Betis",
-        "profit": -1.0,
-        "cumulative": -27.38
+        "cumulative": -15.08
       },
       {
         "div": "D1",
@@ -5923,7 +6483,23 @@
         "gameweek": 10,
         "match": "Schalke 04 v VfB Stuttgart",
         "profit": -1.0,
-        "cumulative": -28.38
+        "cumulative": -16.08
+      },
+      {
+        "div": "SP1",
+        "kickoff": "2026-11-21T17:30:00",
+        "gameweek": 13,
+        "match": "Sevilla v Real Betis",
+        "profit": -1.0,
+        "cumulative": -17.08
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-11-21T17:30:00",
+        "gameweek": 11,
+        "match": "Newcastle United v Arsenal",
+        "profit": -1.0,
+        "cumulative": -18.08
       },
       {
         "div": "N1",
@@ -5931,7 +6507,7 @@
         "gameweek": 13,
         "match": "FC Utrecht v Cambuur",
         "profit": -1.0,
-        "cumulative": -29.38
+        "cumulative": -19.08
       },
       {
         "div": "N1",
@@ -5939,39 +6515,7 @@
         "gameweek": 13,
         "match": "Feyenoord v Excelsior",
         "profit": -1.0,
-        "cumulative": -30.38
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-11-21T19:45:00",
-        "gameweek": 11,
-        "match": "Lille v Lyon",
-        "profit": -1.0,
-        "cumulative": -31.38
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-11-21T19:45:00",
-        "gameweek": 11,
-        "match": "Lens v Toulouse",
-        "profit": -1.0,
-        "cumulative": -32.38
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-11-21T19:45:00",
-        "gameweek": 11,
-        "match": "Monaco v Auxerre",
-        "profit": -1.0,
-        "cumulative": -33.38
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-11-21T19:45:00",
-        "gameweek": 11,
-        "match": "Strasbourg v Brest",
-        "profit": -1.0,
-        "cumulative": -34.38
+        "cumulative": -20.08
       },
       {
         "div": "I1",
@@ -5979,7 +6523,39 @@
         "gameweek": 12,
         "match": "Napoli v Torino",
         "profit": 0.44,
-        "cumulative": -33.94
+        "cumulative": -19.64
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-11-21T19:45:00",
+        "gameweek": 11,
+        "match": "Strasbourg v Brest",
+        "profit": -1.0,
+        "cumulative": -20.64
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-11-21T19:45:00",
+        "gameweek": 11,
+        "match": "Monaco v Auxerre",
+        "profit": -1.0,
+        "cumulative": -21.64
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-11-21T19:45:00",
+        "gameweek": 11,
+        "match": "Lens v Toulouse",
+        "profit": -1.0,
+        "cumulative": -22.64
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-11-21T19:45:00",
+        "gameweek": 11,
+        "match": "Lille v Lyon",
+        "profit": -1.0,
+        "cumulative": -23.64
       },
       {
         "div": "SP1",
@@ -5987,7 +6563,7 @@
         "gameweek": 13,
         "match": "Real Madrid v Celta Vigo",
         "profit": 0.14,
-        "cumulative": -33.8
+        "cumulative": -23.5
       },
       {
         "div": "N1",
@@ -5995,7 +6571,7 @@
         "gameweek": 13,
         "match": "Telstar v PEC Zwolle",
         "profit": -1.0,
-        "cumulative": -34.8
+        "cumulative": -24.5
       },
       {
         "div": "N1",
@@ -6003,7 +6579,7 @@
         "gameweek": 13,
         "match": "FC Groningen v SC Heerenveen",
         "profit": 1.45,
-        "cumulative": -33.35
+        "cumulative": -23.05
       },
       {
         "div": "N1",
@@ -6011,7 +6587,7 @@
         "gameweek": 13,
         "match": "FC Twente v Willem II",
         "profit": 0.04,
-        "cumulative": -33.31
+        "cumulative": -23.01
       },
       {
         "div": "I1",
@@ -6019,7 +6595,7 @@
         "gameweek": 12,
         "match": "Juventus v Venezia",
         "profit": 0.33,
-        "cumulative": -32.98
+        "cumulative": -22.68
       },
       {
         "div": "SP1",
@@ -6027,7 +6603,7 @@
         "gameweek": 13,
         "match": "Barcelona v Villarreal",
         "profit": 0.17,
-        "cumulative": -32.81
+        "cumulative": -22.51
       },
       {
         "div": "N1",
@@ -6035,7 +6611,7 @@
         "gameweek": 13,
         "match": "Ajax v ADO Den Haag",
         "profit": 0.14,
-        "cumulative": -32.67
+        "cumulative": -22.37
       },
       {
         "div": "N1",
@@ -6043,23 +6619,7 @@
         "gameweek": 13,
         "match": "Sparta Rotterdam v AZ Alkmaar",
         "profit": 0.7,
-        "cumulative": -31.97
-      },
-      {
-        "div": "F1",
-        "kickoff": "2026-11-22T14:00:00",
-        "gameweek": 11,
-        "match": "Paris FC v Angers",
-        "profit": 0.3,
-        "cumulative": -31.67
-      },
-      {
-        "div": "I1",
-        "kickoff": "2026-11-22T14:00:00",
-        "gameweek": 12,
-        "match": "Bologna v Udinese",
-        "profit": -1.0,
-        "cumulative": -32.67
+        "cumulative": -21.67
       },
       {
         "div": "E0",
@@ -6067,7 +6627,7 @@
         "gameweek": 11,
         "match": "Hull City v Brighton and Hove Albion",
         "profit": -1.0,
-        "cumulative": -33.67
+        "cumulative": -22.67
       },
       {
         "div": "I1",
@@ -6075,7 +6635,23 @@
         "gameweek": 12,
         "match": "Sassuolo v Genoa",
         "profit": 1.45,
-        "cumulative": -32.22
+        "cumulative": -21.22
+      },
+      {
+        "div": "I1",
+        "kickoff": "2026-11-22T14:00:00",
+        "gameweek": 12,
+        "match": "Bologna v Udinese",
+        "profit": -1.0,
+        "cumulative": -22.22
+      },
+      {
+        "div": "F1",
+        "kickoff": "2026-11-22T14:00:00",
+        "gameweek": 11,
+        "match": "Paris FC v Angers",
+        "profit": 0.3,
+        "cumulative": -21.92
       },
       {
         "div": "D1",
@@ -6083,7 +6659,7 @@
         "gameweek": 10,
         "match": "Augsburg v Mainz 05",
         "profit": 1.63,
-        "cumulative": -30.59
+        "cumulative": -20.29
       },
       {
         "div": "SP1",
@@ -6091,7 +6667,7 @@
         "gameweek": 13,
         "match": "Racing Santander v Real Sociedad",
         "profit": -1.0,
-        "cumulative": -31.59
+        "cumulative": -21.29
       },
       {
         "div": "N1",
@@ -6099,7 +6675,7 @@
         "gameweek": 13,
         "match": "Go Ahead Eagles v Fortuna Sittard",
         "profit": -1.0,
-        "cumulative": -32.59
+        "cumulative": -22.29
       },
       {
         "div": "F1",
@@ -6107,15 +6683,7 @@
         "gameweek": 11,
         "match": "Lorient v Rennes",
         "profit": -1.0,
-        "cumulative": -33.59
-      },
-      {
-        "div": "E0",
-        "kickoff": "2026-11-22T16:30:00",
-        "gameweek": 11,
-        "match": "Liverpool v Manchester United",
-        "profit": 0.73,
-        "cumulative": -32.86
+        "cumulative": -23.29
       },
       {
         "div": "D1",
@@ -6123,7 +6691,15 @@
         "gameweek": 10,
         "match": "Werder Bremen v Hamburger SV",
         "profit": 0.62,
-        "cumulative": -32.24
+        "cumulative": -22.67
+      },
+      {
+        "div": "E0",
+        "kickoff": "2026-11-22T16:30:00",
+        "gameweek": 11,
+        "match": "Liverpool v Manchester United",
+        "profit": 0.73,
+        "cumulative": -21.94
       },
       {
         "div": "I1",
@@ -6131,7 +6707,7 @@
         "gameweek": 12,
         "match": "Milan v Frosinone",
         "profit": 0.5,
-        "cumulative": -31.74
+        "cumulative": -21.44
       },
       {
         "div": "SP1",
@@ -6139,7 +6715,7 @@
         "gameweek": 13,
         "match": "Osasuna v M\u00e1laga",
         "profit": 0.8,
-        "cumulative": -30.94
+        "cumulative": -20.64
       },
       {
         "div": "I1",
@@ -6147,7 +6723,7 @@
         "gameweek": 12,
         "match": "Atalanta v Inter",
         "profit": -1.0,
-        "cumulative": -31.94
+        "cumulative": -21.64
       },
       {
         "div": "F1",
@@ -6155,7 +6731,7 @@
         "gameweek": 11,
         "match": "Marseille v Le Mans",
         "profit": -1.0,
-        "cumulative": -32.94
+        "cumulative": -22.64
       },
       {
         "div": "SP1",
@@ -6163,7 +6739,7 @@
         "gameweek": 13,
         "match": "Getafe v Atl\u00e9tico Madrid",
         "profit": 0.53,
-        "cumulative": -32.41
+        "cumulative": -22.11
       },
       {
         "div": "I1",
@@ -6171,7 +6747,7 @@
         "gameweek": 12,
         "match": "Monza v Fiorentina",
         "profit": -1.0,
-        "cumulative": -33.41
+        "cumulative": -23.11
       },
       {
         "div": "E0",
@@ -6179,7 +6755,7 @@
         "gameweek": 11,
         "match": "Brentford v Everton",
         "profit": 1.15,
-        "cumulative": -32.26
+        "cumulative": -21.96
       },
       {
         "div": "SP1",
@@ -6187,7 +6763,7 @@
         "gameweek": 13,
         "match": "Levante v Elche",
         "profit": -1.0,
-        "cumulative": -33.26
+        "cumulative": -22.96
       },
       {
         "div": "CL",
@@ -6195,7 +6771,7 @@
         "gameweek": 5,
         "match": "Bod\u00f8/Glimt v LASK",
         "profit": 0.57,
-        "cumulative": -32.69
+        "cumulative": -22.39
       },
       {
         "div": "CL",
@@ -6203,7 +6779,7 @@
         "gameweek": 5,
         "match": "Galatasaray v Aston Villa",
         "profit": -1.0,
-        "cumulative": -33.69
+        "cumulative": -23.39
       },
       {
         "div": "CL",
@@ -6211,7 +6787,7 @@
         "gameweek": 5,
         "match": "Como v AEK Athens",
         "profit": 0.4,
-        "cumulative": -33.29
+        "cumulative": -22.99
       },
       {
         "div": "CL",
@@ -6219,7 +6795,7 @@
         "gameweek": 5,
         "match": "Real Madrid v PSV Eindhoven",
         "profit": 0.2,
-        "cumulative": -33.09
+        "cumulative": -22.79
       },
       {
         "div": "CL",
@@ -6227,7 +6803,7 @@
         "gameweek": 5,
         "match": "Arsenal v Borussia Dortmund",
         "profit": -1.0,
-        "cumulative": -34.09
+        "cumulative": -23.79
       },
       {
         "div": "CL",
@@ -6235,7 +6811,7 @@
         "gameweek": 5,
         "match": "RB Leipzig v Lens",
         "profit": 0.5,
-        "cumulative": -33.59
+        "cumulative": -23.29
       },
       {
         "div": "CL",
@@ -6243,7 +6819,7 @@
         "gameweek": 5,
         "match": "Slovan Bratislava v Real Betis",
         "profit": 0.33,
-        "cumulative": -33.26
+        "cumulative": -22.96
       },
       {
         "div": "CL",
@@ -6251,7 +6827,7 @@
         "gameweek": 5,
         "match": "Manchester City v Napoli",
         "profit": -1.0,
-        "cumulative": -34.26
+        "cumulative": -23.96
       },
       {
         "div": "CL",
@@ -6259,7 +6835,7 @@
         "gameweek": 5,
         "match": "Feyenoord v FC Porto",
         "profit": 1.38,
-        "cumulative": -32.88
+        "cumulative": -22.58
       }
     ],
     "bestBets": [
@@ -6313,7 +6889,7 @@
         "pick": "H",
         "result": "A",
         "pickProb": 77.3,
-        "profit": null
+        "profit": -1.0
       },
       {
         "div": "D1",
@@ -14404,10 +14980,10 @@
       "baselineHitRate": 55.6,
       "edge": 13.6,
       "logLoss": 0.842,
-      "pricedBets": 9,
-      "profit": 0.38,
-      "staked": 9.0,
-      "roi": 4.2,
+      "pricedBets": 81,
+      "profit": 10.68,
+      "staked": 81.0,
+      "roi": 13.2,
       "calibration": [
         {
           "label": "0-40%",
@@ -14453,8 +15029,8 @@
           "settled": 18,
           "hits": 14,
           "hitRate": 77.8,
-          "profit": 0.0,
-          "cumulativeProfit": 0.0,
+          "profit": 4.58,
+          "cumulativeProfit": 4.58,
           "status": "complete"
         },
         {
@@ -14463,8 +15039,8 @@
           "settled": 18,
           "hits": 11,
           "hitRate": 61.1,
-          "profit": 0.0,
-          "cumulativeProfit": 0.0,
+          "profit": 1.42,
+          "cumulativeProfit": 6.0,
           "status": "complete"
         },
         {
@@ -14473,8 +15049,8 @@
           "settled": 18,
           "hits": 12,
           "hitRate": 66.7,
-          "profit": 0.0,
-          "cumulativeProfit": 0.0,
+          "profit": 0.81,
+          "cumulativeProfit": 6.81,
           "status": "complete"
         },
         {
@@ -14483,8 +15059,8 @@
           "settled": 18,
           "hits": 13,
           "hitRate": 72.2,
-          "profit": 0.0,
-          "cumulativeProfit": 0.0,
+          "profit": 3.49,
+          "cumulativeProfit": 10.3,
           "status": "complete"
         },
         {
@@ -14494,7 +15070,7 @@
           "hits": 6,
           "hitRate": 66.7,
           "profit": 0.38,
-          "cumulativeProfit": 0.38,
+          "cumulativeProfit": 10.68,
           "status": "partial"
         }
       ],
@@ -14505,7 +15081,7 @@
           "bets": 52,
           "hits": 37,
           "hitRate": 71.2,
-          "profit": -0.33
+          "profit": 5.17
         },
         {
           "pick": "D",
@@ -14521,17 +15097,593 @@
           "bets": 29,
           "hits": 19,
           "hitRate": 65.5,
-          "profit": 0.71
+          "profit": 5.51
         }
       ],
       "bankroll": [
+        {
+          "div": "CL",
+          "kickoff": "2026-09-08T17:45:00",
+          "gameweek": 1,
+          "match": "AEK Athens v LASK",
+          "profit": 0.75,
+          "cumulative": 0.75
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-08T17:45:00",
+          "gameweek": 1,
+          "match": "Club Brugge v Aston Villa",
+          "profit": 1.77,
+          "cumulative": 2.52
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-08T20:00:00",
+          "gameweek": 1,
+          "match": "Borussia Dortmund v Villarreal",
+          "profit": 0.75,
+          "cumulative": 3.27
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-08T20:00:00",
+          "gameweek": 1,
+          "match": "FC Porto v Manchester City",
+          "profit": -1.0,
+          "cumulative": 2.27
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-08T20:00:00",
+          "gameweek": 1,
+          "match": "Lille v Real Betis",
+          "profit": -1.0,
+          "cumulative": 1.27
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-08T20:00:00",
+          "gameweek": 1,
+          "match": "Real Madrid v Inter",
+          "profit": 0.6,
+          "cumulative": 1.87
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-09T17:45:00",
+          "gameweek": 1,
+          "match": "VfB Stuttgart v Viking",
+          "profit": 0.21,
+          "cumulative": 2.08
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-09T17:45:00",
+          "gameweek": 1,
+          "match": "Barcelona v Feyenoord",
+          "profit": 0.08,
+          "cumulative": 2.16
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-09T20:00:00",
+          "gameweek": 1,
+          "match": "Paris Saint-Germain v Slovan Bratislava",
+          "profit": 0.04,
+          "cumulative": 2.2
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-09T20:00:00",
+          "gameweek": 1,
+          "match": "Sporting CP v Galatasaray",
+          "profit": 0.61,
+          "cumulative": 2.81
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-09T20:00:00",
+          "gameweek": 1,
+          "match": "Liverpool v Atl\u00e9tico Madrid",
+          "profit": 0.75,
+          "cumulative": 3.56
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-09T20:00:00",
+          "gameweek": 1,
+          "match": "Napoli v Arsenal",
+          "profit": 0.71,
+          "cumulative": 4.27
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-10T17:45:00",
+          "gameweek": 1,
+          "match": "Fenerbah\u00e7e v Roma",
+          "profit": -1.0,
+          "cumulative": 3.27
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-10T17:45:00",
+          "gameweek": 1,
+          "match": "PSV Eindhoven v Shakhtar Donetsk",
+          "profit": -1.0,
+          "cumulative": 2.27
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-10T20:00:00",
+          "gameweek": 1,
+          "match": "Bayern M\u00fcnchen v Bod\u00f8/Glimt",
+          "profit": 0.08,
+          "cumulative": 2.35
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-10T20:00:00",
+          "gameweek": 1,
+          "match": "Como v RB Leipzig",
+          "profit": 0.7,
+          "cumulative": 3.05
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-10T20:00:00",
+          "gameweek": 1,
+          "match": "Manchester United v Sabah FK",
+          "profit": 0.07,
+          "cumulative": 3.12
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-09-10T20:00:00",
+          "gameweek": 1,
+          "match": "Slavia Prague v Lens",
+          "profit": 1.46,
+          "cumulative": 4.58
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-13T17:45:00",
+          "gameweek": 2,
+          "match": "Sabah FK v Slavia Prague",
+          "profit": -1.0,
+          "cumulative": 3.58
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-13T17:45:00",
+          "gameweek": 2,
+          "match": "Lens v Sporting CP",
+          "profit": 1.73,
+          "cumulative": 5.31
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-13T20:00:00",
+          "gameweek": 2,
+          "match": "Arsenal v Lille",
+          "profit": 0.21,
+          "cumulative": 5.52
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-13T20:00:00",
+          "gameweek": 2,
+          "match": "Inter v Club Brugge",
+          "profit": -1.0,
+          "cumulative": 4.52
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-13T20:00:00",
+          "gameweek": 2,
+          "match": "Galatasaray v Barcelona",
+          "profit": 0.32,
+          "cumulative": 4.84
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-13T20:00:00",
+          "gameweek": 2,
+          "match": "RB Leipzig v PSV Eindhoven",
+          "profit": 0.59,
+          "cumulative": 5.43
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-13T20:00:00",
+          "gameweek": 2,
+          "match": "Viking v Bayern M\u00fcnchen",
+          "profit": -1.0,
+          "cumulative": 4.43
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-13T20:00:00",
+          "gameweek": 2,
+          "match": "Villarreal v Napoli",
+          "profit": 1.21,
+          "cumulative": 5.64
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-13T20:00:00",
+          "gameweek": 2,
+          "match": "Atl\u00e9tico Madrid v Manchester United",
+          "profit": 0.82,
+          "cumulative": 6.46
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-14T17:45:00",
+          "gameweek": 2,
+          "match": "Feyenoord v Como",
+          "profit": -1.0,
+          "cumulative": 5.46
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-14T17:45:00",
+          "gameweek": 2,
+          "match": "LASK v Liverpool",
+          "profit": 0.45,
+          "cumulative": 5.91
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-14T20:00:00",
+          "gameweek": 2,
+          "match": "Slovan Bratislava v VfB Stuttgart",
+          "profit": 0.39,
+          "cumulative": 6.3
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-14T20:00:00",
+          "gameweek": 2,
+          "match": "Shakhtar Donetsk v AEK Athens",
+          "profit": -1.0,
+          "cumulative": 5.3
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-14T20:00:00",
+          "gameweek": 2,
+          "match": "Roma v Real Madrid",
+          "profit": 0.94,
+          "cumulative": 6.24
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-14T20:00:00",
+          "gameweek": 2,
+          "match": "Real Betis v FC Porto",
+          "profit": 1.13,
+          "cumulative": 7.37
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-14T20:00:00",
+          "gameweek": 2,
+          "match": "Bod\u00f8/Glimt v Borussia Dortmund",
+          "profit": -1.0,
+          "cumulative": 6.37
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-14T20:00:00",
+          "gameweek": 2,
+          "match": "Aston Villa v Fenerbah\u00e7e",
+          "profit": 0.63,
+          "cumulative": 7.0
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-14T20:00:00",
+          "gameweek": 2,
+          "match": "Manchester City v Paris Saint-Germain",
+          "profit": -1.0,
+          "cumulative": 6.0
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-20T17:45:00",
+          "gameweek": 3,
+          "match": "Sabah FK v Borussia Dortmund",
+          "profit": 0.28,
+          "cumulative": 6.28
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-20T17:45:00",
+          "gameweek": 3,
+          "match": "Fenerbah\u00e7e v Slavia Prague",
+          "profit": -1.0,
+          "cumulative": 5.28
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-20T20:00:00",
+          "gameweek": 3,
+          "match": "FC Porto v PSV Eindhoven",
+          "profit": -1.0,
+          "cumulative": 4.28
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-20T20:00:00",
+          "gameweek": 3,
+          "match": "Napoli v Bod\u00f8/Glimt",
+          "profit": 0.68,
+          "cumulative": 4.96
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-20T20:00:00",
+          "gameweek": 3,
+          "match": "Liverpool v Villarreal",
+          "profit": 0.56,
+          "cumulative": 5.52
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-20T20:00:00",
+          "gameweek": 3,
+          "match": "VfB Stuttgart v Atl\u00e9tico Madrid",
+          "profit": -1.0,
+          "cumulative": 4.52
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-20T20:00:00",
+          "gameweek": 3,
+          "match": "Paris Saint-Germain v Barcelona",
+          "profit": 1.42,
+          "cumulative": 5.94
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-20T20:00:00",
+          "gameweek": 3,
+          "match": "Roma v Slovan Bratislava",
+          "profit": 0.1,
+          "cumulative": 6.04
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-20T20:00:00",
+          "gameweek": 3,
+          "match": "Manchester City v AEK Athens",
+          "profit": 0.16,
+          "cumulative": 6.2
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-21T17:45:00",
+          "gameweek": 3,
+          "match": "Como v Manchester United",
+          "profit": 1.4,
+          "cumulative": 7.6
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-21T17:45:00",
+          "gameweek": 3,
+          "match": "Lille v Galatasaray",
+          "profit": -1.0,
+          "cumulative": 6.6
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-21T20:00:00",
+          "gameweek": 3,
+          "match": "Inter v Shakhtar Donetsk",
+          "profit": 0.28,
+          "cumulative": 6.88
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-21T20:00:00",
+          "gameweek": 3,
+          "match": "Sporting CP v LASK",
+          "profit": -1.0,
+          "cumulative": 5.88
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-21T20:00:00",
+          "gameweek": 3,
+          "match": "Real Madrid v RB Leipzig",
+          "profit": 0.23,
+          "cumulative": 6.11
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-21T20:00:00",
+          "gameweek": 3,
+          "match": "Real Betis v Feyenoord",
+          "profit": 0.74,
+          "cumulative": 6.85
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-21T20:00:00",
+          "gameweek": 3,
+          "match": "Club Brugge v Lens",
+          "profit": 0.74,
+          "cumulative": 7.59
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-21T20:00:00",
+          "gameweek": 3,
+          "match": "Bayern M\u00fcnchen v Arsenal",
+          "profit": -1.0,
+          "cumulative": 6.59
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-10-21T20:00:00",
+          "gameweek": 3,
+          "match": "Aston Villa v Viking",
+          "profit": 0.22,
+          "cumulative": 6.81
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-03T17:45:00",
+          "gameweek": 4,
+          "match": "Shakhtar Donetsk v Sporting CP",
+          "profit": 1.2,
+          "cumulative": 8.01
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-03T17:45:00",
+          "gameweek": 4,
+          "match": "Galatasaray v VfB Stuttgart",
+          "profit": -1.0,
+          "cumulative": 7.01
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-03T20:00:00",
+          "gameweek": 4,
+          "match": "Barcelona v Aston Villa",
+          "profit": 0.3,
+          "cumulative": 7.31
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-03T20:00:00",
+          "gameweek": 4,
+          "match": "Feyenoord v Inter",
+          "profit": 0.77,
+          "cumulative": 8.08
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-03T20:00:00",
+          "gameweek": 4,
+          "match": "Bod\u00f8/Glimt v Lille",
+          "profit": -1.0,
+          "cumulative": 7.08
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-03T20:00:00",
+          "gameweek": 4,
+          "match": "LASK v Slovan Bratislava",
+          "profit": 0.32,
+          "cumulative": 7.4
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-03T20:00:00",
+          "gameweek": 4,
+          "match": "Manchester United v Roma",
+          "profit": -1.0,
+          "cumulative": 6.4
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-03T20:00:00",
+          "gameweek": 4,
+          "match": "Villarreal v Paris Saint-Germain",
+          "profit": 0.78,
+          "cumulative": 7.18
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-03T20:00:00",
+          "gameweek": 4,
+          "match": "Atl\u00e9tico Madrid v Bayern M\u00fcnchen",
+          "profit": 1.09,
+          "cumulative": 8.27
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-04T17:45:00",
+          "gameweek": 4,
+          "match": "Fenerbah\u00e7e v Liverpool",
+          "profit": -1.0,
+          "cumulative": 7.27
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-04T17:45:00",
+          "gameweek": 4,
+          "match": "AEK Athens v Real Madrid",
+          "profit": 0.21,
+          "cumulative": 7.48
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-04T20:00:00",
+          "gameweek": 4,
+          "match": "Slavia Prague v Arsenal",
+          "profit": 0.26,
+          "cumulative": 7.74
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-04T20:00:00",
+          "gameweek": 4,
+          "match": "Viking v Sabah FK",
+          "profit": 0.57,
+          "cumulative": 8.31
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-04T20:00:00",
+          "gameweek": 4,
+          "match": "RB Leipzig v Manchester City",
+          "profit": 0.57,
+          "cumulative": 8.88
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-04T20:00:00",
+          "gameweek": 4,
+          "match": "FC Porto v Napoli",
+          "profit": 1.01,
+          "cumulative": 9.89
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-04T20:00:00",
+          "gameweek": 4,
+          "match": "Lens v Como",
+          "profit": 0.87,
+          "cumulative": 10.76
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-04T20:00:00",
+          "gameweek": 4,
+          "match": "Borussia Dortmund v Real Betis",
+          "profit": 0.54,
+          "cumulative": 11.3
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-04T20:00:00",
+          "gameweek": 4,
+          "match": "PSV Eindhoven v Club Brugge",
+          "profit": -1.0,
+          "cumulative": 10.3
+        },
         {
           "div": "CL",
           "kickoff": "2026-11-24T17:45:00",
           "gameweek": 5,
           "match": "Bod\u00f8/Glimt v LASK",
           "profit": 0.57,
-          "cumulative": 0.57
+          "cumulative": 10.87
         },
         {
           "div": "CL",
@@ -14539,39 +15691,7 @@
           "gameweek": 5,
           "match": "Galatasaray v Aston Villa",
           "profit": -1.0,
-          "cumulative": -0.43
-        },
-        {
-          "div": "CL",
-          "kickoff": "2026-11-24T20:00:00",
-          "gameweek": 5,
-          "match": "Slovan Bratislava v Real Betis",
-          "profit": 0.33,
-          "cumulative": -0.1
-        },
-        {
-          "div": "CL",
-          "kickoff": "2026-11-24T20:00:00",
-          "gameweek": 5,
-          "match": "RB Leipzig v Lens",
-          "profit": 0.5,
-          "cumulative": 0.4
-        },
-        {
-          "div": "CL",
-          "kickoff": "2026-11-24T20:00:00",
-          "gameweek": 5,
-          "match": "Manchester City v Napoli",
-          "profit": -1.0,
-          "cumulative": -0.6
-        },
-        {
-          "div": "CL",
-          "kickoff": "2026-11-24T20:00:00",
-          "gameweek": 5,
-          "match": "Real Madrid v PSV Eindhoven",
-          "profit": 0.2,
-          "cumulative": -0.4
+          "cumulative": 9.87
         },
         {
           "div": "CL",
@@ -14579,7 +15699,15 @@
           "gameweek": 5,
           "match": "Como v AEK Athens",
           "profit": 0.4,
-          "cumulative": -0.0
+          "cumulative": 10.27
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-24T20:00:00",
+          "gameweek": 5,
+          "match": "Real Madrid v PSV Eindhoven",
+          "profit": 0.2,
+          "cumulative": 10.47
         },
         {
           "div": "CL",
@@ -14587,7 +15715,31 @@
           "gameweek": 5,
           "match": "Arsenal v Borussia Dortmund",
           "profit": -1.0,
-          "cumulative": -1.0
+          "cumulative": 9.47
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-24T20:00:00",
+          "gameweek": 5,
+          "match": "RB Leipzig v Lens",
+          "profit": 0.5,
+          "cumulative": 9.97
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-24T20:00:00",
+          "gameweek": 5,
+          "match": "Slovan Bratislava v Real Betis",
+          "profit": 0.33,
+          "cumulative": 10.3
+        },
+        {
+          "div": "CL",
+          "kickoff": "2026-11-24T20:00:00",
+          "gameweek": 5,
+          "match": "Manchester City v Napoli",
+          "profit": -1.0,
+          "cumulative": 9.3
         },
         {
           "div": "CL",
@@ -14595,39 +15747,39 @@
           "gameweek": 5,
           "match": "Feyenoord v FC Porto",
           "profit": 1.38,
-          "cumulative": 0.38
+          "cumulative": 10.68
         }
       ],
       "bestBets": [
         {
           "div": "CL",
-          "gameweek": 5,
-          "date": "24/11/2026",
-          "match": "Feyenoord v FC Porto",
+          "gameweek": 1,
+          "date": "08/09/2026",
+          "match": "Club Brugge v Aston Villa",
           "pick": "A",
           "result": "A",
-          "pickProb": 45.2,
-          "profit": 1.38
+          "pickProb": 45.8,
+          "profit": 1.77
         },
         {
           "div": "CL",
-          "gameweek": 5,
-          "date": "24/11/2026",
-          "match": "Bod\u00f8/Glimt v LASK",
-          "pick": "H",
-          "result": "H",
-          "pickProb": 57.6,
-          "profit": 0.57
+          "gameweek": 2,
+          "date": "13/10/2026",
+          "match": "Lens v Sporting CP",
+          "pick": "A",
+          "result": "A",
+          "pickProb": 39.6,
+          "profit": 1.73
         },
         {
           "div": "CL",
-          "gameweek": 5,
-          "date": "24/11/2026",
-          "match": "RB Leipzig v Lens",
-          "pick": "H",
-          "result": "H",
-          "pickProb": 54.2,
-          "profit": 0.5
+          "gameweek": 1,
+          "date": "10/09/2026",
+          "match": "Slavia Prague v Lens",
+          "pick": "A",
+          "result": "A",
+          "pickProb": 49.8,
+          "profit": 1.46
         }
       ],
       "worstBets": [
@@ -14639,7 +15791,7 @@
           "pick": "H",
           "result": "A",
           "pickProb": 77.3,
-          "profit": null
+          "profit": -1.0
         },
         {
           "div": "CL",
@@ -14659,7 +15811,7 @@
           "pick": "A",
           "result": "D",
           "pickProb": 72.1,
-          "profit": null
+          "profit": -1.0
         }
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24T23:25:02+00:00",
+  "generated": "2026-11-24T23:38:32+00:00",
   "byCompetition": {
     "E0": {
       "name": "Premier League",
@@ -1297,7 +1297,7 @@
           "team": "Sevilla",
           "played": 38,
           "won": 14,
-          "drawn": 11,
+          "drawn": 10,
           "lost": 13,
           "gf": 51.4,
           "ga": 57.8,

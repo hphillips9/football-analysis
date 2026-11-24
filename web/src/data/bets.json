@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24T23:25:02+00:00",
+  "generated": "2026-11-24T23:38:32+00:00",
   "bets": [
     {
       "div": "E0",
@@ -14954,7 +14954,7 @@
       "drawProb": 20.6,
       "awayProb": 20.0,
       "result": "H",
-      "profit": null,
+      "profit": 0.75,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -14972,7 +14972,7 @@
       "drawProb": 21.4,
       "awayProb": 45.8,
       "result": "A",
-      "profit": null,
+      "profit": 1.77,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -14990,7 +14990,7 @@
       "drawProb": 20.2,
       "awayProb": 15.3,
       "result": "H",
-      "profit": null,
+      "profit": 0.75,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15008,7 +15008,7 @@
       "drawProb": 21.4,
       "awayProb": 29.3,
       "result": "A",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15026,7 +15026,7 @@
       "drawProb": 21.1,
       "awayProb": 27.3,
       "result": "A",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15044,7 +15044,7 @@
       "drawProb": 21.3,
       "awayProb": 28.5,
       "result": "H",
-      "profit": null,
+      "profit": 0.6,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15062,7 +15062,7 @@
       "drawProb": 20.1,
       "awayProb": 15.2,
       "result": "H",
-      "profit": null,
+      "profit": 0.21,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15080,7 +15080,7 @@
       "drawProb": 18.9,
       "awayProb": 7.2,
       "result": "H",
-      "profit": null,
+      "profit": 0.08,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15098,7 +15098,7 @@
       "drawProb": 20.4,
       "awayProb": 15.9,
       "result": "H",
-      "profit": null,
+      "profit": 0.75,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15116,7 +15116,7 @@
       "drawProb": 21.5,
       "awayProb": 46.0,
       "result": "A",
-      "profit": null,
+      "profit": 0.71,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15134,7 +15134,7 @@
       "drawProb": 18.1,
       "awayProb": 3.8,
       "result": "H",
-      "profit": null,
+      "profit": 0.04,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15152,7 +15152,7 @@
       "drawProb": 19.3,
       "awayProb": 9.5,
       "result": "H",
-      "profit": null,
+      "profit": 0.61,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15170,7 +15170,7 @@
       "drawProb": 21.4,
       "awayProb": 47.6,
       "result": "D",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15188,7 +15188,7 @@
       "drawProb": 19.7,
       "awayProb": 12.3,
       "result": "D",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15206,7 +15206,7 @@
       "drawProb": 19.0,
       "awayProb": 8.0,
       "result": "H",
-      "profit": null,
+      "profit": 0.08,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15224,7 +15224,7 @@
       "drawProb": 20.8,
       "awayProb": 21.5,
       "result": "H",
-      "profit": null,
+      "profit": 0.7,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15242,7 +15242,7 @@
       "drawProb": 19.1,
       "awayProb": 8.5,
       "result": "H",
-      "profit": null,
+      "profit": 0.07,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15260,7 +15260,7 @@
       "drawProb": 21.3,
       "awayProb": 49.8,
       "result": "A",
-      "profit": null,
+      "profit": 1.46,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15278,7 +15278,7 @@
       "drawProb": 21.1,
       "awayProb": 47.7,
       "result": "H",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15296,7 +15296,7 @@
       "drawProb": 21.4,
       "awayProb": 39.6,
       "result": "A",
-      "profit": null,
+      "profit": 1.73,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15314,7 +15314,7 @@
       "drawProb": 21.3,
       "awayProb": 31.6,
       "result": "H",
-      "profit": null,
+      "profit": 0.59,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15332,7 +15332,7 @@
       "drawProb": 21.6,
       "awayProb": 39.2,
       "result": "H",
-      "profit": null,
+      "profit": 1.21,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15350,7 +15350,7 @@
       "drawProb": 19.5,
       "awayProb": 72.1,
       "result": "D",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15368,7 +15368,7 @@
       "drawProb": 21.0,
       "awayProb": 35.1,
       "result": "H",
-      "profit": null,
+      "profit": 0.82,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15386,7 +15386,7 @@
       "drawProb": 19.9,
       "awayProb": 67.7,
       "result": "A",
-      "profit": null,
+      "profit": 0.32,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15404,7 +15404,7 @@
       "drawProb": 19.1,
       "awayProb": 9.0,
       "result": "H",
-      "profit": null,
+      "profit": 0.21,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15422,7 +15422,7 @@
       "drawProb": 19.7,
       "awayProb": 12.6,
       "result": "A",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15440,7 +15440,7 @@
       "drawProb": 20.8,
       "awayProb": 53.9,
       "result": "H",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15458,7 +15458,7 @@
       "drawProb": 20.3,
       "awayProb": 63.1,
       "result": "A",
-      "profit": null,
+      "profit": 0.45,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15476,7 +15476,7 @@
       "drawProb": 20.4,
       "awayProb": 16.9,
       "result": "H",
-      "profit": null,
+      "profit": 0.63,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15494,7 +15494,7 @@
       "drawProb": 20.8,
       "awayProb": 53.0,
       "result": "H",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15512,7 +15512,7 @@
       "drawProb": 20.8,
       "awayProb": 29.6,
       "result": "A",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15530,7 +15530,7 @@
       "drawProb": 21.4,
       "awayProb": 27.8,
       "result": "H",
-      "profit": null,
+      "profit": 1.13,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15548,7 +15548,7 @@
       "drawProb": 21.3,
       "awayProb": 42.3,
       "result": "A",
-      "profit": null,
+      "profit": 0.94,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15566,7 +15566,7 @@
       "drawProb": 20.7,
       "awayProb": 54.4,
       "result": "H",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15584,7 +15584,7 @@
       "drawProb": 20.2,
       "awayProb": 65.5,
       "result": "A",
-      "profit": null,
+      "profit": 0.39,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15602,7 +15602,7 @@
       "drawProb": 19.6,
       "awayProb": 66.0,
       "result": "A",
-      "profit": null,
+      "profit": 0.28,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15620,7 +15620,7 @@
       "drawProb": 19.8,
       "awayProb": 21.2,
       "result": "D",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15638,7 +15638,7 @@
       "drawProb": 17.8,
       "awayProb": 4.8,
       "result": "H",
-      "profit": null,
+      "profit": 0.1,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15656,7 +15656,7 @@
       "drawProb": 20.8,
       "awayProb": 36.3,
       "result": "H",
-      "profit": null,
+      "profit": 1.42,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15674,7 +15674,7 @@
       "drawProb": 21.1,
       "awayProb": 29.3,
       "result": "D",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15692,7 +15692,7 @@
       "drawProb": 18.5,
       "awayProb": 8.8,
       "result": "H",
-      "profit": null,
+      "profit": 0.16,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15710,7 +15710,7 @@
       "drawProb": 19.5,
       "awayProb": 13.3,
       "result": "H",
-      "profit": null,
+      "profit": 0.56,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15728,7 +15728,7 @@
       "drawProb": 19.9,
       "awayProb": 19.6,
       "result": "A",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15746,7 +15746,7 @@
       "drawProb": 20.1,
       "awayProb": 24.9,
       "result": "H",
-      "profit": null,
+      "profit": 0.68,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15764,7 +15764,7 @@
       "drawProb": 20.5,
       "awayProb": 23.9,
       "result": "H",
-      "profit": null,
+      "profit": 1.4,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15782,7 +15782,7 @@
       "drawProb": 19.3,
       "awayProb": 14.5,
       "result": "A",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15800,7 +15800,7 @@
       "drawProb": 17.8,
       "awayProb": 4.9,
       "result": "A",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15818,7 +15818,7 @@
       "drawProb": 19.7,
       "awayProb": 15.0,
       "result": "H",
-      "profit": null,
+      "profit": 0.23,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15836,7 +15836,7 @@
       "drawProb": 19.6,
       "awayProb": 14.6,
       "result": "H",
-      "profit": null,
+      "profit": 0.74,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15854,7 +15854,7 @@
       "drawProb": 18.3,
       "awayProb": 8.6,
       "result": "H",
-      "profit": null,
+      "profit": 0.28,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15872,7 +15872,7 @@
       "drawProb": 21.2,
       "awayProb": 35.0,
       "result": "H",
-      "profit": null,
+      "profit": 0.74,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15890,7 +15890,7 @@
       "drawProb": 20.9,
       "awayProb": 26.3,
       "result": "D",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15908,7 +15908,7 @@
       "drawProb": 18.2,
       "awayProb": 5.4,
       "result": "H",
-      "profit": null,
+      "profit": 0.22,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15926,7 +15926,7 @@
       "drawProb": 19.4,
       "awayProb": 62.9,
       "result": "A",
-      "profit": null,
+      "profit": 1.2,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15944,7 +15944,7 @@
       "drawProb": 20.6,
       "awayProb": 49.7,
       "result": "H",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15962,7 +15962,7 @@
       "drawProb": 19.3,
       "awayProb": 64.9,
       "result": "A",
-      "profit": null,
+      "profit": 0.78,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -15980,7 +15980,7 @@
       "drawProb": 20.3,
       "awayProb": 41.3,
       "result": "H",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -15998,7 +15998,7 @@
       "drawProb": 20.0,
       "awayProb": 16.9,
       "result": "H",
-      "profit": null,
+      "profit": 0.32,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -16016,7 +16016,7 @@
       "drawProb": 19.8,
       "awayProb": 52.5,
       "result": "A",
-      "profit": null,
+      "profit": 1.09,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -16034,7 +16034,7 @@
       "drawProb": 20.6,
       "awayProb": 34.8,
       "result": "D",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -16052,7 +16052,7 @@
       "drawProb": 19.6,
       "awayProb": 20.9,
       "result": "H",
-      "profit": null,
+      "profit": 0.3,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -16070,7 +16070,7 @@
       "drawProb": 20.5,
       "awayProb": 50.3,
       "result": "A",
-      "profit": null,
+      "profit": 0.77,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -16088,7 +16088,7 @@
       "drawProb": 19.4,
       "awayProb": 52.2,
       "result": "H",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true
@@ -16106,7 +16106,7 @@
       "drawProb": 19.2,
       "awayProb": 64.2,
       "result": "A",
-      "profit": null,
+      "profit": 0.21,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -16124,7 +16124,7 @@
       "drawProb": 19.3,
       "awayProb": 69.8,
       "result": "A",
-      "profit": null,
+      "profit": 0.26,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -16142,7 +16142,7 @@
       "drawProb": 20.2,
       "awayProb": 22.5,
       "result": "H",
-      "profit": null,
+      "profit": 0.57,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -16160,7 +16160,7 @@
       "drawProb": 19.9,
       "awayProb": 45.1,
       "result": "A",
-      "profit": null,
+      "profit": 0.57,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -16178,7 +16178,7 @@
       "drawProb": 19.2,
       "awayProb": 20.1,
       "result": "H",
-      "profit": null,
+      "profit": 1.01,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -16196,7 +16196,7 @@
       "drawProb": 19.7,
       "awayProb": 48.9,
       "result": "A",
-      "profit": null,
+      "profit": 0.87,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -16214,7 +16214,7 @@
       "drawProb": 20.0,
       "awayProb": 28.3,
       "result": "H",
-      "profit": null,
+      "profit": 0.54,
       "won": true,
       "settled": true,
       "backfilled": true
@@ -16232,7 +16232,7 @@
       "drawProb": 19.1,
       "awayProb": 25.1,
       "result": "A",
-      "profit": null,
+      "profit": -1.0,
       "won": false,
       "settled": true,
       "backfilled": true

@@ -1,16 +1,16 @@
 {
-  "generated": "2026-11-24T23:25:02+00:00",
+  "generated": "2026-11-24T23:38:32+00:00",
   "competitions": {
     "E0": {
       "results": "ok",
       "xg": "ok",
-      "predicted": 10,
+      "predicted": 0,
       "error": null
     },
     "SP1": {
       "results": "ok",
       "xg": "ok",
-      "predicted": 10,
+      "predicted": 0,
       "error": null
     },
     "D1": {
@@ -22,7 +22,7 @@
     "I1": {
       "results": "ok",
       "xg": "ok",
-      "predicted": 10,
+      "predicted": 0,
       "error": null
     },
     "F1": {

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24T23:25:02+00:00",
+  "generated": "2026-11-24T23:38:32+00:00",
   "byCompetition": {
     "CL": {
       "name": "Champions League",
@@ -803,7 +803,7 @@
             "won": 3,
             "drawn": 1,
             "lost": 5,
-            "points": 8,
+            "points": 9,
             "position": 27,
             "currentPosition": 18,
             "movement": -9
@@ -1480,7 +1480,7 @@
                 ],
                 "progression": {
                   "before": 0.368,
-                  "afterFirstLeg": 0.331
+                  "afterFirstLeg": 0.33
                 },
                 "legs": [
                   {
@@ -1614,7 +1614,7 @@
                   "Arsenal"
                 ],
                 "progression": {
-                  "before": 0.176,
+                  "before": 0.175,
                   "afterFirstLeg": 0.193
                 },
                 "legs": [
@@ -1663,7 +1663,7 @@
                   "Liverpool"
                 ],
                 "progression": {
-                  "before": 0.505,
+                  "before": 0.506,
                   "afterFirstLeg": 0.837
                 },
                 "legs": [
