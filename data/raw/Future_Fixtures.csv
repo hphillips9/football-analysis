@@ -1,28 +1,31 @@
 Gameweek,Div,Date,Time,HomeTeam,AwayTeam
-14,N1,27/11/2026,19:00,FC Groningen,Willem II
-11,D1,27/11/2026,19:30,Werder Bremen,Borussia Mönchengladbach
-12,F1,27/11/2026,19:45,Brest,Paris FC
-11,D1,28/11/2026,14:30,1. FC Köln,Elversberg
-11,D1,28/11/2026,14:30,Hamburger SV,Bayern München
-11,D1,28/11/2026,14:30,Mainz 05,Union Berlin
-11,D1,28/11/2026,14:30,Paderborn,Schalke 04
-14,N1,28/11/2026,15:30,Excelsior,Telstar
-12,F1,28/11/2026,16:15,Angers,Lens
-11,D1,28/11/2026,17:30,VfB Stuttgart,Eintracht Frankfurt
-14,N1,28/11/2026,17:45,PSV Eindhoven,Go Ahead Eagles
-12,F1,28/11/2026,19:45,Le Havre,Strasbourg
-12,F1,28/11/2026,19:45,Le Mans,Lille
-12,F1,28/11/2026,19:45,Nice,Troyes
-12,F1,28/11/2026,19:45,Paris Saint-Germain,Lorient
-14,N1,28/11/2026,20:00,Cambuur,Sparta Rotterdam
-14,N1,29/11/2026,11:15,ADO Den Haag,FC Utrecht
-14,N1,29/11/2026,13:30,Feyenoord,Ajax
-14,N1,29/11/2026,13:30,Fortuna Sittard,SC Heerenveen
-12,F1,29/11/2026,14:00,Auxerre,Marseille
-11,D1,29/11/2026,14:30,Freiburg,RB Leipzig
-14,N1,29/11/2026,15:45,PEC Zwolle,AZ Alkmaar
-12,F1,29/11/2026,16:15,Toulouse,Rennes
-11,D1,29/11/2026,16:30,Hoffenheim,Augsburg
-11,D1,29/11/2026,18:30,Borussia Dortmund,Bayer Leverkusen
-14,N1,29/11/2026,19:00,NEC Nijmegen,FC Twente
-12,F1,29/11/2026,19:45,Lyon,Monaco
+13,I1,27/11/2026,19:45,Venezia,Bologna
+14,SP1,27/11/2026,20:00,Levante,Racing Santander
+12,E0,27/11/2026,20:00,Nottingham Forest,Chelsea
+14,SP1,28/11/2026,13:00,Real Betis,Rayo Vallecano
+13,I1,28/11/2026,14:00,Frosinone,Parma
+12,E0,28/11/2026,15:00,Leeds United,Coventry
+12,E0,28/11/2026,15:00,Manchester United,Brentford
+14,SP1,28/11/2026,15:15,Málaga,Athletic Club
+13,I1,28/11/2026,17:00,Torino,Lazio
+14,SP1,28/11/2026,17:30,Elche,Atlético Madrid
+12,E0,28/11/2026,17:30,Ipswich,Aston Villa
+13,I1,28/11/2026,19:45,Inter,Genoa
+14,SP1,28/11/2026,20:00,Real Madrid,Deportivo Alavés
+13,I1,29/11/2026,11:30,Udinese,Fiorentina
+12,E0,29/11/2026,12:00,Everton,Liverpool
+14,SP1,29/11/2026,13:00,Valencia,Osasuna
+13,I1,29/11/2026,14:00,Sassuolo,Napoli
+12,E0,29/11/2026,14:05,Brighton and Hove Albion,Newcastle United
+12,E0,29/11/2026,14:05,Crystal Palace,Hull City
+12,E0,29/11/2026,14:05,Fulham,Bournemouth
+12,E0,29/11/2026,14:05,Sunderland,Tottenham Hotspur
+14,SP1,29/11/2026,15:15,Deportivo A Coruña,Barcelona
+12,E0,29/11/2026,16:30,Arsenal,Manchester City
+13,I1,29/11/2026,17:00,Roma,Monza
+14,SP1,29/11/2026,17:30,Celta Vigo,Villarreal
+13,I1,29/11/2026,19:45,Como,Juventus
+14,SP1,29/11/2026,20:00,Real Sociedad,Sevilla
+13,I1,30/11/2026,17:30,Lecce,Atalanta
+13,I1,30/11/2026,19:45,Cagliari,Milan
+14,SP1,30/11/2026,20:00,Espanyol,Getafe

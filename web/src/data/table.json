@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-23T19:38:31+00:00",
+  "generated": "2026-11-24T23:25:02+00:00",
   "byCompetition": {
     "E0": {
       "name": "Premier League",
       "season": "26-27",
-      "playedFixtures": 109,
-      "remainingFixtures": 271,
+      "playedFixtures": 110,
+      "remainingFixtures": 270,
       "current": [
         {
           "team": "Arsenal",
@@ -68,6 +68,18 @@
           "gd": 4
         },
         {
+          "team": "Brentford",
+          "played": 11,
+          "won": 4,
+          "drawn": 5,
+          "lost": 2,
+          "gf": 20,
+          "ga": 11,
+          "points": 17,
+          "position": 6,
+          "gd": 9
+        },
+        {
           "team": "Leeds United",
           "played": 11,
           "won": 4,
@@ -76,20 +88,8 @@
           "gf": 14,
           "ga": 9,
           "points": 17,
-          "position": 6,
-          "gd": 5
-        },
-        {
-          "team": "Everton",
-          "played": 10,
-          "won": 4,
-          "drawn": 4,
-          "lost": 2,
-          "gf": 12,
-          "ga": 10,
-          "points": 16,
           "position": 7,
-          "gd": 2
+          "gd": 5
         },
         {
           "team": "Chelsea",
@@ -104,6 +104,18 @@
           "gd": 0
         },
         {
+          "team": "Everton",
+          "played": 11,
+          "won": 4,
+          "drawn": 4,
+          "lost": 3,
+          "gf": 12,
+          "ga": 14,
+          "points": 16,
+          "position": 9,
+          "gd": -2
+        },
+        {
           "team": "Tottenham Hotspur",
           "played": 11,
           "won": 4,
@@ -112,20 +124,8 @@
           "gf": 12,
           "ga": 11,
           "points": 15,
-          "position": 9,
-          "gd": 1
-        },
-        {
-          "team": "Brentford",
-          "played": 10,
-          "won": 3,
-          "drawn": 5,
-          "lost": 2,
-          "gf": 16,
-          "ga": 11,
-          "points": 14,
           "position": 10,
-          "gd": 5
+          "gd": 1
         },
         {
           "team": "Hull City",
@@ -272,26 +272,26 @@
           "movement": 1
         },
         {
-          "team": "Manchester United",
+          "team": "Brentford",
           "played": 11,
           "won": 9,
           "drawn": 0,
           "lost": 2,
           "points": 27,
           "position": 3,
-          "currentPosition": 19,
-          "movement": 16
+          "currentPosition": 6,
+          "movement": 3
         },
         {
-          "team": "Brentford",
-          "played": 10,
-          "won": 8,
+          "team": "Manchester United",
+          "played": 11,
+          "won": 9,
           "drawn": 0,
           "lost": 2,
-          "points": 24,
+          "points": 27,
           "position": 4,
-          "currentPosition": 10,
-          "movement": 6
+          "currentPosition": 19,
+          "movement": 15
         },
         {
           "team": "Brighton and Hove Albion",
@@ -361,14 +361,14 @@
         },
         {
           "team": "Everton",
-          "played": 10,
+          "played": 11,
           "won": 5,
           "drawn": 0,
-          "lost": 5,
+          "lost": 6,
           "points": 15,
           "position": 11,
-          "currentPosition": 7,
-          "movement": -4
+          "currentPosition": 9,
+          "movement": -2
         },
         {
           "team": "Nottingham Forest",
@@ -389,8 +389,8 @@
           "lost": 7,
           "points": 12,
           "position": 13,
-          "currentPosition": 6,
-          "movement": -7
+          "currentPosition": 7,
+          "movement": -6
         },
         {
           "team": "Aston Villa",
@@ -411,8 +411,8 @@
           "lost": 8,
           "points": 9,
           "position": 15,
-          "currentPosition": 9,
-          "movement": -6
+          "currentPosition": 10,
+          "movement": -5
         },
         {
           "team": "Hull City",
@@ -477,11 +477,11 @@
           "won": 26,
           "drawn": 7,
           "lost": 5,
-          "gf": 66.8,
+          "gf": 66.7,
           "ga": 28.6,
-          "points": 85,
+          "points": 84,
           "position": 1,
-          "gd": 38.3,
+          "gd": 38.2,
           "currentPosition": 1,
           "movement": 0
         },
@@ -491,9 +491,9 @@
           "won": 22,
           "drawn": 7,
           "lost": 9,
-          "gf": 73.7,
+          "gf": 73.8,
           "ga": 42.3,
-          "points": 73,
+          "points": 72,
           "position": 2,
           "gd": 31.4,
           "currentPosition": 3,
@@ -505,11 +505,11 @@
           "won": 20,
           "drawn": 8,
           "lost": 10,
-          "gf": 70.6,
-          "ga": 42.6,
-          "points": 68,
+          "gf": 70.7,
+          "ga": 42.5,
+          "points": 69,
           "position": 3,
-          "gd": 28.0,
+          "gd": 28.2,
           "currentPosition": 2,
           "movement": -1
         },
@@ -519,11 +519,11 @@
           "won": 20,
           "drawn": 9,
           "lost": 9,
-          "gf": 67.5,
+          "gf": 67.6,
           "ga": 41.8,
           "points": 68,
           "position": 4,
-          "gd": 25.7,
+          "gd": 25.8,
           "currentPosition": 4,
           "movement": 0
         },
@@ -544,58 +544,44 @@
         {
           "team": "Leeds United",
           "played": 38,
-          "won": 15,
+          "won": 16,
           "drawn": 12,
           "lost": 11,
           "gf": 48.4,
           "ga": 45.5,
           "points": 58,
           "position": 6,
-          "gd": 2.9,
+          "gd": 3.0,
+          "currentPosition": 7,
+          "movement": 1
+        },
+        {
+          "team": "Brentford",
+          "played": 38,
+          "won": 15,
+          "drawn": 12,
+          "lost": 11,
+          "gf": 61.9,
+          "ga": 48.6,
+          "points": 56,
+          "position": 7,
+          "gd": 13.3,
           "currentPosition": 6,
-          "movement": 0
+          "movement": -1
         },
         {
           "team": "Aston Villa",
           "played": 38,
           "won": 15,
           "drawn": 11,
-          "lost": 11,
-          "gf": 55.1,
-          "ga": 54.9,
-          "points": 57,
-          "position": 7,
-          "gd": 0.3,
-          "currentPosition": 12,
-          "movement": 5
-        },
-        {
-          "team": "Everton",
-          "played": 38,
-          "won": 14,
-          "drawn": 11,
-          "lost": 13,
-          "gf": 42.4,
-          "ga": 46.1,
-          "points": 52,
+          "lost": 12,
+          "gf": 55.2,
+          "ga": 54.8,
+          "points": 55,
           "position": 8,
-          "gd": -3.7,
-          "currentPosition": 7,
-          "movement": -1
-        },
-        {
-          "team": "Brentford",
-          "played": 38,
-          "won": 13,
-          "drawn": 12,
-          "lost": 13,
-          "gf": 58.2,
-          "ga": 50.2,
-          "points": 51,
-          "position": 9,
-          "gd": 8.0,
-          "currentPosition": 10,
-          "movement": 1
+          "gd": 0.4,
+          "currentPosition": 12,
+          "movement": 4
         },
         {
           "team": "Chelsea",
@@ -603,13 +589,13 @@
           "won": 14,
           "drawn": 8,
           "lost": 16,
-          "gf": 63.7,
+          "gf": 63.8,
           "ga": 60.3,
           "points": 51,
-          "position": 10,
-          "gd": 3.4,
+          "position": 9,
+          "gd": 3.5,
           "currentPosition": 8,
-          "movement": -2
+          "movement": -1
         },
         {
           "team": "Tottenham Hotspur",
@@ -618,12 +604,12 @@
           "drawn": 10,
           "lost": 15,
           "gf": 46.2,
-          "ga": 52.9,
+          "ga": 52.8,
           "points": 51,
-          "position": 11,
+          "position": 10,
           "gd": -6.7,
-          "currentPosition": 9,
-          "movement": -2
+          "currentPosition": 10,
+          "movement": 0
         },
         {
           "team": "Newcastle United",
@@ -631,19 +617,33 @@
           "won": 12,
           "drawn": 11,
           "lost": 15,
-          "gf": 57.3,
-          "ga": 58.4,
+          "gf": 57.2,
+          "ga": 58.5,
           "points": 48,
-          "position": 12,
+          "position": 11,
           "gd": -1.2,
           "currentPosition": 13,
-          "movement": 1
+          "movement": 2
+        },
+        {
+          "team": "Everton",
+          "played": 38,
+          "won": 12,
+          "drawn": 11,
+          "lost": 15,
+          "gf": 41.0,
+          "ga": 49.9,
+          "points": 48,
+          "position": 12,
+          "gd": -8.9,
+          "currentPosition": 9,
+          "movement": -3
         },
         {
           "team": "Nottingham Forest",
           "played": 38,
           "won": 12,
-          "drawn": 9,
+          "drawn": 10,
           "lost": 17,
           "gf": 41.4,
           "ga": 51.8,
@@ -663,7 +663,7 @@
           "ga": 49.6,
           "points": 44,
           "position": 14,
-          "gd": -6.5,
+          "gd": -6.6,
           "currentPosition": 15,
           "movement": 1
         },
@@ -673,11 +673,11 @@
           "won": 10,
           "drawn": 12,
           "lost": 16,
-          "gf": 43.1,
-          "ga": 38.1,
+          "gf": 43.0,
+          "ga": 38.0,
           "points": 43,
           "position": 15,
-          "gd": 5.1,
+          "gd": 5.0,
           "currentPosition": 11,
           "movement": -4
         },
@@ -701,11 +701,11 @@
           "won": 10,
           "drawn": 10,
           "lost": 18,
-          "gf": 34.5,
-          "ga": 53.2,
+          "gf": 34.6,
+          "ga": 53.1,
           "points": 41,
           "position": 17,
-          "gd": -18.6,
+          "gd": -18.5,
           "currentPosition": 18,
           "movement": 1
         },
@@ -715,11 +715,11 @@
           "won": 11,
           "drawn": 7,
           "lost": 20,
-          "gf": 48.4,
-          "ga": 75.2,
+          "gf": 48.3,
+          "ga": 75.4,
           "points": 40,
           "position": 18,
-          "gd": -26.8,
+          "gd": -27.1,
           "currentPosition": 14,
           "movement": -4
         },
@@ -727,7 +727,7 @@
           "team": "Crystal Palace",
           "played": 38,
           "won": 8,
-          "drawn": 8,
+          "drawn": 7,
           "lost": 22,
           "gf": 42.6,
           "ga": 70.6,
@@ -743,11 +743,11 @@
           "won": 7,
           "drawn": 8,
           "lost": 22,
-          "gf": 45.2,
-          "ga": 81.4,
+          "gf": 45.1,
+          "ga": 81.5,
           "points": 31,
           "position": 20,
-          "gd": -36.2,
+          "gd": -36.4,
           "currentPosition": 16,
           "movement": -4
         }
@@ -756,8 +756,8 @@
     "SP1": {
       "name": "La Liga",
       "season": "26-27",
-      "playedFixtures": 128,
-      "remainingFixtures": 252,
+      "playedFixtures": 129,
+      "remainingFixtures": 251,
       "current": [
         {
           "team": "Barcelona",
@@ -928,6 +928,18 @@
           "gd": -1
         },
         {
+          "team": "Levante",
+          "played": 13,
+          "won": 2,
+          "drawn": 6,
+          "lost": 5,
+          "gf": 17,
+          "ga": 22,
+          "points": 12,
+          "position": 15,
+          "gd": -5
+        },
+        {
           "team": "Rayo Vallecano",
           "played": 12,
           "won": 3,
@@ -936,7 +948,7 @@
           "gf": 15,
           "ga": 22,
           "points": 12,
-          "position": 15,
+          "position": 16,
           "gd": -7
         },
         {
@@ -948,7 +960,7 @@
           "gf": 9,
           "ga": 20,
           "points": 12,
-          "position": 16,
+          "position": 17,
           "gd": -11
         },
         {
@@ -960,30 +972,18 @@
           "gf": 8,
           "ga": 21,
           "points": 12,
-          "position": 17,
+          "position": 18,
           "gd": -13
         },
         {
-          "team": "Levante",
-          "played": 12,
+          "team": "Elche",
+          "played": 13,
           "won": 2,
           "drawn": 5,
-          "lost": 5,
-          "gf": 16,
+          "lost": 6,
+          "gf": 15,
           "ga": 21,
           "points": 11,
-          "position": 18,
-          "gd": -5
-        },
-        {
-          "team": "Elche",
-          "played": 12,
-          "won": 2,
-          "drawn": 4,
-          "lost": 6,
-          "gf": 14,
-          "ga": 20,
-          "points": 10,
           "position": 19,
           "gd": -6
         },
@@ -1119,8 +1119,8 @@
           "lost": 6,
           "points": 18,
           "position": 11,
-          "currentPosition": 15,
-          "movement": 4
+          "currentPosition": 16,
+          "movement": 5
         },
         {
           "team": "Sevilla",
@@ -1163,8 +1163,19 @@
           "lost": 8,
           "points": 15,
           "position": 15,
-          "currentPosition": 17,
-          "movement": 2
+          "currentPosition": 18,
+          "movement": 3
+        },
+        {
+          "team": "Levante",
+          "played": 13,
+          "won": 4,
+          "drawn": 0,
+          "lost": 9,
+          "points": 12,
+          "position": 16,
+          "currentPosition": 15,
+          "movement": -1
         },
         {
           "team": "Valencia",
@@ -1173,8 +1184,8 @@
           "drawn": 0,
           "lost": 9,
           "points": 12,
-          "position": 16,
-          "currentPosition": 16,
+          "position": 17,
+          "currentPosition": 17,
           "movement": 0
         },
         {
@@ -1184,27 +1195,16 @@
           "drawn": 0,
           "lost": 10,
           "points": 9,
-          "position": 17,
-          "currentPosition": 11,
-          "movement": -6
-        },
-        {
-          "team": "Levante",
-          "played": 12,
-          "won": 3,
-          "drawn": 0,
-          "lost": 9,
-          "points": 9,
           "position": 18,
-          "currentPosition": 18,
-          "movement": 0
+          "currentPosition": 11,
+          "movement": -7
         },
         {
           "team": "Elche",
-          "played": 12,
+          "played": 13,
           "won": 3,
           "drawn": 0,
-          "lost": 9,
+          "lost": 10,
           "points": 9,
           "position": 19,
           "currentPosition": 19,
@@ -1229,11 +1229,11 @@
           "won": 29,
           "drawn": 6,
           "lost": 3,
-          "gf": 120.9,
+          "gf": 120.8,
           "ga": 39.7,
           "points": 94,
           "position": 1,
-          "gd": 81.2,
+          "gd": 81.1,
           "currentPosition": 1,
           "movement": 0
         },
@@ -1247,7 +1247,7 @@
           "ga": 32.3,
           "points": 91,
           "position": 2,
-          "gd": 55.6,
+          "gd": 55.7,
           "currentPosition": 2,
           "movement": 0
         },
@@ -1268,14 +1268,14 @@
         {
           "team": "Real Betis",
           "played": 38,
-          "won": 20,
+          "won": 21,
           "drawn": 9,
           "lost": 8,
-          "gf": 61.2,
+          "gf": 61.3,
           "ga": 47.4,
           "points": 71,
           "position": 4,
-          "gd": 13.8,
+          "gd": 13.9,
           "currentPosition": 4,
           "movement": 0
         },
@@ -1297,10 +1297,10 @@
           "team": "Sevilla",
           "played": 38,
           "won": 14,
-          "drawn": 10,
+          "drawn": 11,
           "lost": 13,
-          "gf": 51.5,
-          "ga": 57.9,
+          "gf": 51.4,
+          "ga": 57.8,
           "points": 53,
           "position": 6,
           "gd": -6.4,
@@ -1327,7 +1327,7 @@
           "won": 13,
           "drawn": 11,
           "lost": 14,
-          "gf": 49.4,
+          "gf": 49.5,
           "ga": 43.5,
           "points": 51,
           "position": 8,
@@ -1341,11 +1341,11 @@
           "won": 12,
           "drawn": 10,
           "lost": 15,
-          "gf": 47.4,
+          "gf": 47.3,
           "ga": 53.9,
           "points": 47,
           "position": 9,
-          "gd": -6.5,
+          "gd": -6.6,
           "currentPosition": 9,
           "movement": 0
         },
@@ -1356,7 +1356,7 @@
           "drawn": 8,
           "lost": 17,
           "gf": 57.7,
-          "ga": 95.2,
+          "ga": 95.1,
           "points": 46,
           "position": 10,
           "gd": -37.4,
@@ -1374,8 +1374,8 @@
           "points": 45,
           "position": 11,
           "gd": -12.9,
-          "currentPosition": 15,
-          "movement": 4
+          "currentPosition": 16,
+          "movement": 5
         },
         {
           "team": "Deportivo A Coru\u00f1a",
@@ -1384,10 +1384,10 @@
           "drawn": 12,
           "lost": 15,
           "gf": 46.4,
-          "ga": 54.3,
+          "ga": 54.4,
           "points": 44,
           "position": 12,
-          "gd": -7.9,
+          "gd": -8.0,
           "currentPosition": 12,
           "movement": 0
         },
@@ -1402,8 +1402,8 @@
           "points": 44,
           "position": 13,
           "gd": -17.0,
-          "currentPosition": 16,
-          "movement": 3
+          "currentPosition": 17,
+          "movement": 4
         },
         {
           "team": "Espanyol",
@@ -1411,27 +1411,13 @@
           "won": 11,
           "drawn": 9,
           "lost": 18,
-          "gf": 42.0,
+          "gf": 42.1,
           "ga": 48.6,
           "points": 43,
           "position": 14,
           "gd": -6.6,
           "currentPosition": 11,
           "movement": -3
-        },
-        {
-          "team": "Levante",
-          "played": 38,
-          "won": 10,
-          "drawn": 12,
-          "lost": 16,
-          "gf": 52.4,
-          "ga": 63.2,
-          "points": 42,
-          "position": 15,
-          "gd": -10.8,
-          "currentPosition": 18,
-          "movement": 3
         },
         {
           "team": "Celta Vigo",
@@ -1442,10 +1428,10 @@
           "gf": 42.4,
           "ga": 46.2,
           "points": 42,
-          "position": 16,
+          "position": 15,
           "gd": -3.8,
           "currentPosition": 14,
-          "movement": -2
+          "movement": -1
         },
         {
           "team": "Osasuna",
@@ -1456,10 +1442,24 @@
           "gf": 41.1,
           "ga": 62.5,
           "points": 41,
-          "position": 17,
-          "gd": -21.3,
+          "position": 16,
+          "gd": -21.4,
           "currentPosition": 13,
-          "movement": -4
+          "movement": -3
+        },
+        {
+          "team": "Levante",
+          "played": 38,
+          "won": 10,
+          "drawn": 12,
+          "lost": 16,
+          "gf": 51.1,
+          "ga": 62.7,
+          "points": 41,
+          "position": 17,
+          "gd": -11.6,
+          "currentPosition": 15,
+          "movement": -2
         },
         {
           "team": "Elche",
@@ -1467,11 +1467,11 @@
           "won": 10,
           "drawn": 11,
           "lost": 17,
-          "gf": 47.1,
-          "ga": 58.9,
+          "gf": 46.6,
+          "ga": 57.8,
           "points": 41,
           "position": 18,
-          "gd": -11.9,
+          "gd": -11.2,
           "currentPosition": 19,
           "movement": 1
         },
@@ -1481,13 +1481,13 @@
           "won": 8,
           "drawn": 9,
           "lost": 20,
-          "gf": 29.1,
+          "gf": 29.0,
           "ga": 51.1,
           "points": 34,
           "position": 19,
           "gd": -22.1,
-          "currentPosition": 17,
-          "movement": -2
+          "currentPosition": 18,
+          "movement": -1
         },
         {
           "team": "M\u00e1laga",
@@ -1496,10 +1496,10 @@
           "drawn": 11,
           "lost": 21,
           "gf": 25.8,
-          "ga": 70.2,
+          "ga": 70.1,
           "points": 27,
           "position": 20,
-          "gd": -44.4,
+          "gd": -44.3,
           "currentPosition": 20,
           "movement": 0
         }
@@ -1951,7 +1951,7 @@
           "lost": 5,
           "gf": 63.4,
           "ga": 32.7,
-          "points": 68,
+          "points": 69,
           "position": 2,
           "gd": 30.7,
           "currentPosition": 1,
@@ -1960,12 +1960,12 @@
         {
           "team": "RB Leipzig",
           "played": 34,
-          "won": 20,
+          "won": 21,
           "drawn": 6,
           "lost": 8,
           "gf": 80.9,
           "ga": 46.2,
-          "points": 67,
+          "points": 68,
           "position": 3,
           "gd": 34.7,
           "currentPosition": 4,
@@ -1993,7 +1993,7 @@
           "lost": 10,
           "gf": 73.3,
           "ga": 49.7,
-          "points": 60,
+          "points": 59,
           "position": 5,
           "gd": 23.7,
           "currentPosition": 5,
@@ -2032,7 +2032,7 @@
           "played": 34,
           "won": 12,
           "drawn": 9,
-          "lost": 12,
+          "lost": 13,
           "gf": 56.8,
           "ga": 62.4,
           "points": 46,
@@ -2186,8 +2186,8 @@
     "I1": {
       "name": "Serie A",
       "season": "26-27",
-      "playedFixtures": 119,
-      "remainingFixtures": 261,
+      "playedFixtures": 120,
+      "remainingFixtures": 260,
       "current": [
         {
           "team": "Lazio",
@@ -2346,6 +2346,18 @@
           "gd": -3
         },
         {
+          "team": "Monza",
+          "played": 12,
+          "won": 3,
+          "drawn": 1,
+          "lost": 8,
+          "gf": 20,
+          "ga": 25,
+          "points": 10,
+          "position": 14,
+          "gd": -5
+        },
+        {
           "team": "Lecce",
           "played": 12,
           "won": 3,
@@ -2354,20 +2366,20 @@
           "gf": 12,
           "ga": 25,
           "points": 10,
-          "position": 14,
+          "position": 15,
           "gd": -13
         },
         {
           "team": "Fiorentina",
-          "played": 11,
+          "played": 12,
           "won": 2,
           "drawn": 3,
-          "lost": 6,
+          "lost": 7,
           "gf": 17,
-          "ga": 25,
+          "ga": 28,
           "points": 9,
-          "position": 15,
-          "gd": -8
+          "position": 16,
+          "gd": -11
         },
         {
           "team": "Parma",
@@ -2378,7 +2390,7 @@
           "gf": 10,
           "ga": 22,
           "points": 8,
-          "position": 16,
+          "position": 17,
           "gd": -12
         },
         {
@@ -2390,20 +2402,8 @@
           "gf": 16,
           "ga": 31,
           "points": 8,
-          "position": 17,
-          "gd": -15
-        },
-        {
-          "team": "Monza",
-          "played": 11,
-          "won": 2,
-          "drawn": 1,
-          "lost": 8,
-          "gf": 17,
-          "ga": 25,
-          "points": 7,
           "position": 18,
-          "gd": -8
+          "gd": -15
         },
         {
           "team": "Udinese",
@@ -2542,26 +2542,26 @@
           "movement": -3
         },
         {
+          "team": "Fiorentina",
+          "played": 12,
+          "won": 5,
+          "drawn": 0,
+          "lost": 7,
+          "points": 15,
+          "position": 11,
+          "currentPosition": 16,
+          "movement": 5
+        },
+        {
           "team": "Torino",
           "played": 12,
           "won": 4,
           "drawn": 0,
           "lost": 8,
           "points": 12,
-          "position": 11,
-          "currentPosition": 13,
-          "movement": 2
-        },
-        {
-          "team": "Fiorentina",
-          "played": 11,
-          "won": 4,
-          "drawn": 0,
-          "lost": 7,
-          "points": 12,
           "position": 12,
-          "currentPosition": 15,
-          "movement": 3
+          "currentPosition": 13,
+          "movement": 1
         },
         {
           "team": "Parma",
@@ -2571,8 +2571,8 @@
           "lost": 8,
           "points": 12,
           "position": 13,
-          "currentPosition": 16,
-          "movement": 3
+          "currentPosition": 17,
+          "movement": 4
         },
         {
           "team": "Sassuolo",
@@ -2582,8 +2582,8 @@
           "lost": 8,
           "points": 12,
           "position": 14,
-          "currentPosition": 17,
-          "movement": 3
+          "currentPosition": 18,
+          "movement": 4
         },
         {
           "team": "Cagliari",
@@ -2604,8 +2604,8 @@
           "lost": 9,
           "points": 9,
           "position": 16,
-          "currentPosition": 14,
-          "movement": -2
+          "currentPosition": 15,
+          "movement": -1
         },
         {
           "team": "Udinese",
@@ -2642,14 +2642,14 @@
         },
         {
           "team": "Monza",
-          "played": 11,
+          "played": 12,
           "won": 0,
           "drawn": 0,
-          "lost": 11,
+          "lost": 12,
           "points": 0,
           "position": 20,
-          "currentPosition": 18,
-          "movement": -2
+          "currentPosition": 14,
+          "movement": -6
         }
       ],
       "projected": [
@@ -2659,11 +2659,11 @@
           "won": 25,
           "drawn": 8,
           "lost": 4,
-          "gf": 93.0,
+          "gf": 92.9,
           "ga": 43.7,
           "points": 85,
           "position": 1,
-          "gd": 49.3,
+          "gd": 49.2,
           "currentPosition": 3,
           "movement": 2
         },
@@ -2673,11 +2673,11 @@
           "won": 24,
           "drawn": 9,
           "lost": 4,
-          "gf": 84.9,
-          "ga": 36.5,
+          "gf": 84.8,
+          "ga": 36.6,
           "points": 82,
           "position": 2,
-          "gd": 48.5,
+          "gd": 48.2,
           "currentPosition": 2,
           "movement": 0
         },
@@ -2701,11 +2701,11 @@
           "won": 22,
           "drawn": 9,
           "lost": 7,
-          "gf": 61.5,
-          "ga": 34.8,
-          "points": 75,
+          "gf": 61.4,
+          "ga": 34.9,
+          "points": 76,
           "position": 4,
-          "gd": 26.7,
+          "gd": 26.5,
           "currentPosition": 5,
           "movement": 1
         },
@@ -2719,7 +2719,7 @@
           "ga": 43.3,
           "points": 73,
           "position": 5,
-          "gd": 28.5,
+          "gd": 28.3,
           "currentPosition": 4,
           "movement": -1
         },
@@ -2729,11 +2729,11 @@
           "won": 19,
           "drawn": 10,
           "lost": 10,
-          "gf": 58.5,
-          "ga": 38.1,
+          "gf": 58.4,
+          "ga": 38.2,
           "points": 65,
           "position": 6,
-          "gd": 20.3,
+          "gd": 20.1,
           "currentPosition": 6,
           "movement": 0
         },
@@ -2745,9 +2745,9 @@
           "lost": 11,
           "gf": 60.5,
           "ga": 39.1,
-          "points": 62,
+          "points": 63,
           "position": 7,
-          "gd": 21.5,
+          "gd": 21.4,
           "currentPosition": 8,
           "movement": 1
         },
@@ -2761,7 +2761,7 @@
           "ga": 48.1,
           "points": 59,
           "position": 8,
-          "gd": 4.1,
+          "gd": 4.2,
           "currentPosition": 9,
           "movement": 1
         },
@@ -2771,11 +2771,11 @@
           "won": 15,
           "drawn": 9,
           "lost": 14,
-          "gf": 69.7,
-          "ga": 67.7,
+          "gf": 69.6,
+          "ga": 67.8,
           "points": 54,
           "position": 9,
-          "gd": 2.1,
+          "gd": 1.8,
           "currentPosition": 7,
           "movement": -2
         },
@@ -2785,11 +2785,11 @@
           "won": 14,
           "drawn": 10,
           "lost": 14,
-          "gf": 62.8,
+          "gf": 62.7,
           "ga": 56.1,
           "points": 53,
           "position": 10,
-          "gd": 6.7,
+          "gd": 6.6,
           "currentPosition": 12,
           "movement": 2
         },
@@ -2799,11 +2799,11 @@
           "won": 13,
           "drawn": 8,
           "lost": 17,
-          "gf": 41.2,
-          "ga": 51.3,
+          "gf": 41.1,
+          "ga": 51.4,
           "points": 48,
           "position": 11,
-          "gd": -10.1,
+          "gd": -10.3,
           "currentPosition": 10,
           "movement": -1
         },
@@ -2813,27 +2813,13 @@
           "won": 13,
           "drawn": 8,
           "lost": 17,
-          "gf": 36.9,
-          "ga": 55.4,
+          "gf": 37.0,
+          "ga": 55.3,
           "points": 48,
           "position": 12,
-          "gd": -18.4,
+          "gd": -18.3,
           "currentPosition": 11,
           "movement": -1
-        },
-        {
-          "team": "Fiorentina",
-          "played": 38,
-          "won": 11,
-          "drawn": 10,
-          "lost": 17,
-          "gf": 54.7,
-          "ga": 62.6,
-          "points": 44,
-          "position": 13,
-          "gd": -7.9,
-          "currentPosition": 15,
-          "movement": 2
         },
         {
           "team": "Torino",
@@ -2842,12 +2828,26 @@
           "drawn": 9,
           "lost": 18,
           "gf": 43.7,
-          "ga": 56.1,
+          "ga": 56.2,
           "points": 43,
-          "position": 14,
+          "position": 13,
           "gd": -12.5,
           "currentPosition": 13,
-          "movement": -1
+          "movement": 0
+        },
+        {
+          "team": "Fiorentina",
+          "played": 38,
+          "won": 10,
+          "drawn": 10,
+          "lost": 18,
+          "gf": 52.0,
+          "ga": 65.2,
+          "points": 40,
+          "position": 14,
+          "gd": -13.2,
+          "currentPosition": 16,
+          "movement": 2
         },
         {
           "team": "Lecce",
@@ -2856,12 +2856,12 @@
           "drawn": 8,
           "lost": 21,
           "gf": 32.8,
-          "ga": 67.2,
+          "ga": 67.1,
           "points": 35,
           "position": 15,
-          "gd": -34.4,
-          "currentPosition": 14,
-          "movement": -1
+          "gd": -34.3,
+          "currentPosition": 15,
+          "movement": 0
         },
         {
           "team": "Parma",
@@ -2874,8 +2874,8 @@
           "points": 32,
           "position": 16,
           "gd": -26.3,
-          "currentPosition": 16,
-          "movement": 0
+          "currentPosition": 17,
+          "movement": 1
         },
         {
           "team": "Udinese",
@@ -2901,9 +2901,23 @@
           "ga": 76.7,
           "points": 30,
           "position": 18,
-          "gd": -27.9,
-          "currentPosition": 17,
-          "movement": -1
+          "gd": -28.0,
+          "currentPosition": 18,
+          "movement": 0
+        },
+        {
+          "team": "Monza",
+          "played": 38,
+          "won": 8,
+          "drawn": 7,
+          "lost": 23,
+          "gf": 49.5,
+          "ga": 74.6,
+          "points": 30,
+          "position": 19,
+          "gd": -25.1,
+          "currentPosition": 14,
+          "movement": -5
         },
         {
           "team": "Venezia",
@@ -2912,26 +2926,12 @@
           "drawn": 7,
           "lost": 24,
           "gf": 29.0,
-          "ga": 69.2,
+          "ga": 69.4,
           "points": 29,
-          "position": 19,
-          "gd": -40.2,
-          "currentPosition": 20,
-          "movement": 1
-        },
-        {
-          "team": "Monza",
-          "played": 38,
-          "won": 6,
-          "drawn": 8,
-          "lost": 24,
-          "gf": 46.3,
-          "ga": 78.0,
-          "points": 27,
           "position": 20,
-          "gd": -31.7,
-          "currentPosition": 18,
-          "movement": -2
+          "gd": -40.4,
+          "currentPosition": 20,
+          "movement": 0
         }
       ]
     },
@@ -3479,24 +3479,10 @@
           "lost": 13,
           "gf": 55.8,
           "ga": 43.6,
-          "points": 48,
+          "points": 47,
           "position": 9,
           "gd": 12.2,
           "currentPosition": 11,
-          "movement": 2
-        },
-        {
-          "team": "Toulouse",
-          "played": 34,
-          "won": 12,
-          "drawn": 11,
-          "lost": 11,
-          "gf": 47.0,
-          "ga": 46.8,
-          "points": 46,
-          "position": 10,
-          "gd": 0.2,
-          "currentPosition": 12,
           "movement": 2
         },
         {
@@ -3508,10 +3494,24 @@
           "gf": 48.4,
           "ga": 48.1,
           "points": 46,
-          "position": 11,
+          "position": 10,
           "gd": 0.3,
           "currentPosition": 7,
-          "movement": -4
+          "movement": -3
+        },
+        {
+          "team": "Toulouse",
+          "played": 34,
+          "won": 12,
+          "drawn": 11,
+          "lost": 11,
+          "gf": 47.0,
+          "ga": 46.8,
+          "points": 46,
+          "position": 11,
+          "gd": 0.2,
+          "currentPosition": 12,
+          "movement": 1
         },
         {
           "team": "Lorient",
@@ -3601,7 +3601,7 @@
           "team": "Le Havre",
           "played": 34,
           "won": 4,
-          "drawn": 8,
+          "drawn": 7,
           "lost": 23,
           "gf": 33.0,
           "ga": 66.2,
@@ -4765,7 +4765,7 @@
           "lost": 7,
           "gf": 88.0,
           "ga": 46.5,
-          "points": 63,
+          "points": 62,
           "position": 4,
           "gd": 41.4,
           "currentPosition": 5,
@@ -4877,7 +4877,7 @@
           "lost": 16,
           "gf": 42.7,
           "ga": 67.4,
-          "points": 38,
+          "points": 39,
           "position": 12,
           "gd": -24.7,
           "currentPosition": 11,
@@ -4961,7 +4961,7 @@
           "lost": 24,
           "gf": 32.0,
           "ga": 94.1,
-          "points": 15,
+          "points": 16,
           "position": 18,
           "gd": -62.1,
           "currentPosition": 18,
