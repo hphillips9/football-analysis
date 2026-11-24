@@ -48,6 +48,10 @@ OUT_PATH = ROOT / "web" / "src" / "data" / "backtest.json"
 
 MIN_SEASON_MATCHES = 200  # per competition: skip a season still in progress
 
+# Never training or test rows (plan D3); in a longer history (P9-03) they
+# still carry ratings and form forward
+COVID_SEASONS = ("19-20", "20-21")
+
 STAKE = 1
 # Sky Bet prices only exist from 2026/27, so past seasons settle at the
 # market average - the same fallback fetch_results uses for live bets
@@ -177,7 +181,20 @@ def score(matches, all_proba, seasons, test_seasons):
     return rows, overall
 
 
-def run_backtest(matches_path=MATCHES_PATH, out_path=OUT_PATH):
+def prepare_matches(matches_path=MATCHES_PATH, train_start=None,
+                    exclude=COVID_SEASONS):
+    """
+    The league matches with FEATURES and league columns built, sorted as
+    the walk-forward needs them, plus every season and the completed
+    ones to test. Shared with betting/oos.py so both score the same
+    walk-forward.
+
+    ``train_start`` (P9-03, for a longer history such as
+    all_matches_history.csv): features are built over every season in
+    the file, but only rows from ``train_start`` on, minus the
+    ``exclude`` seasons, are returned - earlier seasons only warm up
+    ratings and form. None (the default) returns every row, as before.
+    """
 
     matches = read_matches(matches_path)
     # Tie-break same kick-offs so row order (and so the calibration CV
@@ -193,9 +210,12 @@ def run_backtest(matches_path=MATCHES_PATH, out_path=OUT_PATH):
     build_goals_per_game_feature(matches)
     build_xgd_last5_feature(matches)
 
+    if train_start is not None:
+        keep = (matches["Season"] >= train_start) & ~matches["Season"].isin(exclude)
+        matches = matches[keep].reset_index(drop=True)
+
     # A League_<Div> column for every non-baseline league in the data
     matches = league_columns(matches)
-    indicators = [c for c in LEAGUE_COLUMNS.values() if c in matches.columns]
 
     # A season is tested once every competition in it has finished it
     seasons = sorted(matches["Season"].unique())
@@ -204,6 +224,14 @@ def run_backtest(matches_path=MATCHES_PATH, out_path=OUT_PATH):
         season for season in seasons[1:]
         if smallest[season] >= MIN_SEASON_MATCHES
     ]
+
+    return matches, seasons, test_seasons
+
+
+def run_backtest(matches_path=MATCHES_PATH, out_path=OUT_PATH):
+
+    matches, seasons, test_seasons = prepare_matches(matches_path)
+    indicators = [c for c in LEAGUE_COLUMNS.values() if c in matches.columns]
 
     all_proba = walk_forward_models(matches, test_seasons)
 

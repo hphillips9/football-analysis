@@ -6,6 +6,7 @@ import argparse
 import warnings
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import penaltyblog as pb
 import requests
@@ -30,6 +31,8 @@ ROOT = Path(__file__).resolve().parents[1]
 #   understat_<yy-yy>.csv  Understat xG cache (top 5 leagues only)
 RAW_DIR = ROOT / "data" / "raw"
 OUTPUT_PATH = ROOT / "data" / "processed" / "all_matches.csv"
+# The longer-history research dataset (P9-03); the live pipeline never reads it
+HISTORY_OUTPUT_PATH = ROOT / "data" / "processed" / "all_matches_history.csv"
 
 # FotMob's xG is Opta's - the same numbers BBC and Sky show. League ids
 # and Understat names come from competitions.py.
@@ -74,6 +77,16 @@ def competition_dir(div, raw_dir=RAW_DIR):
     return raw_dir / div
 
 
+def history_dir(div, raw_dir=RAW_DIR):
+    """
+    data/raw/<Div>/history/ - older seasons (P9-03) in the same layout,
+    read only by build_dataset(history_start=...), never by the live
+    pipeline.
+    """
+
+    return competition_dir(div, raw_dir) / "history"
+
+
 # ============================================================
 # SEASON DISCOVERY
 # ============================================================
@@ -112,16 +125,89 @@ def discover_seasons(div="E0", raw_dir=RAW_DIR):
 # LOAD EXISTING MATCH DATA
 # ============================================================
 
-def load_result_files(divs=None, raw_dir=RAW_DIR):
+def _history_files(div, history_start, raw_dir, skip):
+    """
+    (label, path) for each history/results_<s>.csv of ``div`` from
+    ``history_start`` on, leaving out seasons in ``skip`` (the live
+    folder's copy wins).
+    """
+
+    found = []
+
+    for path in sorted(history_dir(div, raw_dir).glob("results_*.csv")):
+
+        match = SEASON_FILE_RE.search(path.name)
+
+        if not match:
+            continue
+
+        label = f"{match.group(1)}-{match.group(2)}"
+
+        if label >= history_start and label not in skip:
+            found.append((label, path))
+
+    return found
+
+
+def _read_history_results(path, div):
+    """
+    One older football-data.co.uk season in the live files' shape: no
+    blank rows, team names stripped, dd/mm/yyyy dates, a kick-off Time
+    (HISTORY_KICKOFF where the file has none, before 19-20) and the
+    Avg*/Max* odds columns, which older files call Bb* (football-data's
+    BetBrain average and best price).
+    """
+
+    df = pd.read_csv(path)
+    df = df.dropna(subset=["FTR"]).reset_index(drop=True)
+
+    if "Div" not in df.columns:
+        df.insert(0, "Div", div)
+
+    for side in ("HomeTeam", "AwayTeam"):
+        df[side] = df[side].str.strip()
+
+    df["Date"] = pd.to_datetime(
+        df["Date"], dayfirst=True, format="mixed"
+    ).dt.strftime("%d/%m/%Y")
+
+    if "Time" not in df.columns:
+        df["Time"] = HISTORY_KICKOFF
+    df["Time"] = df["Time"].fillna(HISTORY_KICKOFF)
+
+    for old, new in OLD_ODDS_COLUMNS.items():
+        if new not in df.columns and old in df.columns:
+            df[new] = df[old]
+
+    return df
+
+
+# Older football-data files have no kick-off time; a typical one keeps
+# the day's order sensible (cup rows sort after, at CUP_KICKOFF)
+HISTORY_KICKOFF = "15:00"
+OLD_ODDS_COLUMNS = {
+    "BbAvH": "AvgH", "BbAvD": "AvgD", "BbAvA": "AvgA",
+    "BbMxH": "MaxH", "BbMxD": "MaxD", "BbMxA": "MaxA",
+    "BbAv>2.5": "Avg>2.5", "BbAv<2.5": "Avg<2.5",
+    "BbMx>2.5": "Max>2.5", "BbMx<2.5": "Max<2.5",
+}
+
+
+def load_result_files(divs=None, raw_dir=RAW_DIR, history_start=None):
     """
     Concatenate every results_*.csv file of each competition in ``divs``
     (default: the enabled ones) into one chronologically sorted frame
     with Season, Gameweek and MatchDateTime columns.
+
+    With ``history_start`` (a season label, e.g. "10-11") the older
+    seasons in history/ from that season on come too (P9-03).
     """
 
     frames = []
 
     for div in divs or competitions.leagues():
+
+        live = []
 
         for path in sorted(glob.glob(str(competition_dir(div, raw_dir) / "results_*.csv"))):
 
@@ -131,6 +217,7 @@ def load_result_files(divs=None, raw_dir=RAW_DIR):
                 continue
 
             label = f"{match.group(1)}-{match.group(2)}"
+            live.append(label)
 
             df = pd.read_csv(path)
 
@@ -139,6 +226,10 @@ def load_result_files(divs=None, raw_dir=RAW_DIR):
                 df.insert(0, "Div", div)
 
             frames.append(df.assign(Season=label))
+
+        if history_start is not None:
+            for label, path in _history_files(div, history_start, raw_dir, set(live)):
+                frames.append(_read_history_results(path, div).assign(Season=label))
 
     if not frames:
         raise FileNotFoundError(
@@ -816,10 +907,164 @@ def _with_cups(matches, raw_dir, status):
     ).reset_index(drop=True)
 
 
-def _build_competition(div, alias_map, raw_dir, refresh_current, verbose):
+def history_xg(source, div, history_start, raw_dir=RAW_DIR):
+    """
+    ``source``'s ("fotmob" / "understat") cached xG for ``div``'s
+    history/ seasons from ``history_start`` on, in XG_COLUMNS. Read
+    only: tools/backfill_history.py fills these caches.
+    """
+
+    frames = []
+
+    for path in sorted(history_dir(div, raw_dir).glob(f"{source}_*.csv")):
+
+        label = path.stem.split("_", 1)[1]
+
+        if not re.fullmatch(r"\d{2}-\d{2}", label) or label < history_start:
+            continue
+
+        cache = pd.read_csv(path)
+        frames.append(
+            cache[["HomeTeam", "AwayTeam", "HomeXG", "AwayXG"]]
+            .assign(Div=div, Season=label)[XG_COLUMNS]
+        )
+
+    if not frames:
+        return pd.DataFrame(columns=XG_COLUMNS)
+
+    return pd.concat(frames, ignore_index=True)
+
+
+# ============================================================
+# SHOTS-BASED XG PROXY (history only, P9-03)
+# ============================================================
+
+# Where a history match has no xG it gets an estimate from what was
+# recorded instead, best first:
+#   "stats-proxy"  FotMob's box shots, shots on target and big chances
+#                  (16-17 on; R^2 ~0.87 against Opta xG in 20-21)
+#   "shots-proxy"  football-data.co.uk's shots and shots on target
+#                  (R^2 ~0.57)
+# Each is one least-squares fit per side over every row with real xG and
+# those columns, so its coefficients see later seasons (a mild look-ahead,
+# research only).
+XG_PROXY_SOURCE = "shots-proxy"
+STATS_PROXY_SOURCE = "stats-proxy"
+SHOTS_FEATURES = [("HS", "AS"), ("HST", "AST")]
+STATS_KEYS = ["shots_inside_box", "shots_outside_box", "ShotsOnTarget", "big_chance"]
+STATS_FEATURES = [(f"Home_{key}", f"Away_{key}") for key in STATS_KEYS]
+REAL_XG_SOURCES = ["FotMob", "football-data", "Understat"]
+# FotMob's shot counts, which stand in for football-data's HS/AS/HST/AST
+# where those are missing (N1 16-17: FotMob has shots but no big chances)
+FOTMOB_SHOTS = [("Home_total_shots", "Away_total_shots")]
+SHOT_FALLBACK = {
+    "HS": "Home_total_shots", "AS": "Away_total_shots",
+    "HST": "Home_ShotsOnTarget", "AST": "Away_ShotsOnTarget",
+}
+
+
+def _proxy_rows(matches, features):
+    """Rows with every feature column filled (False if a column is absent)."""
+
+    columns = [c for pair in features for c in pair]
+
+    if not set(columns) <= set(matches.columns):
+        return pd.Series(False, index=matches.index)
+
+    return matches[columns].notna().all(axis=1)
+
+
+def fit_xg_proxy(matches, features=SHOTS_FEATURES):
+    """
+    Least-squares fit of a side's xG on its ``features`` (pairs of
+    home/away columns), xG ~ a + b1 * f1 + ..., over every row with real
+    xG (XGSource in REAL_XG_SOURCES, or no XGSource column) and the
+    features. Returns the coefficients (intercept first) and R^2.
+    """
+
+    real = (
+        matches["XGSource"].isin(REAL_XG_SOURCES) if "XGSource" in matches.columns
+        else pd.Series(True, index=matches.index)
+    )
+    rows = matches[
+        real & matches[["HomeXG", "AwayXG"]].notna().all(axis=1) & _proxy_rows(matches, features)
+    ]
+
+    X = np.column_stack(
+        [np.ones(2 * len(rows))]
+        + [np.concatenate([rows[home], rows[away]]).astype(float) for home, away in features]
+    )
+    xg = np.concatenate([rows["HomeXG"], rows["AwayXG"]]).astype(float)
+
+    coef, *_ = np.linalg.lstsq(X, xg, rcond=None)
+    residual = xg - X @ coef
+    r2 = 1 - (residual ** 2).sum() / ((xg - xg.mean()) ** 2).sum()
+
+    return tuple(coef), float(r2)
+
+
+def fill_xg_proxy(matches, coef, features=SHOTS_FEATURES, source=XG_PROXY_SOURCE):
+    """
+    Rows without xG but with every feature get the proxy's xG (never
+    below 0), flagged XGSource = ``source``.
+    """
+
+    matches = matches.copy()
+
+    missing = (
+        (matches["HomeXG"].isna() | matches["AwayXG"].isna())
+        & _proxy_rows(matches, features)
+    )
+
+    for target, side in (("HomeXG", 0), ("AwayXG", 1)):
+        estimate = coef[0] + sum(
+            b * matches.loc[missing, pair[side]] for b, pair in zip(coef[1:], features)
+        )
+        matches.loc[missing, target] = estimate.clip(lower=0)
+
+    matches.loc[missing, "XGSource"] = source
+
+    return matches
+
+
+def history_stats(div, history_start, alias_map, raw_dir=RAW_DIR):
+    """
+    FotMob match stats (tools/backfill_history.py --stats) for ``div``'s
+    history seasons from ``history_start`` on: Div, Season, HomeTeam,
+    AwayTeam (canonical) and Home_/Away_ STATS_KEYS columns.
+    """
+
+    columns = [c for pair in STATS_FEATURES + FOTMOB_SHOTS for c in pair]
+    frames = []
+
+    for path in sorted(history_dir(div, raw_dir).glob("fotmob_stats_*.csv")):
+
+        label = path.stem.rsplit("_", 1)[1]
+
+        if label < history_start:
+            continue
+
+        cache = pd.read_csv(path)
+        frames.append(cache.reindex(columns=["HomeTeam", "AwayTeam"] + columns).assign(
+            Div=div, Season=label
+        ))
+
+    if not frames:
+        return pd.DataFrame(columns=["Div", "Season", "HomeTeam", "AwayTeam"] + columns)
+
+    stats = pd.concat(frames, ignore_index=True)
+
+    for side in ("HomeTeam", "AwayTeam"):
+        stats[side] = normalize_team_names(stats[side], alias_map, source_name="FotMob")
+
+    return stats.drop_duplicates(subset=["Div", "Season", "HomeTeam", "AwayTeam"])
+
+
+def _build_competition(div, alias_map, raw_dir, refresh_current, verbose,
+                       history_start=None):
     """One competition's results with xG merged on (see build_dataset)."""
 
-    matches = load_result_files([div], raw_dir)
+    matches = load_result_files([div], raw_dir, history_start=history_start)
 
     # Keep original names so the coverage report can point at gaps
     matches = matches.assign(
@@ -852,7 +1097,31 @@ def _build_competition(div, alias_map, raw_dir, refresh_current, verbose):
         verbose=verbose
     )
 
-    return merge_xg(matches, fotmob, understat, alias_map)
+    if history_start is not None:
+        fotmob = pd.concat(
+            [history_xg("fotmob", div, history_start, raw_dir), fotmob], ignore_index=True
+        )
+        understat = pd.concat(
+            [history_xg("understat", div, history_start, raw_dir), understat],
+            ignore_index=True,
+        )
+        # An empty side of the concat leaves object columns
+        for frame in (fotmob, understat):
+            frame[["HomeXG", "AwayXG"]] = frame[["HomeXG", "AwayXG"]].astype(float)
+
+    merged = merge_xg(matches, fotmob, understat, alias_map)
+
+    if history_start is not None:
+        merged = merged.merge(
+            history_stats(div, history_start, alias_map, raw_dir),
+            on=["Div", "Season", "HomeTeam", "AwayTeam"], how="left",
+        )
+        for column, fallback in SHOT_FALLBACK.items():
+            if column not in merged.columns:
+                merged[column] = float("nan")
+            merged[column] = merged[column].fillna(merged[fallback])
+
+    return merged
 
 
 def build_dataset(
@@ -863,6 +1132,7 @@ def build_dataset(
     verbose=False,
     status=None,
     cups=True,
+    history_start=None,
 ):
     """
     Rebuild ``data/processed/all_matches.csv`` from the raw result
@@ -875,6 +1145,13 @@ def build_dataset(
     be built the leagues are still saved and the cups are marked failed
     in ``status``.
     read_matches() leaves cup rows out unless asked for them.
+
+    ``history_start`` (research only, P9-03) adds each league's older
+    seasons from data/raw/<Div>/history/ from that season on, with xG
+    from their cached FotMob/Understat files (no network) and, where
+    those lack a match, an estimate from FotMob's match stats (16-17 on,
+    XGSource "stats-proxy") or else from shots ("shots-proxy").
+    Cup rows are unchanged: European results start at 21-22.
 
     Each competition is built on its own: one that fails (an unknown
     team name, a missing results file) is left out and the rest still
@@ -892,7 +1169,9 @@ def build_dataset(
     for div in divs:
 
         try:
-            built = _build_competition(div, alias_map, raw_dir, refresh_current, verbose)
+            built = _build_competition(
+                div, alias_map, raw_dir, refresh_current, verbose, history_start
+            )
         except Exception as exc:
             if status is None:
                 print(f"{div}: FAILED - {type(exc).__name__}: {exc}; left out of the dataset.")
@@ -914,6 +1193,18 @@ def build_dataset(
         .sort_values(["MatchDateTime", "HomeTeam", "AwayTeam"])
         .reset_index(drop=True)
     )
+
+    if history_start is not None:
+        for name, features, source in (
+            ("Stats", STATS_FEATURES, STATS_PROXY_SOURCE),
+            ("Shots", SHOTS_FEATURES, XG_PROXY_SOURCE),
+        ):
+            coef, r2 = fit_xg_proxy(matches, features)
+            matches = fill_xg_proxy(matches, coef, features, source)
+            terms = " ".join(
+                f"{b:+.3f}*{home}" for b, (home, _) in zip(coef[1:], features)
+            )
+            print(f"{name} xG proxy: {coef[0]:+.3f} {terms} (R^2 {r2:.3f})")
 
     if verbose:
         report(matches)
@@ -979,16 +1270,30 @@ def main():
         default=OUTPUT_PATH,
         help=f"Where to write the dataset (default: {OUTPUT_PATH.relative_to(ROOT)})."
     )
+    parser.add_argument(
+        "--history-start",
+        metavar="SEASON",
+        help=(
+            "Research only (P9-03): add the older seasons in "
+            "data/raw/<Div>/history/ from SEASON (e.g. 10-11) on. Writes "
+            f"{HISTORY_OUTPUT_PATH.relative_to(ROOT)} unless --output is given."
+        )
+    )
     args = parser.parse_args()
 
     for div in args.divs or []:
         competitions.get(div)
 
+    output = args.output
+    if args.history_start and output == OUTPUT_PATH:
+        output = HISTORY_OUTPUT_PATH
+
     build_dataset(
         divs=args.divs,
-        output_path=args.output,
+        output_path=output,
         refresh_current=not args.no_refresh,
-        verbose=args.verbose
+        verbose=args.verbose,
+        history_start=args.history_start,
     )
 
 

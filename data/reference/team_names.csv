@@ -28,6 +28,19 @@ Tottenham Hotspur,ENG,8586,73,Tottenham,Tottenham,Tottenham Hotspur,Tottenham Ho
 Watford,ENG,9817,,Watford,Watford,,Watford FC,Watford
 West Ham United,ENG,8654,563,West Ham,West Ham,West Ham United,West Ham United FC,West Ham United
 Wolverhampton Wanderers,ENG,8602,76,Wolves,Wolverhampton Wanderers,,Wolverhampton Wanderers FC,Wolverhampton Wanderers
+Birmingham,ENG,,,Birmingham,,,,
+Blackburn,ENG,,,Blackburn,,,,
+Blackpool,ENG,,,Blackpool,,,,
+Bolton,ENG,,,Bolton,,,,
+Cardiff City,ENG,,,Cardiff,,,,Cardiff City
+Huddersfield Town,ENG,,,Huddersfield,,,,Huddersfield Town
+Middlesbrough,ENG,,,Middlesbrough,,,,Middlesbrough
+QPR,ENG,,,QPR,,,,
+Reading,ENG,,,Reading,,,,
+Stoke City,ENG,,,Stoke,,,,Stoke City
+Swansea City,ENG,,,Swansea,,,,Swansea City
+West Bromwich Albion,ENG,,,West Brom,,,,West Bromwich Albion
+Wigan,ENG,,,Wigan,,,,
 Deportivo Alavés,ESP,9866,263,Alaves,Alaves,,Deportivo Alavés,Deportivo Alavés
 Almería,ESP,9865,,Almeria,Almeria,,,Almería
 Athletic Club,ESP,8315,77,Ath Bilbao,Athletic Club,,Athletic Club,Athletic Club
@@ -57,6 +70,12 @@ Valencia,ESP,10267,95,Valencia,Valencia,,Valencia CF,Valencia
 Real Valladolid,ESP,10281,250,Valladolid,Real Valladolid,,Real Valladolid CF,Real Valladolid
 Rayo Vallecano,ESP,8370,87,Vallecano,Rayo Vallecano,,Rayo Vallecano de Madrid,Rayo Vallecano
 Villarreal,ESP,10205,94,Villarreal,Villarreal,,Villarreal CF,Villarreal
+Cordoba,ESP,,,Cordoba,,,,
+Eibar,ESP,,,Eibar,,,,Eibar
+Hercules,ESP,,,Hercules,,,,
+SD Huesca,ESP,,,Huesca,,,,SD Huesca
+Sporting Gijón,ESP,,,Sp Gijon,,,,Sporting Gijón
+Zaragoza,ESP,,,Zaragoza,,,,
 Augsburg,GER,8406,16,Augsburg,Augsburg,,FC Augsburg,Augsburg
 Bayern München,GER,9823,5,Bayern Munich,Bayern Munich,,FC Bayern München,Bayern München
 Arminia Bielefeld,GER,9912,,Bielefeld,Arminia Bielefeld,,,Arminia Bielefeld
@@ -84,6 +103,12 @@ VfB Stuttgart,GER,10269,10,Stuttgart,VfB Stuttgart,,VfB Stuttgart,VfB Stuttgart
 Union Berlin,GER,8149,28,Union Berlin,Union Berlin,,1. FC Union Berlin,Union Berlin
 Werder Bremen,GER,8697,12,Werder Bremen,Werder Bremen,,SV Werder Bremen,Werder Bremen
 Wolfsburg,GER,8721,11,Wolfsburg,Wolfsburg,,VfL Wolfsburg,Wolfsburg
+Braunschweig,GER,,,Braunschweig,,,,
+Fortuna Düsseldorf,GER,,,Fortuna Dusseldorf,,,,Fortuna Düsseldorf
+Hannover 96,GER,,,Hannover,,,,Hannover 96
+Ingolstadt,GER,,,Ingolstadt,,,,Ingolstadt
+Kaiserslautern,GER,,,Kaiserslautern,,,,
+1. FC Nürnberg,GER,,,Nurnberg,,,,1. FC Nürnberg
 Atalanta,ITA,8524,102,Atalanta,Atalanta,,Atalanta BC,Atalanta
 Bologna,ITA,9857,103,Bologna,Bologna,,Bologna FC 1909,Bologna
 Cagliari,ITA,8529,104,Cagliari,Cagliari,,Cagliari Calcio,Cagliari
@@ -111,6 +136,20 @@ Torino,ITA,9804,586,Torino,Torino,,Torino FC,Torino
 Udinese,ITA,8600,115,Udinese,Udinese,,Udinese Calcio,Udinese
 Venezia,ITA,7881,454,Venezia,Venezia,,Venezia FC,Venezia
 Hellas Verona,ITA,9876,450,Verona,Verona,,Hellas Verona FC,Hellas Verona
+Bari,ITA,,,Bari,,,,
+Benevento,ITA,,,Benevento,,,,Benevento
+Brescia,ITA,,,Brescia,,,,Brescia
+Carpi,ITA,,,Carpi,,,,
+Catania,ITA,,,Catania,,,,
+Cesena,ITA,,,Cesena,,,,
+Chievo Verona,ITA,,,Chievo,,,,Chievo Verona
+Crotone,ITA,,,Crotone,,,,Crotone
+Livorno,ITA,,,Livorno,,,,
+Novara,ITA,,,Novara,,,,
+Palermo,ITA,,,Palermo,,,,Palermo
+Pescara,ITA,,,Pescara,,,,Pescara
+Siena,ITA,,,Siena,,,,
+SPAL,ITA,,,Spal,,,,SPAL
 AC Ajaccio,FRA,8576,,Ajaccio,Ajaccio,,,AC Ajaccio
 Angers,FRA,8121,532,Angers,Angers,,Angers SCO,Angers
 Auxerre,FRA,8583,519,Auxerre,Auxerre,,AJ Auxerre,Auxerre
@@ -137,6 +176,18 @@ Saint-Étienne,FRA,9853,527,St Etienne,Saint-Etienne,,AS Saint-Étienne,Saint-É
 Strasbourg,FRA,9848,576,Strasbourg,Strasbourg,,RC Strasbourg Alsace,Strasbourg
 Toulouse,FRA,9941,511,Toulouse,Toulouse,,Toulouse FC,Toulouse
 Troyes,FRA,10242,531,Troyes,Troyes,,ES Troyes AC,Troyes
+Ajaccio GFCO,FRA,,,Ajaccio GFCO,,,,
+Amiens,FRA,,,Amiens,,,,Amiens
+Arles,FRA,,,Arles,,,,
+SC Bastia,FRA,,,Bastia,,,,SC Bastia
+Caen,FRA,,,Caen,,,,Caen
+Dijon,FRA,,,Dijon,,,,Dijon
+Evian Thonon Gaillard,FRA,,,Evian Thonon Gaillard,,,,
+Guingamp,FRA,,,Guingamp,,,,Guingamp
+Nancy,FRA,,,Nancy,,,,Nancy
+Nîmes,FRA,,,Nimes,,,,Nîmes
+Sochaux,FRA,,,Sochaux,,,,
+Valenciennes,FRA,,,Valenciennes,,,,
 AVS Futebol SAD,POR,1889,10340,AVS,,,AVS,AVS Futebol SAD
 Académico Viseu,POR,1786,5527,Academico Viseu,,,Académico de Viseu FC,Académico Viseu
 Alverca,POR,9780,7822,Alverca,,,FC Alverca,Alverca
@@ -164,6 +215,16 @@ Braga,POR,10264,5613,Sp Braga,,,Sporting Clube de Braga,Braga
 Sporting CP,POR,9768,498,Sp Lisbon,,,Sporting Clube de Portugal,Sporting CP
 Tondela,POR,188163,1049,Tondela,,,CD Tondela,Tondela
 Vizela,POR,4531,,Vizela,,,,Vizela
+Academica,POR,,,Academica,,,,
+Aves,POR,,,Aves,,,,Aves
+Beira Mar,POR,,,Beira Mar,,,,
+Feirense,POR,,,Feirense,,,,Feirense
+Leiria,POR,,,Leiria,,,,
+Naval,POR,,,Naval,,,,
+Olhanense,POR,,,Olhanense,,,,
+Penafiel,POR,,,Penafiel,,,,
+Vitória de Setúbal,POR,,,Setubal,,,,Vitória de Setúbal
+Uniao Madeira,POR,,,Uniao Madeira,,,,
 AZ Alkmaar,NED,10229,682,AZ Alkmaar,,,AZ,AZ Alkmaar
 Ajax,NED,8593,678,Ajax,,,AFC Ajax,Ajax
 Almere City FC,NED,4116,1911,Almere City,,,Almere City FC,Almere City FC
@@ -189,3 +250,7 @@ FC Volendam,NED,6601,1919,Volendam,,,FC Volendam,FC Volendam
 RKC Waalwijk,NED,10219,683,Waalwijk,,,RKC Waalwijk,RKC Waalwijk
 Willem II,NED,8525,672,Willem II,,,Willem II Tilburg,Willem II
 PEC Zwolle,NED,6413,684,Zwolle,,,PEC Zwolle,PEC Zwolle
+Dordrecht,NED,,,Dordrecht,,,,
+De Graafschap,NED,,,Graafschap,,,,De Graafschap
+Roda JC Kerkrade,NED,,,Roda,,,,Roda JC Kerkrade
+VVV-Venlo,NED,,,VVV Venlo,,,,VVV-Venlo

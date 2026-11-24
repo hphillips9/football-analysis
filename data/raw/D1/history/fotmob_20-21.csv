@@ -1,0 +1,307 @@
+MatchId,Date,HomeTeam,AwayTeam,HomeXG,AwayXG
+3399144,2020-09-18,Bayern München,Schalke 04,3.95,0.2
+3399148,2020-09-19,Eintracht Frankfurt,Arminia Bielefeld,2.31,0.81
+3399150,2020-09-19,1. FC Köln,Hoffenheim,2.72,2.59
+3399149,2020-09-19,Union Berlin,Augsburg,1.16,1.46
+3399152,2020-09-19,VfB Stuttgart,Freiburg,2.63,1.86
+3399151,2020-09-19,Werder Bremen,Hertha BSC,0.74,1.85
+3399145,2020-09-19,Borussia Dortmund,Borussia Mönchengladbach,1.84,0.65
+3399146,2020-09-20,RB Leipzig,Mainz 05,2.85,1.25
+3399147,2020-09-20,Wolfsburg,Bayer Leverkusen,0.91,0.5
+3399169,2020-09-25,Hertha BSC,Eintracht Frankfurt,1.17,1.51
+3399173,2020-09-26,Arminia Bielefeld,1. FC Köln,0.2,1.42
+3399172,2020-09-26,Augsburg,Borussia Dortmund,1.24,1.81
+3399166,2020-09-26,Bayer Leverkusen,RB Leipzig,0.93,0.94
+3399165,2020-09-26,Borussia Mönchengladbach,Union Berlin,1.84,0.81
+3399171,2020-09-26,Mainz 05,VfB Stuttgart,1.33,2.6
+3399170,2020-09-26,Schalke 04,Werder Bremen,1.96,2.46
+3399167,2020-09-27,Hoffenheim,Bayern München,2.58,1.36
+3399168,2020-09-27,Freiburg,Wolfsburg,1.38,0.47
+3399179,2020-10-02,Union Berlin,Mainz 05,2.49,0.27
+3399175,2020-10-03,Borussia Dortmund,Freiburg,2.47,0.49
+3399178,2020-10-03,Eintracht Frankfurt,Hoffenheim,2.85,1.38
+3399180,2020-10-03,1. FC Köln,Borussia Mönchengladbach,0.56,2.08
+3399182,2020-10-03,VfB Stuttgart,Bayer Leverkusen,0.77,1.48
+3399181,2020-10-03,Werder Bremen,Arminia Bielefeld,0.38,1.14
+3399176,2020-10-03,RB Leipzig,Schalke 04,4.16,0.17
+3399177,2020-10-04,Wolfsburg,Augsburg,1.04,1.2
+3399174,2020-10-04,Bayern München,Hertha BSC,3.63,1.06
+3399190,2020-10-17,Augsburg,RB Leipzig,0.95,2.17
+3399185,2020-10-17,Freiburg,Werder Bremen,1.38,1.57
+3399186,2020-10-17,Hertha BSC,VfB Stuttgart,1.15,1.25
+3399184,2020-10-17,Hoffenheim,Borussia Dortmund,1.22,1.97
+3399188,2020-10-17,Mainz 05,Bayer Leverkusen,0.25,0.47
+3399191,2020-10-17,Arminia Bielefeld,Bayern München,1.39,3.13
+3399183,2020-10-17,Borussia Mönchengladbach,Wolfsburg,1.88,1.45
+3399189,2020-10-18,1. FC Köln,Eintracht Frankfurt,1.45,1.87
+3399187,2020-10-18,Schalke 04,Union Berlin,0.35,1.03
+3399200,2020-10-23,VfB Stuttgart,1. FC Köln,0.79,2.44
+3399192,2020-10-24,Bayern München,Eintracht Frankfurt,3.22,0.44
+3399198,2020-10-24,Mainz 05,Borussia Mönchengladbach,1.89,3.22
+3399194,2020-10-24,RB Leipzig,Hertha BSC,2.86,0.84
+3399197,2020-10-24,Union Berlin,Freiburg,1.57,0.33
+3399193,2020-10-24,Borussia Dortmund,Schalke 04,1.42,0.2
+3399196,2020-10-25,Wolfsburg,Arminia Bielefeld,2.19,0.51
+3399199,2020-10-25,Werder Bremen,Hoffenheim,0.26,0.97
+3399195,2020-10-26,Bayer Leverkusen,Augsburg,2.41,0.32
+3399233,2020-10-30,Schalke 04,VfB Stuttgart,0.65,1.71
+3399236,2020-10-31,Arminia Bielefeld,Borussia Dortmund,0.28,2.53
+3399235,2020-10-31,Augsburg,Mainz 05,1.9,1.04
+3399231,2020-10-31,Eintracht Frankfurt,Werder Bremen,2.06,0.85
+3399234,2020-10-31,1. FC Köln,Bayern München,0.5,1.07
+3399228,2020-10-31,Borussia Mönchengladbach,RB Leipzig,0.37,0.84
+3399230,2020-11-01,Freiburg,Bayer Leverkusen,1.2,1.2
+3399232,2020-11-01,Hertha BSC,Wolfsburg,1.25,0.63
+3399229,2020-11-02,Hoffenheim,Union Berlin,1.29,3.63
+3399244,2020-11-06,Werder Bremen,1. FC Köln,1.55,0.45
+3399243,2020-11-07,Augsburg,Hertha BSC,0.32,2.22
+3399242,2020-11-07,Mainz 05,Schalke 04,3.75,2.01
+3399238,2020-11-07,RB Leipzig,Freiburg,2.19,0.62
+3399241,2020-11-07,Union Berlin,Arminia Bielefeld,2.04,0.29
+3399245,2020-11-07,VfB Stuttgart,Eintracht Frankfurt,2.04,3.24
+3399237,2020-11-07,Borussia Dortmund,Bayern München,2.48,1.24
+3399240,2020-11-08,Wolfsburg,Hoffenheim,2.09,2.97
+3399239,2020-11-08,Bayer Leverkusen,Borussia Mönchengladbach,1.35,2.68
+3399254,2020-11-21,Arminia Bielefeld,Bayer Leverkusen,0.0,1.23
+3399246,2020-11-21,Bayern München,Werder Bremen,1.68,1.69
+3399247,2020-11-21,Borussia Mönchengladbach,Augsburg,2.12,0.83
+3399248,2020-11-21,Hoffenheim,VfB Stuttgart,1.73,1.62
+3399252,2020-11-21,Schalke 04,Wolfsburg,1.08,2.57
+3399250,2020-11-21,Eintracht Frankfurt,RB Leipzig,1.0,0.85
+3399251,2020-11-21,Hertha BSC,Borussia Dortmund,1.5,2.84
+3399249,2020-11-22,Freiburg,Mainz 05,2.08,2.91
+3399253,2020-11-22,1. FC Köln,Union Berlin,1.25,1.85
+3399259,2020-11-27,Wolfsburg,Werder Bremen,1.51,1.0
+3399262,2020-11-28,Augsburg,Freiburg,0.47,0.8
+3399256,2020-11-28,RB Leipzig,Arminia Bielefeld,2.54,1.66
+3399260,2020-11-28,Union Berlin,Eintracht Frankfurt,2.37,1.43
+3399263,2020-11-28,VfB Stuttgart,Bayern München,1.24,0.93
+3399255,2020-11-28,Borussia Dortmund,1. FC Köln,3.05,1.46
+3399257,2020-11-28,Borussia Mönchengladbach,Schalke 04,3.04,0.88
+3399258,2020-11-29,Bayer Leverkusen,Hertha BSC,1.26,0.57
+3399261,2020-11-29,Mainz 05,Hoffenheim,1.58,1.11
+3399385,2020-12-04,Hertha BSC,Union Berlin,0.73,0.29
+3399389,2020-12-05,Arminia Bielefeld,Mainz 05,1.24,2.84
+3399384,2020-12-05,Eintracht Frankfurt,Borussia Dortmund,0.98,1.1
+3399387,2020-12-05,1. FC Köln,Wolfsburg,1.09,1.87
+3399383,2020-12-05,Freiburg,Borussia Mönchengladbach,3.64,1.52
+3399381,2020-12-05,Bayern München,RB Leipzig,1.05,1.53
+3399388,2020-12-06,Werder Bremen,VfB Stuttgart,0.75,2.21
+3399386,2020-12-06,Schalke 04,Bayer Leverkusen,1.43,2.55
+3399382,2020-12-07,Hoffenheim,Augsburg,1.46,0.94
+3399394,2020-12-11,Wolfsburg,Eintracht Frankfurt,2.88,1.48
+3399390,2020-12-12,Borussia Dortmund,VfB Stuttgart,0.89,3.09
+3399392,2020-12-12,Borussia Mönchengladbach,Hertha BSC,1.71,0.36
+3399395,2020-12-12,Freiburg,Arminia Bielefeld,2.39,0.22
+3399397,2020-12-12,Mainz 05,1. FC Köln,1.68,0.83
+3399391,2020-12-12,RB Leipzig,Werder Bremen,2.43,0.64
+3399396,2020-12-12,Union Berlin,Bayern München,1.29,1.1
+3399398,2020-12-13,Augsburg,Schalke 04,1.36,2.26
+3399393,2020-12-13,Bayer Leverkusen,Hoffenheim,2.19,1.64
+3399873,2020-12-15,Eintracht Frankfurt,Borussia Mönchengladbach,1.97,1.42
+3399865,2020-12-15,Hertha BSC,Mainz 05,0.83,0.76
+3399870,2020-12-15,VfB Stuttgart,Union Berlin,2.09,0.74
+3399868,2020-12-15,Werder Bremen,Borussia Dortmund,0.25,2.96
+3399866,2020-12-16,Schalke 04,Freiburg,0.47,1.25
+3399869,2020-12-16,Arminia Bielefeld,Augsburg,0.62,0.38
+3399871,2020-12-16,Bayern München,Wolfsburg,1.76,1.04
+3399867,2020-12-16,1. FC Köln,Bayer Leverkusen,0.38,1.56
+3399872,2020-12-16,Hoffenheim,RB Leipzig,0.63,0.52
+3399269,2020-12-18,Union Berlin,Borussia Dortmund,0.99,1.33
+3399272,2020-12-19,Augsburg,Eintracht Frankfurt,1.56,2.19
+3399265,2020-12-19,Borussia Mönchengladbach,Hoffenheim,1.89,2.15
+3399271,2020-12-19,Mainz 05,Werder Bremen,0.48,0.97
+3399264,2020-12-19,RB Leipzig,1. FC Köln,2.07,0.37
+3399270,2020-12-19,Schalke 04,Arminia Bielefeld,0.38,0.98
+3399266,2020-12-19,Bayer Leverkusen,Bayern München,0.3,1.15
+3399268,2020-12-20,Freiburg,Hertha BSC,2.86,1.93
+3399267,2020-12-20,Wolfsburg,VfB Stuttgart,1.39,1.21
+3399280,2021-01-02,Arminia Bielefeld,Borussia Mönchengladbach,0.94,2.59
+3399276,2021-01-02,Eintracht Frankfurt,Bayer Leverkusen,1.5,0.77
+3399278,2021-01-02,1. FC Köln,Augsburg,0.62,1.42
+3399275,2021-01-02,Hoffenheim,Freiburg,1.24,2.01
+3399279,2021-01-02,Werder Bremen,Union Berlin,0.79,1.04
+3399277,2021-01-02,Hertha BSC,Schalke 04,2.07,0.76
+3399281,2021-01-02,VfB Stuttgart,RB Leipzig,0.96,2.77
+3399274,2021-01-03,Borussia Dortmund,Wolfsburg,1.83,2.09
+3399273,2021-01-03,Bayern München,Mainz 05,4.33,1.3
+3399283,2021-01-08,Borussia Mönchengladbach,Bayern München,1.19,1.48
+3399284,2021-01-09,Bayer Leverkusen,Werder Bremen,0.69,0.29
+3399285,2021-01-09,Freiburg,1. FC Köln,2.52,0.15
+3399288,2021-01-09,Mainz 05,Eintracht Frankfurt,0.81,2.31
+3399287,2021-01-09,Schalke 04,Hoffenheim,1.99,1.96
+3399286,2021-01-09,Union Berlin,Wolfsburg,0.96,2.0
+3399282,2021-01-09,RB Leipzig,Borussia Dortmund,1.67,2.24
+3399289,2021-01-10,Augsburg,VfB Stuttgart,1.02,3.52
+3399290,2021-01-10,Arminia Bielefeld,Hertha BSC,0.72,0.63
+3399296,2021-01-15,Union Berlin,Bayer Leverkusen,1.38,0.94
+3399292,2021-01-16,Borussia Dortmund,Mainz 05,2.26,0.57
+3399297,2021-01-16,1. FC Köln,Hertha BSC,0.43,0.52
+3399293,2021-01-16,Hoffenheim,Arminia Bielefeld,0.65,0.71
+3399298,2021-01-16,Werder Bremen,Augsburg,1.32,0.79
+3399294,2021-01-16,Wolfsburg,RB Leipzig,0.84,2.4
+3399299,2021-01-16,VfB Stuttgart,Borussia Mönchengladbach,1.97,1.41
+3399291,2021-01-17,Bayern München,Freiburg,2.79,0.75
+3399295,2021-01-17,Eintracht Frankfurt,Schalke 04,2.1,0.16
+3399301,2021-01-19,Borussia Mönchengladbach,Werder Bremen,0.57,1.07
+3399302,2021-01-19,Bayer Leverkusen,Borussia Dortmund,1.88,1.56
+3399304,2021-01-19,Hertha BSC,Hoffenheim,1.68,1.33
+3399306,2021-01-19,Mainz 05,Wolfsburg,0.68,1.14
+3399305,2021-01-20,Schalke 04,1. FC Köln,1.36,1.57
+3399308,2021-01-20,Arminia Bielefeld,VfB Stuttgart,1.83,1.39
+3399307,2021-01-20,Augsburg,Bayern München,1.24,1.71
+3399303,2021-01-20,Freiburg,Eintracht Frankfurt,0.8,1.25
+3399300,2021-01-20,RB Leipzig,Union Berlin,1.56,0.23
+3399309,2021-01-22,Borussia Mönchengladbach,Borussia Dortmund,1.97,1.66
+3399317,2021-01-23,Arminia Bielefeld,Eintracht Frankfurt,0.54,2.45
+3399316,2021-01-23,Augsburg,Union Berlin,1.02,1.73
+3399310,2021-01-23,Bayer Leverkusen,Wolfsburg,1.34,1.03
+3399312,2021-01-23,Freiburg,VfB Stuttgart,1.31,3.07
+3399315,2021-01-23,Mainz 05,RB Leipzig,1.79,1.55
+3399313,2021-01-23,Hertha BSC,Werder Bremen,2.25,1.52
+3399314,2021-01-24,Schalke 04,Bayern München,0.94,3.56
+3399311,2021-01-24,Hoffenheim,1. FC Köln,2.23,2.23
+3399326,2021-01-29,VfB Stuttgart,Mainz 05,0.9,0.4
+3399318,2021-01-30,Bayern München,Hoffenheim,2.01,1.96
+3399319,2021-01-30,Borussia Dortmund,Augsburg,1.78,0.33
+3399322,2021-01-30,Eintracht Frankfurt,Hertha BSC,2.07,0.45
+3399323,2021-01-30,Union Berlin,Borussia Mönchengladbach,0.79,0.9
+3399325,2021-01-30,Werder Bremen,Schalke 04,0.75,0.51
+3399320,2021-01-30,RB Leipzig,Bayer Leverkusen,1.43,0.73
+3399324,2021-01-31,1. FC Köln,Arminia Bielefeld,1.3,0.94
+3399321,2021-01-31,Wolfsburg,Freiburg,1.77,1.24
+3399331,2021-02-05,Hertha BSC,Bayern München,1.31,2.08
+3399334,2021-02-06,Augsburg,Wolfsburg,0.57,2.37
+3399328,2021-02-06,Bayer Leverkusen,VfB Stuttgart,4.13,1.72
+3399330,2021-02-06,Freiburg,Borussia Dortmund,0.19,1.37
+3399333,2021-02-06,Mainz 05,Union Berlin,2.02,1.19
+3399332,2021-02-06,Schalke 04,RB Leipzig,0.17,2.2
+3399327,2021-02-06,Borussia Mönchengladbach,1. FC Köln,0.46,0.74
+3399329,2021-02-07,Hoffenheim,Eintracht Frankfurt,0.88,1.31
+3399338,2021-02-12,RB Leipzig,Augsburg,2.18,0.99
+3399339,2021-02-13,Bayer Leverkusen,Mainz 05,1.39,2.6
+3399337,2021-02-13,Borussia Dortmund,Hoffenheim,1.67,2.64
+3399344,2021-02-13,VfB Stuttgart,Hertha BSC,0.96,1.34
+3399343,2021-02-13,Werder Bremen,Freiburg,0.66,0.9
+3399342,2021-02-13,Union Berlin,Schalke 04,1.98,0.32
+3399341,2021-02-14,Eintracht Frankfurt,1. FC Köln,2.48,0.29
+3399340,2021-02-14,Wolfsburg,Borussia Mönchengladbach,0.87,0.53
+3399336,2021-02-15,Bayern München,Arminia Bielefeld,2.5,1.38
+3399353,2021-02-19,Arminia Bielefeld,Wolfsburg,0.56,1.52
+3399345,2021-02-20,Borussia Mönchengladbach,Mainz 05,0.91,0.58
+3399348,2021-02-20,Eintracht Frankfurt,Bayern München,1.52,2.22
+3399351,2021-02-20,1. FC Köln,VfB Stuttgart,0.82,0.57
+3399347,2021-02-20,Freiburg,Union Berlin,0.79,1.4
+3399350,2021-02-20,Schalke 04,Borussia Dortmund,0.95,1.57
+3399352,2021-02-21,Augsburg,Bayer Leverkusen,0.99,0.5
+3399349,2021-02-21,Hertha BSC,RB Leipzig,0.84,0.9
+3399346,2021-02-21,Hoffenheim,Werder Bremen,2.36,0.12
+3399361,2021-02-26,Werder Bremen,Eintracht Frankfurt,0.99,1.3
+3399354,2021-02-27,Bayern München,1. FC Köln,2.28,1.36
+3399355,2021-02-27,Borussia Dortmund,Arminia Bielefeld,2.83,0.84
+3399362,2021-02-27,VfB Stuttgart,Schalke 04,2.23,1.5
+3399358,2021-02-27,Wolfsburg,Hertha BSC,0.65,1.08
+3399356,2021-02-27,RB Leipzig,Borussia Mönchengladbach,1.65,1.45
+3399359,2021-02-28,Union Berlin,Hoffenheim,0.96,1.33
+3399360,2021-02-28,Mainz 05,Augsburg,0.95,1.06
+3399357,2021-02-28,Bayer Leverkusen,Freiburg,1.34,1.29
+3399369,2021-03-05,Schalke 04,Mainz 05,0.16,0.91
+3399364,2021-03-06,Borussia Mönchengladbach,Bayer Leverkusen,0.54,1.42
+3399367,2021-03-06,Eintracht Frankfurt,VfB Stuttgart,1.56,0.49
+3399366,2021-03-06,Freiburg,RB Leipzig,0.24,1.55
+3399368,2021-03-06,Hertha BSC,Augsburg,2.55,0.67
+3399365,2021-03-06,Hoffenheim,Wolfsburg,1.1,2.48
+3399363,2021-03-06,Bayern München,Borussia Dortmund,3.16,0.64
+3399370,2021-03-07,1. FC Köln,Werder Bremen,1.49,1.06
+3399371,2021-03-07,Arminia Bielefeld,Union Berlin,0.42,1.4
+3399335,2021-03-10,Arminia Bielefeld,Werder Bremen,3.21,1.6
+3399378,2021-03-12,Augsburg,Borussia Mönchengladbach,1.36,3.11
+3399377,2021-03-13,Mainz 05,Freiburg,1.81,0.92
+3399376,2021-03-13,Union Berlin,1. FC Köln,2.65,1.26
+3399379,2021-03-13,Werder Bremen,Bayern München,0.97,4.15
+3399375,2021-03-13,Wolfsburg,Schalke 04,1.8,0.25
+3399372,2021-03-13,Borussia Dortmund,Hertha BSC,1.74,0.09
+3399374,2021-03-14,Bayer Leverkusen,Arminia Bielefeld,2.19,1.7
+3399373,2021-03-14,RB Leipzig,Eintracht Frankfurt,1.55,1.1
+3399380,2021-03-14,VfB Stuttgart,Hoffenheim,0.92,1.21
+3399209,2021-03-19,Arminia Bielefeld,RB Leipzig,0.35,2.18
+3399201,2021-03-20,Bayern München,VfB Stuttgart,2.38,1.05
+3399204,2021-03-20,Eintracht Frankfurt,Union Berlin,2.27,2.79
+3399207,2021-03-20,1. FC Köln,Borussia Dortmund,1.51,2.01
+3399208,2021-03-20,Werder Bremen,Wolfsburg,0.61,0.93
+3399206,2021-03-20,Schalke 04,Borussia Mönchengladbach,0.19,2.42
+3399202,2021-03-21,Hoffenheim,Mainz 05,1.26,2.66
+3399205,2021-03-21,Hertha BSC,Bayer Leverkusen,2.3,1.92
+3399203,2021-03-21,Freiburg,Augsburg,1.82,1.05
+3399218,2021-04-03,Augsburg,Hoffenheim,0.68,0.9
+3399213,2021-04-03,Bayer Leverkusen,Schalke 04,0.96,1.0
+3399210,2021-04-03,Borussia Dortmund,Eintracht Frankfurt,2.12,1.41
+3399216,2021-04-03,Mainz 05,Arminia Bielefeld,2.14,0.52
+3399214,2021-04-03,Wolfsburg,1. FC Köln,0.87,1.33
+3399211,2021-04-03,RB Leipzig,Bayern München,0.64,0.56
+3399212,2021-04-03,Borussia Mönchengladbach,Freiburg,1.55,1.78
+3399217,2021-04-04,VfB Stuttgart,Werder Bremen,0.75,0.42
+3399215,2021-04-04,Union Berlin,Hertha BSC,0.86,0.93
+3399226,2021-04-09,Arminia Bielefeld,Freiburg,1.26,0.41
+3399219,2021-04-10,Bayern München,Union Berlin,0.8,1.28
+3399221,2021-04-10,Eintracht Frankfurt,Wolfsburg,0.94,1.21
+3399222,2021-04-10,Hertha BSC,Borussia Mönchengladbach,1.81,1.28
+3399225,2021-04-10,Werder Bremen,RB Leipzig,1.71,1.46
+3399227,2021-04-10,VfB Stuttgart,Borussia Dortmund,1.68,1.12
+3399223,2021-04-11,Schalke 04,Augsburg,0.94,1.35
+3399224,2021-04-11,1. FC Köln,Mainz 05,2.54,1.6
+3399220,2021-04-12,Hoffenheim,Bayer Leverkusen,0.09,0.31
+3399411,2021-04-16,RB Leipzig,Hoffenheim,1.41,0.26
+3399418,2021-04-17,Augsburg,Arminia Bielefeld,0.7,0.75
+3399412,2021-04-17,Borussia Mönchengladbach,Eintracht Frankfurt,2.32,0.75
+3399415,2021-04-17,Freiburg,Schalke 04,2.01,0.73
+3399416,2021-04-17,Union Berlin,VfB Stuttgart,1.46,0.98
+3399414,2021-04-17,Wolfsburg,Bayern München,1.38,1.91
+3399413,2021-04-17,Bayer Leverkusen,1. FC Köln,1.62,0.98
+3399410,2021-04-18,Borussia Dortmund,Werder Bremen,3.01,1.02
+3399424,2021-04-20,1. FC Köln,RB Leipzig,0.52,2.42
+3399426,2021-04-20,Arminia Bielefeld,Schalke 04,2.26,0.29
+3399419,2021-04-20,Bayern München,Bayer Leverkusen,1.72,0.58
+3399422,2021-04-20,Eintracht Frankfurt,Augsburg,1.28,1.63
+3399420,2021-04-21,Borussia Dortmund,Union Berlin,4.76,0.26
+3399421,2021-04-21,Hoffenheim,Borussia Mönchengladbach,2.32,0.95
+3399427,2021-04-21,VfB Stuttgart,Wolfsburg,1.86,1.48
+3399425,2021-04-21,Werder Bremen,Mainz 05,1.19,1.69
+3399436,2021-04-23,Augsburg,1. FC Köln,1.99,1.76
+3399432,2021-04-24,Freiburg,Hoffenheim,1.76,1.44
+3399435,2021-04-24,Mainz 05,Bayern München,0.88,1.49
+3399433,2021-04-24,Union Berlin,Werder Bremen,1.66,0.44
+3399431,2021-04-24,Wolfsburg,Borussia Dortmund,1.23,1.42
+3399430,2021-04-24,Bayer Leverkusen,Eintracht Frankfurt,2.03,2.34
+3399428,2021-04-25,RB Leipzig,VfB Stuttgart,3.6,0.15
+3399429,2021-04-25,Borussia Mönchengladbach,Arminia Bielefeld,3.54,0.73
+3399417,2021-05-03,Mainz 05,Hertha BSC,2.77,1.43
+3399423,2021-05-06,Hertha BSC,Freiburg,1.82,0.99
+3399445,2021-05-07,VfB Stuttgart,Augsburg,1.66,2.29
+3399438,2021-05-08,Borussia Dortmund,RB Leipzig,1.69,1.53
+3399439,2021-05-08,Hoffenheim,Schalke 04,1.66,0.97
+3399444,2021-05-08,Werder Bremen,Bayer Leverkusen,0.67,1.14
+3399440,2021-05-08,Wolfsburg,Union Berlin,1.76,0.66
+3399437,2021-05-08,Bayern München,Borussia Mönchengladbach,3.01,1.07
+3399443,2021-05-09,1. FC Köln,Freiburg,1.89,2.47
+3399441,2021-05-09,Eintracht Frankfurt,Mainz 05,0.82,0.68
+3399442,2021-05-09,Hertha BSC,Arminia Bielefeld,0.6,0.62
+3399434,2021-05-12,Schalke 04,Hertha BSC,0.89,1.48
+3399454,2021-05-15,Arminia Bielefeld,Hoffenheim,2.03,1.65
+3399453,2021-05-15,Augsburg,Werder Bremen,1.55,0.91
+3399448,2021-05-15,Bayer Leverkusen,Union Berlin,1.62,1.34
+3399447,2021-05-15,Borussia Mönchengladbach,VfB Stuttgart,0.49,0.59
+3399449,2021-05-15,Freiburg,Bayern München,1.31,3.34
+3399450,2021-05-15,Hertha BSC,1. FC Köln,0.08,1.56
+3399451,2021-05-15,Schalke 04,Eintracht Frankfurt,2.78,3.07
+3399452,2021-05-16,Mainz 05,Borussia Dortmund,1.52,1.64
+3399446,2021-05-16,RB Leipzig,Wolfsburg,2.13,1.23
+3399456,2021-05-22,Borussia Dortmund,Bayer Leverkusen,1.11,1.75
+3399459,2021-05-22,Eintracht Frankfurt,Freiburg,2.04,0.5
+3399461,2021-05-22,1. FC Köln,Schalke 04,2.04,0.35
+3399457,2021-05-22,Hoffenheim,Hertha BSC,2.4,1.61
+3399460,2021-05-22,Union Berlin,RB Leipzig,1.08,2.64
+3399463,2021-05-22,VfB Stuttgart,Arminia Bielefeld,1.06,1.66
+3399462,2021-05-22,Werder Bremen,Borussia Mönchengladbach,1.26,1.86
+3399458,2021-05-22,Wolfsburg,Mainz 05,1.24,1.87
+3399455,2021-05-22,Bayern München,Augsburg,4.44,1.96
