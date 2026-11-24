@@ -27,6 +27,7 @@ import pandas as pd
 import champions_league
 import competitions
 import european
+from bet_schema import add_missing_columns, write_bets
 from fetch_results import results_path
 from load_data import RAW_DIR, competition_dir
 from team_names import load_alias_map, normalize_team_names
@@ -147,6 +148,64 @@ def _already_bet(fixtures, bets_path):
     )
 
 
+def reschedule_bets(fixtures, bets_path=BETS_PATH):
+    """
+    Move each unsettled bet whose fixture has been rearranged (postponed,
+    then given a new date or kick-off time) to the fixture's current
+    date and time, so it settles on the day it's played - settling
+    matches on the date (fetch_results) - and isn't predicted a second
+    time. In a league each pairing happens once a season, so a bet is
+    found by (HomeTeam, AwayTeam). Returns how many bets moved.
+
+    ``fixtures`` is the whole season for one league Div, with normalised
+    names. A fixture still POSTPONED with no new date is left alone.
+    """
+
+    try:
+        bets = add_missing_columns(pd.read_csv(bets_path))
+    except FileNotFoundError:
+        return 0
+
+    div = fixtures["Div"].iloc[0]
+    dated = fixtures[fixtures["Status"].isin(UNPLAYED_STATUSES | {"FINISHED"})]
+    when = {
+        (home, away): (date, time)
+        for home, away, date, time
+        in dated[["HomeTeam", "AwayTeam", "Date", "Time"]].itertuples(index=False)
+    }
+
+    alias_map = load_alias_map()
+    unsettled = bets[
+        (bets["Div"] == div)
+        & (bets["Season"] == competitions.CURRENT_SEASON)
+        & bets["ActualResult"].isna()
+    ]
+    moved = 0
+
+    for i, bet in unsettled.iterrows():
+
+        pair = (
+            alias_map.get(bet["HomeTeam"], bet["HomeTeam"]),
+            alias_map.get(bet["AwayTeam"], bet["AwayTeam"]),
+        )
+        new = when.get(pair)
+
+        if new is None or new == (bet["Date"], bet["Time"]):
+            continue
+
+        print(
+            f"{div}: {bet['HomeTeam']} v {bet['AwayTeam']} rearranged - bet moved "
+            f"from {bet['Date']} {bet['Time']} to {new[0]} {new[1]}"
+        )
+        bets.loc[i, ["Date", "Time"]] = new
+        moved += 1
+
+    if moved:
+        write_bets(bets, bets_path)
+
+    return moved
+
+
 def select_next_round(upcoming, min_round_size=MIN_ROUND_SIZE):
     """
     The earliest matchday with a full-ish round still to predict, plus
@@ -201,10 +260,16 @@ def next_round(fixtures, bets_path=BETS_PATH, on_file=None, source=None,
         return None
 
     # Only one round in play at a time: wait until every fixture we've
-    # bet on is finished. A rearranged game gets a new date, so its old
-    # bet no longer matches and it can't block forever.
-    unplayed = fixtures[fixtures["Status"].isin(UNPLAYED_STATUSES)]
-    in_progress = unplayed[_already_bet(unplayed, bets_path)]
+    # bet on in the latest round is finished. A rearranged game from an
+    # earlier round (its bet moved to the new date by reschedule_bets)
+    # doesn't hold the competition up - it may be weeks away.
+    bet_on = _already_bet(fixtures, bets_path)
+    latest = fixtures.loc[bet_on, "Gameweek"].max()
+    in_progress = fixtures[
+        bet_on
+        & fixtures["Status"].isin(UNPLAYED_STATUSES)
+        & (fixtures["Gameweek"] >= latest)
+    ]
 
     if not in_progress.empty:
         rounds = ", ".join(f"GW{gw}" for gw in sorted(in_progress["Gameweek"].unique()))
@@ -282,6 +347,8 @@ def _competition_round(key, div, alias_map, bets_path):
         fixtures[side] = normalize_team_names(
             fixtures[side], alias_map, source_name="football-data.org"
         )
+
+    reschedule_bets(fixtures, bets_path)
 
     return next_round(fixtures, bets_path)
 

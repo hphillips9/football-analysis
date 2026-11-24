@@ -1,14 +1,30 @@
 # Football Predictor
 
-A self-updating model that predicts Premier League results. Every gameweek it
-rates the two teams, gives a Home / Draw / Away probability for each match,
-records the pick as a flat-stake bet, and settles it once the game is played —
-then publishes everything to a website.
+A self-updating model that predicts football results across Europe. Every
+round it rates the two teams, gives a Home / Draw / Away probability for each
+match, records the pick as a flat-stake bet, and settles it once the game is
+played — then publishes everything to a website.
+
+| Code | Competition | Model |
+| --- | --- | --- |
+| `E0` | Premier League | its own |
+| `SP1` | La Liga | pooled |
+| `D1` | Bundesliga | pooled |
+| `I1` | Serie A | pooled |
+| `F1` | Ligue 1 | pooled |
+| `P1` | Primeira Liga | pooled |
+| `N1` | Eredivisie | pooled |
+| `CL` | Champions League | European |
+
+The Europa League and Conference League aren't predicted, but their results
+are fetched because they move the Elo ratings. Which competitions run is
+`ENABLED` in [`src/competitions.py`](src/competitions.py).
 
 **Live site:** https://hphillips9.github.io/football-analysis/
 
 It started as a research project into building a leak-free football model from
-five seasons of data; the notebooks in [`notebooks/`](notebooks/) are that work.
+five seasons of Premier League data, then grew to the other leagues and the
+Champions League. The notebooks in [`notebooks/`](notebooks/) are that work.
 The rest of the repo is the production pipeline that grew out of it.
 
 ---
@@ -33,7 +49,31 @@ Premier League in `notebooks/19_championship_promoted_teams.ipynb` and for
 each of the top 5 in `notebooks/20_multileague_pipeline.ipynb`; no league's
 gain was clear of noise, so none restarts lower. A **calibrated logistic regression** (`CalibratedClassifierCV`, sigmoid)
 maps the three features to H / D / A probabilities and is retrained on all
-available history on every run.
+available history on every run. Ratings and form are built from each
+competition's own matches, so one league's results never leak into another's
+features.
+
+There are three models, all of this form:
+
+- **Premier League** — a model of its own, trained on Premier League matches
+  (notebook 20: a shared model didn't clearly help it).
+- **Pooled** — one model for the other six leagues, with a `League_<Div>`
+  indicator per league. It beats a model per league (notebooks 18 and 20).
+- **European** — the Champions League's, trained only on European matches
+  (CL, Europa League, Conference League), with `Comp_EL` / `Comp_ECL` and
+  `Knockout` indicators (notebook 22). A final is predicted as a neutral
+  venue. The league models never see European matches.
+
+### Elo on one scale across leagues
+
+Elo starts out separate per league, so a 1600 in Portugal isn't a 1600 in
+England. Notebook 21 put every club on one shared scale: each league sits at
+1500 plus an offset taken from UEFA's 5-year country coefficient, which is
+then corrected by how that league's clubs do against the others in Europe.
+European results also move a club's own rating. Clubs from outside the
+modelled leagues get a rating from their country's coefficient. The Ratings
+pages show this scale (see the SHARED SCALE section of
+[`src/elo.py`](src/elo.py)).
 
 Configuration lives at the top of [`src/elo.py`](src/elo.py) (home advantage,
 K-factor, promoted-team start) and [`src/model.py`](src/model.py) (features).
@@ -76,7 +116,7 @@ One command, [`src/run_week.py`](src/run_week.py), runs the whole cycle:
 
 | Step | What it does |
 | --- | --- |
-| 1 | Fetch new results from football-data.co.uk into `data/raw/<Div>/results_<season>.csv` for each enabled competition (`CURRENT_SEASON` in `src/competitions.py`) |
+| 1 | Fetch new results from football-data.co.uk into `data/raw/<Div>/results_<season>.csv` for each enabled league (`CURRENT_SEASON` in `src/competitions.py`), and this season's CL / EL / ECL results from FotMob |
 | 2 | Settle any pending bets in `data/raw/Bets.csv` (result, the odds used, profit; no odds = unpriced, counted for accuracy only) |
 | 3 | Rebuild `data/processed/all_matches.csv` (results + FotMob/Opta xG, with football-data.co.uk's xG then Understat as backup, cached per season) |
 | 4 | Backfill gameweek / probabilities on any `Bets.csv` rows missing them |
@@ -107,6 +147,10 @@ Step 5 predicts **one round at a time per competition**: it waits until
 every fixture already in `Bets.csv` has been played and the results are on
 file, then predicts the next round (plus any rearranged games that fall
 inside it). A postponement in one league doesn't hold up the others.
+When a postponed game gets a new date, its bet is moved to that date, so it
+isn't predicted twice and it settles when it's played. It doesn't hold up its
+own league's next rounds either, and the site moves on to the current
+gameweek, listing the rearranged game with it once it falls in that round.
 It needs a `FOOTBALL_DATA_API_KEY` (environment variable, or a git-ignored
 `.env` at the repo root). Without one it falls back to the fixture list
 pasted into `data/raw/Next_Matchweek.txt`, Premier League only (an optional
@@ -185,35 +229,44 @@ npm run build    # type check, tests, static build → web/dist/, link check
 ```
 src/
   run_week.py             orchestrator for the weekly cycle
+  competitions.py         registry of competitions (codes, ids, model) and which are enabled
   run_status.py           per-competition outcome of a run -> run_status.json
   fetch_results.py        pull new results, settle bets
   load_data.py            build all_matches.csv (results + FotMob xG; football-data, Understat backup)
   fetch_fixtures.py       football-data.org → Future_Fixtures.csv
   future_games_parser.py  Next_Matchweek.txt → Future_Fixtures.csv (fallback)
   predict_next_matches.py  predict the next round, record bets (re-exports the three below)
-  elo.py                  Elo ratings: update rule, pre-match Elo, fixture Elo; feature scope
+  elo.py                  Elo ratings: update rule, pre-match Elo, fixture Elo; the shared scale across leagues
   features.py             goals per game, last-5 xG difference, build_history (per competition)
-  model.py                FEATURES, calibrated logistic regression; E0's own model + the pooled one (train_models)
+  model.py                FEATURES, calibrated logistic regression; E0's own, the pooled and the European model (train_models)
+  european.py             CL / EL / ECL results and xG from FotMob (90-minute scores, stage, leg, neutral venue)
+  champions_league.py     CL stages and legs, football-data.org fixtures matched to FotMob clubs, neutral-venue finals
+  tie_progression.py      each side's chance of winning a knockout tie (display only)
+  odds_api.py             CL odds from The Odds API onto upcoming bets
+  dixon_coles.py          Dixon-Coles expected goals for the projected tables (not used for predictions)
   backfill_bet_probs.py   fill gameweek / probabilities on older bets
   export_web.py           write the site's JSON feed (every enabled competition, CL incl.) + leagues.json, cups.json
   backtest.py             season-by-season evaluation, pooled and per competition
   evaluate.py             walk-forward, per-match log loss, paired bootstrap (shared with notebooks)
   team_names.py           name normalisation across data sources; lookups by FotMob / football-data.org id
   bet_schema.py           Bets.csv columns and order, shared by everything that writes it
-  competitions.py         registry of competitions (codes, ids) and which are enabled
   tools/migrate_layout.py one-off move to the per-competition data layout
   tools/backfill_top5.py  one-off: La Liga / Bundesliga / Serie A / Ligue 1 results + xG caches
   tools/backfill_league.py  one-off, resumable: a new league's results + FotMob xG history (Portugal, Netherlands)
+  tools/backfill_europe.py  one-off: CL / EL / ECL caches from FotMob, 21-22 on
+  tools/backfill_season.py  predictions for a competition's games already played this season (switched on mid-season)
+  tools/backfill_cl.py    the same for the Champions League
+  tools/fetch_uefa_coefficients.py  snapshot UEFA country coefficients for the shared Elo scale
   tools/migrate_bets.py   one-off Bets.csv migration to the multi-competition schema
   tools/suggest_aliases.py  offline: suggest team_names.csv rows by date+score voting (run when clubs are promoted)
 data/
-  raw/<Div>/              per competition: results_<yy-yy>.csv, fotmob_ + understat_ xG caches
+  raw/<Div>/              per competition: results_<yy-yy>.csv, fotmob_ + understat_ xG caches; cups: FotMob results + fixtures_<yy-yy>.csv
   raw/                    Bets.csv, fixtures
   processed/              all_matches.csv, run_status.json, feature snapshots
   reference/team_names.csv  one row per club: canonical name, country, FotMob + football-data.org ids, each source's name
 tests/                    unit tests (python tests/test_<name>.py, or pytest tests/)
 web/                      the website (Astro + React)
-notebooks/                the original research (01–15)
+notebooks/                the research (01–23: the Premier League model, then other leagues, shared Elo, the CL)
 ```
 
 ---

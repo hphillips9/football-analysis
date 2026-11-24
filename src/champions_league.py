@@ -318,7 +318,7 @@ def resolve_fixtures(fd, fotmob, season, known=None, domestic=None,
     fd = fd.copy()
     fotmob = fotmob.copy()
     fd["Day"] = pd.to_datetime(fd["KickoffUTC"], utc=True).dt.strftime("%Y-%m-%d")
-    fotmob["Day"] = pd.to_datetime(fotmob["Kickoff"], utc=True).dt.strftime("%Y-%m-%d")
+    fotmob["Day"] = pd.to_datetime(fotmob["Kickoff"], utc=True, format="ISO8601").dt.strftime("%Y-%m-%d")
 
     pairs, _ = pair_matches(fd, fotmob, known if known is not None else known_fd_org_ids(reference_path))
 

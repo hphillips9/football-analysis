@@ -197,8 +197,13 @@ def current_elos(matches, div=None, ratings=None):
 # ============================================================
 
 def build_predictions(bets, elos, home_advantage=HOME_ADVANTAGE):
-    """One competition's fixtures for the gameweek to feature: the earliest
+    """One competition's fixtures for the gameweek to feature: the latest
     one with unsettled bets, or failing that the most recent on record.
+    An unsettled game from an earlier gameweek (a postponement) doesn't
+    hold the page on its old gameweek; it's listed with the featured one
+    only once it's rearranged to within 4 days before the featured round
+    and no later than its last game. Every fixture carries the featured
+    gameweek.
     ``home_advantage`` goes into eloGap (none for a cup final)."""
 
     if bets.empty:
@@ -207,11 +212,20 @@ def build_predictions(bets, elos, home_advantage=HOME_ADVANTAGE):
     unsettled = bets[bets["ActualResult"].isna()]
 
     if not unsettled.empty:
-        gameweek = int(unsettled["Gameweek"].min())
+        gameweek = int(unsettled["Gameweek"].max())
     else:
         gameweek = int(bets["Gameweek"].max())
 
     rows = bets[bets["Gameweek"] == gameweek]
+
+    # Within 4 days of the round, as the site's rearranged-game rule
+    # (web/src/lib/fixtures.ts) - one still on its original date is weeks off
+    stragglers = unsettled[
+        (unsettled["Gameweek"] < gameweek)
+        & (unsettled["Kickoff"] >= rows["Kickoff"].min() - pd.Timedelta(days=4))
+        & (unsettled["Kickoff"] <= rows["Kickoff"].max())
+    ]
+    rows = pd.concat([rows, stragglers]).sort_values("Kickoff")
 
     fixtures = []
 
@@ -719,7 +733,7 @@ def cup_fixture_list(div, season):
         fixtures[f"{side}Id"] = fixtures[f"{side}Id"].astype(int)
         fixtures[f"{side}Team"] = fixtures[f"{side}Id"].map(names)
 
-    fixtures["KickoffUTC"] = pd.to_datetime(fixtures["Kickoff"], utc=True)
+    fixtures["KickoffUTC"] = pd.to_datetime(fixtures["Kickoff"], utc=True, format="ISO8601")
     fixtures["Stage"] = [
         "LEAGUE_PHASE" if r.isdigit() else KNOCKOUT_STAGES.get(r) for r in fixtures["Round"]
     ]

@@ -48,7 +48,7 @@ def kickoff_times(season):
     except FileNotFoundError:
         return {}
 
-    kickoff = pd.to_datetime(fixtures["Kickoff"], utc=True).dt.tz_convert(UK_TIMEZONE)
+    kickoff = pd.to_datetime(fixtures["Kickoff"], utc=True, format="ISO8601").dt.tz_convert(UK_TIMEZONE)
 
     return {
         str(i): (k.strftime("%d/%m/%Y"), k.strftime("%H:%M"))
