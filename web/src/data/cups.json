@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-23T19:38:31+00:00",
+  "generated": "2026-11-24T23:25:02+00:00",
   "byCompetition": {
     "CL": {
       "name": "Champions League",
@@ -7,13 +7,26 @@
       "leaguePhase": {
         "season": "26-27",
         "matchdays": 8,
-        "playedFixtures": 72,
-        "remainingFixtures": 72,
+        "playedFixtures": 81,
+        "remainingFixtures": 63,
         "zones": {
           "direct": 8,
           "playoff": 24
         },
         "current": [
+          {
+            "team": "Real Madrid",
+            "played": 5,
+            "won": 5,
+            "drawn": 0,
+            "lost": 0,
+            "gf": 18,
+            "ga": 8,
+            "points": 15,
+            "position": 1,
+            "gd": 10,
+            "league": "SP1"
+          },
           {
             "team": "Paris Saint-Germain",
             "played": 4,
@@ -23,48 +36,74 @@
             "gf": 20,
             "ga": 5,
             "points": 12,
-            "position": 1,
+            "position": 2,
             "gd": 15,
             "league": "F1"
           },
           {
-            "team": "Real Madrid",
-            "played": 4,
+            "team": "Como",
+            "played": 5,
             "won": 4,
             "drawn": 0,
-            "lost": 0,
-            "gf": 13,
-            "ga": 7,
+            "lost": 1,
+            "gf": 20,
+            "ga": 6,
             "points": 12,
-            "position": 2,
-            "gd": 6,
+            "position": 3,
+            "gd": 14,
+            "league": "I1"
+          },
+          {
+            "team": "Real Betis",
+            "played": 5,
+            "won": 4,
+            "drawn": 0,
+            "lost": 1,
+            "gf": 10,
+            "ga": 6,
+            "points": 12,
+            "position": 4,
+            "gd": 4,
             "league": "SP1"
           },
           {
             "team": "Arsenal",
-            "played": 4,
+            "played": 5,
             "won": 3,
-            "drawn": 1,
+            "drawn": 2,
             "lost": 0,
-            "gf": 8,
-            "ga": 3,
-            "points": 10,
-            "position": 3,
+            "gf": 9,
+            "ga": 4,
+            "points": 11,
+            "position": 5,
             "gd": 5,
             "league": "E0"
           },
           {
-            "team": "Como",
-            "played": 4,
+            "team": "Manchester City",
+            "played": 5,
             "won": 3,
-            "drawn": 0,
+            "drawn": 1,
             "lost": 1,
-            "gf": 19,
+            "gf": 14,
+            "ga": 9,
+            "points": 10,
+            "position": 6,
+            "gd": 5,
+            "league": "E0"
+          },
+          {
+            "team": "Borussia Dortmund",
+            "played": 5,
+            "won": 3,
+            "drawn": 1,
+            "lost": 1,
+            "gf": 8,
             "ga": 6,
-            "points": 9,
-            "position": 4,
-            "gd": 13,
-            "league": "I1"
+            "points": 10,
+            "position": 7,
+            "gd": 2,
+            "league": "D1"
           },
           {
             "team": "Barcelona",
@@ -75,33 +114,20 @@
             "gf": 14,
             "ga": 6,
             "points": 9,
-            "position": 5,
+            "position": 8,
             "gd": 8,
             "league": "SP1"
           },
           {
             "team": "Aston Villa",
-            "played": 4,
+            "played": 5,
             "won": 3,
             "drawn": 0,
-            "lost": 1,
-            "gf": 12,
-            "ga": 6,
-            "points": 9,
-            "position": 6,
-            "gd": 6,
-            "league": "E0"
-          },
-          {
-            "team": "Manchester City",
-            "played": 4,
-            "won": 3,
-            "drawn": 0,
-            "lost": 1,
+            "lost": 2,
             "gf": 12,
             "ga": 7,
             "points": 9,
-            "position": 7,
+            "position": 9,
             "gd": 5,
             "league": "E0"
           },
@@ -114,7 +140,7 @@
             "gf": 14,
             "ga": 10,
             "points": 9,
-            "position": 8,
+            "position": 10,
             "gd": 4,
             "league": "E0"
           },
@@ -127,7 +153,7 @@
             "gf": 11,
             "ga": 7,
             "points": 9,
-            "position": 9,
+            "position": 11,
             "gd": 4,
             "league": "X:BEL"
           },
@@ -140,35 +166,22 @@
             "gf": 8,
             "ga": 4,
             "points": 9,
-            "position": 10,
+            "position": 12,
             "gd": 4,
             "league": "P1"
           },
           {
-            "team": "Real Betis",
-            "played": 4,
+            "team": "Galatasaray",
+            "played": 5,
             "won": 3,
             "drawn": 0,
-            "lost": 1,
-            "gf": 8,
-            "ga": 6,
+            "lost": 2,
+            "gf": 9,
+            "ga": 9,
             "points": 9,
-            "position": 11,
-            "gd": 2,
-            "league": "SP1"
-          },
-          {
-            "team": "Borussia Dortmund",
-            "played": 4,
-            "won": 3,
-            "drawn": 0,
-            "lost": 1,
-            "gf": 7,
-            "ga": 5,
-            "points": 9,
-            "position": 12,
-            "gd": 2,
-            "league": "D1"
+            "position": 13,
+            "gd": 0,
+            "league": "X:TUR"
           },
           {
             "team": "Bayern M\u00fcnchen",
@@ -179,7 +192,7 @@
             "gf": 12,
             "ga": 5,
             "points": 8,
-            "position": 13,
+            "position": 14,
             "gd": 7,
             "league": "D1"
           },
@@ -192,9 +205,22 @@
             "gf": 7,
             "ga": 4,
             "points": 7,
-            "position": 14,
+            "position": 15,
             "gd": 3,
             "league": "D1"
+          },
+          {
+            "team": "Bod\u00f8/Glimt",
+            "played": 5,
+            "won": 2,
+            "drawn": 1,
+            "lost": 2,
+            "gf": 5,
+            "ga": 9,
+            "points": 7,
+            "position": 16,
+            "gd": -4,
+            "league": "X:NOR"
           },
           {
             "team": "Inter",
@@ -205,21 +231,21 @@
             "gf": 8,
             "ga": 6,
             "points": 6,
-            "position": 15,
+            "position": 17,
             "gd": 2,
             "league": "I1"
           },
           {
             "team": "LASK",
-            "played": 4,
+            "played": 5,
             "won": 2,
             "drawn": 0,
-            "lost": 2,
+            "lost": 3,
             "gf": 10,
-            "ga": 9,
+            "ga": 10,
             "points": 6,
-            "position": 16,
-            "gd": 1,
+            "position": 18,
+            "gd": 0,
             "league": "X:AUT"
           },
           {
@@ -231,22 +257,35 @@
             "gf": 8,
             "ga": 8,
             "points": 6,
-            "position": 17,
+            "position": 19,
             "gd": 0,
             "league": "E0"
           },
           {
-            "team": "Galatasaray",
-            "played": 4,
+            "team": "FC Porto",
+            "played": 5,
             "won": 2,
             "drawn": 0,
-            "lost": 2,
-            "gf": 8,
-            "ga": 9,
+            "lost": 3,
+            "gf": 7,
+            "ga": 7,
             "points": 6,
-            "position": 18,
-            "gd": -1,
-            "league": "X:TUR"
+            "position": 20,
+            "gd": 0,
+            "league": "P1"
+          },
+          {
+            "team": "RB Leipzig",
+            "played": 5,
+            "won": 2,
+            "drawn": 0,
+            "lost": 3,
+            "gf": 8,
+            "ga": 12,
+            "points": 6,
+            "position": 21,
+            "gd": -4,
+            "league": "D1"
           },
           {
             "team": "Fenerbah\u00e7e",
@@ -257,7 +296,7 @@
             "gf": 6,
             "ga": 11,
             "points": 5,
-            "position": 19,
+            "position": 22,
             "gd": -5,
             "league": "X:TUR"
           },
@@ -270,7 +309,7 @@
             "gf": 10,
             "ga": 8,
             "points": 4,
-            "position": 20,
+            "position": 23,
             "gd": 2,
             "league": "I1"
           },
@@ -283,7 +322,7 @@
             "gf": 4,
             "ga": 4,
             "points": 4,
-            "position": 21,
+            "position": 24,
             "gd": 0,
             "league": "X:UKR"
           },
@@ -296,7 +335,7 @@
             "gf": 9,
             "ga": 10,
             "points": 4,
-            "position": 22,
+            "position": 25,
             "gd": -1,
             "league": "X:NOR"
           },
@@ -309,61 +348,35 @@
             "gf": 4,
             "ga": 5,
             "points": 4,
-            "position": 23,
+            "position": 26,
             "gd": -1,
             "league": "SP1"
           },
           {
-            "team": "PSV Eindhoven",
-            "played": 4,
-            "won": 1,
-            "drawn": 1,
-            "lost": 2,
-            "gf": 3,
-            "ga": 4,
-            "points": 4,
-            "position": 24,
-            "gd": -1,
-            "league": "N1"
-          },
-          {
-            "team": "Bod\u00f8/Glimt",
-            "played": 4,
-            "won": 1,
-            "drawn": 1,
-            "lost": 2,
-            "gf": 4,
-            "ga": 9,
-            "points": 4,
-            "position": 25,
-            "gd": -5,
-            "league": "X:NOR"
-          },
-          {
-            "team": "FC Porto",
-            "played": 4,
-            "won": 1,
-            "drawn": 0,
-            "lost": 3,
-            "gf": 6,
-            "ga": 7,
-            "points": 3,
-            "position": 26,
-            "gd": -1,
-            "league": "P1"
-          },
-          {
             "team": "Napoli",
-            "played": 4,
+            "played": 5,
             "won": 1,
-            "drawn": 0,
+            "drawn": 1,
             "lost": 3,
-            "gf": 6,
-            "ga": 11,
-            "points": 3,
+            "gf": 8,
+            "ga": 13,
+            "points": 4,
             "position": 27,
             "gd": -5,
             "league": "I1"
+          },
+          {
+            "team": "PSV Eindhoven",
+            "played": 5,
+            "won": 1,
+            "drawn": 1,
+            "lost": 3,
+            "gf": 4,
+            "ga": 9,
+            "points": 4,
+            "position": 28,
+            "gd": -5,
+            "league": "N1"
           },
           {
             "team": "Villarreal",
@@ -374,35 +387,9 @@
             "gf": 8,
             "ga": 14,
             "points": 3,
-            "position": 28,
-            "gd": -6,
-            "league": "SP1"
-          },
-          {
-            "team": "AEK Athens",
-            "played": 4,
-            "won": 1,
-            "drawn": 0,
-            "lost": 3,
-            "gf": 5,
-            "ga": 11,
-            "points": 3,
             "position": 29,
             "gd": -6,
-            "league": "X:GRE"
-          },
-          {
-            "team": "RB Leipzig",
-            "played": 4,
-            "won": 1,
-            "drawn": 0,
-            "lost": 3,
-            "gf": 5,
-            "ga": 11,
-            "points": 3,
-            "position": 30,
-            "gd": -6,
-            "league": "D1"
+            "league": "SP1"
           },
           {
             "team": "Sabah FK",
@@ -413,34 +400,47 @@
             "gf": 4,
             "ga": 10,
             "points": 3,
-            "position": 31,
+            "position": 30,
             "gd": -6,
             "league": "X:AZE"
           },
           {
-            "team": "Feyenoord",
-            "played": 4,
+            "team": "AEK Athens",
+            "played": 5,
             "won": 1,
             "drawn": 0,
-            "lost": 3,
+            "lost": 4,
+            "gf": 5,
+            "ga": 12,
+            "points": 3,
+            "position": 31,
+            "gd": -7,
+            "league": "X:GRE"
+          },
+          {
+            "team": "Feyenoord",
+            "played": 5,
+            "won": 1,
+            "drawn": 0,
+            "lost": 4,
             "gf": 4,
-            "ga": 11,
+            "ga": 12,
             "points": 3,
             "position": 32,
-            "gd": -7,
+            "gd": -8,
             "league": "N1"
           },
           {
             "team": "Lens",
-            "played": 4,
+            "played": 5,
             "won": 1,
             "drawn": 0,
-            "lost": 3,
-            "gf": 4,
-            "ga": 16,
+            "lost": 4,
+            "gf": 5,
+            "ga": 19,
             "points": 3,
             "position": 33,
-            "gd": -12,
+            "gd": -14,
             "league": "F1"
           },
           {
@@ -471,15 +471,15 @@
           },
           {
             "team": "Slovan Bratislava",
-            "played": 4,
+            "played": 5,
             "won": 0,
             "drawn": 0,
-            "lost": 4,
+            "lost": 5,
             "gf": 1,
-            "ga": 17,
+            "ga": 19,
             "points": 0,
             "position": 36,
-            "gd": -16,
+            "gd": -18,
             "league": "X:SVK"
           }
         ],
@@ -488,13 +488,13 @@
             "team": "Real Madrid",
             "league": "SP1",
             "played": 8,
-            "won": 6,
+            "won": 7,
             "drawn": 1,
             "lost": 1,
-            "points": 20,
+            "points": 21,
             "position": 1,
-            "currentPosition": 2,
-            "movement": 1
+            "currentPosition": 1,
+            "movement": 0
           },
           {
             "team": "Paris Saint-Germain",
@@ -505,20 +505,20 @@
             "lost": 1,
             "points": 20,
             "position": 2,
-            "currentPosition": 1,
-            "movement": -1
+            "currentPosition": 2,
+            "movement": 0
           },
           {
             "team": "Arsenal",
             "league": "E0",
             "played": 8,
             "won": 5,
-            "drawn": 2,
+            "drawn": 3,
             "lost": 1,
-            "points": 18,
+            "points": 17,
             "position": 3,
-            "currentPosition": 3,
-            "movement": 0
+            "currentPosition": 5,
+            "movement": 2
           },
           {
             "team": "Barcelona",
@@ -529,8 +529,8 @@
             "lost": 2,
             "points": 17,
             "position": 4,
-            "currentPosition": 5,
-            "movement": 1
+            "currentPosition": 8,
+            "movement": 4
           },
           {
             "team": "Bayern M\u00fcnchen",
@@ -541,20 +541,8 @@
             "lost": 1,
             "points": 17,
             "position": 5,
-            "currentPosition": 13,
-            "movement": 8
-          },
-          {
-            "team": "Manchester City",
-            "league": "E0",
-            "played": 8,
-            "won": 5,
-            "drawn": 1,
-            "lost": 2,
-            "points": 16,
-            "position": 6,
-            "currentPosition": 7,
-            "movement": 1
+            "currentPosition": 14,
+            "movement": 9
           },
           {
             "team": "Liverpool",
@@ -564,21 +552,9 @@
             "drawn": 1,
             "lost": 2,
             "points": 16,
-            "position": 7,
-            "currentPosition": 8,
-            "movement": 1
-          },
-          {
-            "team": "Aston Villa",
-            "league": "E0",
-            "played": 8,
-            "won": 5,
-            "drawn": 1,
-            "lost": 2,
-            "points": 16,
-            "position": 8,
-            "currentPosition": 6,
-            "movement": -2
+            "position": 6,
+            "currentPosition": 10,
+            "movement": 4
           },
           {
             "team": "Como",
@@ -587,22 +563,22 @@
             "won": 5,
             "drawn": 1,
             "lost": 2,
-            "points": 15,
-            "position": 9,
-            "currentPosition": 4,
-            "movement": -5
+            "points": 16,
+            "position": 7,
+            "currentPosition": 3,
+            "movement": -4
           },
           {
             "team": "Borussia Dortmund",
             "league": "D1",
             "played": 8,
             "won": 5,
-            "drawn": 1,
+            "drawn": 2,
             "lost": 2,
             "points": 15,
-            "position": 10,
-            "currentPosition": 12,
-            "movement": 2
+            "position": 8,
+            "currentPosition": 7,
+            "movement": -1
           },
           {
             "team": "Real Betis",
@@ -611,22 +587,34 @@
             "won": 5,
             "drawn": 1,
             "lost": 3,
-            "points": 14,
-            "position": 11,
-            "currentPosition": 11,
-            "movement": 0
+            "points": 15,
+            "position": 9,
+            "currentPosition": 4,
+            "movement": -5
+          },
+          {
+            "team": "Manchester City",
+            "league": "E0",
+            "played": 8,
+            "won": 4,
+            "drawn": 2,
+            "lost": 2,
+            "points": 15,
+            "position": 10,
+            "currentPosition": 6,
+            "movement": -4
           },
           {
             "team": "Club Brugge",
             "league": "X:BEL",
             "played": 8,
-            "won": 5,
+            "won": 4,
             "drawn": 1,
             "lost": 3,
             "points": 14,
-            "position": 12,
-            "currentPosition": 9,
-            "movement": -3
+            "position": 11,
+            "currentPosition": 11,
+            "movement": 0
           },
           {
             "team": "Sporting CP",
@@ -636,9 +624,21 @@
             "drawn": 1,
             "lost": 3,
             "points": 14,
+            "position": 12,
+            "currentPosition": 12,
+            "movement": 0
+          },
+          {
+            "team": "Aston Villa",
+            "league": "E0",
+            "played": 8,
+            "won": 4,
+            "drawn": 1,
+            "lost": 3,
+            "points": 13,
             "position": 13,
-            "currentPosition": 10,
-            "movement": -3
+            "currentPosition": 9,
+            "movement": -4
           },
           {
             "team": "Inter",
@@ -649,8 +649,8 @@
             "lost": 3,
             "points": 13,
             "position": 14,
-            "currentPosition": 15,
-            "movement": 1
+            "currentPosition": 17,
+            "movement": 3
           },
           {
             "team": "VfB Stuttgart",
@@ -661,8 +661,32 @@
             "lost": 3,
             "points": 13,
             "position": 15,
-            "currentPosition": 14,
-            "movement": -1
+            "currentPosition": 15,
+            "movement": 0
+          },
+          {
+            "team": "Galatasaray",
+            "league": "X:TUR",
+            "played": 8,
+            "won": 4,
+            "drawn": 1,
+            "lost": 3,
+            "points": 13,
+            "position": 16,
+            "currentPosition": 13,
+            "movement": -3
+          },
+          {
+            "team": "FC Porto",
+            "league": "P1",
+            "played": 8,
+            "won": 4,
+            "drawn": 1,
+            "lost": 4,
+            "points": 11,
+            "position": 17,
+            "currentPosition": 20,
+            "movement": 3
           },
           {
             "team": "Manchester United",
@@ -672,8 +696,8 @@
             "drawn": 1,
             "lost": 4,
             "points": 11,
-            "position": 16,
-            "currentPosition": 17,
+            "position": 18,
+            "currentPosition": 19,
             "movement": 1
           },
           {
@@ -684,9 +708,21 @@
             "drawn": 2,
             "lost": 3,
             "points": 11,
-            "position": 17,
-            "currentPosition": 23,
-            "movement": 6
+            "position": 19,
+            "currentPosition": 26,
+            "movement": 7
+          },
+          {
+            "team": "RB Leipzig",
+            "league": "D1",
+            "played": 8,
+            "won": 3,
+            "drawn": 1,
+            "lost": 4,
+            "points": 11,
+            "position": 20,
+            "currentPosition": 21,
+            "movement": 1
           },
           {
             "team": "Fenerbah\u00e7e",
@@ -696,9 +732,21 @@
             "drawn": 3,
             "lost": 3,
             "points": 11,
-            "position": 18,
-            "currentPosition": 19,
+            "position": 21,
+            "currentPosition": 22,
             "movement": 1
+          },
+          {
+            "team": "Bod\u00f8/Glimt",
+            "league": "X:NOR",
+            "played": 8,
+            "won": 3,
+            "drawn": 2,
+            "lost": 3,
+            "points": 10,
+            "position": 22,
+            "currentPosition": 16,
+            "movement": -6
           },
           {
             "team": "Roma",
@@ -708,93 +756,33 @@
             "drawn": 2,
             "lost": 3,
             "points": 10,
-            "position": 19,
-            "currentPosition": 20,
-            "movement": 1
-          },
-          {
-            "team": "Galatasaray",
-            "league": "X:TUR",
-            "played": 8,
-            "won": 3,
-            "drawn": 1,
-            "lost": 4,
-            "points": 10,
-            "position": 20,
-            "currentPosition": 18,
-            "movement": -2
-          },
-          {
-            "team": "FC Porto",
-            "league": "P1",
-            "played": 8,
-            "won": 3,
-            "drawn": 1,
-            "lost": 4,
-            "points": 10,
-            "position": 21,
-            "currentPosition": 26,
-            "movement": 5
-          },
-          {
-            "team": "PSV Eindhoven",
-            "league": "N1",
-            "played": 8,
-            "won": 3,
-            "drawn": 2,
-            "lost": 4,
-            "points": 10,
-            "position": 22,
-            "currentPosition": 24,
-            "movement": 2
-          },
-          {
-            "team": "LASK",
-            "league": "X:AUT",
-            "played": 8,
-            "won": 3,
-            "drawn": 1,
-            "lost": 4,
-            "points": 10,
             "position": 23,
-            "currentPosition": 16,
-            "movement": -7
-          },
-          {
-            "team": "RB Leipzig",
-            "league": "D1",
-            "played": 8,
-            "won": 3,
-            "drawn": 1,
-            "lost": 4,
-            "points": 9,
-            "position": 24,
-            "currentPosition": 30,
-            "movement": 6
+            "currentPosition": 23,
+            "movement": 0
           },
           {
             "team": "Napoli",
             "league": "I1",
             "played": 8,
             "won": 3,
-            "drawn": 1,
+            "drawn": 2,
             "lost": 4,
-            "points": 9,
-            "position": 25,
+            "points": 10,
+            "position": 24,
             "currentPosition": 27,
-            "movement": 2
+            "movement": 3
           },
           {
-            "team": "Bod\u00f8/Glimt",
-            "league": "X:NOR",
+            "team": "PSV Eindhoven",
+            "league": "N1",
             "played": 8,
             "won": 2,
             "drawn": 2,
             "lost": 4,
             "points": 9,
-            "position": 26,
-            "currentPosition": 25,
-            "movement": -1
+            "position": 25,
+            "currentPosition": 28,
+            "movement": 3
           },
           {
             "team": "Villarreal",
@@ -804,9 +792,21 @@
             "drawn": 1,
             "lost": 5,
             "points": 9,
+            "position": 26,
+            "currentPosition": 29,
+            "movement": 3
+          },
+          {
+            "team": "LASK",
+            "league": "X:AUT",
+            "played": 8,
+            "won": 3,
+            "drawn": 1,
+            "lost": 5,
+            "points": 8,
             "position": 27,
-            "currentPosition": 28,
-            "movement": 1
+            "currentPosition": 18,
+            "movement": -9
           },
           {
             "team": "Shakhtar Donetsk",
@@ -817,20 +817,8 @@
             "lost": 4,
             "points": 8,
             "position": 28,
-            "currentPosition": 21,
-            "movement": -7
-          },
-          {
-            "team": "Feyenoord",
-            "league": "N1",
-            "played": 8,
-            "won": 2,
-            "drawn": 1,
-            "lost": 5,
-            "points": 8,
-            "position": 29,
-            "currentPosition": 32,
-            "movement": 3
+            "currentPosition": 24,
+            "movement": -4
           },
           {
             "team": "Viking",
@@ -840,9 +828,21 @@
             "drawn": 2,
             "lost": 4,
             "points": 8,
+            "position": 29,
+            "currentPosition": 25,
+            "movement": -4
+          },
+          {
+            "team": "Feyenoord",
+            "league": "N1",
+            "played": 8,
+            "won": 2,
+            "drawn": 1,
+            "lost": 5,
+            "points": 7,
             "position": 30,
-            "currentPosition": 22,
-            "movement": -8
+            "currentPosition": 32,
+            "movement": 2
           },
           {
             "team": "Lens",
@@ -850,23 +850,11 @@
             "played": 8,
             "won": 2,
             "drawn": 1,
-            "lost": 5,
-            "points": 7,
+            "lost": 6,
+            "points": 6,
             "position": 31,
             "currentPosition": 33,
             "movement": 2
-          },
-          {
-            "team": "AEK Athens",
-            "league": "X:GRE",
-            "played": 8,
-            "won": 2,
-            "drawn": 1,
-            "lost": 5,
-            "points": 6,
-            "position": 32,
-            "currentPosition": 29,
-            "movement": -3
           },
           {
             "team": "Lille",
@@ -876,9 +864,21 @@
             "drawn": 2,
             "lost": 5,
             "points": 6,
-            "position": 33,
+            "position": 32,
             "currentPosition": 35,
-            "movement": 2
+            "movement": 3
+          },
+          {
+            "team": "AEK Athens",
+            "league": "X:GRE",
+            "played": 8,
+            "won": 2,
+            "drawn": 1,
+            "lost": 6,
+            "points": 6,
+            "position": 33,
+            "currentPosition": 31,
+            "movement": -2
           },
           {
             "team": "Sabah FK",
@@ -889,8 +889,8 @@
             "lost": 6,
             "points": 5,
             "position": 34,
-            "currentPosition": 31,
-            "movement": -3
+            "currentPosition": 30,
+            "movement": -4
           },
           {
             "team": "Slavia Prague",
@@ -908,7 +908,7 @@
             "team": "Slovan Bratislava",
             "league": "X:SVK",
             "played": 8,
-            "won": 1,
+            "won": 0,
             "drawn": 1,
             "lost": 7,
             "points": 2,

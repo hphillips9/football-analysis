@@ -2,31 +2,31 @@
   "E0": {
     "results": "ok",
     "xg": "ok",
-    "predicted": 0,
+    "predicted": 10,
     "error": null
   },
   "SP1": {
     "results": "ok",
     "xg": "ok",
-    "predicted": 0,
+    "predicted": 10,
     "error": null
   },
   "D1": {
     "results": "ok",
     "xg": "ok",
-    "predicted": 9,
+    "predicted": 0,
     "error": null
   },
   "I1": {
     "results": "ok",
     "xg": "ok",
-    "predicted": 0,
+    "predicted": 10,
     "error": null
   },
   "F1": {
     "results": "ok",
     "xg": "ok",
-    "predicted": 9,
+    "predicted": 0,
     "error": null
   },
   "P1": {
@@ -38,7 +38,7 @@
   "N1": {
     "results": "ok",
     "xg": "ok",
-    "predicted": 9,
+    "predicted": 0,
     "error": null
   },
   "CL": {
