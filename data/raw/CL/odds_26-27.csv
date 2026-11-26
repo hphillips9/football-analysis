@@ -17,3 +17,21 @@ CapturedAt,Div,MatchId,Date,Time,HomeTeam,AwayTeam,ApiHome,ApiAway,OddsH,OddsD,O
 2026-11-07T14:30:30Z,CL,6106235.0,25/11/2026,20:00,Paris Saint-Germain,Roma,Paris Saint Germain,AS Roma,1.4,5.25,5.5,SKB,14
 2026-11-07T14:30:30Z,CL,6106336.0,25/11/2026,20:00,Shakhtar Donetsk,Fenerbahçe,Shakhtar Donetsk,Fenerbahce,2.63,3.1,2.7,SKB,14
 2026-11-07T14:30:30Z,CL,6106279.0,25/11/2026,20:00,Sporting CP,Manchester United,Sporting Lisbon,Manchester United,2.6,3.1,2.7,SKB,14
+2026-11-26T17:58:31Z,CL,6106419.0,08/12/2026,17:45,Viking,Feyenoord,Viking FK,Feyenoord,2.7,3.75,2.3,SKB,16
+2026-11-26T17:58:31Z,CL,6106329.0,08/12/2026,17:45,Villarreal,Sabah FK,Villarreal,Sabah FK,1.22,7.0,9.0,SKB,16
+2026-11-26T17:58:31Z,CL,6106403.0,08/12/2026,20:00,AEK Athens,Galatasaray,AEK Athens,Galatasaray,2.45,3.5,2.63,SKB,16
+2026-11-26T17:58:31Z,CL,6106282.0,08/12/2026,20:00,Aston Villa,Paris Saint-Germain,Aston Villa,Paris Saint Germain,3.6,3.9,1.85,SKB,16
+2026-11-26T17:58:31Z,CL,6106262.0,08/12/2026,20:00,Barcelona,Manchester City,Barcelona,Manchester City,1.8,4.33,3.5,SKB,16
+2026-11-26T17:58:31Z,CL,6106241.0,08/12/2026,20:00,Bayern München,Slavia Prague,Bayern Munich,Slavia Praha,1.14,8.5,12.0,SKB,16
+2026-11-26T17:58:31Z,CL,6106292.0,08/12/2026,20:00,Manchester United,RB Leipzig,Manchester United,RB Leipzig,1.83,4.2,3.5,SKB,16
+2026-11-26T17:58:31Z,CL,6106319.0,08/12/2026,20:00,Napoli,Club Brugge,Napoli,Club Brugge,1.75,4.0,3.8,SKB,16
+2026-11-26T17:58:31Z,CL,6106275.0,08/12/2026,20:00,Roma,Sporting CP,AS Roma,Sporting Lisbon,1.57,4.33,4.75,SKB,16
+2026-11-26T17:58:31Z,CL,6106301.0,09/12/2026,17:45,Real Betis,Como,Real Betis,Como,2.6,3.6,2.4,SKB,15
+2026-11-26T17:58:31Z,CL,6106395.0,09/12/2026,17:45,Slovan Bratislava,Shakhtar Donetsk,ŠK Slovan Bratislava,Shakhtar Donetsk,4.5,4.0,1.67,SKB,15
+2026-11-26T17:58:31Z,CL,6106258.0,09/12/2026,20:00,Arsenal,Real Madrid,Arsenal,Real Madrid,1.95,3.8,3.3,SKB,15
+2026-11-26T17:58:31Z,CL,6106270.0,09/12/2026,20:00,Borussia Dortmund,Inter,Borussia Dortmund,Inter Milan,2.5,3.75,2.5,SKB,15
+2026-11-26T17:58:31Z,CL,6106407.0,09/12/2026,20:00,LASK,Fenerbahçe,LASK,Fenerbahce,2.75,3.6,2.3,SKB,15
+2026-11-26T17:58:31Z,CL,6106415.0,09/12/2026,20:00,Lens,Bodø/Glimt,RC Lens,Bodø/Glimt,2.15,3.75,2.9,SKB,15
+2026-11-26T17:58:31Z,CL,6106247.0,09/12/2026,20:00,Liverpool,FC Porto,Liverpool,Porto,1.5,4.6,5.5,SKB,15
+2026-11-26T17:58:31Z,CL,6106302.0,09/12/2026,20:00,PSV Eindhoven,Atlético Madrid,PSV Eindhoven,Atlético Madrid,3.3,4.0,1.91,SKB,15
+2026-11-26T17:58:31Z,CL,6106399.0,09/12/2026,20:00,VfB Stuttgart,Lille,VfB Stuttgart,Lille,1.7,4.2,4.2,SKB,15
