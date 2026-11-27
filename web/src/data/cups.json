@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-26T17:59:01+00:00",
+  "generated": "2026-11-27T17:45:16+00:00",
   "byCompetition": {
     "CL": {
       "name": "Champions League",
@@ -737,18 +737,6 @@
             "movement": 4
           },
           {
-            "team": "Villarreal",
-            "league": "SP1",
-            "played": 8,
-            "won": 3,
-            "drawn": 1,
-            "lost": 4,
-            "points": 11,
-            "position": 22,
-            "currentPosition": 24,
-            "movement": 2
-          },
-          {
             "team": "RB Leipzig",
             "league": "D1",
             "played": 8,
@@ -756,9 +744,21 @@
             "drawn": 1,
             "lost": 4,
             "points": 11,
-            "position": 23,
+            "position": 22,
             "currentPosition": 23,
-            "movement": 0
+            "movement": 1
+          },
+          {
+            "team": "Villarreal",
+            "league": "SP1",
+            "played": 8,
+            "won": 3,
+            "drawn": 1,
+            "lost": 4,
+            "points": 11,
+            "position": 23,
+            "currentPosition": 24,
+            "movement": 1
           },
           {
             "team": "Bod\u00f8/Glimt",
