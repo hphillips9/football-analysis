@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T17:45:16+00:00",
+  "generated": "2026-11-28T16:30:02+00:00",
   "byCompetition": {
     "E0": {
       "name": "Premier League",
@@ -2759,7 +2759,7 @@
           "lost": 12,
           "gf": 52.2,
           "ga": 48.1,
-          "points": 58,
+          "points": 59,
           "position": 8,
           "gd": 4.2,
           "currentPosition": 9,
@@ -3601,7 +3601,7 @@
           "team": "Le Havre",
           "played": 34,
           "won": 4,
-          "drawn": 7,
+          "drawn": 8,
           "lost": 23,
           "gf": 33.0,
           "ga": 66.2,
